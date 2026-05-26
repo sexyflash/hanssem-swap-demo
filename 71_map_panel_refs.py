@@ -65,76 +65,79 @@ def pick_refs(panel):
 
     # cover / intro hero
     if cls in ("intro_hero", "product_shot"):
-        return ["main_front"]
+        return ["main_front", "main_angle"]
 
     # lifestyle
     if cls == "lifestyle_scene":
-        return ["main_front", "main_angle"]
+        return ["main_front", "main_angle", "detail_arm"]
 
-    # size chart
+    # size chart — 사이즈 + 팔걸이/다리 디테일까지 보여줌
     if cls == "size_chart":
-        return ["main_front"]  # 사이즈는 텍스트 prompt만으로 충분
+        return ["main_front", "main_side", "detail_legs", "detail_arm"]
 
-    # structure chart
+    # structure chart — 구조 + 디테일
     if cls == "structure_chart":
-        return ["main_front", "detail_cushion_a", "material"]
+        return ["main_front", "detail_cushion_a", "detail_legs", "material"]
 
-    # color option
+    # color option — 메인 + variants + swatches
     if cls == "color_option":
         return ["main_front", "color_variant_gray", "color_variant_rose",
                 "color_swatch_oat", "color_swatch_gray", "color_swatch_rose"]
 
-    # module lineup
+    # module lineup — 메인 + 컬러 variants + swatch (라벨 인식용)
     if cls == "module_lineup":
-        return ["main_front", "color_variant_gray", "color_variant_rose"]
+        return ["main_front", "color_variant_gray", "color_variant_rose",
+                "color_swatch_oat", "color_swatch_gray", "color_swatch_rose"]
 
     # material swatch
     if cls == "material_swatch":
-        return ["material", "main_front"]
+        return ["material", "detail_cushion_a", "main_front"]
 
-    # detail close-up — spatial 키워드로 sub-classify
+    # detail close-up — 가용 자원 적극 활용 (3~5장)
+    # 사용자 원칙: 가용 가능한 디테일을 살리기 위해 ref 더 보강
     if cls == "detail_close_up":
-        refs = []
-        # 다리/하부 close-up (spatial이 *다리/다릿발/leg* 직접 언급)
-        if "sofa_leg" in elem_roles or "다릿발" in sp or "다리" in sp.replace("좌측 하단", "").replace("우측 하단", ""):
-            refs += ["detail_legs", "main_side"]
-        # 배지/플레이트 (측면)
-        if "brand_plate" in elem_roles or "badge" in elem_roles:
-            refs += ["main_side", "detail_arm"]
+        refs = ["main_angle"]  # 전체 무드 reference 1장 항상
+
+        # 다리/하부
+        if "sofa_leg" in elem_roles or "다릿발" in sp:
+            refs += ["detail_legs", "detail_arm", "main_side"]
+        # 배지/플레이트 (측면) — 가용 자원 풍부히
+        elif "brand_plate" in elem_roles or "badge" in elem_roles or "측면" in sp or "옆모습" in sp:
+            refs = ["main_side", "detail_arm", "detail_arm_b", "detail_legs"]
         # USB/control — milo엔 없음
-        if "control_panel" in elem_roles or "usb_port" in elem_roles or "button" in elem_roles:
-            refs += ["main_front"]
-        # 등받이/쿠션
-        if "등받이" in sp or "등쿠션" in sp:
-            refs += ["detail_cushion_a", "detail_cushion_b"]
-        if "좌방석" in sp or "방석" in sp:
-            refs += ["detail_cushion_a", "main_angle"]
-        # 팔걸이
-        if "팔걸이" in sp:
-            refs += ["detail_arm", "detail_arm_b"]
-        # 가죽/패브릭 표면
-        if "가죽 표면" in sp or "패브릭" in sp or "원단" in sp:
-            refs += ["material", "detail_cushion_a"]
-        # 리클라이너 / 헤드레스트 — milo엔 없음
-        if "리클라이너" in sp or "헤드레스트" in sp:
-            refs += ["main_front", "main_angle"]
-        # 시접/스티치
-        if "시접" in sp or "스티치" in sp:
-            refs += ["detail_seam"]
-        # 측면(옆모습)
-        if "측면" in sp or "옆모습" in sp:
-            refs += ["main_side"]
-
+        elif "control_panel" in elem_roles or "usb_port" in elem_roles or "button" in elem_roles:
+            refs = ["main_front", "detail_cushion_a", "main_angle"]
+        # 등받이 + 팔걸이 (panel_03 유형)
+        elif ("등받이" in sp or "등쿠션" in sp) and "팔걸이" in sp:
+            refs += ["detail_legs", "detail_arm", "detail_cushion_b"]
+        # 등받이만
+        elif "등받이" in sp or "등쿠션" in sp:
+            refs += ["detail_cushion_a", "detail_cushion_b", "detail_legs"]
+        # 좌방석/팔걸이
+        elif ("좌방석" in sp or "방석" in sp) and "팔걸이" in sp:
+            refs += ["detail_legs", "detail_arm", "detail_cushion_a"]
+        # 좌방석만
+        elif "좌방석" in sp or "방석" in sp:
+            refs += ["detail_cushion_a", "detail_legs", "detail_seam"]
+        # 팔걸이만
+        elif "팔걸이" in sp:
+            refs += ["detail_arm", "detail_arm_b", "detail_cushion_a"]
+        # 패브릭/가죽 표면
+        elif "가죽 표면" in sp or "패브릭" in sp or "원단" in sp:
+            refs = ["material", "detail_cushion_a", "detail_seam", "main_front"]
+        # 리클라이너 / 헤드레스트 (milo엔 없음)
+        elif "리클라이너" in sp or "헤드레스트" in sp:
+            refs = ["main_front", "main_angle", "detail_cushion_a"]
         # 디폴트
-        if not refs:
-            refs = ["detail_cushion_a", "detail_arm", "main_angle"]
+        else:
+            refs += ["detail_cushion_a", "detail_legs", "detail_arm"]
 
-        # dedupe + limit 4 (사용자 의도: 적게)
+        # dedupe + limit 5 (가용 자원 더 적극 활용)
         seen = []
         for r in refs:
             if r not in seen:
                 seen.append(r)
-        return seen[:4]
+        return seen[:5]
 
     # default
     return ["main_front", "main_side", "main_angle"]

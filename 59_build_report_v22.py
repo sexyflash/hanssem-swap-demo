@@ -83,7 +83,7 @@ def get_swap_results(t):
     if t["rank"] != 1:
         return None
     sr = TPL_ROOT / f"{t['rank']:02d}_{t['category']}_{t['gdsNo']}" / "swap_results"
-    for marker in ["latest_v13.txt", "latest_v12.txt", "latest_v11.txt", "latest_v10.txt", "latest_v9.txt", "latest_v8.txt", "latest_v7.txt", "latest_v6.txt", "latest_v5.txt", "latest_v4.txt", "latest.txt"]:
+    for marker in ["latest_v14.txt", "latest_v13.txt", "latest_v12.txt", "latest_v11.txt", "latest_v10.txt", "latest_v9.txt", "latest_v8.txt", "latest_v7.txt", "latest_v6.txt", "latest_v5.txt", "latest_v4.txt", "latest.txt"]:
         latest = sr / marker
         if latest.exists():
             run_name = latest.read_text().strip()
@@ -127,22 +127,38 @@ def score_color(score, kind="prod", panel_class=None):
     return "score-neutral"
 
 
-def zone_refs_for_class(panel_class):
-    """v10 5-slot multi-tier ref pattern.
-    [2,3,4] 메인 대표 3장 (정면/측면/각도)
-    [5] master sheet (모든 디테일/컬러/소재/PRESERVE/NEVER 통합)
-    (IMAGE 1 = panel C 원본은 별도 표시)
+_PANEL_REF_MAP = None
+def _load_panel_ref_map():
+    global _PANEL_REF_MAP
+    if _PANEL_REF_MAP is None:
+        p = TPL_ROOT / "01_sofa_992474/panel_ref_mapping.json"
+        if p.exists():
+            _PANEL_REF_MAP = json.loads(p.read_text())
+        else:
+            _PANEL_REF_MAP = {"assets": {}, "panels": {}}
+    return _PANEL_REF_MAP
+
+
+def zone_refs_for_panel(panel_label):
+    """v14 panel-level refs — panel별로 큐레이션된 ref만 표시.
+    panel_label: 'cover' 또는 'panel_03.jpg' 등 (panel_ref_mapping.json 키)
     """
-    use_prod = "../user_products/milo_777039/use_product"
-    prep = "../user_products/milo_777039/preprocessed"
-    refs = [
-        {"role": "IMAGE 2 — MAIN 정면", "path": f"{use_prod}/p08_frame_01.jpg"},
-        {"role": "IMAGE 3 — MAIN 측면", "path": f"{use_prod}/p08_frame_02.jpg"},
-        {"role": "IMAGE 4 — MAIN 각도", "path": f"{use_prod}/p08_frame_03.jpg"},
-        {"role": "IMAGE 5 — MASTER SHEET (디테일+컬러+소재+PRESERVE/NEVER 1장 통합)",
-         "path": f"{prep}/milo_master_sheet.png"},
-    ]
+    m = _load_panel_ref_map()
+    panel_entry = m["panels"].get(panel_label)
+    if not panel_entry:
+        return []
+    refs = []
+    for i, (key, path) in enumerate(zip(panel_entry["ref_keys"], panel_entry["ref_paths"]), start=2):
+        refs.append({
+            "role": f"IMAGE {i} — {key}",
+            "path": f"../user_products/milo_777039/{path}",
+        })
     return refs
+
+
+def zone_refs_for_class(panel_class):
+    """deprecated — backwards compat. v14 부터는 zone_refs_for_panel 사용."""
+    return zone_refs_for_panel("cover")
 
 
 def split_detail_segments(t):
@@ -267,13 +283,15 @@ def rewrite_segment(seg_html, panel_idx, side, t, swap_results=None, src_to_loca
                 orig_files = list((TPL_ROOT / "01_sofa_992474").glob(f"panel_{panel_idx:02d}.*"))
                 orig_panel_url = (f"../templates/01_sofa_992474/{orig_files[0].name}"
                                   if orig_files else "")
+                # panel_ref_mapping 키는 실제 파일명 (e.g. "panel_03.jpg", "panel_08.gif")
+                panel_label = orig_files[0].name if orig_files else f"panel_{panel_idx:02d}.jpg"
                 payload = {
                     "panel": panel_idx,
                     "panel_class": panel_class,
                     "strategies_used": "/".join(cell.get("strategies_used", [])),
                     "passed": cell.get("passed"),
                     "attempts": attempts_meta,
-                    "refs_zone": zone_refs_for_class(panel_class),
+                    "refs_zone": zone_refs_for_panel(panel_label),
                     "run_dir_rel": swap_results["run_dir_rel"],
                     "original_panel": orig_panel_url,
                 }
@@ -399,7 +417,7 @@ def build_cover_row(t, swap_results):
             "strategies_used": "/".join(cell.get("strategies_used", [])),
             "passed": cell.get("passed"),
             "attempts": attempts_meta,
-            "refs_zone": zone_refs_for_class("intro_hero"),
+            "refs_zone": zone_refs_for_panel("cover"),
             "run_dir_rel": swap_results["run_dir_rel"],
             "original_panel": cover_src,
         }
@@ -477,11 +495,7 @@ def build_zone_inputs():
     if scenes_dir.exists():
         scene_imgs = sorted(scenes_dir.glob("scene_*.jpg")) + sorted(scenes_dir.glob("scene_*.png"))
 
-    # Tier 2 — 통합 마스터 시트 1장 (모든 요소 통합)
-    sheets = []
-    master = prep_dir / "milo_master_sheet.png"
-    if master.exists():
-        sheets.append((f"{prep}/milo_master_sheet.png", "MASTER SHEET (main+detail+color+material+PRESERVE/NEVER)"))
+    # v15 — master sheet 완전 제거. panel-level mapping만 사용.
 
     # vision 분류 (66번 출력) 로드
     cls_path = use_prod_dir / "classification.json"
@@ -515,7 +529,6 @@ def build_zone_inputs():
         ("🔎 DETAIL CLOSE-UP (디테일 — vision 분류 + p08_frame_04,05 보정)", detail_files),
         ("📦 COLOR VARIANT (다른 컬러 전체샷)", color_var_files),
         ("🧵 MATERIAL (소재/원단 close-up)", mat_files),
-        ("⭐ MASTER SHEET (Tier 2 — 모든 정보 1장 통합, swap 시 항상 첨부)", sheets),
     ]
     out = ""
     for title, files in zones_data:
