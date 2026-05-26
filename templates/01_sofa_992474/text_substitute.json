@@ -1,0 +1,431 @@
+{
+  "node_count": 71,
+  "substitutes": [
+    {
+      "i": 0,
+      "original": "/* ------------------------------\nweb font\n------------------------------ */\n/* 프리텐다드 웹폰트*/\n\n/*\nCopyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.\nhttps://github.com/orioncactus/pretendard\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is copied below, and is also available with a FAQ at:\nhttp://scripts.sil.org/OFL\n*/\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:900;\n\tfont-display:swap;\n\tsrc:local('Pretendard Black'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Black.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Black.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:800;\n\tfont-display:swap;\n\tsrc:local('Pretendard ExtraBold'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraBold.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraBold.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:700;\n\tfont-display:swap;\n\tsrc:local('Pretendard Bold'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Bold.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Bold.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:600;\n\tfont-display:swap;\n\tsrc:local('Pretendard SemiBold'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-SemiBold.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-SemiBold.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:500;\n\tfont-display:swap;\n\tsrc:local('Pretendard Medium'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Medium.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Medium.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:400;\n\tfont-display:swap;\n\tsrc:local('Pretendard Regular'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Regular.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Regular.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:300;\n\tfont-display:swap;\n\tsrc:local('Pretendard Light'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Light.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Light.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:200;\n\tfont-display:swap;\n\tsrc:local('Pretendard ExtraLight'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraLight.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraLight.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:100;\n\tfont-display:swap;\n\tsrc:local('Pretendard Thin'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Thin.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Thin.subset.woff') format('woff');\n}\n\n.sec-comp {padding:24px 0;font-family:'Pretendard',sans-serif;font-size:12px;line-height:1.4;font-weight:400;color:#121212;word-break:break-all;word-wrap:break-word;}\n.sec-comp * {margin:0;padding:0;}\n.sec-comp img {vertical-align:top;border:0;}\n.sec-comp a {text-decoration:none;color:#121212;-webkit-tap-highlight-color:transparent}\n.sec-comp a:active {text-decoration:none;}\n.sec-comp a:visited {text-decoration:none;}\n.sec-comp a:hover {text-decoration:none;}\n.sec-comp a:focus {text-decoration:none;}\n.sec-comp fieldset {border:0;}\n.sec-comp input {font-family:inherit;line-height:inherit;-webkit-appearance:none;-moz-appearance:none;appearance:none;}\n.sec-comp input::-webkit-search-cancel-button {display:none;}\n.sec-comp _::-webkit-full-page-media, _:future, :root input:disabled {opacity:1;}\n.sec-comp input:focus {outline:none;}\n.sec-comp textarea {display:block;box-sizing:border-box;width:100%;padding:10px;border:1px solid #e2e2e2;background-color:#fff;font-family:'Pretendard',sans-serif;font-size:1.4rem;color:#121212;resize:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px solid #dfdfdf;border-radius:0;}\n.sec-comp textarea:focus {outline:none;position:relative;z-index:1;border:1px solid #ff3a69;color:#121212;}\n.sec-comp _::-webkit-full-page-media, _:future, :root textarea:disabled {opacity:1;} \n.sec-comp select:focus {outline:none;}\n.sec-comp table {border:0 none;border-spacing:0;border-collapse:collapse;}\n.sec-comp ul {list-style:none;}\n.sec-comp ol {list-style-position:outside;margin:0;padding:0 0 0 15px;}\n.sec-comp ol li {margin:0;padding:0;}\n.sec-comp button {background:none;border:none;cursor:pointer;outline:none;font-family:'Pretendard';color:#121212;touch-action:manipulation;-webkit-tap-highlight-color:transparent}\n.sec-comp iframe {border:0;}\n.sec-comp label {-webkit-tap-highlight-color:transparent}\n\n.sec-comp .subhead {display:block;padding:16px 20px;font-size:15px;font-weight:500;}\n.sec-comp .cont-txt {padding:8px 20px;}\n.sec-comp .cont-txt h2 {font-size:30px;font-weight:500;line-height:1.2;}\n.sec-comp .cont-txt h2 b {font-weight:bold;}\n.sec-comp .cont-txt h2 i {font-style:italic;}\n.sec-comp .cont-txt h3 {font-size:18px;font-weight:500;}\n.sec-comp .cont-txt h3 b {font-weight:bold;}\n.sec-comp .cont-txt h3 i {font-style:italic;}\n.sec-comp .cont-txt h6 {font-size:11px;font-weight:300;}\n.sec-comp .cont-txt h6 b {font-weight:bold;}\n.sec-comp .cont-txt h6 i {font-style:italic;}\n.sec-comp .cont-txt p {font-size:15px;line-height:1.5;color:#121212;font-weight:300;}\n.sec-comp .cont-txt p b {font-weight:bold;}\n.sec-comp .cont-txt p i {font-style:italic;}\n.sec-comp .img-box {padding:16px 0;}\n.sec-comp .img-box img {display:block;width:100%;height:auto;}\n.sec-comp .img-box picture {display:block;margin:10px 0 0 0;}\n.sec-comp .img-box picture:first-child {margin-top:0;}\n.sec-comp .flex-tbl {margin:20px 20px 0;display:flex;flex-wrap:wrap;border-top:1px solid #121212;}\n.sec-comp .flex-tbl:only-child {margin:auto 16px;}\n.sec-comp .flex-tbl .th {padding:16px;font-size:13px;display:flex;align-items:center;border-bottom:1px solid #efefef;box-sizing:border-box;flex:0 0 100px;background:#f6f6f6;font-weight:400;color:#666;}\n.sec-comp .flex-tbl .td {padding:16px;font-size:13px;display:flex;align-items:center;border-bottom:1px solid #efefef;box-sizing:border-box;flex-basis:calc(100% - 100px);color:#121212;}\n.sec-comp .keyword-list {padding:8px 20px 24px;display:flex;flex-wrap:wrap;gap:8px;}\n.sec-comp .keyword-list span {border-radius:2px;padding:4px 6px;background:#f6f6f6;color:#121212;text-decoration:none;font-size:10px;}\n.sec-comp .tbl {margin:20px auto 0;width:calc(100% - 40px);border-collapse:collapse;}\n.sec-comp .tbl:only-child {margin:auto;}\n.sec-comp .tbl th,\n.sec-comp .tbl td {padding:16px;width:25%;height:50px;border-bottom:1px solid #efefef;vertical-align:middle;font-size:13px;text-align:left;box-sizing:border-box;line-height:normal;}\n.sec-comp .tbl th {background:#f6f6f6;color:#666;font-weight:400;}\n.sec-comp .tbl td {color:#121212;word-break:break-all;}\n.sec-comp .tbl thead th {border-top:1px solid #121212;}\n.sec-comp .cont-vid {padding:16px 0;position:relative;}\n.sec-comp .cont-vid video {display:block;width:100%;}\n.sec-comp .cont-vid.vertical {width:64vw;margin:0 auto;}\n.sec-comp .cont-vid .play-btn {position:absolute;top:16px;bottom:16px;left:0;right:0;margin:auto;font-size:0;color:transparent;border:none;background:none;}\n.sec-comp .cont-vid .play-btn::before {width:48px;height:48px;content:'';position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;opacity:0;background:url(https://image2.hanssem.com/hsmall/store/mo/images/editor/play-btn.png) center / contain no-repeat;transition:.4s}\n.sec-comp .cont-vid .play-btn.active::before {opacity:1;}\n\n/* mo */\n@media (max-width:750px) {\n.sec-comp {max-width:100vw;}\n}\n\n/* pc */\n@media (min-width:750px) {\n.sec-comp {padding:40px 0;}\n.sec-comp .subhead {padding:16px 0;font-size:16px;font-weight:500;}\n.sec-comp .cont-txt {padding:4px 0;}\n.sec-comp .cont-txt h2 {font-size:32px;font-weight:700;line-height:1.4;}\n.sec-comp .cont-txt h3 {font-size:24px;font-weight:500;}\n.sec-comp .cont-txt h6 {font-size:16px;font-weight:400;}\n.sec-comp .cont-txt p {font-size:20px;line-height:1.4;font-weight:400;}\n.sec-comp .img-box {padding:30px 0;}\n.sec-comp .cont-vid {padding:30px 0;width:100%;}\n.sec-comp .cont-vid .play-btn {top:30px;bottom:30px;}\n.sec-comp .cont-vid .play-btn::before {width:72px;height:72px;}\n.sec-comp .keyword-list {padding:8px 0 24px;}\n.sec-comp .keyword-list span {font-size:12px;}\n.sec-comp .tbl {width:100%;margin-top:40px;}\n.sec-comp .tbl:only-child {margin-top:0;}\n.sec-comp .tbl th,\n.sec-comp .tbl td {padding:14px 20px;}\n.sec-comp .flex-tbl {margin:40px 0 0;}\n.sec-comp .flex-tbl:only-child {margin:0;}\n.sec-comp .flex-tbl .th {padding:14px 20px;font-size:14px;}\n.sec-comp .flex-tbl .td {padding:14px 20px;font-size:14px;}\n}\n  @font-face {\n                 font-family: 'wecandeoIcon';\n                 src: url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.eot?46ypa');\n                 src: url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.eot?46ypa#iefix') format('embedded-opentype'), url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.ttf?46ypa') format('truetype'), url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.woff?46ypa') format('woff'), url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.svg?46ypa#wecandeoIcon') format('svg');\n                 font-weight: normal;\n                 font-style: normal;\n             }\n         \n             .sec-comp .view-area .play-btn {\n                 position: absolute;\n                 top: 0;\n                 bottom: 0;\n                 left: 0;\n                 right: 0;\n                 margin: auto;\n                 font-size: 0;\n                 color: transparent;\n                 border: none;\n                 background: transparent;\n             }\n         \n             .sec-comp .view-area .play-btn::before {\n                 content: \"\"\\e918\"\";\n                 font-family: wecandeoIcon;\n                 font-size: 96px;\n                 color: transparent;\n                 transition: .4s\n             }\n         \n             .sec-comp .view-area .play-btn.active::before {\n                 color: #fff\n             }",
+      "milo": "/* ------------------------------\nweb font\n------------------------------ */\n/* 프리텐다드 웹폰트*/\n\n/*\nCopyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.\nhttps://github.com/orioncactus/pretendard\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is copied below, and is also available with a FAQ at:\nhttp://scripts.sil.org/OFL\n*/\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:900;\n\tfont-display:swap;\n\tsrc:local('Pretendard Black'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Black.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Black.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:800;\n\tfont-display:swap;\n\tsrc:local('Pretendard ExtraBold'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraBold.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraBold.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:700;\n\tfont-display:swap;\n\tsrc:local('Pretendard Bold'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Bold.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Bold.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:600;\n\tfont-display:swap;\n\tsrc:local('Pretendard SemiBold'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-SemiBold.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-SemiBold.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:500;\n\tfont-display:swap;\n\tsrc:local('Pretendard Medium'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Medium.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Medium.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:400;\n\tfont-display:swap;\n\tsrc:local('Pretendard Regular'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Regular.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Regular.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:300;\n\tfont-display:swap;\n\tsrc:local('Pretendard Light'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Light.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Light.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:200;\n\tfont-display:swap;\n\tsrc:local('Pretendard ExtraLight'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraLight.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraLight.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:100;\n\tfont-display:swap;\n\tsrc:local('Pretendard Thin'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Thin.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Thin.subset.woff') format('woff');\n}\n\n.sec-comp {padding:24px 0;font-family:'Pretendard',sans-serif;font-size:12px;line-height:1.4;font-weight:400;color:#121212;word-break:break-all;word-wrap:break-word;}\n.sec-comp * {margin:0;padding:0;}\n.sec-comp img {vertical-align:top;border:0;}\n.sec-comp a {text-decoration:none;color:#121212;-webkit-tap-highlight-color:transparent}\n.sec-comp a:active {text-decoration:none;}\n.sec-comp a:visited {text-decoration:none;}\n.sec-comp a:hover {text-decoration:none;}\n.sec-comp a:focus {text-decoration:none;}\n.sec-comp fieldset {border:0;}\n.sec-comp input {font-family:inherit;line-height:inherit;-webkit-appearance:none;-moz-appearance:none;appearance:none;}\n.sec-comp input::-webkit-search-cancel-button {display:none;}\n.sec-comp _::-webkit-full-page-media, _:future, :root input:disabled {opacity:1;}\n.sec-comp input:focus {outline:none;}\n.sec-comp textarea {display:block;box-sizing:border-box;width:100%;padding:10px;border:1px solid #e2e2e2;background-color:#fff;font-family:'Pretendard',sans-serif;font-size:1.4rem;color:#121212;resize:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px solid #dfdfdf;border-radius:0;}\n.sec-comp textarea:focus {outline:none;position:relative;z-index:1;border:1px solid #ff3a69;color:#121212;}\n.sec-comp _::-webkit-full-page-media, _:future, :root textarea:disabled {opacity:1;} \n.sec-comp select:focus {outline:none;}\n.sec-comp table {border:0 none;border-spacing:0;border-collapse:collapse;}\n.sec-comp ul {list-style:none;}\n.sec-comp ol {list-style-position:outside;margin:0;padding:0 0 0 15px;}\n.sec-comp ol li {margin:0;padding:0;}\n.sec-comp button {background:none;border:none;cursor:pointer;outline:none;font-family:'Pretendard';color:#121212;touch-action:manipulation;-webkit-tap-highlight-color:transparent}\n.sec-comp iframe {border:0;}\n.sec-comp label {-webkit-tap-highlight-color:transparent}\n\n.sec-comp .subhead {display:block;padding:16px 20px;font-size:15px;font-weight:500;}\n.sec-comp .cont-txt {padding:8px 20px;}\n.sec-comp .cont-txt h2 {font-size:30px;font-weight:500;line-height:1.2;}\n.sec-comp .cont-txt h2 b {font-weight:bold;}\n.sec-comp .cont-txt h2 i {font-style:italic;}\n.sec-comp .cont-txt h3 {font-size:18px;font-weight:500;}\n.sec-comp .cont-txt h3 b {font-weight:bold;}\n.sec-comp .cont-txt h3 i {font-style:italic;}\n.sec-comp .cont-txt h6 {font-size:11px;font-weight:300;}\n.sec-comp .cont-txt h6 b {font-weight:bold;}\n.sec-comp .cont-txt h6 i {font-style:italic;}\n.sec-comp .cont-txt p {font-size:15px;line-height:1.5;color:#121212;font-weight:300;}\n.sec-comp .cont-txt p b {font-weight:bold;}\n.sec-comp .cont-txt p i {font-style:italic;}\n.sec-comp .img-box {padding:16px 0;}\n.sec-comp .img-box img {display:block;width:100%;height:auto;}\n.sec-comp .img-box picture {display:block;margin:10px 0 0 0;}\n.sec-comp .img-box picture:first-child {margin-top:0;}\n.sec-comp .flex-tbl {margin:20px 20px 0;display:flex;flex-wrap:wrap;border-top:1px solid #121212;}\n.sec-comp .flex-tbl:only-child {margin:auto 16px;}\n.sec-comp .flex-tbl .th {padding:16px;font-size:13px;display:flex;align-items:center;border-bottom:1px solid #efefef;box-sizing:border-box;flex:0 0 100px;background:#f6f6f6;font-weight:400;color:#666;}\n.sec-comp .flex-tbl .td {padding:16px;font-size:13px;display:flex;align-items:center;border-bottom:1px solid #efefef;box-sizing:border-box;flex-basis:calc(100% - 100px);color:#121212;}\n.sec-comp .keyword-list {padding:8px 20px 24px;display:flex;flex-wrap:wrap;gap:8px;}\n.sec-comp .keyword-list span {border-radius:2px;padding:4px 6px;background:#f6f6f6;color:#121212;text-decoration:none;font-size:10px;}\n.sec-comp .tbl {margin:20px auto 0;width:calc(100% - 40px);border-collapse:collapse;}\n.sec-comp .tbl:only-child {margin:auto;}\n.sec-comp .tbl th,\n.sec-comp .tbl td {padding:16px;width:25%;height:50px;border-bottom:1px solid #efefef;vertical-align:middle;font-size:13px;text-align:left;box-sizing:border-box;line-height:normal;}\n.sec-comp .tbl th {background:#f6f6f6;color:#666;font-weight:400;}\n.sec-comp .tbl td {color:#121212;word-break:break-all;}\n.sec-comp .tbl thead th {border-top:1px solid #121212;}\n.sec-comp .cont-vid {padding:16px 0;position:relative;}\n.sec-comp .cont-vid video {display:block;width:100%;}\n.sec-comp .cont-vid.vertical {width:64vw;margin:0 auto;}\n.sec-comp .cont-vid .play-btn {position:absolute;top:16px;bottom:16px;left:0;right:0;margin:auto;font-size:0;color:transparent;border:none;background:none;}\n.sec-comp .cont-vid .play-btn::before {width:48px;height:48px;content:'';position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;opacity:0;background:url(https://image2.hanssem.com/hsmall/store/mo/images/editor/play-btn.png) center / contain no-repeat;transition:.4s}\n.sec-comp .cont-vid .play-btn.active::before {opacity:1;}\n\n/* mo */\n@media (max-width:750px) {\n.sec-comp {max-width:100vw;}\n}\n\n/* pc */\n@media (min-width:750px) {\n.sec-comp {padding:40px 0;}\n.sec-comp .subhead {padding:16px 0;font-size:16px;font-weight:500;}\n.sec-comp .cont-txt {padding:4px 0;}\n.sec-comp .cont-txt h2 {font-size:32px;font-weight:700;line-height:1.4;}\n.sec-comp .cont-txt h3 {font-size:24px;font-weight:500;}\n.sec-comp .cont-txt h6 {font-size:16px;font-weight:400;}\n.sec-comp .cont-txt p {font-size:20px;line-height:1.4;font-weight:400;}\n.sec-comp .img-box {padding:30px 0;}\n.sec-comp .cont-vid {padding:30px 0;width:100%;}\n.sec-comp .cont-vid .play-btn {top:30px;bottom:30px;}\n.sec-comp .cont-vid .play-btn::before {width:72px;height:72px;}\n.sec-comp .keyword-list {padding:8px 0 24px;}\n.sec-comp .keyword-list span {font-size:12px;}\n.sec-comp .tbl {width:100%;margin-top:40px;}\n.sec-comp .tbl:only-child {margin-top:0;}\n.sec-comp .tbl th,\n.sec-comp .tbl td {padding:14px 20px;}\n.sec-comp .flex-tbl {margin:40px 0 0;}\n.sec-comp .flex-tbl:only-child {margin:0;}\n.sec-comp .flex-tbl .th {padding:14px 20px;font-size:14px;}\n.sec-comp .flex-tbl .td {padding:14px 20px;font-size:14px;}\n}\n  @font-face {\n                 font-family: 'wecandeoIcon';\n                 src: url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.eot?46ypa');\n                 src: url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.eot?46ypa#iefix') format('embedded-opentype'), url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.ttf?46ypa') format('truetype'), url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.woff?46ypa') format('woff'), url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.svg?46ypa#wecandeoIcon') format('svg');\n                 font-weight: normal;\n                 font-style: normal;\n             }\n         \n             .sec-comp .view-area .play-btn {\n                 position: absolute;\n                 top: 0;\n                 bottom: 0;\n                 left: 0;\n                 right: 0;\n                 margin: auto;\n                 font-size: 0;\n                 color: transparent;\n                 border: none;\n                 background: transparent;\n             }\n         \n             .sec-comp .view-area .play-btn::before {\n                 content: \"\"\\e918\"\";\n                 font-family: wecandeoIcon;\n                 font-size: 96px;\n                 color: transparent;\n                 transition: .4s\n             }\n         \n             .sec-comp .view-area .play-btn.active::before {\n                 color: #fff\n             }",
+      "near_panel": 0
+    },
+    {
+      "i": 1,
+      "original": "document.addEventListener(\"DOMContentLoaded\", function() {\n\t\tvar videoElements = document.querySelectorAll('.cont-vid video');\n\t\t\n\t\t// 비디오 재생 버튼\n\t\tvideoElements.forEach(function(el) {\n\t\t\tvar playBtn = el.nextElementSibling;\n\n\t\t\tplayBtn.addEventListener('click', function() {\n\t\t\t\tif (playBtn.classList.contains(\"active\")) {\n\t\t\t\t\tel.play();\n\t\t\t\t\tplayBtn.innerHTML = \"일시정지\";\n\t\t\t\t\tplayBtn.classList.toggle(\"active\");\n\t\t\t\t} else {\n\t\t\t\t\tel.pause();\n\t\t\t\t\tplayBtn.innerHTML = \"재생\";\n\t\t\t\t\tplayBtn.classList.toggle(\"active\");\n\t\t\t\t}\n\t\t\t});\n\n\t\t\tel.addEventListener('ended', function() {\n\t\t\t\tplayBtn.innerHTML = \"재생\";\n\t\t\t\tplayBtn.classList.toggle(\"active\");\n\t\t\t});\n\t\t});\n\n\t\t// 세로 동영상 검출\n\t\tfor (var i = 0; i < videoElements.length; i++) {\n\t\t\tconst el = videoElements[i];\n\n\t\t\tel.onloadeddata = function() {\n\t\t\t\tif (el.videoHeight > el.videoWidth) {\n\t\t\t\t\tel.parentElement.classList.add('vertical');\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\n\t});",
+      "milo": "document.addEventListener(\"DOMContentLoaded\", function() {\n\t\tvar videoElements = document.querySelectorAll('.cont-vid video');\n\t\t\n\t\t// 비디오 재생 버튼\n\t\tvideoElements.forEach(function(el) {\n\t\t\tvar playBtn = el.nextElementSibling;\n\n\t\t\tplayBtn.addEventListener('click', function() {\n\t\t\t\tif (playBtn.classList.contains(\"active\")) {\n\t\t\t\t\tel.play();\n\t\t\t\t\tplayBtn.innerHTML = \"일시정지\";\n\t\t\t\t\tplayBtn.classList.toggle(\"active\");\n\t\t\t\t} else {\n\t\t\t\t\tel.pause();\n\t\t\t\t\tplayBtn.innerHTML = \"재생\";\n\t\t\t\t\tplayBtn.classList.toggle(\"active\");\n\t\t\t\t}\n\t\t\t});\n\n\t\t\tel.addEventListener('ended', function() {\n\t\t\t\tplayBtn.innerHTML = \"재생\";\n\t\t\t\tplayBtn.classList.toggle(\"active\");\n\t\t\t});\n\t\t});\n\n\t\t// 세로 동영상 검출\n\t\tfor (var i = 0; i < videoElements.length; i++) {\n\t\t\tconst el = videoElements[i];\n\n\t\t\tel.onloadeddata = function() {\n\t\t\t\tif (el.videoHeight > el.videoWidth) {\n\t\t\t\t\tel.parentElement.classList.add('vertical');\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\n\t});",
+      "near_panel": 0
+    },
+    {
+      "i": 2,
+      "original": "기본정보",
+      "milo": "기본정보",
+      "near_panel": 0
+    },
+    {
+      "i": 3,
+      "original": "MVME 키안티 천연가죽",
+      "milo": "밀로 패브릭소파",
+      "near_panel": 0
+    },
+    {
+      "i": 4,
+      "original": "리클라이너 4인",
+      "milo": "2인용",
+      "near_panel": 0
+    },
+    {
+      "i": 5,
+      "original": "사람의 몸이 갖고 있는 자연스러운 비례감을",
+      "milo": "사람의 몸이 갖고 있는 자연스러운 비례감을",
+      "near_panel": 0
+    },
+    {
+      "i": 6,
+      "original": "고려한 디자인으로 편안함과 아름다움을",
+      "milo": "고려한 디자인으로 편안함과 아름다움을",
+      "near_panel": 0
+    },
+    {
+      "i": 7,
+      "original": "모두 선사하는 소파입니다.",
+      "milo": "모두 선사하는 소파입니다.",
+      "near_panel": 0
+    },
+    {
+      "i": 8,
+      "original": "언제든 손쉽게 최적의 편안함을 누려보세요.",
+      "milo": "어느 공간에서도 손쉽게 포근함을 누려보세요.",
+      "near_panel": 0
+    },
+    {
+      "i": 9,
+      "original": "사람의 몸을 가장 잘 아는 소파",
+      "milo": "사람의 몸을 가장 잘 아는 소파",
+      "near_panel": 1
+    },
+    {
+      "i": 10,
+      "original": "앉았을 때 허리와 머리를 자연스럽게 받쳐줄 수 있도록",
+      "milo": "앉았을 때 허리와 등을 자연스럽게 받쳐줄 수 있도록",
+      "near_panel": 1
+    },
+    {
+      "i": 11,
+      "original": "인체의 비율을 고려해 디자인된 제품으로",
+      "milo": "인체의 비율을 고려해 디자인된 제품으로",
+      "near_panel": 1
+    },
+    {
+      "i": 12,
+      "original": "편안함은 물론 아름다운 비례감을 제공합니다.",
+      "milo": "편안함은 물론 아름다운 비례감을 제공합니다.",
+      "near_panel": 1
+    },
+    {
+      "i": 13,
+      "original": "부드러운 곡선 형태의 팔걸이는",
+      "milo": "부드러운 곡선 형태의 팔걸이는",
+      "near_panel": 1
+    },
+    {
+      "i": 14,
+      "original": "머리를 받치기에도 팔을 올리기에도 적당한 높이로",
+      "milo": "팔을 올리기에도 기대기에도 적당한 높이로",
+      "near_panel": 1
+    },
+    {
+      "i": 15,
+      "original": "디자인되어 안락함을 줍니다.",
+      "milo": "디자인되어 안락함을 줍니다.",
+      "near_panel": 1
+    },
+    {
+      "i": 16,
+      "original": "어느 각도에서 보아도 고급스러운 다릿발",
+      "milo": "어느 각도에서 보아도 세련된 메탈 다리",
+      "near_panel": 2
+    },
+    {
+      "i": 17,
+      "original": "유려한 곡선과 절제된 직선이 조화로운 다릿발은",
+      "milo": "슬림한 메탈과 절제된 직선이 조화로운 다릿발은",
+      "near_panel": 2
+    },
+    {
+      "i": 18,
+      "original": "소파의 고급스러운 실루엣을 완성해 줍니다.",
+      "milo": "소파의 모던한 실루엣을 완성해 줍니다.",
+      "near_panel": 2
+    },
+    {
+      "i": 19,
+      "original": "절개선은 최소화, 가죽의 매력은 극대화",
+      "milo": "섬세한 스티치, 패브릭의 매력은 극대화",
+      "near_panel": 3
+    },
+    {
+      "i": 20,
+      "original": "모던하고 깔끔한 절개선으로 가죽의 넓은 면을",
+      "milo": "모던하고 깔끔한 스티치로 패브릭의 넓은 면을",
+      "near_panel": 3
+    },
+    {
+      "i": 21,
+      "original": "최대한 활용하여 천연가죽의 매력을 그대로 살렸습니다.",
+      "milo": "최대한 살려 패브릭 특유의 포근함을 그대로 담았습니다.",
+      "near_panel": 3
+    },
+    {
+      "i": 22,
+      "original": "사이즈",
+      "milo": "사이즈",
+      "near_panel": 3
+    },
+    {
+      "i": 23,
+      "original": "어떤 자세든 유연하게",
+      "milo": "포근함을 더하는",
+      "near_panel": 5
+    },
+    {
+      "i": 24,
+      "original": "맞춰주는 리클라이닝",
+      "milo": "덕페더 쿠션감",
+      "near_panel": 5
+    },
+    {
+      "i": 25,
+      "original": "한샘의 오랜 노하우를 담은 AERO-MOTION 기능은",
+      "milo": "67% 덕페더와 33% 마이크로화이버가",
+      "near_panel": 5
+    },
+    {
+      "i": 26,
+      "original": "일반적인 롤러형과 달리",
+      "milo": "풍성하게 채워진 등쿠션으로",
+      "near_panel": 5
+    },
+    {
+      "i": 27,
+      "original": "유연한 관절처럼 부드러운 움직임으로",
+      "milo": "앉는 순간 몸을 부드럽게 감싸줍니다.",
+      "near_panel": 5
+    },
+    {
+      "i": 28,
+      "original": "자연스럽고 편안한 자세 변화를 도와줍니다.",
+      "milo": "미디엄 소프트 좌방석과 소프트 등쿠션의 조화로",
+      "near_panel": 5
+    },
+    {
+      "i": 29,
+      "original": "가장 편안한 자세를 기억해 주는",
+      "milo": "오랜 시간에도 편안함이 지속됩니다.",
+      "near_panel": 6
+    },
+    {
+      "i": 30,
+      "original": "메모리 시스템",
+      "milo": "32kg 고밀도 통스펀지로",
+      "near_panel": 6
+    },
+    {
+      "i": 31,
+      "original": "가장 편안함을 느끼는 각도를",
+      "milo": "탄탄한 착석감을 더했습니다.",
+      "near_panel": 6
+    },
+    {
+      "i": 32,
+      "original": "버튼 하나로 손쉽게 저장할 수 있습니다.",
+      "milo": "생활발수 폴리니크 패브릭으로",
+      "near_panel": 6
+    },
+    {
+      "i": 33,
+      "original": "최대 2가지 옵션까지 저장 가능하며,",
+      "milo": "오염 걱정 없이 관리가 쉽습니다.",
+      "near_panel": 6
+    },
+    {
+      "i": 34,
+      "original": "언제든지 초기화도 가능합니다.",
+      "milo": "OEKO-TEX, FITI, EO 인증으로",
+      "near_panel": 6
+    },
+    {
+      "i": 35,
+      "original": "전자기기를 편하게 사용할 수 있는",
+      "milo": "안심하고 사용할 수 있습니다.",
+      "near_panel": 7
+    },
+    {
+      "i": 36,
+      "original": "USB 충전 포트",
+      "milo": "튼튼한 EO 등급 건조목 프레임과",
+      "near_panel": 7
+    },
+    {
+      "i": 37,
+      "original": "양쪽 팔걸이 바깥쪽 스위치에 USB 충전 포트가 있어,",
+      "milo": "S자 스프링 구조로",
+      "near_panel": 7
+    },
+    {
+      "i": 38,
+      "original": "소파에서도 디지털 기기를 편리하게",
+      "milo": "오랜 시간에도 변형 없이",
+      "near_panel": 7
+    },
+    {
+      "i": 39,
+      "original": "충전하여 사용할 수 있습니다.",
+      "milo": "안정감 있게 사용하실 수 있습니다.",
+      "near_panel": 7
+    },
+    {
+      "i": 40,
+      "original": "다양한 각도의",
+      "milo": "다양한 각도의",
+      "near_panel": 8
+    },
+    {
+      "i": 41,
+      "original": "전동 헤드레스트",
+      "milo": "슬림한 프로필",
+      "near_panel": 8
+    },
+    {
+      "i": 42,
+      "original": "독서 및 TV, 스마트폰 사용, 휴식 등 다양한 활동을",
+      "milo": "모던한 공간, 아늑한 거실 등",
+      "near_panel": 8
+    },
+    {
+      "i": 43,
+      "original": "최적의 자세로 즐길 수 있도록 전동 헤드레스트의",
+      "milo": "어떤 인테리어에도 자연스럽게 어울리는",
+      "near_panel": 8
+    },
+    {
+      "i": 44,
+      "original": "세심한 각도 조절이 가능합니다.",
+      "milo": "슬림하고 세련된 디자인입니다.",
+      "near_panel": 8
+    },
+    {
+      "i": 45,
+      "original": "두 다리 쭉 뻗어도 걱정 없는 발받침",
+      "milo": "생활방수 패브릭으로",
+      "near_panel": 9
+    },
+    {
+      "i": 46,
+      "original": "리클라이닝 기능 작동 시,",
+      "milo": "일상 오염에도",
+      "near_panel": 9
+    },
+    {
+      "i": 47,
+      "original": "숨겨져 있던 발받침이 길게 뻗어 나와",
+      "milo": "쉽게 관리할 수 있습니다.",
+      "near_panel": 9
+    },
+    {
+      "i": 48,
+      "original": "발목까지 편안하게 받쳐줍니다.",
+      "milo": "부드러운 촉감과 내구성을",
+      "near_panel": 9
+    },
+    {
+      "i": 49,
+      "original": "MADE IN ITALY",
+      "milo": "자랑하는 패브릭",
+      "near_panel": 10
+    },
+    {
+      "i": 50,
+      "original": "이태리에서 100% 생산 공정이 이루어지는",
+      "milo": "폴리니크 패브릭은 생활발수 기능과",
+      "near_panel": 10
+    },
+    {
+      "i": 51,
+      "original": "펠레밀라노사의 천연가죽을 사용하여 만들어집니다.",
+      "milo": "OEKO-TEX 인증을 받은 안전한 소재입니다.",
+      "near_panel": 10
+    },
+    {
+      "i": 52,
+      "original": "엄격한 관리 기준과 장인들의 노하우로 생산되어",
+      "milo": "부드러운 촉감과 고급스러운 텍스처로",
+      "near_panel": 10
+    },
+    {
+      "i": 53,
+      "original": "이태리 가죽 특유의 깊이 있는 컬러와 텍스처를",
+      "milo": "오랜 시간에도 쾌적함을 유지합니다.",
+      "near_panel": 10
+    },
+    {
+      "i": 54,
+      "original": "그대로 구현했습니다.",
+      "milo": "내구성이 뛰어나며,",
+      "near_panel": 10
+    },
+    {
+      "i": 55,
+      "original": "뛰어난 내구성은 물론, 촉촉하고 부드러운",
+      "milo": "포근하고 산뜻한 터치감을 느낄 수 있습니다.",
+      "near_panel": 10
+    },
+    {
+      "i": 56,
+      "original": "터치감을 자랑합니다.",
+      "milo": "매일을 더욱 특별하게 만들어주는",
+      "near_panel": 10
+    },
+    {
+      "i": 57,
+      "original": "품질보증",
+      "milo": "품질보증",
+      "near_panel": 11
+    },
+    {
+      "i": 58,
+      "original": "세월을 견디는 뛰어난 내구성",
+      "milo": "세월을 견디는 뛰어난 내구성",
+      "near_panel": 11
+    },
+    {
+      "i": 59,
+      "original": "가죽이 마모를 잘 견딜 수 있는지,",
+      "milo": "패브릭과 내장재 모두",
+      "near_panel": 11
+    },
+    {
+      "i": 60,
+      "original": "유해하지는 않은지, 한샘만의 엄격한 품질 테스트로",
+      "milo": "엄격한 품질 테스트를 거쳐",
+      "near_panel": 11
+    },
+    {
+      "i": 61,
+      "original": "가죽의 내구성과 유해성을 철저하게 검증하여",
+      "milo": "내구성과 안전성을 꼼꼼하게 검증했습니다.",
+      "near_panel": 11
+    },
+    {
+      "i": 62,
+      "original": "오랫동안 안심하고 사용할 수 있습니다.",
+      "milo": "오랫동안 안심하고 사용할 수 있습니다.",
+      "near_panel": 11
+    },
+    {
+      "i": 63,
+      "original": "* 가죽 내마모성 테스트 통과",
+      "milo": "* 생활발수 테스트 통과",
+      "near_panel": 11
+    },
+    {
+      "i": 64,
+      "original": "* 천연가죽 유해성 테스트 통과",
+      "milo": "* OEKO-TEX, FITI, EO 인증",
+      "near_panel": 11
+    },
+    {
+      "i": 65,
+      "original": "* 폼알데하이드, 아릴아민, PFC 등 유해물질 함유량에 대해 안전기준 적합 판정",
+      "milo": "* 폼알데하이드 등 유해물질 안전기준 적합 판정",
+      "near_panel": 11
+    },
+    {
+      "i": 66,
+      "original": "안심하고 사용하는 소파",
+      "milo": "안심하고 사용하는 소파",
+      "near_panel": 11
+    },
+    {
+      "i": 67,
+      "original": "KS 품질 관리 기준 및 한샘 테스트를 모두 통과한",
+      "milo": "KS 품질 관리 기준 및 안전 테스트를 모두 통과한",
+      "near_panel": 11
+    },
+    {
+      "i": 68,
+      "original": "제품과 E0 등급의 안전한 자재를 사용하여",
+      "milo": "제품과 EO 등급의 안전한 자재를 사용하여",
+      "near_panel": 11
+    },
+    {
+      "i": 69,
+      "original": "가족 구성원 모두가 안심하고 사용할 수 있습니다.",
+      "milo": "가족 구성원 모두가 안심하고 사용할 수 있습니다.",
+      "near_panel": 11
+    },
+    {
+      "i": 70,
+      "original": "라인업",
+      "milo": "라인업",
+      "near_panel": 11
+    }
+  ]
+}

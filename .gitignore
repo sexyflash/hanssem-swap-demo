@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+templates/01_sofa_992474/swap_results/v*_2026*/gpt_image/
+templates/01_sofa_992474/swap_results/v*_2026*/summary.json

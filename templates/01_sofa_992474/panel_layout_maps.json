@@ -1,0 +1,480 @@
+{
+  "panels": [
+    {
+      "panel_class": "lifestyle_scene",
+      "spatial_layout": "sofa가 프레임 중앙에 정면으로 크게 배치되어 전체 가로의 약 70%를 차지하며, 하단 60% 영역을 점유한다. 소파 위에는 세 개의 쿠션이 좌측과 우측에 각각 놓여 있다. 소파 앞 하단 중앙에는 낮은 직사각형 원목 테이블이 위치하며, 테이블 위에는 둥근 트레이와 유리잔 두 개가 놓여 있다. 좌측 상단에는 슬림한 플로어 스탠드 조명이 세워져 있다. 배경은 좌우로 베이지색 벽, 중앙에는 짙은 우드 패널이 세로로 배치되어 있다. 우측 상단에는 검은 조각상이 작은 선반 위에 올려져 있다. 바닥에는 밝은 회색 러그가 중앙 하단에 깔려 있다. 텍스트나 그래픽 오버레이는 없다.",
+      "elements": [
+        {
+          "role": "sofa",
+          "position": "프레임 중앙 하단 60% 영역",
+          "description": "연한 베이지색 3인용 소파, 쿠션 3개 포함"
+        },
+        {
+          "role": "cushion",
+          "position": "소파 좌측, 중앙, 우측",
+          "description": "각기 다른 색상의 쿠션 3개"
+        },
+        {
+          "role": "table",
+          "position": "소파 앞 하단 중앙",
+          "description": "낮은 직사각형 원목 테이블"
+        },
+        {
+          "role": "tray",
+          "position": "테이블 위 좌측",
+          "description": "둥근 대리석 트레이"
+        },
+        {
+          "role": "glassware",
+          "position": "테이블 위 중앙",
+          "description": "유리잔 2개"
+        },
+        {
+          "role": "floor_lamp",
+          "position": "프레임 좌측 상단",
+          "description": "슬림한 플로어 스탠드 조명"
+        },
+        {
+          "role": "sculpture",
+          "position": "프레임 우측 상단",
+          "description": "작은 흑색 조각상, 선반 위"
+        },
+        {
+          "role": "rug",
+          "position": "프레임 하단 중앙",
+          "description": "밝은 회색 러그"
+        },
+        {
+          "role": "background_panel",
+          "position": "프레임 중앙 상단",
+          "description": "짙은 우드 세로 패널"
+        },
+        {
+          "role": "wall",
+          "position": "프레임 전체 배경",
+          "description": "베이지색 벽면"
+        }
+      ],
+      "text_zones": [],
+      "fixed_layout": false,
+      "swap_instruction": "sofa가 차지하는 중앙 하단 영역만 새로운 sofa로 교체하고, 나머지 테이블, 소품, 배경, 조명 등 모든 레이아웃과 소품 위치는 그대로 유지하세요.",
+      "panel": "panel_01.jpg",
+      "panel_idx": 1
+    },
+    {
+      "panel_class": "detail_close_up",
+      "spatial_layout": "이미지 전체는 소파의 하단 모서리 부분을 클로즈업으로 보여준다. 소파의 좌측 하단 60% 영역에 밝은 베이지색 가죽 소재와 스티치 디테일이 강조되어 있다. 좌측 하단에는 금속 소재의 소파 다리가 사선으로 배치되어 있으며, 다리의 그림자가 바닥에 드리워져 있다. 우측 하단에는 검은색 보조 다리가 부분적으로 보인다. 배경은 전체적으로 밝은 흰색이며, 추가적인 소품이나 텍스트, 그래픽 요소는 없다. 전체적으로 소파의 재질과 구조적 디테일에 집중된 구도이다.",
+      "elements": [
+        {
+          "role": "sofa",
+          "position": "좌측 하단~중앙, 프레임의 60% 이상",
+          "description": "밝은 베이지 가죽 소파의 하단 모서리, 스티치 디테일 포함"
+        },
+        {
+          "role": "sofa_leg",
+          "position": "좌측 하단",
+          "description": "금속 소재의 사선형 소파 다리"
+        },
+        {
+          "role": "sofa_leg",
+          "position": "우측 하단",
+          "description": "검은색 보조 다리, 부분 노출"
+        }
+      ],
+      "text_zones": [],
+      "fixed_layout": false,
+      "swap_instruction": "sofa의 하단 모서리와 다리 부분만 동일 위치와 각도로 새로운 sofa로 교체하고, 배경과 구도는 그대로 유지하세요.",
+      "panel": "panel_02.jpg",
+      "panel_idx": 2
+    },
+    {
+      "panel_class": "detail_close_up",
+      "spatial_layout": "sofa의 등받이와 팔걸이 부분이 프레임 전체를 가득 채우며, 좌측 하단에서 우측 상단 방향으로 사선으로 배치되어 있다. 등받이 쿠션이 중앙 상단에 두툼하게 위치하고, 팔걸이와 등받이의 만나는 부분이 좌측에 강조되어 있다. 표면의 질감과 스티치 라인이 좌측 상단에서 중앙 하단으로 이어진다. 배경은 매우 심플한 흰색으로, 다른 시각적 요소나 텍스트, 그래픽은 전혀 없다. 전체적으로 소파 소재와 마감 디테일에 초점을 맞춘 클로즈업 구도이다. 시선은 소파의 질감과 곡선에 집중된다.",
+      "elements": [
+        {
+          "role": "sofa",
+          "position": "프레임 전체, 좌측 하단에서 우측 상단 방향 사선 배치",
+          "description": "연한 베이지 컬러의 가죽 소파 등받이와 팔걸이, 두툼한 쿠션, 스티치 디테일"
+        }
+      ],
+      "text_zones": [],
+      "fixed_layout": false,
+      "swap_instruction": "sofa가 차지하는 전체 영역의 구도와 각도, 클로즈업 비율을 그대로 유지한 채로, 동일 위치에 새로운 sofa 디테일 이미지를 교체하세요.",
+      "panel": "panel_03.jpg",
+      "panel_idx": 3
+    },
+    {
+      "panel_class": "size_chart",
+      "spatial_layout": "소파가 패널 중앙 좌측에서 우측으로 넓게 정면 측면 각도로 배치되어 있으며, 소파 하단에는 좌측에서 우측으로 길게 치수(dim line)가 표시되어 있다. 소파 우측에는 세로로 높이 치수선이 있고, 하단에는 다릿발 높이, 좌방석 깊이, 좌방석 높이 등 추가 치수 정보가 텍스트로 나열되어 있다. 중단부에는 좌방석과 등쿠션의 착석감이 각각 수평 바 형태로 두 줄 배치되어 있고, 각 바에는 HARD부터 SOFT까지 단계별 텍스트와 중앙에 빨간색 MEDIUM 표시가 있다. 하단에는 착석감 관련 안내 문구가 좌측 정렬로 위치한다. 전체적으로 요소들이 상하로 분할되어 배치되어 있으며, 텍스트와 그래픽이 명확히 구분된다.",
+      "elements": [
+        {
+          "role": "sofa",
+          "position": "중앙 좌측~우측, 상단 40% 영역",
+          "description": "정면 측면 각도의 3인용 소파"
+        },
+        {
+          "role": "dim_line",
+          "position": "소파 하단, 좌측에서 우측으로 수평",
+          "description": "300cm, 112cm, 86cm 치수선"
+        },
+        {
+          "role": "text_label",
+          "position": "좌상단",
+          "description": "단위 : cm"
+        },
+        {
+          "role": "text_label",
+          "position": "소파 하단 중앙",
+          "description": "다릿발 높이, 좌방석 깊이, 좌방석 높이 텍스트"
+        },
+        {
+          "role": "firmness_bar",
+          "position": "중단부, 상단",
+          "description": "좌방석 착석감 바, 5단계, 중앙에 빨간 MEDIUM"
+        },
+        {
+          "role": "firmness_bar",
+          "position": "중단부, 하단",
+          "description": "등쿠션 착석감 바, 5단계, 중앙에 빨간 MEDIUM"
+        },
+        {
+          "role": "text_label",
+          "position": "중단부, 각 바 상단",
+          "description": "좌방석, 등쿠션 텍스트"
+        },
+        {
+          "role": "text_label",
+          "position": "하단",
+          "description": "* 착석감은 개인에 따라 차이가 있을 수 있습니다."
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "좌상단",
+          "content": "단위 : cm"
+        },
+        {
+          "region": "소파 하단 중앙",
+          "content": "다릿발 높이 : 12cm / 좌방석 깊이 : 55cm / 좌방석 높이 : 49cm"
+        },
+        {
+          "region": "중단부, 각 바 상단",
+          "content": "좌방석, 등쿠션"
+        },
+        {
+          "region": "firmness_bar 하단",
+          "content": "HARD, MEDIUM HARD, MEDIUM, MEDIUM SOFT, SOFT"
+        },
+        {
+          "region": "하단",
+          "content": "* 착석감은 개인에 따라 차이가 있을 수 있습니다."
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "소파가 위치한 중앙 상단~중앙 영역의 sofa region만 새로운 sofa로 교체하고, 치수선, 텍스트, firmness bar 등 나머지 모든 레이아웃과 그래픽 요소는 원본 위치와 크기를 정확히 유지하세요.",
+      "panel": "panel_04.jpg",
+      "panel_idx": 4
+    },
+    {
+      "panel_class": "detail_close_up",
+      "spatial_layout": "sofa가 프레임 전체를 가로지르며 중앙에서 우측으로 치우쳐 크게 클로즈업되어 있다. 등받이와 좌방석, 팔걸이, 그리고 하단의 리클라이너 풋레스트가 모두 명확하게 보인다. 소파 표면의 질감과 스티치 라인이 선명하게 드러나며, 우측 하단 팔걸이 부분에 작은 금속 명판이 부착되어 있다. 배경은 흐릿하게 처리되어 소파에만 초점이 맞춰져 있다. 바닥에는 회색 러그가 좌측 하단에 일부 보인다. 텍스트나 그래픽 오버레이는 존재하지 않는다.",
+      "elements": [
+        {
+          "role": "sofa",
+          "position": "프레임 중앙~우측, 전체 영역",
+          "description": "연한 그레이 가죽 소재, 리클라이너 기능이 펼쳐진 상태, 헤드레스트와 팔걸이 포함"
+        },
+        {
+          "role": "room_props",
+          "position": "좌측 하단",
+          "description": "회색 러그 일부 노출"
+        },
+        {
+          "role": "badge",
+          "position": "우측 하단 팔걸이",
+          "description": "작은 금속 명판"
+        }
+      ],
+      "text_zones": [],
+      "fixed_layout": false,
+      "swap_instruction": "sofa가 차지하는 중앙~우측 클로즈업 영역만 새로운 sofa로 교체하고, 배경과 러그, 명판 위치 등 나머지 레이아웃은 그대로 유지하세요.",
+      "panel": "panel_05.jpg",
+      "panel_idx": 5
+    },
+    {
+      "panel_class": "detail_close_up",
+      "spatial_layout": "sofa가 프레임 전체를 가득 채우며, 좌측 하단에서 우측 상단 방향으로 사선으로 배치되어 있다. 등받이와 헤드레스트 부분이 화면 중앙에서 우측 상단에 걸쳐 클로즈업되어 강조된다. 헤드레스트는 오른쪽 상단에 돌출되어 있고, 등받이와 좌석 쿠션이 화면 중앙과 좌측 하단을 차지한다. 배경은 우측 상단에 벽면과 커튼 일부가 보이며, 전체적으로 소파 외에는 다른 오브젝트가 없다. 텍스트나 그래픽 오버레이는 존재하지 않는다.",
+      "elements": [
+        {
+          "role": "sofa",
+          "position": "프레임 전체, 좌하단에서 우상단 사선 배치",
+          "description": "연한 그레이 가죽 소재, 헤드레스트가 돌출된 형태로 클로즈업"
+        },
+        {
+          "role": "room_props",
+          "position": "우측 상단 배경",
+          "description": "연한 베이지 벽면과 갈색 커튼 일부"
+        }
+      ],
+      "text_zones": [],
+      "fixed_layout": false,
+      "swap_instruction": "sofa가 차지하는 전체 영역만 동일한 각도와 위치로 새로운 sofa로 교체하고, 배경 및 구도는 그대로 유지하세요.",
+      "panel": "panel_06.jpg",
+      "panel_idx": 6
+    },
+    {
+      "panel_class": "detail_close_up",
+      "spatial_layout": "이미지 전체는 소파의 가죽 표면을 매우 근접하게 촬영한 클로즈업이다. 중앙부에 직사각형 금속 패널이 가로로 배치되어 있으며, 패널에는 좌우로 일렬로 배열된 버튼들과 USB 포트가 있다. 버튼들은 패널의 중앙에서 우측까지 고르게 분포되어 있고, 각 버튼 주위에는 푸른색 조명이 은은하게 빛난다. 가죽 표면의 스티치 라인이 좌측 상단에서 우측 하단으로 사선으로 지나가며, 패널은 이미지 중앙에서 약간 하단에 위치한다. 텍스트는 버튼 위에 작게 각인되어 있으나, 전체적으로 텍스트 영역은 미미하다. 배경은 모두 동일한 베이지색 가죽 질감으로 채워져 있다.",
+      "elements": [
+        {
+          "role": "sofa",
+          "position": "전체 배경",
+          "description": "베이지색 가죽 질감의 소파 표면, 스티치 라인 포함"
+        },
+        {
+          "role": "control_panel",
+          "position": "중앙 하단",
+          "description": "금속 재질의 직사각형 패널, 버튼과 USB 포트 포함"
+        },
+        {
+          "role": "button",
+          "position": "패널 중앙~우측",
+          "description": "푸른 조명이 들어온 원형/타원형 버튼 5개"
+        },
+        {
+          "role": "usb_port",
+          "position": "패널 좌측",
+          "description": "패널 맨 왼쪽에 위치한 USB 포트"
+        },
+        {
+          "role": "stitch_line",
+          "position": "좌상단→우하단 사선",
+          "description": "가죽 표면을 가로지르는 스티치 라인"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "버튼 표면",
+          "content": "HOT, KIZI, HOME 등(작은 각인, 판독 어려움)"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "sofa의 가죽 표면과 control panel, 버튼, 스티치 라인의 위치와 각도를 그대로 유지한 채, sofa의 질감과 색상만 새로운 sofa로 교체하세요.",
+      "panel": "panel_07.jpg",
+      "panel_idx": 7
+    },
+    {
+      "panel_class": "detail_close_up",
+      "spatial_layout": "소파가 프레임 중앙에서 좌측 80% 영역을 가로지르며 측면(옆모습)으로 크게 배치되어 있다. 소파의 등받이와 팔걸이, 좌방석, 다리 등 주요 디테일이 명확하게 드러난다. 소파 중간 좌측에 금속 재질의 브랜드 플레이트가 부착되어 있다. 배경은 완전히 흰색으로, 다른 오브젝트나 텍스트, 그래픽 요소는 존재하지 않는다. 소파 하단에는 금속 다리가 좌우로 두 개씩 보인다. 전체적으로 제품의 소재와 마감, 구조적 특징이 강조된 단일 오브젝트 클로즈업이다.",
+      "elements": [
+        {
+          "role": "sofa",
+          "position": "프레임 중앙~좌측 80% 영역, 측면(옆모습) 전체",
+          "description": "짙은 회색 가죽 소파, 등받이와 팔걸이, 좌방석, 금속 다리, 브랜드 플레이트 포함"
+        },
+        {
+          "role": "brand_plate",
+          "position": "소파 측면 중앙 좌측",
+          "description": "은색 금속 재질의 브랜드 플레이트"
+        }
+      ],
+      "text_zones": [],
+      "fixed_layout": true,
+      "swap_instruction": "소파가 차지하는 동일 위치와 크기의 영역에만 새로운 소파를 측면(옆모습)으로 교체 삽입하고, 배경 및 브랜드 플레이트 등 나머지 레이아웃은 그대로 유지하세요.",
+      "panel": "panel_08.gif",
+      "panel_idx": 8
+    },
+    {
+      "panel_class": "detail_close_up",
+      "spatial_layout": "소파의 좌측 하단 60% 영역에 리클라이너 좌석이 정면에서 측면으로 크게 클로즈업되어 있다. 등받이와 팔걸이가 프레임 상단과 좌측에 걸쳐 부드럽게 이어지며, 하단에는 리클라이너의 금속 다리와 기계 구조가 일부 노출되어 있다. 소파 표면의 질감과 스티치 디테일이 중앙과 우측 하단에 뚜렷하게 보인다. 배경은 완전히 흰색으로, 다른 가구나 소품, 텍스트, 그래픽 요소는 전혀 없다. 전체적으로 소파의 재질과 구조적 디테일에 집중된 구도이다.",
+      "elements": [
+        {
+          "role": "sofa",
+          "position": "좌측 하단 60%~중앙, 프레임 전체",
+          "description": "리클라이너 기능이 펼쳐진 밝은 베이지 가죽 소파, 팔걸이와 등받이, 좌석, 금속 다리 및 기계 구조 일부 노출"
+        }
+      ],
+      "text_zones": [],
+      "fixed_layout": false,
+      "swap_instruction": "sofa가 차지하는 영역과 각도, 클로즈업 구도를 그대로 유지한 채로, 해당 영역의 소파만 새로운 sofa로 교체하세요.",
+      "panel": "panel_09.jpg",
+      "panel_idx": 9
+    },
+    {
+      "panel_class": "detail_close_up",
+      "spatial_layout": "이미지 전체에 소파의 가죽 표면이 매우 근접하게 촬영되어 화면을 가득 채우고 있다. 중앙에서 약간 위쪽에 등받이와 좌방석의 경계선이 수평으로 길게 위치한다. 화면의 상단, 하단, 좌우 모두 동일한 소재와 질감이 연속적으로 이어진다. 별도의 텍스트, 아이콘, 그래픽 요소는 전혀 보이지 않는다. 전체적으로 단일 소재의 질감과 색상이 강조되어 있다. 프레임 내에 다른 가구나 배경, 소품 등은 포함되어 있지 않다.",
+      "elements": [
+        {
+          "role": "sofa",
+          "position": "프레임 전체, 중앙에서 약간 위쪽에 등받이와 좌방석 경계선",
+          "description": "연한 베이지색 가죽 소재의 소파 표면, 질감이 뚜렷하게 보임"
+        }
+      ],
+      "text_zones": [],
+      "fixed_layout": false,
+      "swap_instruction": "프레임 전체를 동일한 각도와 근접도로 촬영된 새 소파의 소재 클로즈업으로 교체하되, 경계선 위치와 질감 강조 구도를 그대로 유지하세요.",
+      "panel": "panel_10.jpg",
+      "panel_idx": 10
+    },
+    {
+      "panel_class": "structure_chart",
+      "spatial_layout": "sofa가 panel 상단 60% 영역에 정면에서 약간 우측 사선으로 크게 배치되어 있다. 소파 표면에는 사선 해칭과 점선으로 특정 부위가 강조되어 있으며, 우측 하단에는 '플렉싱 가죽 적용범위'라는 원형 점선 아이콘과 텍스트가 소파 옆에 위치한다. 하단 40% 영역에는 가로로 긴 표가 배치되어 있으며, 각 행마다 좌측에 항목명, 우측에 상세 설명이 정렬되어 있다. 표는 얇은 가로선으로 구분되어 있으며, 전체적으로 중앙 정렬된 느낌이다. 텍스트는 소파 하단과 표 내부에 집중되어 있다. 전체적으로 여백이 넉넉하게 배치되어 있다.",
+      "elements": [
+        {
+          "role": "sofa",
+          "position": "상단 중앙~우측, panel의 약 60% 차지",
+          "description": "정면에서 약간 우측 사선으로 배치된 4인용 소파, 표면에 해칭 및 점선 강조"
+        },
+        {
+          "role": "dim_line",
+          "position": "소파 표면",
+          "description": "플렉싱 가죽 적용범위 표시를 위한 점선 및 해칭"
+        },
+        {
+          "role": "icon",
+          "position": "소파 우측 하단",
+          "description": "원형 점선 아이콘"
+        },
+        {
+          "role": "text_label",
+          "position": "소파 우측 하단",
+          "description": "'플렉싱 가죽 적용범위' 텍스트"
+        },
+        {
+          "role": "chart_region",
+          "position": "하단 40% 영역",
+          "description": "가로로 긴 6행 표, 각 행은 항목명과 설명으로 구성"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "소파 우측 하단",
+          "content": "플렉싱 가죽 적용범위"
+        },
+        {
+          "region": "하단 표",
+          "content": "마감재: 이태리 펠레밀라노 사 1.3~1.5mm 천연 소가죽 + PVC\n좌방석: 고밀도 스펀지, 메모리폼, 한샘 발받침 리클라이너 하드웨어\n등쿠션: 스펀지\n헤드레스트: 스펀지, 한샘헤드틸팅 하드웨어\n프레임: EO 건조목 프레임, S자 스프링 (*스카이그레이 컬러만 하이브리드 패널 적용)\n다릿발: 스틸, 플라스틱"
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "상단 소파 영역만 동일한 각도와 위치, 크기로 새로운 sofa로 교체하고, 해칭/점선 강조와 하단 표 및 텍스트, 아이콘 등 나머지 레이아웃은 그대로 유지하세요.",
+      "panel": "panel_11.jpg",
+      "panel_idx": 11
+    },
+    {
+      "panel_class": "module_lineup",
+      "spatial_layout": "상단 좌측에는 3인용 소파 이미지가, 상단 우측에는 4인용 소파 이미지가 각각 정면으로 배치되어 있습니다. 각 소파 이미지 아래에는 해당 모델명과 크기(가로 X 세로 X 높이)가 텍스트로 명확히 표기되어 있습니다. 중단부에는 '컬러'라는 굵은 제목 텍스트가 좌측 상단에 위치합니다. 하단에는 세 가지 색상 스와치(그레이, 도브그레이, 스카이그레이)가 좌에서 우로 나란히 정사각형 형태로 배치되어 있고, 각 스와치 아래에 색상명이 텍스트로 표시됩니다. 맨 하단에는 작은 주의 문구가 좌측 하단에 위치합니다. 전체적으로 요소들이 좌우 균형 있게 정렬되어 있으며, 텍스트와 이미지가 명확히 분리되어 있습니다.",
+      "elements": [
+        {
+          "role": "sofa",
+          "position": "상단 좌측",
+          "description": "3인용 소파, 정면"
+        },
+        {
+          "role": "sofa",
+          "position": "상단 우측",
+          "description": "4인용 소파, 정면"
+        },
+        {
+          "role": "text_label",
+          "position": "상단 좌측 소파 하단",
+          "description": "키안티 가죽 3인, 221 X 112 X 86"
+        },
+        {
+          "role": "text_label",
+          "position": "상단 우측 소파 하단",
+          "description": "키안티 가죽 4인, 300 X 112 X 86"
+        },
+        {
+          "role": "text_label",
+          "position": "상단 좌측",
+          "description": "너비 단위 : cm"
+        },
+        {
+          "role": "text_label",
+          "position": "중단 좌측",
+          "description": "컬러 (섹션 제목)"
+        },
+        {
+          "role": "color_swatch",
+          "position": "하단 좌측",
+          "description": "그레이 색상 스와치"
+        },
+        {
+          "role": "color_swatch",
+          "position": "하단 중앙",
+          "description": "도브그레이 색상 스와치"
+        },
+        {
+          "role": "color_swatch",
+          "position": "하단 우측",
+          "description": "스카이그레이 색상 스와치"
+        },
+        {
+          "role": "text_label",
+          "position": "각 스와치 하단",
+          "description": "각 색상명"
+        },
+        {
+          "role": "text_label",
+          "position": "맨 하단 좌측",
+          "description": "* 디스플레이마다 색상 표현의 차이가 있을 수 있습니다."
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "상단 좌측",
+          "content": "너비 단위 : cm"
+        },
+        {
+          "region": "상단 좌측 소파 하단",
+          "content": "키안티 가죽 3인\n221 X 112 X 86"
+        },
+        {
+          "region": "상단 우측 소파 하단",
+          "content": "키안티 가죽 4인\n300 X 112 X 86"
+        },
+        {
+          "region": "중단 좌측",
+          "content": "컬러"
+        },
+        {
+          "region": "하단 좌측",
+          "content": "그레이"
+        },
+        {
+          "region": "하단 중앙",
+          "content": "도브그레이"
+        },
+        {
+          "region": "하단 우측",
+          "content": "스카이그레이"
+        },
+        {
+          "region": "맨 하단 좌측",
+          "content": "* 디스플레이마다 색상 표현의 차이가 있을 수 있습니다."
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "상단 좌측과 우측의 sofa 이미지 영역만 새로운 sofa로 교체하고, 나머지 텍스트와 색상 스와치, 전체 배치와 비율은 정확히 유지하세요.",
+      "panel": "panel_12.jpg",
+      "panel_idx": 12
+    },
+    {
+      "panel_class": "intro_hero",
+      "spatial_layout": "sofa가 panel 중앙 하단 70% 영역에 정면으로 넓게 배치되어 있습니다. 소파는 좌우로 길게 뻗어 있으며, 등받이와 팔걸이, 좌석이 모두 명확하게 보입니다. 배경은 완전히 흰색으로, 다른 시각적 요소나 오브젝트, 텍스트, 장식이 전혀 없습니다. 소파 하단에는 약간의 그림자가 드리워져 입체감을 줍니다. 상단 30% 영역은 완전히 비어 있으며, 전체적으로 미니멀하고 집중된 구성이 특징입니다.",
+      "elements": [
+        {
+          "role": "sofa",
+          "position": "panel 중앙 하단 70%",
+          "description": "베이지색 3인용 소파, 우측 등받이 헤드레스트가 올라가 있음"
+        }
+      ],
+      "text_zones": [],
+      "fixed_layout": false,
+      "swap_instruction": "sofa가 차지하는 중앙 하단 70% 영역만 새로운 sofa로 교체하고, 배경과 전체 레이아웃은 그대로 유지하세요.",
+      "panel": "cover",
+      "panel_idx": 0
+    }
+  ]
+}

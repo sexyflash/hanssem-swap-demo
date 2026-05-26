@@ -1,0 +1,495 @@
+{
+  "gds_no": 777039,
+  "meta": {
+    "gds_no": 777039,
+    "gds_nm": "밀로 패브릭소파 3인용(3종/택1)",
+    "brand": "한샘",
+    "categories": [
+      null,
+      null,
+      null
+    ],
+    "description": "한샘 패브릭 소파. 폭신한 착석감과 감각적인 디자인 소파로, 관리가 편하고 안전한 기능성 패브릭 원단으로 안심하고 사용하세요.",
+    "keywords": [
+      "소파",
+      "패브릭소파",
+      "한샘소파",
+      "한샘밀로",
+      "거실소파",
+      "3인용소파",
+      "3인소파",
+      "밀로소파",
+      "한샘패브릭소파",
+      "쇼파",
+      "패브릭쇼파",
+      "한샘쇼파",
+      "3인쇼파",
+      "3인용쇼파"
+    ],
+    "panel_count": 18,
+    "panel_paths": [
+      "panel_01.jpg",
+      "panel_02.jpg",
+      "panel_03.jpg",
+      "panel_04.jpg",
+      "panel_05.jpg",
+      "panel_06.jpg",
+      "panel_07.jpg",
+      "panel_08.gif",
+      "panel_09.jpg",
+      "panel_10.jpg",
+      "panel_11.jpg",
+      "panel_12.jpg",
+      "panel_13.jpg",
+      "panel_14.jpg",
+      "panel_15.jpg",
+      "panel_16.jpg",
+      "panel_17.jpg",
+      "panel_18.jpg"
+    ],
+    "gif_panels": [
+      8
+    ],
+    "text_nodes_in_detail_html": [
+      "/* ------------------------------\nweb font\n------------------------------ */\n/* 프리텐다드 웹폰트*/\n\n/*\nCopyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.\nhttps://github.com/orioncactus/pretendard\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is copied below, and is also available with a FAQ at:\nhttp://scripts.sil.org/OFL\n*/\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:900;\n\tfont-display:swap;\n\tsrc:local('Pretendard Black'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Black.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Black.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:800;\n\tfont-display:swap;\n\tsrc:local('Pretendard ExtraBold'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraBold.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraBold.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:700;\n\tfont-display:swap;\n\tsrc:local('Pretendard Bold'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Bold.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Bold.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:600;\n\tfont-display:swap;\n\tsrc:local('Pretendard SemiBold'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-SemiBold.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-SemiBold.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:500;\n\tfont-display:swap;\n\tsrc:local('Pretendard Medium'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Medium.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Medium.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:400;\n\tfont-display:swap;\n\tsrc:local('Pretendard Regular'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Regular.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Regular.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:300;\n\tfont-display:swap;\n\tsrc:local('Pretendard Light'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Light.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Light.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:200;\n\tfont-display:swap;\n\tsrc:local('Pretendard ExtraLight'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraLight.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraLight.subset.woff') format('woff');\n}\n\n@font-face {\n\tfont-family:'Pretendard';\n\tfont-weight:100;\n\tfont-display:swap;\n\tsrc:local('Pretendard Thin'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Thin.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Thin.subset.woff') format('woff');\n}\n\n.sec-comp {padding:24px 0;font-family:'Pretendard',sans-serif;font-size:12px;line-height:1.4;font-weight:400;color:#121212;word-break:break-all;word-wrap:break-word;}\n.sec-comp * {margin:0;padding:0;}\n.sec-comp img {vertical-align:top;border:0;}\n.sec-comp a {text-decoration:none;color:#121212;-webkit-tap-highlight-color:transparent}\n.sec-comp a:active {text-decoration:none;}\n.sec-comp a:visited {text-decoration:none;}\n.sec-comp a:hover {text-decoration:none;}\n.sec-comp a:focus {text-decoration:none;}\n.sec-comp fieldset {border:0;}\n.sec-comp input {font-family:inherit;line-height:inherit;-webkit-appearance:none;-moz-appearance:none;appearance:none;}\n.sec-comp input::-webkit-search-cancel-button {display:none;}\n.sec-comp _::-webkit-full-page-media, _:future, :root input:disabled {opacity:1;}\n.sec-comp input:focus {outline:none;}\n.sec-comp textarea {display:block;box-sizing:border-box;width:100%;padding:10px;border:1px solid #e2e2e2;background-color:#fff;font-family:'Pretendard',sans-serif;font-size:1.4rem;color:#121212;resize:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px solid #dfdfdf;border-radius:0;}\n.sec-comp textarea:focus {outline:none;position:relative;z-index:1;border:1px solid #ff3a69;color:#121212;}\n.sec-comp _::-webkit-full-page-media, _:future, :root textarea:disabled {opacity:1;} \n.sec-comp select:focus {outline:none;}\n.sec-comp table {border:0 none;border-spacing:0;border-collapse:collapse;}\n.sec-comp ul {list-style:none;}\n.sec-comp ol {list-style-position:outside;margin:0;padding:0 0 0 15px;}\n.sec-comp ol li {margin:0;padding:0;}\n.sec-comp button {background:none;border:none;cursor:pointer;outline:none;font-family:'Pretendard';color:#121212;touch-action:manipulation;-webkit-tap-highlight-color:transparent}\n.sec-comp iframe {border:0;}\n.sec-comp label {-webkit-tap-highlight-color:transparent}\n\n.sec-comp .subhead {display:block;padding:16px 20px;font-size:15px;font-weight:500;}\n.sec-comp .cont-txt {padding:8px 20px;}\n.sec-comp .cont-txt h2 {font-size:30px;font-weight:500;line-height:1.2;}\n.sec-comp .cont-txt h2 b {font-weight:bold;}\n.sec-comp .cont-txt h2 i {font-style:italic;}\n.sec-comp .cont-txt h3 {font-size:18px;font-weight:500;}\n.sec-comp .cont-txt h3 b {font-weight:bold;}\n.sec-comp .cont-txt h3 i {font-style:italic;}\n.sec-comp .cont-txt h6 {font-size:11px;font-weight:300;}\n.sec-comp .cont-txt h6 b {font-weight:bold;}\n.sec-comp .cont-txt h6 i {font-style:italic;}\n.sec-comp .cont-txt p {font-size:15px;line-height:1.5;color:#121212;font-weight:300;}\n.sec-comp .cont-txt p b {font-weight:bold;}\n.sec-comp .cont-txt p i {font-style:italic;}\n.sec-comp .img-box {padding:16px 0;}\n.sec-comp .img-box img {display:block;width:100%;height:auto;}\n.sec-comp .img-box picture {display:block;margin:10px 0 0 0;}\n.sec-comp .img-box picture:first-child {margin-top:0;}\n.sec-comp .flex-tbl {margin:20px 20px 0;display:flex;flex-wrap:wrap;border-top:1px solid #121212;}\n.sec-comp .flex-tbl:only-child {margin:auto 16px;}\n.sec-comp .flex-tbl .th {padding:16px;font-size:13px;display:flex;align-items:center;border-bottom:1px solid #efefef;box-sizing:border-box;flex:0 0 100px;background:#f6f6f6;font-weight:400;color:#666;}\n.sec-comp .flex-tbl .td {padding:16px;font-size:13px;display:flex;align-items:center;border-bottom:1px solid #efefef;box-sizing:border-box;flex-basis:calc(100% - 100px);color:#121212;}\n.sec-comp .keyword-list {padding:8px 20px 24px;display:flex;flex-wrap:wrap;gap:8px;}\n.sec-comp .keyword-list span {border-radius:2px;padding:4px 6px;background:#f6f6f6;color:#121212;text-decoration:none;font-size:10px;}\n.sec-comp .tbl {margin:20px auto 0;width:calc(100% - 40px);border-collapse:collapse;}\n.sec-comp .tbl:only-child {margin:auto;}\n.sec-comp .tbl th,\n.sec-comp .tbl td {padding:16px;width:25%;height:50px;border-bottom:1px solid #efefef;vertical-align:middle;font-size:13px;text-align:left;box-sizing:border-box;line-height:normal;}\n.sec-comp .tbl th {background:#f6f6f6;color:#666;font-weight:400;}\n.sec-comp .tbl td {color:#121212;word-break:break-all;}\n.sec-comp .tbl thead th {border-top:1px solid #121212;}\n.sec-comp .cont-vid {padding:16px 0;position:relative;}\n.sec-comp .cont-vid video {display:block;width:100%;}\n.sec-comp .cont-vid.vertical {width:64vw;margin:0 auto;}\n.sec-comp .cont-vid .play-btn {position:absolute;top:16px;bottom:16px;left:0;right:0;margin:auto;font-size:0;color:transparent;border:none;background:none;}\n.sec-comp .cont-vid .play-btn::before {width:48px;height:48px;content:'';position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;opacity:0;background:url(https://image2.hanssem.com/hsmall/store/mo/images/editor/play-btn.png) center / contain no-repeat;transition:.4s}\n.sec-comp .cont-vid .play-btn.active::before {opacity:1;}\n\n/* mo */\n@media (max-width:750px) {\n.sec-comp {max-width:100vw;}\n}\n\n/* pc */\n@media (min-width:750px) {\n.sec-comp {padding:40px 0;}\n.sec-comp .subhead {padding:16px 0;font-size:16px;font-weight:500;}\n.sec-comp .cont-txt {padding:4px 0;}\n.sec-comp .cont-txt h2 {font-size:32px;font-weight:700;line-height:1.4;}\n.sec-comp .cont-txt h3 {font-size:24px;font-weight:500;}\n.sec-comp .cont-txt h6 {font-size:16px;font-weight:400;}\n.sec-comp .cont-txt p {font-size:20px;line-height:1.4;font-weight:400;}\n.sec-comp .img-box {padding:30px 0;}\n.sec-comp .cont-vid {padding:30px 0;width:100%;}\n.sec-comp .cont-vid .play-btn {top:30px;bottom:30px;}\n.sec-comp .cont-vid .play-btn::before {width:72px;height:72px;}\n.sec-comp .keyword-list {padding:8px 0 24px;}\n.sec-comp .keyword-list span {font-size:12px;}\n.sec-comp .tbl {width:100%;margin-top:40px;}\n.sec-comp .tbl:only-child {margin-top:0;}\n.sec-comp .tbl th,\n.sec-comp .tbl td {padding:14px 20px;}\n.sec-comp .flex-tbl {margin:40px 0 0;}\n.sec-comp .flex-tbl:only-child {margin:0;}\n.sec-comp .flex-tbl .th {padding:14px 20px;font-size:14px;}\n.sec-comp .flex-tbl .td {padding:14px 20px;font-size:14px;}\n}\n  @font-face {\n                 font-family: 'wecandeoIcon';\n                 src: url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.eot?46ypa');\n                 src: url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.eot?46ypa#iefix') format('embedded-opentype'), url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.ttf?46ypa') format('truetype'), url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.woff?46ypa') format('woff'), url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.svg?46ypa#wecandeoIcon') format('svg');\n                 font-weight: normal;\n                 font-style: normal;\n             }\n         \n             .sec-comp .view-area .play-btn {\n                 position: absolute;\n                 top: 0;\n                 bottom: 0;\n                 left: 0;\n                 right: 0;\n                 margin: auto;\n                 font-size: 0;\n                 color: transparent;\n                 border: none;\n                 background: transparent;\n             }\n         \n             .sec-comp .view-area .play-btn::before {\n                 content: \"\"\\e918\"\";\n                 font-family: wecandeoIcon;\n                 font-size: 96px;\n                 color: transparent;\n                 transition: .4s\n             }\n         \n             .sec-comp .view-area .play-btn.active::before {\n                 color: #fff\n             }",
+      "document.addEventListener(\"DOMContentLoaded\", function() {\n\t\tvar videoElements = document.querySelectorAll('.cont-vid video');\n\t\t\n\t\t// 비디오 재생 버튼\n\t\tvideoElements.forEach(function(el) {\n\t\t\tvar playBtn = el.nextElementSibling;\n\n\t\t\tplayBtn.addEventListener('click', function() {\n\t\t\t\tif (playBtn.classList.contains(\"active\")) {\n\t\t\t\t\tel.play();\n\t\t\t\t\tplayBtn.innerHTML = \"일시정지\";\n\t\t\t\t\tplayBtn.classList.toggle(\"active\");\n\t\t\t\t} else {\n\t\t\t\t\tel.pause();\n\t\t\t\t\tplayBtn.innerHTML = \"재생\";\n\t\t\t\t\tplayBtn.classList.toggle(\"active\");\n\t\t\t\t}\n\t\t\t});\n\n\t\t\tel.addEventListener('ended', function() {\n\t\t\t\tplayBtn.innerHTML = \"재생\";\n\t\t\t\tplayBtn.classList.toggle(\"active\");\n\t\t\t});\n\t\t});\n\n\t\t// 세로 동영상 검출\n\t\tfor (var i = 0; i < videoElements.length; i++) {\n\t\t\tconst el = videoElements[i];\n\n\t\t\tel.onloadeddata = function() {\n\t\t\t\tif (el.videoHeight > el.videoWidth) {\n\t\t\t\t\tel.parentElement.classList.add('vertical');\n\t\t\t\t}\n\t\t\t};\n\t\t}\n\n\t});",
+      "기본정보",
+      "사이즈",
+      "디자인",
+      "밝고 따뜻한 거실을",
+      "만들어줄 아늑하고",
+      "편안한 디자인",
+      "뉴트럴 패브릭의 감성 실루엣",
+      "뉴트럴한 컬러의 부드러운 패브릭과",
+      "덕페더 내장으로, 패브릭 소파의 포근하고",
+      "내추럴한 감성을 더욱 높였습니다.",
+      "덕페더의 풍성함",
+      "덕페더로 넉넉하게 채운",
+      "풍성한 쿠션감의 등쿠션과",
+      "팔걸이가 있어 포근합니다.",
+      "더블엣지 아웃라인",
+      "쿠션의 모서리는 더블 엣지로 마감하여,",
+      "디테일한 디자인 포인트를 주었습니다.",
+      "깔끔한 마감",
+      "거실 중앙에 소파를 배치해도",
+      "소파 뒷면이 패브릭으로 마감되어",
+      "깔끔한 라운지 공간을 연출하실 수 있습니다.",
+      "고밀도 통스펀지와",
+      "덕페더가 만나 완성된",
+      "완벽한 착석감",
+      "고급 내장제 덕패더의",
+      "독보적인 쿠션감",
+      "하루종일 피곤했던 나의 어깨를",
+      "포근한 덕페더 쿠션이 안아주고,",
+      "고밀도 스펀지가 내장된 탄탄한 좌방석이",
+      "전신을 편안하게 받쳐줍니다.",
+      "덕페더 + 고밀도 통스펀지 2중 결합체",
+      "고밀도 통스펀지 위에 덕페더와 화이버가 더해져",
+      "탄탄하면서도 부드러워, 완벽한 착석감을 완성합니다.",
+      "등쿠션, 팔걸이 쿠션은 덕페더와 화이버로",
+      "푹신하게 몸을 감싸주고,",
+      "좌방석 쿠션은 오래 편히 앉을 수 있도록",
+      "탄탄히 받쳐주어 편안합니다.",
+      "고밀도 통스펀지로 2배 더 강력한 복원력",
+      "같은 힘(980N)을 가했을 때 꺼지는 평균값이",
+      "3단 샌드위치 스펀지는 14.5mm 반면,",
+      "통스펀지는 5.7mm로 2배 이상 강한 결과를 보여",
+      "강력한 복원력을 보여줍니다.",
+      "손세탁이 가능한 패브릭",
+      "등쿠션, 좌방석와 팔걸이 쿠션 커버 모두",
+      "별도 손세탁 할 수 있습니다.",
+      "좌방석과 팔걸이 쿠션은 연결되어 있으므로",
+      "프레임을 제외한  몸에 닿는",
+      "모든 부위 세탁이 가능합니다.",
+      "*손세탁만 가능하며, 세탁기 및 건조기 사용은 불가합니다.",
+      "관리가 쉽고 안전한",
+      "부드러운 폴리니크 패브릭",
+      "유럽 친환경 인증 소재",
+      "약 100여가지에 달하는",
+      "다양한 상황별 유해성 테스트를 통과해",
+      "OEKO TEX STANDARD 100을 부여받았습니다.",
+      "커버링, 손세탁이 가능한",
+      "생활발수 기능성 패브릭",
+      "생활발수 기능으로 오염물이 바로 흡수되지 않고",
+      "흘러내려 손쉬운 관리가 가능합니다.",
+      "*발수처리가 된 패브릭이나 장시간 오염물을 방치할 경우",
+      "흡수될 수 있습니다.",
+      "흡수되지 않도록 액체를 흘린 후 가급적 빠른 시간 내에",
+      "닦아내 주시길 바라며, 유성매직, 기름 등 화학성분이",
+      "들어있는 액체는 지워지지 않습니다.",
+      "부드럽지만 강한 내구성으로",
+      "믿고 사용할 수 있는 안전한 패브릭",
+      "엄격한 성분테스트와 필링테스트, 마찰견뢰도,",
+      "땀견뢰도, 세탁견뢰도 테스트를 모두 통과한 패브릭으로",
+      "아이가 있는 집도 걱정없이 안전하게 사용하세요.",
+      "품질보증",
+      "자재상세",
+      "주의사항"
+    ],
+    "price": {
+      "normal": 845000,
+      "dc": 699000
+    },
+    "url": "https://store.hanssem.com/goods/777039"
+  },
+  "spec": {
+    "product_name": "밀로 패브릭소파 2인용",
+    "seat_count": 2,
+    "dimensions": {
+      "width_cm": 200,
+      "depth_cm": 90,
+      "height_cm": 85,
+      "seat_height_cm": 45,
+      "arm_height_cm": 57,
+      "seat_depth_cm": 52
+    },
+    "material": {
+      "upholstery": "폴리니크 패브릭 (생활발수 기능성 패브릭)",
+      "upholstery_certifications": [
+        "OEKO-TEX STANDARD 100",
+        "FITI 유해성 시험 통과",
+        "EO 등급 자재"
+      ],
+      "seat_cushion": "32kg 고밀도 통스펀지 + 덕페더(오리털 67%) + 마이크로화이버(33%)",
+      "back_cushion": "덕페더(오리털 67%) + 마이크로화이버(33%)",
+      "cushion_firmness": "좌방석: 미디엄 소프트 / 등받이: 소프트",
+      "frame": "EO 건조목, S자 스프링, 엘라스틱벨트, 스틸 다릿발"
+    },
+    "colors": [
+      "오트밀",
+      "라이트그레이",
+      "더스티로즈"
+    ],
+    "warranty": "품질보증 제공 (상세 내용 별도 문의)",
+    "key_features": [
+      "덕페더 내장으로 포근한 착석감",
+      "생활발수 기능성 패브릭",
+      "손세탁 가능한 커버",
+      "고밀도 통스펀지 적용",
+      "OEKO-TEX 인증 원단",
+      "안전한 EO 등급 자재",
+      "스틸 다릿발",
+      "미디엄 소프트 좌방석, 소프트 등쿠션"
+    ],
+    "ko_summary": "밀로 패브릭소파 3인용은 덕페더와 고밀도 통스펀지로 완성된 포근하고 탄탄한 착석감을 제공합니다. 생활발수 기능성 패브릭과 손세탁 가능한 커버로 관리가 쉽고, OEKO-TEX 및 EO 등급 자재로 안전하게 사용할 수 있습니다."
+  },
+  "visual": {
+    "seat_count": 2,
+    "silhouette": "rectangular with soft, overstuffed cushions and slim, straight arms",
+    "arm": {
+      "shape": "rectangular",
+      "height_relative": "slightly lower than back cushions"
+    },
+    "back": {
+      "cushion_count": 2,
+      "shape": "rectangular with a relaxed, overstuffed appearance",
+      "attached_or_loose": "loose",
+      "headrest": false
+    },
+    "seat": {
+      "cushion_count": 2,
+      "depth": "deep",
+      "firmness": "soft"
+    },
+    "upholstery": {
+      "material": "fabric",
+      "texture": "smooth, slightly textured",
+      "seams": "visible piping seams along edges",
+      "primary_color": "light beige"
+    },
+    "legs": {
+      "count": 4,
+      "shape": "slim cylindrical",
+      "color": "black"
+    },
+    "decorative_pillows": {
+      "count": 0,
+      "shape": "none"
+    },
+    "decorative_elements": "piping seams on arms and cushions",
+    "full_visual_paragraph": "This Korean fabric sofa features a clean, rectangular silhouette with slim, straight arms that are slightly lower than the plush back cushions. The sofa has two deep, soft seat cushions and two large, loose back cushions, all with visible piping seams that add subtle definition to the edges. Upholstered in a light beige fabric with a smooth, slightly textured finish, the sofa exudes a minimalist yet inviting look. The arms and back are boxy and structured, contrasting with the relaxed, overstuffed appearance of the cushions. Four slim, cylindrical black legs elevate the sofa, giving it a light and airy presence. There are no decorative pillows, and the only embellishments are the neat piping seams along the arms and cushions."
+  },
+  "panel_classifications": [
+    {
+      "input_zone": "lifestyle_scene",
+      "layout_type": "flexible_staging",
+      "extracted_info": "밀로 패브릭소파 3인용\n집 안의 온기를 불어넣어줄\n덕페더의 코지한 디자인\n감성 가득, 편안함 한가득 밀로 소파",
+      "key_visual_facts": [
+        "Three-seater fabric sofa",
+        "Light beige/cream color",
+        "Woman sitting and reading on sofa",
+        "Cushions included",
+        "Styled living room with coffee table and decor"
+      ],
+      "panel": "panel_01.jpg"
+    },
+    {
+      "input_zone": "module_lineup",
+      "layout_type": "fixed_layout",
+      "extracted_info": "라인업\n단위 : cm\n밀로 3인\n200 X 90 X 85\n밀로 4인\n280 X 90 X 85",
+      "key_visual_facts": [
+        "Two sofa models shown side by side",
+        "Left: 3-seater sofa, Right: 4-seater sofa",
+        "Both sofas are light beige/grey color",
+        "Dimensions for each model are listed below the images"
+      ],
+      "panel": "panel_02.jpg"
+    },
+    {
+      "input_zone": "module_lineup",
+      "layout_type": "fixed_layout",
+      "extracted_info": "모르 오트밀 3인\n모르 디스트로스 3인\n모르 라이트그레이 4인\n모르 오트밀 4인",
+      "key_visual_facts": [
+        "Multiple sofa models shown side-by-side",
+        "Different fabric colors: oatmeal, distressed, light gray",
+        "Both 3-seater and 4-seater configurations",
+        "Styled living room backgrounds",
+        "Some images include people using the sofa"
+      ],
+      "panel": "panel_03.jpg"
+    },
+    {
+      "input_zone": "size_chart",
+      "layout_type": "fixed_layout",
+      "extracted_info": "사이즈\n단위 : cm\n좌방석 길이 : 52 / 좌방석 높이 : 45 / 팔걸이 높이 : 57\n다릿발 높이 : 14\n좌방석\nHARD MEDIUM HARD MEDIUM MEDIUM SOFT SOFT\n등받이\nHARD MEDIUM HARD MEDIUM MEDIUM SOFT SOFT\n* 착석감은 개인에 따라 차이가 있을 수 있습니다.\n컬러\n오트밀 라이트그레이 더스티로즈\n* 디스플레이마다 색상 표현의 차이가 있을 수 있습니다.",
+      "key_visual_facts": [
+        "Sofa with two seat cushions and two back cushions",
+        "Sofa dimensions: 200cm width, 90cm depth, 85cm height",
+        "Seat height: 45cm, armrest height: 57cm, leg height: 14cm",
+        "Seat firmness: Medium Soft",
+        "Backrest firmness: Soft",
+        "Three fabric color options: Oatmeal, Light Gray, Dusty Rose"
+      ],
+      "panel": "panel_04.jpg"
+    },
+    {
+      "input_zone": "product_shot",
+      "layout_type": "strict_white_bg",
+      "extracted_info": "",
+      "key_visual_facts": [
+        "Gray fabric sofa",
+        "Two seat cushions and two back cushions visible",
+        "Left armrest shown",
+        "Black metal legs",
+        "Neutral white background"
+      ],
+      "panel": "panel_05.jpg"
+    },
+    {
+      "input_zone": "detail_close_up",
+      "layout_type": "flexible_staging",
+      "extracted_info": "",
+      "key_visual_facts": [
+        "Hand pressing into a large sofa cushion",
+        "Light gray fabric texture is clearly visible",
+        "Shows softness and resilience of cushion",
+        "No visible text or numbers"
+      ],
+      "panel": "panel_06.jpg"
+    },
+    {
+      "input_zone": "detail_close_up",
+      "layout_type": "flexible_staging",
+      "extracted_info": "",
+      "key_visual_facts": [
+        "Close-up of sofa corner",
+        "Light grey fabric upholstery",
+        "Visible seam details",
+        "Two large back cushions",
+        "Soft, plush seat and back"
+      ],
+      "panel": "panel_07.jpg"
+    },
+    {
+      "input_zone": "product_shot",
+      "layout_type": "strict_white_bg",
+      "extracted_info": "",
+      "key_visual_facts": [
+        "Single beige sofa",
+        "Two large back cushions",
+        "Two seat cushions",
+        "Boxy armrests",
+        "Black metal legs",
+        "Neutral white background"
+      ],
+      "panel": "panel_08.gif"
+    },
+    {
+      "input_zone": "lifestyle_scene",
+      "layout_type": "flexible_staging",
+      "extracted_info": "",
+      "key_visual_facts": [
+        "A woman is relaxing on a light beige sofa.",
+        "The sofa has large, plush cushions.",
+        "There is a check-patterned pillow.",
+        "The room is styled in a minimal, neutral tone.",
+        "Natural light is coming from the left window."
+      ],
+      "panel": "panel_09.jpg"
+    },
+    {
+      "input_zone": "material_swatch",
+      "layout_type": "fixed_layout",
+      "extracted_info": "오리털 67% + 마이크로화이버 33% 32KG 고밀도 스펀지",
+      "key_visual_facts": [
+        "Shows a beige fabric sofa",
+        "Magnified cross-section of cushion material",
+        "Cushion filling: 67% duck down, 33% microfiber",
+        "High-density sponge (32KG) layer visible",
+        "Sofa has metal legs"
+      ],
+      "panel": "panel_10.jpg"
+    },
+    {
+      "input_zone": "structure_chart",
+      "layout_type": "fixed_layout",
+      "extracted_info": "기존소파 샌드위치 스펀지 사용 4단 총 12cm NEW 밀로 소파 통스펀지 사용 내구성 UP! 1단 통스펀지 12cm",
+      "key_visual_facts": [
+        "Comparison of two sofa cushion structures",
+        "Left: 4-layer sandwich sponge, total 12cm",
+        "Right: Single block sponge, 12cm",
+        "Arrow indicates improved durability",
+        "Both images show cross-sections of cushion material"
+      ],
+      "panel": "panel_11.jpg"
+    },
+    {
+      "input_zone": "detail_close_up",
+      "layout_type": "fixed_layout",
+      "extracted_info": "등방석 커버링\n좌방석&팔걸이 커버링",
+      "key_visual_facts": [
+        "Shows close-up of sofa cushion covers being removed",
+        "Left: beige sofa with back cushion partially uncovered",
+        "Right: pinkish fabric seat/armrest cover being unzipped",
+        "Demonstrates removable/washable covers"
+      ],
+      "panel": "panel_12.jpg"
+    },
+    {
+      "input_zone": "material_swatch",
+      "layout_type": "fixed_layout",
+      "extracted_info": "OEKO-TEX® CONFIDENCE IN TEXTILES STANDARD 100",
+      "key_visual_facts": [
+        "Two fabric swatches side by side",
+        "Left swatch is light beige, right swatch is grey",
+        "Visible textile texture",
+        "OEKO-TEX Standard 100 certification badge present"
+      ],
+      "panel": "panel_13.jpg"
+    },
+    {
+      "input_zone": "detail_close_up",
+      "layout_type": "flexible_staging",
+      "extracted_info": "",
+      "key_visual_facts": [
+        "Close-up of a hand cleaning a stain on a light gray fabric sofa",
+        "Shows sofa fabric texture and color",
+        "Demonstrates cleanability or stain resistance",
+        "No visible text or numbers"
+      ],
+      "panel": "panel_14.jpg"
+    },
+    {
+      "input_zone": "material_swatch",
+      "layout_type": "flexible_staging",
+      "extracted_info": "폼알데하이드, 아릴아민 등 유해물질 함유량 모두 안전기준 적합\nFITI",
+      "key_visual_facts": [
+        "Close-up of fabric texture",
+        "Beige/light gray woven material",
+        "No sofa shape or structure visible",
+        "Safety compliance text overlay"
+      ],
+      "panel": "panel_15.jpg"
+    },
+    {
+      "input_zone": "context",
+      "layout_type": "flexible_staging",
+      "extracted_info": "한샘 소파의 남다른 품질, 어떻게 가능할까요?\n가장 사랑받은 리클라이너 소파\n2013년 국내 종합가구 브랜드 최초로 리클라이너 소파를 출시해 현재까지 누적판매 1위를 기록하며 상품성을 인정받았습니다.\n가장 앞서나가는 기술력\n선도적인 기술이 담긴 리클라이닝 기능부터 업계 최초 가죽 내구성 테스트까지, 더 나은 소파를 위해 끊임없이 고민합니다.\n가장 전문적인 연구개발\nR&D 센터의 전문 연구원들의 끊임없는 연구개발로 인체공학적인 설계를 통해 편안한 착석감을 구현합니다.",
+      "key_visual_facts": [
+        "Multiple fabric swatches in various colors are shown.",
+        "A hand is holding a blue fabric swatch.",
+        "There are blue textured samples and color chips on the table.",
+        "The image emphasizes quality, technology, and research."
+      ],
+      "panel": "panel_16.jpg"
+    },
+    {
+      "input_zone": "context",
+      "layout_type": "fixed_layout",
+      "extracted_info": "마감재 생활발수 패브릭\n내장재 32kg 고밀도 통스펀지, 덕페더, 마이크로화이버, EO건조목, S자스프링, 엘라스틱벨트\n다리 스틸 다릿발\n보이지 않는 속 까지, 프리미엄 소파를 완성하는 엄선된 자재들을 확인해보세요.\n유해성 완료 패브릭 FITI 유해성 시험을 통과해 안전함을 검증받아 안심하고 사용할 수 있습니다.\n오코텍스 인증 완료 패브릭 인체에 유해한 성분으로부터 안전함을 검증 받은 오코텍스 인증을 받아 안심하고 사용할 수 있습니다.\n덕페더 오래 앉아도 편하도록 포근하게 몸을 감싸주는 덕페더\n꺼짐을 줄인 고밀도 통스펀지 좌방석 꺼짐을 줄여 주는 32kg/m³ 고밀도 스펀지를 적용했습니다.\n안심하고 사용하는 EO 자재 폼알데하이드 방출량이 0.5mg/l 이하인 EO등급의 자재를 사용하여 안심하고 사용할 수 있습니다.\n실 절단 강도 테스트를 통과한 실을 사용 안심하고 사용할 수 있습니다.",
+      "key_visual_facts": [
+        "Main sofa product shown in neutral fabric",
+        "Material breakdown and close-ups of fabric, filling, and thread",
+        "Text and icons highlight safety certifications (OEKO-TEX, EO grade)",
+        "Images of fabric texture, sponge, feather filling, and thread spool",
+        "Steel legs visible on sofa"
+      ],
+      "panel": "panel_17.jpg"
+    },
+    {
+      "input_zone": "delivery_info",
+      "layout_type": "fixed_layout",
+      "extracted_info": "주의사항\n제품 특성에 따른 하기 내용은 하자가 아닙니다.\n아래 내용을 확인하신 후 구매 부탁드립니다.\n1. 구매 전 확인사항\n덕패더 소파는 겨울철 입는 덕다운 패딩처럼 쿠션 안에 공기를 함유하고 있어 착석 후 쿠션이 눌려앉을 수 있어요.\n착석 후엔 눌린 쿠션을 두드려 본래의 모양으로 펴 주세요.\n* 착석 후 쿠션이 눌리는 건 덕패더 소파 특성상 자연스러운 현상입니다.\n2. 사용시 주의사항\n방수 패브릭이 아닌 '발수 패브릭'이므로 액체를 흘린 후 장시간 방치할 시 흡수될 수 있으므로, 가급적 빠른 시간 내에 닦아주세요.\n패브릭 소재 특성상 자연스러게 보풀이 생길 수 있습니다.\n패브릭 소재의 정상적인 특성이며, 옷 혹은 침구류처럼 보풀제거기를 사용해 제거하는 것을 권장드립니다.\n오염 시 닦을 때 강하게 문지르면 원단 표면이 손상될 수 있으니 부드럽게 닦아주세요.\n많은 양의 물을 한꺼번에 흘리면 원단의 발수기능이 저하될 수 있습니다.\n유성페인트/기름 등의 화학성분은 세탁 후에도 제거되지 않을 수 있습니다.\n패브릭 커버 세탁시 주의사항\n- 패브릭 소파의 커버를 세탁할 시, 커버를 탈거 후 반드시 손세탁 해주세요.\n- 기계 세탁이나 건조기 사용시 패브릭 변형이 생길 수 있습니다.\n- 세탁 후에는 그늘에 말려주세요.\n패브릭 오염 관리 방법\n1) 패브릭 오염 관리 방법\n깨끗하고 마른천으로 즉시 두드리며 닦아내고, 그래도 물기가 남았을 경우 부드럽게 톡톡 두드려 마저 닦아냅니다.\n2) 오염 물질이 묻었을 때\n따뜻한 물을 살짝 묻혀 깨끗한 천으로 톡톡 두드려 닦아주세요.\n오염이 심할 경우 중성세제를 소량 묻혀 닦아주세요.\n* 세탁 후에도 오염이 남아있을 수 있으니 주의해 주세요.\n3) 잘 안지워지는 얼룩의 경우\n- 중성세제를 소량 묻혀 오염 부위에 문질러 주세요.\n- 오염이 심할 경우에는 흰 천을 물에 적셔 스마트폰 화면 정도의 힘으로 두드려 닦아주세요.\n- 오염이 심할 경우 반복해 닦아내며, 반드시 물로 세제가 완전히 제거되도록 해주세요.\n- 많은 양의 물을 한꺼번에 흘리면 원단의 발수 기능이 저하될 수 있으니 주의해 주세요.\n3. 소파 공통 주의사항\n제품을 평탄한 곳에 두고 사용하세요\n수평이 맞지 않을 경우 바닥걸레기나 프레임이 손상될 수 있습니다.\n밝은 빛이 긴히 빛지 피트 등은 사용하여 바닥의 칠을 방지하고 수평을 맞추는 것이 좋습니다.\n등 쿠션/손잡이 위에 앉거나 올라서지 마세요\n안정성으로 위험하며, 소파 부분이 파손됩니다.\n찢어짐의 원인이 높습니다.\n지나치게 무거운 물건을 올리거나 부착하면 제품에 영향을 미칠 수 있습니다.\n제품의 날카로운 물건을 밀어내세요\n날카로운 물건을 소파 표면에 올려두지 마시고 사용을 피하세요.\n소파의 표면은 손상될 수 있습니다.\n애완동물을 조심하세요\n애완동물의 발톱, 이빨 등으로 인해 패브릭에 상처를 낼 수 있으니 주의해 주세요.\n디자인상 스티치가 많은 경우에는\n스티치 부분에 강한 힘을 가하거나, 세탁하는 등 무리한 힘을 주지 마시고 사용해 주세요. 스티치 부분이 손상될 수 있습니다.",
+      "key_visual_facts": [
+        "Contains two small lifestyle photos of a sofa in use",
+        "Shows a light gray fabric sofa with loose cushions",
+        "Text-heavy panel with care and usage instructions",
+        "No product grid, swatch, or technical diagram"
+      ],
+      "panel": "panel_18.jpg"
+    }
+  ],
+  "input_zones": {
+    "lifestyle_scene": [
+      "panel_01.jpg",
+      "panel_09.jpg"
+    ],
+    "module_lineup": [
+      "panel_02.jpg",
+      "panel_03.jpg"
+    ],
+    "size_chart": [
+      "panel_04.jpg"
+    ],
+    "product_shot": [
+      "panel_05.jpg",
+      "panel_08.gif"
+    ],
+    "detail_close_up": [
+      "panel_06.jpg",
+      "panel_07.jpg",
+      "panel_12.jpg",
+      "panel_14.jpg"
+    ],
+    "material_swatch": [
+      "panel_10.jpg",
+      "panel_13.jpg",
+      "panel_15.jpg"
+    ],
+    "structure_chart": [
+      "panel_11.jpg"
+    ],
+    "context": [
+      "panel_16.jpg",
+      "panel_17.jpg"
+    ],
+    "delivery_info": [
+      "panel_18.jpg"
+    ]
+  },
+  "references": {
+    "gif_frames": [
+      "gif_frames/p08_frame_01.jpg",
+      "gif_frames/p08_frame_02.jpg",
+      "gif_frames/p08_frame_03.jpg"
+    ],
+    "smart_sheet": "smart_sheet.jpg",
+    "cover": "_cover_1000.jpg"
+  },
+  "wall_seconds": 59.0,
+  "user_override": {
+    "seat_count": 2,
+    "reason": "담당자 입력 시뮬레이션 — 2인용 variant 선택",
+    "user_request_text": "패브릭 소재 강조, 가족 거실 따뜻한 톤. 2인용 STRICT."
+  }
+}

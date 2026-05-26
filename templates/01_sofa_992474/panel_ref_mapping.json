@@ -1,0 +1,220 @@
+{
+  "assets": {
+    "main_front": "use_product/p08_frame_01.jpg",
+    "main_side": "use_product/p08_frame_03.jpg",
+    "main_angle": "use_product/p08_frame_02.jpg",
+    "detail_legs": "use_product/p08_frame_04.png",
+    "detail_arm": "use_product/p08_frame_05.png",
+    "detail_cushion_a": "use_product/detail_02.png",
+    "detail_cushion_b": "use_product/detail_03.png",
+    "detail_arm_b": "use_product/detail_05.png",
+    "detail_seam": "use_product/p08_frame_04.png",
+    "color_variant_gray": "use_product/p08_frame_01_color_2.webp",
+    "color_variant_rose": "use_product/p08_frame_01_color_3.webp",
+    "color_swatch_oat": "use_product/color_01.png",
+    "color_swatch_gray": "use_product/color_02.png",
+    "color_swatch_rose": "use_product/color_03.png",
+    "material": "use_product/material.png"
+  },
+  "panels": {
+    "panel_01.jpg": {
+      "panel_idx": 1,
+      "panel_class": "lifestyle_scene",
+      "ref_keys": [
+        "main_front",
+        "main_angle"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_01.jpg",
+        "use_product/p08_frame_02.jpg"
+      ],
+      "ref_count": 2
+    },
+    "panel_02.jpg": {
+      "panel_idx": 2,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "detail_legs",
+        "main_side",
+        "detail_seam"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_04.png",
+        "use_product/p08_frame_03.jpg",
+        "use_product/p08_frame_04.png"
+      ],
+      "ref_count": 3
+    },
+    "panel_03.jpg": {
+      "panel_idx": 3,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "detail_cushion_a",
+        "detail_cushion_b",
+        "detail_arm",
+        "detail_arm_b"
+      ],
+      "ref_paths": [
+        "use_product/detail_02.png",
+        "use_product/detail_03.png",
+        "use_product/p08_frame_05.png",
+        "use_product/detail_05.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_04.jpg": {
+      "panel_idx": 4,
+      "panel_class": "size_chart",
+      "ref_keys": [
+        "main_front"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_01.jpg"
+      ],
+      "ref_count": 1
+    },
+    "panel_05.jpg": {
+      "panel_idx": 5,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "main_side",
+        "detail_arm",
+        "detail_cushion_a",
+        "detail_cushion_b"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_03.jpg",
+        "use_product/p08_frame_05.png",
+        "use_product/detail_02.png",
+        "use_product/detail_03.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_06.jpg": {
+      "panel_idx": 6,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "detail_cushion_a",
+        "detail_cushion_b",
+        "main_front",
+        "main_angle"
+      ],
+      "ref_paths": [
+        "use_product/detail_02.png",
+        "use_product/detail_03.png",
+        "use_product/p08_frame_01.jpg",
+        "use_product/p08_frame_02.jpg"
+      ],
+      "ref_count": 4
+    },
+    "panel_07.jpg": {
+      "panel_idx": 7,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "main_front",
+        "material",
+        "detail_cushion_a",
+        "detail_seam"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_01.jpg",
+        "use_product/material.png",
+        "use_product/detail_02.png",
+        "use_product/p08_frame_04.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_08.gif": {
+      "panel_idx": 8,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "detail_legs",
+        "main_side",
+        "detail_arm",
+        "detail_cushion_a"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_04.png",
+        "use_product/p08_frame_03.jpg",
+        "use_product/p08_frame_05.png",
+        "use_product/detail_02.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_09.jpg": {
+      "panel_idx": 9,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "detail_legs",
+        "main_side",
+        "detail_cushion_a",
+        "detail_cushion_b"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_04.png",
+        "use_product/p08_frame_03.jpg",
+        "use_product/detail_02.png",
+        "use_product/detail_03.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_10.jpg": {
+      "panel_idx": 10,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "detail_cushion_a",
+        "detail_cushion_b",
+        "main_angle",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/detail_02.png",
+        "use_product/detail_03.png",
+        "use_product/p08_frame_02.jpg",
+        "use_product/material.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_11.jpg": {
+      "panel_idx": 11,
+      "panel_class": "structure_chart",
+      "ref_keys": [
+        "main_front",
+        "detail_cushion_a",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_01.jpg",
+        "use_product/detail_02.png",
+        "use_product/material.png"
+      ],
+      "ref_count": 3
+    },
+    "panel_12.jpg": {
+      "panel_idx": 12,
+      "panel_class": "module_lineup",
+      "ref_keys": [
+        "main_front",
+        "color_variant_gray",
+        "color_variant_rose"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_01.jpg",
+        "use_product/p08_frame_01_color_2.webp",
+        "use_product/p08_frame_01_color_3.webp"
+      ],
+      "ref_count": 3
+    },
+    "cover": {
+      "panel_idx": 0,
+      "panel_class": "intro_hero",
+      "ref_keys": [
+        "main_front"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_01.jpg"
+      ],
+      "ref_count": 1
+    }
+  }
+}

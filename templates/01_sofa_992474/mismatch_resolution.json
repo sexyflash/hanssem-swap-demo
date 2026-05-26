@@ -1,0 +1,124 @@
+{
+  "resolutions": [
+    {
+      "panel_idx": 1,
+      "verdict": "match",
+      "hanssem_feature": "전체 공간 연출, 조명, 소파 배치 등 라이프스타일 씬",
+      "milo_has_it": true,
+      "reasoning": "밀로 소파도 공간 연출, 조명, 배치 등 라이프스타일 씬 연출이 가능함",
+      "alt_title": null,
+      "alt_body": null,
+      "overlay_label": null
+    },
+    {
+      "panel_idx": 2,
+      "verdict": "match",
+      "hanssem_feature": "소파 다리와 패브릭(가죽) 클로즈업",
+      "milo_has_it": true,
+      "reasoning": "밀로도 4 슬림 메탈 다리와 패브릭 소재 클로즈업이 가능함",
+      "alt_title": null,
+      "alt_body": null,
+      "overlay_label": null
+    },
+    {
+      "panel_idx": 3,
+      "verdict": "match",
+      "hanssem_feature": "소파 소재와 스티치 디테일 클로즈업",
+      "milo_has_it": true,
+      "reasoning": "밀로도 폴리니크 패브릭과 스티치 디테일 클로즈업 연출 가능",
+      "alt_title": null,
+      "alt_body": null,
+      "overlay_label": null
+    },
+    {
+      "panel_idx": 4,
+      "verdict": "match",
+      "hanssem_feature": "사이즈 차트, 좌방석/등쿠션 치수 및 착석감 안내",
+      "milo_has_it": true,
+      "reasoning": "밀로도 사이즈, 좌방석/등쿠션 정보 및 착석감 안내 가능",
+      "alt_title": null,
+      "alt_body": null,
+      "overlay_label": null
+    },
+    {
+      "panel_idx": 5,
+      "verdict": "bypass",
+      "hanssem_feature": "리클라이너 메커니즘 클로즈업",
+      "milo_has_it": false,
+      "reasoning": "밀로는 리클라이너 기능이 없음",
+      "alt_title": "포근한 오리털 쿠션감",
+      "alt_body": "덕페더(오리털 67%)와 마이크로화이버가 조화된 쿠션으로, 몸을 감싸는 포근함을 느껴보세요.",
+      "overlay_label": "우회"
+    },
+    {
+      "panel_idx": 6,
+      "verdict": "bypass",
+      "hanssem_feature": "헤드레스트 메커니즘 클로즈업",
+      "milo_has_it": false,
+      "reasoning": "밀로는 헤드레스트 기능이 없음",
+      "alt_title": "넉넉한 등쿠션의 편안함",
+      "alt_body": "오리털과 마이크로화이버가 풍성하게 채워진 등쿠션이 머리부터 허리까지 부드럽게 받쳐줍니다.",
+      "overlay_label": "우회"
+    },
+    {
+      "panel_idx": 7,
+      "verdict": "bypass",
+      "hanssem_feature": "컨트롤 패널(버튼, USB포트) 클로즈업",
+      "milo_has_it": false,
+      "reasoning": "밀로에는 컨트롤 패널/USB 포트가 없음",
+      "alt_title": "심플한 디자인, 생활에 집중",
+      "alt_body": "불필요한 기능을 덜어내고, 오롯이 휴식에 집중할 수 있는 미니멀한 디자인을 완성했습니다.",
+      "overlay_label": "우회"
+    },
+    {
+      "panel_idx": 8,
+      "verdict": "match",
+      "hanssem_feature": "소파 측면 프로필, 화이트 배경 제품샷",
+      "milo_has_it": true,
+      "reasoning": "밀로도 동일한 각도의 측면 프로필 제품샷 연출 가능",
+      "alt_title": null,
+      "alt_body": null,
+      "overlay_label": null
+    },
+    {
+      "panel_idx": 9,
+      "verdict": "bypass",
+      "hanssem_feature": "리클라이닝 메커니즘 및 소재 클로즈업",
+      "milo_has_it": false,
+      "reasoning": "밀로는 리클라이닝 기능이 없음",
+      "alt_title": "생활발수 기능성 패브릭",
+      "alt_body": "폴리니크 패브릭으로 물과 오염에 강해, 일상에서 더욱 편하게 사용할 수 있습니다.",
+      "overlay_label": "우회"
+    },
+    {
+      "panel_idx": 10,
+      "verdict": "match",
+      "hanssem_feature": "소재 텍스처 클로즈업",
+      "milo_has_it": true,
+      "reasoning": "밀로의 패브릭 소재 텍스처 클로즈업 연출 가능",
+      "alt_title": null,
+      "alt_body": null,
+      "overlay_label": null
+    },
+    {
+      "panel_idx": 11,
+      "verdict": "bypass",
+      "hanssem_feature": "내장재/프레임/좌방석/등쿠션/헤드레스트/다릿발 등 구조 차트",
+      "milo_has_it": true,
+      "reasoning": "밀로도 내장재(고밀도 스펀지, 오리털, 마이크로화이버), 프레임, 다릿발 정보 제공 가능하나 헤드레스트/리클라이너 등 일부 항목은 없음",
+      "alt_title": "고밀도 스펀지와 오리털의 조화",
+      "alt_body": "32kg 고밀도 통스펀지와 오리털, 마이크로화이버가 어우러져 탄탄함과 포근함을 동시에 제공합니다.",
+      "overlay_label": "우회"
+    },
+    {
+      "panel_idx": 12,
+      "verdict": "match",
+      "hanssem_feature": "소파 타입별 사이즈, 컬러 옵션, 컬러칩 안내",
+      "milo_has_it": true,
+      "reasoning": "밀로도 2인용 사이즈, 3가지 컬러 옵션, 컬러칩 안내 가능",
+      "alt_title": null,
+      "alt_body": null,
+      "overlay_label": null
+    }
+  ]
+}

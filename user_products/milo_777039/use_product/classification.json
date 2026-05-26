@@ -1,0 +1,252 @@
+{
+  "items": [
+    {
+      "filename": "color_01.png",
+      "category": "material",
+      "subject": "원단짜임 클로즈업",
+      "confidence": 0.96,
+      "reasoning": "원단 텍스처만 꽉 차게 보이는 확대컷이라 소재 이미지임."
+    },
+    {
+      "filename": "color_02.png",
+      "category": "material",
+      "subject": "원단짜임 클로즈업",
+      "confidence": 0.96,
+      "reasoning": "패브릭 표면만 보이는 확대컷으로 제품 일부가 아닌 원단 강조 샷."
+    },
+    {
+      "filename": "color_03.png",
+      "category": "material",
+      "subject": "원단짜임 클로즈업",
+      "confidence": 0.96,
+      "reasoning": "섬유 결만 보이는 근접 촬영으로 소재 표현에 해당."
+    },
+    {
+      "filename": "detail_01.webp",
+      "category": "color_variant",
+      "subject": "전체각도",
+      "confidence": 0.72,
+      "reasoning": "소파 전체가 보이지만 기본색과 다른 핑크 컬러를 보여주는 전체샷."
+    },
+    {
+      "filename": "detail_02.png",
+      "category": "detail_close_up",
+      "subject": "좌방석/팔걸이/쿠션",
+      "confidence": 0.95,
+      "reasoning": "좌방석과 팔걸이, 쿠션 일부만 크게 담은 부분 클로즈업."
+    },
+    {
+      "filename": "detail_03.png",
+      "category": "detail_close_up",
+      "subject": "등받이/좌방석",
+      "confidence": 0.88,
+      "reasoning": "사람과 함께 소파 일부(등받이·좌방석)만 프레임에 들어온 부분샷."
+    },
+    {
+      "filename": "detail_04.png",
+      "category": "main_view",
+      "subject": "전체정면",
+      "confidence": 0.7,
+      "reasoning": "소파 전체가 보이는 정면 구도의 이미지로 메인 전체샷 성격."
+    },
+    {
+      "filename": "detail_05.png",
+      "category": "detail_close_up",
+      "subject": "팔걸이/등쿠션",
+      "confidence": 0.95,
+      "reasoning": "팔걸이와 등쿠션 부분만 잘린 제품 디테일 클로즈업."
+    },
+    {
+      "filename": "material.png",
+      "category": "material",
+      "subject": "원단짜임 클로즈업",
+      "confidence": 0.95,
+      "reasoning": "두 가지 톤의 패브릭 표면을 근접 촬영한 소재 이미지."
+    },
+    {
+      "filename": "p08_frame_01.jpg",
+      "category": "main_view",
+      "subject": "전체정면",
+      "confidence": 0.99,
+      "reasoning": "흰 배경에서 제품 전체가 정면으로 보이는 표준 메인 컷."
+    },
+    {
+      "filename": "p08_frame_01_color_1.jpg",
+      "category": "color_variant",
+      "subject": "전체정면",
+      "confidence": 0.9,
+      "reasoning": "동일 구도에서 색감만 달라진 전체샷으로 컬러 변형컷."
+    },
+    {
+      "filename": "p08_frame_01_color_2.webp",
+      "category": "color_variant",
+      "subject": "전체정면",
+      "confidence": 0.98,
+      "reasoning": "같은 제품의 그레이 컬러 전체 정면샷으로 색상만 다름."
+    },
+    {
+      "filename": "p08_frame_01_color_3.webp",
+      "category": "color_variant",
+      "subject": "전체정면",
+      "confidence": 0.98,
+      "reasoning": "같은 구도의 핑크 컬러 전체샷이므로 색상 변형 이미지."
+    },
+    {
+      "filename": "p08_frame_02.jpg",
+      "category": "main_view",
+      "subject": "전체각도",
+      "confidence": 0.98,
+      "reasoning": "흰 배경에서 제품 전체가 사선 각도로 보이는 메인 뷰."
+    },
+    {
+      "filename": "p08_frame_03.jpg",
+      "category": "main_view",
+      "subject": "전체측면",
+      "confidence": 0.98,
+      "reasoning": "제품의 측면 전체가 단순 배경에서 보이는 각도샷."
+    },
+    {
+      "filename": "p08_frame_04.png",
+      "category": "detail_close_up",
+      "subject": "쿠션/시접",
+      "confidence": 0.95,
+      "reasoning": "등쿠션과 좌방석의 봉제 라인만 크게 보여주는 디테일 클로즈업."
+    },
+    {
+      "filename": "p08_frame_05.png",
+      "category": "detail_close_up",
+      "subject": "팔걸이/다리",
+      "confidence": 0.95,
+      "reasoning": "팔걸이 코너와 하부 다리 주변만 촬영된 부분 확대컷."
+    }
+  ],
+  "by_category": {
+    "material": [
+      {
+        "filename": "color_01.png",
+        "category": "material",
+        "subject": "원단짜임 클로즈업",
+        "confidence": 0.96,
+        "reasoning": "원단 텍스처만 꽉 차게 보이는 확대컷이라 소재 이미지임."
+      },
+      {
+        "filename": "color_02.png",
+        "category": "material",
+        "subject": "원단짜임 클로즈업",
+        "confidence": 0.96,
+        "reasoning": "패브릭 표면만 보이는 확대컷으로 제품 일부가 아닌 원단 강조 샷."
+      },
+      {
+        "filename": "color_03.png",
+        "category": "material",
+        "subject": "원단짜임 클로즈업",
+        "confidence": 0.96,
+        "reasoning": "섬유 결만 보이는 근접 촬영으로 소재 표현에 해당."
+      },
+      {
+        "filename": "material.png",
+        "category": "material",
+        "subject": "원단짜임 클로즈업",
+        "confidence": 0.95,
+        "reasoning": "두 가지 톤의 패브릭 표면을 근접 촬영한 소재 이미지."
+      }
+    ],
+    "color_variant": [
+      {
+        "filename": "detail_01.webp",
+        "category": "color_variant",
+        "subject": "전체각도",
+        "confidence": 0.72,
+        "reasoning": "소파 전체가 보이지만 기본색과 다른 핑크 컬러를 보여주는 전체샷."
+      },
+      {
+        "filename": "p08_frame_01_color_1.jpg",
+        "category": "color_variant",
+        "subject": "전체정면",
+        "confidence": 0.9,
+        "reasoning": "동일 구도에서 색감만 달라진 전체샷으로 컬러 변형컷."
+      },
+      {
+        "filename": "p08_frame_01_color_2.webp",
+        "category": "color_variant",
+        "subject": "전체정면",
+        "confidence": 0.98,
+        "reasoning": "같은 제품의 그레이 컬러 전체 정면샷으로 색상만 다름."
+      },
+      {
+        "filename": "p08_frame_01_color_3.webp",
+        "category": "color_variant",
+        "subject": "전체정면",
+        "confidence": 0.98,
+        "reasoning": "같은 구도의 핑크 컬러 전체샷이므로 색상 변형 이미지."
+      }
+    ],
+    "detail_close_up": [
+      {
+        "filename": "detail_02.png",
+        "category": "detail_close_up",
+        "subject": "좌방석/팔걸이/쿠션",
+        "confidence": 0.95,
+        "reasoning": "좌방석과 팔걸이, 쿠션 일부만 크게 담은 부분 클로즈업."
+      },
+      {
+        "filename": "detail_03.png",
+        "category": "detail_close_up",
+        "subject": "등받이/좌방석",
+        "confidence": 0.88,
+        "reasoning": "사람과 함께 소파 일부(등받이·좌방석)만 프레임에 들어온 부분샷."
+      },
+      {
+        "filename": "detail_05.png",
+        "category": "detail_close_up",
+        "subject": "팔걸이/등쿠션",
+        "confidence": 0.95,
+        "reasoning": "팔걸이와 등쿠션 부분만 잘린 제품 디테일 클로즈업."
+      },
+      {
+        "filename": "p08_frame_04.png",
+        "category": "detail_close_up",
+        "subject": "쿠션/시접",
+        "confidence": 0.95,
+        "reasoning": "등쿠션과 좌방석의 봉제 라인만 크게 보여주는 디테일 클로즈업."
+      },
+      {
+        "filename": "p08_frame_05.png",
+        "category": "detail_close_up",
+        "subject": "팔걸이/다리",
+        "confidence": 0.95,
+        "reasoning": "팔걸이 코너와 하부 다리 주변만 촬영된 부분 확대컷."
+      }
+    ],
+    "main_view": [
+      {
+        "filename": "detail_04.png",
+        "category": "main_view",
+        "subject": "전체정면",
+        "confidence": 0.7,
+        "reasoning": "소파 전체가 보이는 정면 구도의 이미지로 메인 전체샷 성격."
+      },
+      {
+        "filename": "p08_frame_01.jpg",
+        "category": "main_view",
+        "subject": "전체정면",
+        "confidence": 0.99,
+        "reasoning": "흰 배경에서 제품 전체가 정면으로 보이는 표준 메인 컷."
+      },
+      {
+        "filename": "p08_frame_02.jpg",
+        "category": "main_view",
+        "subject": "전체각도",
+        "confidence": 0.98,
+        "reasoning": "흰 배경에서 제품 전체가 사선 각도로 보이는 메인 뷰."
+      },
+      {
+        "filename": "p08_frame_03.jpg",
+        "category": "main_view",
+        "subject": "전체측면",
+        "confidence": 0.98,
+        "reasoning": "제품의 측면 전체가 단순 배경에서 보이는 각도샷."
+      }
+    ]
+  }
+}

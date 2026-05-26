@@ -1,0 +1,1797 @@
+{
+  "summary": {
+    "total_products": 30,
+    "by_category": {
+      "sofa": 10,
+      "wardrobe": 10,
+      "desk": 10
+    },
+    "by_pattern": {
+      "split_panels": 30
+    },
+    "category_ids": {
+      "sofa": [
+        20081
+      ],
+      "wardrobe": [
+        20086
+      ],
+      "desk": [
+        20094,
+        20099
+      ]
+    }
+  },
+  "products": [
+    {
+      "gdsNo": 993094,
+      "gdsNm": "코타 천연가죽 소파 4인용",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/993/993094_A1.jpg?v=20251030150144",
+      "salePrc": 1029000,
+      "brand": "한샘",
+      "reviewCnt": 185,
+      "category": "sofa",
+      "url": "https://store.hanssem.com/goods/993094",
+      "pattern_type": "split_panels",
+      "detail_img_count": 9,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761787722046_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761786811310_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761787751746_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761786869674_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761786903577_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761786923973_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761786949959_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761787783797_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761787121802_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761787722046_0.jpg",
+          "w": 1740,
+          "h": 1160
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761786811310_0.jpg",
+          "w": 1740,
+          "h": 1160
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761787751746_0.jpg",
+          "w": 1740,
+          "h": 2676
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761786869674_0.jpg",
+          "w": 1740,
+          "h": 1160
+        }
+      ],
+      "total_height_sampled": 6156,
+      "note": "",
+      "detail_html_len": 20996
+    },
+    {
+      "gdsNo": 799215,
+      "gdsNm": "엠마 컴포트 천연가죽 소파 3인(3종/택1)",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/799/799215_A1.jpg?v=20250804101311",
+      "salePrc": 899000,
+      "brand": "한샘",
+      "reviewCnt": 573,
+      "category": "sofa",
+      "url": "https://store.hanssem.com/goods/799215",
+      "pattern_type": "split_panels",
+      "detail_img_count": 24,
+      "detail_imgs": [
+        "https://image2.hanssem.com/howiz/test/emma_sofa_review_230207_01.jpg",
+        "https://image2.hanssem.com/howiz/test/emma_sofa_review_230207_02.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComfort_branding_01.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComfort_branding_03.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComfort_branding_04gif.gif",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComfort_branding_05.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_01_intro_790555.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_02_info_type1_79055.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_color.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_design_79055_01.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_design_02gif.gif",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_design_79055_03.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_leather_01.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_leather_02.jpg",
+        "https://image2.hanssem.com/howiz/sofa/leathertest.gif",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_leather_04.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_leather_05.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_size.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_premiumseat_01.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_premiumseat_03.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComfort_e0_01.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComfort_e0_03.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_faq.jpg",
+        "https://image2.hanssem.com/howiz/sofa/sofa_livingroom_delivery.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image2.hanssem.com/howiz/test/emma_sofa_review_230207_01.jpg",
+          "w": 870,
+          "h": 1344
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/test/emma_sofa_review_230207_02.jpg",
+          "w": 870,
+          "h": 1394
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/sofa/EmmaComfort_branding_01.jpg",
+          "w": 870,
+          "h": 5100
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/sofa/EmmaComfort_branding_03.jpg",
+          "w": 870,
+          "h": 2316
+        }
+      ],
+      "total_height_sampled": 10154,
+      "note": "",
+      "detail_html_len": 3575
+    },
+    {
+      "gdsNo": 799220,
+      "gdsNm": "엠마 컴포트 천연가죽 소파 4인(3종/택1)",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/799/799220_A1.jpg?v=20250829154456",
+      "salePrc": 1159000,
+      "brand": "한샘",
+      "reviewCnt": 1168,
+      "category": "sofa",
+      "url": "https://store.hanssem.com/goods/799220",
+      "pattern_type": "split_panels",
+      "detail_img_count": 24,
+      "detail_imgs": [
+        "https://image2.hanssem.com/howiz/test/emma_sofa_review_230207_01.jpg",
+        "https://image2.hanssem.com/howiz/test/emma_sofa_review_230207_02.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComfort_branding_01.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComfort_branding_03.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComfort_branding_04gif.gif",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComfort_branding_05.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_01_intro_790554.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_02_info_type1_79054.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_color.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_design_79054_01.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_design_02gif.gif",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_design_79054_03.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_leather_01.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_leather_02.jpg",
+        "https://image2.hanssem.com/howiz/sofa/leathertest.gif",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_leather_04.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_leather_05.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_size.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_premiumseat_01.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_premiumseat_03.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComfort_e0_01.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComfort_e0_03.jpg",
+        "https://image2.hanssem.com/howiz/sofa/EmmaComport_faq.jpg",
+        "https://image2.hanssem.com/howiz/sofa/sofa_livingroom_delivery.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image2.hanssem.com/howiz/test/emma_sofa_review_230207_01.jpg",
+          "w": 870,
+          "h": 1344
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/test/emma_sofa_review_230207_02.jpg",
+          "w": 870,
+          "h": 1394
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/sofa/EmmaComfort_branding_01.jpg",
+          "w": 870,
+          "h": 5100
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/sofa/EmmaComfort_branding_03.jpg",
+          "w": 870,
+          "h": 2316
+        }
+      ],
+      "total_height_sampled": 10154,
+      "note": "",
+      "detail_html_len": 3640
+    },
+    {
+      "gdsNo": 746526,
+      "gdsNm": "MVME 프라임 노블 천연가죽 리클라이너 소파 3인",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/746/746526_A1.jpg?v=20250804101311",
+      "salePrc": 1199000,
+      "brand": "한샘",
+      "reviewCnt": 285,
+      "category": "sofa",
+      "url": "https://store.hanssem.com/goods/746526",
+      "pattern_type": "split_panels",
+      "detail_img_count": 19,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/05/20/1716181672753_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700118097082_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/05/1704413951581_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/05/1704413955425_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/05/1704413934298_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/05/1704413939325_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/19/1708317361098_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117572068_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117608172_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117614492_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117623828_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117631831_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117730096_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117741349_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117750650_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117756594_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117811701_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/15/1700011999218_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/02/07/1738891740866_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/05/20/1716181672753_0.jpg",
+          "w": 870,
+          "h": 1900
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700118097082_0.jpg",
+          "w": 870,
+          "h": 1345
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/01/05/1704413951581_0.jpg",
+          "w": 870,
+          "h": 2175
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/01/05/1704413955425_0.jpg",
+          "w": 870,
+          "h": 3243
+        }
+      ],
+      "total_height_sampled": 8663,
+      "note": "",
+      "detail_html_len": 28027
+    },
+    {
+      "gdsNo": 777039,
+      "gdsNm": "밀로 패브릭소파 3인용(3종/택1)",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/777/777039_A1.jpg?v=20251105113208",
+      "salePrc": 669000,
+      "brand": "한샘",
+      "reviewCnt": 344,
+      "category": "sofa",
+      "url": "https://store.hanssem.com/goods/777039",
+      "pattern_type": "split_panels",
+      "detail_img_count": 18,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707978207898_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707978217632_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707978261860_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707978272795_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707978301314_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707978349962_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707978466990_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/21/1708489956413_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707978556755_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707978637993_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707978665875_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707978688243_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707978932868_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707979067104_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707979140103_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706162522373_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/07/15/1752561210143_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707979249221_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707978207898_0.jpg",
+          "w": 870,
+          "h": 1636
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707978217632_0.jpg",
+          "w": 870,
+          "h": 620
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707978261860_0.jpg",
+          "w": 870,
+          "h": 7672
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707978272795_0.jpg",
+          "w": 870,
+          "h": 2267
+        }
+      ],
+      "total_height_sampled": 12195,
+      "note": "",
+      "detail_html_len": 28045
+    },
+    {
+      "gdsNo": 1005271,
+      "gdsNm": "도무스 IMG 노르딕85 1인 리클라이너",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/1005/1005271_A1.jpg?v=20250822084218",
+      "salePrc": 1299000,
+      "brand": "한샘",
+      "reviewCnt": 163,
+      "category": "sofa",
+      "url": "https://store.hanssem.com/goods/1005271",
+      "pattern_type": "split_panels",
+      "detail_img_count": 18,
+      "detail_imgs": [
+        "https://image2.hanssem.com/howiz/sofa/nordic_recliner_01_intro_01.jpg",
+        "https://image2.hanssem.com/howiz/sofa/nordic_recliner_01_intro_02.jpg",
+        "https://image2.hanssem.com/howiz/sofa/nordic_recliner_01_intro_03.jpg",
+        "https://image2.hanssem.com/howiz/sofa/690061_new_01.jpg",
+        "https://image2.hanssem.com/howiz/sofa/690061_text.jpg",
+        "https://image2.hanssem.com/howiz/sofa/690061_02.jpg",
+        "https://image2.hanssem.com/howiz/sofa/690061_03.jpg",
+        "https://image2.hanssem.com/howiz/sofa/690061_04.jpg",
+        "https://image2.hanssem.com/howiz/sofa/690061_05.jpg",
+        "https://image2.hanssem.com/howiz/sofa/690061_06.gif",
+        "https://image2.hanssem.com/howiz/sofa/690061_07.jpg",
+        "https://image2.hanssem.com/howiz/sofa/690061_08.gif",
+        "https://image2.hanssem.com/howiz/sofa/690061_09.jpg",
+        "https://image2.hanssem.com/howiz/sofa/690061_10.jpg",
+        "https://image2.hanssem.com/howiz/sofa/690061_11.jpg",
+        "https://image2.hanssem.com/howiz/sofa/06_img2_notice_new_02.jpg",
+        "https://image2.hanssem.com/howiz/sofa/06_img2_notice_new_03.jpg",
+        "https://image2.hanssem.com/howiz/sofa/sofa_livingroom_delivery.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image2.hanssem.com/howiz/sofa/nordic_recliner_01_intro_01.jpg",
+          "w": 750,
+          "h": 1882
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/sofa/nordic_recliner_01_intro_02.jpg",
+          "w": 750,
+          "h": 2464
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/sofa/nordic_recliner_01_intro_03.jpg",
+          "w": 750,
+          "h": 2354
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/sofa/690061_new_01.jpg",
+          "w": 750,
+          "h": 682
+        }
+      ],
+      "total_height_sampled": 7382,
+      "note": "",
+      "detail_html_len": 1537
+    },
+    {
+      "gdsNo": 786625,
+      "gdsNm": "MVME 프라임 노블 홈바형 천연가죽 리클라이너 소파 4인",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/786/786625_A1.jpg?v=20250829154456",
+      "salePrc": 1659000,
+      "brand": "한샘",
+      "reviewCnt": 487,
+      "category": "sofa",
+      "url": "https://store.hanssem.com/goods/786625",
+      "pattern_type": "split_panels",
+      "detail_img_count": 20,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/05/20/1716181526837_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117530484_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/05/1704414027418_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/05/1704414031208_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/05/1704414010419_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/05/1704414014547_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117552780_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117572068_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117608172_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117614492_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117623828_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117631831_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117640404_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117730096_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117741349_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117750650_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117756594_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117811701_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/15/1700011999218_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/03/05/1741132546325_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/05/20/1716181526837_0.jpg",
+          "w": 870,
+          "h": 1900
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700117530484_0.jpg",
+          "w": 870,
+          "h": 1345
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/01/05/1704414027418_0.jpg",
+          "w": 870,
+          "h": 2175
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/01/05/1704414031208_0.jpg",
+          "w": 870,
+          "h": 3243
+        }
+      ],
+      "total_height_sampled": 8663,
+      "note": "",
+      "detail_html_len": 29025
+    },
+    {
+      "gdsNo": 786845,
+      "gdsNm": "모아 모듈형 패브릭소파 4인 라운지형",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/786/786845_A1.jpg?v=20250804101311",
+      "salePrc": 1123000,
+      "brand": "한샘",
+      "reviewCnt": 174,
+      "category": "sofa",
+      "url": "https://store.hanssem.com/goods/786845",
+      "pattern_type": "split_panels",
+      "detail_img_count": 23,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706165798192_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706161501557_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706161519570_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/13/1707786301190_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706161573429_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706161603586_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706161654632_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706161733394_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706161832996_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706161870070_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706161898935_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706162013645_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706162062591_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706162111222_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706162153014_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706162193551_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/21/1776752031121_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706162264298_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706162318851_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706162401178_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706162522373_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/02/07/1738889117159_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706162595054_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706165798192_0.jpg",
+          "w": 870,
+          "h": 1716
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706161501557_0.jpg",
+          "w": 870,
+          "h": 2165
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/01/25/1706161519570_0.jpg",
+          "w": 870,
+          "h": 9296
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/02/13/1707786301190_0.jpg",
+          "w": 870,
+          "h": 2187
+        }
+      ],
+      "total_height_sampled": 15364,
+      "note": "",
+      "detail_html_len": 32352
+    },
+    {
+      "gdsNo": 992474,
+      "gdsNm": "MVME 키안티 천연가죽 리클라이너 4인",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/992/992474_A1.jpg?v=20251030171343",
+      "salePrc": 2715000,
+      "brand": "한샘",
+      "reviewCnt": 615,
+      "category": "sofa",
+      "url": "https://store.hanssem.com/goods/992474",
+      "pattern_type": "split_panels",
+      "detail_img_count": 12,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761788840262_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761788268354_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761788292275_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761788875570_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761788337185_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761788384064_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761788410024_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/16/1700101487688_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761788454241_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761788488033_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761812009372_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761788654403_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761788840262_0.jpg",
+          "w": 1740,
+          "h": 1160
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761788268354_0.jpg",
+          "w": 1740,
+          "h": 1160
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761788292275_0.jpg",
+          "w": 1740,
+          "h": 1160
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2025/10/30/1761788875570_0.jpg",
+          "w": 1740,
+          "h": 2676
+        }
+      ],
+      "total_height_sampled": 6156,
+      "note": "",
+      "detail_html_len": 24082
+    },
+    {
+      "gdsNo": 786626,
+      "gdsNm": "MVME 프라임 리츠 홈바형 천연가죽 리클라이너 소파 4인 화이트에디션",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/786/786626_A1.jpg?v=20250804101311",
+      "salePrc": 2249000,
+      "brand": "한샘",
+      "reviewCnt": 232,
+      "category": "sofa",
+      "url": "https://store.hanssem.com/goods/786626",
+      "pattern_type": "split_panels",
+      "detail_img_count": 19,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/05/20/1716182226020_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/05/04/1777875506820_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/05/04/1777875935900_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/05/04/1777875910219_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/05/04/1777876124923_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/15/1700011225123_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/15/1700011399584_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/15/1700011481222_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/15/1700011536570_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/15/1700011613044_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/08/08/1723100696212_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/15/1700011690319_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/15/1700011761067_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/15/1700011783197_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/15/1700011860898_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/15/1700011909412_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/15/1700011973272_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/11/15/1700011999218_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/05/27/1716802978095_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/05/20/1716182226020_0.jpg",
+          "w": 870,
+          "h": 1978
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/05/04/1777875506820_0.jpg",
+          "w": 870,
+          "h": 2033
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/05/04/1777875935900_0.jpg",
+          "w": 870,
+          "h": 9645
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/05/04/1777875910219_0.jpg",
+          "w": 870,
+          "h": 1
+        }
+      ],
+      "total_height_sampled": 13657,
+      "note": "",
+      "detail_html_len": 28542
+    },
+    {
+      "gdsNo": 1066847,
+      "gdsNm": "샘베딩 스테디 옷장 80cm(높이194cm)",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/1066/1066847_A1.jpg?v=20251106185127",
+      "salePrc": 243540,
+      "brand": "한샘",
+      "reviewCnt": 1866,
+      "category": "wardrobe",
+      "url": "https://store.hanssem.com/goods/1066847",
+      "pattern_type": "split_panels",
+      "detail_img_count": 25,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476743846_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476759821_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476779790_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769565182671_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769499485728_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769486688749_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769499490544_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/03/1770084059513_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/03/1770084142515_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/03/1770084232532_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/03/1770084288218_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769478108019_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477199925_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477221426_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477227066_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477231890_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477322496_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477349676_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477391699_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477417586_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/15/1768467564080_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468347807_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468351123_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468354896_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/03/1770077716739_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476743846_0.jpg",
+          "w": 1305,
+          "h": 1755
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476759821_0.jpg",
+          "w": 1305,
+          "h": 1755
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476779790_0.jpg",
+          "w": 1305,
+          "h": 870
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769565182671_0.jpg",
+          "w": 870,
+          "h": 1974
+        }
+      ],
+      "total_height_sampled": 6354,
+      "note": "",
+      "detail_html_len": 87764
+    },
+    {
+      "gdsNo": 1066850,
+      "gdsNm": "샘베딩 스테디 옷장 80cm(높이194cm) 서랍형",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/1066/1066850_A1.jpg?v=20251106183720",
+      "salePrc": 300900,
+      "brand": "한샘",
+      "reviewCnt": 1888,
+      "category": "wardrobe",
+      "url": "https://store.hanssem.com/goods/1066850",
+      "pattern_type": "split_panels",
+      "detail_img_count": 25,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476743846_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476759821_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476779790_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769565113158_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769493604984_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769486688749_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769493611316_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/03/1770084059513_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/03/1770084142515_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/03/1770084232532_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/03/1770084288218_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769478108019_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477199925_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477221426_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477227066_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477231890_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477322496_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477349676_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477391699_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477417586_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/15/1768467564080_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468347807_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468351123_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468354896_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/03/1770077836192_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476743846_0.jpg",
+          "w": 1305,
+          "h": 1755
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476759821_0.jpg",
+          "w": 1305,
+          "h": 1755
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476779790_0.jpg",
+          "w": 1305,
+          "h": 870
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769565113158_0.jpg",
+          "w": 870,
+          "h": 1879
+        }
+      ],
+      "total_height_sampled": 6259,
+      "note": "",
+      "detail_html_len": 87764
+    },
+    {
+      "gdsNo": 171733,
+      "gdsNm": "샘베딩 베이직 옷장 80cm(높이194cm) 행거서랍형 4종",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/171/171733_A1.jpg?v=20251107092741",
+      "salePrc": 285900,
+      "brand": "한샘",
+      "reviewCnt": 1723,
+      "category": "wardrobe",
+      "url": "https://store.hanssem.com/goods/171733",
+      "pattern_type": "split_panels",
+      "detail_img_count": 27,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560324030_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560343975_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560363941_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560392609_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769586504042_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/02/1770009709667_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560493196_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769586516145_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560581560_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769597086462_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560610102_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560633873_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560654156_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560695128_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560717593_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560740021_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560744937_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560751011_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560817273_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560849907_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560899251_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/10/28/1761613442871_0.jpg",
+        "https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768467564080_0.jpg",
+        "https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468347807_0.jpg",
+        "https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468351123_0.jpg",
+        "https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468354896_0.jpg",
+        "https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/20/1768895822449_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560324030_0.png",
+          "w": 1305,
+          "h": 870
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560343975_0.png",
+          "w": 1305,
+          "h": 1755
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560363941_0.png",
+          "w": 1305,
+          "h": 870
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560392609_0.png",
+          "w": 1305,
+          "h": 870
+        }
+      ],
+      "total_height_sampled": 4365,
+      "note": "",
+      "detail_html_len": 40462
+    },
+    {
+      "gdsNo": 400542,
+      "gdsNm": "아임빅 슬라이딩 옷장 120cm 행거형 짧은옷장 12종",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/400/400542_A1.jpg?v=20240809093239",
+      "salePrc": 499000,
+      "brand": "한샘",
+      "reviewCnt": 1055,
+      "category": "wardrobe",
+      "url": "https://store.hanssem.com/goods/400542",
+      "pattern_type": "split_panels",
+      "detail_img_count": 37,
+      "detail_imgs": [
+        "https://image2.hanssem.com/howiz/hanssem_gagu_total.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbigsl_banner_191002.gif",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_01.gif",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_02.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_03.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_04.gif",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_05.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_06.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_07.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_08.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_09.jpg",
+        "https://image2.hanssem.com/howiz/closet/400542.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_10.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_11.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_12.gif",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_13.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_14.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_15.jpg",
+        "https://image2.hanssem.com/howiz/closet/400542_opExp_01.jpg",
+        "https://image2.hanssem.com/howiz/closet/400542_opExp_02.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_tipType_01.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_16.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_17_1200.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_18_1200.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_19_1200.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_20.gif",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_21.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_22.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_23.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_24.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_25.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_26.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_27.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_28.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_caution_2112F.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_29.jpg",
+        "https://image2.hanssem.com/howiz/closet/delivery_closet.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image2.hanssem.com/howiz/hanssem_gagu_total.jpg",
+          "w": 870,
+          "h": 1
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/closet/imbigsl_banner_191002.gif",
+          "w": 750,
+          "h": 1314
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/closet/imbig_sl_01.gif",
+          "w": 750,
+          "h": 910
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/closet/imbig_sl_02.jpg",
+          "w": 750,
+          "h": 781
+        }
+      ],
+      "total_height_sampled": 3006,
+      "note": "",
+      "detail_html_len": 3117
+    },
+    {
+      "gdsNo": 289945,
+      "gdsNm": "샘베딩 클로즈 옷장 80cm(높이216cm) 행거서랍형 6종",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/289/289945_A1.jpg?v=20251106170356",
+      "salePrc": 335900,
+      "brand": "한샘",
+      "reviewCnt": 950,
+      "category": "wardrobe",
+      "url": "https://store.hanssem.com/goods/289945",
+      "pattern_type": "split_panels",
+      "detail_img_count": 27,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668887918_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668905749_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668931816_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668954795_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668974595_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769671939374_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769671943558_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669061381_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769671947592_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669124764_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669134843_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669156442_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669185615_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669232169_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669250468_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669282306_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669287442_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669292892_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669362508_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669394506_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669421112_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669450369_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/15/1768467564080_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468347807_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468351123_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468354896_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/16/1768547933134_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668887918_0.jpg",
+          "w": 870,
+          "h": 580
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668905749_0.jpg",
+          "w": 870,
+          "h": 580
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668931816_0.jpg",
+          "w": 870,
+          "h": 1171
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668954795_0.jpg",
+          "w": 870,
+          "h": 1761
+        }
+      ],
+      "total_height_sampled": 4092,
+      "note": "",
+      "detail_html_len": 41413
+    },
+    {
+      "gdsNo": 647266,
+      "gdsNm": "아임빅 슬라이딩 옷장 100cm 행거형 짧은옷장 8종",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/647/647266_A1.jpg?v=20240809144137",
+      "salePrc": 479000,
+      "brand": "한샘",
+      "reviewCnt": 191,
+      "category": "wardrobe",
+      "url": "https://store.hanssem.com/goods/647266",
+      "pattern_type": "split_panels",
+      "detail_img_count": 36,
+      "detail_imgs": [
+        "https://image2.hanssem.com/howiz/hanssem_gagu_total.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbigsl_banner_191002.gif",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_01.gif",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_02.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_03.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_04.gif",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_05.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_06.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_07.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_08.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_09.jpg",
+        "https://image2.hanssem.com/howiz/closet/647266.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_10.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_11.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_12.gif",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_13.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_14.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_15.jpg",
+        "https://image2.hanssem.com/howiz/closet/647266_opExp_01.jpg",
+        "https://image2.hanssem.com/howiz/closet/647266_opExp_02.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_tipType_01.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_16.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_17_1000.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_18_1000.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_20.gif",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_21.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_22.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_23.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_24.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_25.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_26.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_27.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_28.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_caution_2110F.jpg",
+        "https://image2.hanssem.com/howiz/closet/imbig_sl_29.jpg",
+        "https://image2.hanssem.com/howiz/closet/delivery_closet.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image2.hanssem.com/howiz/hanssem_gagu_total.jpg",
+          "w": 870,
+          "h": 1
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/closet/imbigsl_banner_191002.gif",
+          "w": 750,
+          "h": 1314
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/closet/imbig_sl_01.gif",
+          "w": 750,
+          "h": 910
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/closet/imbig_sl_02.jpg",
+          "w": 750,
+          "h": 781
+        }
+      ],
+      "total_height_sampled": 3006,
+      "note": "",
+      "detail_html_len": 3032
+    },
+    {
+      "gdsNo": 1050289,
+      "gdsNm": "로렌 크림 옷장세트 140~350cm (높이216cm)",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/1050/1050289_A1.jpg?v=20250702150539",
+      "salePrc": 519580,
+      "brand": "한샘",
+      "reviewCnt": 87,
+      "category": "wardrobe",
+      "url": "https://store.hanssem.com/goods/1050289",
+      "pattern_type": "split_panels",
+      "detail_img_count": 27,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/08/1775614607337_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/03/06/1709704523264_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/03/06/1709687927772_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/20/1771576585854_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/03/06/1709687958680_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/03/06/1709687978004_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/03/06/1709688000253_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/09/1704783987456_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/27/1703655826473_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/09/1704772763170_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/27/1703650077247_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/27/1703650660696_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/27/1703650681268_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/27/1703650703713_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/27/1703650751735_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/09/1704772810604_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/27/1703650805939_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/27/1703650833396_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/08/1775614660059_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/08/1775614664219_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/08/1775614667802_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/08/1775614672733_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/08/1775614834914_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/08/1775614838604_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/08/1775614842176_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/08/1775614845836_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/07/02/1751436309044_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/04/08/1775614607337_0.jpg",
+          "w": 2610,
+          "h": 4944
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/03/06/1709704523264_0.jpg",
+          "w": 870,
+          "h": 1372
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/03/06/1709687927772_0.jpg",
+          "w": 870,
+          "h": 2192
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/02/20/1771576585854_0.jpg",
+          "w": 870,
+          "h": 4880
+        }
+      ],
+      "total_height_sampled": 13388,
+      "note": "",
+      "detail_html_len": 37933
+    },
+    {
+      "gdsNo": 945924,
+      "gdsNm": "프레임 클래식 옷장세트 코튼화이트 140cm~350cm(216cm) 16종",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/945/945924_A1.jpg?v=20250805112048",
+      "salePrc": 571540,
+      "brand": "한샘",
+      "reviewCnt": 170,
+      "category": "wardrobe",
+      "url": "https://store.hanssem.com/goods/945924",
+      "pattern_type": "split_panels",
+      "detail_img_count": 26,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/09/1775708806510_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707984087877_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/02/1706859799683_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/20/1771576387212_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/02/1706859830904_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/02/1706859927274_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/02/1706859981676_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/01/09/1704783817907_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/02/1706860421786_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707980918183_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/02/1706860867520_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/02/1706860883203_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/02/1706860946687_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/02/1706860989691_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/02/1706861054139_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707984164466_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707980949720_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/09/1775708866617_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/09/1775708872365_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/09/1775708876348_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/09/1775708882989_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/09/1775708914612_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/09/1775708922238_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/09/1775708926004_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/04/09/1775708930185_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/07/02/1751432666908_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/04/09/1775708806510_0.jpg",
+          "w": 2610,
+          "h": 4932
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/02/15/1707984087877_0.jpg",
+          "w": 870,
+          "h": 1379
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/02/02/1706859799683_0.jpg",
+          "w": 870,
+          "h": 2833
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/02/20/1771576387212_0.jpg",
+          "w": 870,
+          "h": 4411
+        }
+      ],
+      "total_height_sampled": 13555,
+      "note": "",
+      "detail_html_len": 37228
+    },
+    {
+      "gdsNo": 289948,
+      "gdsNm": "샘베딩 클로즈 옷장세트 160cm(높이216cm) 서랍형 6종",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/289/289948_A1.jpg?v=20251106170820",
+      "salePrc": 575800,
+      "brand": "한샘",
+      "reviewCnt": 128,
+      "category": "wardrobe",
+      "url": "https://store.hanssem.com/goods/289948",
+      "pattern_type": "split_panels",
+      "detail_img_count": 27,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668887918_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668905749_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668931816_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668954795_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668974595_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/30/1769738021137_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/30/1769738025852_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669061381_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/30/1769738030620_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669124764_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669134843_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669156442_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669185615_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669232169_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669250468_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669282306_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669287442_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669292892_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669362508_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669394506_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669421112_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769669450369_0.jpg",
+        "https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768467564080_0.jpg",
+        "https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468347807_0.jpg",
+        "https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468351123_0.jpg",
+        "https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468354896_0.jpg",
+        "https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/16/1768547933134_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668887918_0.jpg",
+          "w": 870,
+          "h": 580
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668905749_0.jpg",
+          "w": 870,
+          "h": 580
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668931816_0.jpg",
+          "w": 870,
+          "h": 1171
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/29/1769668954795_0.jpg",
+          "w": 870,
+          "h": 1761
+        }
+      ],
+      "total_height_sampled": 4092,
+      "note": "",
+      "detail_html_len": 41424
+    },
+    {
+      "gdsNo": 1066885,
+      "gdsNm": "샘베딩 스테디 옷장세트 240cm(높이194cm) 서랍형",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/1066/1066885_A1.jpg?v=20251106112053",
+      "salePrc": 744900,
+      "brand": "한샘",
+      "reviewCnt": 262,
+      "category": "wardrobe",
+      "url": "https://store.hanssem.com/goods/1066885",
+      "pattern_type": "split_panels",
+      "detail_img_count": 25,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476743846_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476759821_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476779790_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769565068988_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769501491785_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769562589665_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769501500879_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/03/1770084691754_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/03/1770084741550_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/03/1770084780759_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/03/1770084818795_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769478108019_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477199925_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477221426_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477227066_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477231890_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477322496_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477349676_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477391699_0.png",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769477417586_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/15/1768467564080_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468347807_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468351123_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468354896_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/02/03/1770078921906_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476743846_0.jpg",
+          "w": 1305,
+          "h": 1755
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476759821_0.jpg",
+          "w": 1305,
+          "h": 1755
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/27/1769476779790_0.jpg",
+          "w": 1305,
+          "h": 870
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769565068988_0.jpg",
+          "w": 870,
+          "h": 2470
+        }
+      ],
+      "total_height_sampled": 6850,
+      "note": "",
+      "detail_html_len": 27933
+    },
+    {
+      "gdsNo": 337208,
+      "gdsNm": "샘스마트 책상 112.5cm (컬러 택1)",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/337/337208_A1.jpg?v=20251015101316",
+      "salePrc": 209000,
+      "brand": "한샘",
+      "reviewCnt": 468,
+      "category": "desk",
+      "url": "https://store.hanssem.com/goods/337208",
+      "pattern_type": "split_panels",
+      "detail_img_count": 22,
+      "detail_imgs": [
+        "https://image.hanssem.com/howiz/hanssem_gagu_total.jpg",
+        "https://image2.hanssem.com/howiz/student/deskhalf_samsmart.jpg",
+        "https://image2.hanssem.com/howiz/student/337208_event.jpg",
+        "https://image2.hanssem.com/howiz/howiz01_750.jpg",
+        "https://image2.hanssem.com/howiz/student/samsmart_concept.jpg",
+        "https://image2.hanssem.com/howiz/student/337208_01.jpg",
+        "https://image2.hanssem.com/howiz/student/337208_text.jpg",
+        "https://image2.hanssem.com/howiz/student/337208_02.jpg",
+        "https://image2.hanssem.com/howiz/student/337208_03.jpg",
+        "https://image2.hanssem.com/howiz/student/samsmart_structure.gif",
+        "https://image2.hanssem.com/howiz/student/samsmart_best_3.jpg",
+        "https://image2.hanssem.com/howiz/student/337208_04.jpg",
+        "https://image2.hanssem.com/howiz/student/337208_05.jpg",
+        "https://image2.hanssem.com/howiz/student/samsmart_point_03_01.gif",
+        "https://image2.hanssem.com/howiz/student/337208_06.jpg",
+        "https://image2.hanssem.com/howiz/student/samsmart_acc.jpg",
+        "https://image2.hanssem.com/howiz/student/samsmart_compare.jpg",
+        "https://image2.hanssem.com/howiz/student/samsmart_styling.jpg",
+        "https://image2.hanssem.com/howiz/student/samsmart_caution.jpg",
+        "https://image2.hanssem.com/howiz/student/student_delivery.jpg",
+        "https://image2.hanssem.com/howiz/bedroom/bedroom_pkg_event.jpg",
+        "https://image2.hanssem.com/event/2016/11/mori_deskpad_sale.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/howiz/hanssem_gagu_total.jpg",
+          "w": 700,
+          "h": 1
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/student/deskhalf_samsmart.jpg",
+          "w": 750,
+          "h": 1
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/student/337208_event.jpg",
+          "w": 750,
+          "h": 1
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/howiz01_750.jpg",
+          "w": 750,
+          "h": 1
+        }
+      ],
+      "total_height_sampled": 4,
+      "note": "",
+      "detail_html_len": 2361
+    },
+    {
+      "gdsNo": 602514,
+      "gdsNm": "티오ㄱ자 데스크패드+자석바 세트",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/602/602514_A1.jpg?v=20251106144826",
+      "salePrc": 79000,
+      "brand": "한샘",
+      "reviewCnt": 263,
+      "category": "desk",
+      "url": "https://store.hanssem.com/goods/602514",
+      "pattern_type": "split_panels",
+      "detail_img_count": 8,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656990792_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656994319_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656998847_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701669676063_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701669694444_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701669706029_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701669720117_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701669741049_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656990792_0.jpg",
+          "w": 870,
+          "h": 1897
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656994319_0.jpg",
+          "w": 870,
+          "h": 2758
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656998847_0.jpg",
+          "w": 870,
+          "h": 4790
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701669676063_0.jpg",
+          "w": 870,
+          "h": 1379
+        }
+      ],
+      "total_height_sampled": 10824,
+      "note": "",
+      "detail_html_len": 18524
+    },
+    {
+      "gdsNo": 993205,
+      "gdsNm": "플렉스Z 컴퓨터책상 1600 D80",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/993/993205_A1.jpg?v=20250429141434",
+      "salePrc": 299000,
+      "brand": "한샘",
+      "reviewCnt": 127,
+      "category": "desk",
+      "url": "https://store.hanssem.com/goods/993205",
+      "pattern_type": "split_panels",
+      "detail_img_count": 9,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/upload/common/goods/2021/01/18/1610951939728_0.jpg",
+        "https://image.hanssem.com/hsimg/upload/common/goods/2021/09/24/1632443681541_0.png",
+        "https://image2.hanssem.com/howiz/student/1773357013479_0.jpg",
+        "https://image.hanssem.com/hsimg/upload/common/goods/2021/01/18/1610951944940_0.jpg",
+        "https://image.hanssem.com/hsimg/upload/common/goods/2021/01/18/1610951947714_0.jpg",
+        "https://image.hanssem.com/hsimg/upload/common/goods/2021/01/11/1610330474645_0.jpg",
+        "https://image.hanssem.com/hsimg/upload/common/goods/2021/01/18/1610951952625_0.jpg",
+        "https://image.hanssem.com/hsimg/upload/common/goods/2021/03/23/1616473258252_0.jpg",
+        "https://image2.hanssem.com/howiz/student/1610951956238_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/upload/common/goods/2021/01/18/1610951939728_0.jpg",
+          "w": 871,
+          "h": 1299
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/upload/common/goods/2021/09/24/1632443681541_0.png",
+          "w": 870,
+          "h": 1556
+        },
+        {
+          "src": "https://image2.hanssem.com/howiz/student/1773357013479_0.jpg",
+          "w": 870,
+          "h": 2717
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/upload/common/goods/2021/01/18/1610951944940_0.jpg",
+          "w": 870,
+          "h": 1909
+        }
+      ],
+      "total_height_sampled": 7481,
+      "note": "",
+      "detail_html_len": 1303
+    },
+    {
+      "gdsNo": 1077501,
+      "gdsNm": "티오 일자책상 세트 (옵션 택1)",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/1077/1077501_A1.jpg?v=20251202190736",
+      "salePrc": 294930,
+      "brand": "한샘",
+      "reviewCnt": 418,
+      "category": "desk",
+      "url": "https://store.hanssem.com/goods/1077501",
+      "pattern_type": "split_panels",
+      "detail_img_count": 15,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/05/21/1779339341253_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/05/21/1779339350566_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/14/1731542663113_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419824356_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/14/1731542694193_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419004517_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419859331_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419056482_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419067753_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419102844_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419133783_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/14/1731542754243_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419278618_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419909223_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/11/28/1764314394442_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/05/21/1779339341253_0.gif",
+          "w": 870,
+          "h": 580
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/05/21/1779339350566_0.gif",
+          "w": 870,
+          "h": 580
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/11/14/1731542663113_0.jpg",
+          "w": 870,
+          "h": 1160
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419824356_0.jpg",
+          "w": 870,
+          "h": 580
+        }
+      ],
+      "total_height_sampled": 2900,
+      "note": "",
+      "detail_html_len": 30389
+    },
+    {
+      "gdsNo": 667832,
+      "gdsNm": "티오 책상장 LED 스터디 조명80cm",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/667/667832_A1.jpg?v=20251106145330",
+      "salePrc": 99900,
+      "brand": "한샘",
+      "reviewCnt": 1456,
+      "category": "desk",
+      "url": "https://store.hanssem.com/goods/667832",
+      "pattern_type": "split_panels",
+      "detail_img_count": 11,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656990792_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656994319_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656998847_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657295496_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657659565_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657680116_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657702410_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657737072_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657768653_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657799494_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/05/1701760218954_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656990792_0.jpg",
+          "w": 870,
+          "h": 1897
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656994319_0.jpg",
+          "w": 870,
+          "h": 2758
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656998847_0.jpg",
+          "w": 870,
+          "h": 4790
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657295496_0.jpg",
+          "w": 870,
+          "h": 1498
+        }
+      ],
+      "total_height_sampled": 10943,
+      "note": "",
+      "detail_html_len": 21324
+    },
+    {
+      "gdsNo": 1028805,
+      "gdsNm": "티오 단독책상 세트 (옵션 택1)",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/1028/1028805_A1.jpg?v=20251202191027",
+      "salePrc": 374000,
+      "brand": "한샘",
+      "reviewCnt": 613,
+      "category": "desk",
+      "url": "https://store.hanssem.com/goods/1028805",
+      "pattern_type": "split_panels",
+      "detail_img_count": 15,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/05/21/1779339444305_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2026/05/21/1779339451997_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/14/1731544613816_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730418957311_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/14/1731544651434_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419004517_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419022593_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419056482_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419067753_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419102844_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419133783_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/14/1731544750716_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419278618_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730419292768_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/11/14/1731544772271_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/05/21/1779339444305_0.gif",
+          "w": 870,
+          "h": 580
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2026/05/21/1779339451997_0.gif",
+          "w": 870,
+          "h": 580
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/11/14/1731544613816_0.jpg",
+          "w": 870,
+          "h": 580
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/11/01/1730418957311_0.jpg",
+          "w": 869,
+          "h": 579
+        }
+      ],
+      "total_height_sampled": 2319,
+      "note": "",
+      "detail_html_len": 30540
+    },
+    {
+      "gdsNo": 1028868,
+      "gdsNm": "티오 책상부착용 콘센트",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/1028/1028868_A1.jpg?v=20251106145701",
+      "salePrc": 29000,
+      "brand": "한샘",
+      "reviewCnt": 268,
+      "category": "desk",
+      "url": "https://store.hanssem.com/goods/1028868",
+      "pattern_type": "split_panels",
+      "detail_img_count": 8,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656990792_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/26/1703556771060_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656998847_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701662202743_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701662256536_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701662271324_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701662293652_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701662322342_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656990792_0.jpg",
+          "w": 870,
+          "h": 1897
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/26/1703556771060_0.jpg",
+          "w": 870,
+          "h": 2758
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656998847_0.jpg",
+          "w": 870,
+          "h": 4790
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701662202743_0.jpg",
+          "w": 870,
+          "h": 1341
+        }
+      ],
+      "total_height_sampled": 10786,
+      "note": "",
+      "detail_html_len": 18526
+    },
+    {
+      "gdsNo": 602515,
+      "gdsNm": "티오 수납함 2칸 (컬러 택1)",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/602/602515_A1.jpg?v=20251106144555",
+      "salePrc": 49000,
+      "brand": "한샘",
+      "reviewCnt": 290,
+      "category": "desk",
+      "url": "https://store.hanssem.com/goods/602515",
+      "pattern_type": "split_panels",
+      "detail_img_count": 9,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656990792_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/26/1703556707716_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656998847_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701668926074_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701668948999_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701668970710_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701668987685_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701669000291_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701669019641_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656990792_0.jpg",
+          "w": 870,
+          "h": 1897
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/26/1703556707716_0.jpg",
+          "w": 870,
+          "h": 2758
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656998847_0.jpg",
+          "w": 870,
+          "h": 4790
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701668926074_0.jpg",
+          "w": 870,
+          "h": 1494
+        }
+      ],
+      "total_height_sampled": 10939,
+      "note": "",
+      "detail_html_len": 19332
+    },
+    {
+      "gdsNo": 973933,
+      "gdsNm": "티오 ㄱ자책상 160cm (컬러 택1)",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/973/973933_A1.jpg?v=20251202190714",
+      "salePrc": 262900,
+      "brand": "한샘",
+      "reviewCnt": 110,
+      "category": "desk",
+      "url": "https://store.hanssem.com/goods/973933",
+      "pattern_type": "split_panels",
+      "detail_img_count": 18,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665420664_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/06/1707210309806_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665439705_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2025/05/08/1746668771787_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701666575775_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701666595965_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701666628935_0.gif",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/01/1701411981813_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665668147_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/01/1701411999091_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665742420_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/01/1701412640950_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701675118695_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665789827_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701666710272_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/01/1701412290701_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/01/1701412322482_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701666737953_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665420664_0.jpg",
+          "w": 870,
+          "h": 1897
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/02/06/1707210309806_0.jpg",
+          "w": 870,
+          "h": 948
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665439705_0.jpg",
+          "w": 870,
+          "h": 5013
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2025/05/08/1746668771787_0.jpg",
+          "w": 870,
+          "h": 1406
+        }
+      ],
+      "total_height_sampled": 9264,
+      "note": "",
+      "detail_html_len": 28351
+    },
+    {
+      "gdsNo": 667815,
+      "gdsNm": "티오 일반책상 120cm (컬러 택1)",
+      "thumbnail": "https://image.hanssem.com/hsimg/gds/1050/667/667815_A1.jpg?v=20251202190353",
+      "salePrc": 117900,
+      "brand": "한샘",
+      "reviewCnt": 761,
+      "category": "desk",
+      "url": "https://store.hanssem.com/goods/667815",
+      "pattern_type": "split_panels",
+      "detail_img_count": 17,
+      "detail_imgs": [
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665420664_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2024/02/06/1707210240038_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665439705_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665449278_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665558695_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665573504_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/01/1701411981813_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665668147_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/01/1701411999091_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665742420_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/01/1701412640950_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701674986756_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665789827_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/01/1701412275783_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/01/1701412290701_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/01/1701412322482_0.jpg",
+        "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665883892_0.jpg"
+      ],
+      "sampled_dims": [
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665420664_0.jpg",
+          "w": 870,
+          "h": 1897
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2024/02/06/1707210240038_0.jpg",
+          "w": 870,
+          "h": 948
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665439705_0.jpg",
+          "w": 870,
+          "h": 5013
+        },
+        {
+          "src": "https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701665449278_0.jpg",
+          "w": 870,
+          "h": 1496
+        }
+      ],
+      "total_height_sampled": 9354,
+      "note": "",
+      "detail_html_len": 27613
+    }
+  ]
+}
