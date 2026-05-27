@@ -849,6 +849,28 @@ def build_process_card(t, swap_results):
     else:
         status_col = '<div class="proc-h">상태</div><div class="status-line">시간 <b>—</b></div>'
 
+    # 사용자 제품 URL (product_input.json 또는 url.txt)
+    user_url = ""
+    user_name_full = _user_product_name_for_rank(rank)
+    user_dir = _user_dir_for_rank(rank)
+    if user_dir:
+        for fn in ('product_input.json', 'product_input_v3.json'):
+            pi = user_dir / fn
+            if pi.exists():
+                try:
+                    pidata = json.loads(pi.read_text())
+                    user_url = pidata.get('_source_url', '') or ''
+                except Exception:
+                    pass
+                break
+        if not user_url:
+            url_f = user_dir / 'url.txt'
+            if url_f.exists():
+                user_url = url_f.read_text().strip().splitlines()[0].strip()
+
+    user_link = (f'<a href="{user_url}" target="_blank" class="orig-link user-link">사용자 제품 ↗</a>'
+                 if user_url else '')
+
     return f'''
 <details class="process-card">
   <summary>
@@ -862,12 +884,24 @@ def build_process_card(t, swap_results):
   </summary>
   <div class="proc-content">
     <div class="tpl-info-row">
-      <div class="proc-h">템플릿 정보</div>
-      <div class="tpl-name">{t['name']}</div>
-      <div class="tpl-meta">
-        <span class="cat-tag">{t.get('category')}</span><span>{t.get('brand','')}</span>
-        <span>★ {t.get('reviewCnt',0)} 리뷰</span><span>{tpl_price_str}</span>
-        <a href="{t['url']}" target="_blank" class="orig-link">원본 ↗</a>
+      <div class="proc-h">한샘 레퍼런스 ↔ 사용자 제품</div>
+      <div class="ref-vs-user">
+        <div class="ref-col">
+          <div class="ref-label">레퍼런스 (한샘)</div>
+          <div class="tpl-name">{t['name']}</div>
+          <div class="tpl-meta">
+            <span class="cat-tag">{t.get('category')}</span><span>{t.get('brand','')}</span>
+            <span>★ {t.get('reviewCnt',0)} 리뷰</span><span>{tpl_price_str}</span>
+            <a href="{t['url']}" target="_blank" class="orig-link">한샘 상세 ↗</a>
+          </div>
+        </div>
+        <div class="ref-col">
+          <div class="ref-label">적용 (사용자 제품)</div>
+          <div class="tpl-name">{user_name_full[:50]}</div>
+          <div class="tpl-meta">
+            {user_link if user_link else '<span style="color:#9ca3af">(URL 없음)</span>'}
+          </div>
+        </div>
       </div>
     </div>
     <div class="proc-h">📷 이미지 입력 — zone 분리 (담당자 업로드)</div>
@@ -1034,6 +1068,11 @@ html = f"""<!DOCTYPE html>
   .tpl-meta {{ display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--fg-soft); margin-top: 6px; }}
   .cat-tag {{ background: #efefef; padding: 2px 8px; border-radius: 4px; color: #444; font-weight: 500; }}
   .orig-link {{ color: #2563eb; text-decoration: none; }}
+  .orig-link:hover {{ text-decoration: underline; }}
+  .user-link {{ color: #059669; }}
+  .ref-vs-user {{ display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 6px; }}
+  .ref-col {{ padding: 12px; background: var(--bg-alt); border: 1px solid var(--line-soft); border-radius: 6px; }}
+  .ref-label {{ font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; margin-bottom: 4px; }}
   .proc-grid {{ display: grid; grid-template-columns: 1.1fr 1.7fr 1fr; gap: 24px; }}
   .proc-col {{ display: flex; flex-direction: column; gap: 8px; min-width: 0; }}
   .proc-h {{ font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; }}
