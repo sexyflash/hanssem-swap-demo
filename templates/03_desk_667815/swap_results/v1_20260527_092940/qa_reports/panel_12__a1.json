@@ -1,0 +1,92 @@
+{
+  "image_format": "lifestyle",
+  "items_results": [
+    {
+      "id": "no_top_embedded_power_or_grommet",
+      "verdict": "pass",
+      "reason_ko": "상판 위에 콘센트, 케이블홀, 팝업 전원 모듈처럼 보이는 타공형 장치가 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_underdesk_outlet_in_base_images",
+      "verdict": "pass",
+      "reason_ko": "책상 하부나 프레임 아래에 설치형 콘센트가 노출되어 있지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_integrated_drawers",
+      "verdict": "pass",
+      "reason_ko": "책상 본체에 부착된 서랍은 보이지 않으며, 오른쪽 하부는 오픈 선반형 수납으로 표현되어 있습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_glass_or_stone_top",
+      "verdict": "pass",
+      "reason_ko": "상판은 흰색 목재/합판 계열 마감으로 보이며 유리나 석재, 대리석 질감으로 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_v_or_x_metal_legs",
+      "verdict": "pass",
+      "reason_ko": "책상 다리는 직선형 원형 다리와 패널형 수납 유닛으로 구성되어 있으며 V자, X자, 지그재그 메탈 다리는 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_keyboard_pullout_tray",
+      "verdict": "pass",
+      "reason_ko": "상판 아래에 키보드 슬라이드나 풀아웃 트레이 형태의 부속이 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_casters_on_desk_base",
+      "verdict": "pass",
+      "reason_ko": "바퀴는 의자에만 보이며, 책상 본체와 하부 책장 유닛에는 작은 조절발만 보입니다. 책상용 캐스터는 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "l_shape_with_lower_bookcase",
+      "verdict": "pass",
+      "reason_ko": "긴 상판과 오른쪽으로 꺾인 짧은 변이 결합된 ㄱ자 구조이며, 짧은 변이 하부 오픈 책장 유닛 위에 놓여 지지되는 형태로 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "open_storage_no_doors",
+      "verdict": "pass",
+      "reason_ko": "하부 수납부가 책장형 오픈 선반으로 표현되어 있고 도어 또는 서랍 전면은 보이지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "uniform_finish_to_bottom",
+      "verdict": "pass",
+      "reason_ko": "전체적으로 흰색 마감과 직선형 라인이 하단까지 일관되게 이어지며, 다리 끝의 작은 회색 캡/조절발 정도만 차이가 있습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "open_storage_tall_bay_for_pc",
+      "verdict": "pass",
+      "reason_ko": "하부 오픈 수납부에 비교적 높게 열린 칸이 보이며, 부피 있는 물건을 넣을 수 있는 오픈 베이 구조로 판단됩니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 72,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "B는 원본 C의 중앙 이동식 서랍장 구도와는 달리 사용자 제품의 ㄱ자 책상 및 하부 오픈 책장 구조를 더 넓게 보여주는 장면입니다. 제품 정체성 관점에서는 상판, 다리, 하부 오픈 수납, 금지 액세서리 부재가 사용자 제품과 일치하며 명백한 distortion 또는 forbidden fail은 없습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 100,
+  "verdict": "pass"
+}

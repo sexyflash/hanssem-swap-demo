@@ -1,0 +1,59 @@
+{
+  "image_format": "lifestyle",
+  "items_results": [
+    {
+      "id": "no_top_embedded_power_or_grommet",
+      "verdict": "pass",
+      "reason_ko": "상판 위에 타공형 콘센트, 케이블홀, 팝업 전원 모듈로 보이는 요소가 확인되지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_underdesk_outlet_in_base_images",
+      "verdict": "pass",
+      "reason_ko": "책상 하부나 책장 유닛에 설치형 콘센트가 노출되어 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_upper_hutch_or_overhead_shelf",
+      "verdict": "pass",
+      "reason_ko": "오른쪽 배경 수납장은 실내 배경 가구로 보이며, 책상 본체에 결합된 상부 헛치나 오버헤드 선반은 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_built_in_usb_or_led",
+      "verdict": "pass",
+      "reason_ko": "책상 본체에 USB 포트, LED 조명 등 내장 전장품이 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "l_shape_with_lower_bookcase",
+      "verdict": "pass",
+      "reason_ko": "긴 메인 상판에 오른쪽으로 짧은 변이 이어진 ㄱ자 구성이며, 짧은 변 아래에 하부 책장 유닛이 결합되어 지지하는 형태로 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "rounded_top_edges_corners",
+      "verdict": "pass",
+      "reason_ko": "상판 전면 모서리와 외곽 코너가 각지기보다 부드럽게 라운드 처리된 형태로 표현되어 있습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 88,
+  "hallucinations": [
+    "하부 책장 측면에 걸린 가방/후크처럼 보이는 연출 요소"
+  ],
+  "specific_failures": [],
+  "notes_ko": "제품 핵심 형태인 흰색 ㄱ자 상판과 하부 책장 결합 구조는 확인되며, 금지된 전원 타공·하부 콘센트·USB/LED·상부 헛치도 보이지 않습니다. 다만 책장 측면의 가방/후크는 원본 제품 구성이라기보다 연출 소품 또는 추가 액세서리처럼 보입니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 100,
+  "verdict": "pass"
+}

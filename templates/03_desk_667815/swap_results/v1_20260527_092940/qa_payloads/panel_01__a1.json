@@ -1,0 +1,85 @@
+{
+  "panel_id": "panel_01.jpg",
+  "panel_class": "intro_hero",
+  "vision_model": "gpt-5.5",
+  "ref_paths": [
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/03_desk_973933/use_product/screenshot_03.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/03_desk_973933/use_product/screenshot_10.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/03_desk_973933/use_product/screenshot_01.png"
+  ],
+  "ref_labels": [
+    "main_view·전체각도",
+    "main_view·전체각도",
+    "main_view·전체측면"
+  ],
+  "panel_orig_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/03_desk_667815/panel_01.jpg",
+  "swap_result_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/03_desk_667815/swap_results/v1_20260527_092940/gpt_image/panel_01__a1_v16.png",
+  "applicable_item_ids": [
+    "l_shape_with_lower_bookcase",
+    "rounded_top_edges_corners",
+    "no_top_embedded_power_or_grommet",
+    "no_underdesk_outlet_in_base_images",
+    "no_upper_hutch_or_overhead_shelf",
+    "no_built_in_usb_or_led"
+  ],
+  "user_prompt": "=== TASK ===\n이 swap 결과(B)를 사용자 제품의 verifiable checklist로 채점하라.\n\n=== 사용자 제품 ===\ncategory: desk\n제품명: 한샘 티오 ㄱ자책상 160cm\n핵심 axis: frame, legs, storage, edges, surface, structure, accessory, power, connection, size, color\n\n=== 첨부 이미지 ===\n  A_1 = main_view·전체각도\n  A_2 = main_view·전체각도\n  A_3 = main_view·전체측면\n  B = swap 결과 (채점 대상)\n  C = 한샘 원본 panel (composition reference)\n\n=== Panel 컨텍스트 ===\npanel_id: panel_01.jpg\npanel_class: intro_hero\nspatial_layout: 상단 2/3는 밝은 자연광이 들어오는 창가 앞에 책상과 의자가 배치된 실내 공간 사진이 크게 차지한다. 책상 위에는 모니터, 스탠드, 펜꽂이, 안경, 노트가 정돈되어 있다. 의자 등받이에는 헤드폰이 걸려 있고, 책상 아래에는 파란색 수납 바구니가 있다. 오른쪽 배경에는 하얀색 수납장이 있고, 책과 소품이 진열되어 있다. 하단 1/3에는 연한 회색 배경 위에 제품명과 설명 텍스트가 좌측 정렬로 배치되어 있다. 텍스트는 상단에 굵은 제목, 하단에 설명문이 있다.\n\n=== 적용 가능한 CHECKLIST ITEMS (이 panel에서 검증 가능) ===\n각 item에 category(distortion/detail/forbidden)와 generation_feasibility 가 표시됨.\n- distortion / forbidden: strict 채점 (제품 왜곡 검출이 사용자 핵심 요구)\n- detail: image gen 한계 인정 → 명백한 차이만 fail, 모호하면 pass\n- generation_feasibility=low: 더욱 보수적으로 fail 매김 (미세 디테일)\n\n- [ forbidden] [feas=high] id=no_top_embedded_power_or_grommet axis=power\n    desc: 상판 타공형 전원 콘센트/케이블홀/팝업 모듈 없음\n    expected: 보이지 않음\n    question: 결과 B에서 상판에 타공형 전원 콘센트나 케이블홀이 보이지 않는가?\n- [ forbidden] [feas=high] id=no_underdesk_outlet_in_base_images axis=power\n    desc: 기본 구성 이미지에서 하부 설치형 콘센트 노출 금지(선택 액세서리는 별도 패널에서만)\n    expected: 노출 없음\n    question: 결과 B의 기본 제품 이미지에서 하부 설치형 콘센트가 노출되지 않는가?\n- [ forbidden] [feas=high] id=no_upper_hutch_or_overhead_shelf axis=frame\n    desc: 책상 상부에 결합된 상부 선반/헛치 없음\n    expected: 상부 선반/헛치 없음\n    question: 결과 B에서 책상 상부에 결합된 헛치나 선반이 보이지 않는가?\n- [ forbidden] [feas=high] id=no_built_in_usb_or_led axis=power\n    desc: 책상 본체에 USB 포트/LED 조명 등 전장품 내장 없음\n    expected: 전장품 없음\n    question: 결과 B에서 본체에 USB 포트나 LED 조명이 보이지 않는가?\n- [distortion] [feas=high] id=l_shape_with_lower_bookcase axis=frame\n    desc: ㄱ자(L자) 형태 상판과 하부 책장 유닛이 결합된 일체형 구성\n    expected: ㄱ자 상판 + 하부 책장 일체형\n    question: 결과 B에서 책상이 ㄱ자 형태이며 짧은 변을 하부 책장 유닛이 지지하는가?\n- [distortion] [feas=high] id=rounded_top_edges_corners axis=edges\n    desc: 상판 외곽 모서리 라운드 처리\n    expected: 라운드 모서리\n    question: 결과 B에서 상판 모서리들이 라운드(둥근) 처리로 보이는가?\n\n=== 출력 schema (strict JSON) ===\n{\n  \"image_format\": \"single_product|lifestyle|chart_diagram|multi_panel_grid\",\n  \"items_results\": [\n    {\n      \"id\": \"...\",\n      \"verdict\": \"pass|fail|not_visible\",\n      \"reason_ko\": \"...\",\n      \"category\": \"distortion|detail|forbidden\",\n      \"generation_feasibility\": \"high|medium|low\"\n    }\n  ],\n  \"distortion_fail_count\": int,\n  \"forbidden_fail_count\": int,\n  \"composition_score\": 0-100,\n  \"hallucinations\": [\"발견된 invented feature 한국어\"],\n  \"specific_failures\": [\"distortion/forbidden fail 항목의 한국어 요약\"],\n  \"notes_ko\": \"...\"\n}\n\n판정 가이드:\n- distortion item: 다리 개수 / 가죽 vs 패브릭 / 보조쿠션 유무 / 컬러명 등 명백한 차이 → fail\n- forbidden item: invented feature (헤드레스트 등) 발견 → fail\n- detail item: 시접 종류 / 미세 곡률 / 직조 결 등이 약간 달라도 → pass (관대)\n",
+  "result": {
+    "image_format": "lifestyle",
+    "items_results": [
+      {
+        "id": "no_top_embedded_power_or_grommet",
+        "verdict": "pass",
+        "reason_ko": "상판 위에 타공형 콘센트, 케이블홀, 팝업 전원 모듈로 보이는 요소가 확인되지 않습니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "no_underdesk_outlet_in_base_images",
+        "verdict": "pass",
+        "reason_ko": "책상 하부나 책장 유닛에 설치형 콘센트가 노출되어 보이지 않습니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "no_upper_hutch_or_overhead_shelf",
+        "verdict": "pass",
+        "reason_ko": "오른쪽 배경 수납장은 실내 배경 가구로 보이며, 책상 본체에 결합된 상부 헛치나 오버헤드 선반은 보이지 않습니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "no_built_in_usb_or_led",
+        "verdict": "pass",
+        "reason_ko": "책상 본체에 USB 포트, LED 조명 등 내장 전장품이 보이지 않습니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "l_shape_with_lower_bookcase",
+        "verdict": "pass",
+        "reason_ko": "긴 메인 상판에 오른쪽으로 짧은 변이 이어진 ㄱ자 구성이며, 짧은 변 아래에 하부 책장 유닛이 결합되어 지지하는 형태로 보입니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "rounded_top_edges_corners",
+        "verdict": "pass",
+        "reason_ko": "상판 전면 모서리와 외곽 코너가 각지기보다 부드럽게 라운드 처리된 형태로 표현되어 있습니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      }
+    ],
+    "distortion_fail_count": 0,
+    "forbidden_fail_count": 0,
+    "composition_score": 88,
+    "hallucinations": [
+      "하부 책장 측면에 걸린 가방/후크처럼 보이는 연출 요소"
+    ],
+    "specific_failures": [],
+    "notes_ko": "제품 핵심 형태인 흰색 ㄱ자 상판과 하부 책장 결합 구조는 확인되며, 금지된 전원 타공·하부 콘센트·USB/LED·상부 헛치도 보이지 않습니다. 다만 책장 측면의 가방/후크는 원본 제품 구성이라기보다 연출 소품 또는 추가 액세서리처럼 보입니다.",
+    "critical_fail_count": 0,
+    "product_score_raw": null,
+    "product_score": 100,
+    "verdict": "pass"
+  }
+}

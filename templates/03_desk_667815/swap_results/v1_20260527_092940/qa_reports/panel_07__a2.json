@@ -1,0 +1,83 @@
+{
+  "image_format": "single_product",
+  "items_results": [
+    {
+      "id": "open_storage_no_doors",
+      "verdict": "fail",
+      "reason_ko": "결과 B의 하부 우측에는 오픈 책장형 선반 구조가 확인되지 않고, 상판 아래에 서랍/트레이 또는 막힌 패널처럼 보이는 구조가 보여 도어/서랍 없는 오픈 수납이라는 정체성과 맞지 않는다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "rounded_top_edges_corners",
+      "verdict": "pass",
+      "reason_ko": "상판의 좌하단 외곽 모서리가 기준 이미지처럼 둥글게 라운드 처리되어 보인다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "bag_hook_one_included",
+      "verdict": "pass",
+      "reason_ko": "상판 하부 좌측에 가방걸이로 보이는 후크 1개가 식별된다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "two_stability_braces",
+      "verdict": "pass",
+      "reason_ko": "상판 하부에 흰색 수평 보강대/레일 형태가 2개 보이며, 패널 내에서는 보강대 2개로 식별 가능하다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_top_not_glass_or_stone",
+      "verdict": "pass",
+      "reason_ko": "상판은 밝은 오크색 목질 라미네이트 패널처럼 보이며 유리, 대리석, 라이브엣지 원목으로 보이지 않는다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "adjustable_levelers_visible",
+      "verdict": "not_visible",
+      "reason_ko": "다리 하단이 프레임 밖으로 잘려 있어 조절발/레벨러 존재 여부를 확인할 수 없다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "open_storage_tall_bay_for_pc",
+      "verdict": "not_visible",
+      "reason_ko": "패널이 상판 모서리와 상부 하단 구조 중심의 클로즈업이라 PC 본체가 들어갈 만큼의 높은 오픈 수납 칸은 확인되지 않는다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_surface_low_gloss",
+      "verdict": "pass",
+      "reason_ko": "상판 표면에 과도한 반사나 유광 느낌이 없고 무광/세미무광 LPM 질감으로 보인다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "edge_banding_clean_finish",
+      "verdict": "pass",
+      "reason_ko": "라운드 모서리의 엣지 밴딩이 대체로 균일하며, 명백한 이색이나 들뜸은 보이지 않는다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    }
+  ],
+  "distortion_fail_count": 1,
+  "forbidden_fail_count": 0,
+  "composition_score": 78,
+  "hallucinations": [
+    "상판 아래 슬라이딩 서랍/트레이처럼 보이는 구조"
+  ],
+  "specific_failures": [
+    "하부 수납이 도어/서랍 없는 책장형 오픈 선반 구조로 확인되지 않고, 서랍/트레이 또는 막힌 패널처럼 보임",
+    "distortion fail · open_storage_no_doors: 결과 B의 하부 우측에는 오픈 책장형 선반 구조가 확인되지 않고, 상판 아래에 서랍/트레이 또는 막힌 패널처럼 보이는 구조가 보여 도어/서랍 없는 오픈 수납이라는 정체성과 맞지 않는다."
+  ],
+  "notes_ko": "상판의 라운드 모서리, 밝은 오크 LPM 질감, 흰색 원통형 다리, 주황색 책자 배치는 기준과 잘 맞는다. 다만 제품 핵심인 오픈 수납 구조가 이 클로즈업 결과에서는 왜곡되어 보이며, 상판 아래에 사용자 제품에 없는 슬라이딩 트레이/서랍 같은 요소가 생성된 점이 문제다.",
+  "critical_fail_count": 1,
+  "product_score_raw": null,
+  "product_score": 81,
+  "verdict": "retry"
+}

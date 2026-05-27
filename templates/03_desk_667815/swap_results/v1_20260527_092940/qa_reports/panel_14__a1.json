@@ -1,0 +1,43 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [
+    {
+      "id": "l_shape_with_lower_bookcase",
+      "verdict": "pass",
+      "reason_ko": "결과 B는 긴 상판과 우측 짧은 리턴부가 결합된 ㄱ자 형태로 보이며, 하부에 칸막이형 책장 유닛이 일체로 연결되어 있다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "two_stability_braces",
+      "verdict": "pass",
+      "reason_ko": "상판 하부에 길게 배치된 직사각형 보강대 2개가 명확히 식별된다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "return_supported_by_bookcase",
+      "verdict": "pass",
+      "reason_ko": "ㄱ자 짧은 변이 독립 원형 다리 대신 우측 하부 책장 유닛 위에 얹혀 지지되는 구조로 표현되어 있다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "hook_left_right_option_indicator",
+      "verdict": "fail",
+      "reason_ko": "가방걸이 좌/우 선택 설치를 안내하는 아이콘, 텍스트, 화살표 표시는 보이지 않는다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 68,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "핵심 제품 정체성인 ㄱ자 상판, 하부 책장 지지 구조, 보강대 구성은 결과 B에서 검증 가능하게 유지되어 distortion fail은 없다. 다만 원본 C의 단순 뒤집힌 테이블/네 다리 구도와는 달리 사용자 제품 구조에 맞춰 책장 유닛이 크게 드러나므로 composition_score는 중간 수준으로 평가했다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 94,
+  "verdict": "retry"
+}

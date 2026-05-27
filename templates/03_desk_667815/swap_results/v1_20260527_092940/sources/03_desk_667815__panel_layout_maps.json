@@ -1,0 +1,793 @@
+{
+  "panels": [
+    {
+      "panel_class": "intro_hero",
+      "spatial_layout": "상단 2/3는 밝은 자연광이 들어오는 창가 앞에 책상과 의자가 배치된 실내 공간 사진이 크게 차지한다. 책상 위에는 모니터, 스탠드, 펜꽂이, 안경, 노트가 정돈되어 있다. 의자 등받이에는 헤드폰이 걸려 있고, 책상 아래에는 파란색 수납 바구니가 있다. 오른쪽 배경에는 하얀색 수납장이 있고, 책과 소품이 진열되어 있다. 하단 1/3에는 연한 회색 배경 위에 제품명과 설명 텍스트가 좌측 정렬로 배치되어 있다. 텍스트는 상단에 굵은 제목, 하단에 설명문이 있다.",
+      "elements": [
+        {
+          "role": "product",
+          "position": "중앙 하단부, 책상과 의자",
+          "description": "심플한 디자인의 흰색 책상과 회색 메쉬 의자"
+        },
+        {
+          "role": "props",
+          "position": "책상 위",
+          "description": "모니터, 스탠드, 펜꽂이, 안경, 노트"
+        },
+        {
+          "role": "props",
+          "position": "의자 등받이",
+          "description": "블랙 헤드폰"
+        },
+        {
+          "role": "props",
+          "position": "책상 아래",
+          "description": "파란색 펠트 수납 바구니"
+        },
+        {
+          "role": "background",
+          "position": "오른쪽 상단",
+          "description": "하얀색 수납장과 진열된 책, 소품"
+        },
+        {
+          "role": "window",
+          "position": "좌측 상단",
+          "description": "커튼이 드리워진 큰 창, 바깥 풍경 일부 노출"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "하단 1/3 좌측",
+          "content": "티오 책상\n좋은 책상의 정석\n티오 책상의 완성도 높은 내구성과 심플한 디자인은 내 공간의 탄탄한 베이스가 되어 줍니다. 합리적인 가격과 믿을 수 있는 품질을 갖춘 티오 책상으로 부족함 없는 작업 공간을 만들어 보세요."
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "상단 2/3의 책상과 의자(제품) 영역만 동일한 위치와 크기로 교체하고, 배경, 소품, 하단 텍스트 레이아웃은 그대로 유지한다.",
+      "panel": "panel_01.jpg",
+      "panel_idx": 1
+    },
+    {
+      "panel_class": "module_lineup",
+      "spatial_layout": "상단 좌측에 '라인업'과 '단위 : cm' 텍스트가 위치. 그 아래 2x2 그리드 형태로 네 개의 책상 제품 이미지가 배치됨. 각 제품 이미지는 중앙에 위치하며, 이미지 하단에는 제품명과 사이즈 정보가 각각 두 줄로 정렬됨. 좌상단부터 시계방향으로 120cm, 140cm, ㄱ자 160cm, 160cm 책상 순서. 각 제품 간 간격이 균일하며, 전체적으로 여백이 넓고 정돈된 배열.",
+      "elements": [
+        {
+          "role": "title",
+          "position": "top left",
+          "description": "'라인업' 텍스트"
+        },
+        {
+          "role": "unit_info",
+          "position": "below title",
+          "description": "'단위 : cm' 텍스트"
+        },
+        {
+          "role": "product_image",
+          "position": "top left grid",
+          "description": "120cm 일반책상 이미지"
+        },
+        {
+          "role": "product_image",
+          "position": "top right grid",
+          "description": "140cm 일반책상 이미지"
+        },
+        {
+          "role": "product_image",
+          "position": "bottom left grid",
+          "description": "160cm 일반책상 이미지"
+        },
+        {
+          "role": "product_image",
+          "position": "bottom right grid",
+          "description": "160cm ㄱ자책상 이미지"
+        },
+        {
+          "role": "product_label",
+          "position": "below each product image",
+          "description": "각 제품명 및 사이즈 정보"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top left",
+          "content": "라인업"
+        },
+        {
+          "region": "below title",
+          "content": "단위 : cm"
+        },
+        {
+          "region": "below top left product",
+          "content": "티오 일반책상 120cm\n120 X 74 X 60"
+        },
+        {
+          "region": "below top right product",
+          "content": "티오 일반책상 140cm\n140 X 74 X 60"
+        },
+        {
+          "region": "below bottom left product",
+          "content": "티오 일반책상 160cm\n163 X 74 X 60"
+        },
+        {
+          "region": "below bottom right product",
+          "content": "티오 ㄱ자책상 160cm\n163 X 74 X 115"
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "각 제품 이미지 영역만 동일 위치/크기로 교체하고, 텍스트 및 전체 2x2 그리드 레이아웃은 그대로 유지한다.",
+      "panel": "panel_02.jpg",
+      "panel_idx": 2
+    },
+    {
+      "panel_class": "lifestyle_scene",
+      "spatial_layout": "상단에는 두 개의 책상과 책장 세트가 나란히 배치되어 있으며, 각 세트는 벽면을 따라 정렬되어 있다. 중간에는 책상과 의자가 가까이 배치되어 사용 환경을 보여준다. 하단에는 다른 색상 조합의 책상과 책장이 벽을 따라 배치되어 있고, 바닥에는 러그가 깔려 있다. 마지막 이미지는 침대 옆에 책상과 의자가 배치된 컴팩트한 공간을 보여준다. 각 장면마다 책상 위에는 소품, 책, 램프 등이 자연스럽게 배치되어 있다. 텍스트는 각 장면 하단 중앙에 위치한다.",
+      "elements": [
+        {
+          "role": "책상",
+          "position": "각 장면 중앙 또는 우측",
+          "description": "심플한 디자인의 사각형 책상, 다양한 색상 조합"
+        },
+        {
+          "role": "책장/수납장",
+          "position": "책상 뒤 또는 옆",
+          "description": "책, 소품, 파일 등으로 채워진 수납장"
+        },
+        {
+          "role": "의자",
+          "position": "책상 앞",
+          "description": "바퀴가 달린 사무용 의자"
+        },
+        {
+          "role": "소품",
+          "position": "책상 위, 책장 선반",
+          "description": "책, 램프, 액자, 문구류 등"
+        },
+        {
+          "role": "침대",
+          "position": "마지막 장면 좌측",
+          "description": "침실 환경 연출용 침대"
+        },
+        {
+          "role": "러그",
+          "position": "세 번째 장면 바닥",
+          "description": "격자무늬 러그로 공간 분리"
+        },
+        {
+          "role": "벽시계",
+          "position": "마지막 장면 우상단",
+          "description": "심플한 원형 벽시계"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "첫 번째 장면 하단 중앙",
+          "content": "티오 일반책상 화이트 + 티오 책장 화이트 도어"
+        },
+        {
+          "region": "세 번째 장면 하단 중앙",
+          "content": "티오 일반책상 내추럴오크 + 티오 책장 베이지 도어"
+        },
+        {
+          "region": "마지막 장면 하단 중앙",
+          "content": "티오 ㄱ자책상 화이트"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "각 장면의 책상, 책장, 의자 등 주요 가구(product region)만 동일 위치와 크기로 교체하고, 배경, 소품, 벽, 바닥, 침대 등 주변 환경 및 소품 배치는 그대로 유지한다. 텍스트 위치와 스타일도 동일하게 보존한다.",
+      "panel": "panel_03.jpg",
+      "panel_idx": 3
+    },
+    {
+      "panel_class": "size_chart",
+      "spatial_layout": "상단 좌측에 '사이즈'와 '단위: cm' 텍스트가 위치. 중앙에는 테이블 제품 이미지가 크고 명확하게 배치되어 있으며, 테이블의 가로(119.8cm), 세로(60cm), 높이(74.2cm) 치수가 선과 숫자로 표시됨. 하단 좌측에는 '컬러' 텍스트가 있고, 그 아래에 두 개의 컬러 스와치(화이트, 내추럴오크)가 나란히 정사각형 형태로 배치됨. 각 컬러 스와치 아래에는 해당 색상명이 텍스트로 표기. 맨 아래에는 작은 주의 문구가 중앙 정렬로 위치.",
+      "elements": [
+        {
+          "role": "title",
+          "position": "top left",
+          "description": "사이즈, 단위: cm 텍스트"
+        },
+        {
+          "role": "product_image",
+          "position": "center",
+          "description": "테이블 제품 이미지 및 치수선"
+        },
+        {
+          "role": "dimension_label",
+          "position": "above and right of product",
+          "description": "119.8, 74.2, 60 치수 텍스트 및 선"
+        },
+        {
+          "role": "section_title",
+          "position": "bottom left",
+          "description": "컬러 텍스트"
+        },
+        {
+          "role": "color_swatch",
+          "position": "bottom left under section title",
+          "description": "화이트, 내추럴오크 컬러 스와치 2개"
+        },
+        {
+          "role": "color_label",
+          "position": "below each swatch",
+          "description": "각 컬러명 텍스트"
+        },
+        {
+          "role": "note",
+          "position": "bottom center",
+          "description": "색상 표현 차이 안내 문구"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top left",
+          "content": "사이즈\n단위 : cm"
+        },
+        {
+          "region": "center right above product",
+          "content": "119.8"
+        },
+        {
+          "region": "center right side of product",
+          "content": "74.2"
+        },
+        {
+          "region": "center bottom right of product",
+          "content": "60"
+        },
+        {
+          "region": "bottom left",
+          "content": "컬러"
+        },
+        {
+          "region": "bottom left under swatches",
+          "content": "화이트\n내추럴오크"
+        },
+        {
+          "region": "bottom center",
+          "content": "* 디스플레이마다 색상 표현의 차이가 있을 수 있습니다."
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "product_image와 dimension_label 영역만 새로운 제품 이미지와 해당 치수로 교체. 상단/하단 텍스트, 컬러 스와치, 안내 문구 등 나머지 레이아웃 및 요소는 동일하게 유지.",
+      "panel": "panel_04.jpg",
+      "panel_idx": 4
+    },
+    {
+      "panel_class": "lifestyle_scene",
+      "spatial_layout": "책상은 화면 중앙에 크게 배치되어 있으며, 상판 위에 다양한 소품이 정돈되어 있다. 왼쪽 뒤편에는 흰색 스탠드 조명이 약간 기울어진 채 놓여 있고, 그 앞에는 원형 시계가 있다. 중앙에는 펼쳐진 책이 자연스럽게 놓여 있다. 오른쪽 끝에는 연필꽂이, 연필, 그리고 액자와 트레이가 함께 정렬되어 있다. 책상 다리는 네 귀퉁이에 곧게 뻗어 있다. 배경은 완전히 흰색으로, 제품과 소품만이 강조된다.",
+      "elements": [
+        {
+          "role": "main_product",
+          "position": "center",
+          "description": "심플한 흰색 직사각형 책상, 네 개의 원통형 다리"
+        },
+        {
+          "role": "desk_lamp",
+          "position": "back left on desk",
+          "description": "흰색 각도 조절형 스탠드 조명"
+        },
+        {
+          "role": "clock",
+          "position": "left center on desk",
+          "description": "작은 원형 아날로그 시계"
+        },
+        {
+          "role": "book",
+          "position": "center on desk",
+          "description": "펼쳐진 책"
+        },
+        {
+          "role": "tray_set",
+          "position": "back right on desk",
+          "description": "원형 트레이 위에 연필꽂이, 연필, 액자"
+        }
+      ],
+      "text_zones": [],
+      "fixed_layout": false,
+      "swap_instruction": "책상(main_product) 영역만 동일한 각도와 위치로 교체하고, 나머지 소품(조명, 시계, 책, 트레이 세트)은 동일한 위치와 크기로 유지한다. 배경의 흰색 여백도 보존한다.",
+      "panel": "panel_05.jpg",
+      "panel_idx": 5
+    },
+    {
+      "panel_class": "lifestyle_scene",
+      "spatial_layout": "이미지 중앙 하단에 두 개의 테이블이 나란히 배치되어 있고, 테이블 앞에는 네 개의 의자가 좌우로 배열되어 있다. 의자 중 세 개는 흰색, 하나는 노란색으로 오른쪽에서 두 번째 위치에 있다. 테이블 위에는 노트북, 책, 트레이 등이 놓여 있다. 테이블 뒤에는 벽 전체를 채우는 대형 책장이 있으며, 책장은 여러 개의 오픈 선반과 닫힌 수납장이 반복적으로 구성되어 있다. 책장 선반에는 책, 소품, 박스, 조명 등이 규칙적으로 배치되어 있다. 중앙 상단에는 큰 펜던트 조명이 테이블 위로 내려와 있다. 전체적으로 좌우 대칭적이고 정돈된 구조이다.",
+      "elements": [
+        {
+          "role": "table",
+          "position": "중앙 하단",
+          "description": "두 개의 밝은 색상 테이블이 나란히 배치"
+        },
+        {
+          "role": "chair",
+          "position": "테이블 앞",
+          "description": "네 개의 의자, 왼쪽부터 흰색-흰색-노란색-흰색 순"
+        },
+        {
+          "role": "bookshelf",
+          "position": "배경 전체",
+          "description": "대형 벽면 책장, 오픈/닫힘 수납장 혼합"
+        },
+        {
+          "role": "pendant_light",
+          "position": "중앙 상단",
+          "description": "큰 펜던트 조명, 테이블 위로 위치"
+        },
+        {
+          "role": "props",
+          "position": "책장 선반",
+          "description": "책, 소품, 박스, 조명 등 규칙적 배치"
+        },
+        {
+          "role": "laptop",
+          "position": "테이블 중앙",
+          "description": "노트북이 테이블 위에 놓임"
+        }
+      ],
+      "text_zones": [],
+      "fixed_layout": false,
+      "swap_instruction": "제품(테이블, 의자, 책장 등) 영역만 동일 위치/크기로 교체하고, 배경 및 소품 배치는 그대로 유지한다. 각 가구의 위치와 비율을 정확히 맞추어 레이아웃을 보존한다.",
+      "panel": "panel_06.jpg",
+      "panel_idx": 6
+    },
+    {
+      "panel_class": "detail_close_up",
+      "spatial_layout": "상단 오른쪽에 밝은 나무색상의 테이블 상판이 대각선 방향으로 배치되어 있다. 테이블 상판의 왼쪽 아래 모서리가 둥글게 처리되어 있다. 하단 왼쪽에는 흰색 원통형 다리가 수직으로 연결되어 있다. 상단 오른쪽에는 주황색 표지의 얇은 책자가 테이블 위에 일부만 보이게 놓여 있다. 배경은 완전히 흰색으로, 다른 요소는 없다. 테이블 상판의 표면 질감이 잘 드러난다.",
+      "elements": [
+        {
+          "role": "product_surface",
+          "position": "상단 오른쪽~중앙",
+          "description": "밝은 나무색 테이블 상판, 둥근 모서리"
+        },
+        {
+          "role": "product_leg",
+          "position": "하단 왼쪽",
+          "description": "흰색 원통형 테이블 다리"
+        },
+        {
+          "role": "prop",
+          "position": "상단 오른쪽",
+          "description": "주황색 표지의 얇은 책자, 일부만 노출"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "상단 오른쪽 책자 표지",
+          "content": "your planner (일부만 보임, 나머지 텍스트는 식별 불가)"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "테이블 상판과 다리(제품 영역)만 동일 위치와 각도로 교체하고, 책자 소품과 배경, 구도는 그대로 유지한다.",
+      "panel": "panel_07.jpg",
+      "panel_idx": 7
+    },
+    {
+      "panel_class": "detail_close_up",
+      "spatial_layout": "왼쪽 하단에는 세 개의 서랍이 있는 흰색 책상 다리가 위치한다. 책상 상판은 이미지 상단에 넓게 펼쳐져 있고, 상판 위에는 노트와 펜이 오른쪽 상단에 놓여 있다. 책상 오른쪽 측면에는 흰색 원형 고리가 부착되어 있으며, 고리에 베이지색 백팩이 걸려 있다. 백팩은 이미지 오른쪽 하단을 차지한다. 책상 다리와 상판은 모두 직각으로 연결되어 있다. 전체적으로 책상과 소품들이 가까운 거리에서 클로즈업되어 있다.",
+      "elements": [
+        {
+          "role": "desk",
+          "position": "left and center",
+          "description": "흰색 책상, 세 개의 서랍과 상판 포함"
+        },
+        {
+          "role": "drawer",
+          "position": "bottom left",
+          "description": "세 개의 흰색 서랍"
+        },
+        {
+          "role": "peg/hook",
+          "position": "right center",
+          "description": "흰색 원형 고리, 책상 측면에 부착"
+        },
+        {
+          "role": "backpack",
+          "position": "right bottom",
+          "description": "베이지색 백팩, 고리에 걸려 있음"
+        },
+        {
+          "role": "notebook and pens",
+          "position": "top right on desk",
+          "description": "노트와 펜 두 자루, 책상 위에 놓임"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top right on desk",
+          "content": "노트에 영어 문장 일부가 보임: 'Remarkable rule of the days'"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "백팩이 걸린 책상 측면(고리 포함) 영역만 교체하고, 책상 상판과 서랍, 노트 및 펜의 위치와 크기는 그대로 유지한다.",
+      "panel": "panel_08.jpg",
+      "panel_idx": 8
+    },
+    {
+      "panel_class": "detail_close_up",
+      "spatial_layout": "좌측 상단에는 밝은 나무 무늬의 테이블 상판 모서리가 크게 클로즈업되어 있다. 상판 아래에는 흰색 원통형 다리가 수직으로 연결되어 있다. 우측 중앙에는 같은 흰색 원통형 다리가 세로로 길게 배치되어 있다. 배경은 전체적으로 흰색이며, 제품 외에는 다른 요소가 없다. 두 개의 주요 제품 파트가 화면을 양분하여 배치되어 있다. 텍스트나 아이콘 등 추가 정보는 없다.",
+      "elements": [
+        {
+          "role": "tabletop_corner",
+          "position": "좌측 상단",
+          "description": "밝은 나무 무늬의 테이블 상판 모서리"
+        },
+        {
+          "role": "table_leg_attached",
+          "position": "좌측 하단",
+          "description": "상판에 연결된 흰색 원통형 다리"
+        },
+        {
+          "role": "table_leg_isolated",
+          "position": "우측 중앙",
+          "description": "독립적으로 세로로 놓인 흰색 원통형 다리"
+        }
+      ],
+      "text_zones": [],
+      "fixed_layout": false,
+      "swap_instruction": "좌측 상단의 상판 모서리와 하단의 다리, 우측 중앙의 독립 다리 영역만 새로운 제품 이미지로 교체하고, 배경과 전체 배치는 그대로 유지한다.",
+      "panel": "panel_09.jpg",
+      "panel_idx": 9
+    },
+    {
+      "panel_class": "detail_close_up",
+      "spatial_layout": "이미지 중앙에는 흰색 책상 모서리가 클로즈업되어 있다. 책상 상판 위 왼쪽에는 투명한 유리컵이 놓여 있고, 오른쪽에는 태블릿과 키보드가 부분적으로 보인다. 책상 하단 전면에는 흰색 전원 멀티탭이 고정되어 있으며, 멀티탭에는 충전기가 꽂혀 있고 케이블이 상판 위로 올라간다. 책상 다리는 왼쪽 하단에 위치하며, 책상 아래 선반 일부가 오른쪽 하단에 보인다. 전체적으로 제품의 기능적 디테일에 초점을 맞춘 구도이다.",
+      "elements": [
+        {
+          "role": "desk_surface",
+          "position": "center, top",
+          "description": "흰색 책상 상판, 모서리 부분이 강조됨"
+        },
+        {
+          "role": "glass_cup",
+          "position": "top left on desk",
+          "description": "투명 유리컵, 'Paris' 텍스트 인쇄"
+        },
+        {
+          "role": "tablet_keyboard",
+          "position": "top right on desk",
+          "description": "부분적으로 보이는 태블릿과 키보드"
+        },
+        {
+          "role": "power_strip",
+          "position": "center bottom under desk",
+          "description": "책상 하단에 고정된 흰색 멀티탭, 충전기 연결됨"
+        },
+        {
+          "role": "charging_cable",
+          "position": "from power strip to desk surface",
+          "description": "멀티탭에서 상판 위로 올라가는 충전 케이블"
+        },
+        {
+          "role": "desk_leg",
+          "position": "bottom left",
+          "description": "흰색 책상 다리"
+        },
+        {
+          "role": "shelf",
+          "position": "bottom right",
+          "description": "책상 아래 선반 일부"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "on glass cup",
+          "content": "Paris"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "책상 상판, 멀티탭, 충전기, 컵, 태블릿 등 각 요소의 위치와 크기를 동일하게 유지한 채로, 제품(책상) 부분만 동일 위치와 각도로 교체하여 전체 레이아웃을 보존한다.",
+      "panel": "panel_10.jpg",
+      "panel_idx": 10
+    },
+    {
+      "panel_class": "lifestyle_scene",
+      "spatial_layout": "정사각형 형태의 흰색 서랍장이 화면 중앙에 위치. 서랍장 위에는 흰색 탁상 달력이 오른쪽을 바라보며 놓여 있음. 서랍장 하단의 첫 번째 서랍이 앞으로 열려 있고, 내부에는 카메라, 테이프, 필기구 등이 정돈되어 있음. 배경은 흰색 벽과 책상 모서리가 만나는 구석 공간. 우측 상단에는 벽에 부착된 흰색 수납함이 일부 보임. 전체적으로 깔끔하고 미니멀한 분위기.",
+      "elements": [
+        {
+          "role": "main_product",
+          "position": "center",
+          "description": "흰색 2단 서랍장, 상단에 달력 소품이 올려져 있음"
+        },
+        {
+          "role": "prop",
+          "position": "top_center",
+          "description": "흰색 탁상 달력, '8 MON' 표시"
+        },
+        {
+          "role": "prop",
+          "position": "bottom_drawer",
+          "description": "서랍 내부에 카메라, 테이프, 필기구 등 소품"
+        },
+        {
+          "role": "background",
+          "position": "back_right",
+          "description": "흰색 벽과 책상 모서리"
+        },
+        {
+          "role": "prop",
+          "position": "top_right",
+          "description": "벽에 부착된 흰색 수납함, 일부만 노출"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top_center",
+          "content": "8 MON (달력)"
+        },
+        {
+          "region": "top_right",
+          "content": "have a good day (수납함 속 종이, 일부만 보임)"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "서랍장(메인 제품) 영역만 동일한 위치와 크기로 교체하고, 주변 소품 및 배경은 그대로 유지하여 레이아웃을 보존한다.",
+      "panel": "panel_11.jpg",
+      "panel_idx": 11
+    },
+    {
+      "panel_class": "lifestyle_scene",
+      "spatial_layout": "왼쪽 하단에는 바퀴가 달린 흰색 사무용 의자가 위치해 있다. 중앙에는 바퀴가 달린 3단 서랍장이 책상 아래에 배치되어 있다. 책상 상판은 화면 상단을 가로지르며, 상판 위에는 책과 소품이 놓여 있다. 오른쪽에는 오픈형 책장이 있으며, 중간 선반에는 빨간색 수납함과 책들이 정렬되어 있다. 책장 하단에는 여러 권의 책이 세로로 정렬되어 있다. 전체적으로 제품들이 직각으로 정렬되어 있으며, 바닥은 보이지 않는다.",
+      "elements": [
+        {
+          "role": "의자",
+          "position": "왼쪽 하단",
+          "description": "흰색 프레임, 회색 방석, 바퀴 달림"
+        },
+        {
+          "role": "서랍장",
+          "position": "중앙",
+          "description": "흰색, 3단, 바퀴 달림, 책상 아래에 위치"
+        },
+        {
+          "role": "책상",
+          "position": "상단 전체",
+          "description": "흰색, 상판 위에 책과 소품 배치"
+        },
+        {
+          "role": "책장",
+          "position": "오른쪽",
+          "description": "오픈형, 여러 칸, 책과 수납함 정렬"
+        },
+        {
+          "role": "수납함",
+          "position": "책장 중간 선반",
+          "description": "빨간색, 직사각형"
+        },
+        {
+          "role": "책",
+          "position": "책장 및 책상 위",
+          "description": "다양한 크기, 세로 및 가로 정렬"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "책장 하단",
+          "content": "PORTFOLIO, The Lonely Ones, 기타 책 제목"
+        },
+        {
+          "region": "책상 위",
+          "content": "책 제목 일부 식별 가능"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "서랍장(중앙) 영역만 동일한 크기와 위치로 교체하고, 주변 의자, 책상, 책장, 소품의 위치와 구성을 그대로 유지한다.",
+      "panel": "panel_12.jpg",
+      "panel_idx": 12
+    },
+    {
+      "panel_class": "lifestyle_scene",
+      "spatial_layout": "책상은 화면 하단을 가로지르며 중앙에 위치한다. 책상 위 중앙에는 펼쳐진 노트와 그 아래에 놓인 녹색 책이 있다. 노트 오른쪽에는 자와 투명한 컵이 나란히 놓여 있다. 책상 오른쪽 끝에는 작은 화분과 책꽂이에 정리된 책들이 있다. 책상 위 벽 중앙에는 긴 막대형 스탠드 조명이 세워져 있다. 벽 왼쪽에는 네 장의 엽서와 종이가 붙어 있다. 책상 오른쪽 벽에는 헤드폰이 걸려 있고, 책상 아래에는 수납장이 있다.",
+      "elements": [
+        {
+          "role": "desk",
+          "position": "bottom center, spanning horizontally",
+          "description": "흰색 직사각형 책상"
+        },
+        {
+          "role": "notebook",
+          "position": "center on desk",
+          "description": "펼쳐진 노트"
+        },
+        {
+          "role": "book",
+          "position": "under notebook, center",
+          "description": "녹색 표지 책"
+        },
+        {
+          "role": "ruler",
+          "position": "right of notebook, center",
+          "description": "나무 자"
+        },
+        {
+          "role": "cup",
+          "position": "right of ruler, center-right",
+          "description": "투명한 컵"
+        },
+        {
+          "role": "plant",
+          "position": "far right on desk",
+          "description": "작은 화분"
+        },
+        {
+          "role": "books",
+          "position": "far right, in vertical file holders",
+          "description": "책꽂이에 정리된 책들"
+        },
+        {
+          "role": "lamp",
+          "position": "center back, against wall",
+          "description": "긴 막대형 스탠드 조명"
+        },
+        {
+          "role": "wall decor",
+          "position": "upper left wall",
+          "description": "네 장의 엽서 및 종이"
+        },
+        {
+          "role": "headphones",
+          "position": "right wall, hanging",
+          "description": "걸려 있는 헤드폰"
+        },
+        {
+          "role": "shelf",
+          "position": "under desk, right",
+          "description": "수납장"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "upper left wall",
+          "content": "Liberté, 손글씨, 엽서 등 네 장의 종이"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "책상(데스크)와 그 위의 소품(노트, 책, 자, 컵, 화분, 책꽂이 등)만 교체하고, 벽의 장식, 조명, 벽걸이 헤드폰, 수납장 등 주변 배경 요소와 전체 구도는 그대로 유지한다.",
+      "panel": "panel_13.jpg",
+      "panel_idx": 13
+    },
+    {
+      "panel_class": "structure_chart",
+      "spatial_layout": "패널 중앙에 흰색 직사각형 테이블이 뒤집힌 상태로 배치되어 있다. 테이블의 네 모서리에는 네 개의 원기둥 다리가 수직으로 위를 향해 똑같은 간격으로 세워져 있다. 테이블 상판은 화면의 중앙에서 약간 오른쪽 아래로 기울어져 있다. 배경은 완전히 흰색으로, 다른 시각적 요소나 텍스트는 없다. 테이블 다리와 상판의 연결부가 명확하게 드러나 있다. 전체적으로 제품만 단독으로 강조되어 있다.",
+      "elements": [
+        {
+          "role": "product_main",
+          "position": "center, 약간 오른쪽 아래로 기울어짐",
+          "description": "흰색 직사각형 테이블, 네 개의 원기둥 다리가 위로 세워진 상태"
+        }
+      ],
+      "text_zones": [],
+      "fixed_layout": false,
+      "swap_instruction": "제품이 위치한 중앙 영역에 새로운 제품 이미지를 동일한 각도와 크기로 배치하여 교체하고, 배경과 레이아웃은 그대로 유지한다.",
+      "panel": "panel_14.jpg",
+      "panel_idx": 14
+    },
+    {
+      "panel_class": "structure_chart",
+      "spatial_layout": "왼쪽에는 세로 막대 그래프가 위치하며, 그래프는 두 개의 수직 블록(E1, E0)으로 구성되어 있다. E1 블록은 위쪽에, E0 블록은 아래쪽에 배치되어 있다. 그래프 오른쪽에는 두 장의 시험성적서 문서 이미지가 겹쳐서 오른쪽 상단에 위치한다. 그래프의 세로축에는 1.5 이하, 0.5 이하의 수치가 표시되어 있다. 그래프 하단에는 폼알데하이드 방출량(MG/L)이라는 텍스트가 있다. 전체적으로 좌측 그래프, 우측 문서로 2분할된 레이아웃이다.",
+      "elements": [
+        {
+          "role": "bar_chart",
+          "position": "left half",
+          "description": "E1 법적기준(상단), E0 한샘기준(하단) 두 개의 수직 블록으로 구성된 그래프"
+        },
+        {
+          "role": "document_image",
+          "position": "right half, overlapping",
+          "description": "시험성적서 두 장이 겹쳐진 형태로 배치"
+        },
+        {
+          "role": "axis_label",
+          "position": "left of bar chart",
+          "description": "1.5 이하, 0.5 이하의 수직 수치"
+        },
+        {
+          "role": "caption",
+          "position": "below bar chart",
+          "description": "폼알데하이드 방출량(MG/L) 텍스트"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "bar chart center",
+          "content": "E1 법적기준, E0 한샘기준"
+        },
+        {
+          "region": "bar chart left",
+          "content": "1.5 이하, 0.5 이하"
+        },
+        {
+          "region": "below bar chart",
+          "content": "폼알데하이드 방출량(MG/L)"
+        },
+        {
+          "region": "document top",
+          "content": "시험성적서"
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "왼쪽의 그래프(막대, 수치, 텍스트)는 동일하게 유지하고, 오른쪽의 문서 이미지 부분만 새로운 제품의 시험성적서 이미지로 교체한다. 그래프와 문서의 상대적 위치와 크기는 그대로 보존한다.",
+      "panel": "panel_15.jpg",
+      "panel_idx": 15
+    },
+    {
+      "panel_class": "material_swatch",
+      "spatial_layout": "이미지는 세로로 2등분되어 좌측과 우측에 각각 다른 소재가 배치되어 있다. 좌측 영역은 전체 높이에 걸쳐 균일한 흰색 텍스처가 차지한다. 우측 영역은 전체 높이에 걸쳐 밝은 나무 무늬 텍스처가 차지한다. 두 영역은 중앙 세로선을 기준으로 정확히 반반씩 나뉜다. 각 영역에는 별도의 텍스트나 아이콘, 구분선이 없다. 배경은 단색이며, 추가적인 장식 요소는 없다.",
+      "elements": [
+        {
+          "role": "material_sample",
+          "position": "left half",
+          "description": "매트한 흰색 표면 텍스처"
+        },
+        {
+          "role": "material_sample",
+          "position": "right half",
+          "description": "밝은 오크 우드 그레인 텍스처"
+        }
+      ],
+      "text_zones": [],
+      "fixed_layout": true,
+      "swap_instruction": "좌측과 우측의 소재 샘플 이미지만 동일한 위치와 비율로 교체하고, 전체 2분할 레이아웃은 그대로 유지한다. 각 영역의 경계선과 비율을 변경하지 않는다.",
+      "panel": "panel_16.jpg",
+      "panel_idx": 16
+    },
+    {
+      "panel_class": "structure_chart",
+      "spatial_layout": "상단 중앙에 책상 제품 이미지가 큼직하게 배치되어 있다. 하단에는 네 줄의 표 형태 텍스트가 좌우로 정렬되어 있다. 각 텍스트 줄은 왼쪽에 항목명, 오른쪽에 상세 설명이 있다. 표는 얇은 가로선으로 구분되어 있다. 전체적으로 여백이 넓고, 요소 간 간격이 균일하다. 제품 이미지는 표와 충분히 떨어져 있다.",
+      "elements": [
+        {
+          "role": "product_image",
+          "position": "상단 중앙",
+          "description": "흰색 배경 위에 놓인 직사각형 책상"
+        },
+        {
+          "role": "table_top_label",
+          "position": "하단 표 첫 번째 줄 좌측",
+          "description": "책상 상판"
+        },
+        {
+          "role": "table_top_value",
+          "position": "하단 표 첫 번째 줄 우측",
+          "description": "23mm PB + LPM"
+        },
+        {
+          "role": "leg_label",
+          "position": "하단 표 두 번째 줄 좌측",
+          "description": "책상 다리"
+        },
+        {
+          "role": "leg_value",
+          "position": "하단 표 두 번째 줄 우측",
+          "description": "철제 + 분체도장"
+        },
+        {
+          "role": "edge_label",
+          "position": "하단 표 세 번째 줄 좌측",
+          "description": "가방걸이"
+        },
+        {
+          "role": "edge_value",
+          "position": "하단 표 세 번째 줄 우측",
+          "description": "ABS"
+        },
+        {
+          "role": "pb_grade_label",
+          "position": "하단 표 네 번째 줄 좌측",
+          "description": "PB 자재등급"
+        },
+        {
+          "role": "pb_grade_value",
+          "position": "하단 표 네 번째 줄 우측",
+          "description": "E0"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "하단 표 전체",
+          "content": "책상 상판 23mm PB + LPM\n책상 다리 철제 + 분체도장\n가방걸이 ABS\nPB 자재등급 E0"
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "상단 중앙의 product_image 영역만 새로운 제품 이미지로 교체하고, 하단 표의 레이아웃과 텍스트 배치는 그대로 유지한다.",
+      "panel": "panel_17.jpg",
+      "panel_idx": 17
+    }
+  ]
+}

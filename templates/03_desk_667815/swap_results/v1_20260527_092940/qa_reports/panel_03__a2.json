@@ -1,0 +1,96 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [
+    {
+      "id": "no_top_embedded_power_or_grommet",
+      "verdict": "pass",
+      "reason_ko": "각 책상 상판에서 타공형 콘센트, 케이블홀, 팝업 전원 모듈로 보이는 요소가 확인되지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_underdesk_outlet_in_base_images",
+      "verdict": "pass",
+      "reason_ko": "기본 책상 하부에 설치형 콘센트나 전원 모듈이 노출되어 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_integrated_drawers",
+      "verdict": "pass",
+      "reason_ko": "책상 본체에 손잡이 달린 서랍장이나 일체형 서랍 전면이 명확히 붙어 있는 모습은 보이지 않습니다. 일부 소품/수납박스처럼 보이는 요소는 있으나 책상 본체 서랍으로 단정되지는 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_glass_or_stone_top",
+      "verdict": "pass",
+      "reason_ko": "상판은 흰색 또는 목재 계열의 일반 가구 마감으로 보이며, 유리나 석재/대리석 상판처럼 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_v_or_x_metal_legs",
+      "verdict": "pass",
+      "reason_ko": "책상 다리는 직선형 원통/수직 다리 형태로 보이며 V자, X자, 지그재그 메탈 프레임 다리는 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_keyboard_pullout_tray",
+      "verdict": "pass",
+      "reason_ko": "하부에 얇은 단차나 선반처럼 보이는 부분은 ㄱ자 구조와 책장 유닛의 상단 단차로 해석되며, 명확한 키보드 슬라이드/풀아웃 트레이는 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_casters_on_desk_base",
+      "verdict": "pass",
+      "reason_ko": "바퀴는 주로 의자에만 보이며, 책상 본체나 하부 책장 유닛에 캐스터가 달린 모습은 명확히 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "l_shape_with_lower_bookcase",
+      "verdict": "pass",
+      "reason_ko": "여러 장면에서 긴 상판과 짧은 변의 하부 책장 유닛이 결합된 ㄱ자 책상 구조가 확인됩니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "open_storage_no_doors",
+      "verdict": "pass",
+      "reason_ko": "하부 수납부는 대체로 옆면 또는 전면이 열린 책장형 선반 구조로 표현되어 있으며, 제품 본체의 도어/서랍이 명확히 보이지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "uniform_finish_to_bottom",
+      "verdict": "pass",
+      "reason_ko": "책상 다리와 외곽 패널의 흰색 계열 마감이 하단까지 비교적 일관되게 이어져 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "open_storage_tall_bay_for_pc",
+      "verdict": "pass",
+      "reason_ko": "하부 책장 유닛에 책이나 박스가 들어갈 수 있는 비교적 높은 오픈 칸이 여러 장면에서 확인됩니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 82,
+  "hallucinations": [
+    "일부 장면에서 책상 또는 하부 책장 측면에 가방걸이 후크처럼 보이는 부속이 표현됨"
+  ],
+  "specific_failures": [
+    "결과가 grid 형태 — single panel로 재생성"
+  ],
+  "notes_ko": "핵심 제품 정체성인 ㄱ자 상판과 하부 오픈 책장 유닛 결합 구조는 전반적으로 유지되었습니다. 금지 항목인 상판 전원홀, 하부 콘센트, 유리/석재 상판, V/X형 다리, 키보드 트레이, 책상 본체 캐스터는 명확히 발견되지 않습니다. 일부 측면 가방걸이처럼 보이는 부속은 사용자 제품 사진에서 확인되지 않는 요소로 메모합니다.",
+  "verdict": "retry",
+  "product_score_raw": 30,
+  "product_score": 100,
+  "critical_fail_count": 0
+}

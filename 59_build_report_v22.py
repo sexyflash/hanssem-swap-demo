@@ -495,6 +495,14 @@ def build_panel_rows(t, swap_results):
 
 
 def build_cover_row(t, swap_results):
+    # panel_layout_maps 에 cover entry 가 없으면 cover row 자체 안 그림
+    tpl_dir = TPL_ROOT / f"{t['rank']:02d}_{t['category']}_{t['gdsNo']}"
+    plm_path = tpl_dir / "panel_layout_maps.json"
+    if plm_path.exists():
+        plm = json.loads(plm_path.read_text())
+        has_cover = any(p.get("panel") == "cover" for p in plm.get("panels", []))
+        if not has_cover:
+            return ""
     cover_src = cover_url_template(t)
     cell = swap_results["by_label"].get("cover") if swap_results else None
     if cell and cell.get("final"):

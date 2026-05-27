@@ -1,0 +1,78 @@
+{
+  "image_format": "lifestyle",
+  "items_results": [
+    {
+      "id": "open_storage_no_doors",
+      "verdict": "pass",
+      "reason_ko": "하부 수납부가 책장형 오픈 선반으로 표현되어 있으며, 제품 본체에 도어/서랍 전면은 보이지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "rounded_top_edges_corners",
+      "verdict": "pass",
+      "reason_ko": "상판 전면 모서리와 코너가 둥글게 라운드 처리된 형태로 명확히 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "bag_hook_one_included",
+      "verdict": "pass",
+      "reason_ko": "책상 오른쪽 측면에 흰색 원형 가방걸이 1개가 설치되어 있고 백팩이 걸려 있습니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "two_stability_braces",
+      "verdict": "pass",
+      "reason_ko": "상판 하부에 긴 보강대/연결 바가 전면과 측면 쪽으로 2개 식별되어 구조 보강 요소가 유지된 것으로 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_top_not_glass_or_stone",
+      "verdict": "pass",
+      "reason_ko": "상판은 불투명한 흰색 라미네이트 패널처럼 보이며, 유리/대리석/라이브엣지 원목 재질로 보이지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "adjustable_levelers_visible",
+      "verdict": "not_visible",
+      "reason_ko": "이미지가 클로즈업되어 다리 하단부가 충분히 보이지 않아 조절발 존재를 확인하기 어렵습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "open_storage_tall_bay_for_pc",
+      "verdict": "pass",
+      "reason_ko": "하부 오픈 수납부에 PC 본체처럼 보이는 물체가 들어간 높은 칸이 확인됩니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_surface_low_gloss",
+      "verdict": "pass",
+      "reason_ko": "상판 표면에 과도한 반사나 유광 느낌이 없고 무광/세미무광 수준으로 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "edge_banding_clean_finish",
+      "verdict": "pass",
+      "reason_ko": "라운드 모서리와 상판 엣지가 색 이질감 없이 비교적 균일하고 매끈하게 처리되어 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 86,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "제품 정체성 기준으로는 오픈 선반형 수납, 라운드 상판, 가방걸이, 패널형 상판이 잘 유지되었습니다. 조절발은 프레임 하단이 잘리지 않아야 확인 가능한데 현재 패널에서는 보이지 않습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 99,
+  "verdict": "pass"
+}

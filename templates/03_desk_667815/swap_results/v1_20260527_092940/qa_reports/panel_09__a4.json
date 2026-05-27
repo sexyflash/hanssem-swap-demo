@@ -1,0 +1,78 @@
+{
+  "image_format": "single_product",
+  "items_results": [
+    {
+      "id": "open_storage_no_doors",
+      "verdict": "not_visible",
+      "reason_ko": "이 패널은 상판 모서리와 원통형 다리 클로즈업이라 하부 책장형 수납부가 화면에 보이지 않아 도어/서랍 유무를 검증할 수 없습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "rounded_top_edges_corners",
+      "verdict": "pass",
+      "reason_ko": "상판 외곽 모서리가 기준 이미지처럼 둥글게 라운드 처리되어 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "bag_hook_one_included",
+      "verdict": "not_visible",
+      "reason_ko": "가방걸이가 설치될 수 있는 위치가 이 클로즈업 화면에 나타나지 않아 1개 제공 여부를 확인할 수 없습니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "two_stability_braces",
+      "verdict": "not_visible",
+      "reason_ko": "상판 아래 일부 연결부만 보이며, 책상 전체 구조의 보강대 2개를 식별할 수 있는 시야가 아닙니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_top_not_glass_or_stone",
+      "verdict": "pass",
+      "reason_ko": "상판이 밝은 우드톤의 불투명 라미네이트 패널처럼 보이며, 유리·대리석·라이브엣지 원목으로 보이지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "adjustable_levelers_visible",
+      "verdict": "pass",
+      "reason_ko": "우측 원통형 다리 하단에 돌려 조절하는 형태의 원형 레벨러가 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "open_storage_tall_bay_for_pc",
+      "verdict": "not_visible",
+      "reason_ko": "하부 수납부가 화면에 포함되지 않아 PC 본체가 들어갈 만한 높은 오픈 칸 여부를 확인할 수 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_surface_low_gloss",
+      "verdict": "pass",
+      "reason_ko": "상판 표면에 과도한 반사나 고광택 표현이 없고 무광/세미무광에 가깝게 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "edge_banding_clean_finish",
+      "verdict": "pass",
+      "reason_ko": "라운드 모서리의 엣지 밴딩이 전체적으로 균일한 우드톤으로 이어지며, 뚜렷한 들뜸이나 이색은 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 97,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "B는 원본 패널 C와 거의 동일한 클로즈업 구도이며, 이 패널에서 검증 가능한 핵심 왜곡 항목인 라운드 상판 모서리와 LPM 계열 불투명 상판 표현은 잘 유지되었습니다. 수납부, 가방걸이, 보강대 2개는 해당 클로즈업 시야 밖이라 판정 불가로 처리했습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 72,
+  "verdict": "retry"
+}

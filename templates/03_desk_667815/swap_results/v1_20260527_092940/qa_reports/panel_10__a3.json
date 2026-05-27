@@ -1,0 +1,78 @@
+{
+  "image_format": "lifestyle",
+  "items_results": [
+    {
+      "id": "open_storage_no_doors",
+      "verdict": "pass",
+      "reason_ko": "오른쪽 하단에 하부 수납부가 오픈 선반 형태로 보이며, 도어 또는 서랍 전면은 보이지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "rounded_top_edges_corners",
+      "verdict": "pass",
+      "reason_ko": "상판 좌측 전면 모서리가 둥글게 라운드 처리되어 명확히 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "bag_hook_one_included",
+      "verdict": "pass",
+      "reason_ko": "좌측 상판 하부 다리 옆에 나사로 고정된 흰색 가방걸이 1개가 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "two_stability_braces",
+      "verdict": "pass",
+      "reason_ko": "상판 하부 전면 쪽에 길쭉한 보강대 형태의 부재가 2개로 식별됩니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_top_not_glass_or_stone",
+      "verdict": "pass",
+      "reason_ko": "상판은 흰색 불투명 패널로 보이며, 유리/대리석/라이브엣지 원목처럼 보이지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "adjustable_levelers_visible",
+      "verdict": "not_visible",
+      "reason_ko": "책상 다리 하단이 이미지 밖으로 잘려 있어 조절발 존재 여부를 확인할 수 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "open_storage_tall_bay_for_pc",
+      "verdict": "not_visible",
+      "reason_ko": "오른쪽 하부 수납 일부만 보이며, PC 본체가 들어갈 정도의 높은 오픈 칸은 이 컷에서 충분히 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_surface_low_gloss",
+      "verdict": "pass",
+      "reason_ko": "상판 표면이 과도하게 반사되지 않고 무광 또는 세미무광의 흰색 패널처럼 표현되어 있습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "edge_banding_clean_finish",
+      "verdict": "pass",
+      "reason_ko": "라운드 모서리와 전면 엣지의 색상 및 마감이 전반적으로 균일하게 보이며 들뜸이나 이색이 뚜렷하지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 93,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "제품 정체성 관련 핵심 요소인 라운드 상판, 오픈 선반형 하부 수납, 가방걸이, 불투명 패널 상판이 잘 유지되었습니다. 일부 세부 요소인 조절발과 높은 PC 수납칸은 해당 클로즈업 구도에서 확인이 어렵습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 98,
+  "verdict": "pass"
+}

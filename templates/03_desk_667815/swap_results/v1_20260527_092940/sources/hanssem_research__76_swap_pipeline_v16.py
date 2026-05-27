@@ -122,22 +122,12 @@ def product_essence_text(product_input: dict) -> str:
 
 
 def image_size_for(w: int, h: int) -> str:
-    """원본 panel 비율에 가장 가까운 fal image_size 매핑.
-
-    fal-ai/gpt-image-2/edit 지원: square / square_hd / landscape_4_3 / landscape_16_9 /
-    portrait_4_3 / portrait_16_9
-    """
     r = w / h
-    # 매우 세로 긴 (옷장 panel, 책상 lifestyle 등)
-    if r < 0.65:
-        return "portrait_16_9"
-    if r < 0.85:
+    if r < 0.8:
         return "portrait_4_3"
-    if r < 1.15:
-        return "square"
-    if r < 1.55:
+    if r > 1.2:
         return "landscape_4_3"
-    return "landscape_16_9"
+    return "square"
 
 
 # ─────────────────────────── prompt builders ───────────────────────────

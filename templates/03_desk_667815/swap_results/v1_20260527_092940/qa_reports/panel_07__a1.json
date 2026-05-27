@@ -1,0 +1,78 @@
+{
+  "image_format": "single_product",
+  "items_results": [
+    {
+      "id": "open_storage_no_doors",
+      "verdict": "not_visible",
+      "reason_ko": "B는 상판 모서리와 원통형 다리만 보이는 클로즈업으로, 하부 오픈 선반 수납부나 도어/서랍 유무를 확인할 수 없다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "rounded_top_edges_corners",
+      "verdict": "pass",
+      "reason_ko": "상판 왼쪽 전면 모서리가 기준 이미지처럼 둥글게 라운드 처리되어 보인다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "bag_hook_one_included",
+      "verdict": "not_visible",
+      "reason_ko": "가방걸이가 설치될 수 있는 측면/하부 영역이 이 클로즈업에 포함되지 않아 1개 설치 여부를 확인할 수 없다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "two_stability_braces",
+      "verdict": "not_visible",
+      "reason_ko": "보강대가 위치할 하부 구조가 거의 보이지 않아 보강대 2개를 식별할 수 없다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_top_not_glass_or_stone",
+      "verdict": "pass",
+      "reason_ko": "상판은 밝은 오크톤의 불투명 라미네이트/LPM 계열 패널처럼 보이며, 유리·대리석·라이브엣지 원목으로 보이지 않는다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "adjustable_levelers_visible",
+      "verdict": "not_visible",
+      "reason_ko": "다리 하단부가 프레임 밖으로 잘려 있어 조절발 레벨러의 존재를 확인할 수 없다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "open_storage_tall_bay_for_pc",
+      "verdict": "not_visible",
+      "reason_ko": "하부 수납부가 보이지 않는 클로즈업이므로 PC 본체가 들어갈 높은 오픈 칸 여부는 확인 불가하다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_surface_low_gloss",
+      "verdict": "pass",
+      "reason_ko": "상판 표면에 과도한 반사광이 없고 무광/세미무광에 가까운 낮은 광택으로 표현되어 있다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "edge_banding_clean_finish",
+      "verdict": "pass",
+      "reason_ko": "라운드 모서리와 측면 엣지 밴딩이 큰 색 이질감이나 들뜸 없이 비교적 균일하고 매끈하게 보인다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 96,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "B는 C의 클로즈업 구도와 거의 동일하게 상판 라운드 모서리, 밝은 오크톤 LPM 질감, 흰색 원통형 다리, 주황색 책자 배치를 유지한다. 이 패널 범위에서는 하부 수납, 가방걸이, 보강대, 레벨러 등은 확인되지 않는다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 72,
+  "verdict": "retry"
+}
