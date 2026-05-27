@@ -25,31 +25,30 @@
       {
         "id": "module_lineup_shows_4_variants",
         "verdict": "fail",
-        "reason_ko": "하단 라인업 영역에 4가지 모델 옵션(서랍형 6종, 행거형 6종, 거울-행거형 6종, 거울-서랍형 6종)이 보이지 않습니다. 결과 B에는 옷걸이 봉과 하단 서랍이 있는 유사한 옷장 모듈 2개만 표시되어 있어 라인업 구성 자체가 누락/왜곡되었습니다.",
+        "reason_ko": "결과 B 하단 라인업 영역에는 옷장 모듈이 2개만 보이며, 기대 항목인 서랍형 6종 / 행거형 6종 / 거울-행거형 6종 / 거울-서랍형 6종의 4가지 모델 옵션 표기가 확인되지 않습니다.",
         "category": "distortion",
         "generation_feasibility": "high"
       },
       {
         "id": "height_lineup_two_options_label",
         "verdict": "not_visible",
-        "reason_ko": "결과 B에는 높이 옵션을 나타내는 텍스트나 라벨이 보이지 않아 194cm / 216cm 두 가지 높이 옵션 표기를 확인할 수 없습니다.",
+        "reason_ko": "결과 B에서 높이 194cm / 216cm 두 가지 옵션을 나타내는 텍스트나 사이즈 정보가 보이지 않습니다.",
         "category": "detail",
         "generation_feasibility": "medium"
       }
     ],
     "distortion_fail_count": 1,
     "forbidden_fail_count": 0,
-    "composition_score": 55,
+    "composition_score": 72,
     "hallucinations": [],
     "specific_failures": [
-      "결과가 grid 형태 — single panel로 재생성",
-      "라인업 패널에 4가지 모델 옵션이 아니라 유사한 옷장 모듈 2개만 표시됨",
-      "distortion fail · module_lineup_shows_4_variants: 하단 라인업 영역에 4가지 모델 옵션(서랍형 6종, 행거형 6종, 거울-행거형 6종, 거울-서랍형 6종)이 보이지 않습니다. 결과 B에는 옷걸이 봉과 하단 서랍이 있는 유사한 옷장 모듈 2개만 표시되어 있어 라인업 구성 자체가 누락/왜곡되었습니다."
+      "라인업 패널에 4가지 모델 옵션이 정확히 표시되지 않고, 하단에 2개 모듈만 보임",
+      "distortion fail · module_lineup_shows_4_variants: 결과 B 하단 라인업 영역에는 옷장 모듈이 2개만 보이며, 기대 항목인 서랍형 6종 / 행거형 6종 / 거울-행거형 6종 / 거울-서랍형 6종의 4가지 모델 옵션 표기가 확인되지 않습니다."
     ],
-    "notes_ko": "상단 서랍 클로즈업은 원본 구성과 유사하지만, 이 패널의 핵심인 하단 모듈 라인업 정보가 크게 누락되었습니다. 특히 4가지 모델 옵션 및 해당 표기가 보이지 않아 제품 라인업 왜곡으로 판단됩니다.",
-    "verdict": "retry",
-    "product_score_raw": 30,
+    "notes_ko": "상단 서랍 클로즈업 구성은 원본 패널과 유사하지만, 핵심 검증 항목인 모듈 라인업 4종 표기가 누락되어 distortion fail입니다. 높이 옵션 표기는 보이지 않아 not_visible로 처리했습니다.",
+    "critical_fail_count": 1,
+    "product_score_raw": null,
     "product_score": 11,
-    "critical_fail_count": 1
+    "verdict": "retry"
   }
 }

@@ -203,13 +203,17 @@ def evaluate(
             )
         it.setdefault("generation_feasibility", "medium")
 
-    # multi_panel_grid 는 무조건 retry (출력 형식 위반)
-    if result.get("image_format") == "multi_panel_grid":
+    # multi_panel_grid → 한샘 원본 panel C 가 자체로 grid 형식이면 정상 출력 (옷장/책상의
+    # chart_diagram / module_lineup / size_chart / structure_chart / color_option 등).
+    # sofa close-up처럼 single product 강제인 panel_class 에서만 retry.
+    panel_class = panel.get("panel_class", "other")
+    grid_ok_classes = {"chart_diagram", "module_lineup", "size_chart",
+                        "structure_chart", "color_option", "material_swatch"}
+    if result.get("image_format") == "multi_panel_grid" and panel_class not in grid_ok_classes:
         result["verdict"] = "retry"
         result.setdefault("specific_failures", []).insert(0, "결과가 grid 형태 — single panel로 재생성")
         result["product_score_raw"] = result.get("product_score")
         result["product_score"] = 30
-        # distortion 분석은 그래도 수행
     # distortion / forbidden fail = retry trigger (사용자 핵심 요구: 제품 외곡 사수)
     distortion_fails = [r for r in items_results
                         if r.get("category") == "distortion" and r.get("verdict") == "fail"]
@@ -245,10 +249,13 @@ def evaluate(
     result["product_score"] = recalc
 
     # pass 기준: distortion 0 fail + forbidden 0 fail + product_score >= 95 + 출력 형식 OK
+    # 단, panel_class 가 grid_ok 면 multi_panel_grid 출력도 OK (옷장 chart/lineup 등).
     # composition_score 는 보고용 — verdict에 영향 X (사용자 결정)
+    format_ok = (result.get("image_format") != "multi_panel_grid"
+                 or panel_class in grid_ok_classes)
     if (not distortion_fails and not forbidden_fails
             and result["product_score"] >= 95
-            and result.get("image_format") != "multi_panel_grid"):
+            and format_ok):
         result["verdict"] = "pass"
         result.setdefault("specific_failures", [])
     else:

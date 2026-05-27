@@ -122,12 +122,22 @@ def product_essence_text(product_input: dict) -> str:
 
 
 def image_size_for(w: int, h: int) -> str:
+    """원본 panel 비율에 가장 가까운 fal image_size 매핑.
+
+    fal-ai/gpt-image-2/edit 지원: square / square_hd / landscape_4_3 / landscape_16_9 /
+    portrait_4_3 / portrait_16_9
+    """
     r = w / h
-    if r < 0.8:
+    # 매우 세로 긴 (옷장 panel, 책상 lifestyle 등)
+    if r < 0.65:
+        return "portrait_16_9"
+    if r < 0.85:
         return "portrait_4_3"
-    if r > 1.2:
+    if r < 1.15:
+        return "square"
+    if r < 1.55:
         return "landscape_4_3"
-    return "square"
+    return "landscape_16_9"
 
 
 # ─────────────────────────── prompt builders ───────────────────────────
@@ -158,6 +168,49 @@ def _critical_never_miss_block(applicable_items: list[dict]) -> str:
         for it in detail[:8]:
             lines.append(f"     · {it.get('description_ko','')[:100]} (axis={it.get('axis','?')})")
     return "\n".join(lines) + "\n"
+
+
+def _category_specific_block(panel_class: str) -> str:
+    """카테고리/panel_class 별 특화 가이드 — 사용자 요청: 옷장/책상도 소파처럼 카테고리 강조."""
+    if panel_class in ("size_chart", "structure_chart"):
+        return (
+            "=== [★ CHART panel 특화 — 반드시 보존] ===\n"
+            "  - dim_line / 측정 화살표 / 숫자 텍스트 · 한국어 라벨 · 표 셀 구조 100% 보존\n"
+            "  - 한샘 텍스트는 사용자 제품 수치로 정확 치환. 누락/이상한 숫자 → fail\n"
+            "  - 차트 색/굵기/위치 흔들리지 말 것. layout이 정보의 핵심\n"
+        )
+    if panel_class == "module_lineup":
+        return (
+            "=== [★ LINEUP panel 특화] ===\n"
+            "  - 사용자 제품 모델 옵션 수 = lineup 칸 수 (한샘 4모듈이라도 사용자 2모듈이면 2칸)\n"
+            "  - 각 칸 라벨 = 정확한 제품명 + 사이즈. layout grid 일관성 유지\n"
+            "  - 사용자 제품의 라인업이 한샘과 다르면 정확히 사용자 list만 표시\n"
+        )
+    if panel_class == "color_option":
+        return (
+            "=== [★ COLOR panel 특화] ===\n"
+            "  - 컬러 swatch 위치 · 크기 · 배치 · 라벨 그리드 정확 보존\n"
+            "  - 사용자 제품의 정확한 한글 컬러명만 사용. 한샘 컬러명/외부 색명 발명 금지\n"
+            "  - swatch 색은 사용자 제품의 실제 톤. 한샘 색조 그대로 가져오지 말 것\n"
+        )
+    if panel_class == "material_swatch":
+        return (
+            "=== [★ MATERIAL panel 특화] ===\n"
+            "  - 소재 텍스처 라벨/구역 layout 보존. 사용자 제품 소재 표면으로 텍스처만 교체\n"
+        )
+    if panel_class == "detail_close_up":
+        return (
+            "=== [★ DETAIL CLOSE-UP 특화] ===\n"
+            "  - frame 안에 들어오는 사용자 제품 디테일을 정확히 표현. 추측/발명 금지\n"
+            "  - reference 사진에서 보이는 시접/소재/표면 디테일 그대로\n"
+        )
+    if panel_class == "lifestyle_scene":
+        return (
+            "=== [★ LIFESTYLE 특화] ===\n"
+            "  - 룸 배경/조명/소품/카메라 각도 유지. 사용자 제품으로 자연스럽게 배치\n"
+            "  - 한샘 제품 비율과 사용자 제품 비율이 다르면 사용자 제품 비율 우선\n"
+        )
+    return ""
 
 
 def assemble_initial_prompt(
@@ -195,6 +248,8 @@ REFERENCE PATTERN (image_urls 순서 — panel별 LLM 매핑):
 {product_essence}
 
 {never_miss}
+
+{_category_specific_block(panel.get("panel_class", "other"))}
 
 === [출력 형식 강제] ===
 - 결과는 IMAGE 1 (panel C)와 동일한 **single-panel layout**. multi-cell grid 절대 X.

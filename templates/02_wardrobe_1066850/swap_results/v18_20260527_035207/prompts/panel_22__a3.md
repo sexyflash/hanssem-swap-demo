@@ -1,44 +1,87 @@
-TASK: PAINT EDIT — partial in-painting on the provided base image.
+=== [RETRY · paint_edit fallback to replan] ===
+=== [RETRY · PANEL C SWAP — 구조/라벨 우선 보완본] ===
 
-이번 호출은 base 이미지의 잘된 부분을 모두 보존하고, 지정된 영역만 부분 수정한다.
-재생성 X.
+=== PANEL LAYOUT — 반드시 이 매핑 유지 ===
+- 그리드: panel C 원본과 동일한 2행 4열(single panel). 셀 수/비율/여백/폰트/정렬/스타일 불변.
+- 단계 배치(셀 고정):
+  · 1행 1열=1번, 1행 2열=2번, 1행 3열=3번, 1행 4열=4번
+  · 2행 1열=5번, 2행 2열=6번, 2행 3열=7번, 2행 4열=8번
+- 각 셀: 상단 이미지, 하단 단계 번호+설명 텍스트. 텍스트는 한국어 가독성 유지.
 
-IMAGE 1 = BASE (앞선 시도 중 점수가 가장 좋은 결과 — preserve wholesale except listed regions)
-이후 IMAGE 2~ = user-product reference (필요 부분 보정용)
+=== NEVER-MISS NUMERIC LABELS — 셀·문구·위치 고정(MUST) ===
+- 1행 2열(2번 캡션 끝 괄호): “(18mm 선반 홈·브라켓 위치 표기, 행거봉 브라켓)”
+- 1행 3열(3번 캡션 끝 괄호): “(18mm 선반, 선반 권장 하중 최대 20kg/80cm 기준, 알루미늄 행거봉 최대 16kg/80cm 기준)”
+- 2행 2열(6번 도어 조립 — 이미지 오버레이 좌하): “댐핑 힌지 · 40,000회 개폐 테스트”
+- 2행 3열(7번 — 하단 캡션 아래 ‘미니 스펙 배지’ 1줄): “도어 마감 LPM | E0 등급 소재 | 자재 휨 강도 50kg/168시간 (50kg/168h)”
+- 2행 4열(8번 캡션 끝 괄호): “(W160×D57×H216cm, 80cm 모듈×2)” — 숫자/표기 형태를 정확히 유지.
+- 폰트/컬러/크기: 원본 캡션 스타일의 90~95% 크기, 그리드/여백 훼손 금지.
 
-TARGET: 샘베딩 클로즈 옷장세트 160cm(높이216cm) 서랍형 6종
-제원: 160×57×216cm
-모델 옵션: 서랍형 6종 (160cm, 높이 216cm) W160 x D57 x H216 cm, 행거형 6종 (160cm, 높이 216cm) W160 x D57 x H216 cm, 거울-행거형 6종 (160cm, 높이 216cm) W160 x D57 x H216 cm, 거울-서랍형 6종 (160cm, 높이 216cm) W160 x D57 x H216 cm
-컬러: "화이트 하이글로시(유광)", "크림화이트", "라이트오크"
-· overall_silhouette: 폭 160cm, 높이 216cm의 직선형 옷장 세트로 상단까지 곧게 뻗은 외관이 공간을 깔끔하고 크게 보이게 합니다.
-· doors_detail: 편리한 양문형 도어 구성. 도어와 손잡이는 서로 다른 소재라 컬러 차이가 있으며, 크림화이트 도어는 화이트 도어와 동일 손잡이가 적용됩니다.
-· handles_detail: 도어를 따라 길게 내려오는 매립형 손잡이로 양방향 그립이 가능해 어느 방향에서도 쉽게 개폐. 손잡이는 견고한 목분 소재로 내구성을 높였습니다.
-· hinges_detail: 도어에는 댐핑 힌지 적용으로 소리 없이 부드럽게 닫힘. 최소 40,000회 개폐 테스트를 통과한 하드웨어를 사용합니다.
-· drawers_detail: 서랍형은 3단 외부형 서랍 구조로 속옷, 티셔츠, 니트·바지 등 자주 사용하는 의류를 별도 서랍장 없이 수납 가능.
-· shelves_detail: 18mm 두께의 선반을 사용하여 처짐을 줄였으며, 깊이 57cm 선반으로 이불·수납함 등 부피 큰 물건도 보관 가능.
-· hanging_rod_detail: 알루미늄 옷걸이봉과 브라켓 설계로 최대 16kg까지 지지(너비 80cm 기준). 미디움 원피스·자켓도 끌림 없이 보관 가능.
-· back_panel_reinforcement: 옷장 뒷면을 3개의 보조목으로 보강해 흔들림과 기울어짐을 억제, 도어 개폐와 서랍 작동 안정성 향상.
-· materials_finish: 도어 마감은 접착제를 쓰지 않는 LPM 공법을 적용. 내부 목재·접착제·부속 자재까지 E0 등급 소재 사용.
-· modularity_expansion: 행거형, 서랍형, 선반형, 거울형 등 모듈을 조합하여 라이프스타일에 맞는 드레스룸 구성 가능.
-· height_options: 샘베딩 옷장은 194cm와 216cm 두 가지 높이 라인업을 운영(본 상품은 216cm).
-· mirror_module_option: 거울형 모듈을 선택하면 전신거울을 별도로 두지 않아도 되어 좁은 공간 활용에 유리.
-· safety_load_tests: 자재는 약 50kg/168시간 휨 강도 테스트 통과(시험 기준). 일반 사용 권장 하중은 너비 80cm 기준 최대 20kg.
+=== ★ PRODUCT IDENTITY — 절대 왜곡 금지 (최상단 우선 검증) ===
+- 최종 컷(2행 4열)에서 폭 160cm = 80cm 모듈 2개 조합이 중앙 이음부로 명확히 보이게 프레이밍. 좌 모듈 전면 하단에 ‘3단 외부형 서랍’ 노출.
+- 전 컷 일관: 양문형 도어, 세로 매립형 손잡이(양방향 그립), 외관 컬러 ‘크림화이트’ 반영.
 
-=== [SPATIAL LAYOUT — KEEP from BASE] ===
-패널은 2행 4열의 격자(grid)로 구성되어 있습니다. 각 셀에는 상단에 조립 단계별 이미지를, 하단에는 해당 단계의 번호와 설명 텍스트가 위치합니다. 첫 번째 행에는 1~3번 조립 과정(부품 분리, 몸통 조립, 몸통 완성)이, 두 번째 행에는 4~6번(몸통 세움, 배치, 도어 조립), 세 번째 행에는 7~8번(완성된 옷장, 여러 옷장 조립)이 순서대로 배치되어 있습니다. 각 이미지는 셀 중앙에 크기가 균일하게 배치되어 있고, 텍스트는 셀 하단에 정렬되어 있습니다.
+=== TASK ===
+- 한샘 panel C를 베이스로, 아래 사용자 제품으로 모두 스왑. 외부 정보 금지.
+- TARGET: 샘베딩 클로즈 옷장세트 160cm(높이216cm) 서랍형 6종
+- 제원: 160×57×216cm
+- 모델 옵션 표기 범주(문구 참조용): 서랍형/행거형/거울-행거형/거울-서랍형 (모두 160×57×216cm)
+- 컬러: “화이트 하이글로시(유광)”, “크림화이트”, “라이트오크” 중 본 패널은 ‘크림화이트’로 고정.
 
-=== [PAINT EDIT DIRECTIVE — LLM 생성] ===
-This is a PAINT EDIT — preserve base wholesale except listed regions. Do not redraw or recompose the base. Preserve 100% of the original camera angle, background, lighting, overall layout, product visuals, text/labels, colors, and typography. The only fix: prior attempts produced a grid/multi-panel layout; this must be a single uninterrupted panel.
+=== EXPLICIT EDITS — 단계 캡션(1~8) 교체 ===
+1: “박스를 해체하고 구성 부품을 확인합니다.”
+2: “몸통 골격을 조립합니다.” (18mm 선반 홈·브라켓 위치 표기, 행거봉 브라켓)
+3: “뒷판 보강목을 체결해 몸통을 완성합니다.” (18mm 선반, 선반 권장 하중 최대 20kg/80cm 기준, 알루미늄 행거봉 최대 16kg/80cm 기준)
+4: “수평을 맞추며 몸통을 세웁니다.”
+5: “설치 위치에 수평을 맞춰 몸통을 배치합니다.”
+6: “댐핑 힌지를 장착해 도어를 조립합니다.” — 이미지 오버레이 좌하: “댐핑 힌지 · 40,000회 개폐 테스트”
+7: “양문형 도어와 매립형 손잡이로 옷장 한 통을 완성합니다.” — 하단 ‘미니 스펙 배지’: “도어 마감 LPM | E0 등급 소재 | 자재 휨 강도 50kg/168시간 (50kg/168h)”
+8: “선택하신 ‘서랍형 6종 (160cm, 높이 216cm)’ 구성에 맞춰 순차적으로 조립합니다.” (W160×D57×H216cm, 80cm 모듈×2)
 
-Edits to apply:
-1) Remove all interior vertical and horizontal divider lines/gutters that split the canvas into tiles. Inpaint over them and extend the adjacent background/texture/pattern to close seams cleanly so the frame reads as one continuous single panel.
-2) Remove any inner micro-frames, borders, or drop-shadows that visually box content into subpanels; keep the outermost canvas boundary as-is. Do not crop or resize the canvas.
-3) Do not alter, move, or restyle any existing graphics, diagrams, icons, measurements, or text. No new elements, no added panels.
+=== 이미지 교체/수정 — 셀별 앵커 ===
+- 1행 1열(부품 분리): 샘베딩 클로즈 부품으로 교체. 바닥에 측판/상판/하판/뒷판, 18mm 선반, 알루미늄 옷걸이봉, 뒷판 보강 보조목(3개), ‘3단 외부형 서랍’ 부품 식별 가능하게 정렬. 내부 목재 색 중립 톤.
+- 1행 2열(몸통 일부 조립): 측판+상·하판 ㄴ자 결합. 내부에 18mm 선반 홈, 행거봉 브라켓 위치 노출.
+- 1행 3열(몸통 완성 직전): 뒷판 체결 및 뒷면 보조목 3개가 보이도록. 내부 선반 위치/레일, 옷걸이봉 자리 표현. 캡션에 하중 수치 병기(위 MUST-LABELS 준수).
+- 1행 4열(세움 준비): 작업 전 마지막 고정 과정 등 자연스러운 연속 컷.
+- 2행 1열(세움): 작업자 2명이 몸통을 세우는 장면. 실루엣은 높이 216cm의 슬림한 비율.
+- 2행 2열(도어 조립): 댐핑 힌지 근접 촬영. 소프트클로징 구조 식별. 도어 측면의 세로 매립형 손잡이 채널(양방향 그립) 노출. 좌하 오버레이 고정 문구 적용.
+- 2행 3열(완성 한 통): 양문형 도어 단일 모듈(높이 216cm 비율). 긴 세로 매립 손잡이 라인 또렷. 외관 컬러 ‘크림화이트’. 하단에 LPM/E0/50kg-168h 배지 1줄 추가(위 문구 그대로).
+- 2행 4열(세트 배치 최종): 미니멀 인테리어 배경. 제품은 ‘서랍형 6종 (160cm, 높이 216cm)’ 한 세트만. 폭 160cm(80cm×2)로 중앙 이음부를 명확히 보이게 프레이밍. 좌측 모듈 전면 하단에 ‘3단 외부형 서랍’ 분명히 노출. 모든 도어 세로 매립 손잡이. 외관 컬러 ‘크림화이트’. 캡션에 규격/모듈 표기 병기.
 
-Critical: This issue occurred in both previous attempts — absolutely no grid or multi-panel look. Final output must be exactly one unified panel with no visible separators or subframes, while maintaining all original content, perspective, and lighting.
+=== REFERENCE PATTERN (image_urls 매핑) ===
+- IMAGE 1 = panel C (한샘 원본 — edit base, 레이아웃만 참조)
+- IMAGE 2 = SMART SHEET (메타 가이드 — 복제 금지, 정보만 활용)
+- IMAGE 3 = USER PRODUCT — screenshot_06.png
+- IMAGE 4 = USER PRODUCT — screenshot_05.png
+- IMAGE 5 = USER PRODUCT — screenshot_10.png
+- IMAGE 6 = USER PRODUCT — screenshot_01.png
 
-=== [ABSOLUTE RULES] ===
-- 카메라 각도/배경/조명/레이아웃은 BASE 그대로
-- 한국어 텍스트는 정확/또렷
-- 새 요소 발명 금지 (사용자 제품 정보 외)
-- 단일 panel 출력
+=== REFERENCE ANCHORS — 형상/색/분할비를 그대로 반영 ===
+- 손잡이 채널 폭·형상·색 대비: screenshot_01.png 그대로.
+- 서랍 전면 3단 분할 비와 손잡이 배치: screenshot_10.png 그대로.
+- 크림화이트 톤·광택·밸런스: screenshot_06.png 기준, screenshot_05.png로 색감 보정.
+
+=== 제품/스펙 반영 체크리스트 ===
+- 도어: LPM 질감의 매끈한 면, 세로 매립형 손잡이 라인.
+- 하드웨어: 댐핑 힌지(오버레이에 40,000회), 알루미늄 옷걸이봉(최대 16kg/80cm) 표기.
+- 내부: 18mm 선반 두께감, 뒷판 보조목 3개.
+- 하중/내구: 선반 권장 20kg/80cm, 자재 휨 강도 50kg/168시간(50kg/168h 병기).
+- 구성: 최종 컷에서 160×57×216cm 세트, 좌측 모듈에 ‘3단 외부형 서랍’ 포함.
+
+=== BRAND/LABEL ===
+- 원본 특정 브랜드/로고는 모두 제거.
+
+=== ABSOLUTE RULES — PRESERVE / NEVER ===
+PRESERVE:
+- panel C와 같은 single panel 내 멀티 셀 그리드(2행 4열), 한국형 상세페이지 스타일
+- 카메라 각도/배경/조명/한국어 텍스트 가독성
+- 사용자 제품 feature_descriptions의 모든 특징
+- 위 NEVER-MISS 수치 문구를 해당 위치에 반드시 시각적으로 노출
+NEVER:
+- 사용자 제품 정보에 없는 기능 발명
+- 한샘 원본 텍스트 잔존
+- 셀 수/그리드 재배치(추가/삭제/병합 금지)
+- 한글 텍스트 깨짐
+- 수치/라벨 누락: 18mm, LPM, E0, 40,000회, 50kg/168h, 16kg/80cm, 20kg/80cm
+
+=== 출력 형식 강제 ===
+- 결과는 IMAGE 1(panel C)와 동일한 single-panel 이미지. 2행 4열 그리드/레이아웃/색/굵기/정렬 불변.

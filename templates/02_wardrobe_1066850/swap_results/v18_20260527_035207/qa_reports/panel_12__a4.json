@@ -1,0 +1,32 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [
+    {
+      "id": "module_lineup_shows_4_variants",
+      "verdict": "fail",
+      "reason_ko": "B는 여러 모듈을 섹션별로 나열하고 하단에 선택 상품 '서랍형 6종'은 보이지만, 기대된 4가지 모델 옵션인 '서랍형 6종 / 행거형 6종 / 거울-행거형 6종 / 거울-서랍형 6종'이 라인업으로 정확히 모두 표기되어 있지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "height_lineup_two_options_label",
+      "verdict": "pass",
+      "reason_ko": "상단에 '높이 라인업: 194cm / 216cm'가 명확히 표기되어 있고, 본 패널은 216cm 기준이며 194cm도 선택 가능하다는 설명도 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 1,
+  "forbidden_fail_count": 0,
+  "composition_score": 92,
+  "hallucinations": [],
+  "specific_failures": [
+    "라인업 패널에 4가지 모델 옵션(서랍형 6종, 행거형 6종, 거울-행거형 6종, 거울-서랍형 6종)이 정확히 모두 표기되지 않음",
+    "distortion fail · module_lineup_shows_4_variants: B는 여러 모듈을 섹션별로 나열하고 하단에 선택 상품 '서랍형 6종'은 보이지만, 기대된 4가지 모델 옵션인 '서랍형 6종 / 행거형 6종 / 거울-행거형 6종 / 거울-서랍형 6종'이 라인업으로 정확히 모두 표기되어 있지 않습니다."
+  ],
+  "notes_ko": "전체 그리드 구성과 섹션 배치는 잘 유지되어 있으나, 핵심 distortion 항목인 4가지 모델 라인업 표기가 기대와 다릅니다.",
+  "critical_fail_count": 1,
+  "product_score_raw": null,
+  "product_score": 14,
+  "verdict": "retry"
+}

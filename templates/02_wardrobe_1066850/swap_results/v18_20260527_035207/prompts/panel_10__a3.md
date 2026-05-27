@@ -28,7 +28,7 @@ TARGET: 샘베딩 클로즈 옷장세트 160cm(높이216cm) 서랍형 6종
 상단에는 서랍이 열려있는 옷장 내부가 클로즈업으로 보인다. 서랍 내부는 칸막이로 나뉘어 양말, 속옷, 스웨터 등이 정돈되어 있다. 하단에는 세 개의 옷장 모듈이 나란히 정면에서 배열되어 있다. 각 모듈은 직사각형 형태로, 왼쪽 두 개는 옷걸이 봉과 하단 서랍, 오른쪽 하나는 선반과 바구니, 하단 서랍으로 구성된다. 각 모듈의 크기와 비율이 동일하며, 흰색 배경 위에 정렬되어 있다. 전체적으로 수직적이고 균형 잡힌 레이아웃이다.
 
 === [PAINT EDIT DIRECTIVE — LLM 생성] ===
-This is a PAINT EDIT — preserve base wholesale except listed regions. 카메라 각도, 배경 스타일, 조명, 각 모델 렌더의 구성/비율/색상은 100% 그대로 유지하세요. 제품 렌더 자체는 절대 리드로잉/리라이팅 하지 마세요. CRITICAL — 반복 실패 패턴 수정: 결과가 grid 형태로 보이지 않도록, 멀티 타일/그리드 프레임을 전부 제거하고 단일 패널(single panel)로 통합하세요. 1) 전체 프레임/구획선: 모든 타일 경계선, 분할선, 그리드 프레임, 타일 간 여백(거터), 드롭쉐도우를 삭제합니다. 2) 배경 이어붙임: 프레임 제거로 생긴 빈 공간은 기존 배경의 컬러/그라데이션 질감을 샘플링하여 무봉제(seamless)로 메꿔 끊김 없는 단일 배경으로 만듭니다. 새 그래픽 요소는 추가하지 마세요. 3) 헤더/타이틀: 상단에 하나의 메인 헤더만 남기고, 각 타일에 중복된 제목/설명/로고는 삭제합니다. 남기는 헤더의 타이포/색상/정렬은 베이스와 동일하게 유지합니다. 4) 하단 라인업: 이미 존재하는 4가지 모델 옵션(서랍형 6종, 행거형 6종, 거울-행거형 6종, 거울-서랍형 6종)의 렌더를 그대로 보존하고, 프레임 제거로 인해 생긴 여백만 정리하여 네 모델이 하나의 연속된 단일 행으로 보이게 하되, 각 렌더의 크기/카메라/조명/그림자/색상은 변경하지 마세요. 5) 전체 캔버스: 캔버스 크기와 비율은 그대로 두고, 요소 위치는 프레임 제거에 따른 최소한의 정렬 보정만 허용합니다. 그 외 모든 요소(카메라, 배경 톤, 제품 디테일, 텍스처)는 원본 그대로 유지하세요. 반드시 최종 결과는 single panel이어야 하며 grid 형태는 금지입니다.
+This is a PAINT EDIT — preserve base wholesale except listed regions. There are no regions to modify; return the base image unchanged. Preserve camera angle, background, lighting, and layout 100%. Do not alter typography, icons, or the four-variant lineup presentation and labels already shown. No global re-rendering; maintain all existing details as-is.
 
 === [ABSOLUTE RULES] ===
 - 카메라 각도/배경/조명/레이아웃은 BASE 그대로

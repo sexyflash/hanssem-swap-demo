@@ -33,80 +33,80 @@
       {
         "id": "no_sliding_doors",
         "verdict": "pass",
-        "reason_ko": "옷장 전면에 미닫이 레일이나 겹쳐지는 슬라이딩 도어 형태가 보이지 않고, 일반 여닫이 도어처럼 표현되어 있습니다.",
+        "reason_ko": "전면에 미닫이 레일이나 겹쳐지는 슬라이딩 도어 구조가 보이지 않고, 여닫이형 도어처럼 표현되어 있습니다.",
         "category": "forbidden",
         "generation_feasibility": "high"
       },
       {
         "id": "no_high_legs_visible",
         "verdict": "pass",
-        "reason_ko": "옷장 본체는 바닥에 거의 붙은 낮은 베이스 형태로 보이며, 10cm 이상 본체를 띄우는 높은 노출 다리는 보이지 않습니다.",
+        "reason_ko": "옷장 본체가 바닥에 가깝게 놓여 있으며, 10cm 이상 본체를 띄우는 높은 노출 다리는 보이지 않습니다.",
         "category": "forbidden",
         "generation_feasibility": "high"
       },
       {
         "id": "no_builtin_led_visible",
         "verdict": "pass",
-        "reason_ko": "옷장 전면이나 내부 가장자리에 내장 LED 발광 바가 보이지 않습니다. 천장 조명은 제품 자체 조명이 아닙니다.",
+        "reason_ko": "옷장 전면이나 내부 가장자리에 내장 LED 발광 바가 보이지 않습니다. 침대 쪽 조명은 옷장 제품의 내장 조명으로 보이지 않습니다.",
         "category": "forbidden",
         "generation_feasibility": "high"
       },
       {
         "id": "two_80cm_modules_total_160cm",
         "verdict": "pass",
-        "reason_ko": "전면이 좌우 두 개의 큰 옷장 모듈로 나뉘어 보이고 중앙 이음부가 확인되어, 80cm 모듈 2개 조합으로 해석 가능합니다.",
+        "reason_ko": "좌측 전면 도어 모듈과 우측 서랍형 모듈로 나뉜 2칸 구조가 확인되어 80cm 모듈 2개 조합처럼 보입니다.",
         "category": "distortion",
         "generation_feasibility": "medium"
       },
       {
         "id": "hinged_double_doors_per_module",
         "verdict": "pass",
-        "reason_ko": "전면 도어들이 슬라이딩이 아니라 양개형 여닫이 도어 구성처럼 보이며, 각 모듈의 도어 분할도 유지되어 있습니다.",
+        "reason_ko": "각 모듈의 전면이 중앙 세로선 기준 양문형 도어로 보이며, 슬라이딩 도어처럼 보이는 요소는 없습니다.",
         "category": "distortion",
         "generation_feasibility": "high"
       },
       {
         "id": "external_3_tier_drawers_visible",
         "verdict": "pass",
-        "reason_ko": "옷장 하단에 가로 분할선으로 구분되는 외부형 3단 서랍 블록이 명확히 보입니다.",
+        "reason_ko": "우측 하단 전면에 가로로 분리된 3단 외부형 서랍 블록이 명확히 보입니다.",
         "category": "distortion",
         "generation_feasibility": "high"
       },
       {
         "id": "long_inset_vertical_handles",
         "verdict": "pass",
-        "reason_ko": "도어 가장자리를 따라 세로로 길게 내려오는 매립형 손잡이 형태가 확인됩니다.",
+        "reason_ko": "도어 가장자리와 중앙부를 따라 세로로 긴 매립형 손잡이 라인이 보입니다.",
         "category": "distortion",
         "generation_feasibility": "high"
       },
       {
         "id": "rectangular_straight_top_silhouette",
         "verdict": "pass",
-        "reason_ko": "상단이 평평하고 직선적인 직사각형 실루엣으로 표현되어 있으며, 크라운이나 아치형 장식은 없습니다.",
+        "reason_ko": "상단이 평평하고 직선적인 직사각형 실루엣으로 표현되어 있으며 크라운이나 아치형 장식은 없습니다.",
         "category": "distortion",
         "generation_feasibility": "high"
       },
       {
         "id": "selected_finish_in_images_is_one_of_three",
         "verdict": "pass",
-        "reason_ko": "도어 색상은 크림화이트 또는 화이트 계열로 보이며, 제공된 컬러 범위 안에 해당합니다.",
+        "reason_ko": "도어 색상이 크림화이트 또는 화이트 계열로 보여 제공 컬러 범위에 들어갑니다.",
         "category": "distortion",
         "generation_feasibility": "high"
       },
       {
         "id": "aluminum_hanging_rod_indicator",
         "verdict": "not_visible",
-        "reason_ko": "결과 B에서는 옷장 내부나 옷걸이봉 클로즈업이 보이지 않아 알루미늄 소재 여부를 확인할 수 없습니다.",
+        "reason_ko": "B 이미지에는 옷장 내부 클로즈업이나 옷걸이봉 재질을 확인할 수 있는 시각 정보가 없고, 텍스트도 알루미늄 재질까지 명시하지 않습니다.",
         "category": "detail",
         "generation_feasibility": "medium"
       }
     ],
     "distortion_fail_count": 0,
     "forbidden_fail_count": 0,
-    "composition_score": 55,
+    "composition_score": 60,
     "hallucinations": [],
     "specific_failures": [],
-    "notes_ko": "제품 정체성 기준에서는 슬라이딩 도어, 높은 노출 다리, 내장 LED 같은 금지 요소가 보이지 않고, 2모듈 옷장 구조, 여닫이 도어, 3단 외부 서랍, 세로 매립 손잡이, 직선형 상단 실루엣, 화이트/크림 계열 마감이 대체로 유지되었습니다. 다만 B는 원본 패널 C의 하단 내부 클로즈업과 후기 텍스트가 빠진 단일 라이프스타일 이미지에 가까워 composition_score는 낮게 산정했습니다.",
+    "notes_ko": "제품 정체성 기준에서는 160cm 2모듈 구성, 여닫이 도어, 세로 매립 손잡이, 3단 외부 서랍, 화이트/크림 계열 마감이 대체로 잘 유지되었습니다. 다만 C 원본 패널에 있던 하단 내부 클로즈업 구성이 B에서는 빠져 있어 composition_score는 낮게 산정했습니다. 이는 보고용이며 제품 왜곡 fail은 아닙니다.",
     "critical_fail_count": 0,
     "product_score_raw": null,
     "product_score": 99,

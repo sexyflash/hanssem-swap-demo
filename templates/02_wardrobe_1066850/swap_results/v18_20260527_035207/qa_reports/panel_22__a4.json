@@ -4,91 +4,89 @@
     {
       "id": "two_80cm_modules_total_160cm",
       "verdict": "pass",
-      "reason_ko": "완성 옷장 도식과 배치 도식에서 W160cm 표기와 함께 좌측 서랍형 80cm 모듈, 우측 옷장 모듈이 중앙 이음부로 나뉘어 보입니다. 80cm 모듈 2개 조합의 정체성이 유지됩니다.",
+      "reason_ko": "4번 패널에서 W160 표기와 함께 중앙 세로 분할이 있는 2칸 몸통 구조가 보이며, 80cm 모듈 2개 조합으로 해석 가능합니다.",
       "category": "distortion",
       "generation_feasibility": "medium"
     },
     {
       "id": "damping_hinges_indicator",
       "verdict": "pass",
-      "reason_ko": "하단 아이콘에 '댐핑 힌지 40,000+회 개폐 테스트' 문구가 있으며, 6번 도어 조립 칸에도 댐핑 힌지 설명과 접사 도식이 보입니다.",
+      "reason_ko": "6번 도어 조립 패널 상단에 ‘댐핑 힌지’ 문구와 힌지 접사 이미지가 표시되어 있습니다.",
       "category": "detail",
       "generation_feasibility": "low"
     },
     {
       "id": "shelf_thickness_18mm_note",
       "verdict": "pass",
-      "reason_ko": "3번 설명에 '18mm 선반' 문구가 있고, 하단 아이콘에도 '선반 두께 18mm'가 명확히 표시되어 있습니다.",
+      "reason_ko": "2번 몸통 조립 패널 상단에 ‘18mm’ 표기가 보입니다.",
       "category": "detail",
       "generation_feasibility": "low"
     },
     {
       "id": "aluminum_hanging_rod_indicator",
       "verdict": "pass",
-      "reason_ko": "부품 분리 및 내부 배치 도식에서 금속성 옷걸이봉이 보이고, 하단에는 옷걸이봉 하중 표기가 있습니다. '알루미늄' 텍스트 자체는 없지만 디테일 항목이므로 금속 봉 표시로 인정 가능합니다.",
+      "reason_ko": "5번 배치 패널에서 금속 재질로 보이는 옷걸이봉과 하중 표기가 확인됩니다. ‘알루미늄’ 텍스트는 없지만 detail 항목이므로 수용 가능합니다.",
       "category": "detail",
       "generation_feasibility": "medium"
     },
     {
       "id": "back_panel_triple_brace_diagram",
       "verdict": "pass",
-      "reason_ko": "3번 몸통 완성 칸에 뒷판 보조목 3개가 확대 도식으로 표시되어 있고, '뒷판 보조목 3개' 및 '장성 보강' 관련 설명이 보입니다.",
+      "reason_ko": "3번 몸통 완성 패널에서 뒷판 보강 문구와 함께 뒷판에 3개의 가로 보강목이 표현되어 있습니다.",
       "category": "detail",
       "generation_feasibility": "medium"
     },
     {
       "id": "lpm_finish_label",
       "verdict": "pass",
-      "reason_ko": "하단 마감 아이콘 영역에 'LPM 마감' 문구가 명확히 표시되어 있습니다.",
+      "reason_ko": "1번 부품 분리 패널 상단에 ‘LPM’ 표기가 있습니다.",
       "category": "detail",
       "generation_feasibility": "low"
     },
     {
       "id": "e0_grade_label",
       "verdict": "pass",
-      "reason_ko": "하단 마감 아이콘 영역에 '자재 E0 등급' 문구가 표시되어 있습니다.",
+      "reason_ko": "1번 부품 분리 패널 상단에 ‘E0’ 표기가 있습니다.",
       "category": "detail",
       "generation_feasibility": "low"
     },
     {
       "id": "hinge_40000_cycles_label",
       "verdict": "pass",
-      "reason_ko": "하단 좌측 아이콘에 '댐핑 힌지 40,000+회 개폐 테스트' 문구가 보입니다.",
+      "reason_ko": "6번 도어 조립 패널 상단에 ‘40,000회’ 문구가 표시되어 있습니다.",
       "category": "detail",
       "generation_feasibility": "low"
     },
     {
       "id": "material_bending_50kg_168h_label",
       "verdict": "pass",
-      "reason_ko": "하단 하중 테스트 영역에 '자재 50kg/168h 테스트' 문구가 표시되어 있습니다.",
+      "reason_ko": "8번 여러 옷장 조립 패널 상단에 ‘50kg/168h’ 표기가 보입니다.",
       "category": "detail",
       "generation_feasibility": "low"
     },
     {
       "id": "recommended_shelf_load_20kg_80cm_label",
       "verdict": "pass",
-      "reason_ko": "하단 하중 아이콘 영역에 '선반 권장 20kg' 문구가 있으며, 같은 영역에 80cm 기준 표기가 함께 배치되어 있어 선반 권장 하중 정보로 확인됩니다.",
+      "reason_ko": "7번 완성된 옷장 패널 상단에 ‘20kg/80cm’ 표기가 있습니다.",
       "category": "detail",
       "generation_feasibility": "low"
     },
     {
       "id": "rod_load_16kg_80cm_label",
       "verdict": "pass",
-      "reason_ko": "하단 하중 아이콘 영역에 '옷걸이봉 하중 16kg (80cm 기준)' 문구가 명확히 보입니다.",
+      "reason_ko": "5번 배치 패널 상단에 ‘16kg/80cm’ 표기가 있습니다.",
       "category": "detail",
       "generation_feasibility": "low"
     }
   ],
   "distortion_fail_count": 0,
   "forbidden_fail_count": 0,
-  "composition_score": 86,
+  "composition_score": 72,
   "hallucinations": [],
-  "specific_failures": [
-    "결과가 grid 형태 — single panel로 재생성"
-  ],
-  "notes_ko": "B는 조립 순서형 멀티 패널 차트로, 사용자 제품의 160cm 2모듈 서랍형 옷장 구조와 핵심 부품/기능 표기를 전반적으로 잘 유지합니다. 일부 텍스트는 원본보다 추가 설명이 많지만, 제품 정체성을 왜곡하는 명백한 요소는 발견되지 않았습니다.",
-  "verdict": "retry",
-  "product_score_raw": 30,
+  "specific_failures": [],
+  "notes_ko": "B는 조립 단계별 멀티 패널 구조로, 제품의 핵심 왜곡 항목인 160cm 2모듈 구성은 4번 패널에서 확인됩니다. 대부분의 성능/소재 관련 detail 표기도 텍스트 라벨로 명확히 반영되어 있습니다. 다만 C 원본과 비교하면 행/열 구성과 사진 스타일이 다소 달라 composition_score는 중간 이상 수준으로 평가합니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
   "product_score": 100,
-  "critical_fail_count": 0
+  "verdict": "retry"
 }

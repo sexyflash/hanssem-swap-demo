@@ -4,93 +4,89 @@
     {
       "id": "two_80cm_modules_total_160cm",
       "verdict": "pass",
-      "reason_ko": "08번 완성 배치에서 160cm 세트가 80cm 모듈 2종으로 정면 정렬된다고 표기되어 있고, 중앙 이음부가 있는 좌우 2칸 구조로 보입니다.",
+      "reason_ko": "8번 완성/조립 안내 영역에서 좌측 서랍형 모듈과 우측 양문형 모듈이 결합된 2개 80cm 모듈 구성으로 보이며, 텍스트에도 W160 및 80cm 모듈x2가 표기되어 있습니다.",
       "category": "distortion",
       "generation_feasibility": "medium"
     },
     {
       "id": "damping_hinges_indicator",
       "verdict": "pass",
-      "reason_ko": "06번 도어 조립 영역에 ‘소프트클로징’ 아이콘과 문구가 보여 댐핑 힌지 관련 표기가 확인됩니다.",
+      "reason_ko": "6번 힌지 조립 이미지에 '댐핑 힌지 · 40,000회 개폐 테스트' 문구와 힌지 접사 이미지가 보입니다.",
       "category": "detail",
       "generation_feasibility": "low"
     },
     {
       "id": "shelf_thickness_18mm_note",
       "verdict": "pass",
-      "reason_ko": "01번 부품 분리 영역에 확대 원형 표시와 함께 ‘18mm’ 및 ‘18mm 선반’ 문구가 보입니다.",
+      "reason_ko": "2번 및 3번 설명 문구에 18mm 선반 관련 표기가 확인됩니다.",
       "category": "detail",
       "generation_feasibility": "low"
     },
     {
       "id": "aluminum_hanging_rod_indicator",
       "verdict": "pass",
-      "reason_ko": "01번 설명에 ‘알루미늄 옷걸이봉’ 문구가 보이고, 07번에도 옷걸이봉 하중 아이콘이 표시되어 있습니다.",
+      "reason_ko": "3번 이미지 상단에 옷걸이봉이 보이고, 설명 문구에 알루미늄 행거봉 및 하중 기준이 표기되어 있습니다.",
       "category": "detail",
       "generation_feasibility": "medium"
     },
     {
       "id": "back_panel_triple_brace_diagram",
       "verdict": "pass",
-      "reason_ko": "03번 몸통 완성 영역에 뒷판 보조목 3개가 세로 보강재로 그려져 있고 ‘뒷판 보조목 x3’ 아이콘/설명이 확인됩니다.",
+      "reason_ko": "3번 조립 이미지에서 뒷판에 가로 보강목 3개가 배치된 구조가 보이며, '뒷판 보강목' 설명도 포함되어 있습니다.",
       "category": "detail",
       "generation_feasibility": "medium"
     },
     {
       "id": "lpm_finish_label",
       "verdict": "pass",
-      "reason_ko": "01번 부품 설명 및 하단 아이콘 영역에 ‘LPM’ 표기가 보입니다.",
+      "reason_ko": "7번 하단 박스에 '도어 마감 LPM' 문구가 보입니다.",
       "category": "detail",
       "generation_feasibility": "low"
     },
     {
       "id": "e0_grade_label",
       "verdict": "pass",
-      "reason_ko": "01번과 하단 아이콘 영역에 ‘E0’ 등급 표기가 보입니다.",
+      "reason_ko": "7번 하단 박스에 'E0 등급 소재' 표기가 확인됩니다.",
       "category": "detail",
       "generation_feasibility": "low"
     },
     {
       "id": "hinge_40000_cycles_label",
       "verdict": "pass",
-      "reason_ko": "06번 도어 조립 영역에 ‘40,000회 테스트’ 아이콘과 문구가 명확히 표시되어 있습니다.",
+      "reason_ko": "6번 힌지 접사 영역에 '40,000회 개폐 테스트' 문구가 표시되어 있습니다.",
       "category": "detail",
       "generation_feasibility": "low"
     },
     {
       "id": "material_bending_50kg_168h_label",
       "verdict": "pass",
-      "reason_ko": "08번 하단 사양 아이콘에 ‘50kg/168h 휨강도’ 표기가 확인됩니다.",
+      "reason_ko": "7번 하단 박스에 '자재 휨 강도 50kg/168시간' 관련 표기가 보입니다.",
       "category": "detail",
       "generation_feasibility": "low"
     },
     {
       "id": "recommended_shelf_load_20kg_80cm_label",
       "verdict": "pass",
-      "reason_ko": "07번 영역에 ‘선반 권장 20kg/80cm’ 문구가 표시되어 있습니다.",
+      "reason_ko": "3번 설명 문구에 선반 권장 하중 최대 20kg/80cm 기준이 표기되어 있습니다.",
       "category": "detail",
       "generation_feasibility": "low"
     },
     {
       "id": "rod_load_16kg_80cm_label",
       "verdict": "pass",
-      "reason_ko": "07번 영역에 ‘옷걸이봉 16kg/80cm’ 문구와 아이콘이 보입니다.",
+      "reason_ko": "3번 설명 문구에 알루미늄 행거봉 최대 16kg/80cm 기준 표기가 확인됩니다.",
       "category": "detail",
       "generation_feasibility": "low"
     }
   ],
   "distortion_fail_count": 0,
   "forbidden_fail_count": 0,
-  "composition_score": 88,
-  "hallucinations": [
-    "일부 완성컷에서 원본보다 우드톤에 가까운 세로 손잡이가 강조되어 보임"
-  ],
-  "specific_failures": [
-    "결과가 grid 형태 — single panel로 재생성"
-  ],
-  "notes_ko": "B는 조립 단계형 멀티 패널 구성으로, 원본 C의 조립 순서/완성 배치 구도를 대체로 유지합니다. 제품 핵심 왜곡 항목인 160cm=80cm 모듈 2개 구성은 텍스트와 시각 요소 모두에서 확인되어 통과입니다. 세부 사양 표기들도 대부분 명시적으로 포함되어 있습니다.",
-  "verdict": "retry",
-  "product_score_raw": 30,
+  "composition_score": 82,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "B는 조립 단계별 다중 패널 구성으로, 최종 160cm 구성과 80cm 모듈 2개 조합이 텍스트와 이미지에서 확인됩니다. 체크리스트의 기술 표기들도 대부분 패널 내 설명 박스나 단계 설명에 명시되어 있으며, 제품 정체성을 왜곡하는 명백한 요소는 보이지 않습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
   "product_score": 100,
-  "critical_fail_count": 0
+  "verdict": "retry"
 }

@@ -4,82 +4,82 @@
     {
       "id": "no_sliding_doors",
       "verdict": "pass",
-      "reason_ko": "전면 도어가 레일형 미닫이로 보이지 않고, 하단 내부 컷에서도 힌지로 여는 문이 확인됩니다.",
+      "reason_ko": "상단 전면과 하단 내부 컷 모두 슬라이딩 레일이나 미닫이 구조가 보이지 않고, 여닫이 도어로 표현되어 있습니다.",
       "category": "forbidden",
       "generation_feasibility": "high"
     },
     {
       "id": "no_high_legs_visible",
       "verdict": "pass",
-      "reason_ko": "옷장 본체 하부는 낮은 받침/걸레받이 형태로 바닥에 가깝게 놓여 있으며, 10cm 이상 높게 띄우는 노출 다리는 보이지 않습니다.",
+      "reason_ko": "옷장 본체는 바닥에 거의 붙은 낮은 베이스 형태로 보이며, 10cm 이상 높게 띄우는 노출 다리는 보이지 않습니다.",
       "category": "forbidden",
       "generation_feasibility": "high"
     },
     {
       "id": "no_builtin_led_visible",
       "verdict": "pass",
-      "reason_ko": "옷장 전면이나 내부 가장자리에 LED 발광 바 또는 내장 조명으로 보이는 요소가 없습니다.",
+      "reason_ko": "옷장 전면이나 내부 가장자리에 LED 발광 바 같은 내장 조명은 보이지 않습니다. 침대 하부 쪽 빛은 옷장 제품 요소로 보이지 않습니다.",
       "category": "forbidden",
       "generation_feasibility": "high"
     },
     {
       "id": "two_80cm_modules_total_160cm",
       "verdict": "pass",
-      "reason_ko": "전면이 좌우 2개의 큰 모듈로 나뉘어 보이며 중앙 이음부가 있어 80cm 모듈 2개 조합으로 인지됩니다. 하단 텍스트도 80cm 모듈 2개 구성을 명시합니다.",
+      "reason_ko": "전면이 좌우 2개 큰 모듈 조합처럼 나뉘어 보이고 중앙 이음부와 각 모듈의 도어 구분이 확인됩니다.",
       "category": "distortion",
       "generation_feasibility": "medium"
     },
     {
       "id": "hinged_double_doors_per_module",
       "verdict": "pass",
-      "reason_ko": "전면은 세로 손잡이가 있는 여닫이 양문형 구조로 보이고, 내부 클로즈업에서 문 옆 힌지가 명확히 보여 슬라이딩이 아닌 힌지 도어로 확인됩니다.",
+      "reason_ko": "하단 내부 컷에서 금속 힌지가 명확히 보이며, 상단 전면도 미닫이가 아닌 양개형 여닫이 도어 구성으로 보입니다.",
       "category": "distortion",
       "generation_feasibility": "high"
     },
     {
       "id": "external_3_tier_drawers_visible",
       "verdict": "pass",
-      "reason_ko": "전면 하부에 가로 분할선으로 구분된 3단 외부 서랍 블록이 보이며, 우하단 클로즈업에서도 서랍 구조가 확인됩니다.",
+      "reason_ko": "상단 전면에서 하부에 가로 라인으로 구분된 3단 외부 서랍 블록이 명확히 보입니다.",
       "category": "distortion",
       "generation_feasibility": "high"
     },
     {
       "id": "long_inset_vertical_handles",
       "verdict": "pass",
-      "reason_ko": "도어 가장자리/중앙부를 따라 길게 내려오는 세로형 매립 손잡이 라인이 표현되어 있습니다.",
+      "reason_ko": "도어 가장자리 쪽에 세로로 길게 내려오는 매립형 손잡이 또는 인셋 손잡이 라인이 보입니다.",
       "category": "distortion",
       "generation_feasibility": "high"
     },
     {
       "id": "rectangular_straight_top_silhouette",
       "verdict": "pass",
-      "reason_ko": "옷장 상단이 평평하고 직선적인 직사각형 실루엣이며, 크라운이나 아치형 장식은 없습니다.",
+      "reason_ko": "옷장 상단은 평평하고 직선적인 직사각형 실루엣이며, 크라운이나 아치형 장식은 없습니다.",
       "category": "distortion",
       "generation_feasibility": "high"
     },
     {
       "id": "selected_finish_in_images_is_one_of_three",
       "verdict": "pass",
-      "reason_ko": "도어 색상은 화이트/크림화이트 계열로 보이며 제공된 컬러 옵션 범위 안에 해당합니다.",
+      "reason_ko": "도어 색상은 아이보리/크림화이트 계열로 보여 제공 컬러 중 크림화이트에 해당하는 범위로 판단됩니다.",
       "category": "distortion",
       "generation_feasibility": "high"
     },
     {
       "id": "aluminum_hanging_rod_indicator",
       "verdict": "pass",
-      "reason_ko": "하단 내부 컷에서 은색 금속 재질의 옷걸이봉이 보입니다. 알루미늄 여부를 완전히 단정하긴 어렵지만 detail 항목으로는 충분히 부합합니다.",
+      "reason_ko": "하단 내부 이미지에서 회색 금속 질감의 옷걸이봉이 보이며, 알루미늄 봉으로 해석 가능한 수준입니다.",
       "category": "detail",
       "generation_feasibility": "medium"
     }
   ],
   "distortion_fail_count": 0,
   "forbidden_fail_count": 0,
-  "composition_score": 80,
+  "composition_score": 85,
   "hallucinations": [],
   "specific_failures": [
     "결과가 grid 형태 — single panel로 재생성"
   ],
-  "notes_ko": "제품 정체성 기준에서 큰 왜곡은 없습니다. 2모듈 구성, 여닫이 도어, 3단 외부 서랍, 세로 매립 손잡이, 평평한 상단, 화이트/크림 계열 마감이 모두 확인됩니다. 원본 C 대비 레이아웃은 더 정돈된 멀티 패널 형태로 재구성되었지만, 제품 검수상 문제되는 invented feature는 보이지 않습니다.",
+  "notes_ko": "제품 핵심 요소인 여닫이 도어, 2모듈 구성, 3단 외부 서랍, 세로 매립 손잡이, 직선형 상단, 크림화이트 계열 마감이 전반적으로 유지되었습니다. 하단 내부 컷의 세부 수납 배치는 참고 이미지와 일부 다르게 보일 수 있으나, 이번 체크리스트의 strict distortion/forbidden 항목에서는 명백한 제품 왜곡은 확인되지 않습니다.",
   "verdict": "retry",
   "product_score_raw": 30,
   "product_score": 100,

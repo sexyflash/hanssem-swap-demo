@@ -4,28 +4,26 @@
     {
       "id": "module_lineup_shows_4_variants",
       "verdict": "pass",
-      "reason_ko": "상단 모델 라인업에 서랍형 6종, 행거형 6종, 거울-행거형 6종, 거울-서랍형 6종의 4가지 옵션이 모두 보이며 각 항목에 160 사이즈도 함께 표기되어 있습니다.",
+      "reason_ko": "상단 라인업에 서랍형 6종, 행거형 6종, 거울-행거형 6종, 거울-서랍형 6종의 4가지 모델 옵션이 모두 명확히 표기되어 있습니다.",
       "category": "distortion",
       "generation_feasibility": "high"
     },
     {
       "id": "height_lineup_two_options_label",
-      "verdict": "pass",
-      "reason_ko": "하단 높이 라인업에 194cm와 216cm 두 가지 높이 옵션이 각각 이미지와 텍스트로 표기되어 있습니다.",
+      "verdict": "fail",
+      "reason_ko": "결과 B에는 각 라인업에 높이 216cm 표기는 보이지만, 높이 194cm 옵션 표기는 확인되지 않습니다.",
       "category": "detail",
       "generation_feasibility": "medium"
     }
   ],
   "distortion_fail_count": 0,
   "forbidden_fail_count": 0,
-  "composition_score": 72,
+  "composition_score": 70,
   "hallucinations": [],
-  "specific_failures": [
-    "결과가 grid 형태 — single panel로 재생성"
-  ],
-  "notes_ko": "검증 가능한 핵심 라인업 표기와 높이 옵션 표기는 모두 확인됩니다. 원본 C 대비 섹션 구성과 배치가 일부 다르지만, 제품 정체성 왜곡에 해당하는 명백한 오류는 발견되지 않았습니다.",
-  "verdict": "retry",
-  "product_score_raw": 30,
-  "product_score": 100,
-  "critical_fail_count": 0
+  "specific_failures": [],
+  "notes_ko": "핵심 distortion 항목인 4가지 모델 라인업 표기는 정확히 통과합니다. 다만 높이 옵션은 216cm만 보이고 194cm가 누락되어 detail 항목에서 fail로 판단했습니다. 금지된 invented feature는 발견되지 않았습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 85,
+  "verdict": "retry"
 }

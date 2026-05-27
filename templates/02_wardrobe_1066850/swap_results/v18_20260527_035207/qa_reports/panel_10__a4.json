@@ -3,31 +3,27 @@
   "items_results": [
     {
       "id": "module_lineup_shows_4_variants",
-      "verdict": "fail",
-      "reason_ko": "하단에 4개의 옷장 외형 이미지는 보이지만, 기대 항목인 '서랍형 6종 / 행거형 6종 / 거울-행거형 6종 / 거울-서랍형 6종' 모델명이 정확히 표기되어 있지 않습니다. 또한 내부 구성 기준의 행거형/서랍형 여부를 명확히 검증하기 어렵습니다.",
+      "verdict": "pass",
+      "reason_ko": "하단 라인업 영역에 4개의 옷장 옵션이 나란히 보이며, 서랍형, 일반 행거형, 거울-행거형, 거울-서랍형으로 해석 가능한 구성이 시각적으로 구분됩니다. 텍스트 라벨은 보이지 않지만, 핵심인 4가지 모델 라인업 자체는 확인됩니다.",
       "category": "distortion",
       "generation_feasibility": "high"
     },
     {
       "id": "height_lineup_two_options_label",
-      "verdict": "fail",
-      "reason_ko": "결과 B에는 높이 옵션을 나타내는 194cm / 216cm 텍스트 또는 사이즈 정보가 보이지 않습니다.",
+      "verdict": "not_visible",
+      "reason_ko": "결과 B에는 높이 옵션을 나타내는 194cm / 216cm 텍스트나 사이즈 표기가 보이지 않습니다.",
       "category": "detail",
       "generation_feasibility": "medium"
     }
   ],
-  "distortion_fail_count": 1,
+  "distortion_fail_count": 0,
   "forbidden_fail_count": 0,
-  "composition_score": 78,
+  "composition_score": 70,
   "hallucinations": [],
-  "specific_failures": [
-    "결과가 grid 형태 — single panel로 재생성",
-    "라인업 패널에 4가지 모델 옵션명이 정확히 표기되지 않음",
-    "distortion fail · module_lineup_shows_4_variants: 하단에 4개의 옷장 외형 이미지는 보이지만, 기대 항목인 '서랍형 6종 / 행거형 6종 / 거울-행거형 6종 / 거울-서랍형 6종' 모델명이 정확히 표기되어 있지 않습니다. 또한 내부 구성 기준의 행거형/서랍형 여부를 명확히 검증하기 어렵습니다."
-  ],
-  "notes_ko": "상단 서랍 클로즈업은 reference 및 원본 구도와 유사하게 유지되었으나, 하단 라인업 영역은 텍스트 라벨 없이 닫힌 외형 위주로 표시되어 체크리스트의 모델명/옵션 표기 요구를 충족하지 못합니다.",
-  "verdict": "retry",
-  "product_score_raw": 30,
-  "product_score": 0,
-  "critical_fail_count": 1
+  "specific_failures": [],
+  "notes_ko": "상단 서랍 클로즈업은 사용자 제품/원본 패널의 서랍 내부 구성과 유사하게 유지되었습니다. 하단은 4개 라인업 모듈이 보이지만, 높이 옵션 텍스트 정보는 확인되지 않습니다. 제품에 없는 명백한 금지형 invented feature는 발견되지 않았습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 97,
+  "verdict": "retry"
 }

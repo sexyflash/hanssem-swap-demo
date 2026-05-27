@@ -4,87 +4,82 @@
     {
       "id": "no_sliding_doors",
       "verdict": "pass",
-      "reason_ko": "결과 B에는 미닫이 레일이나 슬라이딩 도어로 보이는 요소가 보이지 않고, 양측에 열린 여닫이 도어와 힌지가 보입니다.",
+      "reason_ko": "결과 B에서 미닫이/슬라이딩 도어로 보이는 구조는 없고, 우측 인포그래픽에도 양문형 힌지 도어로 표시되어 있습니다.",
       "category": "forbidden",
       "generation_feasibility": "high"
     },
     {
       "id": "no_high_legs_visible",
       "verdict": "pass",
-      "reason_ko": "본체를 바닥에서 높게 띄우는 10cm 이상 노출 다리는 보이지 않습니다.",
+      "reason_ko": "본체를 바닥에서 높게 띄우는 10cm 이상 노출 다리는 보이지 않습니다. 우측 도식에도 낮은 받침 형태만 보입니다.",
       "category": "forbidden",
       "generation_feasibility": "high"
     },
     {
       "id": "no_builtin_led_visible",
       "verdict": "pass",
-      "reason_ko": "내부 가장자리나 행거봉 주변에 LED 발광 바처럼 보이는 내장 조명은 확인되지 않습니다.",
+      "reason_ko": "옷장 내부 가장자리나 행거봉 주변에 내장 LED 발광 바가 명확히 보이지 않습니다. 보이는 밝은 부분은 조명 반사/하이라이트로 판단됩니다.",
       "category": "forbidden",
       "generation_feasibility": "high"
     },
     {
       "id": "two_80cm_modules_total_160cm",
-      "verdict": "fail",
-      "reason_ko": "참조 제품은 중앙에 구조적 칸막이가 있는 80cm 모듈 2개 구성으로 보여야 하나, 결과 B는 하나의 넓은 내부 공간에 연속 행거봉이 이어진 형태이며 중앙 이음은 얇은 뒷판 선 정도로만 보여 2칸 모듈 구조가 명확하지 않습니다.",
+      "verdict": "pass",
+      "reason_ko": "우측 상단 도식에 '80cm + 80cm 모듈(총 160cm)' 문구와 중앙 이음부가 있는 2칸 구조가 명확히 표시되어 있습니다.",
       "category": "distortion",
       "generation_feasibility": "medium"
     },
     {
       "id": "hinged_double_doors_per_module",
       "verdict": "pass",
-      "reason_ko": "양측에 열린 도어와 금속 힌지가 보여 여닫이 방식으로 확인되며, 슬라이딩 방식으로 보이지 않습니다.",
+      "reason_ko": "우측 도식에 '양문형 힌지 도어'라고 표기되어 있고, 슬라이딩 도어로 보이는 레일 구조는 없습니다.",
       "category": "distortion",
       "generation_feasibility": "high"
     },
     {
       "id": "external_3_tier_drawers_visible",
-      "verdict": "fail",
-      "reason_ko": "하단에 서랍 전면 일부는 보이지만, 참조 제품처럼 명확한 3단 외부형 서랍 블록으로 확인되지 않고 1~2단 정도만 부분적으로 보입니다.",
+      "verdict": "pass",
+      "reason_ko": "우측 상단 도식에서 하단에 3단 외부 서랍 블록이 명확히 그려져 있으며 '3단 외부 서랍'으로 표기되어 있습니다.",
       "category": "distortion",
       "generation_feasibility": "high"
     },
     {
       "id": "long_inset_vertical_handles",
       "verdict": "pass",
-      "reason_ko": "열린 도어 양쪽 가장자리 부근에 세로로 길게 파인 매립형 손잡이 형태가 부분적으로 보여 제품의 세로 인셋 손잡이 특성과 크게 어긋나지 않습니다.",
+      "reason_ko": "우측 도식의 도어 중앙부에 세로로 긴 매립형 손잡이가 표시되어 있고, 텍스트로도 '세로형 매립 손잡이'가 확인됩니다.",
       "category": "distortion",
       "generation_feasibility": "high"
     },
     {
       "id": "rectangular_straight_top_silhouette",
       "verdict": "pass",
-      "reason_ko": "상단 프레임이 평평하고 직선적인 형태이며 크라운, 아치형 장식, 돌출 장식은 보이지 않습니다.",
+      "reason_ko": "도식의 옷장 상단이 평평한 직선형 직사각 실루엣이며, 크라운/아치형 장식이나 돌출 장식은 보이지 않습니다.",
       "category": "distortion",
       "generation_feasibility": "high"
     },
     {
       "id": "selected_finish_in_images_is_one_of_three",
       "verdict": "pass",
-      "reason_ko": "보이는 도어/프레임 색상은 크림화이트 계열이고 내부는 라이트오크 계열로, 제공된 화이트/크림화이트/라이트오크 범위에서 크게 벗어나지 않습니다.",
+      "reason_ko": "결과 B의 옷장 내부와 도식은 밝은 우드/크림 계열로 표현되어 제공 컬러군인 크림화이트 또는 라이트오크 범위로 볼 수 있습니다.",
       "category": "distortion",
       "generation_feasibility": "high"
     },
     {
       "id": "aluminum_hanging_rod_indicator",
       "verdict": "pass",
-      "reason_ko": "상단 행거봉이 은색 금속 재질로 표현되어 알루미늄 행거봉으로 보는 데 무리가 없습니다.",
+      "reason_ko": "행거봉이 은색 금속 재질의 브러시드 알루미늄처럼 표현되어 있어 알루미늄 행거봉으로 확인 가능합니다.",
       "category": "detail",
       "generation_feasibility": "medium"
     }
   ],
-  "distortion_fail_count": 2,
+  "distortion_fail_count": 0,
   "forbidden_fail_count": 0,
-  "composition_score": 82,
+  "composition_score": 86,
   "hallucinations": [],
-  "specific_failures": [
-    "80cm 모듈 2개 조합으로 보이는 중앙 구조 칸막이가 명확하지 않고, 하나의 넓은 수납칸처럼 표현됨",
-    "전면 3단 외부형 서랍 블록이 명확히 보이지 않음",
-    "distortion fail · two_80cm_modules_total_160cm: 참조 제품은 중앙에 구조적 칸막이가 있는 80cm 모듈 2개 구성으로 보여야 하나, 결과 B는 하나의 넓은 내부 공간에 연속 행거봉이 이어진 형태이며 중앙 이음은 얇은 뒷판 선 정도로만 보여 2칸 모듈 구조가 명확하지 않습니다.",
-    "distortion fail · external_3_tier_drawers_visible: 하단에 서랍 전면 일부는 보이지만, 참조 제품처럼 명확한 3단 외부형 서랍 블록으로 확인되지 않고 1~2단 정도만 부분적으로 보입니다."
-  ],
-  "notes_ko": "라이프스타일 내부 행거 장면의 분위기와 손·코트·행거봉 구도는 원본 패널과 유사하지만, 제품 정체성 측면에서는 160cm 2모듈 구조와 3단 외부 서랍 표현이 부족합니다.",
-  "critical_fail_count": 2,
+  "specific_failures": [],
+  "notes_ko": "B는 원본 C의 손, 옷걸이, 행거봉 중심 라이프스타일 구도를 대체로 유지하고 있으며, 우측 상단 인포그래픽을 통해 160cm 2모듈, 힌지 도어, 3단 외부 서랍, 세로 매립 손잡이 등 핵심 제품 정체성이 검증됩니다. 명백한 금지 요소나 제품 왜곡은 발견되지 않습니다.",
+  "critical_fail_count": 0,
   "product_score_raw": null,
-  "product_score": 78,
-  "verdict": "retry"
+  "product_score": 100,
+  "verdict": "pass"
 }
