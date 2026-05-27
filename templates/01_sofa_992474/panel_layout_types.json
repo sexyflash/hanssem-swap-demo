@@ -1,0 +1,168 @@
+{
+  "panels": [
+    {
+      "input_zone": "lifestyle_scene",
+      "layout_type": "flexible_staging",
+      "visible_korean_text": "",
+      "swap_strategy_hint": "reproduce room lighting, decor, and camera angle but render a new sofa in place of the current one",
+      "key_facts_to_preserve": [
+        "overall room composition",
+        "lighting and mood",
+        "placement of coffee table and decor",
+        "background wall and floor style"
+      ],
+      "panel": "panel_01.jpg",
+      "panel_idx": 1
+    },
+    {
+      "input_zone": "detail_close_up",
+      "layout_type": "flexible_staging",
+      "visible_korean_text": "",
+      "swap_strategy_hint": "reproduce lighting and angle, but render a new close-up of the sofa leg and upholstery detail",
+      "key_facts_to_preserve": [
+        "close-up focus on sofa leg and upholstery",
+        "lighting and shadow style",
+        "clean background"
+      ],
+      "panel": "panel_02.jpg",
+      "panel_idx": 2
+    },
+    {
+      "input_zone": "detail_close_up",
+      "layout_type": "flexible_staging",
+      "visible_korean_text": "",
+      "swap_strategy_hint": "show a close-up of the new sofa's material and stitching in similar lighting and angle",
+      "key_facts_to_preserve": [
+        "close-up focus on sofa material and stitching",
+        "lighting and texture details"
+      ],
+      "panel": "panel_03.jpg",
+      "panel_idx": 3
+    },
+    {
+      "input_zone": "size_chart",
+      "layout_type": "fixed_layout",
+      "visible_korean_text": "단위 : cm\n다릿발 높이 : 12cm / 좌방석 깊이 : 55cm / 좌방석 높이 : 49cm\n좌방석\n등쿠션\n* 착석감은 개인에 따라 차이가 있을 수 있습니다.",
+      "swap_strategy_hint": "Preserve all dimension lines, text, and cushion firmness charts; replace only the sofa silhouette with the new model, keeping all layout elements in the same positions.",
+      "key_facts_to_preserve": [
+        "All dimension lines and numbers (300, 112, 86)",
+        "Korean text and measurement details",
+        "Cushion firmness charts for 좌방석 and 등쿠션",
+        "Relative layout and structure of the panel"
+      ],
+      "panel": "panel_04.jpg",
+      "panel_idx": 4
+    },
+    {
+      "input_zone": "detail_close_up",
+      "layout_type": "flexible_staging",
+      "visible_korean_text": "리클라이너",
+      "swap_strategy_hint": "Reproduce the close-up angle and lighting, but render a new sofa with similar recliner detail.",
+      "key_facts_to_preserve": [
+        "close-up view of sofa recliner mechanism",
+        "texture and stitching details",
+        "visible Korean label/tag on armrest"
+      ],
+      "panel": "panel_05.jpg",
+      "panel_idx": 5
+    },
+    {
+      "input_zone": "detail_close_up",
+      "layout_type": "flexible_staging",
+      "visible_korean_text": "",
+      "swap_strategy_hint": "show a close-up of the sofa's headrest and upholstery texture; match lighting and angle",
+      "key_facts_to_preserve": [
+        "sofa headrest mechanism",
+        "upholstery material and stitching detail",
+        "close-up perspective"
+      ],
+      "panel": "panel_06.jpg",
+      "panel_idx": 6
+    },
+    {
+      "input_zone": "detail_close_up",
+      "layout_type": "flexible_staging",
+      "visible_korean_text": "",
+      "swap_strategy_hint": "show a close-up of the sofa's control panel area, matching the material texture and button layout; replace with new sofa design but keep the focus on the control panel detail.",
+      "key_facts_to_preserve": [
+        "close-up view of control panel",
+        "button and USB port layout",
+        "sofa material texture and stitching"
+      ],
+      "panel": "panel_07.jpg",
+      "panel_idx": 7
+    },
+    {
+      "input_zone": "product_shot",
+      "layout_type": "strict_white_bg",
+      "visible_korean_text": "",
+      "swap_strategy_hint": "replace sofa with new model, maintain same side profile angle and clean white background",
+      "key_facts_to_preserve": [
+        "side profile view",
+        "clean white background",
+        "sofa placement and proportions"
+      ],
+      "panel": "panel_08.gif",
+      "panel_idx": 8
+    },
+    {
+      "input_zone": "detail_close_up",
+      "layout_type": "flexible_staging",
+      "visible_korean_text": "",
+      "swap_strategy_hint": "Show a close-up of the sofa's reclining mechanism and upholstery texture; match lighting and angle.",
+      "key_facts_to_preserve": [
+        "sofa upholstery texture",
+        "reclining mechanism detail",
+        "close-up perspective",
+        "lighting and color tone"
+      ],
+      "panel": "panel_09.jpg",
+      "panel_idx": 9
+    },
+    {
+      "input_zone": "detail_close_up",
+      "layout_type": "flexible_staging",
+      "visible_korean_text": "",
+      "swap_strategy_hint": "show a close-up of the new sofa's material texture in similar lighting and angle",
+      "key_facts_to_preserve": [
+        "material texture",
+        "close-up perspective",
+        "lighting and color tone"
+      ],
+      "panel": "panel_10.jpg",
+      "panel_idx": 10
+    },
+    {
+      "input_zone": "structure_chart",
+      "layout_type": "fixed_layout",
+      "visible_korean_text": "플렉싱 가죽 적용범위\n마감재 이태리 펠레밀라노 사 1.3~1.5mm 천연 소가죽 + PVC\n좌방석 고밀도 스펀지, 메모리폼, 한샘 발밑침 리클라이너 하드웨어\n등쿠션 스펀지\n헤드레스트 스펀지, 한샘헤드틸팅 하드웨어\n프레임 EO 건조목 프레임, S자 스프링 (*스카이그레이 컬러만 하이브리드 패널 적용)\n다릿발 스틸, 플라스틱",
+      "swap_strategy_hint": "Preserve sofa outline, dotted highlight area, and all table text/structure; replace sofa image only.",
+      "key_facts_to_preserve": [
+        "Sofa silhouette and highlighted (dotted) area",
+        "All table rows and text",
+        "Legend for highlighted area ('플렉싱 가죽 적용범위')",
+        "Table structure and layout"
+      ],
+      "panel": "panel_11.jpg",
+      "panel_idx": 11
+    },
+    {
+      "input_zone": "color_option",
+      "layout_type": "fixed_layout",
+      "visible_korean_text": "너비 단위 : cm\n키안티 가죽 3인\n221 X 112 X 86\n키안티 가죽 4인\n300 X 112 X 86\n컬러\n그레이\n도브그레이\n스카이그레이\n* 디스플레이마다 색상 표현의 차이가 있을 수 있습니다.",
+      "swap_strategy_hint": "Preserve the grid layout, sofa images, swatch positions, and all text; replace sofa and swatch images only.",
+      "key_facts_to_preserve": [
+        "sofa type labels and dimensions",
+        "color swatch positions and labels",
+        "all Korean text",
+        "overall grid/chart structure"
+      ],
+      "panel": "panel_12.jpg",
+      "panel_idx": 12
+    },
+    {
+      "panel": "panel_copy.json",
+      "error": "Error code: 400 - {'error': {'message': \"You uploaded an unsupported image. Please make sure your image has of one the following formats: ['png', 'jpeg', 'gif', 'webp'].\", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}"
+    }
+  ]
+}

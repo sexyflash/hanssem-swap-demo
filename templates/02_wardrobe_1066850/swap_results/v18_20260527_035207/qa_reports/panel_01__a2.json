@@ -1,0 +1,89 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [
+    {
+      "id": "no_sliding_doors",
+      "verdict": "pass",
+      "reason_ko": "전면에 좌우로 겹쳐 움직이는 미닫이 레일/슬라이딩 도어 형태가 보이지 않고, 여닫이형 도어처럼 보입니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_high_legs_visible",
+      "verdict": "pass",
+      "reason_ko": "옷장 본체가 바닥 가까이 놓여 있으며 10cm 이상 높게 띄우는 노출 다리는 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_builtin_led_visible",
+      "verdict": "pass",
+      "reason_ko": "전면이나 내부 가장자리에 LED 발광 바 또는 내장 조명으로 보이는 요소가 없습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "two_80cm_modules_total_160cm",
+      "verdict": "pass",
+      "reason_ko": "전면이 좌측 2도어 모듈과 우측 상부 2도어+하부 서랍 모듈의 2개 큰 칸으로 나뉘어 보여 80cm 모듈 2개 조합처럼 확인됩니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "hinged_double_doors_per_module",
+      "verdict": "pass",
+      "reason_ko": "각 모듈 상부가 양문형 여닫이 도어처럼 수직 분할되어 있으며 슬라이딩 구조로 보이지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "external_3_tier_drawers_visible",
+      "verdict": "pass",
+      "reason_ko": "우측 하단에 외부에서 보이는 3단 서랍 블록이 명확히 표현되어 있습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "long_inset_vertical_handles",
+      "verdict": "fail",
+      "reason_ko": "참조 제품은 도어 가장자리를 따라 길게 내려오는 플러시/매립형 세로 손잡이가 핵심인데, 결과 B는 짧은 회색 돌출 바 손잡이처럼 보여 손잡이 정체성이 다릅니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "rectangular_straight_top_silhouette",
+      "verdict": "pass",
+      "reason_ko": "옷장 상단이 평평하고 직선적인 직사각형 실루엣이며 크라운이나 아치형 장식은 없습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "selected_finish_in_images_is_one_of_three",
+      "verdict": "pass",
+      "reason_ko": "도어 색상은 크림화이트 계열로 보여 제공된 컬러 범위에 포함됩니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "aluminum_hanging_rod_indicator",
+      "verdict": "not_visible",
+      "reason_ko": "도어가 닫힌 외관 장면이라 내부 옷걸이봉이나 알루미늄 소재 표기는 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 1,
+  "forbidden_fail_count": 0,
+  "composition_score": 82,
+  "hallucinations": [],
+  "specific_failures": [
+    "결과가 grid 형태 — single panel로 재생성",
+    "세로 손잡이가 참조 제품의 매립형 긴 손잡이가 아니라 돌출 바 손잡이처럼 표현됨",
+    "distortion fail · long_inset_vertical_handles: 참조 제품은 도어 가장자리를 따라 길게 내려오는 플러시/매립형 세로 손잡이가 핵심인데, 결과 B는 짧은 회색 돌출 바 손잡이처럼 보여 손잡이 정체성이 다릅니다."
+  ],
+  "notes_ko": "전체적으로 2개 모듈 구성, 3단 외부 서랍, 평평한 직사각형 상단, 크림화이트 계열 컬러는 잘 유지되었습니다. 다만 핵심 식별 요소인 도어 손잡이가 매립형 인셋 타입이 아니라 외부로 돌출된 바 손잡이처럼 보여 distortion fail로 판단했습니다.",
+  "verdict": "retry",
+  "product_score_raw": 30,
+  "product_score": 88,
+  "critical_fail_count": 1
+}

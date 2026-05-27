@@ -1,0 +1,119 @@
+{
+  "panel_id": "panel_02.jpg",
+  "panel_class": "lifestyle_scene",
+  "vision_model": "gpt-5.5",
+  "ref_paths": [
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_06.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_10.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_04.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_07.png"
+  ],
+  "ref_labels": [
+    "main_view·전체정면",
+    "detail_close_up·손잡이/도어모서리",
+    "material·도어 마감표면",
+    "detail_close_up·서랍"
+  ],
+  "panel_orig_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/panel_02.jpg",
+  "swap_result_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/swap_results/v18_20260527_035207/gpt_image/panel_02__a4_v16.png",
+  "applicable_item_ids": [
+    "two_80cm_modules_total_160cm",
+    "hinged_double_doors_per_module",
+    "external_3_tier_drawers_visible",
+    "long_inset_vertical_handles",
+    "rectangular_straight_top_silhouette",
+    "selected_finish_in_images_is_one_of_three",
+    "aluminum_hanging_rod_indicator",
+    "no_sliding_doors",
+    "no_high_legs_visible",
+    "no_builtin_led_visible"
+  ],
+  "user_prompt": "=== TASK ===\n이 swap 결과(B)를 사용자 제품의 verifiable checklist로 채점하라.\n\n=== 사용자 제품 ===\ncategory: wardrobe\n제품명: 샘베딩 클로즈 옷장세트 160cm(높이216cm) 서랍형 6종\n핵심 axis: doors, handles, drawers, shelves, hanging_rod, hinges, back_panel, frame, color, finish, size, module_lineup, base\n\n=== 첨부 이미지 ===\n  A_1 = main_view·전체정면\n  A_2 = detail_close_up·손잡이/도어모서리\n  A_3 = material·도어 마감표면\n  A_4 = detail_close_up·서랍\n  B = swap 결과 (채점 대상)\n  C = 한샘 원본 panel (composition reference)\n\n=== Panel 컨텍스트 ===\npanel_id: panel_02.jpg\npanel_class: lifestyle_scene\nspatial_layout: 상단 이미지는 방 한 켠에 배치된 흰색 수납장과 책상, 주변 소품들이 포함되어 있다. 수납장은 중앙에 위치하며, 왼쪽에는 책상과 컴퓨터, 오른쪽에는 벽과 기타 소품이 있다. 하단 이미지는 흰색 수납장의 상단부를 클로즈업하여 보여준다. 두 이미지는 수직으로 분할되어 상단은 전체 공간, 하단은 제품 디테일을 강조한다. 상단 이미지의 배경에는 벽걸이 포스터와 기타가 보인다. 바닥에는 체크무늬 러그가 깔려 있다.\n\n=== 적용 가능한 CHECKLIST ITEMS (이 panel에서 검증 가능) ===\n각 item에 category(distortion/detail/forbidden)와 generation_feasibility 가 표시됨.\n- distortion / forbidden: strict 채점 (제품 왜곡 검출이 사용자 핵심 요구)\n- detail: image gen 한계 인정 → 명백한 차이만 fail, 모호하면 pass\n- generation_feasibility=low: 더욱 보수적으로 fail 매김 (미세 디테일)\n\n- [ forbidden] [feas=high] id=no_sliding_doors axis=doors\n    desc: 슬라이딩(미닫이) 도어가 포함되면 안 됨.\n    expected: 슬라이딩 도어 없음\n    question: 결과 B에서 슬라이딩 도어가 보이지 않나요?\n- [ forbidden] [feas=high] id=no_high_legs_visible axis=base\n    desc: 바닥에서 본체를 높게 띄우는 노출 다리(약 10cm 이상)가 없어야 함.\n    expected: 높은 노출 다리 없음\n    question: 결과 B에서 본체를 높게 띄운 노출 다리가 보이지 않나요?\n- [ forbidden] [feas=high] id=no_builtin_led_visible axis=frame\n    desc: 전면/내부 가장자리에 LED 발광 바 등 내장 조명이 노출되면 안 됨(선택 사양 언급 없음).\n    expected: 내장 LED 발광부 없음\n    question: 결과 B에서 내장 LED 조명이 보이지 않나요?\n- [distortion] [feas=medium] id=two_80cm_modules_total_160cm axis=frame\n    desc: 폭 160cm 구성은 80cm 모듈 2개 조합으로 보이는가(중앙 이음부가 보이는 2칸 구조).\n    expected: 80cm 모듈 2개 조합으로 보임\n    question: 결과 B에서 전면이 80cm 모듈 2개(총 160cm)로 보이나요?\n- [distortion] [feas=high] id=hinged_double_doors_per_module axis=doors\n    desc: 도어는 양문형 힌지(여닫이) 도어로 구성되고 슬라이딩이 아님.\n    expected: 여닫이(힌지) 도어\n    question: 결과 B에서 도어가 양개형 힌지 방식(미닫이/슬라이딩 아님)으로 보이나요?\n- [distortion] [feas=high] id=external_3_tier_drawers_visible axis=drawers\n    desc: 서랍형: 전면에 3단 외부형 서랍 블록이 명확히 보임.\n    expected: 3단 외부형 서랍 존재\n    question: 결과 B에서 전면에 3단 외부형 서랍이 보이나요?\n- [distortion] [feas=high] id=long_inset_vertical_handles axis=handles\n    desc: 문을 따라 세로로 길게 내려오는 매립형 손잡이(플러시 인셋 타입).\n    expected: 세로형 매립 손잡이\n    question: 결과 B에서 도어 가장자리를 따라 세로 긴 매립형 손잡이가 보이나요?\n- [distortion] [feas=high] id=rectangular_straight_top_silhouette axis=frame\n    desc: 상단까지 곧게 뻗은 직선형 실루엣(크라운/아치 등 돌출 장식 없음).\n    expected: 평평한 상단의 직선형 외관\n    question: 결과 B에서 상단이 평평한 직사각형 실루엣으로 보이나요?\n- [distortion] [feas=high] id=selected_finish_in_images_is_one_of_three axis=color\n    desc: 제품 이미지의 도어 컬러가 제공된 3가지 중 하나로 보임.\n    expected: 제공 3색 중 하나\n    question: 결과 B의 제품 도어 색이 제공 컬러(화이트 하이글로시(유광)/크림화이트/라이트오크) 중 하나로 보이나요?\n- [    detail] [feas=medium] id=aluminum_hanging_rod_indicator axis=hanging_rod\n    desc: 알루미늄 옷걸이봉 사용이 보이거나 텍스트로 명시됨.\n    expected: 알루미늄 옷걸이봉 표기/접사\n    question: 결과 B에서 알루미늄 옷걸이봉임을 확인할 수 있나요?\n\n=== 출력 schema (strict JSON) ===\n{\n  \"image_format\": \"single_product|lifestyle|chart_diagram|multi_panel_grid\",\n  \"items_results\": [\n    {\n      \"id\": \"...\",\n      \"verdict\": \"pass|fail|not_visible\",\n      \"reason_ko\": \"...\",\n      \"category\": \"distortion|detail|forbidden\",\n      \"generation_feasibility\": \"high|medium|low\"\n    }\n  ],\n  \"distortion_fail_count\": int,\n  \"forbidden_fail_count\": int,\n  \"composition_score\": 0-100,\n  \"hallucinations\": [\"발견된 invented feature 한국어\"],\n  \"specific_failures\": [\"distortion/forbidden fail 항목의 한국어 요약\"],\n  \"notes_ko\": \"...\"\n}\n\n판정 가이드:\n- distortion item: 다리 개수 / 가죽 vs 패브릭 / 보조쿠션 유무 / 컬러명 등 명백한 차이 → fail\n- forbidden item: invented feature (헤드레스트 등) 발견 → fail\n- detail item: 시접 종류 / 미세 곡률 / 직조 결 등이 약간 달라도 → pass (관대)\n",
+  "result": {
+    "image_format": "multi_panel_grid",
+    "items_results": [
+      {
+        "id": "no_sliding_doors",
+        "verdict": "pass",
+        "reason_ko": "결과 B에는 레일이나 겹쳐 미닫는 구조가 보이지 않고, 여닫이형 도어처럼 표현되어 있습니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "no_high_legs_visible",
+        "verdict": "pass",
+        "reason_ko": "본체가 바닥 가까이에 놓여 있으며 약 10cm 이상 높게 띄우는 노출 다리는 보이지 않습니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "no_builtin_led_visible",
+        "verdict": "pass",
+        "reason_ko": "전면이나 내부 가장자리에서 LED 발광 바 또는 내장 조명으로 보이는 요소가 없습니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "two_80cm_modules_total_160cm",
+        "verdict": "pass",
+        "reason_ko": "전면이 중앙 이음부를 기준으로 좌우 2개 모듈로 나뉘어 보이며, 각 모듈이 약 80cm 폭의 2칸 구성으로 인식됩니다.",
+        "category": "distortion",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "hinged_double_doors_per_module",
+        "verdict": "pass",
+        "reason_ko": "각 모듈의 도어가 중앙 세로 이음과 손잡이를 가진 양개형 여닫이 도어로 보이며, 슬라이딩 구조는 보이지 않습니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "external_3_tier_drawers_visible",
+        "verdict": "pass",
+        "reason_ko": "전면 하단에 3개의 수평 서랍 전면이 명확히 보입니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "long_inset_vertical_handles",
+        "verdict": "pass",
+        "reason_ko": "도어 가장자리를 따라 길게 내려오는 세로형 매립 손잡이 라인이 확인됩니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "rectangular_straight_top_silhouette",
+        "verdict": "pass",
+        "reason_ko": "상단이 평평하고 전체 외곽이 직선형 직사각 실루엣이며 크라운이나 아치 장식은 없습니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "selected_finish_in_images_is_one_of_three",
+        "verdict": "pass",
+        "reason_ko": "도어 색상은 화이트/크림화이트 계열로 보이며 제공된 색상군 중 하나에 해당합니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "aluminum_hanging_rod_indicator",
+        "verdict": "not_visible",
+        "reason_ko": "외부 전면과 도어 디테일만 보이며 내부 옷걸이봉이나 알루미늄 소재를 확인할 수 있는 텍스트/표시는 없습니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      }
+    ],
+    "distortion_fail_count": 0,
+    "forbidden_fail_count": 0,
+    "composition_score": 88,
+    "hallucinations": [],
+    "specific_failures": [
+      "결과가 grid 형태 — single panel로 재생성"
+    ],
+    "notes_ko": "제품 핵심 형상인 2모듈 구성, 양개형 도어, 3단 외부 서랍, 세로 매립 손잡이, 평평한 상단 실루엣, 화이트/크림화이트 마감이 잘 유지되었습니다. 단, 기준 이미지 A에서는 서랍 모듈이 좌측에 있는 반면 B에서는 우측에 배치되어 보이는 차이가 있으나, 제공된 체크리스트의 distortion 항목 자체는 충족합니다.",
+    "verdict": "retry",
+    "product_score_raw": 30,
+    "product_score": 99,
+    "critical_fail_count": 0
+  }
+}

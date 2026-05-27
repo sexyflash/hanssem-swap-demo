@@ -1,0 +1,38 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [
+    {
+      "id": "color_options_panel_exact_3",
+      "verdict": "pass",
+      "reason_ko": "결과 B에는 컬러 옵션명이 정확히 3개로 표기되어 있으며, 각각 ‘크림화이트’, ‘화이트 하이글로시(유광)’, ‘라이트오크’로 확인됩니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "handle_color_contrasts_with_door",
+      "verdict": "pass",
+      "reason_ko": "각 옷장 이미지에서 중앙 세로 손잡이가 도어 면과 다른 톤으로 구분되어 보입니다. 화이트 계열은 회색/금속 톤, 오크 계열은 도어보다 진한 선으로 식별됩니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "creamwhite_handle_same_tone_as_white_handle",
+      "verdict": "fail",
+      "reason_ko": "크림화이트 도어의 손잡이는 베이지/골드 톤에 가깝게 보이고, 화이트 하이글로시 도어의 손잡이는 회색/실버 톤으로 보여 동일 톤이라고 보기 어렵습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 45,
+  "hallucinations": [],
+  "specific_failures": [
+    "결과가 grid 형태 — single panel로 재생성"
+  ],
+  "notes_ko": "핵심 distortion 항목인 컬러명 3종 표기는 정확합니다. 다만 원본 C의 8개 옵션 그리드 구성과 달리 B는 3개 옵션만 표시되어 composition은 크게 축소되어 있습니다. 손잡이 톤 동일성은 detail 항목으로, 크림화이트와 화이트 옵션 간 손잡이 색이 다르게 표현되어 fail로 판단했습니다.",
+  "verdict": "retry",
+  "product_score_raw": 30,
+  "product_score": 87,
+  "critical_fail_count": 0
+}

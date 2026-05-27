@@ -1,0 +1,49 @@
+{
+  "panel_id": "panel_13.jpg",
+  "panel_class": "size_chart",
+  "vision_model": "gpt-5.5",
+  "ref_paths": [
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_05.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_06.png"
+  ],
+  "ref_labels": [
+    "main_view·내부정면",
+    "main_view·전체정면"
+  ],
+  "panel_orig_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/panel_13.jpg",
+  "swap_result_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/swap_results/v18_20260527_035207/gpt_image/panel_13__a2_v16.png",
+  "applicable_item_ids": [
+    "size_chart_matches_w160_d57_h216",
+    "height_lineup_two_options_label"
+  ],
+  "user_prompt": "=== TASK ===\n이 swap 결과(B)를 사용자 제품의 verifiable checklist로 채점하라.\n\n=== 사용자 제품 ===\ncategory: wardrobe\n제품명: 샘베딩 클로즈 옷장세트 160cm(높이216cm) 서랍형 6종\n핵심 axis: doors, handles, drawers, shelves, hanging_rod, hinges, back_panel, frame, color, finish, size, module_lineup, base\n\n=== 첨부 이미지 ===\n  A_1 = main_view·내부정면\n  A_2 = main_view·전체정면\n  B = swap 결과 (채점 대상)\n  C = 한샘 원본 panel (composition reference)\n\n=== Panel 컨텍스트 ===\npanel_id: panel_13.jpg\npanel_class: size_chart\nspatial_layout: 좌측에는 밝은 나무색 옷장이 세로로 배치되어 있고, 우측에는 약간 더 진한 나무색 옷장이 동일한 방식으로 배치되어 있다. 두 옷장은 모두 내부에 두 개의 행거봉이 수평으로 설치되어 있다. 두 옷장 사이에는 넓은 여백이 있다. 하단에는 흰색 바탕에 '194cm | 216cm'라는 텍스트가 좌측과 우측 옷장 아래에 각각 위치한다. 전체 배경은 밝은 회색이며, 제품 외에는 추가적인 장식이나 요소가 없다. 옷장들은 정면을 바라보고 있으며, 크기와 비율이 실제 차이를 반영한다.\n\n=== 적용 가능한 CHECKLIST ITEMS (이 panel에서 검증 가능) ===\n각 item에 category(distortion/detail/forbidden)와 generation_feasibility 가 표시됨.\n- distortion / forbidden: strict 채점 (제품 왜곡 검출이 사용자 핵심 요구)\n- detail: image gen 한계 인정 → 명백한 차이만 fail, 모호하면 pass\n- generation_feasibility=low: 더욱 보수적으로 fail 매김 (미세 디테일)\n\n- [distortion] [feas=high] id=size_chart_matches_w160_d57_h216 axis=size\n    desc: 사이즈 차트에 W160 x D57 x H216 cm가 정확히 표기됨.\n    expected: W160 x D57 x H216 cm\n    question: 결과 B의 사이즈 차트에 W160 x D57 x H216 cm로 기재되어 있나요?\n- [    detail] [feas=medium] id=height_lineup_two_options_label axis=size\n    desc: 높이 라인업이 194cm/216cm 두 가지로 표기됨(본 상품 216cm 표시).\n    expected: 높이 194cm / 216cm 표기\n    question: 결과 B의 라인업/사이즈 정보에 194cm와 216cm 두 가지 높이 옵션이 보이나요?\n\n=== 출력 schema (strict JSON) ===\n{\n  \"image_format\": \"single_product|lifestyle|chart_diagram|multi_panel_grid\",\n  \"items_results\": [\n    {\n      \"id\": \"...\",\n      \"verdict\": \"pass|fail|not_visible\",\n      \"reason_ko\": \"...\",\n      \"category\": \"distortion|detail|forbidden\",\n      \"generation_feasibility\": \"high|medium|low\"\n    }\n  ],\n  \"distortion_fail_count\": int,\n  \"forbidden_fail_count\": int,\n  \"composition_score\": 0-100,\n  \"hallucinations\": [\"발견된 invented feature 한국어\"],\n  \"specific_failures\": [\"distortion/forbidden fail 항목의 한국어 요약\"],\n  \"notes_ko\": \"...\"\n}\n\n판정 가이드:\n- distortion item: 다리 개수 / 가죽 vs 패브릭 / 보조쿠션 유무 / 컬러명 등 명백한 차이 → fail\n- forbidden item: invented feature (헤드레스트 등) 발견 → fail\n- detail item: 시접 종류 / 미세 곡률 / 직조 결 등이 약간 달라도 → pass (관대)\n",
+  "result": {
+    "image_format": "chart_diagram",
+    "items_results": [
+      {
+        "id": "size_chart_matches_w160_d57_h216",
+        "verdict": "pass",
+        "reason_ko": "결과 B 하단에 'W160 x D57 x H216 cm'가 명확히 표기되어 있어 기대 사이즈와 일치합니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "height_lineup_two_options_label",
+        "verdict": "pass",
+        "reason_ko": "결과 B 하단에 '194cm | 216cm' 두 가지 높이 옵션이 보입니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      }
+    ],
+    "distortion_fail_count": 0,
+    "forbidden_fail_count": 0,
+    "composition_score": 90,
+    "hallucinations": [],
+    "specific_failures": [],
+    "notes_ko": "사이즈 차트 핵심 표기인 W160 x D57 x H216 cm와 높이 라인업 194cm/216cm가 모두 검증 가능하게 표시되어 있습니다. 원본 패널 C 대비 하단에 전체 사이즈 텍스트가 추가되어 있으나, 체크리스트 기준상 제품 왜곡으로 보지 않습니다.",
+    "critical_fail_count": 0,
+    "product_score_raw": null,
+    "product_score": 100,
+    "verdict": "pass"
+  }
+}

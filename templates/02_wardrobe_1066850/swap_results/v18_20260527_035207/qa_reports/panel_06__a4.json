@@ -1,0 +1,38 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [
+    {
+      "id": "color_options_panel_exact_3",
+      "verdict": "pass",
+      "reason_ko": "결과 B에 ‘화이트 하이글로시(유광)’, ‘크림화이트’, ‘라이트오크’ 3가지 컬러명이 모두 정확히 표기되어 있습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "handle_color_contrasts_with_door",
+      "verdict": "pass",
+      "reason_ko": "각 도어 샘플 중앙의 손잡이/경계부가 회색 금속 톤으로 표현되어 흰색, 크림색, 우드 도어와 구분되어 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "creamwhite_handle_same_tone_as_white_handle",
+      "verdict": "pass",
+      "reason_ko": "크림화이트 도어와 화이트 하이글로시 도어의 손잡이가 모두 유사한 회색/실버 톤으로 표현되어 동일 톤으로 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 78,
+  "hallucinations": [],
+  "specific_failures": [
+    "결과가 grid 형태 — single panel로 재생성"
+  ],
+  "notes_ko": "제품 왜곡 기준에서 핵심 컬러명 3종은 정확히 표시되어 PASS입니다. 다만 원본 C의 2x2 균등 분할 구성과 비교하면 B는 3개 옵션만 배치되고 하단 좌측이 빈 공간처럼 남아 있어 구도 일치도는 다소 낮습니다.",
+  "verdict": "retry",
+  "product_score_raw": 30,
+  "product_score": 100,
+  "critical_fail_count": 0
+}

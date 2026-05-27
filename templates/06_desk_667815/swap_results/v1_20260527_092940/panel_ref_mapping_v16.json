@@ -1,0 +1,461 @@
+{
+  "assets": {
+    "screenshot_01.png": "use_product/screenshot_01.png",
+    "screenshot_02.png": "use_product/screenshot_02.png",
+    "screenshot_03.png": "use_product/screenshot_03.png",
+    "screenshot_04.png": "use_product/screenshot_04.png",
+    "screenshot_05.png": "use_product/screenshot_05.png",
+    "screenshot_06.png": "use_product/screenshot_06.png",
+    "screenshot_07.png": "use_product/screenshot_07.png",
+    "screenshot_08.png": "use_product/screenshot_08.png",
+    "screenshot_09.png": "use_product/screenshot_09.png",
+    "screenshot_10.png": "use_product/screenshot_10.png"
+  },
+  "assets_meta": {
+    "screenshot_01.png": {
+      "path": "use_product/screenshot_01.png",
+      "category": "main_view",
+      "subject": "전체측면",
+      "confidence": 0.62,
+      "reasoning": "실내 연출 컷이지만 책상 제품의 전체가 보이는 샷이다."
+    },
+    "screenshot_02.png": {
+      "path": "use_product/screenshot_02.png",
+      "category": "color_swatch",
+      "subject": "색상 견본(화이트/화이트오크/내추럴오크)",
+      "confidence": 0.98,
+      "reasoning": "사각형 색상 스와치 카드로 컬러만 보여준다."
+    },
+    "screenshot_03.png": {
+      "path": "use_product/screenshot_03.png",
+      "category": "main_view",
+      "subject": "전체각도",
+      "confidence": 0.97,
+      "reasoning": "흰 배경에서 책상과 수납부의 전체 구성을 보여주는 제품샷이다."
+    },
+    "screenshot_04.png": {
+      "path": "use_product/screenshot_04.png",
+      "category": "detail_close_up",
+      "subject": "상판 하부 공간/연결부",
+      "confidence": 0.95,
+      "reasoning": "상판과 수납부 사이 치수를 표시한 부분 근접 이미지다."
+    },
+    "screenshot_05.png": {
+      "path": "use_product/screenshot_05.png",
+      "category": "main_view",
+      "subject": "전체후면",
+      "confidence": 0.9,
+      "reasoning": "흰 배경에서 제품 전체의 뒷면 구성을 보여준다."
+    },
+    "screenshot_06.png": {
+      "path": "use_product/screenshot_06.png",
+      "category": "detail_close_up",
+      "subject": "상판 모서리",
+      "confidence": 0.92,
+      "reasoning": "상판 모서리와 라운딩 디테일을 크게 확대했다."
+    },
+    "screenshot_07.png": {
+      "path": "use_product/screenshot_07.png",
+      "category": "detail_close_up",
+      "subject": "상판 모서리/다리",
+      "confidence": 0.92,
+      "reasoning": "상판 모서리와 다리 부분을 클로즈업한 디테일 이미지다."
+    },
+    "screenshot_08.png": {
+      "path": "use_product/screenshot_08.png",
+      "category": "main_view",
+      "subject": "하부 프레임(전체)",
+      "confidence": 0.85,
+      "reasoning": "제품 전체가 흰 배경에 보이며 하부 구조만 점선으로 강조됐다."
+    },
+    "screenshot_09.png": {
+      "path": "use_product/screenshot_09.png",
+      "category": "material",
+      "subject": "표면 질감(화이트/오크)",
+      "confidence": 0.78,
+      "reasoning": "색상 두 가지의 표면 텍스처만 확대해 소재 느낌을 보여준다."
+    },
+    "screenshot_10.png": {
+      "path": "use_product/screenshot_10.png",
+      "category": "main_view",
+      "subject": "전체각도",
+      "confidence": 0.97,
+      "reasoning": "단색 배경에서 책상 전체 형태를 보여주는 기본 제품샷이다."
+    }
+  },
+  "panels": {
+    "cover": {
+      "panel_idx": 0,
+      "panel_class": "intro_hero",
+      "ref_keys": [
+        "screenshot_03.png",
+        "screenshot_10.png"
+      ],
+      "rationale": "커버 히어로는 제품의 전체 실루엣과 ㄱ자 구성을 또렷하게 보여주는 메인 뷰가 최적입니다. 흰/단색 배경의 전체각도 샷만으로 형태를 고정하고, 색상·소재·디테일 컷은 히어로 연출에 불필요해 제외했습니다.",
+      "skipped_categories": [
+        "color_swatch",
+        "detail_close_up",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_03.png",
+        "use_product/screenshot_10.png"
+      ],
+      "ref_count": 2
+    },
+    "panel_01.jpg": {
+      "panel_idx": 1,
+      "panel_class": "intro_hero",
+      "ref_keys": [
+        "screenshot_03.png",
+        "screenshot_10.png",
+        "screenshot_01.png"
+      ],
+      "rationale": "인트로 히어로는 제품의 전체 실루엣과 L자 구성 인지가 핵심이므로 전체각도 메인뷰를 앵커로 두고, 보조로 실내 연출 컷을 추가했습니다. 색상·소재·부분 디테일은 히어로 연출과 직접 관련이 적어 제외했습니다.",
+      "skipped_categories": [
+        "color_swatch",
+        "detail_close_up",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_03.png",
+        "use_product/screenshot_10.png",
+        "use_product/screenshot_01.png"
+      ],
+      "ref_count": 3
+    },
+    "panel_02.jpg": {
+      "panel_idx": 2,
+      "panel_class": "module_lineup",
+      "ref_keys": [
+        "screenshot_03.png",
+        "screenshot_10.png"
+      ],
+      "rationale": "라인업 패널은 각 모델을 동일한 각도의 전체 제품샷을 2x2로 배치하므로, 흰/단색 배경의 전체각도 메인뷰만 제공하면 정확한 재현에 도움이 됩니다. 디테일/소재/컬러 이미지는 배열 목적과 무관해 제외했습니다.",
+      "skipped_categories": [
+        "color_swatch",
+        "detail_close_up",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_03.png",
+        "use_product/screenshot_10.png"
+      ],
+      "ref_count": 2
+    },
+    "panel_03.jpg": {
+      "panel_idx": 3,
+      "panel_class": "lifestyle_scene",
+      "ref_keys": [
+        "screenshot_03.png",
+        "screenshot_10.png",
+        "screenshot_05.png",
+        "screenshot_01.png"
+      ],
+      "rationale": "라이프스타일 장면에서 ㄱ자 책상의 전체 실루엣과 배치 방향을 잡는 것이 핵심이므로, 제품의 전체 구성을 명확히 보여주는 메인뷰 위주로 선별했습니다. 색상·소재나 부분 디테일은 장면 재현에 직접 기여하지 않아 제외했습니다.",
+      "skipped_categories": [
+        "color_swatch",
+        "detail_close_up",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_03.png",
+        "use_product/screenshot_10.png",
+        "use_product/screenshot_05.png",
+        "use_product/screenshot_01.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_04.jpg": {
+      "panel_idx": 4,
+      "panel_class": "size_chart",
+      "ref_keys": [
+        "screenshot_03.png",
+        "screenshot_10.png",
+        "screenshot_02.png"
+      ],
+      "rationale": "사이즈 패널은 치수선을 얹기 쉬운 흰 배경의 전체 제품샷과 컬러 스와치가 핵심입니다. 03을 앵커로, 10은 보조 각도, 02는 화이트/내추럴오크 스와치 재현에 사용합니다.",
+      "skipped_categories": [
+        "detail_close_up",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_03.png",
+        "use_product/screenshot_10.png",
+        "use_product/screenshot_02.png"
+      ],
+      "ref_count": 3
+    },
+    "panel_05.jpg": {
+      "panel_idx": 5,
+      "panel_class": "lifestyle_scene",
+      "ref_keys": [
+        "screenshot_03.png",
+        "screenshot_10.png",
+        "screenshot_05.png"
+      ],
+      "rationale": "이 패널은 흰 배경에서 책상 전체 실루엣과 비율을 강조하므로, 제품의 L자 형태를 명확히 보여주는 전체 각도의 메인 뷰들만 사용합니다. 색상/소재/부분 디테일은 장면 연출과 무관해 제외합니다.",
+      "skipped_categories": [
+        "color_swatch",
+        "material",
+        "detail_close_up"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_03.png",
+        "use_product/screenshot_10.png",
+        "use_product/screenshot_05.png"
+      ],
+      "ref_count": 3
+    },
+    "panel_06.jpg": {
+      "panel_idx": 6,
+      "panel_class": "lifestyle_scene",
+      "ref_keys": [
+        "screenshot_03.png",
+        "screenshot_10.png",
+        "screenshot_08.png",
+        "screenshot_05.png"
+      ],
+      "rationale": "라이프스타일 장면에서 책상의 전체 실루엣과 L자 구조, 하부 프레임을 정확히 재현하는 것이 핵심이므로 메인뷰 위주로 다양한 각도와 하부 구조가 드러난 컷을 선택했다. 색상/소재나 부분 디테일은 본 패널의 목적과 무관하여 제외했다.",
+      "skipped_categories": [
+        "color_swatch",
+        "material",
+        "detail_close_up"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_03.png",
+        "use_product/screenshot_10.png",
+        "use_product/screenshot_08.png",
+        "use_product/screenshot_05.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_07.jpg": {
+      "panel_idx": 7,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "screenshot_03.png",
+        "screenshot_07.png",
+        "screenshot_06.png",
+        "screenshot_09.png"
+      ],
+      "rationale": "패널은 상판의 라운딩 모서리와 표면 질감, 흰색 원통형 다리를 클로즈업하므로 전체 형상을 잡는 메인뷰를 앵커로 두고 모서리/다리 근접샷을 우선 선택했습니다. 표면 질감 재현을 돕기 위해 소재 텍스처 확대컷도 추가했습니다.",
+      "skipped_categories": [
+        "color_swatch"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_03.png",
+        "use_product/screenshot_07.png",
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_09.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_08.jpg": {
+      "panel_idx": 8,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "screenshot_10.png",
+        "screenshot_07.png",
+        "screenshot_06.png",
+        "screenshot_04.png"
+      ],
+      "rationale": "이 패널은 책상 모서리와 다리의 클로즈업이 핵심이라, 전체 형태를 앵커로 두고 모서리·다리 연결부와 상판 하부 연결 디테일을 직접 보여주는 컷만 선별했습니다. 색상 견본/질감 전용 이미지는 패널 재현에 직접 도움이 없어 제외했습니다.",
+      "skipped_categories": [
+        "color_swatch",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_10.png",
+        "use_product/screenshot_07.png",
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_04.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_09.jpg": {
+      "panel_idx": 9,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "screenshot_03.png",
+        "screenshot_07.png",
+        "screenshot_06.png"
+      ],
+      "rationale": "이 패널은 상판 모서리 라운딩과 원통형 다리 디테일을 클로즈업으로 강조한다. 해당 부위를 직접 보여주는 근접샷 2장에 제품 비례·구성을 잡아줄 메인뷰 1장을 앵커로 제공했다.",
+      "skipped_categories": [
+        "color_swatch",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_03.png",
+        "use_product/screenshot_07.png",
+        "use_product/screenshot_06.png"
+      ],
+      "ref_count": 3
+    },
+    "panel_10.jpg": {
+      "panel_idx": 10,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "screenshot_03.png",
+        "screenshot_07.png",
+        "screenshot_06.png",
+        "screenshot_04.png"
+      ],
+      "rationale": "코너와 다리, 하부 연결부를 강조한 디테일 구도이므로 전체 형태를 보여주는 메인뷰를 앵커로 두고 모서리·다리·하부 결합부 클로즈업만 선별했다. 컬러/재질 단독 이미지는 해당 디테일 연출에 직접적 도움이 없어 제외했다.",
+      "skipped_categories": [
+        "color_swatch",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_03.png",
+        "use_product/screenshot_07.png",
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_04.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_11.jpg": {
+      "panel_idx": 11,
+      "panel_class": "lifestyle_scene",
+      "ref_keys": [
+        "screenshot_03.png",
+        "screenshot_10.png",
+        "screenshot_06.png",
+        "screenshot_07.png"
+      ],
+      "rationale": "이 패널은 책상 코너 위의 생활 연출이므로 L자 형태를 파악할 메인뷰와 상판 모서리/다리 디테일만이 직접적으로 유효합니다. 색상칩·재질 확대는 장면 재현에 도움이 없어 제외했습니다.",
+      "skipped_categories": [
+        "color_swatch",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_03.png",
+        "use_product/screenshot_10.png",
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_07.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_12.jpg": {
+      "panel_idx": 12,
+      "panel_class": "lifestyle_scene",
+      "ref_keys": [
+        "screenshot_03.png",
+        "screenshot_10.png",
+        "screenshot_01.png",
+        "screenshot_08.png"
+      ],
+      "rationale": "라이프스타일 장면에서 ㄱ자 책상의 전체 실루엣과 하부 수납 구조를 자연스럽게 재현하기 위해 메인뷰 중심의 각도별 참조만 선택했다. 색/소재 견본이나 극근접 디테일은 본 패널의 연출에 직접적이지 않아 제외했다.",
+      "skipped_categories": [
+        "color_swatch",
+        "material",
+        "detail_close_up"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_03.png",
+        "use_product/screenshot_10.png",
+        "use_product/screenshot_01.png",
+        "use_product/screenshot_08.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_13.jpg": {
+      "panel_idx": 13,
+      "panel_class": "lifestyle_scene",
+      "ref_keys": [
+        "screenshot_03.png",
+        "screenshot_08.png",
+        "screenshot_04.png",
+        "screenshot_07.png"
+      ],
+      "rationale": "전체 형태와 ㄱ자 구조, 오른쪽 하부 수납장 재현이 핵심이라 메인뷰를 앵커로 두고 하부 프레임, 상판-수납부 연결, 모서리/다리 디테일만 보강했습니다. 색상·재질 단독 정보는 장면 합성에 직접 기여하지 않아 제외했습니다.",
+      "skipped_categories": [
+        "color_swatch",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_03.png",
+        "use_product/screenshot_08.png",
+        "use_product/screenshot_04.png",
+        "use_product/screenshot_07.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_14.jpg": {
+      "panel_idx": 14,
+      "panel_class": "structure_chart",
+      "ref_keys": [
+        "screenshot_03.png",
+        "screenshot_08.png",
+        "screenshot_07.png",
+        "screenshot_05.png"
+      ],
+      "rationale": "이 패널은 하부 구조와 상판-지지부 연결을 단독으로 보여주는 구조도 성격이므로, 전체 형상을 앵커로 두고 하부 프레임 강조 컷과 다리/모서리 결합부 디테일, 후면 전체 각도를 보냅니다. 색상/소재만 보여주는 자원은 구조 표현에 직접 도움이 되지 않아 제외했습니다.",
+      "skipped_categories": [
+        "color_swatch",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_03.png",
+        "use_product/screenshot_08.png",
+        "use_product/screenshot_07.png",
+        "use_product/screenshot_05.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_15.jpg": {
+      "panel_idx": 15,
+      "panel_class": "structure_chart",
+      "ref_keys": [
+        "screenshot_03.png"
+      ],
+      "rationale": "이 패널은 E1/E0 기준 막대그래프와 시험성적서가 핵심이므로 제품 이미지는 앵커 용도로 메인뷰 1장만 제공합니다. 색상/소재/디테일 컷은 지표 및 문서 재현과 무관해 제외합니다.",
+      "skipped_categories": [
+        "color_swatch",
+        "material",
+        "detail_close_up"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_03.png"
+      ],
+      "ref_count": 1
+    },
+    "panel_16.jpg": {
+      "panel_idx": 16,
+      "panel_class": "material_swatch",
+      "ref_keys": [
+        "screenshot_09.png"
+      ],
+      "rationale": "이 패널은 화이트와 오크의 표면 질감을 절반씩 나눠 보여주는 소재 스와치이므로 실제 텍스처가 담긴 material 자원만이 직접적으로 유효합니다. 컬러칩이나 제품 전경/디테일 컷은 텍스처 중심의 패널 구성에 불필요해 제외했습니다.",
+      "skipped_categories": [
+        "main_view",
+        "detail_close_up",
+        "color_swatch"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_09.png"
+      ],
+      "ref_count": 1
+    },
+    "panel_17.jpg": {
+      "panel_idx": 17,
+      "panel_class": "structure_chart",
+      "ref_keys": [
+        "screenshot_03.png",
+        "screenshot_10.png"
+      ],
+      "rationale": "이 패널은 상단에 흰 배경의 제품 전체 이미지와 하단 사양 표로 구성되므로, ㄱ자 책상의 전체 형태를 또렷이 보여주는 흰/단색 배경 메인뷰만 참조로 주는 것이 가장 적합합니다. 재질·디테일 클로즈업이나 컬러 스와치는 표 정보와 중복되며 패널 레이아웃에 불필요해 제외했습니다.",
+      "skipped_categories": [
+        "color_swatch",
+        "detail_close_up",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_03.png",
+        "use_product/screenshot_10.png"
+      ],
+      "ref_count": 2
+    }
+  }
+}

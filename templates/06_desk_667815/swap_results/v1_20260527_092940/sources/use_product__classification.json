@@ -1,0 +1,154 @@
+{
+  "items": [
+    {
+      "filename": "screenshot_01.png",
+      "category": "main_view",
+      "subject": "전체측면",
+      "confidence": 0.62,
+      "reasoning": "실내 연출 컷이지만 책상 제품의 전체가 보이는 샷이다."
+    },
+    {
+      "filename": "screenshot_02.png",
+      "category": "color_swatch",
+      "subject": "색상 견본(화이트/화이트오크/내추럴오크)",
+      "confidence": 0.98,
+      "reasoning": "사각형 색상 스와치 카드로 컬러만 보여준다."
+    },
+    {
+      "filename": "screenshot_03.png",
+      "category": "main_view",
+      "subject": "전체각도",
+      "confidence": 0.97,
+      "reasoning": "흰 배경에서 책상과 수납부의 전체 구성을 보여주는 제품샷이다."
+    },
+    {
+      "filename": "screenshot_04.png",
+      "category": "detail_close_up",
+      "subject": "상판 하부 공간/연결부",
+      "confidence": 0.95,
+      "reasoning": "상판과 수납부 사이 치수를 표시한 부분 근접 이미지다."
+    },
+    {
+      "filename": "screenshot_05.png",
+      "category": "main_view",
+      "subject": "전체후면",
+      "confidence": 0.9,
+      "reasoning": "흰 배경에서 제품 전체의 뒷면 구성을 보여준다."
+    },
+    {
+      "filename": "screenshot_06.png",
+      "category": "detail_close_up",
+      "subject": "상판 모서리",
+      "confidence": 0.92,
+      "reasoning": "상판 모서리와 라운딩 디테일을 크게 확대했다."
+    },
+    {
+      "filename": "screenshot_07.png",
+      "category": "detail_close_up",
+      "subject": "상판 모서리/다리",
+      "confidence": 0.92,
+      "reasoning": "상판 모서리와 다리 부분을 클로즈업한 디테일 이미지다."
+    },
+    {
+      "filename": "screenshot_08.png",
+      "category": "main_view",
+      "subject": "하부 프레임(전체)",
+      "confidence": 0.85,
+      "reasoning": "제품 전체가 흰 배경에 보이며 하부 구조만 점선으로 강조됐다."
+    },
+    {
+      "filename": "screenshot_09.png",
+      "category": "material",
+      "subject": "표면 질감(화이트/오크)",
+      "confidence": 0.78,
+      "reasoning": "색상 두 가지의 표면 텍스처만 확대해 소재 느낌을 보여준다."
+    },
+    {
+      "filename": "screenshot_10.png",
+      "category": "main_view",
+      "subject": "전체각도",
+      "confidence": 0.97,
+      "reasoning": "단색 배경에서 책상 전체 형태를 보여주는 기본 제품샷이다."
+    }
+  ],
+  "by_category": {
+    "main_view": [
+      {
+        "filename": "screenshot_01.png",
+        "category": "main_view",
+        "subject": "전체측면",
+        "confidence": 0.62,
+        "reasoning": "실내 연출 컷이지만 책상 제품의 전체가 보이는 샷이다."
+      },
+      {
+        "filename": "screenshot_03.png",
+        "category": "main_view",
+        "subject": "전체각도",
+        "confidence": 0.97,
+        "reasoning": "흰 배경에서 책상과 수납부의 전체 구성을 보여주는 제품샷이다."
+      },
+      {
+        "filename": "screenshot_05.png",
+        "category": "main_view",
+        "subject": "전체후면",
+        "confidence": 0.9,
+        "reasoning": "흰 배경에서 제품 전체의 뒷면 구성을 보여준다."
+      },
+      {
+        "filename": "screenshot_08.png",
+        "category": "main_view",
+        "subject": "하부 프레임(전체)",
+        "confidence": 0.85,
+        "reasoning": "제품 전체가 흰 배경에 보이며 하부 구조만 점선으로 강조됐다."
+      },
+      {
+        "filename": "screenshot_10.png",
+        "category": "main_view",
+        "subject": "전체각도",
+        "confidence": 0.97,
+        "reasoning": "단색 배경에서 책상 전체 형태를 보여주는 기본 제품샷이다."
+      }
+    ],
+    "color_swatch": [
+      {
+        "filename": "screenshot_02.png",
+        "category": "color_swatch",
+        "subject": "색상 견본(화이트/화이트오크/내추럴오크)",
+        "confidence": 0.98,
+        "reasoning": "사각형 색상 스와치 카드로 컬러만 보여준다."
+      }
+    ],
+    "detail_close_up": [
+      {
+        "filename": "screenshot_04.png",
+        "category": "detail_close_up",
+        "subject": "상판 하부 공간/연결부",
+        "confidence": 0.95,
+        "reasoning": "상판과 수납부 사이 치수를 표시한 부분 근접 이미지다."
+      },
+      {
+        "filename": "screenshot_06.png",
+        "category": "detail_close_up",
+        "subject": "상판 모서리",
+        "confidence": 0.92,
+        "reasoning": "상판 모서리와 라운딩 디테일을 크게 확대했다."
+      },
+      {
+        "filename": "screenshot_07.png",
+        "category": "detail_close_up",
+        "subject": "상판 모서리/다리",
+        "confidence": 0.92,
+        "reasoning": "상판 모서리와 다리 부분을 클로즈업한 디테일 이미지다."
+      }
+    ],
+    "material": [
+      {
+        "filename": "screenshot_09.png",
+        "category": "material",
+        "subject": "표면 질감(화이트/오크)",
+        "confidence": 0.78,
+        "reasoning": "색상 두 가지의 표면 텍스처만 확대해 소재 느낌을 보여준다."
+      }
+    ]
+  }
+}

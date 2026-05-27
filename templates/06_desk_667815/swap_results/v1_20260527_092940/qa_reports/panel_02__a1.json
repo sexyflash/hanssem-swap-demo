@@ -1,0 +1,22 @@
+{
+  "image_format": "single_product",
+  "items_results": [
+    {
+      "id": "hook_left_right_option_indicator",
+      "verdict": "fail",
+      "reason_ko": "결과 B에는 책상 하부 우측에 작은 가방걸이처럼 보이는 부품은 일부 보이나, 가방걸이를 좌/우 선택 설치할 수 있음을 안내하는 아이콘, 텍스트, 화살표 등의 명확한 표시가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 35,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "제품 자체는 한샘 티오 ㄱ자책상 160cm의 흰색 ㄱ자 상판, 좌측 수납 모듈, 우측 금속 다리 구조가 대체로 유지되어 제품 왜곡으로 볼 만한 명백한 문제는 없습니다. 다만 원본 C의 2x2 라인업 그리드 구성과 달리 B는 단일 제품 중심 배치로 생성되어 composition 유사도는 낮습니다. 체크리스트 항목은 detail 항목 1개이며, 좌/우 선택 설치 안내 표시가 명확히 보이지 않아 fail로 판정했습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 0,
+  "verdict": "retry"
+}

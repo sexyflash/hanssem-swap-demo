@@ -1,0 +1,129 @@
+{
+  "panel_id": "panel_05.jpg",
+  "panel_class": "structure_chart",
+  "vision_model": "gpt-5.5",
+  "ref_paths": [
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_06.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_01.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_04.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_10.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_07.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_05.png"
+  ],
+  "ref_labels": [
+    "main_view·전체정면",
+    "color_variant·전체정면",
+    "material·도어 마감표면",
+    "detail_close_up·손잡이/도어모서리",
+    "detail_close_up·서랍",
+    "main_view·내부정면"
+  ],
+  "panel_orig_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/panel_05.jpg",
+  "swap_result_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/swap_results/v18_20260527_035207/gpt_image/panel_05__a2_v16.png",
+  "applicable_item_ids": [
+    "two_80cm_modules_total_160cm",
+    "damping_hinges_indicator",
+    "shelf_thickness_18mm_note",
+    "aluminum_hanging_rod_indicator",
+    "back_panel_triple_brace_diagram",
+    "lpm_finish_label",
+    "e0_grade_label",
+    "hinge_40000_cycles_label",
+    "material_bending_50kg_168h_label",
+    "recommended_shelf_load_20kg_80cm_label",
+    "rod_load_16kg_80cm_label"
+  ],
+  "user_prompt": "=== TASK ===\n이 swap 결과(B)를 사용자 제품의 verifiable checklist로 채점하라.\n\n=== 사용자 제품 ===\ncategory: wardrobe\n제품명: 샘베딩 클로즈 옷장세트 160cm(높이216cm) 서랍형 6종\n핵심 axis: doors, handles, drawers, shelves, hanging_rod, hinges, back_panel, frame, color, finish, size, module_lineup, base\n\n=== 첨부 이미지 ===\n  A_1 = main_view·전체정면\n  A_2 = color_variant·전체정면\n  A_3 = material·도어 마감표면\n  A_4 = detail_close_up·손잡이/도어모서리\n  A_5 = detail_close_up·서랍\n  A_6 = main_view·내부정면\n  B = swap 결과 (채점 대상)\n  C = 한샘 원본 panel (composition reference)\n\n=== Panel 컨텍스트 ===\npanel_id: panel_05.jpg\npanel_class: structure_chart\nspatial_layout: 상단에 '색상'과 '도어/서랍앞판', '몸통' 항목이 좌우로 구분된 표 형태로 배치됨. 중간에 굵은 구분선이 있고, 그 아래로 '도어/서랍앞판' 세부 항목(전면, 후면, 도어 손잡이)이 세로로 정렬됨. 하단에는 '몸통' 세부 항목(천지판/측판/선반, 뒷판, 옷걸이봉, 서랍재, 서랍재 지판, 서랍레일)이 표 형태로 나열됨. 각 항목은 왼쪽에 항목명, 오른쪽에 상세 설명이 위치. 전체적으로 세로로 긴 표 구조이며, 각 구분선이 명확하게 영역을 나눔.\n\n=== 적용 가능한 CHECKLIST ITEMS (이 panel에서 검증 가능) ===\n각 item에 category(distortion/detail/forbidden)와 generation_feasibility 가 표시됨.\n- distortion / forbidden: strict 채점 (제품 왜곡 검출이 사용자 핵심 요구)\n- detail: image gen 한계 인정 → 명백한 차이만 fail, 모호하면 pass\n- generation_feasibility=low: 더욱 보수적으로 fail 매김 (미세 디테일)\n\n- [distortion] [feas=medium] id=two_80cm_modules_total_160cm axis=frame\n    desc: 폭 160cm 구성은 80cm 모듈 2개 조합으로 보이는가(중앙 이음부가 보이는 2칸 구조).\n    expected: 80cm 모듈 2개 조합으로 보임\n    question: 결과 B에서 전면이 80cm 모듈 2개(총 160cm)로 보이나요?\n- [    detail] [feas=low] id=damping_hinges_indicator axis=hinges\n    desc: 댐핑 힌지(부드럽게 닫힘) 관련 아이콘/문구/접사 표기가 있음.\n    expected: 댐핑 힌지 표기 또는 접사\n    question: 결과 B에 ‘댐핑 힌지’ 관련 표기(아이콘/텍스트/접사)가 보이나요?\n- [    detail] [feas=low] id=shelf_thickness_18mm_note axis=shelves\n    desc: 선반 두께 18mm 표기 또는 단면 설명이 보임.\n    expected: 18mm 선반 표기\n    question: 결과 B에서 선반 두께 18mm임을 나타내는 표기/도식이 보이나요?\n- [    detail] [feas=medium] id=aluminum_hanging_rod_indicator axis=hanging_rod\n    desc: 알루미늄 옷걸이봉 사용이 보이거나 텍스트로 명시됨.\n    expected: 알루미늄 옷걸이봉 표기/접사\n    question: 결과 B에서 알루미늄 옷걸이봉임을 확인할 수 있나요?\n- [    detail] [feas=medium] id=back_panel_triple_brace_diagram axis=back_panel\n    desc: 뒷판 3개의 보조목 보강 구조가 다이어그램/설명으로 제시됨.\n    expected: 뒷판 보조목 3개 도식/설명\n    question: 결과 B에서 뒷판 3중 보조목 보강 구조를 보여주나요?\n- [    detail] [feas=low] id=lpm_finish_label axis=finish\n    desc: 도어 마감 ‘LPM’ 공법이 텍스트/아이콘으로 표시됨.\n    expected: LPM 마감 표기\n    question: 결과 B에서 LPM 마감임을 나타내는 표기가 있나요?\n- [    detail] [feas=low] id=e0_grade_label axis=finish\n    desc: E0 등급 소재 사용이 아이콘/문구로 표시됨.\n    expected: E0 등급 표기\n    question: 결과 B에서 ‘E0’ 등급 표기가 보이나요?\n- [    detail] [feas=low] id=hinge_40000_cycles_label axis=hinges\n    desc: 도어 힌지 40,000회 개폐 테스트 통과 표기가 있음.\n    expected: 40,000회 개폐 테스트 표기\n    question: 결과 B에 힌지 ‘40,000회 개폐 테스트’ 문구/아이콘이 있나요?\n- [    detail] [feas=low] id=material_bending_50kg_168h_label axis=frame\n    desc: 자재 휨 강도 50kg/168시간 테스트 통과 표기.\n    expected: 50kg/168시간 테스트 표기\n    question: 결과 B에서 ‘50kg/168시간’ 테스트 관련 표기가 있나요?\n- [    detail] [feas=low] id=recommended_shelf_load_20kg_80cm_label axis=shelves\n    desc: 너비 80cm 기준 선반 권장 하중 최대 20kg 표기.\n    expected: 선반 권장 하중 20kg(80cm 기준)\n    question: 결과 B에서 ‘권장 20kg(80cm 기준)’ 표기가 있나요?\n- [    detail] [feas=low] id=rod_load_16kg_80cm_label axis=hanging_rod\n    desc: 옷걸이봉 하중 최대 16kg(너비 80cm 기준) 표기.\n    expected: 옷걸이봉 16kg(80cm 기준)\n    question: 결과 B에서 옷걸이봉 ‘최대 16kg(80cm 기준)’ 표기가 있나요?\n\n=== 출력 schema (strict JSON) ===\n{\n  \"image_format\": \"single_product|lifestyle|chart_diagram|multi_panel_grid\",\n  \"items_results\": [\n    {\n      \"id\": \"...\",\n      \"verdict\": \"pass|fail|not_visible\",\n      \"reason_ko\": \"...\",\n      \"category\": \"distortion|detail|forbidden\",\n      \"generation_feasibility\": \"high|medium|low\"\n    }\n  ],\n  \"distortion_fail_count\": int,\n  \"forbidden_fail_count\": int,\n  \"composition_score\": 0-100,\n  \"hallucinations\": [\"발견된 invented feature 한국어\"],\n  \"specific_failures\": [\"distortion/forbidden fail 항목의 한국어 요약\"],\n  \"notes_ko\": \"...\"\n}\n\n판정 가이드:\n- distortion item: 다리 개수 / 가죽 vs 패브릭 / 보조쿠션 유무 / 컬러명 등 명백한 차이 → fail\n- forbidden item: invented feature (헤드레스트 등) 발견 → fail\n- detail item: 시접 종류 / 미세 곡률 / 직조 결 등이 약간 달라도 → pass (관대)\n",
+  "result": {
+    "image_format": "chart_diagram",
+    "items_results": [
+      {
+        "id": "two_80cm_modules_total_160cm",
+        "verdict": "pass",
+        "reason_ko": "표 상단 우측에 '본 상품 구성: 80cm 모듈 x 2 = 총 160cm'라고 명시되어 80cm 모듈 2개 조합임을 확인할 수 있습니다.",
+        "category": "distortion",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "damping_hinges_indicator",
+        "verdict": "pass",
+        "reason_ko": "도어/서랍앞판 전면 설명에 '댐핑 힌지' 문구가 보입니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "shelf_thickness_18mm_note",
+        "verdict": "pass",
+        "reason_ko": "몸통의 천지판/측판/선반 항목에 '선반 두께 18mm'라고 표기되어 있습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "aluminum_hanging_rod_indicator",
+        "verdict": "pass",
+        "reason_ko": "옷걸이봉 항목에 '알루미늄'이라고 명시되어 있습니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "back_panel_triple_brace_diagram",
+        "verdict": "pass",
+        "reason_ko": "뒷판 항목에 '보조목 3개 보강' 문구가 있어 3중 보강 구조를 텍스트로 확인할 수 있습니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "lpm_finish_label",
+        "verdict": "pass",
+        "reason_ko": "전면 항목에 '도어 LPM 공법'이라고 표기되어 있습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "e0_grade_label",
+        "verdict": "pass",
+        "reason_ko": "전면, 후면, 천지판/측판/선반, 뒷판 항목에서 'E0 등급' 표기가 확인됩니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "hinge_40000_cycles_label",
+        "verdict": "pass",
+        "reason_ko": "전면 항목에 '40,000회 개폐 테스트 통과' 문구가 있습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "material_bending_50kg_168h_label",
+        "verdict": "pass",
+        "reason_ko": "천지판/측판/선반 항목에 '자재 50kg/168시간 휨 강도 테스트 통과'라고 표기되어 있습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "recommended_shelf_load_20kg_80cm_label",
+        "verdict": "pass",
+        "reason_ko": "천지판/측판/선반 항목에 '권장 하중 최대 20kg(너비 80cm 기준)' 문구가 보입니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "rod_load_16kg_80cm_label",
+        "verdict": "pass",
+        "reason_ko": "옷걸이봉 항목에 '최대 16kg 지지(너비 80cm 기준)'라고 명시되어 있습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      }
+    ],
+    "distortion_fail_count": 0,
+    "forbidden_fail_count": 0,
+    "composition_score": 82,
+    "hallucinations": [],
+    "specific_failures": [],
+    "notes_ko": "B는 구조/사양표 형식의 패널이며, 검증 가능한 핵심 distortion 항목인 80cm 모듈 2개 구성은 명확히 표기되어 있습니다. 세부 사양 텍스트도 대부분 체크리스트 기대값을 직접적으로 포함합니다. 하단 일부 표 영역은 원본 C 대비 축약 또는 잘림이 있어 composition 점수는 다소 감점했지만, verdict에 영향을 주는 제품 왜곡이나 금지된 invented feature는 확인되지 않습니다.",
+    "critical_fail_count": 0,
+    "product_score_raw": null,
+    "product_score": 100,
+    "verdict": "pass"
+  }
+}

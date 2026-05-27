@@ -1,0 +1,71 @@
+=== swap v3 — full re-run ===
+  model: gpt_image only
+  targets: 13 (cover + 12 panels)
+  strategies: aligned → overpaint → smart_sheet (auto-fallback)
+  thresholds: cover 95/95, design_chart 93/90, default 93/80
+
+uploading references...
+  done
+[cover/aligned/#1] ar=1:1 (4 refs)
+[panel_01/aligned/#1] ar=3:2 (4 refs)
+[panel_02/aligned/#1] ar=3:2 (4 refs)
+[panel_03/aligned/#1] ar=3:2 (4 refs)
+[cover/aligned/#1] prod=99 comp=98 -> pass
+[panel_04/aligned/#1] ar=2:3 (4 refs)
+[panel_02/aligned/#1] prod=95 comp=85 SEAT=1 -> retry
+[panel_05/aligned/#1] ar=3:2 (4 refs)
+[panel_03/aligned/#1] prod=97 comp=92 -> pass
+[panel_06/aligned/#1] ar=3:2 (4 refs)
+[panel_01/aligned/#1] prod=99 comp=97 -> pass
+[panel_07/aligned/#1] ar=3:2 (4 refs)
+[panel_04/aligned/#1] prod=99 comp=92 -> pass
+[panel_08/aligned/#1] ar=3:2 (4 refs)
+[panel_06/aligned/#1] prod=80 comp=92 SEAT=3 -> retry
+[panel_09/aligned/#1] ar=3:2 (4 refs)
+[panel_05/aligned/#1] prod=97 comp=85 TEXT! -> retry
+[panel_10/aligned/#1] ar=3:2 (4 refs)
+[panel_08/aligned/#1] prod=97 comp=94 -> pass
+[panel_11/aligned/#1] ar=3:4 (4 refs)
+[panel_07/aligned/#1] prod=97 comp=82 TEXT! -> retry
+[panel_12/aligned/#1] ar=3:4 (4 refs)
+[panel_09/aligned/#1] prod=97 comp=82 -> pass
+[panel_02/overpaint/#2] ar=3:2 (4 refs)
+[panel_10/aligned/#1] prod=97 comp=85 -> pass
+[panel_06/overpaint/#2] ar=3:2 (4 refs)
+[panel_11/aligned/#1] prod=98 comp=92 -> pass
+[panel_05/overpaint/#2] ar=3:2 (4 refs)
+[panel_12/aligned/#1] prod=97 comp=92 SEAT=4 -> retry
+[panel_07/overpaint/#2] ar=3:2 (4 refs)
+[panel_06/overpaint/#2] prod=70 comp=92 SEAT=3 -> retry
+[panel_05/overpaint/#2] prod=97 comp=85 TEXT! -> retry
+[panel_06/smart_sheet/#3] ar=3:2 (5 refs)
+[panel_12/overpaint/#2] ar=3:4 (4 refs)
+[panel_07/overpaint/#2] prod=97 comp=82 TEXT! -> retry
+[panel_05/smart_sheet/#3] ar=3:2 (5 refs)
+[panel_02/overpaint/#2] prod=97 comp=85 TEXT! -> retry
+[panel_07/smart_sheet/#3] ar=3:2 (5 refs)
+[panel_06/smart_sheet/#3] prod=70 comp=95 SEAT=3 -> retry
+[panel_02/smart_sheet/#3] ar=3:2 (5 refs)
+[panel_05/smart_sheet/#3] prod=98 comp=85 -> pass
+[panel_07/smart_sheet/#3] prod=95 comp=85 SEAT=1 -> retry
+[panel_12/overpaint/#2] prod=97 comp=92 SEAT=4 -> retry
+[panel_12/smart_sheet/#3] ar=3:4 (5 refs)
+[panel_02/smart_sheet/#3] prod=97 comp=85 -> pass
+[panel_12/smart_sheet/#3] prod=95 comp=92 SEAT=4 -> retry
+
+=== DONE === /Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/01_sofa_992474/swap_results/v3_20260526_100556
+  wall: 376.7s
+  passers: 10/13
+    cover        [cover       ] prod=99 comp=98 seats=2 via=aligned pass=True
+    panel_01     [intro       ] prod=99 comp=97 seats=2 via=aligned pass=True
+    panel_02     [detail      ] prod=97 comp=85 seats=2 via=aligned/overpaint/smart_sheet pass=True
+    panel_03     [detail      ] prod=97 comp=92 seats=2 via=aligned pass=True
+    panel_04     [design_chart] prod=99 comp=92 seats=2 via=aligned pass=True
+    panel_05     [detail      ] prod=98 comp=85 seats=2 via=aligned/overpaint/smart_sheet pass=True
+    panel_06     [detail      ] prod=80 comp=92 seats=3 via=aligned/overpaint/smart_sheet pass=False
+    panel_07     [detail      ] prod=97 comp=82 seats=2 via=aligned/overpaint/smart_sheet pass=False
+    panel_08     [design_chart] prod=97 comp=94 seats=2 via=aligned pass=True
+    panel_09     [detail      ] prod=97 comp=82 seats=2 via=aligned pass=True
+    panel_10     [detail      ] prod=97 comp=85 seats=2 via=aligned pass=True
+    panel_11     [design_chart] prod=98 comp=92 seats=2 via=aligned pass=True
+    panel_12     [design_chart] prod=97 comp=92 seats=4 via=aligned/overpaint/smart_sheet pass=False

@@ -1,0 +1,87 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [
+    {
+      "id": "no_sliding_doors",
+      "verdict": "pass",
+      "reason_ko": "결과 B에는 레일이나 겹쳐 미닫는 구조가 보이지 않고, 여닫이형 도어처럼 표현되어 있습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_high_legs_visible",
+      "verdict": "pass",
+      "reason_ko": "본체가 바닥 가까이에 놓여 있으며 약 10cm 이상 높게 띄우는 노출 다리는 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_builtin_led_visible",
+      "verdict": "pass",
+      "reason_ko": "전면이나 내부 가장자리에서 LED 발광 바 또는 내장 조명으로 보이는 요소가 없습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "two_80cm_modules_total_160cm",
+      "verdict": "pass",
+      "reason_ko": "전면이 중앙 이음부를 기준으로 좌우 2개 모듈로 나뉘어 보이며, 각 모듈이 약 80cm 폭의 2칸 구성으로 인식됩니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "hinged_double_doors_per_module",
+      "verdict": "pass",
+      "reason_ko": "각 모듈의 도어가 중앙 세로 이음과 손잡이를 가진 양개형 여닫이 도어로 보이며, 슬라이딩 구조는 보이지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "external_3_tier_drawers_visible",
+      "verdict": "pass",
+      "reason_ko": "전면 하단에 3개의 수평 서랍 전면이 명확히 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "long_inset_vertical_handles",
+      "verdict": "pass",
+      "reason_ko": "도어 가장자리를 따라 길게 내려오는 세로형 매립 손잡이 라인이 확인됩니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "rectangular_straight_top_silhouette",
+      "verdict": "pass",
+      "reason_ko": "상단이 평평하고 전체 외곽이 직선형 직사각 실루엣이며 크라운이나 아치 장식은 없습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "selected_finish_in_images_is_one_of_three",
+      "verdict": "pass",
+      "reason_ko": "도어 색상은 화이트/크림화이트 계열로 보이며 제공된 색상군 중 하나에 해당합니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "aluminum_hanging_rod_indicator",
+      "verdict": "not_visible",
+      "reason_ko": "외부 전면과 도어 디테일만 보이며 내부 옷걸이봉이나 알루미늄 소재를 확인할 수 있는 텍스트/표시는 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 88,
+  "hallucinations": [],
+  "specific_failures": [
+    "결과가 grid 형태 — single panel로 재생성"
+  ],
+  "notes_ko": "제품 핵심 형상인 2모듈 구성, 양개형 도어, 3단 외부 서랍, 세로 매립 손잡이, 평평한 상단 실루엣, 화이트/크림화이트 마감이 잘 유지되었습니다. 단, 기준 이미지 A에서는 서랍 모듈이 좌측에 있는 반면 B에서는 우측에 배치되어 보이는 차이가 있으나, 제공된 체크리스트의 distortion 항목 자체는 충족합니다.",
+  "verdict": "retry",
+  "product_score_raw": 30,
+  "product_score": 99,
+  "critical_fail_count": 0
+}

@@ -1,0 +1,1385 @@
+{
+  "panels": [
+    {
+      "panel_class": "context",
+      "spatial_layout": "상단 중앙에 '고객 Review' 텍스트와 구분선이 위치. 그 아래 왼쪽에는 프로필 아이콘과 인스타그램 아이디, 오른쪽에는 인스타그램 로고가 나란히 배치. 중단에는 좌우로 나뉜 두 개의 인테리어 사진(소파와 스툴)이 나란히 배열. 하단에는 리뷰 텍스트가 두 줄로 길게 배치되고, 맨 아래에는 해시태그가 여러 줄로 정렬.",
+      "elements": [
+        {
+          "role": "title",
+          "position": "top center",
+          "description": "'고객 Review' 텍스트와 구분선"
+        },
+        {
+          "role": "profile",
+          "position": "below title left",
+          "description": "프로필 아이콘과 인스타그램 아이디"
+        },
+        {
+          "role": "social_icon",
+          "position": "below title right",
+          "description": "인스타그램 로고"
+        },
+        {
+          "role": "product_photo",
+          "position": "middle left",
+          "description": "소파가 있는 거실 사진"
+        },
+        {
+          "role": "product_photo",
+          "position": "middle right",
+          "description": "스툴이 있는 거실 사진"
+        },
+        {
+          "role": "review_text",
+          "position": "below photos",
+          "description": "고객의 리뷰 텍스트"
+        },
+        {
+          "role": "hashtags",
+          "position": "bottom",
+          "description": "여러 개의 해시태그"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top center",
+          "content": "고객 Review"
+        },
+        {
+          "region": "below title left",
+          "content": "@lumi_home_ 님"
+        },
+        {
+          "region": "below title right",
+          "content": "Instagram"
+        },
+        {
+          "region": "below photos",
+          "content": "가죽소파는 관리가 편하단 정도만 알고있었는데요. 엠마소파는 사용해볼수록 장점이 수두룩한 제품이더라구요 👍 기대였을 때 빛을 발하는 폭신한 등받이는 스툴과 함께면 그 편안함이 두배가 되는거 같아요."
+        },
+        {
+          "region": "bottom",
+          "content": "#엠마컴포트 #한샘소파 #소파인테리어 #일상스타그램 #거실인테리어"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "중앙의 두 제품 사진(소파, 스툴) 영역만 동일한 위치와 크기로 교체하고, 상단 타이틀/프로필/로고, 하단 리뷰 텍스트 및 해시태그는 그대로 유지.",
+      "panel": "panel_01.jpg",
+      "panel_idx": 1
+    },
+    {
+      "panel_class": "context",
+      "spatial_layout": "상단 중앙에 '고객 Review' 텍스트와 구분선이 위치. 그 아래 왼쪽에는 사용자 아이콘과 인스타그램 아이디, 오른쪽에는 인스타그램 로고와 텍스트가 나란히 배치. 중단에는 두 장의 거실 사진이 좌우로 나란히 배열. 하단에는 긴 고객 리뷰 텍스트가 패널 전체 너비로 배치. 사진 아래쪽에는 해시태그가 한 줄로 정렬.",
+      "elements": [
+        {
+          "role": "title",
+          "position": "상단 중앙",
+          "description": "'고객 Review' 텍스트와 구분선"
+        },
+        {
+          "role": "user_info",
+          "position": "상단 좌측",
+          "description": "사용자 아이콘과 인스타그램 아이디"
+        },
+        {
+          "role": "instagram_logo",
+          "position": "상단 우측",
+          "description": "인스타그램 로고와 텍스트"
+        },
+        {
+          "role": "product_photo",
+          "position": "중단 좌측",
+          "description": "거실 소파와 스툴, 강아지가 있는 사진"
+        },
+        {
+          "role": "product_photo",
+          "position": "중단 우측",
+          "description": "거실 소파와 스툴, 책과 식물이 있는 사진"
+        },
+        {
+          "role": "review_text",
+          "position": "하단 전체",
+          "description": "고객의 상세 리뷰 텍스트"
+        },
+        {
+          "role": "hashtags",
+          "position": "하단 맨 아래",
+          "description": "해시태그 4개가 한 줄로 정렬"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "상단 중앙",
+          "content": "고객 Review"
+        },
+        {
+          "region": "상단 좌측",
+          "content": "@awesomebarbie_ya 님"
+        },
+        {
+          "region": "상단 우측",
+          "content": "Instagram"
+        },
+        {
+          "region": "하단 전체",
+          "content": "기존 소파와 길이가 크게 차이나지 않음에도 불구하고, 전체적으로 슬림하게 디자인 된 덕분인지, 24평 거실에 4인 + 스툴을 두어도, 답답함이 전혀 없구요! 요 제품은 누웠을 때 딱 편안하게 디자인 된 팔걸이 덕에, 따로 쿠션도 필요없고, 목이 너무 편해서 자꾸만 눕고 싶어져요!"
+        },
+        {
+          "region": "하단 맨 아래",
+          "content": "#엠마컴포트 #한샘소파 #소파인테리어 #일상스타그램 #거실인테리어"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "중단 좌우의 product_photo 영역만 새로운 제품 사진으로 교체. 상단의 텍스트, 아이콘, 하단의 리뷰 및 해시태그 레이아웃은 그대로 유지.",
+      "panel": "panel_02.jpg",
+      "panel_idx": 2
+    },
+    {
+      "panel_class": "intro_hero",
+      "spatial_layout": "상단 좌측에는 'Emma Comfort' 제품명이 크게 배치되어 있고, 그 아래에는 제품 설명 텍스트가 있다. 상단 중앙에는 베이지색 소파가 실내 공간에 배치된 사진이 크고 넓게 위치한다. 우측 세로에는 제품명과 시리즈명이 세로로 적혀 있다. 중단부에는 파란색 소파가 다양한 각도에서 촬영된 3장의 사진이 세로로 배열되어 있다. 각 사진 아래에는 설명 텍스트가 위치한다. 하단에는 소파에 앉아 있는 남녀의 라이프스타일 컷이 크게 배치되어 있고, 그 아래에는 브랜드 로고와 제품명이 정렬되어 있다.",
+      "elements": [
+        {
+          "role": "product_name",
+          "position": "top left",
+          "description": "'Emma Comfort' 대형 텍스트"
+        },
+        {
+          "role": "product_description",
+          "position": "below product_name",
+          "description": "슬림하고 와이드한 컴포트 디자인 설명"
+        },
+        {
+          "role": "main_product_image",
+          "position": "top center",
+          "description": "베이지색 소파가 실내에 놓인 이미지"
+        },
+        {
+          "role": "vertical_label",
+          "position": "top right vertical",
+          "description": "제품명과 시리즈명 세로 텍스트"
+        },
+        {
+          "role": "product_scene_images",
+          "position": "middle, stacked vertically",
+          "description": "파란색 소파의 다양한 각도 사진 3장"
+        },
+        {
+          "role": "scene_descriptions",
+          "position": "below each scene image",
+          "description": "각 사진에 대한 설명 텍스트"
+        },
+        {
+          "role": "lifestyle_image",
+          "position": "bottom",
+          "description": "소파에 앉은 남녀의 라이프스타일 컷"
+        },
+        {
+          "role": "brand_logo_and_name",
+          "position": "bottom below lifestyle image",
+          "description": "브랜드 로고, 제품명, 시리즈명"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top left",
+          "content": "Emma Comfort\n슬림하고 와이드한 컴포트 디자인"
+        },
+        {
+          "region": "top right vertical",
+          "content": "엠마 컴포트 소파 • HANSSEN LEATHER SOFA EMMA SERIES"
+        },
+        {
+          "region": "below main image",
+          "content": "어느 공간에 두어도 잘 어우러지는 엠마 소파는 마주 보는 순간 편안함이 느껴져요."
+        },
+        {
+          "region": "middle below scene images",
+          "content": "어떤 각도에서 바라봐도 아름답고, 슬림하고 와이드한 디자인이 소파도, 공간도 훨씬 감각적이게 해줘요."
+        },
+        {
+          "region": "middle below scene images",
+          "content": "처음 착석감 그대로, 오래도록 느낄 수 있는 50년 가구 전문가 한샘의 솔루션이 담겨있는 엠마 컴포트, 지금 만나보세요~"
+        },
+        {
+          "region": "bottom",
+          "content": "HANSSEN LEATHER SOFA Emma Comfort"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "메인 제품 이미지(상단 중앙)와 중단부의 소파 각도별 이미지(3장), 그리고 하단 라이프스타일 컷의 소파 부분만 새로운 제품 이미지로 교체하고, 텍스트, 배경, 인물, 소품, 전체 레이아웃은 그대로 유지하세요.",
+      "panel": "panel_03.jpg",
+      "panel_idx": 3
+    },
+    {
+      "panel_class": "intro_hero",
+      "spatial_layout": "상단 중앙에 제품명과 'SELLING POINT' 대제목이 큼직하게 배치됨. 그 아래로 #01, #02, #03 세 개의 주요 포인트가 세로로 나열됨. 각 포인트마다 소제목과 설명 텍스트가 중앙 정렬로 위치. #01 아래에는 거실 인테리어 속 소파의 라이프스타일 연출 사진이 넓게 배치됨. #02 아래에는 흰 배경 위에 소파 단독 컷과 '4인 전체너비 268cm' 치수선이 소파 하단에 표시됨. #03은 텍스트만 존재. 각 요소는 세로로 균등하게 분할되어 배치됨.",
+      "elements": [
+        {
+          "role": "title",
+          "position": "상단 중앙",
+          "description": "SELLING POINT 대제목, 제품명 소제목"
+        },
+        {
+          "role": "section_header",
+          "position": "중앙 상단~하단",
+          "description": "#01, #02, #03 세부 포인트 소제목"
+        },
+        {
+          "role": "description_text",
+          "position": "각 소제목 하단",
+          "description": "각 포인트별 설명 텍스트"
+        },
+        {
+          "role": "lifestyle_image",
+          "position": "#01 하단, 중앙",
+          "description": "거실 인테리어 속 소파 연출 사진"
+        },
+        {
+          "role": "product_image",
+          "position": "#02 하단, 중앙",
+          "description": "흰 배경 위 소파 단독 이미지"
+        },
+        {
+          "role": "dimension_line",
+          "position": "#02 소파 하단",
+          "description": "4인 전체너비 268cm 치수선"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "상단 중앙",
+          "content": "엠마 컴포트 소파 SELLING POINT"
+        },
+        {
+          "region": "#01 중앙",
+          "content": "베이직한 디자인 팔걸이부터 좌방석까지 하나의 부드러운 곡선으로 연결되어 보다 와이드하고 편안한 느낌의 디자인"
+        },
+        {
+          "region": "#02 중앙",
+          "content": "컴팩트한 사이즈 부족하지도 과하지도 않은 최적의 사이즈로 20평부터 30평 중반 평형대 거실에서 공간을 넉넉하게 사용 가능"
+        },
+        {
+          "region": "#02 소파 하단",
+          "content": "4인 전체너비 268cm ※ 4인기준"
+        },
+        {
+          "region": "#03 중앙",
+          "content": "천연면피가죽 꼭 필요한 피부가 접촉하는 부위에 천연면피가죽을 적용해 안심하고 사용 가능"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "lifestyle_image와 product_image 영역의 소파(제품)만 동일 위치/크기/방향으로 교체하고, 텍스트 및 치수선, 배경, 기타 소품은 그대로 유지",
+      "panel": "panel_04.jpg",
+      "panel_idx": 4
+    },
+    {
+      "panel_class": "lifestyle_scene",
+      "spatial_layout": "중앙에 대형 파란색 소파가 대각선 방향으로 배치되어 있다. 소파는 프레임 전체를 차지하며, 왼쪽 하단에는 원형 사이드 테이블이 소파 팔걸이 옆에 위치한다. 테이블 위에는 화분과 컵이 놓여 있다. 오른쪽 하단에는 원형 블랙 테이블이 있으며, 그 위에 책과 트레이, 장식품이 있다. 배경은 밝은 톤의 벽과 바닥으로 구성되어 있고, 왼쪽 벽에는 추상적인 액자가 세워져 있다. 전체적으로 소파가 시각적 중심을 이루며, 주변 소품들이 자연스럽게 배치되어 있다.",
+      "elements": [
+        {
+          "role": "main_product",
+          "position": "center",
+          "description": "파란색 3인용 소파, 대각선 방향으로 배치"
+        },
+        {
+          "role": "side_table",
+          "position": "bottom_left",
+          "description": "원형 사이드 테이블, 소파 팔걸이 옆"
+        },
+        {
+          "role": "plant",
+          "position": "bottom_left_on_table",
+          "description": "작은 화분, 테이블 위"
+        },
+        {
+          "role": "cup",
+          "position": "bottom_left_on_table",
+          "description": "머그컵, 테이블 위"
+        },
+        {
+          "role": "coffee_table",
+          "position": "bottom_right",
+          "description": "원형 블랙 테이블, 책과 트레이, 장식품 배치"
+        },
+        {
+          "role": "artwork",
+          "position": "left_background",
+          "description": "추상 액자, 벽에 기대어 있음"
+        }
+      ],
+      "text_zones": [],
+      "fixed_layout": false,
+      "swap_instruction": "소파(main_product) 영역만 동일한 위치와 크기로 교체하고, 주변 테이블, 소품, 배경 요소는 그대로 유지하여 레이아웃을 보존한다.",
+      "panel": "panel_05.gif",
+      "panel_idx": 5
+    },
+    {
+      "panel_class": "lifestyle_scene",
+      "spatial_layout": "상단 중앙에 큰 텍스트 블록이 위치하며, 그 아래에는 소파에 앉아있는 남성이 중심에 배치된 사진이 있다. 소파는 이미지 하단을 가로지르며, 왼쪽에는 흰색 원형 테이블과 꽃병이 있다. 바닥은 나무 패턴이며, 오른쪽 하단에는 부분적으로 러그가 보인다. 인물은 소파의 좌방석에 앉아 있으며, 상체는 약간 오른쪽을 향하고 있다. 전체적으로 배경은 밝고 미니멀하다.",
+      "elements": [
+        {
+          "role": "main_product",
+          "position": "중앙 하단",
+          "description": "베이지색 좌방석 소파"
+        },
+        {
+          "role": "person",
+          "position": "소파 위 중앙",
+          "description": "흰 셔츠와 베이지 바지 차림의 남성, 소파에 앉아 있음"
+        },
+        {
+          "role": "side_table",
+          "position": "좌측",
+          "description": "흰색 원형 테이블, 위에 흰색 꽃병과 꽃"
+        },
+        {
+          "role": "rug",
+          "position": "오른쪽 하단",
+          "description": "밝은색 패턴 러그, 부분적으로 보임"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "상단 중앙",
+          "content": "#04 좌방석 하이브리드 패널\n좌방석 꺼짐을 줄이기 위해 한샘소파 시그니처 하이브리드 패널을 적용\n처음 착석감 그대로 오래오래-"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "소파(메인 제품) 영역만 동일 위치와 크기로 교체하고, 인물, 테이블, 러그, 배경 및 텍스트 레이아웃은 그대로 유지한다.",
+      "panel": "panel_06.jpg",
+      "panel_idx": 6
+    },
+    {
+      "panel_class": "intro_hero",
+      "spatial_layout": "상단 중앙에 제품명과 설명 텍스트가 배치되어 있다. 텍스트 아래에는 넓은 공간을 차지하는 소파 제품 이미지가 중앙에 위치한다. 소파 왼쪽에는 검은색 플로어 스탠드 조명과 작은 원형 테이블, 화병이 있다. 소파 오른쪽 뒤에는 추상적인 액자가 벽에 기대어 있다. 바닥에는 회색 계열의 패턴 러그가 소파 앞에 넓게 깔려 있다. 전체적으로 배경은 밝은 회색 벽과 자연광이 들어오는 창문이 오른쪽에 있다.",
+      "elements": [
+        {
+          "role": "title",
+          "position": "상단 중앙",
+          "description": "EMMA COMFORT SOFA, [한샘]엠마 컴포트 천연가죽소파 4인용 텍스트"
+        },
+        {
+          "role": "main_product",
+          "position": "중앙 하단",
+          "description": "4인용 블루 소파"
+        },
+        {
+          "role": "lamp",
+          "position": "좌측 소파 옆",
+          "description": "블랙 플로어 스탠드 조명"
+        },
+        {
+          "role": "side_table",
+          "position": "좌측 소파 옆",
+          "description": "작은 원형 테이블과 화병"
+        },
+        {
+          "role": "artwork",
+          "position": "우측 소파 뒤",
+          "description": "추상적 패턴의 액자"
+        },
+        {
+          "role": "rug",
+          "position": "소파 앞 바닥",
+          "description": "회색 계열 패턴 러그"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "상단 중앙",
+          "content": "EMMA COMFORT SOFA\n[한샘]엠마 컴포트 천연가죽소파 4인용"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "main_product(소파) 영역만 동일 위치와 크기로 교체하고, 배경 소품(조명, 테이블, 액자, 러그) 및 텍스트 레이아웃은 그대로 유지한다.",
+      "panel": "panel_07.jpg",
+      "panel_idx": 7
+    },
+    {
+      "panel_class": "structure_chart",
+      "spatial_layout": "상단 중앙에 'INFO'와 옵션명이 정사각형 박스에 위치. 그 아래로 좌측 정렬로 제품명, 소재, 내장재, 다리, 착석감, 색상, 사이즈 등 텍스트 정보가 세로로 배열됨. 중단부에는 소파 3종(페더화이트, 미드그레이, 스카이그레이) 이미지가 세로로 나란히 배치되고, 각 소파 아래에 옵션명과 색상명이 있음. 하단에는 소파 이미지 위에 치수(전체너비, 팔걸이 높이, 좌방석 폭 등)가 선과 숫자로 표기됨. 맨 아래에는 소재 설명 및 주의사항 텍스트가 좌측 정렬로 위치.",
+      "elements": [
+        {
+          "role": "옵션명 박스",
+          "position": "상단 중앙",
+          "description": "정사각형 박스에 'OPTION A~C' 텍스트"
+        },
+        {
+          "role": "제품 정보 텍스트",
+          "position": "옵션명 박스 아래 좌측 정렬",
+          "description": "제품명, 소재, 내장재, 다리, 착석감, 색상, 사이즈 등"
+        },
+        {
+          "role": "소파 이미지 A",
+          "position": "중앙, 중단부 첫번째",
+          "description": "페더화이트 색상 소파 정면 이미지"
+        },
+        {
+          "role": "소파 이미지 B",
+          "position": "중앙, 중단부 두번째",
+          "description": "미드그레이 색상 소파 정면 이미지"
+        },
+        {
+          "role": "소파 이미지 C",
+          "position": "중앙, 중단부 세번째",
+          "description": "스카이그레이 색상 소파 정면 이미지"
+        },
+        {
+          "role": "치수 표기",
+          "position": "하단 소파 이미지 위",
+          "description": "선과 숫자로 전체너비, 팔걸이 높이, 좌방석 폭 등 표시"
+        },
+        {
+          "role": "소재/주의사항 텍스트",
+          "position": "맨 아래 좌측 정렬",
+          "description": "소재 설명 및 주의사항"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "상단",
+          "content": "INFO, OPTION A~C"
+        },
+        {
+          "region": "중앙 좌측",
+          "content": "제품명, 소재, 내장재, 다리, 착석감, 색상, 사이즈 등 상세 텍스트"
+        },
+        {
+          "region": "중앙",
+          "content": "OPTION A 페더화이트, OPTION B 미드그레이, OPTION C 스카이그레이"
+        },
+        {
+          "region": "하단",
+          "content": "치수 정보(전체너비, 팔걸이 높이, 좌방석 폭 등)"
+        },
+        {
+          "region": "맨 아래",
+          "content": "천연가죽/합성가죽 설명, 주의사항"
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "소파 이미지(OPTION A/B/C) 영역만 동일 위치/크기로 교체하고, 상단 옵션명 박스, 좌측 텍스트 정보, 하단 치수 표기 및 주의사항 텍스트는 그대로 유지한다.",
+      "panel": "panel_08.jpg",
+      "panel_idx": 8
+    },
+    {
+      "panel_class": "color_option",
+      "spatial_layout": "상단, 중단, 하단에 각각 다른 색상의 소파가 배치되어 있음. 각 소파는 동일한 거실 배경과 소품(의자, 플로어 램프, 벽 장식, 러그)과 함께 중앙에 위치. 각 색상별로 상단에 해당 색상명을 한글과 영어 해시태그로 표기. 하단에는 주의사항 텍스트가 좌측 정렬로 배치. 각 소파 주변의 소품 위치와 배경은 동일하며, 소파 색상만 다름. 전체적으로 세로로 3단 분할된 구조.",
+      "elements": [
+        {
+          "role": "sofa",
+          "position": "상단 중앙",
+          "description": "페더화이트 색상 소파"
+        },
+        {
+          "role": "sofa",
+          "position": "중단 중앙",
+          "description": "미드그레이 색상 소파"
+        },
+        {
+          "role": "sofa",
+          "position": "하단 중앙",
+          "description": "스카이그레이 색상 소파"
+        },
+        {
+          "role": "armchair",
+          "position": "각 소파 좌측",
+          "description": "베이지색 원형 암체어"
+        },
+        {
+          "role": "floor lamp",
+          "position": "각 소파 우측",
+          "description": "흰색 또는 검정색 플로어 램프"
+        },
+        {
+          "role": "wall decor",
+          "position": "각 소파 상단 벽 중앙",
+          "description": "원형 벽 장식"
+        },
+        {
+          "role": "rug",
+          "position": "각 소파 하단",
+          "description": "회색 또는 블루 계열 러그"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "상단 좌측",
+          "content": "페더화이트 #feather white"
+        },
+        {
+          "region": "중단 좌측",
+          "content": "미드그레이 #midgray"
+        },
+        {
+          "region": "하단 좌측",
+          "content": "스카이그레이 #skygray"
+        },
+        {
+          "region": "하단",
+          "content": "※ 천연가죽과 합성가죽의 색상 차이가 있을 수 있으며, 이는 설치 장소의 빛의 양과 각도에 따라 커 보일 수 있습니다."
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "각 색상별 소파(중앙 product region)만 동일 위치/크기로 교체하고, 배경(거실, 소품, 텍스트, 러그 등)은 그대로 유지. 소파 외 요소의 위치와 크기를 변경하지 않음.",
+      "panel": "panel_09.jpg",
+      "panel_idx": 9
+    },
+    {
+      "panel_class": "lifestyle_scene",
+      "spatial_layout": "상단 1/4 영역에 흰색 배경의 텍스트 블록이 중앙 정렬로 위치. 중앙 1/2 영역에 거실 인테리어 장면이 배치되어 있으며, 소파가 화면 중앙에 크게 위치. 소파 왼쪽에는 원형 의자와 플로어 스탠드 조명이 있고, 오른쪽에는 화병이 올려진 받침대가 있음. 소파 위 벽 중앙에는 원형 장식물이 걸려 있음. 하단 1/4 영역에 추가 텍스트 블록이 중앙 정렬로 위치.",
+      "elements": [
+        {
+          "role": "main_product",
+          "position": "중앙 하단 1/2",
+          "description": "베이지 컬러의 4인용 소파"
+        },
+        {
+          "role": "accent_chair",
+          "position": "좌측 하단",
+          "description": "둥근 형태의 크림색 1인용 의자"
+        },
+        {
+          "role": "floor_lamp",
+          "position": "소파 왼쪽",
+          "description": "슬림한 흰색 플로어 스탠드 조명"
+        },
+        {
+          "role": "wall_decor",
+          "position": "소파 위 중앙",
+          "description": "원형 벽 장식물"
+        },
+        {
+          "role": "side_table_flower",
+          "position": "우측 하단",
+          "description": "흰색 받침대와 꽃이 담긴 화병"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "상단",
+          "content": "DESIGN\n와이드하고 슬림한 디자인에 트렌디하고 감각적인 가족컬러가 더해져 편안하면서도 세련된 소파를 완성하고,"
+        },
+        {
+          "region": "하단",
+          "content": "팔걸이부터 좌방석이 같은 높이로 하나의 부드러운 곡선 라인으로 연결되어 있어, 보다 넓고 개방적인 느낌을 줍니다."
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "중앙 하단 1/2 영역의 소파(main_product)만 동일 위치와 크기로 교체하고, 나머지 인테리어 소품 및 텍스트, 배경 레이아웃은 그대로 유지한다.",
+      "panel": "panel_10.jpg",
+      "panel_idx": 10
+    },
+    {
+      "panel_class": "intro_hero",
+      "spatial_layout": "상단 중앙에 '360도 컷' 텍스트가 위치. 패널 하단 중앙에 소파 제품이 크게 배치되어 있음. 소파는 패널의 좌우 여백을 거의 채우며, 하단에 다리가 보임. 배경은 완전히 흰색으로, 다른 시각적 요소나 장식 없음. 텍스트와 제품 사이에 넓은 여백이 존재. 소파는 정면을 바라보고 있음.",
+      "elements": [
+        {
+          "role": "title_text",
+          "position": "상단 중앙",
+          "description": "'360도 컷' 텍스트"
+        },
+        {
+          "role": "product",
+          "position": "하단 중앙",
+          "description": "연한 베이지색 3인용 소파, 금속 다리, 정면 뷰"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "상단 중앙",
+          "content": "360도 컷"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "하단 중앙의 소파 제품 이미지만 동일 위치와 크기로 교체하고, 상단 텍스트와 여백, 배경은 그대로 유지한다.",
+      "panel": "panel_11.gif",
+      "panel_idx": 11
+    },
+    {
+      "panel_class": "lifestyle_scene",
+      "spatial_layout": "상단에는 소파 등쿠션의 클로즈업 이미지가 좌측에 위치하고, 우측 상단에 텍스트가 배치됨. 두 번째 섹션에는 소파의 곡선형 팔걸이와 다리가 강조된 부분 확대 이미지가 중앙에 위치하며, 오른쪽에 설명 텍스트와 그래픽이 있음. 세 번째 섹션에는 소파 전체가 좌측에, 텍스트가 하단에 위치. 네 번째 섹션부터는 다양한 생활 장면이 이어지며, 소파 위에 앉거나 누운 인물이 중앙에 위치하고, 주변에 테이블, 러그, 플로어 스탠드 등 소품이 배치됨. 각 장면마다 텍스트는 상단 또는 하단에 정렬되어 있음. 마지막 섹션에는 파란색 소파와 인물이 중앙에 위치.",
+      "elements": [
+        {
+          "role": "product_closeup",
+          "position": "top left",
+          "description": "베이지색 소파 등쿠션 클로즈업"
+        },
+        {
+          "role": "headline_text",
+          "position": "top right",
+          "description": "소파 등쿠션의 특징 설명 텍스트"
+        },
+        {
+          "role": "product_detail",
+          "position": "center",
+          "description": "팔걸이와 다리 부분 확대 이미지"
+        },
+        {
+          "role": "annotation",
+          "position": "center right",
+          "description": "곡선형 팔걸이와 스틸 다리 강조 그래픽 및 텍스트"
+        },
+        {
+          "role": "full_product",
+          "position": "center",
+          "description": "소파 전체 이미지"
+        },
+        {
+          "role": "caption",
+          "position": "bottom left",
+          "description": "좌방석 텀블링 설계 설명 텍스트"
+        },
+        {
+          "role": "lifestyle_scene",
+          "position": "center",
+          "description": "소파에 앉거나 누운 인물, 주변 소품과 함께 연출된 장면"
+        },
+        {
+          "role": "decor_item",
+          "position": "various",
+          "description": "테이블, 러그, 플로어 스탠드, 화병 등 인테리어 소품"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top right",
+          "content": "소파의 누군가를 설레게할 더욱 안락하게 바뀌는 리치한 볼륨감의 등쿠션"
+        },
+        {
+          "region": "center right",
+          "content": "우아한 곡선형의 포인트 팔걸이 & 세련된 스틸 다리발"
+        },
+        {
+          "region": "bottom left",
+          "content": "좌방석 텀블링 설계 디테일"
+        },
+        {
+          "region": "center",
+          "content": "우리 몸을 가장 편하게 받쳐주는 인체공학적인 등쿠션 각도 앉았을 때 가장 편안한 105~110°"
+        },
+        {
+          "region": "center",
+          "content": "허중을 고르게 받쳐주는 푹신함과 비스듬이 앉거나 누울때 옆으로 누웠을 때도 편안합니다."
+        },
+        {
+          "region": "bottom",
+          "content": "팔걸이의 적당한 높이로 머리 받침이 되어 여러 자세의 휴식이 예쁘고 더 편하게 즐길 수 있습니다."
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "각 섹션의 소파(제품) 이미지 영역만 동일한 위치와 크기로 교체하고, 인물, 소품, 텍스트, 그래픽 등 나머지 레이아웃 요소는 그대로 유지합니다.",
+      "panel": "panel_12.jpg",
+      "panel_idx": 12
+    },
+    {
+      "panel_class": "color_option",
+      "spatial_layout": "상단 중앙에 'LEATHER'와 설명 텍스트가 위치. 중앙에는 세 가지 색상의 가죽 질감이 겹쳐진 형태로 배치됨. 그 아래에 소파가 세 가지 색상(좌: 베이지, 중: 블루, 우: 그레이)으로 분할되어 놓여 있음. 소파 아래에는 각 색상별로 세로로 긴 컬러 스와치가 나란히 3개 배치. 각 스와치 하단에는 색상명과 설명 텍스트가 있음. 전체적으로 세로축을 따라 상단 텍스트, 중단 가죽/소파, 하단 컬러 스와치로 구성.",
+      "elements": [
+        {
+          "role": "title",
+          "position": "top center",
+          "description": "'LEATHER' 텍스트"
+        },
+        {
+          "role": "subtitle",
+          "position": "below title, center",
+          "description": "내구성 테스트를 통과한 천연 면피가죽 사용 텍스트"
+        },
+        {
+          "role": "material_texture",
+          "position": "center, background",
+          "description": "세 가지 색상의 가죽 질감이 겹쳐진 이미지"
+        },
+        {
+          "role": "product",
+          "position": "center, foreground",
+          "description": "세 가지 색상으로 분할된 소파"
+        },
+        {
+          "role": "color_swatch",
+          "position": "bottom, three columns",
+          "description": "좌측부터 페더 화이트, 스카이 그레이, 미드 그레이 컬러 스와치"
+        },
+        {
+          "role": "color_label",
+          "position": "bottom of each swatch",
+          "description": "각 컬러명 및 설명 텍스트"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top center",
+          "content": "LEATHER"
+        },
+        {
+          "region": "below title, center",
+          "content": "내구성 테스트를 통과한 천연 면피가죽 사용"
+        },
+        {
+          "region": "bottom left",
+          "content": "COLOR 페더 화이트"
+        },
+        {
+          "region": "bottom center",
+          "content": "COLOR 스카이 그레이"
+        },
+        {
+          "region": "bottom right",
+          "content": "COLOR 미드 그레이"
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "소파(product) 영역만 동일 위치와 크기로 교체하고, 상단 텍스트, 배경 가죽 질감, 하단 컬러 스와치 및 텍스트는 그대로 유지한다.",
+      "panel": "panel_13.jpg",
+      "panel_idx": 13
+    },
+    {
+      "panel_class": "material_swatch",
+      "spatial_layout": "상단 30% 영역에 텍스트 블록이 중앙 정렬로 배치됨. 텍스트 아래로 넓은 여백이 있으며, 하단 70% 영역에는 밝은 베이지색 천 표면이 크게 보임. 오른쪽 하단에서 손이 천을 집어 올리는 모습이 강조됨. 손은 화면 오른쪽에서 왼쪽으로 뻗어 있음. 천 표면의 질감이 뚜렷하게 드러남.",
+      "elements": [
+        {
+          "role": "headline_text",
+          "position": "상단 중앙",
+          "description": "굵은 글씨의 소재 설명 제목"
+        },
+        {
+          "role": "body_text",
+          "position": "상단 중앙, 제목 아래",
+          "description": "소재의 특징과 내구성에 대한 설명"
+        },
+        {
+          "role": "material_surface",
+          "position": "하단 전체",
+          "description": "밝은 베이지색 천 표면, 질감 강조"
+        },
+        {
+          "role": "hand",
+          "position": "오른쪽 하단",
+          "description": "손이 천을 집어 올리는 모습"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "상단 중앙",
+          "content": "깐깐한 한샘의 천연면피 가죽소파\n까짐없이 안심하고 사용하세요!\n우리는 하루동안 소파에 몇 번 앉을까요?\n가족이 앉았다 일어나도 최소한 10번!\n소파의 가죽은 마찰에 따른 손상이 최소화 되어야 합니다."
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "하단의 천 표면과 손이 등장하는 영역만 새로운 소재/제품 이미지로 교체하고, 상단 텍스트 블록의 위치와 스타일은 그대로 유지합니다.",
+      "panel": "panel_14.jpg",
+      "panel_idx": 14
+    },
+    {
+      "panel_class": "context",
+      "spatial_layout": "좌측 상단에는 굵은 제목 텍스트가 있고, 그 아래에 설명 텍스트가 위치함. 우측에는 원형 연마기 기계 사진이 있으며, 사진 내에 두 개의 라벨(연마론, 가죽)이 각각 기계 부품과 가죽 시편을 가리키는 선과 함께 배치됨. 텍스트와 이미지는 좌우로 명확히 분할되어 있음. 이미지 내 라벨은 흰색 선과 글씨로 표시됨. 전체적으로 좌측 텍스트, 우측 이미지의 2단 구조.",
+      "elements": [
+        {
+          "role": "title",
+          "position": "좌측 상단",
+          "description": "국내 유일의 가죽 내마모성 테스트"
+        },
+        {
+          "role": "description",
+          "position": "좌측 중단",
+          "description": "한샘은 가죽을 돌로 500회 이상 마모하여 마모정도가 1~2등급인 천연면피 가죽만 사용합니다."
+        },
+        {
+          "role": "product_region",
+          "position": "우측 중앙",
+          "description": "연마기 기계와 가죽 시편의 근접 사진"
+        },
+        {
+          "role": "label",
+          "position": "우측 이미지 내 상단",
+          "description": "연마론 라벨, 연마기 부품을 가리키는 선"
+        },
+        {
+          "role": "label",
+          "position": "우측 이미지 내 하단",
+          "description": "가죽 라벨, 가죽 시편을 가리키는 선"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "좌측 상단",
+          "content": "국내 유일의 가죽 내마모성 테스트"
+        },
+        {
+          "region": "좌측 중단",
+          "content": "한샘은 가죽을 돌로 500회 이상 마모하여 마모정도가 1~2등급인 천연면피 가죽만 사용합니다."
+        },
+        {
+          "region": "우측 이미지 내 상단",
+          "content": "연마론"
+        },
+        {
+          "region": "우측 이미지 내 하단",
+          "content": "가죽"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "우측 중앙의 product_region(연마기와 가죽 시편 사진)만 동일 위치와 크기로 교체하고, 좌측 텍스트 및 이미지 내 라벨(연마론, 가죽)은 그대로 유지",
+      "panel": "panel_15.gif",
+      "panel_idx": 15
+    },
+    {
+      "panel_class": "context",
+      "spatial_layout": "상단 중앙에 '내마모성 테스트란 (테이버테스트)?' 텍스트가 위치. 중앙에는 자동차 시트 이미지가 가로로 길게 배치되어 있고, 이미지 왼쪽에는 '자동차 시트의 가죽품질문제 글로벌 자동차 기업의 해결책은?' 텍스트, 오른쪽에는 '가장 강력한 기준의 가죽 내마모성 테스트 테이버테스트 시행' 텍스트가 있다. 이미지 중앙에는 'Genuine TABER Certified' 로고가 겹쳐 있음. 하단에는 흰색 배경에 설명 텍스트가 중앙 정렬로 배치됨.",
+      "elements": [
+        {
+          "role": "title",
+          "position": "top center",
+          "description": "내마모성 테스트란 (테이버테스트)? 텍스트"
+        },
+        {
+          "role": "product_context_image",
+          "position": "center",
+          "description": "자동차 시트가 보이는 가로형 이미지"
+        },
+        {
+          "role": "left_caption",
+          "position": "center left on image",
+          "description": "자동차 시트의 가죽품질문제 글로벌 자동차 기업의 해결책은? 텍스트"
+        },
+        {
+          "role": "right_caption",
+          "position": "center right on image",
+          "description": "가장 강력한 기준의 가죽 내마모성 테스트 테이버테스트 시행 텍스트"
+        },
+        {
+          "role": "logo",
+          "position": "center on image",
+          "description": "Genuine TABER Certified 로고"
+        },
+        {
+          "role": "description",
+          "position": "bottom center",
+          "description": "글로벌자동차기업의 테스트를 한샘이 유일하게 소파에 적용해... 이하 설명 텍스트"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top center",
+          "content": "내마모성 테스트란 (테이버테스트)?"
+        },
+        {
+          "region": "center left on image",
+          "content": "자동차 시트의 가죽품질문제 글로벌 자동차 기업의 해결책은?"
+        },
+        {
+          "region": "center right on image",
+          "content": "가장 강력한 기준의 가죽 내마모성 테스트 테이버테스트 시행"
+        },
+        {
+          "region": "bottom center",
+          "content": "글로벌자동차기업의 테스트를 한샘이 유일하게 소파에 적용해 가죽의 내마모성을 철저히 체크하고 있습니다. 고도의 테스트 장비와 연구개발팀이 필요한 테이버테스트! 국내 판매규모 1위, 한샘소파 이기에 가능합니다."
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "가운데 자동차 시트 이미지(product_context_image)만 동일 위치와 크기로 교체하고, 나머지 텍스트와 로고, 배경 레이아웃은 그대로 유지하세요.",
+      "panel": "panel_16.jpg",
+      "panel_idx": 16
+    },
+    {
+      "panel_class": "context",
+      "spatial_layout": "상단 중앙에 굵은 제목 텍스트, 그 아래에 설명 텍스트가 여러 줄로 배치됨. 중앙 하단에는 밝은 천 소재 이미지가 배경으로 깔려 있고, 그 위에 투명한 박스 형태의 표가 중앙에 위치. 표는 2열 6행으로 왼쪽에 유해물질명, 오른쪽에 '적합' 결과가 나열됨. 맨 하단에는 파란색 로고와 추가 설명 텍스트가 좌우로 배치됨.",
+      "elements": [
+        {
+          "role": "title",
+          "position": "top center",
+          "description": "가족 유해성 테스트 완료!"
+        },
+        {
+          "role": "subtitle",
+          "position": "below title, center",
+          "description": "걱정없이 안심하고 사용하세요"
+        },
+        {
+          "role": "description",
+          "position": "below subtitle, center",
+          "description": "소파 소재의 안전성 강조 설명"
+        },
+        {
+          "role": "background_image",
+          "position": "center, full width",
+          "description": "밝은 색상의 천 소재 확대 이미지"
+        },
+        {
+          "role": "table",
+          "position": "center over fabric image",
+          "description": "유해물질명과 적합 여부 2열 6행 표"
+        },
+        {
+          "role": "logo",
+          "position": "bottom left",
+          "description": "fiti 로고"
+        },
+        {
+          "role": "footer_text",
+          "position": "bottom right",
+          "description": "유해물질 기준 적합 안내"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top center",
+          "content": "가족 유해성 테스트 완료! 걱정없이 안심하고 사용하세요"
+        },
+        {
+          "region": "below title",
+          "content": "매일 내 몸에 닿는 소파라면 깨끗하고 또 안전한지 확인해야 합니다. FITI 유해성 시험을 모두 통과한 안전한 가족소파를 사용하세요."
+        },
+        {
+          "region": "center table",
+          "content": "폼알데하이드 적합, 아릴아민 적합, 염소화페놀류(PCP) 적합, 6가 크로뮴 적합, 다이메틸푸마레이트(DMF) 적합, 유기주석화합물(TBT) 적합"
+        },
+        {
+          "region": "bottom",
+          "content": "폼알데하이드, 아릴아민 등 유해물질 함유량 모두 안전기준 적합"
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "중앙 배경의 천 소재 이미지만 동일 각도와 위치로 교체하고, 표/텍스트/로고 등 모든 레이아웃 요소는 그대로 유지",
+      "panel": "panel_17.jpg",
+      "panel_idx": 17
+    },
+    {
+      "panel_class": "size_chart",
+      "spatial_layout": "상단 중앙에 'SIZE'와 설명 텍스트가 위치. 그 아래로 4인용 소파(268cm)와 3인용 소파(200cm)가 각각 중앙에 배치되어 있고, 소파 위에 너비를 나타내는 화살표와 치수 텍스트가 명확히 표시됨. 소파 양옆에는 의자, 사이드테이블, 화분 등 소품이 배치되어 공간감을 강조. 중단에는 커플이 소파에 앉아있는 라이프스타일 컷이 중앙에 위치. 하단에는 소파와 의자, 사이드테이블이 오른쪽에 배치된 인테리어 컷이 있음. 각 섹션은 수직으로 분리되어 있음.",
+      "elements": [
+        {
+          "role": "title",
+          "position": "top center",
+          "description": "'SIZE' 텍스트"
+        },
+        {
+          "role": "subtitle",
+          "position": "below title",
+          "description": "설명 텍스트 2줄"
+        },
+        {
+          "role": "sofa_4_seat",
+          "position": "upper middle",
+          "description": "4인용 소파, 너비 268cm 표시"
+        },
+        {
+          "role": "sofa_3_seat",
+          "position": "middle",
+          "description": "3인용 소파, 너비 200cm 표시"
+        },
+        {
+          "role": "arrow_4_seat",
+          "position": "above 4인용 소파",
+          "description": "양끝 화살표와 '4인용 너비 268cm' 텍스트"
+        },
+        {
+          "role": "arrow_3_seat",
+          "position": "above 3인용 소파",
+          "description": "양끝 화살표와 '3인용 너비 200cm' 텍스트"
+        },
+        {
+          "role": "props",
+          "position": "left/right of sofas",
+          "description": "의자, 사이드테이블, 화분 등 인테리어 소품"
+        },
+        {
+          "role": "lifestyle_scene",
+          "position": "below size chart",
+          "description": "커플이 소파에 앉아있는 장면"
+        },
+        {
+          "role": "sofa_closeup",
+          "position": "bottom",
+          "description": "소파와 의자, 사이드테이블이 있는 인테리어 컷"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top",
+          "content": "SIZE\n최신 인테리어 트렌드에 맞춰 제작된 컴팩트한 사이즈로 공간 활용에 안성맞춤!"
+        },
+        {
+          "region": "above 4-seat sofa",
+          "content": "4인용 너비 268cm"
+        },
+        {
+          "region": "above 3-seat sofa",
+          "content": "3인용 너비 200cm"
+        },
+        {
+          "region": "below size chart",
+          "content": "컴팩트한 사이즈지만 앉는 공간은 넓고 편안하게 쉴 수 있도록 제작했습니다."
+        },
+        {
+          "region": "below lifestyle scene",
+          "content": "거실 여유 공간에 사이드테이블, 1인 암체어 등의 포인트 가구를 넣어 다양한 모습의 거실을 꾸며보세요!"
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "소파(4인용, 3인용)와 라이프스타일 컷의 제품 영역만 교체하고, 화살표/치수/텍스트/소품 및 전체 레이아웃은 그대로 유지하세요.",
+      "panel": "panel_18.jpg",
+      "panel_idx": 18
+    },
+    {
+      "panel_class": "structure_chart",
+      "spatial_layout": "상단에는 'PREMIUM SEAT' 텍스트와 소파에 앉아있는 인물 사진이 중앙에 위치. 그 아래에는 3중 구조의 하이브리드 매트리스 단면도와 각 층의 소재(하이브리드 커버, 폼, 원단 등) 원형 클로즈업 이미지가 좌우로 나열. 중단에는 하이브리드 매트리스의 내구성 테스트 결과를 보여주는 실험 사진들이 좌우로 3세트(45kg, 55kg, 75kg)로 배열. 각 실험 사진 아래에는 무게와 설명 텍스트가 위치. 하단에는 하이브리드 매트리스의 구조 비교 다이어그램과 내구성 테스트 표, 마지막으로 영상 확인 안내가 순차적으로 세로 배치.",
+      "elements": [
+        {
+          "role": "hero_image",
+          "position": "상단 중앙",
+          "description": "소파에 앉아있는 인물의 라이프스타일 사진"
+        },
+        {
+          "role": "headline",
+          "position": "상단",
+          "description": "PREMIUM SEAT 및 제품 특징 강조 텍스트"
+        },
+        {
+          "role": "material_diagram",
+          "position": "상단 중간",
+          "description": "3중 구조 하이브리드 매트리스 단면도와 각 소재 원형 클로즈업"
+        },
+        {
+          "role": "test_photos",
+          "position": "중앙~하단",
+          "description": "내구성 실험 사진 3세트(45kg, 55kg, 75kg) 좌우 배열"
+        },
+        {
+          "role": "comparison_diagram",
+          "position": "하단",
+          "description": "기존 스프링과 하이브리드 매트리스 구조 비교 다이어그램"
+        },
+        {
+          "role": "test_report",
+          "position": "하단",
+          "description": "내구성 테스트 표와 영상 안내"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "상단",
+          "content": "PREMIUM SEAT, 처음 착석감을 오래도록 유지"
+        },
+        {
+          "region": "상단 중간",
+          "content": "3중으로 완성한 강력한 복원력, 하이브리드 커버, 폼, 원단 등 소재 설명"
+        },
+        {
+          "region": "중앙",
+          "content": "국내 최초 하이브리드 매트리스 적용, 내구성 테스트 결과"
+        },
+        {
+          "region": "중앙 하단",
+          "content": "45kg, 55kg, 75kg 내구성 실험 결과 설명"
+        },
+        {
+          "region": "하단",
+          "content": "3배 더 올라간 하이브리드 매트, 9만 번의 내구성 테스트 통과, 테스트 리포트 및 영상 안내"
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "제품 교체 시, 소파/매트리스가 등장하는 모든 이미지(상단 라이프스타일 사진, 소재 단면도, 내구성 실험 사진, 구조 비교 다이어그램)에서 제품 부분만 동일 위치/크기로 교체. 텍스트, 아이콘, 표, 레이아웃은 그대로 유지.",
+      "panel": "panel_19.jpg",
+      "panel_idx": 19
+    },
+    {
+      "panel_class": "structure_chart",
+      "spatial_layout": "상단 중앙에 번호와 제목 텍스트가 위치. 그 아래로 두 개의 스펀지 단면 비교 이미지가 좌우로 배치되어 있고, 각 이미지 위에는 설명 텍스트와 화살표, 라벨이 있음. 중간에는 좌방석 구조 단면 이미지가 좌측에, 우측에는 각 층별 소재와 기능을 설명하는 라벨이 수평으로 정렬. 하단에는 소파 전체 사진이 중앙에 크게 위치하며, 그 위에 100kgf 하중을 나타내는 큰 화살표와 텍스트가 겹쳐 있음. 각 구역별로 설명 텍스트가 상하로 배치되어 있음.",
+      "elements": [
+        {
+          "role": "section_number",
+          "position": "top center",
+          "description": "2, 3번 섹션 번호 원형 아이콘"
+        },
+        {
+          "role": "section_title",
+          "position": "below section_number",
+          "description": "고밀도 통 스펀지, 복원력 강조 텍스트"
+        },
+        {
+          "role": "sponge_comparison_left",
+          "position": "upper left",
+          "description": "기존소파 샌드위치 스펀지 단면 사진과 설명"
+        },
+        {
+          "role": "sponge_comparison_right",
+          "position": "upper right",
+          "description": "엠마 컴포트 소파 통스펀지 단면 사진과 설명"
+        },
+        {
+          "role": "arrow_label",
+          "position": "between sponge images",
+          "description": "내구성 UP! 화살표"
+        },
+        {
+          "role": "material_cross_section",
+          "position": "middle left",
+          "description": "천연면피 가죽, 안티링클 토퍼폼, 고밀도 통스펀지 단면 이미지"
+        },
+        {
+          "role": "material_labels",
+          "position": "middle right",
+          "description": "각 소재별 라벨 및 설명 텍스트"
+        },
+        {
+          "role": "sofa_photo",
+          "position": "bottom center",
+          "description": "좌방석 전체 소파 사진"
+        },
+        {
+          "role": "weight_arrow",
+          "position": "centered on sofa",
+          "description": "100kgf 하중을 나타내는 큰 흰색 화살표"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top center",
+          "content": "고밀도 통 스펀지로 2배 더 강력한 복원력"
+        },
+        {
+          "region": "upper left",
+          "content": "기존소파 샌드위치 스펀지 사용 4단 총 12cm"
+        },
+        {
+          "region": "upper right",
+          "content": "엠마 컴포트 소파 통스펀지 사용 1단 통스펀지 10cm"
+        },
+        {
+          "region": "middle",
+          "content": "좌방석 안티링클 토퍼폼 플러스 적용"
+        },
+        {
+          "region": "middle right",
+          "content": "Anti-wrinkle, 안티링클 토퍼폼+, 고밀도 통스펀지"
+        },
+        {
+          "region": "bottom",
+          "content": "가죽 주름, 이제 걱정하지 마세요! 좌방석 수직력 시험 설명"
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "스펀지 단면 이미지(좌/우), 소재 단면 이미지, 소파 전체 사진 등 제품이 직접 노출된 영역만 동일 위치/크기/방향으로 교체. 텍스트, 라벨, 화살표, 아이콘 등 레이아웃 요소는 그대로 유지.",
+      "panel": "panel_20.jpg",
+      "panel_idx": 20
+    },
+    {
+      "panel_class": "material_swatch",
+      "spatial_layout": "상단 중앙에 'MATERIAL'과 '믿을 수 있는 자재' 텍스트가 위치. 그 아래 중앙에 '새집 증후군, 아토피 걱정없는 EO 자재' 텍스트가 있음. 중단에는 초록색 배경 위에 육각형 형태의 다이어그램이 중앙에 배치되고, 좌측에 'EO 깨끗한자재' 텍스트, 우측에는 E1/E0 등급 비교 차트가 세로로 배치됨. 하단에는 연한 초록색 배경 위에 세 개의 원형 아이콘(좌측)과 각 아이콘 우측에 설명 텍스트가 세로로 정렬됨.",
+      "elements": [
+        {
+          "role": "title",
+          "position": "top center",
+          "description": "'MATERIAL' 텍스트"
+        },
+        {
+          "role": "subtitle",
+          "position": "below title, center",
+          "description": "'믿을 수 있는 자재' 텍스트"
+        },
+        {
+          "role": "highlight_text",
+          "position": "center, below subtitle",
+          "description": "'새집 증후군, 아토피 걱정없는 EO 자재' 텍스트"
+        },
+        {
+          "role": "diagram",
+          "position": "middle center",
+          "description": "초록색 배경 위 육각형 다이어그램, 좌측에 'EO 깨끗한자재', 우측에 E1/E0 등급 비교 차트"
+        },
+        {
+          "role": "icon",
+          "position": "bottom left, three vertically stacked",
+          "description": "나무통, 나무, 잎사귀 아이콘"
+        },
+        {
+          "role": "description_text",
+          "position": "bottom right of each icon",
+          "description": "각 아이콘별 설명 텍스트 세 줄"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top center",
+          "content": "MATERIAL"
+        },
+        {
+          "region": "below title",
+          "content": "믿을 수 있는 자재"
+        },
+        {
+          "region": "center",
+          "content": "새집 증후군, 아토피 걱정없는 EO 자재"
+        },
+        {
+          "region": "middle left",
+          "content": "EO 깨끗한자재"
+        },
+        {
+          "region": "middle right",
+          "content": "E1 법적기준, EO 한샘기준, 폼알데하이드 방출량(MG/L)"
+        },
+        {
+          "region": "bottom right of icons",
+          "content": "엄격한 기준 적용, 절반이 아닌 완전한 제로, 제품 구성구석 진정 제로"
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "중앙 육각형 다이어그램 내 EO 자재 관련 그래픽 및 텍스트 영역만 교체하고, 상단/하단 텍스트, 아이콘, 전체 레이아웃 및 배경은 그대로 유지할 것.",
+      "panel": "panel_21.jpg",
+      "panel_idx": 21
+    },
+    {
+      "panel_class": "context",
+      "spatial_layout": "상단 중앙에 큰 제목 텍스트가 위치하며, 그 아래에 부제목 텍스트가 넓게 배치됨. 하단에는 5개의 인증/수상 로고와 설명이 가로로 일렬로 정렬되어 있음. 각 로고는 동일한 간격으로 배치되어 있고, 로고 아래에 각각의 설명 텍스트가 있음. 전체적으로 중앙 정렬된 레이아웃이며, 여백이 넉넉하게 분포됨. 텍스트와 로고 영역이 명확히 분리되어 있음.",
+      "elements": [
+        {
+          "role": "title",
+          "position": "top center",
+          "description": "국내 최고, 최초의 역사 한샘"
+        },
+        {
+          "role": "subtitle",
+          "position": "below title, center",
+          "description": "지난 반세기 동안 주거환경의 변화를 주도해 왔습니다"
+        },
+        {
+          "role": "award_badge",
+          "position": "bottom left",
+          "description": "K-BPI 골드브랜드(주방용가구부문) 금색 메달"
+        },
+        {
+          "role": "award_badge",
+          "position": "bottom center-left",
+          "description": "K-BPI(주거용가구부문) 금색 메달"
+        },
+        {
+          "role": "award_badge",
+          "position": "bottom center",
+          "description": "NBCI 국가브랜드 경쟁력지수 파란색 로고"
+        },
+        {
+          "role": "award_badge",
+          "position": "bottom center-right",
+          "description": "KCSI 고객만족도 1위 파란색/노란색 로고"
+        },
+        {
+          "role": "award_badge",
+          "position": "bottom right",
+          "description": "CCM 소비자중심경영 원형 로고"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top center",
+          "content": "국내 최고, 최초의 역사 한샘"
+        },
+        {
+          "region": "below title, center",
+          "content": "지난 반세기 동안 주거환경의 변화를 주도해 왔습니다"
+        },
+        {
+          "region": "bottom left",
+          "content": "한국산업의 브랜드파워지수(K-BPI) 골드브랜드 (주방용가구부문)"
+        },
+        {
+          "region": "bottom center-left",
+          "content": "한국산업의 브랜드파워지수(K-BPI) (주거용가구부문)"
+        },
+        {
+          "region": "bottom center",
+          "content": "국가브랜드 경쟁력지수 NBCI"
+        },
+        {
+          "region": "bottom center-right",
+          "content": "고객만족도(KCSI) 1위 (가정용 가구 부문)"
+        },
+        {
+          "region": "bottom right",
+          "content": "소비자중심경영 CCM"
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "로고 및 텍스트 영역은 그대로 두고, 각 award_badge(수상 로고) 이미지만 동일 위치/크기로 교체. 텍스트와 전체 레이아웃은 변경하지 않음.",
+      "panel": "panel_22.jpg",
+      "panel_idx": 22
+    },
+    {
+      "panel_class": "context",
+      "spatial_layout": "상단 중앙에 'Q&A 자주 찾는 질문' 제목이 크게 위치. 그 아래에 소제목과 주의사항 안내문이 박스 형태로 중앙에 배치. 중간에는 가죽 소재별 차이, 상처/주름, 색감 차이, 냄새, 컬러 차이 등 설명이 텍스트와 함께 좌우로 소재 샘플 이미지(4개)가 나란히 정렬. 하단에는 소파 컬러별 실제 거실 배치 사진(3개)이 가로로 배열. 맨 아래에는 소파 사용 Q&A가 번호와 함께 세로로 나열되어 있음. 각 구역은 명확히 분리되어 있고, 텍스트와 이미지가 혼합 배치.",
+      "elements": [
+        {
+          "role": "title",
+          "position": "top center",
+          "description": "Q&A 자주 찾는 질문 대제목"
+        },
+        {
+          "role": "subtitle",
+          "position": "below title, center",
+          "description": "엠마 컴포트 소파 가죽 주의사항 소제목"
+        },
+        {
+          "role": "info_box",
+          "position": "below subtitle, center",
+          "description": "가죽 특성 및 주의사항 안내문 박스"
+        },
+        {
+          "role": "material_sample",
+          "position": "middle left, horizontal row",
+          "description": "가죽 소재별 샘플 이미지 4개 (컬러, 상처, 질감, 주름)"
+        },
+        {
+          "role": "product_photo",
+          "position": "middle right, horizontal row",
+          "description": "소파 컬러별 실제 거실 배치 사진 3개"
+        },
+        {
+          "role": "qa_list",
+          "position": "bottom, vertical list",
+          "description": "소파 사용 Q&A 7개 항목, 번호와 함께 세로 정렬"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top center",
+          "content": "Q&A 자주 찾는 질문"
+        },
+        {
+          "region": "below title",
+          "content": "[엠마 컴포트 소파 가죽 주의사항]"
+        },
+        {
+          "region": "center box",
+          "content": "가죽의 조직, 상처, 주름, 색감 차이 등 가죽 특성 설명"
+        },
+        {
+          "region": "middle left",
+          "content": "가죽 부위별 차이, 상처와 주름, 색감 차이, 냄새 등 설명"
+        },
+        {
+          "region": "middle right",
+          "content": "상품 컬러 차이, 실제 거실 배치 사진"
+        },
+        {
+          "region": "bottom",
+          "content": "소파 사용 Q&A 7개 항목 상세 설명"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "가운데 가죽 샘플 이미지 4개와 하단 소파 컬러별 실제 거실 배치 사진 3개 영역만 교체. 텍스트, Q&A, 안내문, 레이아웃 구획은 그대로 유지.",
+      "panel": "panel_23.jpg",
+      "panel_idx": 23
+    },
+    {
+      "panel_class": "other",
+      "spatial_layout": "패널 전체가 완전히 흰색 배경으로 채워져 있다. 어떤 시각적 요소나 텍스트, 이미지, 그래픽도 존재하지 않는다. 상하좌우 여백이나 구분선, 아이콘 등도 전혀 없다. 모든 영역이 균일하게 비어 있다. 레이아웃 내에 구획이나 구조적 구분이 없다. 시각적 정보가 완전히 비어 있는 상태이다.",
+      "elements": [],
+      "text_zones": [],
+      "fixed_layout": false,
+      "swap_instruction": "패널 내에 교체할 제품 영역이 없으므로, 레이아웃을 그대로 유지하며 아무런 변경도 필요하지 않다.",
+      "panel": "panel_24.jpg",
+      "panel_idx": 24
+    }
+  ]
+}

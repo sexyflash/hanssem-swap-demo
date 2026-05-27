@@ -1,0 +1,127 @@
+{
+  "image_format": "single_product",
+  "items_results": [
+    {
+      "id": "forbid_headrest_present",
+      "verdict": "pass",
+      "reason_ko": "등쿠션 위나 뒤에 별도 헤드레스트 또는 일체형 헤드레스트 구조가 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_usb_or_power_port",
+      "verdict": "pass",
+      "reason_ko": "프레임이나 팔걸이 측면에 USB 포트, 콘센트, 전원 기능으로 보이는 요소가 없습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_recliner_mechanism",
+      "verdict": "pass",
+      "reason_ko": "풋레스트 분할선, 리클라이너 조작 버튼, 스위치 등 리클라이너 메커니즘이 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_center_5th_leg",
+      "verdict": "pass",
+      "reason_ko": "하부 중앙에 추가 지지 다리가 보이지 않고, 모서리 쪽 다리 위주로 표현되어 있습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_v_sled_leg_base",
+      "verdict": "pass",
+      "reason_ko": "다리가 좌우로 연결된 V자형 또는 슬레드형 베이스가 아니라 독립된 슬림 다리로 보입니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_tufting_or_buttons",
+      "verdict": "pass",
+      "reason_ko": "좌방석과 등쿠션 표면에 버튼 퀼팅이나 터프팅 패턴이 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_skirt_covering_legs",
+      "verdict": "pass",
+      "reason_ko": "패브릭 스커트가 바닥까지 내려와 다리를 가리는 구조가 아니며, 하부 여백과 다리가 보입니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_non_black_or_wood_legs",
+      "verdict": "pass",
+      "reason_ko": "다리는 블랙 톤의 슬림 금속 다리로 보이며 원목, 크롬, 골드 톤 다리는 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_chaise_or_attached_ottoman",
+      "verdict": "pass",
+      "reason_ko": "한쪽으로 돌출된 체어즈나 일체형 오토만 없이 2인 스트레이트 소파 형태입니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_included_small_throw_cushions_in_product_shot",
+      "verdict": "pass",
+      "reason_ko": "별도의 스몰 데코 쿠션은 보이지 않으며, 양쪽의 쿠션은 제품 구조상 팔 안쪽 보조쿠션으로 판단됩니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "frame_boxy_low_profile",
+      "verdict": "pass",
+      "reason_ko": "전체 프레임이 낮고 수평적인 직사각 박스형 실루엣으로 표현되어 원 제품의 미니멀한 외곽 형태와 부합합니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "legs_4_corners_black_steel_no_center",
+      "verdict": "pass",
+      "reason_ko": "보이는 다리는 좌우 모서리의 슬림 블랙 스틸 다리이며, 중앙 5번째 다리나 다른 형태의 지지 구조는 확인되지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "arms_box_shape_soft_rounded_edges",
+      "verdict": "pass",
+      "reason_ko": "팔걸이는 직선적인 박스형 측면을 유지하면서 모서리가 과도하게 날카롭지 않고 부드럽게 라운드 처리되어 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "connection_seat_to_inner_arm_bolster",
+      "verdict": "pass",
+      "reason_ko": "좌우 팔 안쪽의 보조쿠션이 좌방석과 시각적으로 자연스럽게 이어져 연속된 쿠션 영역처럼 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "seat_cushions_two",
+      "verdict": "pass",
+      "reason_ko": "좌방석이 중앙 세로 분할선을 기준으로 2개로 명확히 분리되어 있습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "back_cushions_two_loose_oversized",
+      "verdict": "pass",
+      "reason_ko": "등쿠션은 2개의 큰 루스 쿠션으로 보이며, 프레임 상단보다 약간 높게 올라와 원 제품의 형태와 맞습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 92,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "B는 밀로 패브릭소파 2인용의 핵심 정체성인 2개 좌방석, 2개 루스 등쿠션, 박스형 팔걸이, 낮은 프레임, 블랙 슬림 다리, 베이지 패브릭 질감을 잘 유지하고 있습니다. 금지된 헤드레스트, 리클라이너, 전장 포트, 체어즈, 데코 쿠션 등의 발명 요소도 보이지 않습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 100,
+  "verdict": "pass"
+}

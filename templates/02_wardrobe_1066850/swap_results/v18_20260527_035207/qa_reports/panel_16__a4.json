@@ -1,0 +1,16 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 55,
+  "hallucinations": [],
+  "specific_failures": [
+    "결과가 grid 형태 — single panel로 재생성"
+  ],
+  "notes_ko": "이 panel에서 적용 가능한 checklist item이 없으므로 distortion/forbidden fail은 산정되지 않습니다. B는 좌우 2분할과 하단 제품명 텍스트 구성은 유지하지만, C의 손잡이/도어 클로즈업 비교형 구도와 달리 전체 옷장 정면 이미지로 표현되어 composition 유사도는 중간 수준입니다. 사용자 제품 기준으로 명백한 invented feature는 확인되지 않습니다.",
+  "verdict": "retry",
+  "product_score_raw": 30,
+  "product_score": 50,
+  "critical_fail_count": 0
+}

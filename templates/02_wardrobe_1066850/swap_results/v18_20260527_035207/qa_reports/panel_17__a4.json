@@ -1,0 +1,109 @@
+{
+  "image_format": "lifestyle",
+  "items_results": [
+    {
+      "id": "no_bar_or_knob_handles",
+      "verdict": "pass",
+      "reason_ko": "결과 B에는 돌출된 막대형 바 핸들이나 원형 노브 손잡이가 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "external_3_tier_drawers_visible",
+      "verdict": "pass",
+      "reason_ko": "전면에 가로 분할선이 있어 상·중·하로 나뉜 3단 외부형 서랍 블록처럼 확인됩니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "long_inset_vertical_handles",
+      "verdict": "fail",
+      "reason_ko": "도어 가장자리를 따라 길게 내려오는 매립형 세로 손잡이가 명확히 보이지 않습니다. 좌우 세로 경계선은 단순 패널 경계처럼 보이며, reference의 인셋 손잡이 형태로 식별되지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "handle_color_contrasts_with_door",
+      "verdict": "not_visible",
+      "reason_ko": "식별 가능한 매립 손잡이 자체가 보이지 않아 손잡이와 도어의 톤 대비를 확인할 수 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "damping_hinges_indicator",
+      "verdict": "not_visible",
+      "reason_ko": "댐핑 힌지 관련 아이콘, 텍스트, 접사 표기는 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "shelf_thickness_18mm_note",
+      "verdict": "not_visible",
+      "reason_ko": "선반 두께 18mm를 나타내는 표기나 도식이 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "aluminum_hanging_rod_indicator",
+      "verdict": "not_visible",
+      "reason_ko": "옷걸이봉이나 알루미늄 소재 표기를 확인할 수 있는 요소가 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_finish_label",
+      "verdict": "not_visible",
+      "reason_ko": "LPM 마감임을 나타내는 텍스트나 아이콘 표기는 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "e0_grade_label",
+      "verdict": "not_visible",
+      "reason_ko": "E0 등급 관련 문구나 아이콘이 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "hinge_40000_cycles_label",
+      "verdict": "not_visible",
+      "reason_ko": "힌지 40,000회 개폐 테스트 관련 문구나 아이콘이 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "material_bending_50kg_168h_label",
+      "verdict": "not_visible",
+      "reason_ko": "50kg/168시간 자재 휨 강도 테스트 관련 표기가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "recommended_shelf_load_20kg_80cm_label",
+      "verdict": "not_visible",
+      "reason_ko": "선반 권장 하중 20kg, 80cm 기준 관련 표기가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "rod_load_16kg_80cm_label",
+      "verdict": "not_visible",
+      "reason_ko": "옷걸이봉 최대 하중 16kg, 80cm 기준 관련 표기가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    }
+  ],
+  "distortion_fail_count": 1,
+  "forbidden_fail_count": 0,
+  "composition_score": 68,
+  "hallucinations": [],
+  "specific_failures": [
+    "도어 가장자리를 따라 이어지는 세로형 매립 손잡이가 명확히 재현되지 않음",
+    "distortion fail · long_inset_vertical_handles: 도어 가장자리를 따라 길게 내려오는 매립형 세로 손잡이가 명확히 보이지 않습니다. 좌우 세로 경계선은 단순 패널 경계처럼 보이며, reference의 인셋 손잡이 형태로 식별되지 않습니다."
+  ],
+  "notes_ko": "결과 B는 크림색 평면 가구 표면과 손의 접촉 구도는 원본 C와 유사하지만, reference에서 중요한 세로 매립형 손잡이 디테일이 거의 보이지 않습니다. 돌출 손잡이는 없어 forbidden 항목은 통과합니다.",
+  "critical_fail_count": 1,
+  "product_score_raw": null,
+  "product_score": 71,
+  "verdict": "retry"
+}

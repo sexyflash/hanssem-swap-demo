@@ -1,0 +1,14 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 93,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "이 패널에 적용 가능한 verifiable checklist items가 제공되지 않아 항목별 distortion/forbidden fail은 없습니다. 전반적으로 B는 상단 소파 구조도, 점선/해칭 적용범위 표시, 우측 하단 원형 아이콘과 텍스트, 하단 사양표 구성 등 C의 chart_diagram 구도를 잘 유지합니다. 제품도 2인용 패브릭 소파 형태, 양쪽 팔걸이, 2분할 좌방석, 등쿠션, 슬림 블랙 다리 등 사용자 제품의 주요 인상과 크게 어긋나는 invented feature는 보이지 않습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 50,
+  "verdict": "retry"
+}

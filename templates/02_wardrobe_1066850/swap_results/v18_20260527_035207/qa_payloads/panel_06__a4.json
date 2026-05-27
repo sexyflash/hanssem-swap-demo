@@ -1,0 +1,63 @@
+{
+  "panel_id": "panel_06.jpg",
+  "panel_class": "color_option",
+  "vision_model": "gpt-5.5",
+  "ref_paths": [
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_01.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_03.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_04.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_10.png"
+  ],
+  "ref_labels": [
+    "color_variant·전체정면",
+    "color_variant·전체정면",
+    "material·도어 마감표면",
+    "detail_close_up·손잡이/도어모서리"
+  ],
+  "panel_orig_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/panel_06.jpg",
+  "swap_result_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/swap_results/v18_20260527_035207/gpt_image/panel_06__a4_v16.png",
+  "applicable_item_ids": [
+    "color_options_panel_exact_3",
+    "handle_color_contrasts_with_door",
+    "creamwhite_handle_same_tone_as_white_handle"
+  ],
+  "user_prompt": "=== TASK ===\n이 swap 결과(B)를 사용자 제품의 verifiable checklist로 채점하라.\n\n=== 사용자 제품 ===\ncategory: wardrobe\n제품명: 샘베딩 클로즈 옷장세트 160cm(높이216cm) 서랍형 6종\n핵심 axis: doors, handles, drawers, shelves, hanging_rod, hinges, back_panel, frame, color, finish, size, module_lineup, base\n\n=== 첨부 이미지 ===\n  A_1 = color_variant·전체정면\n  A_2 = color_variant·전체정면\n  A_3 = material·도어 마감표면\n  A_4 = detail_close_up·손잡이/도어모서리\n  B = swap 결과 (채점 대상)\n  C = 한샘 원본 panel (composition reference)\n\n=== Panel 컨텍스트 ===\npanel_id: panel_06.jpg\npanel_class: color_option\nspatial_layout: 이미지는 2x2 그리드로 네 개의 동일 크기 사각형 영역으로 분할되어 있다. 각 영역은 서로 다른 색상 또는 마감재의 표면을 클로즈업으로 보여준다. 각 사각형은 상단 좌측, 상단 우측, 하단 좌측, 하단 우측에 위치한다. 각 영역의 중앙에는 세로로 금속 또는 플라스틱 재질의 손잡이 또는 경계선이 있다. 각 사각형의 배경색과 질감이 다르며, 상단 두 개는 흰색 계열, 하단 좌측은 베이지, 하단 우측은 나무 무늬이다.\n\n=== 적용 가능한 CHECKLIST ITEMS (이 panel에서 검증 가능) ===\n각 item에 category(distortion/detail/forbidden)와 generation_feasibility 가 표시됨.\n- distortion / forbidden: strict 채점 (제품 왜곡 검출이 사용자 핵심 요구)\n- detail: image gen 한계 인정 → 명백한 차이만 fail, 모호하면 pass\n- generation_feasibility=low: 더욱 보수적으로 fail 매김 (미세 디테일)\n\n- [distortion] [feas=high] id=color_options_panel_exact_3 axis=color\n    desc: 컬러 옵션 패널에 정확히 3가지 도어 컬러명이 표기됨.\n    expected: 화이트 하이글로시(유광) / 크림화이트 / 라이트오크\n    question: 결과 B의 컬러 옵션 패널에 ‘화이트 하이글로시(유광)’, ‘크림화이트’, ‘라이트오크’ 3가지가 정확 표기되었나요?\n- [    detail] [feas=medium] id=handle_color_contrasts_with_door axis=handles\n    desc: 손잡이와 도어는 서로 다른 소재/톤으로 색 대비가 보임(크림화이트 도어도 동일 손잡이 톤).\n    expected: 손잡이는 도어와 다른 톤으로 식별 가능\n    question: 결과 B에서 손잡이 색이 도어 색과 구분되어 보이나요?\n- [    detail] [feas=medium] id=creamwhite_handle_same_tone_as_white_handle axis=handles\n    desc: 컬러 옵션에서 크림화이트 도어의 손잡이 컬러가 화이트 도어와 동일 톤으로 표현됨.\n    expected: 크림화이트 도어 손잡이 = 화이트 도어 손잡이 톤\n    question: 결과 B의 컬러 옵션에서 크림화이트와 화이트 도어의 손잡이 톤이 동일하게 보이나요?\n\n=== 출력 schema (strict JSON) ===\n{\n  \"image_format\": \"single_product|lifestyle|chart_diagram|multi_panel_grid\",\n  \"items_results\": [\n    {\n      \"id\": \"...\",\n      \"verdict\": \"pass|fail|not_visible\",\n      \"reason_ko\": \"...\",\n      \"category\": \"distortion|detail|forbidden\",\n      \"generation_feasibility\": \"high|medium|low\"\n    }\n  ],\n  \"distortion_fail_count\": int,\n  \"forbidden_fail_count\": int,\n  \"composition_score\": 0-100,\n  \"hallucinations\": [\"발견된 invented feature 한국어\"],\n  \"specific_failures\": [\"distortion/forbidden fail 항목의 한국어 요약\"],\n  \"notes_ko\": \"...\"\n}\n\n판정 가이드:\n- distortion item: 다리 개수 / 가죽 vs 패브릭 / 보조쿠션 유무 / 컬러명 등 명백한 차이 → fail\n- forbidden item: invented feature (헤드레스트 등) 발견 → fail\n- detail item: 시접 종류 / 미세 곡률 / 직조 결 등이 약간 달라도 → pass (관대)\n",
+  "result": {
+    "image_format": "multi_panel_grid",
+    "items_results": [
+      {
+        "id": "color_options_panel_exact_3",
+        "verdict": "pass",
+        "reason_ko": "결과 B에 ‘화이트 하이글로시(유광)’, ‘크림화이트’, ‘라이트오크’ 3가지 컬러명이 모두 정확히 표기되어 있습니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "handle_color_contrasts_with_door",
+        "verdict": "pass",
+        "reason_ko": "각 도어 샘플 중앙의 손잡이/경계부가 회색 금속 톤으로 표현되어 흰색, 크림색, 우드 도어와 구분되어 보입니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "creamwhite_handle_same_tone_as_white_handle",
+        "verdict": "pass",
+        "reason_ko": "크림화이트 도어와 화이트 하이글로시 도어의 손잡이가 모두 유사한 회색/실버 톤으로 표현되어 동일 톤으로 보입니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      }
+    ],
+    "distortion_fail_count": 0,
+    "forbidden_fail_count": 0,
+    "composition_score": 78,
+    "hallucinations": [],
+    "specific_failures": [
+      "결과가 grid 형태 — single panel로 재생성"
+    ],
+    "notes_ko": "제품 왜곡 기준에서 핵심 컬러명 3종은 정확히 표시되어 PASS입니다. 다만 원본 C의 2x2 균등 분할 구성과 비교하면 B는 3개 옵션만 배치되고 하단 좌측이 빈 공간처럼 남아 있어 구도 일치도는 다소 낮습니다.",
+    "verdict": "retry",
+    "product_score_raw": 30,
+    "product_score": 100,
+    "critical_fail_count": 0
+  }
+}

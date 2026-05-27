@@ -1,0 +1,33 @@
+{
+  "panel_id": "panel_11.jpg",
+  "panel_class": "structure_chart",
+  "vision_model": "gpt-5.5",
+  "ref_paths": [
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/milo_777039/use_product/p08_frame_02.jpg",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/milo_777039/use_product/detail_02.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/milo_777039/use_product/p08_frame_04.png"
+  ],
+  "ref_labels": [
+    "main_view·전체각도",
+    "detail_close_up·좌방석/팔걸이/쿠션",
+    "detail_close_up·쿠션/시접"
+  ],
+  "panel_orig_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/01_sofa_992474/panel_11.jpg",
+  "swap_result_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/01_sofa_992474/swap_results/v17_20260527_004219/gpt_image/panel_11__a1_v16.png",
+  "applicable_item_ids": [],
+  "user_prompt": "=== TASK ===\n이 swap 결과(B)를 사용자 제품의 verifiable checklist로 채점하라.\n\n=== 사용자 제품 ===\ncategory: sofa\n제품명: 밀로 패브릭소파 2인용\n핵심 axis: legs, arms, seat_cushion, back_cushion, frame, fabric, color, connection, size, model, seam\n\n=== 첨부 이미지 ===\n  A_1 = main_view·전체각도\n  A_2 = detail_close_up·좌방석/팔걸이/쿠션\n  A_3 = detail_close_up·쿠션/시접\n  B = swap 결과 (채점 대상)\n  C = 한샘 원본 panel (composition reference)\n\n=== Panel 컨텍스트 ===\npanel_id: panel_11.jpg\npanel_class: structure_chart\nspatial_layout: sofa가 panel 상단 60% 영역에 정면에서 약간 우측 사선으로 크게 배치되어 있다. 소파 표면에는 사선 해칭과 점선으로 특정 부위가 강조되어 있으며, 우측 하단에는 '플렉싱 가죽 적용범위'라는 원형 점선 아이콘과 텍스트가 소파 옆에 위치한다. 하단 40% 영역에는 가로로 긴 표가 배치되어 있으며, 각 행마다 좌측에 항목명, 우측에 상세 설명이 정렬되어 있다. 표는 얇은 가로선으로 구분되어 있으며, 전체적으로 중앙 정렬된 느낌이다. 텍스트는 소파 하단과 표 내부에 집중되어 있다. 전체적으로 여백이 넉넉하게 배치되어 있다.\n\n=== 적용 가능한 CHECKLIST ITEMS (이 panel에서 검증 가능) ===\n각 item에 category(distortion/detail/forbidden)와 generation_feasibility 가 표시됨.\n- distortion / forbidden: strict 채점 (제품 왜곡 검출이 사용자 핵심 요구)\n- detail: image gen 한계 인정 → 명백한 차이만 fail, 모호하면 pass\n- generation_feasibility=low: 더욱 보수적으로 fail 매김 (미세 디테일)\n\n  (none)\n\n=== 출력 schema (strict JSON) ===\n{\n  \"image_format\": \"single_product|lifestyle|chart_diagram|multi_panel_grid\",\n  \"items_results\": [\n    {\n      \"id\": \"...\",\n      \"verdict\": \"pass|fail|not_visible\",\n      \"reason_ko\": \"...\",\n      \"category\": \"distortion|detail|forbidden\",\n      \"generation_feasibility\": \"high|medium|low\"\n    }\n  ],\n  \"distortion_fail_count\": int,\n  \"forbidden_fail_count\": int,\n  \"composition_score\": 0-100,\n  \"hallucinations\": [\"발견된 invented feature 한국어\"],\n  \"specific_failures\": [\"distortion/forbidden fail 항목의 한국어 요약\"],\n  \"notes_ko\": \"...\"\n}\n\n판정 가이드:\n- distortion item: 다리 개수 / 가죽 vs 패브릭 / 보조쿠션 유무 / 컬러명 등 명백한 차이 → fail\n- forbidden item: invented feature (헤드레스트 등) 발견 → fail\n- detail item: 시접 종류 / 미세 곡률 / 직조 결 등이 약간 달라도 → pass (관대)\n",
+  "result": {
+    "image_format": "chart_diagram",
+    "items_results": [],
+    "distortion_fail_count": 0,
+    "forbidden_fail_count": 0,
+    "composition_score": 93,
+    "hallucinations": [],
+    "specific_failures": [],
+    "notes_ko": "이 패널에 적용 가능한 verifiable checklist items가 제공되지 않아 항목별 distortion/forbidden fail은 없습니다. 전반적으로 B는 상단 소파 구조도, 점선/해칭 적용범위 표시, 우측 하단 원형 아이콘과 텍스트, 하단 사양표 구성 등 C의 chart_diagram 구도를 잘 유지합니다. 제품도 2인용 패브릭 소파 형태, 양쪽 팔걸이, 2분할 좌방석, 등쿠션, 슬림 블랙 다리 등 사용자 제품의 주요 인상과 크게 어긋나는 invented feature는 보이지 않습니다.",
+    "critical_fail_count": 0,
+    "product_score_raw": null,
+    "product_score": 50,
+    "verdict": "retry"
+  }
+}

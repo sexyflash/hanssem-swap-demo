@@ -37,10 +37,68 @@ elif _pi_v1.exists():
     product_input = json.loads(_pi_v1.read_text())
 else:
     product_input = {}
-mismatch = json.loads((TPL_ROOT / "01_sofa_992474/mismatch_resolution.json").read_text())
-text_subs_data = json.loads((TPL_ROOT / "01_sofa_992474/text_substitute.json").read_text())
-verdict_by_panel = {r["panel_idx"]: r for r in mismatch["resolutions"]}
-text_subs_by_idx = {item["i"]: item for item in text_subs_data["substitutes"]}
+def _user_dir_for_rank(rank: int) -> Path | None:
+    """rank → user_products/<id>/ Path."""
+    if rank == 1:
+        d = HERE / "user_products/milo_777039"
+        return d if d.exists() else None
+    for d in sorted((HERE / "user_products").glob(f"{rank:02d}_*")):
+        if d.is_dir() and (d / "use_product").exists():
+            return d
+    return None
+
+
+def _user_dir_rel_for_rank(rank: int) -> str:
+    d = _user_dir_for_rank(rank)
+    return f"../user_products/{d.name}" if d else "../user_products/milo_777039"
+
+
+def _user_product_name_for_rank(rank: int) -> str:
+    """user_products/0X_*/product_input.json 의 product_name. fallback: milo 2인용 (#1)."""
+    user_root = HERE / "user_products"
+    if rank == 1:
+        for fn in ('product_input_v3.json', 'product_input.json'):
+            p = user_root / "milo_777039" / fn
+            if p.exists():
+                try:
+                    return json.loads(p.read_text()).get("product_name", "milo 2인용") or "milo 2인용"
+                except Exception:
+                    pass
+        return "milo 2인용"
+    for d in sorted(user_root.glob(f"{rank:02d}_*")):
+        for fn in ('product_input.json', 'product_input_v3.json'):
+            p = d / fn
+            if p.exists():
+                try:
+                    return json.loads(p.read_text()).get("product_name", d.name) or d.name
+                except Exception:
+                    return d.name
+    return f"rank {rank}"
+
+
+def _load_mismatch_for_template(tpl_dir: Path):
+    p = tpl_dir / "mismatch_resolution.json"
+    if not p.exists():
+        return {}
+    d = json.loads(p.read_text())
+    return {r["panel_idx"]: r for r in d.get("resolutions", [])}
+
+
+def _load_text_subs_for_template(tpl_dir: Path):
+    p = tpl_dir / "text_substitute.json"
+    if not p.exists():
+        return {}
+    d = json.loads(p.read_text())
+    return {item["i"]: item for item in d.get("substitutes", [])}
+
+
+# #1 sofa (legacy 호환) — global 변수 유지 후 view() 에서 t 별로 override
+mismatch = json.loads((TPL_ROOT / "01_sofa_992474/mismatch_resolution.json").read_text()) \
+    if (TPL_ROOT / "01_sofa_992474/mismatch_resolution.json").exists() else {"resolutions": []}
+text_subs_data = json.loads((TPL_ROOT / "01_sofa_992474/text_substitute.json").read_text()) \
+    if (TPL_ROOT / "01_sofa_992474/text_substitute.json").exists() else {"substitutes": []}
+verdict_by_panel = {r["panel_idx"]: r for r in mismatch.get("resolutions", [])}
+text_subs_by_idx = {item["i"]: item for item in text_subs_data.get("substitutes", [])}
 
 # QA 한국어 번역 로드 (v6 run 옆 qa_korean.json)
 qa_korean_by = {}  # (label, attempt) → translation
@@ -80,20 +138,27 @@ def assign_sections(panel_count):
 
 
 def get_swap_results(t):
-    if t["rank"] != 1:
-        return None
+    # 모든 rank 의 swap_results 표시 (없으면 None)
     sr = TPL_ROOT / f"{t['rank']:02d}_{t['category']}_{t['gdsNo']}" / "swap_results"
-    for marker in ["latest_v14.txt", "latest_v13.txt", "latest_v12.txt", "latest_v11.txt", "latest_v10.txt", "latest_v9.txt", "latest_v8.txt", "latest_v7.txt", "latest_v6.txt", "latest_v5.txt", "latest_v4.txt", "latest.txt"]:
+    if not sr.exists():
+        return None
+    # v18+ 동적으로 추가될 latest_vN.txt 도 잡음 — 최상위는 가장 큰 N
+    sr_files = sorted([f.name for f in sr.glob("latest_v*.txt")],
+                      key=lambda n: -int(n.replace("latest_v","").replace(".txt","") or "0"))
+    for marker in sr_files + ["latest.txt"]:
         latest = sr / marker
         if latest.exists():
             run_name = latest.read_text().strip()
             run_dir = sr / run_name
             if (run_dir / "summary.json").exists():
                 summary = json.loads((run_dir / "summary.json").read_text())
-                by_label = {c["label"]: c for c in summary["cells"]}
+                by_label = {c["label"]: c for c in summary["cells"] if c.get("label")}
+                # progress.in_progress 추출
+                in_prog = set((summary.get("progress") or {}).get("in_progress") or [])
                 return {
                     "run_dir_rel": f"../templates/{t['rank']:02d}_{t['category']}_{t['gdsNo']}/swap_results/{run_name}/gpt_image",
                     "summary": summary, "by_label": by_label,
+                    "in_progress": in_prog,
                     "marker": marker,
                 }
     return None
@@ -139,19 +204,36 @@ def _load_panel_ref_map():
     return _PANEL_REF_MAP
 
 
-def zone_refs_for_panel(panel_label):
-    """v14 panel-level refs — panel별로 큐레이션된 ref만 표시.
-    panel_label: 'cover' 또는 'panel_03.jpg' 등 (panel_ref_mapping.json 키)
-    """
-    m = _load_panel_ref_map()
-    panel_entry = m["panels"].get(panel_label)
+def zone_refs_for_panel(panel_label, t=None):
+    """v14 panel-level refs — t 기반 동적 user_dir."""
+    # 호출자가 t 안 줬으면 #1 (legacy) fallback
+    rank = t["rank"] if t else 1
+    user_rel = _user_dir_rel_for_rank(rank)
+    # template 의 panel_ref_mapping_v16.json (각 swap_results run dir에 있음) 사용
+    if t:
+        sr_dir = TPL_ROOT / f"{rank:02d}_{t['category']}_{t['gdsNo']}/swap_results"
+        # latest run 의 panel_ref_mapping_v16.json
+        latest_files = sorted(sr_dir.glob("latest_v*.txt"),
+                              key=lambda p: -int(p.stem.replace("latest_v","") or "0"))
+        ref_map = None
+        for lf in latest_files:
+            run_name = lf.read_text().strip()
+            rm_path = sr_dir / run_name / "panel_ref_mapping_v16.json"
+            if rm_path.exists():
+                ref_map = json.loads(rm_path.read_text())
+                break
+        panel_entry = (ref_map or {}).get("panels", {}).get(panel_label) if ref_map else None
+    else:
+        m = _load_panel_ref_map()
+        panel_entry = m["panels"].get(panel_label)
+
     if not panel_entry:
         return []
     refs = []
-    for i, (key, path) in enumerate(zip(panel_entry["ref_keys"], panel_entry["ref_paths"]), start=2):
+    for i, (key, path) in enumerate(zip(panel_entry.get("ref_keys", []), panel_entry.get("ref_paths", [])), start=2):
         refs.append({
             "role": f"IMAGE {i} — {key}",
-            "path": f"../user_products/milo_777039/{path}",
+            "path": f"{user_rel}/{path}",
         })
     return refs
 
@@ -181,7 +263,11 @@ def split_detail_segments(t):
     return segments
 
 
-def rewrite_segment(seg_html, panel_idx, side, t, swap_results=None, src_to_local=None):
+def rewrite_segment(seg_html, panel_idx, side, t, swap_results=None, src_to_local=None,
+                    t_verdict_by_panel=None):
+    # template-specific verdict (per-t) — fallback to global (sofa #1)
+    if t_verdict_by_panel is None:
+        t_verdict_by_panel = verdict_by_panel
     soup = BeautifulSoup(seg_html, "lxml")
     body = soup.find("body")
     container = body if body else soup
@@ -210,7 +296,7 @@ def rewrite_segment(seg_html, panel_idx, side, t, swap_results=None, src_to_loca
         if side == "swap" and swap_results:
             sname = f"panel_{panel_idx:02d}"
             cell = swap_results["by_label"].get(sname)
-            verdict_info = verdict_by_panel.get(panel_idx, {})
+            verdict_info = t_verdict_by_panel.get(panel_idx, {})
             verdict = verdict_info.get("verdict", "match")
             panel_class = (cell or {}).get("panel_class") or "other"
 
@@ -219,7 +305,7 @@ def rewrite_segment(seg_html, panel_idx, side, t, swap_results=None, src_to_loca
                 alt_body = verdict_info.get("alt_body", "")
                 wrap = BeautifulSoup(f'''
 <div class="bypass-card">
-  <div class="bypass-tag">우회 · 밀로엔 없는 기능</div>
+  <div class="bypass-tag">우회 · 사용자 제품엔 없는 기능</div>
   <div class="bypass-hanssem">한샘 원본: {verdict_info.get("hanssem_feature","")[:60]}</div>
   <h3 class="bypass-title">{alt_title}</h3>
   <p class="bypass-body">{alt_body}</p>
@@ -233,13 +319,14 @@ def rewrite_segment(seg_html, panel_idx, side, t, swap_results=None, src_to_loca
                 wrap = BeautifulSoup(f'''
 <div class="bypass-card skip">
   <div class="bypass-tag skip">정보 누락 · skip</div>
-  <p class="bypass-body">밀로 detail에 정보 없음 — 건너뜀</p>
+  <p class="bypass-body">사용자 제품에 정보 없음 — 건너뜀</p>
   <div class="panel-number-chip">{panel_idx:02d}</div>
 </div>
 ''', "html.parser")
                 img.replace_with(wrap)
                 continue
 
+            sname_label = sname  # for polling DOM lookup
             if cell and cell.get("final") and cell["final"].get("image"):
                 f = cell["final"]
                 img_url = f"{swap_results['run_dir_rel']}/{f['image']}"
@@ -260,15 +347,15 @@ def rewrite_segment(seg_html, panel_idx, side, t, swap_results=None, src_to_loca
                     ko = qa_korean_by.get((att_label, att_n), {})
                     attempts_meta.append({
                         "attempt": att_n,
-                        "strategy": a.get("strategy"),
+                        "strategy": a.get("strategy") or a.get("stage"),
                         "prod": a.get("product_score"),
                         "comp": a.get("composition_score"),
                         "seats": a.get("seat_count_in_B"),
                         "text_in_image": a.get("text_in_image"),
                         "structure_preserved": a.get("structure_preserved", True),
                         "verdict": a.get("verdict"),
-                        "notes": (a.get("notes") or "")[:600],
-                        "notes_ko": ko.get("notes_ko", ""),
+                        "notes": (a.get("notes") or a.get("notes_ko") or "")[:600],
+                        "notes_ko": ko.get("notes_ko", "") or a.get("notes_ko") or "",
                         "specific_failures": a.get("specific_failures") or [],
                         "specific_failures_ko": ko.get("specific_failures_ko") or [],
                         "reference_influences": a.get("reference_influences") or [],
@@ -277,11 +364,17 @@ def rewrite_segment(seg_html, panel_idx, side, t, swap_results=None, src_to_loca
                         "ref_count": a.get("ref_count"),
                         "image": a.get("image"),
                         "fal_url": a.get("fal_url"),
+                        # v16+ 추가
+                        "items_results": a.get("items_results") or [],
+                        "critical_fail_count": a.get("critical_fail_count"),
+                        "hallucinations": a.get("hallucinations") or [],
+                        "qa_payload_rel": a.get("qa_payload_rel"),
                     })
 
-                # panel C 실제 파일 (.jpg/.png/.gif 자동 탐색)
-                orig_files = list((TPL_ROOT / "01_sofa_992474").glob(f"panel_{panel_idx:02d}.*"))
-                orig_panel_url = (f"../templates/01_sofa_992474/{orig_files[0].name}"
+                # panel C 실제 파일 (.jpg/.png/.gif 자동 탐색) — t 기반 동적
+                _tpl_name = f"{t['rank']:02d}_{t['category']}_{t['gdsNo']}"
+                orig_files = list((TPL_ROOT / _tpl_name).glob(f"panel_{panel_idx:02d}.*"))
+                orig_panel_url = (f"../templates/{_tpl_name}/{orig_files[0].name}"
                                   if orig_files else "")
                 # panel_ref_mapping 키는 실제 파일명 (e.g. "panel_03.jpg", "panel_08.gif")
                 panel_label = orig_files[0].name if orig_files else f"panel_{panel_idx:02d}.jpg"
@@ -291,15 +384,21 @@ def rewrite_segment(seg_html, panel_idx, side, t, swap_results=None, src_to_loca
                     "strategies_used": "/".join(cell.get("strategies_used", [])),
                     "passed": cell.get("passed"),
                     "attempts": attempts_meta,
-                    "refs_zone": zone_refs_for_panel(panel_label),
+                    "refs_zone": zone_refs_for_panel(panel_label, t),
                     "run_dir_rel": swap_results["run_dir_rel"],
                     "original_panel": orig_panel_url,
+                    # v16+ 추가
+                    "ref_labels": cell.get("ref_labels") or [],
+                    "ref_keys": cell.get("ref_keys") or [],
+                    "applicable_item_ids": cell.get("applicable_item_ids") or [],
+                    "best_selection_method": cell.get("best_selection_method"),
+                    "judge_log": cell.get("judge_log") or [],
                 }
                 payload_json = json.dumps(payload, ensure_ascii=False).replace('"', "&quot;")
 
                 ri_badge = f'<span class="score-badge score-red" title="ref influences: {len(ri)}">RI {len(ri)}</span>' if ri else ''
                 wrap = BeautifulSoup(f'''
-<div class="img-with-chip" data-panel-idx="{panel_idx}">
+<div class="img-with-chip cell-ready" data-panel-idx="{panel_idx}" data-panel-label="{sname_label}">
   <img src="{img_url}" data-panel-idx="{panel_idx}" loading="lazy"/>
   <div class="panel-number-chip">{panel_idx:02d}</div>
   <div class="score-row">
@@ -315,8 +414,18 @@ def rewrite_segment(seg_html, panel_idx, side, t, swap_results=None, src_to_loca
                 img.replace_with(wrap)
                 continue
             else:
+                is_processing = sname_label in (swap_results.get("in_progress") or set())
+                state_cls = "cell-processing" if is_processing else "cell-pending"
+                state_label = "생성 중" if is_processing else "대기"
                 wrap = BeautifulSoup(f'''
-<div class="img-with-chip"><img src="{local}" class="orig-fallback"/><div class="panel-number-chip">{panel_idx:02d}</div><div class="score-row"><span class="score-badge score-na">no result</span></div></div>
+<div class="img-with-chip {state_cls}" data-panel-idx="{panel_idx}" data-panel-label="{sname_label}">
+  <img src="{local}" class="orig-fallback"/>
+  <div class="panel-number-chip">{panel_idx:02d}</div>
+  <div class="cell-state-overlay">
+    <div class="cell-spinner"></div>
+    <div class="cell-state-label">{state_label}</div>
+  </div>
+</div>
 ''', "html.parser")
                 img.replace_with(wrap)
                 continue
@@ -337,6 +446,8 @@ def build_panel_rows(t, swap_results):
     dir_name = f"{rank:02d}_{cat}_{gds}"
     meta_path = TPL_ROOT / dir_name / "meta.json"
     meta = json.loads(meta_path.read_text())
+    # template-specific verdict by panel
+    t_verdict_by_panel = _load_mismatch_for_template(TPL_ROOT / dir_name)
 
     src_to_local = {}
     for i, src in enumerate(meta.get("detail_imgs", []), 1):
@@ -369,8 +480,8 @@ def build_panel_rows(t, swap_results):
             rng = f"panel {indices[0]}" + (f"–{indices[-1]}" if len(indices) > 1 else "")
             sec_div = f'<div class="section-divider"><span class="sec-name">{sec_name}</span><span class="sec-range">{rng}</span></div>'
 
-        orig_seg = rewrite_segment(seg_html, panel_idx, "orig", t, swap_results, src_to_local)
-        swap_seg = rewrite_segment(seg_html, panel_idx, "swap", t, swap_results, src_to_local)
+        orig_seg = rewrite_segment(seg_html, panel_idx, "orig", t, swap_results, src_to_local, t_verdict_by_panel)
+        swap_seg = rewrite_segment(seg_html, panel_idx, "swap", t, swap_results, src_to_local, t_verdict_by_panel)
 
         if sec_div:
             rows_html.append(sec_div)
@@ -397,11 +508,11 @@ def build_cover_row(t, swap_results):
         for a in cell.get("attempts", []):
             ko = qa_korean_by.get(("cover", a.get("attempt")), {})
             attempts_meta.append({
-                "attempt": a.get("attempt"), "strategy": a.get("strategy"),
+                "attempt": a.get("attempt"), "strategy": a.get("strategy") or a.get("stage"),
                 "prod": a.get("product_score"), "comp": a.get("composition_score"),
                 "seats": a.get("seat_count_in_B"), "verdict": a.get("verdict"),
-                "notes": (a.get("notes") or "")[:600],
-                "notes_ko": ko.get("notes_ko", ""),
+                "notes": (a.get("notes") or a.get("notes_ko") or "")[:600],
+                "notes_ko": ko.get("notes_ko", "") or a.get("notes_ko") or "",
                 "specific_failures": a.get("specific_failures") or [],
                 "specific_failures_ko": ko.get("specific_failures_ko") or [],
                 "reference_influences": a.get("reference_influences") or [],
@@ -411,20 +522,30 @@ def build_cover_row(t, swap_results):
                 "structure_preserved": a.get("structure_preserved", True),
                 "image": a.get("image"),
                 "ref_count": a.get("ref_count"),
+                # v16+ 추가
+                "items_results": a.get("items_results") or [],
+                "critical_fail_count": a.get("critical_fail_count"),
+                "hallucinations": a.get("hallucinations") or [],
+                "qa_payload_rel": a.get("qa_payload_rel"),
             })
         payload = {
             "panel": "cover", "panel_class": "intro_hero",
             "strategies_used": "/".join(cell.get("strategies_used", [])),
             "passed": cell.get("passed"),
             "attempts": attempts_meta,
-            "refs_zone": zone_refs_for_panel("cover"),
+            "refs_zone": zone_refs_for_panel("cover", t),
             "run_dir_rel": swap_results["run_dir_rel"],
             "original_panel": cover_src,
+            "ref_labels": cell.get("ref_labels") or [],
+            "ref_keys": cell.get("ref_keys") or [],
+            "applicable_item_ids": cell.get("applicable_item_ids") or [],
+            "best_selection_method": cell.get("best_selection_method"),
+            "judge_log": cell.get("judge_log") or [],
         }
         payload_json = json.dumps(payload, ensure_ascii=False).replace('"', "&quot;")
         ri_badge = f'<span class="score-badge score-red">RI {len(ri)}</span>' if ri else ''
         swap_html = f'''
-<div class="img-with-chip cover-wrap">
+<div class="img-with-chip cover-wrap cell-ready" data-panel-label="cover">
   <img class="cover-img" src="{img_url}"/>
   <div class="panel-number-chip">00</div>
   <div class="score-row">
@@ -436,7 +557,20 @@ def build_cover_row(t, swap_results):
 </div>
 '''
     else:
-        swap_html = f'<div class="img-with-chip cover-wrap"><img class="cover-img orig-fallback" src="{cover_src}"/><div class="panel-number-chip">00</div></div>'
+        is_processing = "cover" in (swap_results.get("in_progress") or set()) if swap_results else False
+        state_cls = "cell-processing" if is_processing else "cell-pending"
+        state_label = "생성 중" if is_processing else "대기"
+        swap_html = f'''
+<div class="img-with-chip cover-wrap {state_cls}" data-panel-label="cover">
+  <img class="cover-img orig-fallback" src="{cover_src}"/>
+  <div class="panel-number-chip">00</div>
+  <div class="cell-state-overlay">
+    <div class="cell-spinner"></div>
+    <div class="cell-state-label">{state_label}</div>
+  </div>
+</div>
+'''
+    user_name = _user_product_name_for_rank(t['rank'])
     return f'''
 <div class="panel-row cover-row" id="sec-cover-{t['rank']}">
   <div class="cell orig">
@@ -444,7 +578,7 @@ def build_cover_row(t, swap_results):
     <div class="img-with-chip cover-wrap"><img class="cover-img" src="{cover_src}"/><div class="panel-number-chip">00</div></div>
   </div>
   <div class="cell swap">
-    <div class="section-divider cover-divider"><span class="sec-name">커버 swap</span><span class="sec-range">밀로 2인용</span></div>
+    <div class="section-divider cover-divider"><span class="sec-name">커버 swap</span><span class="sec-range">{user_name[:30]}</span></div>
     {swap_html}
   </div>
 </div>
@@ -466,38 +600,16 @@ def build_tabs_bar(rank, sections_map):
     return "\n".join(btns)
 
 
-def build_zone_inputs():
-    """이미지 zone — multi-tier ref pattern.
-    Tier 1: 원본 use_product (사용자 업로드)
-    Tier 2: AI 합성 시트 (1슬롯에 N장 정보 압축 — 10-slot 제약 해소)
-    썸네일 클릭 → 모달."""
-    use_prod_dir = USER_PROD_ROOT / "milo_777039/use_product"
-    use_prod = "../user_products/milo_777039/use_product"
-    prep_dir = USER_PROD_ROOT / "milo_777039/preprocessed"
-    prep = "../user_products/milo_777039/preprocessed"
-    details_dir = use_prod_dir / "details"
-    scenes_dir = use_prod_dir / "scenes"
+def build_zone_inputs(t=None):
+    """이미지 zone — t 기반 동적 user_product. t 없으면 #1 milo (legacy)."""
+    rank = t["rank"] if t else 1
+    user_dir = _user_dir_for_rank(rank)
+    if not user_dir:
+        return ""
+    use_prod_dir = user_dir / "use_product"
+    use_prod = f"../user_products/{user_dir.name}/use_product"
 
-    # Tier 1 — 원본 분류별
-    product_imgs = sorted([
-        f for f in use_prod_dir.glob("p08_frame_0*")
-        if not f.name.startswith("p08_frame_01_color")
-    ])
-    color_variant_imgs = sorted(use_prod_dir.glob("p08_frame_01_color_*"))
-    color_swatches = sorted(use_prod_dir.glob("color_0*.png"))
-    material_imgs = sorted(use_prod_dir.glob("material*"))
-    detail_imgs = []
-    if details_dir.exists():
-        detail_imgs = (sorted(details_dir.glob("detail_*.jpg"))
-                       + sorted(details_dir.glob("detail_*.png"))
-                       + sorted(details_dir.glob("detail_*.webp")))
-    scene_imgs = []
-    if scenes_dir.exists():
-        scene_imgs = sorted(scenes_dir.glob("scene_*.jpg")) + sorted(scenes_dir.glob("scene_*.png"))
-
-    # v15 — master sheet 완전 제거. panel-level mapping만 사용.
-
-    # vision 분류 (66번 출력) 로드
+    # vision 분류 (96번 출력) 로드 — 카테고리 무관 generic
     cls_path = use_prod_dir / "classification.json"
     by_cat = {}
     if cls_path.exists():
@@ -513,22 +625,18 @@ def build_zone_inputs():
                 out.append((f"{use_prod}/{it['filename']}", f"{it['filename']} · {it.get('subject','')}"))
         return out
 
-    # 사용자 보정: p08_frame_04/05는 detail (vision이 main으로 분류했어도 사용자 의도)
-    main_files = [(p, l) for p, l in files_for("main_view") if "p08_frame_04" not in p and "p08_frame_05" not in p and "detail_" not in p.split("/")[-1]]
+    main_files = files_for("main_view")
     detail_files = files_for("detail_close_up")
-    # 보정 보충
-    for fn in ["p08_frame_04.png", "p08_frame_05.png"]:
-        fp = use_prod_dir / fn
-        if fp.exists() and not any(fn in p for p, _ in detail_files):
-            detail_files.append((f"{use_prod}/{fn}", f"{fn} · 디테일 (사용자 의도)"))
     color_var_files = files_for("color_variant")
+    color_swatch_files = files_for("color_swatch")
     mat_files = files_for("material")
 
     zones_data = [
-        ("📷 MAIN VIEW (메인 전체샷 — vision 자동 분류)", main_files),
-        ("🔎 DETAIL CLOSE-UP (디테일 — vision 분류 + p08_frame_04,05 보정)", detail_files),
+        ("📷 MAIN VIEW (메인 전체샷)", main_files),
+        ("🔎 DETAIL CLOSE-UP (부분 디테일)", detail_files),
         ("📦 COLOR VARIANT (다른 컬러 전체샷)", color_var_files),
-        ("🧵 MATERIAL (소재/원단 close-up)", mat_files),
+        ("🎨 COLOR SWATCH (컬러 견본)", color_swatch_files),
+        ("🧵 MATERIAL (소재 close-up)", mat_files),
     ]
     out = ""
     for title, files in zones_data:
@@ -755,7 +863,7 @@ def build_process_card(t, swap_results):
       </div>
     </div>
     <div class="proc-h">📷 이미지 입력 — zone 분리 (담당자 업로드)</div>
-    <div class="zone-row">{build_zone_inputs()}</div>
+    <div class="zone-row">{build_zone_inputs(t)}</div>
 
     <div class="proc-h" style="margin-top:20px;">📝 텍스트 입력 — 필드별 분리 (한샘 페이지 vision 자동 추출 · 담당자 수정 가능)</div>
     {build_text_input_fields()}
@@ -786,13 +894,13 @@ def chip(t):
 def view(t):
     rank = t["rank"]
     is_first = rank == 1
-    swap_results = get_swap_results(t) if rank == 1 else None
+    swap_results = get_swap_results(t)  # 모든 active template 에 대해 swap 결과 lookup
     meta_path = TPL_ROOT / f"{t['rank']:02d}_{t['category']}_{t['gdsNo']}/meta.json"
     meta = json.loads(meta_path.read_text())
     panel_count = meta.get("detail_img_count") or meta.get("panel_count") or len(meta.get("detail_imgs", []))
     sections_map = assign_sections(panel_count)
-    cover_row = build_cover_row(t, swap_results) if rank == 1 else ""
-    panel_rows = build_panel_rows(t, swap_results) if rank == 1 else ""
+    cover_row = build_cover_row(t, swap_results)
+    panel_rows = build_panel_rows(t, swap_results)
 
     return f'''
 <div class="view {'active' if is_first else ''}" data-rank="{rank}">
@@ -801,7 +909,7 @@ def view(t):
   <div class="dual-grid">
     <div class="dual-header">
       <div class="dual-h-left">원본 한샘 detail</div>
-      <div class="dual-h-right">swap · 밀로 2인용 · GPT</div>
+      <div class="dual-h-right">swap · {_user_product_name_for_rank(rank)[:40]} · GPT</div>
     </div>
     {cover_row}
     {panel_rows}
@@ -810,15 +918,63 @@ def view(t):
 '''
 
 
-chips_html = "\n".join(chip(t) for t in data["top6"])
-views_html = "\n".join(view(t) for t in data["top6"])
+# 활성화된 template 만 표시 — swap_results 폴더가 존재하거나 #1 (완료) 인 경우
+def _is_active(t):
+    sr = TPL_ROOT / f"{t['rank']:02d}_{t['category']}_{t['gdsNo']}" / "swap_results"
+    return t['rank'] == 1 or sr.exists()
+
+ACTIVE_TOP = [t for t in data["top6"] if _is_active(t)]
+chips_html = "\n".join(chip(t) for t in ACTIVE_TOP)
+views_html = "\n".join(view(t) for t in ACTIVE_TOP)
+
+# v16+ progress: rank 1 (현재 active) 의 summary.progress 추출
+_progress = None
+for t in data["top6"]:
+    if t["rank"] != 1:
+        continue
+    sr = get_swap_results(t)
+    if sr and sr.get("summary", {}).get("progress"):
+        _progress = sr["summary"]["progress"]
+        _progress["run"] = sr["summary"].get("run", "?")
+        _progress["wall_seconds"] = sr["summary"].get("wall_seconds", 0)
+    break
+
+_is_complete = bool(_progress and _progress.get("is_complete"))
+# polling JS가 대신 처리 — meta refresh 사용 안 함
+_meta_refresh = ""
+# rank 1 run_dir_rel 을 JS에 노출
+_rank1_summary_url = ""
+_rank1_run_dir_rel = ""
+for t in data["top6"]:
+    if t["rank"] != 1:
+        continue
+    sr = get_swap_results(t)
+    if sr:
+        # run_dir_rel = "../templates/.../swap_results/<run_name>/gpt_image"
+        # summary.json은 run_name 디렉토리 직속
+        rdr = sr["run_dir_rel"]
+        _rank1_summary_url = rdr.rsplit("/", 1)[0] + "/summary.json"
+        _rank1_run_dir_rel = rdr  # gpt_image 폴더 — image src에 사용
+    break
+
+# 진행 중일 때만 banner 표시 — 완료되면 숨김 (사용자 요청: 화면 가리는 banner 제거)
+_progress_banner = ""
+if _progress and not _is_complete:
+    in_prog = _progress.get("in_progress") or []
+    _progress_banner = (
+        f'<div class="prog-banner prog-running">'
+        f'<span class="prog-dot">●</span> 진행 중 · {_progress.get("done",0)}/{_progress.get("total",0)} · '
+        f'대기: {", ".join(in_prog[:5])}{"..." if len(in_prog) > 5 else ""}'
+        f'</div>'
+    )
 
 html = f"""<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>가구 detail 템플릿 swap — v17</title>
+{_meta_refresh}
+<title>가구 detail 템플릿 swap — v17 (streaming)</title>
 <link rel="stylesheet" href="https://res.remodeling.hanssem.com/font/pretendard/pretendard.css"/>
 <style>
   :root {{
@@ -1069,9 +1225,59 @@ html = f"""<!DOCTYPE html>
   .ri-list li, .sf-list li {{ font-size: 11px; padding: 6px 10px; margin-bottom: 4px; background: #fff5f5; border-left: 3px solid var(--bad); border-radius: 0 4px 4px 0; }}
   .ri-list li b {{ color: var(--bad); }}
   .sf-list li {{ background: #fffaf0; border-left-color: var(--warn); }}
+
+  /* v16+ QA payload + checklist items */
+  .qa-payload-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 8px; }}
+  .qa-payload-cell {{ border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: #fff; }}
+  .qa-payload-cell img {{ width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block; }}
+  .qa-payload-label {{ padding: 4px 6px; font-size: 9px; color: var(--fg); background: #fafafa; border-top: 1px solid var(--line); }}
+
+  .items-list {{ list-style: none; padding: 0; margin: 4px 0; max-height: 400px; overflow-y: auto; }}
+  .items-list li {{ font-size: 11px; padding: 6px 10px; margin-bottom: 4px; background: #fafafa; border-left: 3px solid var(--line); border-radius: 0 4px 4px 0; }}
+  .items-list li.item-pass {{ background: #f0fdf4; border-left-color: var(--good); }}
+  .items-list li.item-fail {{ background: #fff5f5; border-left-color: var(--bad); }}
+  .items-list li.item-nv   {{ background: #f5f5f5; border-left-color: var(--muted); color: var(--muted); }}
+  .items-list .item-icon {{ font-weight: 700; margin-right: 6px; }}
+  .items-list code {{ background: #eee; padding: 1px 5px; border-radius: 3px; font-size: 10px; }}
+
+  .halluc-list {{ list-style: none; padding: 0; margin: 4px 0; }}
+  .halluc-list li {{ font-size: 11px; padding: 6px 10px; margin-bottom: 4px; background: #fff5f5; border-left: 3px solid var(--bad); border-radius: 0 4px 4px 0; color: var(--bad); }}
+  .halluc-list li[style*="--good"] {{ color: var(--good) !important; background: #f0fdf4 !important; border-left-color: var(--good) !important; }}
+
+  /* v16+ progress banner */
+  .prog-banner {{ position: sticky; top: 0; z-index: 200; padding: 8px 24px; font-size: 12px; font-weight: 600; }}
+  .prog-running {{ background: #fff7ed; color: #92400e; border-bottom: 1px solid #fdba74; }}
+  .prog-done {{ background: #f0fdf4; color: #166534; border-bottom: 1px solid #bbf7d0; }}
+  .prog-dot {{ display: inline-block; margin-right: 6px; }}
+  .prog-running .prog-dot {{ color: #f97316; animation: pulse 1.4s ease-in-out infinite; }}
+  .prog-done .prog-dot {{ color: #22c55e; }}
+  @keyframes pulse {{ 0%, 100% {{ opacity: 1; }} 50% {{ opacity: 0.4; }} }}
+
+  /* v16+ cell state (polling으로 update) */
+  .cell-state-overlay {{
+    position: absolute; inset: 0; display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    background: rgba(255,255,255,0.85); backdrop-filter: blur(2px);
+    pointer-events: none; gap: 10px;
+  }}
+  .cell-pending .orig-fallback {{ opacity: 0.45; filter: grayscale(50%); }}
+  .cell-processing .cell-state-overlay {{ background: rgba(254,243,199,0.92); }}
+  .cell-processing .orig-fallback {{ opacity: 0.55; filter: grayscale(30%); }}
+  .cell-ready .cell-state-overlay {{ display: none; }}
+  .cell-state-label {{ font-size: 11px; font-weight: 700; color: #92400e; letter-spacing: 0.05em; text-transform: uppercase; padding: 3px 10px; background: #fff; border-radius: 12px; border: 1px solid #fdba74; }}
+  .cell-pending .cell-state-label {{ color: #6b7280; border-color: #d1d5db; }}
+  .cell-ready .cell-state-label {{ display: none; }}
+  .cell-spinner {{
+    width: 28px; height: 28px; border: 3px solid #d1d5db; border-top-color: #f97316;
+    border-radius: 50%; animation: spin 0.9s linear infinite;
+  }}
+  .cell-pending .cell-spinner {{ border-top-color: #9ca3af; opacity: 0.6; }}
+  .cell-ready .cell-spinner {{ display: none; }}
+  @keyframes spin {{ to {{ transform: rotate(360deg); }} }}
 </style>
 </head>
 <body>
+{_progress_banner}
 <div class="topbar">
   <div class="topbar-row">
     <h1>가구 detail 템플릿 swap 미리보기</h1>
@@ -1137,17 +1343,73 @@ function showPayload(btn) {{
     const img_url = a.image ? `${{data.run_dir_rel}}/${{a.image}}` : null;
     const promptEsc = (a.prompt || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 
+    // v16+ checklist items 결과 (verifiable items별 binary 채점)
+    const items = a.items_results || [];
+    let itemsHtml = '';
+    if (items.length) {{
+      itemsHtml = items.map(it => {{
+        const vcls = it.verdict === 'pass' ? 'item-pass' : it.verdict === 'fail' ? 'item-fail' : 'item-nv';
+        const vicon = it.verdict === 'pass' ? '✓' : it.verdict === 'fail' ? '✗' : '–';
+        return `<li class="${{vcls}}"><span class="item-icon">${{vicon}}</span> <b>[${{it.severity||'?'}}]</b> <code>${{it.id||'?'}}</code><div style="font-size:10px;color:var(--muted);margin-top:2px">${{it.reason_ko||''}}</div></li>`;
+      }}).join('');
+    }} else {{
+      itemsHtml = '<li style="color:var(--muted)">(checklist 결과 없음 — 구 QA 호환)</li>';
+    }}
+
+    // v16+ hallucinations
+    const halluc = a.hallucinations || [];
+    const hallucHtml = halluc.length
+      ? halluc.map(h => `<li>${{h}}</li>`).join('')
+      : '<li style="color:var(--good)">(없음)</li>';
+
+    // v16+ QA payload — attempt 별 sidecar(qa_payloads/{{label}}__a{{n}}.json) 가 있으면
+    // 거기서 정확한 ref list 가져옴 (정확). 없으면 cell-level fallback.
+    // sidecar는 비동기 fetch라 placeholder 먼저 채우고 나중에 update
+    const cellLabel = data.panel === 'cover' ? 'cover' : ('panel_' + String(data.panel).padStart(2,'0'));
+    const sidecarId = `qa-payload-${{cellLabel}}-a${{a.attempt}}`;
+    const refLabelsFb = data.ref_labels || [];
+    const refKeysFb = data.ref_keys || [];
+    let payloadImgsHtml = `<div id="${{sidecarId}}" class="qa-payload-grid" data-sidecar="${{a.qa_payload_rel || ''}}" data-label="${{cellLabel}}" data-attempt="${{a.attempt}}">`;
+    payloadImgsHtml += `<div class="qa-payload-cell"><img src="${{data.original_panel}}"/><div class="qa-payload-label">C — 한샘 원본</div></div>`;
+    for (let ri = 0; ri < refKeysFb.length; ri++) {{
+      const fn = refKeysFb[ri];
+      const lbl = refLabelsFb[ri] || '?';
+      const url = `../user_products/milo_777039/use_product/${{fn}}`;
+      payloadImgsHtml += `<div class="qa-payload-cell"><img src="${{url}}"/><div class="qa-payload-label">A_${{ri+1}} — ${{lbl}}</div></div>`;
+    }}
+    if (img_url) {{
+      payloadImgsHtml += `<div class="qa-payload-cell"><img src="${{img_url}}"/><div class="qa-payload-label">B — 결과 #${{a.attempt}}</div></div>`;
+    }}
+    payloadImgsHtml += '</div>';
+
     details += `
 <div class="attempt-detail ${{active}}" data-att="${{idx}}">
   <div class="att-row"><b>verdict</b> <span class="${{a.verdict==='pass'?'att-pass':'att-fail'}}">${{a.verdict||'?'}}</span></div>
   <div class="att-row"><b>strategy</b> ${{a.strategy||'?'}}</div>
   <div class="att-row"><b>prod / comp</b> ${{a.prod||'-'}} / ${{a.comp||'-'}}</div>
+  <div class="att-row"><b>critical fails</b> ${{a.critical_fail_count != null ? a.critical_fail_count : '-'}}</div>
   <div class="att-row"><b>seats</b> ${{a.seats||'?'}}</div>
   <div class="att-row"><b>text_in_image</b> ${{a.text_in_image ? '❌ true' : '✓ false'}}</div>
   <div class="att-row"><b>structure_preserved</b> ${{a.structure_preserved ? '✓ true' : '❌ false'}}</div>
   <div class="att-row"><b>refs sent</b> ${{a.ref_count || '?'}}장</div>
 
   ${{img_url ? `<div class="modal-section"><div class="modal-section-h">🖼 이 회차 결과</div><div class="modal-ref" style="max-width:400px"><img src="${{img_url}}"/></div></div>` : ''}}
+
+  <div class="modal-section">
+    <div class="modal-section-h">🔬 QA Payload — vision이 본 모든 이미지 (A_i + B + C)</div>
+    <div class="qa-payload-grid">${{payloadImgsHtml}}</div>
+    ${{a.qa_payload_rel ? `<div style="font-size:10px;color:var(--muted);margin-top:6px">payload sidecar: <code>${{a.qa_payload_rel}}</code></div>` : ''}}
+  </div>
+
+  <div class="modal-section">
+    <div class="modal-section-h">✅ Checklist Items — 사용자 제품의 verifiable 항목 binary 채점</div>
+    <ul class="items-list">${{itemsHtml}}</ul>
+  </div>
+
+  <div class="modal-section">
+    <div class="modal-section-h">⚠ Hallucinations (제품에 없는 발명된 feature)</div>
+    <ul class="halluc-list">${{hallucHtml}}</ul>
+  </div>
 
   <div class="modal-section">
     <div class="modal-section-h">❌ Specific Failures (이번 attempt에서 잘못된 부분)</div>
@@ -1198,10 +1460,64 @@ function showPayload(btn) {{
     </div>
   `;
   document.getElementById('modal-backdrop').classList.add('open');
+  // 첫 활성 attempt 의 sidecar 즉시 load
+  const firstActive = document.querySelector('.attempt-detail.active');
+  if (firstActive) {{
+    firstActive.querySelectorAll('.qa-payload-grid[data-sidecar]').forEach(_loadSidecarRefs);
+  }}
 }}
 function switchAttempt(idx) {{
   document.querySelectorAll('.attempt-tab').forEach(t => t.classList.toggle('active', +t.dataset.att === idx));
   document.querySelectorAll('.attempt-detail').forEach(d => d.classList.toggle('active', +d.dataset.att === idx));
+  // sidecar fetch — attempt가 활성화될 때 그 attempt의 정확한 ref list 가져오기
+  const active = document.querySelector(`.attempt-detail.active[data-att="${{idx}}"]`);
+  if (!active) return;
+  const grids = active.querySelectorAll('.qa-payload-grid[data-sidecar]');
+  grids.forEach(_loadSidecarRefs);
+}}
+
+async function _loadSidecarRefs(grid) {{
+  if (!grid || grid.dataset.loaded === '1') return;
+  const rel = grid.dataset.sidecar;
+  if (!rel) return;
+  grid.dataset.loaded = '1';
+  // run dir = RUN_DIR_REL 의 부모 (gpt_image 제외)
+  const runDir = (typeof RUN_DIR_REL !== 'undefined' && RUN_DIR_REL)
+    ? RUN_DIR_REL.replace(/\/gpt_image\/?$/, '')
+    : null;
+  if (!runDir) return;
+  const url = runDir + '/' + rel;
+  try {{
+    const res = await fetch(url, {{ cache: 'no-store' }});
+    const sidecar = await res.json();
+    const refPaths = sidecar.ref_paths || [];
+    const refLabels = sidecar.ref_labels || [];
+    // 기존 grid 비우고 다시 그림 — C + A_i 들 + B
+    // grid 의 첫 cell (C, B) 은 보존, A_i 만 정확히 재구성
+    const C = grid.querySelector('.qa-payload-cell:nth-child(1)');
+    // B는 마지막 cell
+    const allCells = grid.querySelectorAll('.qa-payload-cell');
+    const B = allCells[allCells.length - 1];
+    // 중간 cells (A_i) 모두 제거
+    for (let i = allCells.length - 2; i >= 1; i--) {{
+      allCells[i].remove();
+    }}
+    // 정확한 A_i 삽입
+    let frag = '';
+    for (let i = 0; i < refPaths.length; i++) {{
+      // ref_paths 는 절대경로 — relative URL 생성
+      const ap = refPaths[i];
+      const m = ap.match(/use_product\/(.+)$/);
+      const fn = m ? m[1] : ap.split('/').pop();
+      const lbl = refLabels[i] || '?';
+      const u = `../user_products/milo_777039/use_product/${{fn}}`;
+      frag += `<div class="qa-payload-cell"><img src="${{u}}"/><div class="qa-payload-label">A_${{i+1}} — ${{lbl}}</div></div>`;
+    }}
+    if (B) B.insertAdjacentHTML('beforebegin', frag);
+    else grid.insertAdjacentHTML('beforeend', frag);
+  }} catch (e) {{
+    console.warn('sidecar load failed for', url, e);
+  }}
 }}
 function closeModal() {{ document.getElementById('modal-backdrop').classList.remove('open'); }}
 document.addEventListener('keydown', e => {{ if (e.key === 'Escape') closeModal(); }});
@@ -1214,6 +1530,77 @@ function showImageModal(src, label) {{
     <div style="text-align:center"><img src="${{src}}" style="max-width:100%; max-height:80vh; border-radius:8px; border:1px solid var(--line)"/></div>
   `;
   document.getElementById('modal-backdrop').classList.add('open');
+}}
+
+// ────────────────────────── live polling (page fetch + DOM swap) ──────────────────────────
+// 빌더가 매 panel 완료마다 페이지를 재생성한다.
+// polling은 페이지를 fetch해서 변경된 cell(특히 cell-ready, cell-processing)만 DOM swap.
+// payload 버튼, score badges 등 빌더가 그린 정확한 마크업을 그대로 옮긴다.
+const SUMMARY_URL = {_rank1_summary_url!r};
+const PAGE_URL = location.pathname;
+const POLL_INTERVAL_MS = 3000;
+
+async function pollSummary() {{
+  try {{
+    // 1) summary fetch — banner / 종료 판정
+    const sumRes = await fetch(SUMMARY_URL + '?ts=' + Date.now(), {{ cache: 'no-store' }});
+    const sum = await sumRes.json();
+    const progress = sum.progress || {{}};
+    const banner = document.querySelector('.prog-banner');
+    if (banner) {{
+      if (progress.is_complete) {{
+        banner.style.display = 'none';  // 완료 banner 숨김 (사용자 요청)
+      }} else {{
+        banner.style.display = '';
+        const ip = progress.in_progress || [];
+        banner.className = 'prog-banner prog-running';
+        banner.innerHTML = '<span class="prog-dot">●</span> 진행 중 · ' + progress.done + '/' + progress.total
+          + ' · 대기: ' + ip.slice(0,6).join(', ') + (ip.length > 6 ? '...' : '');
+      }}
+    }}
+
+    // 2) 페이지 자체를 fetch + DOM diff
+    const pageRes = await fetch(PAGE_URL + '?ts=' + Date.now(), {{ cache: 'no-store' }});
+    const pageHtml = await pageRes.text();
+    const doc = new DOMParser().parseFromString(pageHtml, 'text/html');
+
+    const oldCells = new Map();
+    document.querySelectorAll('.img-with-chip[data-panel-label]').forEach(el => {{
+      oldCells.set(el.dataset.panelLabel, el);
+    }});
+
+    doc.querySelectorAll('.img-with-chip[data-panel-label]').forEach(newEl => {{
+      const label = newEl.dataset.panelLabel;
+      const oldEl = oldCells.get(label);
+      if (!oldEl) return;
+      const oldState = oldEl.classList.contains('cell-ready') ? 'ready'
+                      : oldEl.classList.contains('cell-processing') ? 'processing'
+                      : 'pending';
+      const newState = newEl.classList.contains('cell-ready') ? 'ready'
+                      : newEl.classList.contains('cell-processing') ? 'processing'
+                      : 'pending';
+      // ready인 cell은 다시 덮어쓰면 modal/이미지 깜빡임 → ready→ready 는 skip
+      if (oldState === 'ready' && newState === 'ready') return;
+      if (oldState === newState && oldState !== 'ready') {{
+        // pending → pending 변경 없음
+        // processing → processing 도 변경 없음
+        return;
+      }}
+      // 상태 변화 있음 → 새 cell로 교체
+      oldEl.replaceWith(newEl);
+    }});
+
+    if (progress.is_complete) {{
+      if (window._pollTimer) {{ clearInterval(window._pollTimer); window._pollTimer = null; }}
+    }}
+  }} catch (e) {{
+    console.warn('poll failed', e);
+  }}
+}}
+
+if (SUMMARY_URL) {{
+  pollSummary();
+  window._pollTimer = setInterval(pollSummary, POLL_INTERVAL_MS);
 }}
 </script>
 </body>

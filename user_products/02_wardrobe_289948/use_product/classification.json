@@ -1,0 +1,196 @@
+{
+  "items": [
+    {
+      "filename": "screenshot_01.png",
+      "category": "color_variant",
+      "subject": "전체정면",
+      "confidence": 0.95,
+      "reasoning": "같은 옷장 전체샷이 나란히 있으며 색상만 변경되어 있음."
+    },
+    {
+      "filename": "screenshot_02.png",
+      "category": "color_variant",
+      "subject": "전체정면",
+      "confidence": 0.95,
+      "reasoning": "동일 제품의 두 컬러 버전을 전체샷으로 비교 제시."
+    },
+    {
+      "filename": "screenshot_03.png",
+      "category": "color_variant",
+      "subject": "전체정면",
+      "confidence": 0.95,
+      "reasoning": "동일 구성의 옷장을 서로 다른 색으로 전체샷으로 보여줌."
+    },
+    {
+      "filename": "screenshot_04.png",
+      "category": "material",
+      "subject": "도어 마감표면",
+      "confidence": 0.9,
+      "reasoning": "문 틈 주변의 표면과 무늬만 크게 확대된 소재/마감 클로즈업."
+    },
+    {
+      "filename": "screenshot_05.png",
+      "category": "main_view",
+      "subject": "내부정면",
+      "confidence": 0.86,
+      "reasoning": "문을 열고 내부 구성 전체가 단순 배경에 정면으로 보이는 전체샷."
+    },
+    {
+      "filename": "screenshot_06.png",
+      "category": "main_view",
+      "subject": "전체정면",
+      "confidence": 0.98,
+      "reasoning": "단일 옷장이 정면에서 전체가 깔끔한 배경에 나타남."
+    },
+    {
+      "filename": "screenshot_07.png",
+      "category": "detail_close_up",
+      "subject": "서랍",
+      "confidence": 0.95,
+      "reasoning": "서랍 한 칸을 당겨 내부 수납을 보여주는 부분 확대 이미지."
+    },
+    {
+      "filename": "screenshot_08.png",
+      "category": "main_view",
+      "subject": "전체정면",
+      "confidence": 0.8,
+      "reasoning": "여러 도어 타입이지만 각각 제품의 전체가 단순 배경에 제시됨."
+    },
+    {
+      "filename": "screenshot_09.png",
+      "category": "main_view",
+      "subject": "내부정면",
+      "confidence": 0.85,
+      "reasoning": "다양한 내부 모듈을 정면 전체샷으로 배열해 보여줌."
+    },
+    {
+      "filename": "screenshot_10.png",
+      "category": "detail_close_up",
+      "subject": "손잡이/도어모서리",
+      "confidence": 0.92,
+      "reasoning": "손잡이와 도어 이음부를 크게 확대한 디테일 이미지."
+    },
+    {
+      "filename": "screenshot_11.png",
+      "category": "detail_close_up",
+      "subject": "손잡이",
+      "confidence": 0.92,
+      "reasoning": "서로 다른 손잡이 형태를 근접 촬영한 부분 클로즈업."
+    },
+    {
+      "filename": "screenshot_12.png",
+      "category": "detail_close_up",
+      "subject": "손잡이",
+      "confidence": 0.92,
+      "reasoning": "하이글로시/노브 등 손잡이 디자인을 비교하는 클로즈업."
+    },
+    {
+      "filename": "screenshot_13.png",
+      "category": "main_view",
+      "subject": "후면",
+      "confidence": 0.88,
+      "reasoning": "제품의 뒷면 전체가 단순 배경에서 보이는 전체샷."
+    }
+  ],
+  "by_category": {
+    "color_variant": [
+      {
+        "filename": "screenshot_01.png",
+        "category": "color_variant",
+        "subject": "전체정면",
+        "confidence": 0.95,
+        "reasoning": "같은 옷장 전체샷이 나란히 있으며 색상만 변경되어 있음."
+      },
+      {
+        "filename": "screenshot_02.png",
+        "category": "color_variant",
+        "subject": "전체정면",
+        "confidence": 0.95,
+        "reasoning": "동일 제품의 두 컬러 버전을 전체샷으로 비교 제시."
+      },
+      {
+        "filename": "screenshot_03.png",
+        "category": "color_variant",
+        "subject": "전체정면",
+        "confidence": 0.95,
+        "reasoning": "동일 구성의 옷장을 서로 다른 색으로 전체샷으로 보여줌."
+      }
+    ],
+    "material": [
+      {
+        "filename": "screenshot_04.png",
+        "category": "material",
+        "subject": "도어 마감표면",
+        "confidence": 0.9,
+        "reasoning": "문 틈 주변의 표면과 무늬만 크게 확대된 소재/마감 클로즈업."
+      }
+    ],
+    "main_view": [
+      {
+        "filename": "screenshot_05.png",
+        "category": "main_view",
+        "subject": "내부정면",
+        "confidence": 0.86,
+        "reasoning": "문을 열고 내부 구성 전체가 단순 배경에 정면으로 보이는 전체샷."
+      },
+      {
+        "filename": "screenshot_06.png",
+        "category": "main_view",
+        "subject": "전체정면",
+        "confidence": 0.98,
+        "reasoning": "단일 옷장이 정면에서 전체가 깔끔한 배경에 나타남."
+      },
+      {
+        "filename": "screenshot_08.png",
+        "category": "main_view",
+        "subject": "전체정면",
+        "confidence": 0.8,
+        "reasoning": "여러 도어 타입이지만 각각 제품의 전체가 단순 배경에 제시됨."
+      },
+      {
+        "filename": "screenshot_09.png",
+        "category": "main_view",
+        "subject": "내부정면",
+        "confidence": 0.85,
+        "reasoning": "다양한 내부 모듈을 정면 전체샷으로 배열해 보여줌."
+      },
+      {
+        "filename": "screenshot_13.png",
+        "category": "main_view",
+        "subject": "후면",
+        "confidence": 0.88,
+        "reasoning": "제품의 뒷면 전체가 단순 배경에서 보이는 전체샷."
+      }
+    ],
+    "detail_close_up": [
+      {
+        "filename": "screenshot_07.png",
+        "category": "detail_close_up",
+        "subject": "서랍",
+        "confidence": 0.95,
+        "reasoning": "서랍 한 칸을 당겨 내부 수납을 보여주는 부분 확대 이미지."
+      },
+      {
+        "filename": "screenshot_10.png",
+        "category": "detail_close_up",
+        "subject": "손잡이/도어모서리",
+        "confidence": 0.92,
+        "reasoning": "손잡이와 도어 이음부를 크게 확대한 디테일 이미지."
+      },
+      {
+        "filename": "screenshot_11.png",
+        "category": "detail_close_up",
+        "subject": "손잡이",
+        "confidence": 0.92,
+        "reasoning": "서로 다른 손잡이 형태를 근접 촬영한 부분 클로즈업."
+      },
+      {
+        "filename": "screenshot_12.png",
+        "category": "detail_close_up",
+        "subject": "손잡이",
+        "confidence": 0.92,
+        "reasoning": "하이글로시/노브 등 손잡이 디자인을 비교하는 클로즈업."
+      }
+    ]
+  }
+}

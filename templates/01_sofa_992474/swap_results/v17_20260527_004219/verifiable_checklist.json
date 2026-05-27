@@ -1,0 +1,629 @@
+{
+  "product_category": "sofa",
+  "category_check_axes": [
+    "legs",
+    "arms",
+    "seat_cushion",
+    "back_cushion",
+    "frame",
+    "fabric",
+    "color",
+    "connection",
+    "size",
+    "model",
+    "seam"
+  ],
+  "items": [
+    {
+      "id": "frame_boxy_low_profile",
+      "description_ko": "프레임은 각이 살아있는 낮은 직사각 박스 형태로, 미니멀한 외곽 라인을 가진다.",
+      "check_question_ko": "결과 B에서 프레임이 각진 직사각 박스 형태로 낮은 프로파일로 보이나요?",
+      "expected": "네, 낮은 직사각 박스 프레임",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "front",
+        "angle",
+        "side"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.overall_silhouette",
+      "axis": "frame"
+    },
+    {
+      "id": "legs_4_corners_black_steel_no_center",
+      "description_ko": "슬림한 블랙 스틸 다리 4개가 네 모서리에만 배치되고 중앙 지지 다리는 없다.",
+      "check_question_ko": "결과 B에서 다리가 네 모서리에 4개만 있고 중앙 5번째 다리는 없나요?",
+      "expected": "네, 모서리 4개만, 중앙 없음",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot"
+      ],
+      "applicable_views": [
+        "front",
+        "angle",
+        "side"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.legs_detail",
+      "axis": "legs"
+    },
+    {
+      "id": "arms_box_shape_soft_rounded_edges",
+      "description_ko": "팔걸이는 바깥에서 박스형 직선 실루엣이며 모서리는 둔각으로 부드럽게 라운드 처리.",
+      "check_question_ko": "결과 B에서 팔걸이가 박스형이고 모서리가 살짝 라운드 처리되어 보이나요?",
+      "expected": "네, 박스형 + 완만한 라운드 모서리",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "front",
+        "angle",
+        "side"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.arms_detail",
+      "axis": "arms"
+    },
+    {
+      "id": "connection_seat_to_inner_arm_bolster",
+      "description_ko": "팔 안쪽 보조쿠션이 좌방석과 시각적으로 끊김 없이 이어져 연속된 쿠션 영역을 형성한다.",
+      "check_question_ko": "결과 B에서 좌방석과 팔 안쪽 보조쿠션이 하나로 이어진 연속 쿠션처럼 보이나요?",
+      "expected": "네, 정면에서 연속된 하나의 쿠션 영역",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "front",
+        "angle",
+        "close-up"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.cushion_connection",
+      "axis": "connection"
+    },
+    {
+      "id": "seat_cushions_two",
+      "description_ko": "좌방석은 2개 구성이다.",
+      "check_question_ko": "결과 B에서 좌방석이 2개로 분리되어 보이나요?",
+      "expected": "네, 좌방석 2개",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot"
+      ],
+      "applicable_views": [
+        "front",
+        "angle"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.seat_cushions_detail",
+      "axis": "seat_cushion"
+    },
+    {
+      "id": "back_cushions_two_loose_oversized",
+      "description_ko": "등쿠션은 루스 타입 2개이며 프레임 상단을 약간 넘는 크기다.",
+      "check_question_ko": "결과 B에서 등쿠션이 2개 루스 타입이고 프레임 상단보다 약간 높게 보이나요?",
+      "expected": "네, 루스 타입 2개, 프레임보다 살짝 높음",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot"
+      ],
+      "applicable_views": [
+        "front",
+        "angle"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.back_cushions_detail",
+      "axis": "back_cushion"
+    },
+    {
+      "id": "fabric_is_woven_textile_not_leather",
+      "description_ko": "겉감은 가죽이 아니라 평직 직물(멜란지) 패브릭이다.",
+      "check_question_ko": "결과 B에서 표면이 직조된 패브릭으로 보이고 가죽/비닐처럼 광택이 없나요?",
+      "expected": "네, 직물 패브릭, 가죽/비닐 아님",
+      "applicable_panel_classes": [
+        "product_shot",
+        "detail_close_up",
+        "material_swatch"
+      ],
+      "applicable_views": [
+        "close-up",
+        "angle"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.fabric_texture",
+      "axis": "fabric"
+    },
+    {
+      "id": "color_options_three_shown",
+      "description_ko": "컬러 옵션 3종(오트밀, 라이트그레이, 더스티로즈)이 시각적으로 구분되어 노출된다.",
+      "check_question_ko": "결과 B에서 오트밀/라이트그레이/더스티로즈 3가지 톤의 옵션 이미지(또는 스와치)가 모두 보이나요?",
+      "expected": "네, 3종 모두 시각적으로 구분됨",
+      "applicable_panel_classes": [
+        "color_option",
+        "material_swatch"
+      ],
+      "applicable_views": [
+        "close-up"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "color_options",
+      "axis": "color"
+    },
+    {
+      "id": "size_chart_core_dimensions",
+      "description_ko": "2인용 치수: W200×D90×H85cm, 좌심 52cm, 좌고 45cm, 팔걸이 57cm, 다리 14cm가 명시된다.",
+      "check_question_ko": "결과 B의 사이즈 차트에 W200×D90×H85 및 좌심52/좌고45/팔57/다리14가 정확히 표기되어 있나요?",
+      "expected": "네, 해당 치수 표기",
+      "applicable_panel_classes": [
+        "size_chart"
+      ],
+      "applicable_views": [
+        "close-up"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "spec",
+      "axis": "size"
+    },
+    {
+      "id": "module_lineup_only_2seater",
+      "description_ko": "모듈 라인업은 2인용(200×90×85) 1종만 노출/선택된다.",
+      "check_question_ko": "결과 B의 라인업에서 2인용 한 가지 모델만 보이나요?",
+      "expected": "네, 2인용 1종만",
+      "applicable_panel_classes": [
+        "module_lineup"
+      ],
+      "applicable_views": [
+        "front",
+        "close-up"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "model_options",
+      "axis": "model"
+    },
+    {
+      "id": "seat_cushion_crown_and_rolled_front_edge",
+      "description_ko": "좌방석은 중앙이 살짝 볼록(크라운)하고 앞엣날이 부드럽게 말려 내려온다.",
+      "check_question_ko": "결과 B에서 좌방석 중앙이 약간 볼록하고 앞엣날이 말려 보이나요?",
+      "expected": "네, 크라운 + 말림",
+      "applicable_panel_classes": [
+        "product_shot",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "angle",
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.overall_silhouette",
+      "axis": "seat_cushion"
+    },
+    {
+      "id": "seat_cushion_narrow_gap",
+      "description_ko": "두 좌방석 사이 간격이 좁고 단정하다.",
+      "check_question_ko": "결과 B에서 두 좌방석 사이 이격이 좁고 균일해 보이나요?",
+      "expected": "네, 좁고 균일",
+      "applicable_panel_classes": [
+        "product_shot",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "front",
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.seat_cushions_detail",
+      "axis": "seat_cushion"
+    },
+    {
+      "id": "seat_top_bottom_topstitch",
+      "description_ko": "좌방석 상하 가장자리에 간결한 상침 스티치가 있다.",
+      "check_question_ko": "결과 B에서 좌방석 위·아래 엣지에 얇은 상침선이 보이나요?",
+      "expected": "네, 얇은 상침 보임",
+      "applicable_panel_classes": [
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "low",
+      "source_field": "feature_descriptions.seat_cushions_detail",
+      "axis": "seam"
+    },
+    {
+      "id": "back_cushion_ear_folds",
+      "description_ko": "등쿠션 상단 모서리에 '귀'처럼 살짝 올라오는 접힘이 있다.",
+      "check_question_ko": "결과 B에서 등쿠션 상단 모서리의 귀 모양 접힘이 보이나요?",
+      "expected": "네, 상단 귀 모양 접힘",
+      "applicable_panel_classes": [
+        "product_shot",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "angle",
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.back_cushions_detail",
+      "axis": "back_cushion"
+    },
+    {
+      "id": "back_cushion_no_center_seam",
+      "description_ko": "등쿠션 중앙에는 봉제 라인이 없다.",
+      "check_question_ko": "결과 B에서 각 등쿠션 중앙에 세로/가로 봉제선이 없나요?",
+      "expected": "네, 중앙 봉제선 없음",
+      "applicable_panel_classes": [
+        "product_shot",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "front",
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.back_cushions_detail",
+      "axis": "seam"
+    },
+    {
+      "id": "back_cushion_knife_edge_light_topstitch",
+      "description_ko": "등쿠션 외곽은 나이프 엣지에 미세한 상침으로 형태를 잡는다.",
+      "check_question_ko": "결과 B에서 등쿠션 외곽이 날렵한 나이프 엣지와 얇은 상침으로 보이나요?",
+      "expected": "네, 나이프 엣지 + 미세 상침",
+      "applicable_panel_classes": [
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "low",
+      "source_field": "feature_descriptions.back_cushions_detail",
+      "axis": "seam"
+    },
+    {
+      "id": "arm_bolster_front_flange",
+      "description_ko": "팔 안쪽 보조쿠션의 앞선에는 겉시접 플랜지 라인이 도드라진다.",
+      "check_question_ko": "결과 B에서 팔 안쪽 보조쿠션 전면 엣지에 플랜지(겉시접) 선이 보이나요?",
+      "expected": "네, 플랜지 시접 라인 보임",
+      "applicable_panel_classes": [
+        "detail_close_up",
+        "product_shot"
+      ],
+      "applicable_views": [
+        "close-up",
+        "angle"
+      ],
+      "category": "detail",
+      "generation_feasibility": "low",
+      "source_field": "feature_descriptions.arms_detail",
+      "axis": "seam"
+    },
+    {
+      "id": "legs_slight_inward_cant",
+      "description_ko": "슬림한 다리는 아래로 갈수록 안쪽으로 아주 약하게 모이는 각도를 가진다.",
+      "check_question_ko": "결과 B에서 다리가 수직이 아니라 안쪽으로 아주 살짝 기울어 보이나요?",
+      "expected": "네, 미세한 안쪽 각도",
+      "applicable_panel_classes": [
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "front",
+        "angle"
+      ],
+      "category": "detail",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.legs_detail",
+      "axis": "legs"
+    },
+    {
+      "id": "fabric_melange_weave_visible",
+      "description_ko": "근접 컷에서 두 가지 이상 실색이 섞인 멜란지 평직 짜임이 보인다.",
+      "check_question_ko": "결과 B의 근접 컷에서 멜란지 직조(복합 실색) 질감이 식별되나요?",
+      "expected": "네, 멜란지 직조 보임",
+      "applicable_panel_classes": [
+        "detail_close_up",
+        "material_swatch"
+      ],
+      "applicable_views": [
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.fabric_texture",
+      "axis": "fabric"
+    },
+    {
+      "id": "fabric_matte_finish",
+      "description_ko": "표면은 거의 무광으로 광택 반사가 강하지 않다.",
+      "check_question_ko": "결과 B에서 패브릭 표면이 무광에 가깝게 보이고 강한 하이라이트가 없나요?",
+      "expected": "네, 무광에 가까움",
+      "applicable_panel_classes": [
+        "product_shot",
+        "detail_close_up",
+        "material_swatch"
+      ],
+      "applicable_views": [
+        "angle",
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.fabric_texture",
+      "axis": "fabric"
+    },
+    {
+      "id": "water_repellency_beading_scene",
+      "description_ko": "생활발수 연출: 물방울이 표면에 맺혀 스며들지 않는 근접 컷.",
+      "check_question_ko": "결과 B에서 물방울이 표면에 맺혀 굴러가는 발수 연출이 보이나요?",
+      "expected": "네, 물방울 비딩 표현",
+      "applicable_panel_classes": [
+        "detail_close_up",
+        "material_swatch"
+      ],
+      "applicable_views": [
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.fabric_texture",
+      "axis": "fabric"
+    },
+    {
+      "id": "forbid_headrest_present",
+      "description_ko": "별도 헤드레스트가 추가되면 안 된다.",
+      "check_question_ko": "결과 B에서 헤드레스트(분리 또는 일체형)가 보이나요?",
+      "expected": "아니오, 보이지 않는다",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "front",
+        "angle",
+        "side"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.back_cushions_detail",
+      "axis": "back_cushion"
+    },
+    {
+      "id": "forbid_usb_or_power_port",
+      "description_ko": "USB 포트, 전원 콘센트 등 전장 기능은 없어야 한다.",
+      "check_question_ko": "결과 B에서 USB 포트나 전원 포트가 보이나요?",
+      "expected": "아니오, 보이지 않는다",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "angle",
+        "close-up"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "model_options",
+      "axis": "frame"
+    },
+    {
+      "id": "forbid_recliner_mechanism",
+      "description_ko": "전동/수동 리클라이너 메커니즘(풋레스트, 스위치 등)은 없어야 한다.",
+      "check_question_ko": "결과 B에서 리클라이너 풋레스트나 조작 스위치가 보이나요?",
+      "expected": "아니오, 보이지 않는다",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "side",
+        "angle"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "model_options",
+      "axis": "frame"
+    },
+    {
+      "id": "forbid_center_5th_leg",
+      "description_ko": "중앙 5번째 다리는 있으면 안 된다.",
+      "check_question_ko": "결과 B에서 소파 하부 중앙에 추가 다리가 보이나요?",
+      "expected": "아니오, 보이지 않는다",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "front",
+        "angle",
+        "side"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.legs_detail",
+      "axis": "legs"
+    },
+    {
+      "id": "forbid_v_sled_leg_base",
+      "description_ko": "V자 일체형/슬레드 베이스 다리는 금지된다(독립 다리여야 함).",
+      "check_question_ko": "결과 B에서 양쪽이 연결된 V자 또는 슬레드형 다리 구조가 보이나요?",
+      "expected": "아니오, 보이지 않는다",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "front",
+        "angle"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.legs_detail",
+      "axis": "legs"
+    },
+    {
+      "id": "forbid_tufting_or_buttons",
+      "description_ko": "좌방석/등쿠션에 터프팅이나 버튼 퀼팅이 있으면 안 된다.",
+      "check_question_ko": "결과 B에서 쿠션 표면의 버튼/터프팅 패턴이 보이나요?",
+      "expected": "아니오, 보이지 않는다",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "detail_close_up",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "front",
+        "angle",
+        "close-up"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "seam_styles",
+      "axis": "seam"
+    },
+    {
+      "id": "forbid_piping_trim",
+      "description_ko": "파이핑(배관) 트림은 없어야 한다. 본 제품은 나이프 엣지/상침/플랜지 조합만 사용.",
+      "check_question_ko": "결과 B에서 엣지에 둥근 파이핑 끈 장식이 보이나요?",
+      "expected": "아니오, 보이지 않는다",
+      "applicable_panel_classes": [
+        "product_shot",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "close-up",
+        "angle"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.seam_styles",
+      "axis": "seam"
+    },
+    {
+      "id": "forbid_skirt_covering_legs",
+      "description_ko": "스커트로 다리를 가리는 구조는 금지된다(하부 여백이 보여야 함).",
+      "check_question_ko": "결과 B에서 패브릭 스커트가 다리를 가리고 바닥 여백이 사라져 보이나요?",
+      "expected": "아니오, 보이지 않는다",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "front",
+        "angle",
+        "side"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.overall_silhouette",
+      "axis": "frame"
+    },
+    {
+      "id": "forbid_non_black_or_wood_legs",
+      "description_ko": "다리는 블랙 스틸이어야 하며 원목 다리나 비블랙 금속(크롬/골드 등)은 금지.",
+      "check_question_ko": "결과 B에서 다리가 블랙 스틸이 아닌 원목 또는 크롬/골드 톤으로 보이나요?",
+      "expected": "아니오, 보이지 않는다",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "angle",
+        "close-up"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.legs_detail",
+      "axis": "legs"
+    },
+    {
+      "id": "forbid_chaise_or_attached_ottoman",
+      "description_ko": "체어즈 확장부나 일체형 오토만이 붙은 구성은 금지된다(순수 2인 스트레이트).",
+      "check_question_ko": "결과 B에서 한쪽으로 돌출된 체어즈나 일체형 오토만이 보이나요?",
+      "expected": "아니오, 보이지 않는다",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene",
+        "module_lineup"
+      ],
+      "applicable_views": [
+        "front",
+        "angle",
+        "side"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "model_options",
+      "axis": "model"
+    },
+    {
+      "id": "forbid_storage_seat",
+      "description_ko": "좌판 수납(들뜸/히든 스토리지) 기능은 없어야 한다.",
+      "check_question_ko": "결과 B에서 좌판이 열리거나 수납공간이 보이나요?",
+      "expected": "아니오, 보이지 않는다",
+      "applicable_panel_classes": [
+        "lifestyle_scene",
+        "product_shot"
+      ],
+      "applicable_views": [
+        "angle",
+        "side"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "frame_structure",
+      "axis": "frame"
+    },
+    {
+      "id": "forbid_included_small_throw_cushions_in_product_shot",
+      "description_ko": "기본 구성에 스몰 데코 쿠션은 포함되지 않으므로 제품 단독 컷에 동봉품처럼 보이면 안 된다.",
+      "check_question_ko": "결과 B의 히어로/제품컷에서 기본 제공으로 오인될 스몰 데코 쿠션이 함께 보이나요?",
+      "expected": "아니오, 보이지 않는다",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot"
+      ],
+      "applicable_views": [
+        "front",
+        "angle"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.cushion_connection",
+      "axis": "accessory"
+    }
+  ],
+  "category": "sofa"
+}

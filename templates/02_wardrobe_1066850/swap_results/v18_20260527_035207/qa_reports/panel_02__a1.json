@@ -1,0 +1,89 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [
+    {
+      "id": "no_sliding_doors",
+      "verdict": "pass",
+      "reason_ko": "결과 B에서 미닫이 레일이나 겹쳐지는 슬라이딩 도어 형태는 보이지 않고, 평판 여닫이형 수납장처럼 보입니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_high_legs_visible",
+      "verdict": "pass",
+      "reason_ko": "본체가 바닥에서 높게 떠 있는 10cm 이상 노출 다리는 보이지 않습니다. 하단에는 낮은 받침/작은 조절발 정도만 보입니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_builtin_led_visible",
+      "verdict": "pass",
+      "reason_ko": "전면이나 내부 가장자리에 LED 발광 바 또는 내장 조명으로 보이는 요소가 없습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "two_80cm_modules_total_160cm",
+      "verdict": "pass",
+      "reason_ko": "상단 전체 이미지에서 좌측 서랍형 모듈과 우측 장롱 모듈로 나뉜 2칸 구조가 보이며, 중앙 이음부도 확인됩니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "hinged_double_doors_per_module",
+      "verdict": "fail",
+      "reason_ko": "사용자 제품은 각 80cm 모듈이 양문형 힌지 도어로 보여야 하나, 결과 B에서는 좌측 상부와 우측 모듈이 각각 큰 단일 판처럼 보이고 모듈별 중앙 양개 도어 구조가 명확하지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "external_3_tier_drawers_visible",
+      "verdict": "pass",
+      "reason_ko": "좌측 하단 전면에 가로 라인으로 구분된 3단 외부형 서랍 블록이 명확히 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "long_inset_vertical_handles",
+      "verdict": "pass",
+      "reason_ko": "도어 사이에 세로로 길게 내려오는 매립형 손잡이/홈 형태가 상단 및 하단 클로즈업에서 확인됩니다. 다만 모듈별 양문 구조는 별도 항목에서 부족합니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "rectangular_straight_top_silhouette",
+      "verdict": "pass",
+      "reason_ko": "상단이 평평하고 직선적인 직사각형 실루엣이며 크라운, 아치, 돌출 장식은 없습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "selected_finish_in_images_is_one_of_three",
+      "verdict": "pass",
+      "reason_ko": "도어 색상은 크림화이트 계열로 보이며, 제공된 컬러 옵션 중 하나에 해당합니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "aluminum_hanging_rod_indicator",
+      "verdict": "not_visible",
+      "reason_ko": "도어가 닫힌 외관 및 상단 클로즈업만 있어 내부 옷걸이봉이나 알루미늄 재질 표기는 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 1,
+  "forbidden_fail_count": 0,
+  "composition_score": 88,
+  "hallucinations": [],
+  "specific_failures": [
+    "결과가 grid 형태 — single panel로 재생성",
+    "모듈별 양문형 힌지 도어 구조가 명확하지 않고, 큰 단일 도어판처럼 표현됨",
+    "distortion fail · hinged_double_doors_per_module: 사용자 제품은 각 80cm 모듈이 양문형 힌지 도어로 보여야 하나, 결과 B에서는 좌측 상부와 우측 모듈이 각각 큰 단일 판처럼 보이고 모듈별 중앙 양개 도어 구조가 명확하지 않습니다."
+  ],
+  "notes_ko": "전체적으로 색상, 2모듈 구성, 3단 서랍, 평평한 직선형 외관은 사용자 제품과 유사합니다. 그러나 핵심 도어 정체성 측면에서 각 모듈이 양개형 힌지 도어로 분할되어야 하는데 결과 B는 단일 대형 도어판처럼 보여 왜곡으로 판단됩니다.",
+  "verdict": "retry",
+  "product_score_raw": 30,
+  "product_score": 88,
+  "critical_fail_count": 1
+}

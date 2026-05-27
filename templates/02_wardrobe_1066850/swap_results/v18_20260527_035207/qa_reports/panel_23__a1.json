@@ -1,0 +1,32 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [
+    {
+      "id": "module_lineup_shows_4_variants",
+      "verdict": "fail",
+      "reason_ko": "B는 옷장 추가 모듈을 시각적으로 보여주지만, 기대된 4가지 모델 옵션인 '서랍형 6종 / 행거형 6종 / 거울-행거형 6종 / 거울-서랍형 6종' 텍스트나 명확한 4종 라인업 표기가 보이지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "height_lineup_two_options_label",
+      "verdict": "not_visible",
+      "reason_ko": "B에는 높이 라인업 또는 사이즈 정보 텍스트가 없어서 194cm와 216cm 두 가지 높이 옵션을 확인할 수 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 1,
+  "forbidden_fail_count": 0,
+  "composition_score": 88,
+  "hallucinations": [],
+  "specific_failures": [
+    "라인업 패널에서 4가지 모델 옵션 명칭이 정확히 표기되지 않음",
+    "distortion fail · module_lineup_shows_4_variants: B는 옷장 추가 모듈을 시각적으로 보여주지만, 기대된 4가지 모델 옵션인 '서랍형 6종 / 행거형 6종 / 거울-행거형 6종 / 거울-서랍형 6종' 텍스트나 명확한 4종 라인업 표기가 보이지 않습니다."
+  ],
+  "notes_ko": "전체 구도는 C와 유사하게 왼쪽 옷장, 점선 추가 모듈, 플러스 아이콘, 화살표, 작업자와 이동 중인 모듈 배치를 유지합니다. 다만 본 체크리스트의 핵심인 4종 라인업 텍스트 표기는 B에서 확인되지 않아 distortion fail로 판정합니다.",
+  "critical_fail_count": 1,
+  "product_score_raw": null,
+  "product_score": 11,
+  "verdict": "retry"
+}

@@ -1,0 +1,50 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [
+    {
+      "id": "l_shape_with_lower_bookcase",
+      "verdict": "fail",
+      "reason_ko": "결과 B는 폼알데하이드 방출량 그래프와 시험성적서 문서만 보이며, 사용자 제품의 ㄱ자 상판 및 하부 책장 일체형 책상 구조가 전혀 확인되지 않는다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "two_stability_braces",
+      "verdict": "fail",
+      "reason_ko": "결과 B에 책상 본체나 하부 구조가 표시되지 않아 흔들림 저감용 보강대 2개를 식별할 수 없다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "return_supported_by_bookcase",
+      "verdict": "fail",
+      "reason_ko": "결과 B에는 ㄱ자 책상의 짧은 변이나 이를 지지하는 책장 유닛이 보이지 않아, 리턴부가 책장으로 지지되는 구조를 검증할 수 없다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "hook_left_right_option_indicator",
+      "verdict": "not_visible",
+      "reason_ko": "결과 B는 시험성적서/그래프 패널로, 가방걸이 좌우 선택 설치를 안내하는 아이콘, 텍스트, 화살표가 보이지 않는다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 3,
+  "forbidden_fail_count": 0,
+  "composition_score": 95,
+  "hallucinations": [],
+  "specific_failures": [
+    "ㄱ자 상판과 하부 책장 유닛이 결합된 책상 형태가 보이지 않음",
+    "보강대 2개가 확인되지 않음",
+    "ㄱ자 짧은 변을 책장 유닛이 지지하는 구조가 확인되지 않음",
+    "distortion fail · l_shape_with_lower_bookcase: 결과 B는 폼알데하이드 방출량 그래프와 시험성적서 문서만 보이며, 사용자 제품의 ㄱ자 상판 및 하부 책장 일체형 책상 구조가 전혀 확인되지 않는다.",
+    "distortion fail · two_stability_braces: 결과 B에 책상 본체나 하부 구조가 표시되지 않아 흔들림 저감용 보강대 2개를 식별할 수 없다.",
+    "distortion fail · return_supported_by_bookcase: 결과 B에는 ㄱ자 책상의 짧은 변이나 이를 지지하는 책장 유닛이 보이지 않아, 리턴부가 책장으로 지지되는 구조를 검증할 수 없다."
+  ],
+  "notes_ko": "B는 C의 구조 차트/시험성적서 구도는 거의 잘 유지했으나, 사용자 제품인 한샘 티오 ㄱ자책상 자체가 표시되지 않아 핵심 구조 관련 distortion 항목을 검증할 수 없다.",
+  "critical_fail_count": 3,
+  "product_score_raw": null,
+  "product_score": 4,
+  "verdict": "retry"
+}

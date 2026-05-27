@@ -1,0 +1,125 @@
+{
+  "image_format": "single_product",
+  "items_results": [
+    {
+      "id": "forbid_usb_or_power_port",
+      "verdict": "pass",
+      "reason_ko": "결과 B에는 금속 조작 패널, USB 포트, 전원 콘센트가 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_tufting_or_buttons",
+      "verdict": "pass",
+      "reason_ko": "쿠션 표면에 버튼 퀼팅이나 터프팅 패턴은 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_piping_trim",
+      "verdict": "fail",
+      "reason_ko": "상단과 하단 사선 엣지에 둥글게 솟은 끈 형태의 파이핑/웰트 트림처럼 보이는 라인이 뚜렷합니다. 밀로 제품의 나이프 엣지·상침·플랜지 조합과 다르게 보입니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "connection_seat_to_inner_arm_bolster",
+      "verdict": "not_visible",
+      "reason_ko": "이미지가 매우 근접한 원단/시접 클로즈업이라 좌방석과 팔 안쪽 보조쿠션의 연결 관계를 확인할 수 없습니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "fabric_is_woven_textile_not_leather",
+      "verdict": "pass",
+      "reason_ko": "표면이 가죽/비닐 광택이 아니라 직조된 패브릭 질감으로 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "seat_cushion_crown_and_rolled_front_edge",
+      "verdict": "not_visible",
+      "reason_ko": "좌방석 전체 형태가 보이지 않아 중앙 크라운이나 앞엣지 말림을 판단하기 어렵습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "seat_cushion_narrow_gap",
+      "verdict": "not_visible",
+      "reason_ko": "두 좌방석 사이의 간격이 보이는 구도가 아닙니다.",
+      "category": "detail",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "seat_top_bottom_topstitch",
+      "verdict": "pass",
+      "reason_ko": "엣지 주변에 얇은 상침선이 확인됩니다. 위치가 좌방석인지 명확하진 않지만 미세 디테일 항목이므로 관대하게 통과로 봅니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "back_cushion_ear_folds",
+      "verdict": "not_visible",
+      "reason_ko": "등쿠션 상단 모서리가 보이지 않아 귀 모양 접힘을 확인할 수 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "back_cushion_no_center_seam",
+      "verdict": "not_visible",
+      "reason_ko": "등쿠션 정면이 보이지 않아 중앙 봉제선 유무를 판단할 수 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "back_cushion_knife_edge_light_topstitch",
+      "verdict": "not_visible",
+      "reason_ko": "등쿠션 외곽부가 확인되지 않는 근접 컷입니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "arm_bolster_front_flange",
+      "verdict": "not_visible",
+      "reason_ko": "팔 안쪽 보조쿠션의 전면 엣지가 보이지 않아 플랜지 라인을 검증할 수 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "fabric_melange_weave_visible",
+      "verdict": "pass",
+      "reason_ko": "근접 컷에서 직조된 패브릭 결과 미세한 색 섞임이 식별됩니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "fabric_matte_finish",
+      "verdict": "pass",
+      "reason_ko": "강한 가죽식 하이라이트 없이 무광에 가까운 패브릭 표면으로 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "water_repellency_beading_scene",
+      "verdict": "fail",
+      "reason_ko": "물방울이 맺혀 있는 생활발수 비딩 연출은 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 1,
+  "composition_score": 55,
+  "hallucinations": [
+    "둥근 파이핑처럼 보이는 돌출 엣지 트림"
+  ],
+  "specific_failures": [
+    "제품에 없어야 하는 둥근 파이핑/웰트 트림이 엣지에 보임",
+    "forbidden fail · forbid_piping_trim: 상단과 하단 사선 엣지에 둥글게 솟은 끈 형태의 파이핑/웰트 트림처럼 보이는 라인이 뚜렷합니다. 밀로 제품의 나이프 엣지·상침·플랜지 조합과 다르게 보입니다."
+  ],
+  "notes_ko": "B는 원본 C의 전동 버튼/USB 패널을 제거하고 패브릭 클로즈업으로 바뀌어 핵심 금지 요소인 USB 포트는 사라졌습니다. 또한 가죽이 아닌 직조 패브릭 질감은 잘 표현되었습니다. 다만 엣지에 둥근 파이핑처럼 보이는 돌출 트림이 뚜렷해 forbidden 항목 1건 실패입니다. 좌방석·팔걸이·등쿠션의 전체 구조 관련 항목은 이 근접 컷만으로는 다수 확인이 어렵습니다.",
+  "critical_fail_count": 1,
+  "product_score_raw": null,
+  "product_score": 72,
+  "verdict": "retry"
+}

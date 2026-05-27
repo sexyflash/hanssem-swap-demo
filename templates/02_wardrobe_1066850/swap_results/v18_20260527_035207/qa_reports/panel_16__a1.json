@@ -1,0 +1,16 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 82,
+  "hallucinations": [],
+  "specific_failures": [
+    "결과가 grid 형태 — single panel로 재생성"
+  ],
+  "notes_ko": "이 패널에 적용 가능한 verifiable checklist items가 제공되지 않아 distortion/forbidden 항목 기준의 실패는 산정하지 않았습니다. B는 좌우 2분할, 하단 텍스트 배치, 좌측 화이트 유광 도어와 세로 손잡이, 우측 크림톤 도어 표현을 전반적으로 유지합니다. 다만 C의 우측 원형 손잡이 2개 구성과 달리 B에서는 우측도 세로 라인형 손잡이처럼 보이며, 이는 composition 관점의 차이로만 기록했습니다.",
+  "verdict": "retry",
+  "product_score_raw": 30,
+  "product_score": 50,
+  "critical_fail_count": 0
+}

@@ -1,0 +1,104 @@
+{
+  "product_name": "밀로 패브릭소파 2인용",
+  "seat_count_selected": 2,
+  "intro": {
+    "headline": "집 안의 온기를 불어넣어줄 덕페더의 코지한 디자인",
+    "body": "포근한 덕페더 쿠션이 몸을 감싸는 캐주얼 무드의 패브릭 소파입니다. 좌방석은 32kg 고밀도 통스펀지로 받쳐주고, 등받이는 부드러운 오리털과 마이크로화이버 믹스로 편안하게 안착됩니다. 슬림한 블랙 메탈 다리와 여유로운 쿠션 볼륨의 대비로 공간에 따뜻함과 정돈된 분위기를 더합니다. 커버링이 가능해 관리가 쉽고, 오트밀·라이트그레이·더스티로즈 컬러로 다양한 인테리어에 자연스럽게 녹아듭니다."
+  },
+  "spec": {
+    "width_cm": 200,
+    "depth_cm": 90,
+    "height_cm": 85,
+    "seat_depth_cm": 52,
+    "seat_height_cm": 45,
+    "arm_height_cm": 57,
+    "leg_height_cm": 14,
+    "weight_kg": null,
+    "origin": null,
+    "model_number": null
+  },
+  "features": {
+    "seat_cushion_firmness": "MEDIUM SOFT (4/5)",
+    "back_cushion_firmness": "SOFT",
+    "seat_cushion_fill": "32KG 고밀도 통스펀지 12cm + 오리털 67% + 마이크로화이버 33%",
+    "back_cushion_fill": "오리털 67% + 마이크로화이버 33%",
+    "cushion_connected_to_arm": false,
+    "cushion_connection_note": "좌방석 2개는 독립 쿠션이며 팔걸이와 분리됨. 팔걸이 안쪽에는 별도의 소프트 보조쿠션이 놓이는 구조.",
+    "seam_style_seat": "topstitched",
+    "seam_style_arm": "topstitched",
+    "seam_difference": "좌방석은 상침 처리로 단정하고 평평한 라인, 팔걸이/등쿠션은 플랜지(겉시접) 느낌의 봉제로 캐주얼한 볼륨이 강조됨.",
+    "upholstery": "패브릭 커버(탈부착 커버링 가능)",
+    "certifications": [],
+    "frame": "프레임 구성 정보 미기재(메탈 다리 사용)",
+    "legs_count": 5,
+    "legs_position": "모서리 4개 + 가운데 1개",
+    "legs_shape": "slim cylindrical",
+    "legs_color": "매트 블랙",
+    "has_headrest": false,
+    "has_recliner": false,
+    "has_usb_or_control": false,
+    "cover_removable": true,
+    "key_features_korean": [
+      "오리털 67%+마이크로화이버 33% 백쿠션의 포근한 착석감",
+      "32kg 고밀도 12cm 통스펀지 좌방석으로 내구성 향상",
+      "좌방석 미디엄 소프트, 등받이 소프트의 균형 잡힌 쿠션감",
+      "플랜지 느낌의 봉제로 캐주얼하고 감성적인 분위기",
+      "14cm 슬림 메탈 다리로 로봇청소기 진입 용이",
+      "좌방석·등쿠션·팔걸이 커버 분리 세탁 가능",
+      "200×90×85cm, 공간을 넉넉히 쓰는 3인 구성",
+      "오트밀·라이트그레이·더스티로즈 3가지 컬러 옵션",
+      "미니멀 직선 프레임과 볼륨 쿠션의 대비 디자인",
+      "좌방석 2분할 구조로 관리와 교체가 편리",
+      "팔걸이 높이 57cm로 기대기 편안한 지지감",
+      "좌방석 높이 45cm, 일상에 안정적인 착석 높이"
+    ]
+  },
+  "model_options": [
+    {
+      "name": "3인용",
+      "dimensions": "200×90×85cm",
+      "selected": true
+    },
+    {
+      "name": "4인용",
+      "dimensions": "280×90×85cm",
+      "selected": false
+    }
+  ],
+  "color_options": [
+    {
+      "name": "오트밀",
+      "hex_guess": "#d9d1c3"
+    },
+    {
+      "name": "라이트그레이",
+      "hex_guess": "#bcbcbc"
+    },
+    {
+      "name": "더스티로즈",
+      "hex_guess": "#b07a75"
+    }
+  ],
+  "delivery_info": {
+    "warranty": "정보 없음",
+    "delivery_method": "정보 없음",
+    "notes": []
+  },
+  "panel_specific_guidance": {
+    "size_chart_overlay_text": "200×90×85cm / 좌방석 길이: 52cm / 좌방석 높이: 45cm / 팔걸이 높이: 57cm / 다릿발 높이: 14cm",
+    "firmness_chart_korean": {
+      "seat": "좌방석 미디엄 소프트 (4번째 위치)",
+      "back": "등쿠션 소프트 (5번째 위치)"
+    },
+    "color_chart_korean": [
+      "오트밀",
+      "라이트그레이",
+      "더스티로즈"
+    ],
+    "lineup_korean": "밀로 3인 200×90×85"
+  },
+  "user_override": {
+    "seat_count": 2,
+    "reason": "담당자 입력 — 2인용 한정"
+  }
+}

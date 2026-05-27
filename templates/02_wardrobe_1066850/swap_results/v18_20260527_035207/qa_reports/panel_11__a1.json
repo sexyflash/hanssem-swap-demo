@@ -1,0 +1,33 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [
+    {
+      "id": "module_lineup_shows_4_variants",
+      "verdict": "fail",
+      "reason_ko": "하단 라인업 영역에 4개의 옷장 변형 이미지는 보이지만, 기대 항목인 '서랍형 6종 / 행거형 6종 / 거울-행거형 6종 / 거울-서랍형 6종' 텍스트 표기가 확인되지 않습니다. 정확한 4가지 모델 옵션 표기 여부를 검증할 수 없으므로 실패로 판정합니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "height_lineup_two_options_label",
+      "verdict": "not_visible",
+      "reason_ko": "결과 B에서 높이 옵션 '194cm / 216cm' 관련 텍스트나 사이즈 정보가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 1,
+  "forbidden_fail_count": 0,
+  "composition_score": 88,
+  "hallucinations": [],
+  "specific_failures": [
+    "결과가 grid 형태 — single panel로 재생성",
+    "라인업 패널에 4가지 모델 옵션의 정확한 명칭 및 '6종' 표기가 누락됨",
+    "distortion fail · module_lineup_shows_4_variants: 하단 라인업 영역에 4개의 옷장 변형 이미지는 보이지만, 기대 항목인 '서랍형 6종 / 행거형 6종 / 거울-행거형 6종 / 거울-서랍형 6종' 텍스트 표기가 확인되지 않습니다. 정확한 4가지 모델 옵션 표기 여부를 검증할 수 없으므로 실패로 판정합니다."
+  ],
+  "notes_ko": "전체 구성은 C와 유사하게 상단 2개 라이프스타일 컷과 하단 블랙 배경 라인업 영역으로 유지되었습니다. 다만 본 패널의 핵심 검증 항목인 모듈 라인업의 정확한 텍스트 표기가 빠져 있어 distortion fail로 판정했습니다.",
+  "verdict": "retry",
+  "product_score_raw": 30,
+  "product_score": 11,
+  "critical_fail_count": 1
+}

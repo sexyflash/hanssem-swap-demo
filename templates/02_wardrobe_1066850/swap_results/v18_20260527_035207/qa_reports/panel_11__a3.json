@@ -1,0 +1,31 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [
+    {
+      "id": "module_lineup_shows_4_variants",
+      "verdict": "pass",
+      "reason_ko": "하단 라인업 영역에 4가지 옵션이 보이며, 각각 행거형 6종, 서랍형 6종, 거울-행거형 6종, 거울-서랍형 6종으로 표기되어 있습니다. 기대 항목 4종이 모두 확인됩니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "height_lineup_two_options_label",
+      "verdict": "pass",
+      "reason_ko": "하단에 '높이 라인업 : 194cm / 216cm (본 상품 216cm)' 문구가 확인되어 194cm와 216cm 두 가지 높이 옵션 및 본 상품 216cm 표기가 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 90,
+  "hallucinations": [],
+  "specific_failures": [
+    "결과가 grid 형태 — single panel로 재생성"
+  ],
+  "notes_ko": "검증 가능한 핵심 라인업 정보는 사용자 제품 기준과 일치합니다. 하단 모듈 라인업은 4종 모두 표시되어 있고, 높이 옵션도 194cm/216cm로 확인됩니다.",
+  "verdict": "retry",
+  "product_score_raw": 30,
+  "product_score": 100,
+  "critical_fail_count": 0
+}

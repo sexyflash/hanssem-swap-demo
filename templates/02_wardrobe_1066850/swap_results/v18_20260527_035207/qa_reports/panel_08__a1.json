@@ -1,0 +1,98 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [
+    {
+      "id": "two_80cm_modules_total_160cm",
+      "verdict": "fail",
+      "reason_ko": "사용자 제품 A는 중앙 이음부가 보이는 80cm 모듈 2개 조합의 160cm 구성으로 보이나, 결과 B는 우드톤의 여러 행거형 모듈/단일 장 조합처럼 보이며 2개의 80cm 모듈이 결합된 160cm 전면 구조가 명확히 재현되지 않았습니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "damping_hinges_indicator",
+      "verdict": "not_visible",
+      "reason_ko": "힌지 자체는 일부 보이지만, 댐핑 힌지임을 나타내는 별도 아이콘, 텍스트, 접사 표기는 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "shelf_thickness_18mm_note",
+      "verdict": "not_visible",
+      "reason_ko": "선반은 보이나 18mm 두께를 명시하는 텍스트나 단면 설명은 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "aluminum_hanging_rod_indicator",
+      "verdict": "pass",
+      "reason_ko": "여러 내부 컷에서 은색 금속 옷걸이봉이 명확히 보여 알루미늄 행거봉으로 해석 가능한 시각적 단서가 있습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "back_panel_triple_brace_diagram",
+      "verdict": "not_visible",
+      "reason_ko": "뒷판은 보이지만 3개의 보조목 보강 구조를 설명하는 다이어그램이나 문구는 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_finish_label",
+      "verdict": "not_visible",
+      "reason_ko": "도어 마감이 LPM 공법임을 나타내는 텍스트나 아이콘 표기는 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "e0_grade_label",
+      "verdict": "not_visible",
+      "reason_ko": "E0 등급 소재 사용을 표시하는 문구나 아이콘이 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "hinge_40000_cycles_label",
+      "verdict": "not_visible",
+      "reason_ko": "힌지 40,000회 개폐 테스트 관련 문구나 아이콘은 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "material_bending_50kg_168h_label",
+      "verdict": "not_visible",
+      "reason_ko": "자재 휨 강도 50kg/168시간 테스트 통과 표기는 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "recommended_shelf_load_20kg_80cm_label",
+      "verdict": "not_visible",
+      "reason_ko": "선반 권장 하중 최대 20kg 및 80cm 기준을 나타내는 표기가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "rod_load_16kg_80cm_label",
+      "verdict": "not_visible",
+      "reason_ko": "옷걸이봉 최대 16kg 및 80cm 기준 관련 표기는 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    }
+  ],
+  "distortion_fail_count": 1,
+  "forbidden_fail_count": 0,
+  "composition_score": 82,
+  "hallucinations": [
+    "사용자 제품의 화이트 계열 외관 대신 내추럴 우드톤 목재 마감이 전반적으로 생성됨"
+  ],
+  "specific_failures": [
+    "결과가 grid 형태 — single panel로 재생성",
+    "160cm 폭을 구성하는 80cm 모듈 2개 조합 구조가 명확히 재현되지 않음",
+    "distortion fail · two_80cm_modules_total_160cm: 사용자 제품 A는 중앙 이음부가 보이는 80cm 모듈 2개 조합의 160cm 구성으로 보이나, 결과 B는 우드톤의 여러 행거형 모듈/단일 장 조합처럼 보이며 2개의 80cm 모듈이 결합된 160cm 전면 구조가 명확히 재현되지 않았습니다."
+  ],
+  "notes_ko": "결과 B는 원본 패널 C의 구조 차트식 구도는 대체로 유지하지만, 사용자 제품 A의 핵심 정체성인 화이트 계열 160cm 2모듈 구성과는 다르게 우드톤 행거형 옷장 중심으로 보입니다. 기술 표기류는 대부분 이미지 내에서 확인되지 않으나 detail 항목이므로 제품 왜곡 실패로 집계하지 않았습니다.",
+  "verdict": "retry",
+  "product_score_raw": 30,
+  "product_score": 51,
+  "critical_fail_count": 1
+}

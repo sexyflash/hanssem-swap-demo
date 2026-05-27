@@ -1,0 +1,159 @@
+{
+  "panel_id": "panel_07.jpg",
+  "panel_class": "detail_close_up",
+  "vision_model": "gpt-5.5",
+  "ref_paths": [
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/milo_777039/use_product/p08_frame_01.jpg",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/milo_777039/use_product/p08_frame_04.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/milo_777039/use_product/detail_02.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/milo_777039/use_product/detail_05.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/milo_777039/use_product/color_01.png"
+  ],
+  "ref_labels": [
+    "main_view·전체정면",
+    "detail_close_up·쿠션/시접",
+    "detail_close_up·좌방석/팔걸이/쿠션",
+    "detail_close_up·팔걸이/등쿠션",
+    "material·원단짜임 클로즈업"
+  ],
+  "panel_orig_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/01_sofa_992474/panel_07.jpg",
+  "swap_result_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/01_sofa_992474/swap_results/v17_20260527_004219/gpt_image/panel_07__a3_v16.png",
+  "applicable_item_ids": [
+    "connection_seat_to_inner_arm_bolster",
+    "fabric_is_woven_textile_not_leather",
+    "seat_cushion_crown_and_rolled_front_edge",
+    "seat_cushion_narrow_gap",
+    "seat_top_bottom_topstitch",
+    "back_cushion_ear_folds",
+    "back_cushion_no_center_seam",
+    "back_cushion_knife_edge_light_topstitch",
+    "arm_bolster_front_flange",
+    "fabric_melange_weave_visible",
+    "fabric_matte_finish",
+    "water_repellency_beading_scene",
+    "forbid_usb_or_power_port",
+    "forbid_tufting_or_buttons",
+    "forbid_piping_trim"
+  ],
+  "user_prompt": "=== TASK ===\n이 swap 결과(B)를 사용자 제품의 verifiable checklist로 채점하라.\n\n=== 사용자 제품 ===\ncategory: sofa\n제품명: 밀로 패브릭소파 2인용\n핵심 axis: legs, arms, seat_cushion, back_cushion, frame, fabric, color, connection, size, model, seam\n\n=== 첨부 이미지 ===\n  A_1 = main_view·전체정면\n  A_2 = detail_close_up·쿠션/시접\n  A_3 = detail_close_up·좌방석/팔걸이/쿠션\n  A_4 = detail_close_up·팔걸이/등쿠션\n  A_5 = material·원단짜임 클로즈업\n  B = swap 결과 (채점 대상)\n  C = 한샘 원본 panel (composition reference)\n\n=== Panel 컨텍스트 ===\npanel_id: panel_07.jpg\npanel_class: detail_close_up\nspatial_layout: 이미지 전체는 소파의 가죽 표면을 매우 근접하게 촬영한 클로즈업이다. 중앙부에 직사각형 금속 패널이 가로로 배치되어 있으며, 패널에는 좌우로 일렬로 배열된 버튼들과 USB 포트가 있다. 버튼들은 패널의 중앙에서 우측까지 고르게 분포되어 있고, 각 버튼 주위에는 푸른색 조명이 은은하게 빛난다. 가죽 표면의 스티치 라인이 좌측 상단에서 우측 하단으로 사선으로 지나가며, 패널은 이미지 중앙에서 약간 하단에 위치한다. 텍스트는 버튼 위에 작게 각인되어 있으나, 전체적으로 텍스트 영역은 미미하다. 배경은 모두 동일한 베이지색 가죽 질감으로 채워져 있다.\n\n=== 적용 가능한 CHECKLIST ITEMS (이 panel에서 검증 가능) ===\n각 item에 category(distortion/detail/forbidden)와 generation_feasibility 가 표시됨.\n- distortion / forbidden: strict 채점 (제품 왜곡 검출이 사용자 핵심 요구)\n- detail: image gen 한계 인정 → 명백한 차이만 fail, 모호하면 pass\n- generation_feasibility=low: 더욱 보수적으로 fail 매김 (미세 디테일)\n\n- [ forbidden] [feas=high] id=forbid_usb_or_power_port axis=frame\n    desc: USB 포트, 전원 콘센트 등 전장 기능은 없어야 한다.\n    expected: 아니오, 보이지 않는다\n    question: 결과 B에서 USB 포트나 전원 포트가 보이나요?\n- [ forbidden] [feas=high] id=forbid_tufting_or_buttons axis=seam\n    desc: 좌방석/등쿠션에 터프팅이나 버튼 퀼팅이 있으면 안 된다.\n    expected: 아니오, 보이지 않는다\n    question: 결과 B에서 쿠션 표면의 버튼/터프팅 패턴이 보이나요?\n- [ forbidden] [feas=high] id=forbid_piping_trim axis=seam\n    desc: 파이핑(배관) 트림은 없어야 한다. 본 제품은 나이프 엣지/상침/플랜지 조합만 사용.\n    expected: 아니오, 보이지 않는다\n    question: 결과 B에서 엣지에 둥근 파이핑 끈 장식이 보이나요?\n- [distortion] [feas=medium] id=connection_seat_to_inner_arm_bolster axis=connection\n    desc: 팔 안쪽 보조쿠션이 좌방석과 시각적으로 끊김 없이 이어져 연속된 쿠션 영역을 형성한다.\n    expected: 네, 정면에서 연속된 하나의 쿠션 영역\n    question: 결과 B에서 좌방석과 팔 안쪽 보조쿠션이 하나로 이어진 연속 쿠션처럼 보이나요?\n- [distortion] [feas=high] id=fabric_is_woven_textile_not_leather axis=fabric\n    desc: 겉감은 가죽이 아니라 평직 직물(멜란지) 패브릭이다.\n    expected: 네, 직물 패브릭, 가죽/비닐 아님\n    question: 결과 B에서 표면이 직조된 패브릭으로 보이고 가죽/비닐처럼 광택이 없나요?\n- [    detail] [feas=medium] id=seat_cushion_crown_and_rolled_front_edge axis=seat_cushion\n    desc: 좌방석은 중앙이 살짝 볼록(크라운)하고 앞엣날이 부드럽게 말려 내려온다.\n    expected: 네, 크라운 + 말림\n    question: 결과 B에서 좌방석 중앙이 약간 볼록하고 앞엣날이 말려 보이나요?\n- [    detail] [feas=high] id=seat_cushion_narrow_gap axis=seat_cushion\n    desc: 두 좌방석 사이 간격이 좁고 단정하다.\n    expected: 네, 좁고 균일\n    question: 결과 B에서 두 좌방석 사이 이격이 좁고 균일해 보이나요?\n- [    detail] [feas=low] id=seat_top_bottom_topstitch axis=seam\n    desc: 좌방석 상하 가장자리에 간결한 상침 스티치가 있다.\n    expected: 네, 얇은 상침 보임\n    question: 결과 B에서 좌방석 위·아래 엣지에 얇은 상침선이 보이나요?\n- [    detail] [feas=medium] id=back_cushion_ear_folds axis=back_cushion\n    desc: 등쿠션 상단 모서리에 '귀'처럼 살짝 올라오는 접힘이 있다.\n    expected: 네, 상단 귀 모양 접힘\n    question: 결과 B에서 등쿠션 상단 모서리의 귀 모양 접힘이 보이나요?\n- [    detail] [feas=high] id=back_cushion_no_center_seam axis=seam\n    desc: 등쿠션 중앙에는 봉제 라인이 없다.\n    expected: 네, 중앙 봉제선 없음\n    question: 결과 B에서 각 등쿠션 중앙에 세로/가로 봉제선이 없나요?\n- [    detail] [feas=low] id=back_cushion_knife_edge_light_topstitch axis=seam\n    desc: 등쿠션 외곽은 나이프 엣지에 미세한 상침으로 형태를 잡는다.\n    expected: 네, 나이프 엣지 + 미세 상침\n    question: 결과 B에서 등쿠션 외곽이 날렵한 나이프 엣지와 얇은 상침으로 보이나요?\n- [    detail] [feas=low] id=arm_bolster_front_flange axis=seam\n    desc: 팔 안쪽 보조쿠션의 앞선에는 겉시접 플랜지 라인이 도드라진다.\n    expected: 네, 플랜지 시접 라인 보임\n    question: 결과 B에서 팔 안쪽 보조쿠션 전면 엣지에 플랜지(겉시접) 선이 보이나요?\n- [    detail] [feas=medium] id=fabric_melange_weave_visible axis=fabric\n    desc: 근접 컷에서 두 가지 이상 실색이 섞인 멜란지 평직 짜임이 보인다.\n    expected: 네, 멜란지 직조 보임\n    question: 결과 B의 근접 컷에서 멜란지 직조(복합 실색) 질감이 식별되나요?\n- [    detail] [feas=medium] id=fabric_matte_finish axis=fabric\n    desc: 표면은 거의 무광으로 광택 반사가 강하지 않다.\n    expected: 네, 무광에 가까움\n    question: 결과 B에서 패브릭 표면이 무광에 가깝게 보이고 강한 하이라이트가 없나요?\n- [    detail] [feas=medium] id=water_repellency_beading_scene axis=fabric\n    desc: 생활발수 연출: 물방울이 표면에 맺혀 스며들지 않는 근접 컷.\n    expected: 네, 물방울 비딩 표현\n    question: 결과 B에서 물방울이 표면에 맺혀 굴러가는 발수 연출이 보이나요?\n\n=== 출력 schema (strict JSON) ===\n{\n  \"image_format\": \"single_product|lifestyle|chart_diagram|multi_panel_grid\",\n  \"items_results\": [\n    {\n      \"id\": \"...\",\n      \"verdict\": \"pass|fail|not_visible\",\n      \"reason_ko\": \"...\",\n      \"category\": \"distortion|detail|forbidden\",\n      \"generation_feasibility\": \"high|medium|low\"\n    }\n  ],\n  \"distortion_fail_count\": int,\n  \"forbidden_fail_count\": int,\n  \"composition_score\": 0-100,\n  \"hallucinations\": [\"발견된 invented feature 한국어\"],\n  \"specific_failures\": [\"distortion/forbidden fail 항목의 한국어 요약\"],\n  \"notes_ko\": \"...\"\n}\n\n판정 가이드:\n- distortion item: 다리 개수 / 가죽 vs 패브릭 / 보조쿠션 유무 / 컬러명 등 명백한 차이 → fail\n- forbidden item: invented feature (헤드레스트 등) 발견 → fail\n- detail item: 시접 종류 / 미세 곡률 / 직조 결 등이 약간 달라도 → pass (관대)\n",
+  "result": {
+    "image_format": "single_product",
+    "items_results": [
+      {
+        "id": "forbid_usb_or_power_port",
+        "verdict": "pass",
+        "reason_ko": "결과 B에는 금속 컨트롤 패널, USB 포트, 전원 콘센트가 보이지 않습니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "forbid_tufting_or_buttons",
+        "verdict": "pass",
+        "reason_ko": "쿠션 표면에 버튼 퀼팅이나 터프팅 패턴은 보이지 않습니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "forbid_piping_trim",
+        "verdict": "pass",
+        "reason_ko": "사선 엣지에 봉제/상침 라인은 보이나, 둥근 끈 형태의 파이핑 트림으로 보이진 않습니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "connection_seat_to_inner_arm_bolster",
+        "verdict": "not_visible",
+        "reason_ko": "매우 근접한 원단/봉제 클로즈업이라 좌방석과 팔 안쪽 보조쿠션의 연결 관계를 확인할 수 없습니다.",
+        "category": "distortion",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "fabric_is_woven_textile_not_leather",
+        "verdict": "pass",
+        "reason_ko": "표면이 가죽/비닐의 광택 질감이 아니라 촘촘한 직조 조직의 무광 패브릭으로 보입니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "seat_cushion_crown_and_rolled_front_edge",
+        "verdict": "not_visible",
+        "reason_ko": "좌방석 전체 형태나 앞엣날 말림을 판단할 수 있는 구도가 아닙니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "seat_cushion_narrow_gap",
+        "verdict": "not_visible",
+        "reason_ko": "두 좌방석 사이의 간격이 보이지 않습니다.",
+        "category": "detail",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "seat_top_bottom_topstitch",
+        "verdict": "pass",
+        "reason_ko": "사선 엣지 부근에 얇은 상침선이 비교적 단정하게 표현되어 있습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "back_cushion_ear_folds",
+        "verdict": "not_visible",
+        "reason_ko": "등쿠션 상단 모서리 영역이 보이지 않아 귀 모양 접힘을 확인할 수 없습니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "back_cushion_no_center_seam",
+        "verdict": "not_visible",
+        "reason_ko": "등쿠션 전체가 보이지 않아 중앙 봉제선 유무를 판단하기 어렵습니다.",
+        "category": "detail",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "back_cushion_knife_edge_light_topstitch",
+        "verdict": "not_visible",
+        "reason_ko": "등쿠션 외곽 전체가 보이지 않아 나이프 엣지와 미세 상침을 확인할 수 없습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "arm_bolster_front_flange",
+        "verdict": "not_visible",
+        "reason_ko": "팔 안쪽 보조쿠션 전면 엣지로 특정할 수 있는 부분이 보이지 않습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "fabric_melange_weave_visible",
+        "verdict": "pass",
+        "reason_ko": "근접 컷에서 밝고 어두운 실이 섞인 듯한 멜란지 평직 질감이 식별됩니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "fabric_matte_finish",
+        "verdict": "pass",
+        "reason_ko": "강한 반사 하이라이트 없이 무광에 가까운 패브릭 표면으로 보입니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "water_repellency_beading_scene",
+        "verdict": "not_visible",
+        "reason_ko": "물방울이나 발수 비딩 연출은 보이지 않습니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      }
+    ],
+    "distortion_fail_count": 0,
+    "forbidden_fail_count": 0,
+    "composition_score": 55,
+    "hallucinations": [],
+    "specific_failures": [],
+    "notes_ko": "결과 B는 원본 C의 전동 버튼/USB 패널을 제거하고 밀로 제품의 직조 패브릭 질감으로 잘 치환했습니다. 금지된 전장 기능이나 버튼 퀼팅은 보이지 않으며, 핵심 왜곡 항목 중 패브릭 재질은 통과입니다. 다만 매우 근접한 원단 클로즈업이라 좌방석-팔 안쪽 보조쿠션 연결, 등쿠션 귀 접힘 등 형태 관련 세부 항목은 대부분 검증 불가입니다.",
+    "critical_fail_count": 0,
+    "product_score_raw": null,
+    "product_score": 88,
+    "verdict": "retry"
+  }
+}

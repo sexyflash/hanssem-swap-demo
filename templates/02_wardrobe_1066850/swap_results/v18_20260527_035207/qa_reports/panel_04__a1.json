@@ -1,0 +1,29 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [
+    {
+      "id": "size_chart_matches_w160_d57_h216",
+      "verdict": "pass",
+      "reason_ko": "결과 B 상단 외부 사이즈 차트에 가로 160, 깊이 57, 높이 216이 각각 명확히 표기되어 있어 기대값 W160 x D57 x H216 cm와 일치합니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "height_lineup_two_options_label",
+      "verdict": "fail",
+      "reason_ko": "결과 B에는 본 상품 높이 216cm만 보이며, 높이 라인업의 다른 옵션인 194cm 표기는 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 82,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "제품 핵심 사이즈 표기는 W160 x D57 x H216으로 정확합니다. 다만 높이 옵션 194cm/216cm 두 가지 라인업 표기는 누락되어 detail 항목에서 fail로 판단했습니다. 제품에 없는 기능이나 구조가 새로 발명된 흔적은 보이지 않습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 85,
+  "verdict": "retry"
+}

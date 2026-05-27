@@ -1,0 +1,92 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [
+    {
+      "id": "two_80cm_modules_total_160cm",
+      "verdict": "pass",
+      "reason_ko": "상단에 W160 cm 및 80 cm + 80 cm 치수 표기가 있고, 전면 중앙 세로 이음선으로 2개의 80cm 모듈 조합처럼 확인됩니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "damping_hinges_indicator",
+      "verdict": "not_visible",
+      "reason_ko": "댐핑 힌지 관련 아이콘, 텍스트, 힌지 접사 표기가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "shelf_thickness_18mm_note",
+      "verdict": "not_visible",
+      "reason_ko": "선반 두께 18mm를 나타내는 문구나 단면 도식이 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "aluminum_hanging_rod_indicator",
+      "verdict": "not_visible",
+      "reason_ko": "알루미늄 옷걸이봉을 확인할 수 있는 봉 표현이나 텍스트 표기가 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "back_panel_triple_brace_diagram",
+      "verdict": "not_visible",
+      "reason_ko": "뒷판 3중 보조목 보강 구조를 보여주는 다이어그램이나 설명이 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_finish_label",
+      "verdict": "not_visible",
+      "reason_ko": "도어 마감 LPM 공법을 나타내는 텍스트나 아이콘 표기가 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "e0_grade_label",
+      "verdict": "not_visible",
+      "reason_ko": "E0 등급 소재 표기가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "hinge_40000_cycles_label",
+      "verdict": "not_visible",
+      "reason_ko": "힌지 40,000회 개폐 테스트 관련 문구나 아이콘이 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "material_bending_50kg_168h_label",
+      "verdict": "not_visible",
+      "reason_ko": "자재 휨 강도 50kg/168시간 테스트 관련 표기가 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "recommended_shelf_load_20kg_80cm_label",
+      "verdict": "not_visible",
+      "reason_ko": "선반 권장 하중 20kg, 80cm 기준 관련 표기가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "rod_load_16kg_80cm_label",
+      "verdict": "not_visible",
+      "reason_ko": "옷걸이봉 최대 16kg, 80cm 기준 관련 표기가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 82,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "B는 제품 구조를 단순화한 차트/다이어그램 형태입니다. 핵심 왜곡 항목인 160cm 폭의 80cm 2모듈 구성은 치수와 중앙 이음부로 확인되어 통과입니다. 나머지 성능/소재 관련 세부 표기는 이미지에서 확인되지 않지만 detail 항목이므로 왜곡 실패로 집계하지 않았습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 87,
+  "verdict": "retry"
+}

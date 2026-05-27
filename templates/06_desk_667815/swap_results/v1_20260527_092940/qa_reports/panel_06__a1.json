@@ -1,0 +1,92 @@
+{
+  "image_format": "lifestyle",
+  "items_results": [
+    {
+      "id": "no_top_embedded_power_or_grommet",
+      "verdict": "pass",
+      "reason_ko": "상판 위에 타공형 콘센트, 케이블홀, 팝업 전원 모듈로 보이는 요소가 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_underdesk_outlet_in_base_images",
+      "verdict": "pass",
+      "reason_ko": "책상 하부에 설치형 콘센트나 전원 모듈이 노출되어 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_integrated_drawers",
+      "verdict": "pass",
+      "reason_ko": "책상 본체에 부착된 서랍은 보이지 않으며, 우측 하부는 오픈 선반형 수납으로 표현되어 있습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_glass_or_stone_top",
+      "verdict": "pass",
+      "reason_ko": "상판은 흰색 목재/라미네이트 계열로 보이며 유리나 석재, 대리석 질감으로 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_v_or_x_metal_legs",
+      "verdict": "pass",
+      "reason_ko": "책상 다리는 직선형 원통 다리와 판형 수납 구조로 보이며 V자, X자, 지그재그 메탈 프레임 다리는 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_keyboard_pullout_tray",
+      "verdict": "pass",
+      "reason_ko": "상판 아래에 키보드 슬라이드나 풀아웃 트레이가 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_casters_on_desk_base",
+      "verdict": "pass",
+      "reason_ko": "책상 본체 하부에는 바퀴형 캐스터가 보이지 않고, 일반 받침/다리 형태로 표현되어 있습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "l_shape_with_lower_bookcase",
+      "verdict": "pass",
+      "reason_ko": "메인 상판에서 우측으로 짧은 변이 이어지는 ㄱ자 형태이며, 짧은 변 아래가 오픈 책장 유닛으로 지지되는 구조가 확인됩니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "open_storage_no_doors",
+      "verdict": "pass",
+      "reason_ko": "우측 하부 수납부가 여러 칸의 오픈 선반으로 보이며, 도어 또는 일체형 서랍 구조는 보이지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "uniform_finish_to_bottom",
+      "verdict": "pass",
+      "reason_ko": "상판, 다리, 외곽 패널과 하부 수납부가 전반적으로 동일한 화이트 톤으로 이어져 마감 일관성이 유지됩니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "open_storage_tall_bay_for_pc",
+      "verdict": "pass",
+      "reason_ko": "우측 하부 오픈 선반의 하단 칸에 PC 본체나 큰 파일 박스가 들어갈 수 있을 정도의 높은 오픈 칸이 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 62,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "제품 정체성 기준으로는 한샘 티오 ㄱ자책상 160cm의 핵심 구조인 ㄱ자 상판, 우측 하부 오픈 책장, 화이트 마감, 직선형 다리 구성이 잘 유지되었습니다. 금지된 전원 타공, 콘센트, 서랍, 유리/석재 상판, 캐스터 등도 보이지 않습니다. 다만 원본 C의 구도는 두 개의 테이블과 네 개의 의자가 있는 장면인데, B는 의자 수와 테이블 배치가 크게 단순화되어 composition_score는 중간 수준으로 평가했습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 100,
+  "verdict": "pass"
+}

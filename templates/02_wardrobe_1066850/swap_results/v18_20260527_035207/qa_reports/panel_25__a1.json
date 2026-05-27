@@ -1,0 +1,87 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [
+    {
+      "id": "no_sliding_doors",
+      "verdict": "pass",
+      "reason_ko": "상단 전면과 하단 내부 컷에서 미닫이 레일이나 슬라이딩 패널 형태가 보이지 않고, 여닫이 도어 형태로 표현되어 있습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_high_legs_visible",
+      "verdict": "pass",
+      "reason_ko": "옷장 본체가 바닥에 거의 맞닿아 있으며, 약 10cm 이상 본체를 띄우는 높은 노출 다리는 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_builtin_led_visible",
+      "verdict": "pass",
+      "reason_ko": "옷장 전면이나 내부 가장자리에 LED 발광 바 또는 내장 조명으로 보이는 요소가 없습니다. 침대 하단의 주황빛은 옷장 기능으로 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "two_80cm_modules_total_160cm",
+      "verdict": "pass",
+      "reason_ko": "상단 전면에서 중앙 이음부가 있는 좌우 2개 모듈 구성으로 보이며, 각 모듈이 약 80cm씩 결합된 160cm 옷장 구성으로 읽힙니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "hinged_double_doors_per_module",
+      "verdict": "pass",
+      "reason_ko": "하단 내부 컷에서 문 안쪽 힌지가 명확히 보이고, 전면도 슬라이딩이 아닌 양개형 여닫이 도어로 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "external_3_tier_drawers_visible",
+      "verdict": "pass",
+      "reason_ko": "상단 전면과 우측 하단 서랍 클로즈업에서 외부형 3단 서랍 블록이 명확히 확인됩니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "long_inset_vertical_handles",
+      "verdict": "pass",
+      "reason_ko": "도어 가장자리 쪽에 길게 내려오는 세로형 매립 손잡이가 보이며, 기준 제품의 플러시 인셋 타입 손잡이와 부합합니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "rectangular_straight_top_silhouette",
+      "verdict": "pass",
+      "reason_ko": "옷장 상단이 평평하고 직선적인 직사각형 실루엣이며, 크라운이나 아치형 장식 돌출은 보이지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "selected_finish_in_images_is_one_of_three",
+      "verdict": "pass",
+      "reason_ko": "도어 컬러가 화이트 또는 크림화이트 계열로 보이며, 제공된 컬러 옵션 범위 안에 해당합니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "aluminum_hanging_rod_indicator",
+      "verdict": "pass",
+      "reason_ko": "하단 내부 컷에서 은색 금속 재질의 옷걸이봉이 확인되어 알루미늄 행거봉 표현으로 볼 수 있습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 85,
+  "hallucinations": [],
+  "specific_failures": [
+    "결과가 grid 형태 — single panel로 재생성"
+  ],
+  "notes_ko": "B는 상단 라이프스타일 장면, 하단 내부 및 서랍 클로즈업, 하단 텍스트로 구성된 멀티 패널 형식입니다. 제품 정체성 기준에서 슬라이딩 도어, 높은 옷장 다리, 옷장 내장 LED 같은 금지 요소는 보이지 않으며, 2모듈 옷장, 여닫이 도어, 3단 외부 서랍, 세로 매립 손잡이, 직선형 실루엣과 화이트/크림 계열 마감이 대체로 잘 유지되었습니다.",
+  "verdict": "retry",
+  "product_score_raw": 30,
+  "product_score": 100,
+  "critical_fail_count": 0
+}

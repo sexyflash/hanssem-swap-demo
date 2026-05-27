@@ -1,0 +1,97 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [
+    {
+      "id": "two_80cm_modules_total_160cm",
+      "verdict": "fail",
+      "reason_ko": "B는 좌우에 별도 구조 도식이 분리되어 있을 뿐, 사용자 제품의 160cm 전면이 80cm 모듈 2개로 결합된 형태나 중앙 이음부가 명확한 2칸 구조로 보이지 않습니다. 특히 우측 서랍 도식은 독립된 서랍장처럼 표현되어 전체 옷장세트의 모듈 조합 정체성이 약합니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "damping_hinges_indicator",
+      "verdict": "not_visible",
+      "reason_ko": "도어 개폐를 암시하는 선화는 있으나, ‘댐핑 힌지’라는 텍스트, 아이콘, 힌지 접사 표기는 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "shelf_thickness_18mm_note",
+      "verdict": "not_visible",
+      "reason_ko": "선반 단면이나 ‘18mm’ 두께 표기가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "aluminum_hanging_rod_indicator",
+      "verdict": "not_visible",
+      "reason_ko": "옷걸이봉 자체나 알루미늄 소재를 나타내는 텍스트/아이콘이 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "back_panel_triple_brace_diagram",
+      "verdict": "not_visible",
+      "reason_ko": "뒷판 3중 보조목 보강 구조를 보여주는 도식이나 설명이 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_finish_label",
+      "verdict": "not_visible",
+      "reason_ko": "LPM 마감 관련 텍스트나 아이콘이 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "e0_grade_label",
+      "verdict": "not_visible",
+      "reason_ko": "E0 등급 표기는 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "hinge_40000_cycles_label",
+      "verdict": "not_visible",
+      "reason_ko": "힌지 40,000회 개폐 테스트 관련 문구나 아이콘이 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "material_bending_50kg_168h_label",
+      "verdict": "not_visible",
+      "reason_ko": "자재 휨 강도 50kg/168시간 테스트 관련 표기가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "recommended_shelf_load_20kg_80cm_label",
+      "verdict": "not_visible",
+      "reason_ko": "선반 권장 하중 20kg, 80cm 기준 표기가 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "rod_load_16kg_80cm_label",
+      "verdict": "not_visible",
+      "reason_ko": "옷걸이봉 최대 16kg, 80cm 기준 하중 표기가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    }
+  ],
+  "distortion_fail_count": 1,
+  "forbidden_fail_count": 0,
+  "composition_score": 85,
+  "hallucinations": [
+    "우측 서랍 전면 중앙 세로 분할선"
+  ],
+  "specific_failures": [
+    "160cm 옷장세트가 80cm 모듈 2개로 결합된 전면 구조로 명확히 보이지 않음",
+    "distortion fail · two_80cm_modules_total_160cm: B는 좌우에 별도 구조 도식이 분리되어 있을 뿐, 사용자 제품의 160cm 전면이 80cm 모듈 2개로 결합된 형태나 중앙 이음부가 명확한 2칸 구조로 보이지 않습니다. 특히 우측 서랍 도식은 독립된 서랍장처럼 표현되어 전체 옷장세트의 모듈 조합 정체성이 약합니다."
+  ],
+  "notes_ko": "B는 원본 패널 C의 구조 차트 구도는 대체로 유지했지만, 사용자 제품의 핵심 정체성인 160cm 폭의 80cm 2모듈 조합이 제품 전면 구조로 명확히 표현되지 않습니다. 세부 사양 표기류는 대부분 보이지 않으나 detail 항목이므로 왜곡 fail로 집계하지 않았습니다.",
+  "critical_fail_count": 1,
+  "product_score_raw": null,
+  "product_score": 49,
+  "verdict": "retry"
+}

@@ -1,0 +1,61 @@
+[sofa] fetching categories [20081]...
+  pool=64 active=64 sampled=10
+  [sofa 1/10] gdsNo=993094 코타 천연가죽 소파 4인용
+  [sofa 2/10] gdsNo=799215 엠마 컴포트 천연가죽 소파 3인(3종/택1)
+  [sofa 3/10] gdsNo=799220 엠마 컴포트 천연가죽 소파 4인(3종/택1)
+  [sofa 4/10] gdsNo=746526 MVME 프라임 노블 천연가죽 리클라이너 소파 3인
+  [sofa 5/10] gdsNo=777039 밀로 패브릭소파 3인용(3종/택1)
+  [sofa 6/10] gdsNo=1005271 도무스 IMG 노르딕85 1인 리클라이너
+  [sofa 7/10] gdsNo=786625 MVME 프라임 노블 홈바형 천연가죽 리클라이너 소파 4인
+  [sofa 8/10] gdsNo=786845 모아 모듈형 패브릭소파 4인 라운지형
+  [sofa 9/10] gdsNo=992474 MVME 키안티 천연가죽 리클라이너 4인
+  [sofa 10/10] gdsNo=786626 MVME 프라임 리츠 홈바형 천연가죽 리클라이너 소파 4인 화이트에디션
+[wardrobe] fetching categories [20086]...
+  pool=40 active=40 sampled=10
+  [wardrobe 1/10] gdsNo=1066847 샘베딩 스테디 옷장 80cm(높이194cm)
+  [wardrobe 2/10] gdsNo=1066850 샘베딩 스테디 옷장 80cm(높이194cm) 서랍형
+  [wardrobe 3/10] gdsNo=171733 샘베딩 베이직 옷장 80cm(높이194cm) 행거서랍형 4종
+  [wardrobe 4/10] gdsNo=400542 아임빅 슬라이딩 옷장 120cm 행거형 짧은옷장 12종
+  [wardrobe 5/10] gdsNo=289945 샘베딩 클로즈 옷장 80cm(높이216cm) 행거서랍형 6종
+  [wardrobe 6/10] gdsNo=647266 아임빅 슬라이딩 옷장 100cm 행거형 짧은옷장 8종
+  [wardrobe 7/10] gdsNo=1050289 로렌 크림 옷장세트 140~350cm (높이216cm)
+  [wardrobe 8/10] gdsNo=945924 프레임 클래식 옷장세트 코튼화이트 140cm~350cm(216cm) 16
+  [wardrobe 9/10] gdsNo=289948 샘베딩 클로즈 옷장세트 160cm(높이216cm) 서랍형 6종
+  [wardrobe 10/10] gdsNo=1066885 샘베딩 스테디 옷장세트 240cm(높이194cm) 서랍형
+[desk] fetching categories [20094, 20099]...
+  pool=56 active=56 sampled=10
+  [desk 1/10] gdsNo=337208 샘스마트 책상 112.5cm (컬러 택1)
+  [desk 2/10] gdsNo=602514 티오ㄱ자 데스크패드+자석바 세트
+  [desk 3/10] gdsNo=993205 플렉스Z 컴퓨터책상 1600 D80
+  [desk 4/10] gdsNo=1077501 티오 일자책상 세트 (옵션 택1)
+  [desk 5/10] gdsNo=667832 티오 책상장 LED 스터디 조명80cm
+  [desk 6/10] gdsNo=1028805 티오 단독책상 세트 (옵션 택1)
+  [desk 7/10] gdsNo=1028868 티오 책상부착용 콘센트
+  [desk 8/10] gdsNo=602515 티오 수납함 2칸 (컬러 택1)
+  [desk 9/10] gdsNo=973933 티오 ㄱ자책상 160cm (컬러 택1)
+  [desk 10/10] gdsNo=667815 티오 일반책상 120cm (컬러 택1)
+
+wrote /Users/sexyflash/Projects/Creagen/Apps/utility/hanssem_research/hanssem_pattern.json
+{
+  "total_products": 30,
+  "by_category": {
+    "sofa": 10,
+    "wardrobe": 10,
+    "desk": 10
+  },
+  "by_pattern": {
+    "split_panels": 30
+  },
+  "category_ids": {
+    "sofa": [
+      20081
+    ],
+    "wardrobe": [
+      20086
+    ],
+    "desk": [
+      20094,
+      20099
+    ]
+  }
+}

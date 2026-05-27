@@ -1,0 +1,16 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 90,
+  "hallucinations": [],
+  "specific_failures": [
+    "결과가 grid 형태 — single panel로 재생성"
+  ],
+  "notes_ko": "이 패널에 적용 가능한 체크리스트 항목이 없어 distortion/forbidden fail은 산정되지 않았습니다. B는 좌우 2분할 클로즈업 구성과 하단 텍스트 영역을 유지하며, 사용자 제품 레퍼런스에서 보이는 화이트/크림 계열 도어 마감과 세로형 손잡이·도어 라인 표현이 대체로 반영되어 있습니다. 명백한 사용자 제품 외 invented feature는 확인되지 않습니다.",
+  "verdict": "retry",
+  "product_score_raw": 30,
+  "product_score": 50,
+  "critical_fail_count": 0
+}

@@ -1,0 +1,112 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [
+    {
+      "id": "no_bar_or_knob_handles",
+      "verdict": "fail",
+      "reason_ko": "오른쪽 크림화이트 도어에 도어면 밖으로 돌출된 세로형 바 손잡이가 명확히 보입니다. 본 제품의 매립형 손잡이 조건과 맞지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "external_3_tier_drawers_visible",
+      "verdict": "pass",
+      "reason_ko": "오른쪽 하단에 가로 분할선으로 구분된 3단 외부형 서랍 블록이 명확히 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "long_inset_vertical_handles",
+      "verdict": "pass",
+      "reason_ko": "왼쪽 화이트 도어에는 도어 가장자리를 따라 길게 내려오는 세로형 매립 손잡이/홈 형태가 확인됩니다. 다만 오른쪽에는 돌출 손잡이가 함께 생성되어 별도 forbidden 항목에서 실패 처리했습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "handle_color_contrasts_with_door",
+      "verdict": "pass",
+      "reason_ko": "왼쪽 매립 손잡이 부분은 회색 음영과 홈으로 도어 면과 구분되어 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "damping_hinges_indicator",
+      "verdict": "not_visible",
+      "reason_ko": "댐핑 힌지 관련 아이콘, 텍스트, 힌지 접사는 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "shelf_thickness_18mm_note",
+      "verdict": "not_visible",
+      "reason_ko": "선반 두께 18mm를 나타내는 표기나 도식은 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "aluminum_hanging_rod_indicator",
+      "verdict": "not_visible",
+      "reason_ko": "옷걸이봉 자체나 알루미늄 소재를 확인할 수 있는 텍스트/접사는 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_finish_label",
+      "verdict": "not_visible",
+      "reason_ko": "LPM 마감임을 나타내는 문구나 아이콘은 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "e0_grade_label",
+      "verdict": "not_visible",
+      "reason_ko": "E0 등급 표기는 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "hinge_40000_cycles_label",
+      "verdict": "not_visible",
+      "reason_ko": "힌지 40,000회 개폐 테스트 관련 문구나 아이콘은 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "material_bending_50kg_168h_label",
+      "verdict": "not_visible",
+      "reason_ko": "50kg/168시간 자재 휨 강도 테스트 관련 표기는 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "recommended_shelf_load_20kg_80cm_label",
+      "verdict": "not_visible",
+      "reason_ko": "선반 권장 하중 20kg, 80cm 기준 관련 표기는 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "rod_load_16kg_80cm_label",
+      "verdict": "not_visible",
+      "reason_ko": "옷걸이봉 최대 하중 16kg, 80cm 기준 관련 표기는 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 1,
+  "composition_score": 72,
+  "hallucinations": [
+    "오른쪽 도어의 돌출형 세로 바 손잡이"
+  ],
+  "specific_failures": [
+    "결과가 grid 형태 — single panel로 재생성",
+    "본 제품에는 없어야 하는 돌출형 바 손잡이가 오른쪽 도어에 생성됨",
+    "forbidden fail · no_bar_or_knob_handles: 오른쪽 크림화이트 도어에 도어면 밖으로 돌출된 세로형 바 손잡이가 명확히 보입니다. 본 제품의 매립형 손잡이 조건과 맞지 않습니다."
+  ],
+  "notes_ko": "B는 좌우 2분할 소재/도어 클로즈업 구성은 유지하지만, 오른쪽 도어에 원제품 기준 금지된 돌출 손잡이가 보입니다. 3단 외부형 서랍과 왼쪽 매립형 세로 손잡이는 확인됩니다.",
+  "verdict": "retry",
+  "product_score_raw": 30,
+  "product_score": 72,
+  "critical_fail_count": 1
+}

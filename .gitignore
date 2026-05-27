@@ -1,6 +1,40 @@
+# 옛 swap runs (latest 만 보존)
+templates/01_sofa_992474/swap_results/v3_*/
+templates/01_sofa_992474/swap_results/v4_*/
+templates/01_sofa_992474/swap_results/v5_*/
+templates/01_sofa_992474/swap_results/v6_*/
+templates/01_sofa_992474/swap_results/v7_*/
+templates/01_sofa_992474/swap_results/v8_*/
+templates/01_sofa_992474/swap_results/v9_*/
+templates/01_sofa_992474/swap_results/v10_*/
+templates/01_sofa_992474/swap_results/v11_*/
+templates/01_sofa_992474/swap_results/v12_*/
+templates/01_sofa_992474/swap_results/v13_*/
+templates/01_sofa_992474/swap_results/v14_*/
+templates/01_sofa_992474/swap_results/v15_*/
+templates/01_sofa_992474/swap_results/v16_*/
+templates/01_sofa_992474/swap_results/imageless_*/
+templates/01_sofa_992474/swap_results/panel02_*/
+templates/01_sofa_992474/swap_results/panel04_*/
+templates/01_sofa_992474/swap_results/retest_*/
+templates/01_sofa_992474/swap_results/retry_*/
+templates/01_sofa_992474/swap_results/run_*/
+templates/01_sofa_992474/swap_results/imageless_*/
+templates/02_wardrobe_1066850/swap_results/v17_*_placeholder/
+templates/02_wardrobe_1066850/swap_results/v1_*/
+templates/03_desk_667832/swap_results/
+
+# 옛 milo 사진/preprocessed (이미 use_product에 있음)
+user_products/milo_777039/panel_*.jpg
+user_products/milo_777039/panel_*.png
+user_products/milo_777039/_cover_1000.jpg
+user_products/milo_777039/gif_frames/
+user_products/milo_777039/preprocessed/
+user_products/milo_777039/auto_pipeline_output.json
+user_products/milo_777039/google_images_*.json
+
+# 시스템
+.DS_Store
 __pycache__/
 *.pyc
-.DS_Store
-*.log
-templates/01_sofa_992474/swap_results/v*_2026*/gpt_image/
-templates/01_sofa_992474/swap_results/v*_2026*/summary.json
+*.pyo

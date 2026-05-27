@@ -1,0 +1,14 @@
+{
+  "image_format": "single_product",
+  "items_results": [],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 35,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "이 panel에서 적용 가능한 verifiable checklist item이 없으므로 distortion/forbidden fail은 집계되지 않습니다. B는 옷장 정면 제품 형태로 보이며, 사용자 제품의 흰색/크림 계열 도어, 세로 손잡이, 하부 서랍, 원형 손잡이 요소가 전반적으로 포함되어 있습니다. 다만 C 원본 panel은 좌우 2분할 클로즈업과 하단 텍스트가 있는 구성인데, B는 전체 옷장 정면 단일 제품 이미지로 바뀌어 composition은 낮게 평가됩니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 50,
+  "verdict": "retry"
+}

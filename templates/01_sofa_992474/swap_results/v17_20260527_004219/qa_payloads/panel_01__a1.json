@@ -1,0 +1,143 @@
+{
+  "panel_id": "panel_01.jpg",
+  "panel_class": "lifestyle_scene",
+  "vision_model": "gpt-5.5",
+  "ref_paths": [
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/milo_777039/use_product/p08_frame_01.jpg",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/milo_777039/use_product/p08_frame_02.jpg",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/milo_777039/use_product/p08_frame_03.jpg",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/milo_777039/use_product/detail_02.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/milo_777039/use_product/detail_05.png"
+  ],
+  "ref_labels": [
+    "main_view·전체정면",
+    "main_view·전체각도",
+    "main_view·전체측면",
+    "detail_close_up·좌방석/팔걸이/쿠션",
+    "detail_close_up·팔걸이/등쿠션"
+  ],
+  "panel_orig_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/01_sofa_992474/panel_01.jpg",
+  "swap_result_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/01_sofa_992474/swap_results/v17_20260527_004219/gpt_image/panel_01__a1_v16.png",
+  "applicable_item_ids": [
+    "frame_boxy_low_profile",
+    "arms_box_shape_soft_rounded_edges",
+    "legs_slight_inward_cant",
+    "forbid_headrest_present",
+    "forbid_usb_or_power_port",
+    "forbid_recliner_mechanism",
+    "forbid_center_5th_leg",
+    "forbid_v_sled_leg_base",
+    "forbid_tufting_or_buttons",
+    "forbid_skirt_covering_legs",
+    "forbid_non_black_or_wood_legs",
+    "forbid_chaise_or_attached_ottoman",
+    "forbid_storage_seat"
+  ],
+  "user_prompt": "=== TASK ===\n이 swap 결과(B)를 사용자 제품의 verifiable checklist로 채점하라.\n\n=== 사용자 제품 ===\ncategory: sofa\n제품명: 밀로 패브릭소파 2인용\n핵심 axis: legs, arms, seat_cushion, back_cushion, frame, fabric, color, connection, size, model, seam\n\n=== 첨부 이미지 ===\n  A_1 = main_view·전체정면\n  A_2 = main_view·전체각도\n  A_3 = main_view·전체측면\n  A_4 = detail_close_up·좌방석/팔걸이/쿠션\n  A_5 = detail_close_up·팔걸이/등쿠션\n  B = swap 결과 (채점 대상)\n  C = 한샘 원본 panel (composition reference)\n\n=== Panel 컨텍스트 ===\npanel_id: panel_01.jpg\npanel_class: lifestyle_scene\nspatial_layout: sofa가 프레임 중앙에 정면으로 크게 배치되어 전체 가로의 약 70%를 차지하며, 하단 60% 영역을 점유한다. 소파 위에는 세 개의 쿠션이 좌측과 우측에 각각 놓여 있다. 소파 앞 하단 중앙에는 낮은 직사각형 원목 테이블이 위치하며, 테이블 위에는 둥근 트레이와 유리잔 두 개가 놓여 있다. 좌측 상단에는 슬림한 플로어 스탠드 조명이 세워져 있다. 배경은 좌우로 베이지색 벽, 중앙에는 짙은 우드 패널이 세로로 배치되어 있다. 우측 상단에는 검은 조각상이 작은 선반 위에 올려져 있다. 바닥에는 밝은 회색 러그가 중앙 하단에 깔려 있다. 텍스트나 그래픽 오버레이는 없다.\n\n=== 적용 가능한 CHECKLIST ITEMS (이 panel에서 검증 가능) ===\n각 item에 category(distortion/detail/forbidden)와 generation_feasibility 가 표시됨.\n- distortion / forbidden: strict 채점 (제품 왜곡 검출이 사용자 핵심 요구)\n- detail: image gen 한계 인정 → 명백한 차이만 fail, 모호하면 pass\n- generation_feasibility=low: 더욱 보수적으로 fail 매김 (미세 디테일)\n\n- [ forbidden] [feas=high] id=forbid_headrest_present axis=back_cushion\n    desc: 별도 헤드레스트가 추가되면 안 된다.\n    expected: 아니오, 보이지 않는다\n    question: 결과 B에서 헤드레스트(분리 또는 일체형)가 보이나요?\n- [ forbidden] [feas=high] id=forbid_usb_or_power_port axis=frame\n    desc: USB 포트, 전원 콘센트 등 전장 기능은 없어야 한다.\n    expected: 아니오, 보이지 않는다\n    question: 결과 B에서 USB 포트나 전원 포트가 보이나요?\n- [ forbidden] [feas=high] id=forbid_recliner_mechanism axis=frame\n    desc: 전동/수동 리클라이너 메커니즘(풋레스트, 스위치 등)은 없어야 한다.\n    expected: 아니오, 보이지 않는다\n    question: 결과 B에서 리클라이너 풋레스트나 조작 스위치가 보이나요?\n- [ forbidden] [feas=high] id=forbid_center_5th_leg axis=legs\n    desc: 중앙 5번째 다리는 있으면 안 된다.\n    expected: 아니오, 보이지 않는다\n    question: 결과 B에서 소파 하부 중앙에 추가 다리가 보이나요?\n- [ forbidden] [feas=high] id=forbid_v_sled_leg_base axis=legs\n    desc: V자 일체형/슬레드 베이스 다리는 금지된다(독립 다리여야 함).\n    expected: 아니오, 보이지 않는다\n    question: 결과 B에서 양쪽이 연결된 V자 또는 슬레드형 다리 구조가 보이나요?\n- [ forbidden] [feas=high] id=forbid_tufting_or_buttons axis=seam\n    desc: 좌방석/등쿠션에 터프팅이나 버튼 퀼팅이 있으면 안 된다.\n    expected: 아니오, 보이지 않는다\n    question: 결과 B에서 쿠션 표면의 버튼/터프팅 패턴이 보이나요?\n- [ forbidden] [feas=high] id=forbid_skirt_covering_legs axis=frame\n    desc: 스커트로 다리를 가리는 구조는 금지된다(하부 여백이 보여야 함).\n    expected: 아니오, 보이지 않는다\n    question: 결과 B에서 패브릭 스커트가 다리를 가리고 바닥 여백이 사라져 보이나요?\n- [ forbidden] [feas=high] id=forbid_non_black_or_wood_legs axis=legs\n    desc: 다리는 블랙 스틸이어야 하며 원목 다리나 비블랙 금속(크롬/골드 등)은 금지.\n    expected: 아니오, 보이지 않는다\n    question: 결과 B에서 다리가 블랙 스틸이 아닌 원목 또는 크롬/골드 톤으로 보이나요?\n- [ forbidden] [feas=high] id=forbid_chaise_or_attached_ottoman axis=model\n    desc: 체어즈 확장부나 일체형 오토만이 붙은 구성은 금지된다(순수 2인 스트레이트).\n    expected: 아니오, 보이지 않는다\n    question: 결과 B에서 한쪽으로 돌출된 체어즈나 일체형 오토만이 보이나요?\n- [ forbidden] [feas=high] id=forbid_storage_seat axis=frame\n    desc: 좌판 수납(들뜸/히든 스토리지) 기능은 없어야 한다.\n    expected: 아니오, 보이지 않는다\n    question: 결과 B에서 좌판이 열리거나 수납공간이 보이나요?\n- [distortion] [feas=high] id=frame_boxy_low_profile axis=frame\n    desc: 프레임은 각이 살아있는 낮은 직사각 박스 형태로, 미니멀한 외곽 라인을 가진다.\n    expected: 네, 낮은 직사각 박스 프레임\n    question: 결과 B에서 프레임이 각진 직사각 박스 형태로 낮은 프로파일로 보이나요?\n- [distortion] [feas=high] id=arms_box_shape_soft_rounded_edges axis=arms\n    desc: 팔걸이는 바깥에서 박스형 직선 실루엣이며 모서리는 둔각으로 부드럽게 라운드 처리.\n    expected: 네, 박스형 + 완만한 라운드 모서리\n    question: 결과 B에서 팔걸이가 박스형이고 모서리가 살짝 라운드 처리되어 보이나요?\n- [    detail] [feas=medium] id=legs_slight_inward_cant axis=legs\n    desc: 슬림한 다리는 아래로 갈수록 안쪽으로 아주 약하게 모이는 각도를 가진다.\n    expected: 네, 미세한 안쪽 각도\n    question: 결과 B에서 다리가 수직이 아니라 안쪽으로 아주 살짝 기울어 보이나요?\n\n=== 출력 schema (strict JSON) ===\n{\n  \"image_format\": \"single_product|lifestyle|chart_diagram|multi_panel_grid\",\n  \"items_results\": [\n    {\n      \"id\": \"...\",\n      \"verdict\": \"pass|fail|not_visible\",\n      \"reason_ko\": \"...\",\n      \"category\": \"distortion|detail|forbidden\",\n      \"generation_feasibility\": \"high|medium|low\"\n    }\n  ],\n  \"distortion_fail_count\": int,\n  \"forbidden_fail_count\": int,\n  \"composition_score\": 0-100,\n  \"hallucinations\": [\"발견된 invented feature 한국어\"],\n  \"specific_failures\": [\"distortion/forbidden fail 항목의 한국어 요약\"],\n  \"notes_ko\": \"...\"\n}\n\n판정 가이드:\n- distortion item: 다리 개수 / 가죽 vs 패브릭 / 보조쿠션 유무 / 컬러명 등 명백한 차이 → fail\n- forbidden item: invented feature (헤드레스트 등) 발견 → fail\n- detail item: 시접 종류 / 미세 곡률 / 직조 결 등이 약간 달라도 → pass (관대)\n",
+  "result": {
+    "image_format": "lifestyle",
+    "items_results": [
+      {
+        "id": "forbid_headrest_present",
+        "verdict": "pass",
+        "reason_ko": "별도 분리형 또는 일체형 헤드레스트가 보이지 않고, 사용자 제품처럼 큰 등쿠션만 보입니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "forbid_usb_or_power_port",
+        "verdict": "pass",
+        "reason_ko": "프레임이나 팔걸이 주변에 USB 포트, 전원 콘센트 등 전장 기능이 보이지 않습니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "forbid_recliner_mechanism",
+        "verdict": "pass",
+        "reason_ko": "풋레스트, 조작 스위치, 리클라이너 분절선 등 리클라이너 메커니즘이 보이지 않습니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "forbid_center_5th_leg",
+        "verdict": "pass",
+        "reason_ko": "소파 하부 중앙에 추가 5번째 다리가 명확히 보이지 않으며, 양측 독립 다리 중심으로 보입니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "forbid_v_sled_leg_base",
+        "verdict": "pass",
+        "reason_ko": "다리가 서로 연결된 V자형 또는 슬레드형 베이스가 아니라, 분리된 슬림 다리로 보입니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "forbid_tufting_or_buttons",
+        "verdict": "pass",
+        "reason_ko": "좌방석과 등쿠션 표면에 버튼, 터프팅, 퀼팅 패턴이 보이지 않습니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "forbid_skirt_covering_legs",
+        "verdict": "pass",
+        "reason_ko": "하부 여백과 다리가 보이며, 패브릭 스커트가 다리를 덮는 구조가 아닙니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "forbid_non_black_or_wood_legs",
+        "verdict": "pass",
+        "reason_ko": "보이는 다리는 블랙 톤의 슬림한 금속 다리로 보이며, 원목이나 크롬/골드 톤 다리는 보이지 않습니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "forbid_chaise_or_attached_ottoman",
+        "verdict": "pass",
+        "reason_ko": "한쪽으로 돌출된 체어즈나 일체형 오토만 없이 2인 스트레이트 소파 형태입니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "forbid_storage_seat",
+        "verdict": "pass",
+        "reason_ko": "좌판이 들리거나 내부 수납공간이 드러난 표현이 없습니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "frame_boxy_low_profile",
+        "verdict": "pass",
+        "reason_ko": "프레임이 낮고 긴 직사각 박스형 실루엣으로 보이며, 외곽 라인도 미니멀하게 유지됩니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "arms_box_shape_soft_rounded_edges",
+        "verdict": "pass",
+        "reason_ko": "양쪽 팔걸이가 직선적인 박스형이고, 모서리는 과하게 둥글지 않은 완만한 라운드로 표현되어 사용자 제품과 부합합니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "legs_slight_inward_cant",
+        "verdict": "pass",
+        "reason_ko": "다리 각도는 아주 미세한 디테일이라 엄격히 보기는 어렵지만, 슬림한 블랙 다리와 약한 기울기 표현이 유지되어 허용 범위입니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      }
+    ],
+    "distortion_fail_count": 0,
+    "forbidden_fail_count": 0,
+    "composition_score": 88,
+    "hallucinations": [],
+    "specific_failures": [],
+    "notes_ko": "B는 사용자 제품의 핵심 정체성인 2인용 스트레이트 패브릭 소파, 낮은 박스형 프레임, 박스형 팔걸이, 블랙 슬림 다리를 잘 유지합니다. 금지된 헤드레스트, 리클라이너, 체어즈, 스커트, 터프팅, 전장 포트 등은 보이지 않습니다. 구성은 C의 라이프스타일 장면을 대체로 잘 따릅니다.",
+    "critical_fail_count": 0,
+    "product_score_raw": null,
+    "product_score": 100,
+    "verdict": "pass"
+  }
+}

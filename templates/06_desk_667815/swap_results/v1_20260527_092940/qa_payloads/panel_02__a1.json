@@ -1,0 +1,41 @@
+{
+  "panel_id": "panel_02.jpg",
+  "panel_class": "module_lineup",
+  "vision_model": "gpt-5.5",
+  "ref_paths": [
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/03_desk_973933/use_product/screenshot_03.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/03_desk_973933/use_product/screenshot_10.png"
+  ],
+  "ref_labels": [
+    "main_view·전체각도",
+    "main_view·전체각도"
+  ],
+  "panel_orig_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/03_desk_667815/panel_02.jpg",
+  "swap_result_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/03_desk_667815/swap_results/v1_20260527_092940/gpt_image/panel_02__a1_v16.png",
+  "applicable_item_ids": [
+    "hook_left_right_option_indicator"
+  ],
+  "user_prompt": "=== TASK ===\n이 swap 결과(B)를 사용자 제품의 verifiable checklist로 채점하라.\n\n=== 사용자 제품 ===\ncategory: desk\n제품명: 한샘 티오 ㄱ자책상 160cm\n핵심 axis: frame, legs, storage, edges, surface, structure, accessory, power, connection, size, color\n\n=== 첨부 이미지 ===\n  A_1 = main_view·전체각도\n  A_2 = main_view·전체각도\n  B = swap 결과 (채점 대상)\n  C = 한샘 원본 panel (composition reference)\n\n=== Panel 컨텍스트 ===\npanel_id: panel_02.jpg\npanel_class: module_lineup\nspatial_layout: 상단 좌측에 '라인업'과 '단위 : cm' 텍스트가 위치. 그 아래 2x2 그리드 형태로 네 개의 책상 제품 이미지가 배치됨. 각 제품 이미지는 중앙에 위치하며, 이미지 하단에는 제품명과 사이즈 정보가 각각 두 줄로 정렬됨. 좌상단부터 시계방향으로 120cm, 140cm, ㄱ자 160cm, 160cm 책상 순서. 각 제품 간 간격이 균일하며, 전체적으로 여백이 넓고 정돈된 배열.\n\n=== 적용 가능한 CHECKLIST ITEMS (이 panel에서 검증 가능) ===\n각 item에 category(distortion/detail/forbidden)와 generation_feasibility 가 표시됨.\n- distortion / forbidden: strict 채점 (제품 왜곡 검출이 사용자 핵심 요구)\n- detail: image gen 한계 인정 → 명백한 차이만 fail, 모호하면 pass\n- generation_feasibility=low: 더욱 보수적으로 fail 매김 (미세 디테일)\n\n- [    detail] [feas=medium] id=hook_left_right_option_indicator axis=accessory\n    desc: 가방걸이 좌/우 선택 설치 가능함을 시각적으로 안내\n    expected: 좌/우 선택 안내 표시\n    question: 결과 B에서 가방걸이 좌/우 선택 설치 가능 표시(아이콘/텍스트/화살표)가 보이는가?\n\n=== 출력 schema (strict JSON) ===\n{\n  \"image_format\": \"single_product|lifestyle|chart_diagram|multi_panel_grid\",\n  \"items_results\": [\n    {\n      \"id\": \"...\",\n      \"verdict\": \"pass|fail|not_visible\",\n      \"reason_ko\": \"...\",\n      \"category\": \"distortion|detail|forbidden\",\n      \"generation_feasibility\": \"high|medium|low\"\n    }\n  ],\n  \"distortion_fail_count\": int,\n  \"forbidden_fail_count\": int,\n  \"composition_score\": 0-100,\n  \"hallucinations\": [\"발견된 invented feature 한국어\"],\n  \"specific_failures\": [\"distortion/forbidden fail 항목의 한국어 요약\"],\n  \"notes_ko\": \"...\"\n}\n\n판정 가이드:\n- distortion item: 다리 개수 / 가죽 vs 패브릭 / 보조쿠션 유무 / 컬러명 등 명백한 차이 → fail\n- forbidden item: invented feature (헤드레스트 등) 발견 → fail\n- detail item: 시접 종류 / 미세 곡률 / 직조 결 등이 약간 달라도 → pass (관대)\n",
+  "result": {
+    "image_format": "single_product",
+    "items_results": [
+      {
+        "id": "hook_left_right_option_indicator",
+        "verdict": "fail",
+        "reason_ko": "결과 B에는 책상 하부 우측에 작은 가방걸이처럼 보이는 부품은 일부 보이나, 가방걸이를 좌/우 선택 설치할 수 있음을 안내하는 아이콘, 텍스트, 화살표 등의 명확한 표시가 보이지 않습니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      }
+    ],
+    "distortion_fail_count": 0,
+    "forbidden_fail_count": 0,
+    "composition_score": 35,
+    "hallucinations": [],
+    "specific_failures": [],
+    "notes_ko": "제품 자체는 한샘 티오 ㄱ자책상 160cm의 흰색 ㄱ자 상판, 좌측 수납 모듈, 우측 금속 다리 구조가 대체로 유지되어 제품 왜곡으로 볼 만한 명백한 문제는 없습니다. 다만 원본 C의 2x2 라인업 그리드 구성과 달리 B는 단일 제품 중심 배치로 생성되어 composition 유사도는 낮습니다. 체크리스트 항목은 detail 항목 1개이며, 좌/우 선택 설치 안내 표시가 명확히 보이지 않아 fail로 판정했습니다.",
+    "critical_fail_count": 0,
+    "product_score_raw": null,
+    "product_score": 0,
+    "verdict": "retry"
+  }
+}

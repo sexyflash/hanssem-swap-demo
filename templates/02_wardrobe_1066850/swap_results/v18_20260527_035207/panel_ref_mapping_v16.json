@@ -1,0 +1,641 @@
+{
+  "assets": {
+    "screenshot_01.png": "use_product/screenshot_01.png",
+    "screenshot_02.png": "use_product/screenshot_02.png",
+    "screenshot_03.png": "use_product/screenshot_03.png",
+    "screenshot_04.png": "use_product/screenshot_04.png",
+    "screenshot_05.png": "use_product/screenshot_05.png",
+    "screenshot_06.png": "use_product/screenshot_06.png",
+    "screenshot_07.png": "use_product/screenshot_07.png",
+    "screenshot_08.png": "use_product/screenshot_08.png",
+    "screenshot_09.png": "use_product/screenshot_09.png",
+    "screenshot_10.png": "use_product/screenshot_10.png",
+    "screenshot_11.png": "use_product/screenshot_11.png",
+    "screenshot_12.png": "use_product/screenshot_12.png",
+    "screenshot_13.png": "use_product/screenshot_13.png"
+  },
+  "assets_meta": {
+    "screenshot_01.png": {
+      "path": "use_product/screenshot_01.png",
+      "category": "color_variant",
+      "subject": "전체정면",
+      "confidence": 0.95,
+      "reasoning": "같은 옷장 전체샷이 나란히 있으며 색상만 변경되어 있음."
+    },
+    "screenshot_02.png": {
+      "path": "use_product/screenshot_02.png",
+      "category": "color_variant",
+      "subject": "전체정면",
+      "confidence": 0.95,
+      "reasoning": "동일 제품의 두 컬러 버전을 전체샷으로 비교 제시."
+    },
+    "screenshot_03.png": {
+      "path": "use_product/screenshot_03.png",
+      "category": "color_variant",
+      "subject": "전체정면",
+      "confidence": 0.95,
+      "reasoning": "동일 구성의 옷장을 서로 다른 색으로 전체샷으로 보여줌."
+    },
+    "screenshot_04.png": {
+      "path": "use_product/screenshot_04.png",
+      "category": "material",
+      "subject": "도어 마감표면",
+      "confidence": 0.9,
+      "reasoning": "문 틈 주변의 표면과 무늬만 크게 확대된 소재/마감 클로즈업."
+    },
+    "screenshot_05.png": {
+      "path": "use_product/screenshot_05.png",
+      "category": "main_view",
+      "subject": "내부정면",
+      "confidence": 0.86,
+      "reasoning": "문을 열고 내부 구성 전체가 단순 배경에 정면으로 보이는 전체샷."
+    },
+    "screenshot_06.png": {
+      "path": "use_product/screenshot_06.png",
+      "category": "main_view",
+      "subject": "전체정면",
+      "confidence": 0.98,
+      "reasoning": "단일 옷장이 정면에서 전체가 깔끔한 배경에 나타남."
+    },
+    "screenshot_07.png": {
+      "path": "use_product/screenshot_07.png",
+      "category": "detail_close_up",
+      "subject": "서랍",
+      "confidence": 0.95,
+      "reasoning": "서랍 한 칸을 당겨 내부 수납을 보여주는 부분 확대 이미지."
+    },
+    "screenshot_08.png": {
+      "path": "use_product/screenshot_08.png",
+      "category": "main_view",
+      "subject": "전체정면",
+      "confidence": 0.8,
+      "reasoning": "여러 도어 타입이지만 각각 제품의 전체가 단순 배경에 제시됨."
+    },
+    "screenshot_09.png": {
+      "path": "use_product/screenshot_09.png",
+      "category": "main_view",
+      "subject": "내부정면",
+      "confidence": 0.85,
+      "reasoning": "다양한 내부 모듈을 정면 전체샷으로 배열해 보여줌."
+    },
+    "screenshot_10.png": {
+      "path": "use_product/screenshot_10.png",
+      "category": "detail_close_up",
+      "subject": "손잡이/도어모서리",
+      "confidence": 0.92,
+      "reasoning": "손잡이와 도어 이음부를 크게 확대한 디테일 이미지."
+    },
+    "screenshot_11.png": {
+      "path": "use_product/screenshot_11.png",
+      "category": "detail_close_up",
+      "subject": "손잡이",
+      "confidence": 0.92,
+      "reasoning": "서로 다른 손잡이 형태를 근접 촬영한 부분 클로즈업."
+    },
+    "screenshot_12.png": {
+      "path": "use_product/screenshot_12.png",
+      "category": "detail_close_up",
+      "subject": "손잡이",
+      "confidence": 0.92,
+      "reasoning": "하이글로시/노브 등 손잡이 디자인을 비교하는 클로즈업."
+    },
+    "screenshot_13.png": {
+      "path": "use_product/screenshot_13.png",
+      "category": "main_view",
+      "subject": "후면",
+      "confidence": 0.88,
+      "reasoning": "제품의 뒷면 전체가 단순 배경에서 보이는 전체샷."
+    }
+  },
+  "panels": {
+    "cover": {
+      "panel_idx": 0,
+      "panel_class": "intro_hero",
+      "ref_keys": [
+        "screenshot_06.png"
+      ],
+      "rationale": "커버 히어로는 제품의 외관 전체를 또렷하게 보여주는 정면 앵커 한 장이 가장 적합합니다. 내부/후면/디테일 및 다색 비교 콜라주는 구도를 혼란시키거나 다중 대상 생성 위험이 있어 제외했습니다.",
+      "skipped_categories": [
+        "color_variant",
+        "detail_close_up",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_06.png"
+      ],
+      "ref_count": 1
+    },
+    "panel_01.jpg": {
+      "panel_idx": 1,
+      "panel_class": "lifestyle_scene",
+      "ref_keys": [
+        "screenshot_06.png",
+        "screenshot_08.png",
+        "screenshot_07.png",
+        "screenshot_10.png"
+      ],
+      "rationale": "상·하단 모두 옷장의 외관과 문/서랍 구성이 핵심이므로 전체 정면 앵커와 도어 타입 전체샷, 서랍·손잡이/모서리 디테일만 제공합니다. 색상 비교컷과 소재 확대컷은 장면 재현에 직접적 기여가 적어 제외했습니다.",
+      "skipped_categories": [
+        "color_variant",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_08.png",
+        "use_product/screenshot_07.png",
+        "use_product/screenshot_10.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_02.jpg": {
+      "panel_idx": 2,
+      "panel_class": "lifestyle_scene",
+      "ref_keys": [
+        "screenshot_06.png",
+        "screenshot_10.png",
+        "screenshot_04.png",
+        "screenshot_07.png"
+      ],
+      "rationale": "상단은 옷장 외관 전체, 하단은 도어 상단과 이음부 클로즈업을 강조하므로 정면 전체 앵커와 도어 모서리/표면, 서랍 디테일만 추렸습니다.",
+      "skipped_categories": [
+        "color_variant"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_10.png",
+        "use_product/screenshot_04.png",
+        "use_product/screenshot_07.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_03.jpg": {
+      "panel_idx": 3,
+      "panel_class": "lifestyle_scene",
+      "ref_keys": [
+        "screenshot_05.png",
+        "screenshot_07.png",
+        "screenshot_06.png"
+      ],
+      "rationale": "패널은 양쪽 모두 ‘열린 서랍 내부’가 핵심이므로 내부 정면 메인뷰와 서랍 디테일 클로즈업을 우선 제공합니다. 외관 전체샷은 서랍 전면의 형태·마감 기준점을 주는 보조 레퍼런스로만 포함했습니다.",
+      "skipped_categories": [
+        "color_variant",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_05.png",
+        "use_product/screenshot_07.png",
+        "use_product/screenshot_06.png"
+      ],
+      "ref_count": 3
+    },
+    "panel_04.jpg": {
+      "panel_idx": 4,
+      "panel_class": "size_chart",
+      "ref_keys": [
+        "screenshot_06.png",
+        "screenshot_05.png",
+        "screenshot_07.png"
+      ],
+      "rationale": "사이즈 차트 패널은 외부 전체 실루엣, 내부 정면 구성, 서랍 내부 단면 치수에만 직접적으로 필요하므로 전체정면(앵커), 내부정면, 서랍 클로즈업만 선택했습니다.",
+      "skipped_categories": [
+        "color_variant",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_05.png",
+        "use_product/screenshot_07.png"
+      ],
+      "ref_count": 3
+    },
+    "panel_05.jpg": {
+      "panel_idx": 5,
+      "panel_class": "structure_chart",
+      "ref_keys": [
+        "screenshot_06.png",
+        "screenshot_01.png",
+        "screenshot_04.png",
+        "screenshot_10.png",
+        "screenshot_07.png",
+        "screenshot_05.png"
+      ],
+      "rationale": "이 패널은 색상과 도어/서랍·몸통의 구성/재질을 표로 설명하므로, 전체 정면을 앵커로 두고 색상 비교, 도어 마감 표면, 손잡이, 서랍(레일) 디테일과 내부 구조를 직접 보여주는 컷만 선별했습니다.",
+      "skipped_categories": [],
+      "ref_paths": [
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_01.png",
+        "use_product/screenshot_04.png",
+        "use_product/screenshot_10.png",
+        "use_product/screenshot_07.png",
+        "use_product/screenshot_05.png"
+      ],
+      "ref_count": 6
+    },
+    "panel_06.jpg": {
+      "panel_idx": 6,
+      "panel_class": "color_option",
+      "ref_keys": [
+        "screenshot_01.png",
+        "screenshot_03.png",
+        "screenshot_04.png",
+        "screenshot_10.png"
+      ],
+      "rationale": "컬러 옵션 2x2 그리드 재현을 위해 색상만 다른 전체샷(color_variant)을 앵커로 하고, 표면 질감/광택과 중앙 세로 손잡이·문 틈 표현을 위한 소재/디테일 클로즈업만 포함했습니다.",
+      "skipped_categories": [
+        "main_view"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_01.png",
+        "use_product/screenshot_03.png",
+        "use_product/screenshot_04.png",
+        "use_product/screenshot_10.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_07.png": {
+      "panel_idx": 7,
+      "panel_class": "color_option",
+      "ref_keys": [
+        "screenshot_06.png",
+        "screenshot_01.png",
+        "screenshot_02.png",
+        "screenshot_03.png"
+      ],
+      "rationale": "컬러 옵션을 비교하는 3x3 그리드 패널이므로 색상만 다른 동일 제품의 전체정면 이미지가 필요합니다. 실루엣 앵커로 메인 전체정면 1장을 두고, 나머지는 color_variant 정면샷만 포함했습니다.",
+      "skipped_categories": [
+        "detail_close_up",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_01.png",
+        "use_product/screenshot_02.png",
+        "use_product/screenshot_03.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_08.jpg": {
+      "panel_idx": 8,
+      "panel_class": "structure_chart",
+      "ref_keys": [
+        "screenshot_05.png",
+        "screenshot_09.png"
+      ],
+      "rationale": "이 패널은 내부 구조 변형과 치수 비교가 핵심이므로 문이 열린 내부 정면 전체샷과 다양한 내부 모듈을 정면으로 배열한 이미지만 사용합니다. 색상 비교나 손잡이·소재 클로즈업 등은 구조 표현에 직접 도움이 되지 않아 제외합니다.",
+      "skipped_categories": [
+        "color_variant",
+        "detail_close_up",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_05.png",
+        "use_product/screenshot_09.png"
+      ],
+      "ref_count": 2
+    },
+    "panel_09.png": {
+      "panel_idx": 9,
+      "panel_class": "lifestyle_scene",
+      "ref_keys": [
+        "screenshot_06.png",
+        "screenshot_05.png",
+        "screenshot_09.png"
+      ],
+      "rationale": "이 패널은 상단의 닫힌 옷장과 하단의 오픈 수납 구성(칸 수 강조)을 동시에 보여주므로, 앵커로 전체 정면(#06)과 하단 오픈 구성 재현을 위한 내부 정면 뷰(#05, #09)만 선별했습니다.",
+      "skipped_categories": [
+        "color_variant",
+        "detail_close_up",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_05.png",
+        "use_product/screenshot_09.png"
+      ],
+      "ref_count": 3
+    },
+    "panel_10.png": {
+      "panel_idx": 10,
+      "panel_class": "module_lineup",
+      "ref_keys": [
+        "screenshot_09.png",
+        "screenshot_07.png",
+        "screenshot_05.png"
+      ],
+      "rationale": "이 패널은 하단의 모듈 정면 라인업과 상단의 서랍 내부 클로즈업을 강조합니다. 모듈 배열용 내부 정면 라인업을 앵커로 두고, 서랍 사용 클로즈업과 보조 내부 정면 샷만 선별했습니다.",
+      "skipped_categories": [
+        "color_variant",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_09.png",
+        "use_product/screenshot_07.png",
+        "use_product/screenshot_05.png"
+      ],
+      "ref_count": 3
+    },
+    "panel_11.png": {
+      "panel_idx": 11,
+      "panel_class": "module_lineup",
+      "ref_keys": [
+        "screenshot_06.png",
+        "screenshot_05.png",
+        "screenshot_09.png",
+        "screenshot_08.png"
+      ],
+      "rationale": "이 패널은 방 환경 속 메인 옷장과 오픈된 내부 구조, 하단의 모듈 라인업을 강조합니다. 전체정면을 앵커로, 내부 정면과 다양한 모듈/도어 타입의 정면 뷰만 추려 라인업 재현에 직접 필요한 정보만 제공합니다.",
+      "skipped_categories": [
+        "color_variant",
+        "detail_close_up",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_05.png",
+        "use_product/screenshot_09.png",
+        "use_product/screenshot_08.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_12.jpg": {
+      "panel_idx": 12,
+      "panel_class": "module_lineup",
+      "ref_keys": [
+        "screenshot_06.png",
+        "screenshot_08.png",
+        "screenshot_09.png",
+        "screenshot_05.png"
+      ],
+      "rationale": "이 패널은 모듈별 라인업을 동일 비율의 정면 이미지로 배열하므로, 전체 정면 앵커와 도어 타입별 정면 라인업, 내부 모듈 정면 배열이 직접적으로 필요합니다.",
+      "skipped_categories": [
+        "color_variant",
+        "detail_close_up",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_08.png",
+        "use_product/screenshot_09.png",
+        "use_product/screenshot_05.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_13.jpg": {
+      "panel_idx": 13,
+      "panel_class": "size_chart",
+      "ref_keys": [
+        "screenshot_05.png",
+        "screenshot_06.png"
+      ],
+      "rationale": "이 패널은 높이 비교와 함께 내부의 2단 행거봉 구조를 정면으로 보여주는 사이즈 차트이므로, 문을 연 내부 정면 샷을 앵커로, 전체 실루엣 파악을 위한 외관 정면 샷을 보조로 제공합니다.",
+      "skipped_categories": [
+        "color_variant",
+        "detail_close_up",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_05.png",
+        "use_product/screenshot_06.png"
+      ],
+      "ref_count": 2
+    },
+    "panel_14.jpg": {
+      "panel_idx": 14,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "screenshot_06.png",
+        "screenshot_04.png",
+        "screenshot_10.png"
+      ],
+      "rationale": "이 패널은 도어 표면 질감과 손잡이 디테일을 좌우 클로즈업으로 비교하므로, 전체 외형을 앵커로 1장과 도어 마감 클로즈업, 손잡이/도어 이음부 클로즈업만 선별했습니다.",
+      "skipped_categories": [
+        "color_variant"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_04.png",
+        "use_product/screenshot_10.png"
+      ],
+      "ref_count": 3
+    },
+    "panel_15.jpg": {
+      "panel_idx": 15,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "screenshot_12.png",
+        "screenshot_11.png",
+        "screenshot_10.png"
+      ],
+      "rationale": "이 패널은 좌우 도어의 손잡이 형태를 비교하는 근접 클로즈업이므로 손잡이 디자인과 장착 부위를 보여주는 디테일 이미지만 사용합니다. 색상 비교나 전체샷, 소재 단독 이미지는 패널 의도와 무관해 제외했습니다.",
+      "skipped_categories": [
+        "color_variant",
+        "material",
+        "main_view"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_12.png",
+        "use_product/screenshot_11.png",
+        "use_product/screenshot_10.png"
+      ],
+      "ref_count": 3
+    },
+    "panel_16.jpg": {
+      "panel_idx": 16,
+      "panel_class": "context",
+      "ref_keys": [
+        "screenshot_06.png",
+        "screenshot_02.png",
+        "screenshot_12.png",
+        "screenshot_10.png",
+        "screenshot_04.png"
+      ],
+      "rationale": "좌우로 도어 색·손잡이 타입을 비교하는 컨텍스트 패널이므로 전체 앵커 1장과 색상 비교샷, 노브/세로형 손잡이 클로즈업, 하이글로시 표면 소재 클로즈업만 선정했습니다. 내부구성 등은 패널 목적과 무관해 제외했습니다.",
+      "skipped_categories": [],
+      "ref_paths": [
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_02.png",
+        "use_product/screenshot_12.png",
+        "use_product/screenshot_10.png",
+        "use_product/screenshot_04.png"
+      ],
+      "ref_count": 5
+    },
+    "panel_17.jpg": {
+      "panel_idx": 17,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "screenshot_04.png"
+      ],
+      "rationale": "이 패널은 손으로 만지는 평면 도어의 마감/질감과 문 경계선만 강조하므로 소재 클로즈업이 가장 직접적으로 대응됩니다. 손잡이·서랍·내부 등은 노이즈가 될 수 있어 제외했습니다.",
+      "skipped_categories": [
+        "color_variant",
+        "main_view"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_04.png"
+      ],
+      "ref_count": 1
+    },
+    "panel_18.jpg": {
+      "panel_idx": 18,
+      "panel_class": "structure_chart",
+      "ref_keys": [
+        "screenshot_13.png",
+        "screenshot_05.png"
+      ],
+      "rationale": "이 패널은 후면과 내부 구조를 나란히 보여주는 구조차트이므로 후면 전체샷과 문을 연 내부 정면샷만 제공합니다. 색상 비교나 손잡이·마감 클로즈업은 구조 표현에 직접 도움이 되지 않아 제외했습니다.",
+      "skipped_categories": [
+        "color_variant",
+        "material",
+        "detail_close_up"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_13.png",
+        "use_product/screenshot_05.png"
+      ],
+      "ref_count": 2
+    },
+    "panel_19.png": {
+      "panel_idx": 19,
+      "panel_class": "structure_chart",
+      "ref_keys": [
+        "screenshot_06.png",
+        "screenshot_07.png",
+        "screenshot_10.png"
+      ],
+      "rationale": "좌측 도어형과 우측 서랍형의 외관 구조를 그릴 패널이므로 전체 정면 앵커 1장과 서랍 클로즈업, 손잡이/도어 모서리 디테일만 포함했습니다. 색상·소재 정보는 구조표현과 무관하여 제외했습니다.",
+      "skipped_categories": [
+        "color_variant",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_07.png",
+        "use_product/screenshot_10.png"
+      ],
+      "ref_count": 3
+    },
+    "panel_20.jpg": {
+      "panel_idx": 20,
+      "panel_class": "lifestyle_scene",
+      "ref_keys": [
+        "screenshot_05.png",
+        "screenshot_09.png",
+        "screenshot_06.png"
+      ],
+      "rationale": "패널은 옷장 내부의 행거봉과 행잉 수납을 강조하므로 내부 정면 메인뷰를 우선 제공하고, 제품 정체성 보강을 위해 전체 정면 메인뷰를 보조 앵커로 추가했습니다.",
+      "skipped_categories": [
+        "color_variant",
+        "detail_close_up",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_05.png",
+        "use_product/screenshot_09.png",
+        "use_product/screenshot_06.png"
+      ],
+      "ref_count": 3
+    },
+    "panel_21.jpg": {
+      "panel_idx": 21,
+      "panel_class": "delivery_info",
+      "ref_keys": [
+        "screenshot_06.png"
+      ],
+      "rationale": "배송/정책 비교 텍스트 중심 패널이므로 제품 식별을 위한 전체정면 앵커 1장만 제공하고, 디테일·색상 자료는 제외합니다.",
+      "skipped_categories": [
+        "color_variant",
+        "detail_close_up",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_06.png"
+      ],
+      "ref_count": 1
+    },
+    "panel_22.jpg": {
+      "panel_idx": 22,
+      "panel_class": "structure_chart",
+      "ref_keys": [
+        "screenshot_06.png",
+        "screenshot_05.png",
+        "screenshot_10.png",
+        "screenshot_01.png"
+      ],
+      "rationale": "조립 순서도를 재현하기 위해 외관 정면(완성본 앵커), 내부 정면(몸통 구조), 도어 결합 디테일, 여러 톤을 나란히 보여주는 전체샷(복수 배치 표현)만 선별했습니다. 조립 단계와 직접 관련 없는 소재 확대 등은 제외했습니다.",
+      "skipped_categories": [
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_05.png",
+        "use_product/screenshot_10.png",
+        "use_product/screenshot_01.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_23.jpg": {
+      "panel_idx": 23,
+      "panel_class": "module_lineup",
+      "ref_keys": [
+        "screenshot_06.png",
+        "screenshot_01.png",
+        "screenshot_03.png",
+        "screenshot_05.png",
+        "screenshot_09.png"
+      ],
+      "rationale": "모듈을 일렬로 확장하는 구성과 우측의 추가 모듈(내부가 드러난 상태)을 재현해야 하므로, 전체정면 앵커와 색상(화이트/라이트오크) 변형 참고, 그리고 내부 정면 샷들을 포함했습니다.",
+      "skipped_categories": [
+        "detail_close_up",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_01.png",
+        "use_product/screenshot_03.png",
+        "use_product/screenshot_05.png",
+        "use_product/screenshot_09.png"
+      ],
+      "ref_count": 5
+    },
+    "panel_24.jpg": {
+      "panel_idx": 24,
+      "panel_class": "context",
+      "ref_keys": [
+        "screenshot_06.png",
+        "screenshot_05.png"
+      ],
+      "rationale": "이 패널은 사람/소품이 중심인 컨텍스트 컷이므로 제품 정체성을 잡아줄 전체 정면 앵커와, 상황에 따라 문이 열려 보일 수 있어 내부 정면을 보조로 제공합니다.",
+      "skipped_categories": [
+        "color_variant",
+        "material",
+        "detail_close_up"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_05.png"
+      ],
+      "ref_count": 2
+    },
+    "panel_25.jpg": {
+      "panel_idx": 25,
+      "panel_class": "lifestyle_scene",
+      "ref_keys": [
+        "screenshot_06.png",
+        "screenshot_05.png",
+        "screenshot_07.png"
+      ],
+      "rationale": "생활씬에서 옷장 세트의 외관과 내부 수납, 서랍 사용성을 보여주는 패널이므로 전체 정면 앵커, 내부 정면, 서랍 클로즈업만 제공합니다. 색상 비교나 소재 클로즈업은 장면 재현에 직접 도움이 되지 않아 제외했습니다.",
+      "skipped_categories": [
+        "color_variant",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/screenshot_06.png",
+        "use_product/screenshot_05.png",
+        "use_product/screenshot_07.png"
+      ],
+      "ref_count": 3
+    }
+  }
+}

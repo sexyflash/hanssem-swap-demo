@@ -1,0 +1,55 @@
+{
+  "panel_id": "panel_12.jpg",
+  "panel_class": "module_lineup",
+  "vision_model": "gpt-5.5",
+  "ref_paths": [
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_06.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_08.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_09.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_05.png"
+  ],
+  "ref_labels": [
+    "main_view·전체정면",
+    "main_view·전체정면",
+    "main_view·내부정면",
+    "main_view·내부정면"
+  ],
+  "panel_orig_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/panel_12.jpg",
+  "swap_result_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/swap_results/v18_20260527_035207/gpt_image/panel_12__a1_v16.png",
+  "applicable_item_ids": [
+    "module_lineup_shows_4_variants",
+    "height_lineup_two_options_label"
+  ],
+  "user_prompt": "=== TASK ===\n이 swap 결과(B)를 사용자 제품의 verifiable checklist로 채점하라.\n\n=== 사용자 제품 ===\ncategory: wardrobe\n제품명: 샘베딩 클로즈 옷장세트 160cm(높이216cm) 서랍형 6종\n핵심 axis: doors, handles, drawers, shelves, hanging_rod, hinges, back_panel, frame, color, finish, size, module_lineup, base\n\n=== 첨부 이미지 ===\n  A_1 = main_view·전체정면\n  A_2 = main_view·전체정면\n  A_3 = main_view·내부정면\n  A_4 = main_view·내부정면\n  B = swap 결과 (채점 대상)\n  C = 한샘 원본 panel (composition reference)\n\n=== Panel 컨텍스트 ===\npanel_id: panel_12.jpg\npanel_class: module_lineup\nspatial_layout: 상단에는 '너비 단위: cm'라는 텍스트가 중앙에 위치. 그 아래로 4개의 섹션이 세로로 배열됨. 각 섹션마다 제품 이미지들이 좌우로 일렬 배치되어 있고, 각 이미지 하단에는 제품명과 사이즈 정보가 텍스트로 정렬됨. 첫 번째 섹션(스테디 도어)은 4개의 도어형 옷장이 좌우로 나란히 큼직하게 배치. 두 번째 섹션(스테디 멀티장)은 3개의 멀티장이 좌우로 정렬. 세 번째 섹션(내부 구성)은 6개의 내부 구성 모듈이 좌우로 촘촘히 배열. 네 번째 섹션(스테디 서랍장)은 4개의 서랍장이 좌우로 넓게 배치. 각 제품 이미지는 동일한 크기와 비율로 정렬되어 있고, 전체적으로 그리드 형태의 레이아웃을 유지.\n\n=== 적용 가능한 CHECKLIST ITEMS (이 panel에서 검증 가능) ===\n각 item에 category(distortion/detail/forbidden)와 generation_feasibility 가 표시됨.\n- distortion / forbidden: strict 채점 (제품 왜곡 검출이 사용자 핵심 요구)\n- detail: image gen 한계 인정 → 명백한 차이만 fail, 모호하면 pass\n- generation_feasibility=low: 더욱 보수적으로 fail 매김 (미세 디테일)\n\n- [distortion] [feas=high] id=module_lineup_shows_4_variants axis=module_lineup\n    desc: 모듈/모델 라인업 패널에 4가지(서랍형 6종, 행거형 6종, 거울-행거형 6종, 거울-서랍형 6종)가 정확 표기.\n    expected: 서랍형 6종 / 행거형 6종 / 거울-행거형 6종 / 거울-서랍형 6종\n    question: 결과 B의 라인업 패널에 4가지 모델 옵션이 정확히 보이나요?\n- [    detail] [feas=medium] id=height_lineup_two_options_label axis=size\n    desc: 높이 라인업이 194cm/216cm 두 가지로 표기됨(본 상품 216cm 표시).\n    expected: 높이 194cm / 216cm 표기\n    question: 결과 B의 라인업/사이즈 정보에 194cm와 216cm 두 가지 높이 옵션이 보이나요?\n\n=== 출력 schema (strict JSON) ===\n{\n  \"image_format\": \"single_product|lifestyle|chart_diagram|multi_panel_grid\",\n  \"items_results\": [\n    {\n      \"id\": \"...\",\n      \"verdict\": \"pass|fail|not_visible\",\n      \"reason_ko\": \"...\",\n      \"category\": \"distortion|detail|forbidden\",\n      \"generation_feasibility\": \"high|medium|low\"\n    }\n  ],\n  \"distortion_fail_count\": int,\n  \"forbidden_fail_count\": int,\n  \"composition_score\": 0-100,\n  \"hallucinations\": [\"발견된 invented feature 한국어\"],\n  \"specific_failures\": [\"distortion/forbidden fail 항목의 한국어 요약\"],\n  \"notes_ko\": \"...\"\n}\n\n판정 가이드:\n- distortion item: 다리 개수 / 가죽 vs 패브릭 / 보조쿠션 유무 / 컬러명 등 명백한 차이 → fail\n- forbidden item: invented feature (헤드레스트 등) 발견 → fail\n- detail item: 시접 종류 / 미세 곡률 / 직조 결 등이 약간 달라도 → pass (관대)\n",
+  "result": {
+    "image_format": "multi_panel_grid",
+    "items_results": [
+      {
+        "id": "module_lineup_shows_4_variants",
+        "verdict": "pass",
+        "reason_ko": "상단 모델 라인업에 서랍형 6종, 행거형 6종, 거울-행거형 6종, 거울-서랍형 6종의 4가지 옵션이 모두 보이며 각 항목에 160 사이즈도 함께 표기되어 있습니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "height_lineup_two_options_label",
+        "verdict": "pass",
+        "reason_ko": "하단 높이 라인업에 194cm와 216cm 두 가지 높이 옵션이 각각 이미지와 텍스트로 표기되어 있습니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      }
+    ],
+    "distortion_fail_count": 0,
+    "forbidden_fail_count": 0,
+    "composition_score": 72,
+    "hallucinations": [],
+    "specific_failures": [
+      "결과가 grid 형태 — single panel로 재생성"
+    ],
+    "notes_ko": "검증 가능한 핵심 라인업 표기와 높이 옵션 표기는 모두 확인됩니다. 원본 C 대비 섹션 구성과 배치가 일부 다르지만, 제품 정체성 왜곡에 해당하는 명백한 오류는 발견되지 않았습니다.",
+    "verdict": "retry",
+    "product_score_raw": 30,
+    "product_score": 100,
+    "critical_fail_count": 0
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [
+    {
+      "id": "no_bar_or_knob_handles",
+      "verdict": "fail",
+      "reason_ko": "결과 B에 왼쪽은 돌출형 세로 바 손잡이처럼 보이는 요소가 있고, 오른쪽은 검정색 원형 노브 손잡이가 명확히 보입니다. 본 제품의 매립형 손잡이 조건과 맞지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "external_3_tier_drawers_visible",
+      "verdict": "pass",
+      "reason_ko": "좌우 옷장 모두 하단 전면에 가로 분할선으로 구분된 3단 외부형 서랍 블록이 명확히 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "long_inset_vertical_handles",
+      "verdict": "fail",
+      "reason_ko": "도어 가장자리를 따라 길게 내려오는 플러시한 매립형 손잡이가 일관되게 표현되지 않았습니다. 왼쪽은 돌출 바처럼 보이고, 오른쪽은 원형 노브로 표현되어 제품 정체성과 다릅니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "handle_color_contrasts_with_door",
+      "verdict": "pass",
+      "reason_ko": "손잡이로 보이는 요소들이 도어와 다른 회색/검정 톤으로 표현되어 색 대비 자체는 확인됩니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "damping_hinges_indicator",
+      "verdict": "not_visible",
+      "reason_ko": "댐핑 힌지 관련 아이콘, 문구, 힌지 접사는 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "shelf_thickness_18mm_note",
+      "verdict": "not_visible",
+      "reason_ko": "선반이나 선반 두께 18mm를 나타내는 표기/도식이 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "aluminum_hanging_rod_indicator",
+      "verdict": "not_visible",
+      "reason_ko": "옷걸이봉 자체나 알루미늄 옷걸이봉 관련 문구가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_finish_label",
+      "verdict": "not_visible",
+      "reason_ko": "LPM 마감임을 나타내는 텍스트나 아이콘이 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "e0_grade_label",
+      "verdict": "not_visible",
+      "reason_ko": "E0 등급 표기가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "hinge_40000_cycles_label",
+      "verdict": "not_visible",
+      "reason_ko": "힌지 40,000회 개폐 테스트 관련 문구나 아이콘이 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "material_bending_50kg_168h_label",
+      "verdict": "not_visible",
+      "reason_ko": "자재 휨 강도 50kg/168시간 테스트 관련 표기가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "recommended_shelf_load_20kg_80cm_label",
+      "verdict": "not_visible",
+      "reason_ko": "선반 권장 하중 20kg 또는 80cm 기준 관련 표기가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "rod_load_16kg_80cm_label",
+      "verdict": "not_visible",
+      "reason_ko": "옷걸이봉 최대 16kg 또는 80cm 기준 관련 표기가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    }
+  ],
+  "distortion_fail_count": 1,
+  "forbidden_fail_count": 1,
+  "composition_score": 60,
+  "hallucinations": [
+    "돌출형 세로 바 손잡이",
+    "검정색 원형 노브 손잡이"
+  ],
+  "specific_failures": [
+    "결과가 grid 형태 — single panel로 재생성",
+    "금지된 돌출 바/노브 손잡이가 보임",
+    "세로 긴 매립형 손잡이가 올바르게 표현되지 않음",
+    "distortion fail · long_inset_vertical_handles: 도어 가장자리를 따라 길게 내려오는 플러시한 매립형 손잡이가 일관되게 표현되지 않았습니다. 왼쪽은 돌출 바처럼 보이고, 오른쪽은 원형 노브로 표현되어 제품 정체성과 다릅니다.",
+    "forbidden fail · no_bar_or_knob_handles: 결과 B에 왼쪽은 돌출형 세로 바 손잡이처럼 보이는 요소가 있고, 오른쪽은 검정색 원형 노브 손잡이가 명확히 보입니다. 본 제품의 매립형 손잡이 조건과 맞지 않습니다."
+  ],
+  "notes_ko": "하단 3단 서랍 구조는 제품 특성과 맞게 보이지만, 핵심 검증 대상인 손잡이가 매립형이 아니라 돌출 바 및 원형 노브로 표현되어 제품 왜곡/금지 요소가 발생했습니다. 세부 성능·소재 표기 항목은 이 패널에서 확인되지 않습니다.",
+  "verdict": "retry",
+  "product_score_raw": 30,
+  "product_score": 50,
+  "critical_fail_count": 2
+}

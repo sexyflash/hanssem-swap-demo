@@ -1,0 +1,84 @@
+=== swap pipeline ===
+  target: #1 MVME 키안티 천연가죽 리클라이너 4인
+  user product: 밀로 패브릭소파 3인용(3종/택1)
+  panels: 12 × models ['nano_banana_pro', 'gpt_image']
+  product refs: 6
+  run dir: /Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/01_sofa_992474/swap_results/run_20260526_084943
+
+uploading product refs...
+  done (6)
+uploading panel originals...
+[p01/nano_banana_pro/#1] K2_aligned (7 refs)
+[p01/gpt_image/#1] K2_aligned (7 refs)
+[p02/nano_banana_pro/#1] K2_aligned (7 refs)
+[p02/gpt_image/#1] K2_aligned (7 refs)
+[p02/nano_banana_pro/#1] prod=96 comp=87 -> pass
+[p03/nano_banana_pro/#1] K2_aligned (7 refs)
+[p01/nano_banana_pro/#1] prod=98 comp=85 -> retry
+[p03/gpt_image/#1] K2_aligned (7 refs)
+[p01/gpt_image/#1] prod=97 comp=98 -> pass
+[p04/nano_banana_pro/#1] K2_aligned (7 refs)
+[p03/nano_banana_pro/#1] prod=97 comp=87 -> pass
+[p04/gpt_image/#1] K2_aligned (7 refs)
+[p02/gpt_image/#1] prod=97 comp=92 -> pass
+[p05/nano_banana_pro/#1] K2_aligned (7 refs)
+[p04/nano_banana_pro/#1] prod=72 comp=98 -> retry
+[p05/gpt_image/#1] K2_aligned (7 refs)
+[p04/gpt_image/#1] prod=97 comp=94 -> pass
+[p06/nano_banana_pro/#1] K2_aligned (7 refs)
+[p05/nano_banana_pro/#1] prod=65 comp=97 -> retry
+[p06/gpt_image/#1] K2_aligned (7 refs)
+[p03/gpt_image/#1] prod=97 comp=95 -> pass
+[p07/nano_banana_pro/#1] K2_aligned (7 refs)
+[p07/nano_banana_pro/#1] prod=96 comp=87 -> pass
+[p07/gpt_image/#1] K2_aligned (7 refs)
+[p06/nano_banana_pro/#1] prod=60 comp=95 -> retry
+[p08/nano_banana_pro/#1] K2_aligned (7 refs)
+[p05/gpt_image/#1] prod=97 comp=87 -> pass
+[p08/gpt_image/#1] K2_aligned (7 refs)
+[p08/nano_banana_pro/#1] prod=55 comp=98 -> retry
+[p09/nano_banana_pro/#1] K2_aligned (7 refs)
+[p09/nano_banana_pro/#1] prod=68 comp=95 -> retry
+[p09/gpt_image/#1] K2_aligned (7 refs)
+[p07/gpt_image/#1] prod=90 comp=85 -> retry
+[p10/nano_banana_pro/#1] K2_aligned (7 refs)
+[p06/gpt_image/#1] prod=78 comp=95 -> retry
+[p10/gpt_image/#1] K2_aligned (7 refs)
+[p10/nano_banana_pro/#1] prod=97 comp=90 -> pass
+[p11/nano_banana_pro/#1] K2_aligned (7 refs)
+[p08/gpt_image/#1] prod=97 comp=60 -> retry
+[p11/gpt_image/#1] K2_aligned (7 refs)
+[p09/gpt_image/#1] prod=97 comp=85 -> pass
+[p12/nano_banana_pro/#1] K2_aligned (7 refs)
+[p11/nano_banana_pro/#1] prod=68 comp=97 -> retry
+[p12/gpt_image/#1] K2_aligned (7 refs)
+[p12/nano_banana_pro/#1] prod=97 comp=95 -> pass
+[p11/gpt_image/#1] prod=97 comp=92 -> pass
+[p01/nano_banana_pro/#2] K2_overpaint (7 refs)
+[p04/nano_banana_pro/#2] K2_overpaint (7 refs)
+[p10/gpt_image/#1] prod=97 comp=85 -> pass
+[p05/nano_banana_pro/#2] K2_overpaint (7 refs)
+[p01/nano_banana_pro/#2] prod=85 comp=80 -> retry
+[p04/nano_banana_pro/#2] prod=96 comp=98 -> pass
+[p06/nano_banana_pro/#2] K2_overpaint (7 refs)
+[p08/nano_banana_pro/#2] K2_overpaint (7 refs)
+[p08/nano_banana_pro/#2] prod=98 comp=40 -> retry
+[p12/gpt_image/#1] prod=97 comp=92 -> pass
+[p06/nano_banana_pro/#2] prod=97 comp=87 -> pass
+[p07/gpt_image/#2] K2_overpaint (7 refs)
+[p06/gpt_image/#2] K2_overpaint (7 refs)
+[p09/nano_banana_pro/#2] K2_overpaint (7 refs)
+[p05/nano_banana_pro/#2] prod=65 comp=95 -> retry
+[p08/gpt_image/#2] K2_overpaint (7 refs)
+[p09/nano_banana_pro/#2] prod=68 comp=95 -> retry
+[p11/nano_banana_pro/#2] K2_overpaint (7 refs)
+[p11/nano_banana_pro/#2] prod=82 comp=97 -> retry
+[p07/gpt_image/#2] prod=91 comp=85 -> retry
+[p08/gpt_image/#2] prod=97 comp=40 -> retry
+[p06/gpt_image/#2] prod=78 comp=95 -> retry
+
+=== DONE === /Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/01_sofa_992474/swap_results/run_20260526_084943
+  wall: 890.8s
+  passers: 16/24
+    nano_banana_pro: 7/12
+    gpt_image: 9/12

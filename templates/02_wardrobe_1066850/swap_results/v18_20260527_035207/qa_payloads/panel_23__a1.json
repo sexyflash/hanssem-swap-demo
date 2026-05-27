@@ -1,0 +1,58 @@
+{
+  "panel_id": "panel_23.jpg",
+  "panel_class": "module_lineup",
+  "vision_model": "gpt-5.5",
+  "ref_paths": [
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_06.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_01.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_03.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_05.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_09.png"
+  ],
+  "ref_labels": [
+    "main_view·전체정면",
+    "color_variant·전체정면",
+    "color_variant·전체정면",
+    "main_view·내부정면",
+    "main_view·내부정면"
+  ],
+  "panel_orig_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/panel_23.jpg",
+  "swap_result_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/swap_results/v18_20260527_035207/gpt_image/panel_23__a1_v16.png",
+  "applicable_item_ids": [
+    "module_lineup_shows_4_variants",
+    "height_lineup_two_options_label"
+  ],
+  "user_prompt": "=== TASK ===\n이 swap 결과(B)를 사용자 제품의 verifiable checklist로 채점하라.\n\n=== 사용자 제품 ===\ncategory: wardrobe\n제품명: 샘베딩 클로즈 옷장세트 160cm(높이216cm) 서랍형 6종\n핵심 axis: doors, handles, drawers, shelves, hanging_rod, hinges, back_panel, frame, color, finish, size, module_lineup, base\n\n=== 첨부 이미지 ===\n  A_1 = main_view·전체정면\n  A_2 = color_variant·전체정면\n  A_3 = color_variant·전체정면\n  A_4 = main_view·내부정면\n  A_5 = main_view·내부정면\n  B = swap 결과 (채점 대상)\n  C = 한샘 원본 panel (composition reference)\n\n=== Panel 컨텍스트 ===\npanel_id: panel_23.jpg\npanel_class: module_lineup\nspatial_layout: 왼쪽에는 4칸의 흰색 옷장이 일렬로 배치되어 있다. 오른쪽에는 점선으로 표시된 추가 옷장 모듈이 기존 옷장에 이어질 수 있음을 강조한다. 점선 모듈 위에는 '+' 아이콘이 있다. 점선 오른쪽에는 두 명의 작업자가 나무색 옷장 모듈을 들고 있다. 두 작업자는 모듈의 양쪽 끝을 잡고 있으며, 모듈은 정면을 향하고 있다. 점선과 실제 모듈 사이에는 오른쪽 화살표가 배치되어 있다. 배경은 밝고 단순하다.\n\n=== 적용 가능한 CHECKLIST ITEMS (이 panel에서 검증 가능) ===\n각 item에 category(distortion/detail/forbidden)와 generation_feasibility 가 표시됨.\n- distortion / forbidden: strict 채점 (제품 왜곡 검출이 사용자 핵심 요구)\n- detail: image gen 한계 인정 → 명백한 차이만 fail, 모호하면 pass\n- generation_feasibility=low: 더욱 보수적으로 fail 매김 (미세 디테일)\n\n- [distortion] [feas=high] id=module_lineup_shows_4_variants axis=module_lineup\n    desc: 모듈/모델 라인업 패널에 4가지(서랍형 6종, 행거형 6종, 거울-행거형 6종, 거울-서랍형 6종)가 정확 표기.\n    expected: 서랍형 6종 / 행거형 6종 / 거울-행거형 6종 / 거울-서랍형 6종\n    question: 결과 B의 라인업 패널에 4가지 모델 옵션이 정확히 보이나요?\n- [    detail] [feas=medium] id=height_lineup_two_options_label axis=size\n    desc: 높이 라인업이 194cm/216cm 두 가지로 표기됨(본 상품 216cm 표시).\n    expected: 높이 194cm / 216cm 표기\n    question: 결과 B의 라인업/사이즈 정보에 194cm와 216cm 두 가지 높이 옵션이 보이나요?\n\n=== 출력 schema (strict JSON) ===\n{\n  \"image_format\": \"single_product|lifestyle|chart_diagram|multi_panel_grid\",\n  \"items_results\": [\n    {\n      \"id\": \"...\",\n      \"verdict\": \"pass|fail|not_visible\",\n      \"reason_ko\": \"...\",\n      \"category\": \"distortion|detail|forbidden\",\n      \"generation_feasibility\": \"high|medium|low\"\n    }\n  ],\n  \"distortion_fail_count\": int,\n  \"forbidden_fail_count\": int,\n  \"composition_score\": 0-100,\n  \"hallucinations\": [\"발견된 invented feature 한국어\"],\n  \"specific_failures\": [\"distortion/forbidden fail 항목의 한국어 요약\"],\n  \"notes_ko\": \"...\"\n}\n\n판정 가이드:\n- distortion item: 다리 개수 / 가죽 vs 패브릭 / 보조쿠션 유무 / 컬러명 등 명백한 차이 → fail\n- forbidden item: invented feature (헤드레스트 등) 발견 → fail\n- detail item: 시접 종류 / 미세 곡률 / 직조 결 등이 약간 달라도 → pass (관대)\n",
+  "result": {
+    "image_format": "chart_diagram",
+    "items_results": [
+      {
+        "id": "module_lineup_shows_4_variants",
+        "verdict": "fail",
+        "reason_ko": "B는 옷장 추가 모듈을 시각적으로 보여주지만, 기대된 4가지 모델 옵션인 '서랍형 6종 / 행거형 6종 / 거울-행거형 6종 / 거울-서랍형 6종' 텍스트나 명확한 4종 라인업 표기가 보이지 않습니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "height_lineup_two_options_label",
+        "verdict": "not_visible",
+        "reason_ko": "B에는 높이 라인업 또는 사이즈 정보 텍스트가 없어서 194cm와 216cm 두 가지 높이 옵션을 확인할 수 없습니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      }
+    ],
+    "distortion_fail_count": 1,
+    "forbidden_fail_count": 0,
+    "composition_score": 88,
+    "hallucinations": [],
+    "specific_failures": [
+      "라인업 패널에서 4가지 모델 옵션 명칭이 정확히 표기되지 않음",
+      "distortion fail · module_lineup_shows_4_variants: B는 옷장 추가 모듈을 시각적으로 보여주지만, 기대된 4가지 모델 옵션인 '서랍형 6종 / 행거형 6종 / 거울-행거형 6종 / 거울-서랍형 6종' 텍스트나 명확한 4종 라인업 표기가 보이지 않습니다."
+    ],
+    "notes_ko": "전체 구도는 C와 유사하게 왼쪽 옷장, 점선 추가 모듈, 플러스 아이콘, 화살표, 작업자와 이동 중인 모듈 배치를 유지합니다. 다만 본 체크리스트의 핵심인 4종 라인업 텍스트 표기는 B에서 확인되지 않아 distortion fail로 판정합니다.",
+    "critical_fail_count": 1,
+    "product_score_raw": null,
+    "product_score": 11,
+    "verdict": "retry"
+  }
+}

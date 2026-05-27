@@ -1,0 +1,29 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [
+    {
+      "id": "module_lineup_shows_4_variants",
+      "verdict": "pass",
+      "reason_ko": "결과 B 우측 상단 정보 박스에 '서랍형 6종 / 행거형 6종 / 거울-행거형 6종 / 거울-서랍형 6종' 네 가지 모델 옵션이 모두 정확히 표기되어 있습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "height_lineup_two_options_label",
+      "verdict": "pass",
+      "reason_ko": "결과 B 우측 상단 정보 박스 하단에 '높이 라인업: 194/216cm (본 상품 216cm)' 문구가 보여 194cm와 216cm 두 가지 높이 옵션 및 본 상품 216cm 표시가 확인됩니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 75,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "검증 가능한 핵심 라인업 텍스트와 높이 옵션 표기는 사용자 제품 정보와 일치합니다. 다만 원본 C 대비 좌측 옷장 배치가 4칸 일렬 구성보다는 2도어 모듈처럼 축소되어 보이는 등 구도 차이는 있으나, 지침상 composition은 보고용이며 verdict에는 반영하지 않았습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 100,
+  "verdict": "pass"
+}

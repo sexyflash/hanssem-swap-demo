@@ -1,0 +1,83 @@
+{
+  "image_format": "lifestyle",
+  "items_results": [
+    {
+      "id": "open_storage_no_doors",
+      "verdict": "pass",
+      "reason_ko": "오른쪽 하부 수납부가 부분적으로 보이며, 보이는 범위에서는 문짝이나 서랍 없이 오픈 선반 형태로 표현되어 있다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "rounded_top_edges_corners",
+      "verdict": "pass",
+      "reason_ko": "상판 전면 좌측 모서리가 둥글게 라운드 처리되어 있어 기준 제품의 라운드 모서리 특징과 맞는다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "bag_hook_one_included",
+      "verdict": "fail",
+      "reason_ko": "이 클로즈업에서 책상 하부나 측면에 설치된 가방걸이 1개가 식별되지 않는다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "two_stability_braces",
+      "verdict": "fail",
+      "reason_ko": "책상 구조에 흔들림 저감용 보강대 2개가 명확히 식별되지 않는다. 전원 멀티탭 고정 부품은 보이지만 제품 구조 보강대 2개로 보기는 어렵다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_top_not_glass_or_stone",
+      "verdict": "pass",
+      "reason_ko": "상판은 불투명한 흰색 패널 재질로 보이며, 유리나 대리석, 라이브엣지 원목처럼 보이지 않는다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "adjustable_levelers_visible",
+      "verdict": "not_visible",
+      "reason_ko": "다리 하단이 이미지 밖으로 잘려 있어 조절발 레벨러 존재 여부를 확인할 수 없다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "open_storage_tall_bay_for_pc",
+      "verdict": "not_visible",
+      "reason_ko": "하부 수납 선반 일부만 보이고 전체 높이의 오픈 칸이 보이지 않아 PC 본체가 들어갈 만큼의 높은 칸 여부는 판단하기 어렵다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_surface_low_gloss",
+      "verdict": "pass",
+      "reason_ko": "상판 표면에 과도한 반사나 유리 같은 광택이 없고 무광 또는 세미무광 패널처럼 보인다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "edge_banding_clean_finish",
+      "verdict": "pass",
+      "reason_ko": "라운드 모서리와 전면 엣지가 대체로 균일한 흰색으로 표현되어 있으며, 명백한 이색이나 들뜸은 보이지 않는다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    }
+  ],
+  "distortion_fail_count": 2,
+  "forbidden_fail_count": 0,
+  "composition_score": 92,
+  "hallucinations": [],
+  "specific_failures": [
+    "가방걸이 1개가 보이지 않음",
+    "흔들림 저감용 보강대 2개가 식별되지 않음",
+    "distortion fail · bag_hook_one_included: 이 클로즈업에서 책상 하부나 측면에 설치된 가방걸이 1개가 식별되지 않는다.",
+    "distortion fail · two_stability_braces: 책상 구조에 흔들림 저감용 보강대 2개가 명확히 식별되지 않는다. 전원 멀티탭 고정 부품은 보이지만 제품 구조 보강대 2개로 보기는 어렵다."
+  ],
+  "notes_ko": "B는 원본 패널 C의 클로즈업 구도와 소품 배치를 대체로 잘 유지하며, 상판 라운드 처리와 오픈 선반 구조, 불투명 패널 상판은 제품 특징과 부합한다. 다만 적용 체크리스트상 가방걸이와 보강대 2개가 검증 가능 항목으로 제시되었으나 결과 이미지에서 명확히 보이지 않아 distortion fail로 판정했다.",
+  "critical_fail_count": 2,
+  "product_score_raw": null,
+  "product_score": 63,
+  "verdict": "retry"
+}

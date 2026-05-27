@@ -1,0 +1,109 @@
+{
+  "panel_id": "panel_10.jpg",
+  "panel_class": "detail_close_up",
+  "vision_model": "gpt-5.5",
+  "ref_paths": [
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/03_desk_973933/use_product/screenshot_03.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/03_desk_973933/use_product/screenshot_07.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/03_desk_973933/use_product/screenshot_06.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/03_desk_973933/use_product/screenshot_04.png"
+  ],
+  "ref_labels": [
+    "main_view·전체각도",
+    "detail_close_up·상판 모서리/다리",
+    "detail_close_up·상판 모서리",
+    "detail_close_up·상판 하부 공간/연결부"
+  ],
+  "panel_orig_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/03_desk_667815/panel_10.jpg",
+  "swap_result_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/03_desk_667815/swap_results/v1_20260527_092940/gpt_image/panel_10__a3_v16.png",
+  "applicable_item_ids": [
+    "open_storage_no_doors",
+    "rounded_top_edges_corners",
+    "bag_hook_one_included",
+    "two_stability_braces",
+    "lpm_top_not_glass_or_stone",
+    "adjustable_levelers_visible",
+    "open_storage_tall_bay_for_pc",
+    "lpm_surface_low_gloss",
+    "edge_banding_clean_finish"
+  ],
+  "user_prompt": "=== TASK ===\n이 swap 결과(B)를 사용자 제품의 verifiable checklist로 채점하라.\n\n=== 사용자 제품 ===\ncategory: desk\n제품명: 한샘 티오 ㄱ자책상 160cm\n핵심 axis: frame, legs, storage, edges, surface, structure, accessory, power, connection, size, color\n\n=== 첨부 이미지 ===\n  A_1 = main_view·전체각도\n  A_2 = detail_close_up·상판 모서리/다리\n  A_3 = detail_close_up·상판 모서리\n  A_4 = detail_close_up·상판 하부 공간/연결부\n  B = swap 결과 (채점 대상)\n  C = 한샘 원본 panel (composition reference)\n\n=== Panel 컨텍스트 ===\npanel_id: panel_10.jpg\npanel_class: detail_close_up\nspatial_layout: 이미지 중앙에는 흰색 책상 모서리가 클로즈업되어 있다. 책상 상판 위 왼쪽에는 투명한 유리컵이 놓여 있고, 오른쪽에는 태블릿과 키보드가 부분적으로 보인다. 책상 하단 전면에는 흰색 전원 멀티탭이 고정되어 있으며, 멀티탭에는 충전기가 꽂혀 있고 케이블이 상판 위로 올라간다. 책상 다리는 왼쪽 하단에 위치하며, 책상 아래 선반 일부가 오른쪽 하단에 보인다. 전체적으로 제품의 기능적 디테일에 초점을 맞춘 구도이다.\n\n=== 적용 가능한 CHECKLIST ITEMS (이 panel에서 검증 가능) ===\n각 item에 category(distortion/detail/forbidden)와 generation_feasibility 가 표시됨.\n- distortion / forbidden: strict 채점 (제품 왜곡 검출이 사용자 핵심 요구)\n- detail: image gen 한계 인정 → 명백한 차이만 fail, 모호하면 pass\n- generation_feasibility=low: 더욱 보수적으로 fail 매김 (미세 디테일)\n\n- [distortion] [feas=high] id=open_storage_no_doors axis=storage\n    desc: 하부 수납은 책장형 오픈 선반 구조로 도어/서랍이 없음\n    expected: 오픈 선반형 수납(도어/서랍 없음)\n    question: 결과 B에서 하부 수납이 오픈형이며 도어/서랍이 보이지 않는가?\n- [distortion] [feas=high] id=rounded_top_edges_corners axis=edges\n    desc: 상판 외곽 모서리 라운드 처리\n    expected: 라운드 모서리\n    question: 결과 B에서 상판 모서리들이 라운드(둥근) 처리로 보이는가?\n- [distortion] [feas=medium] id=bag_hook_one_included axis=accessory\n    desc: 가방걸이 1개 기본 제공(좌/우 중 한 위치에 설치)\n    expected: 가방걸이 1개 확인\n    question: 결과 B에서 가방걸이 1개가 책상에 설치된 것이 보이는가?\n- [distortion] [feas=medium] id=two_stability_braces axis=structure\n    desc: 흔들림 저감을 위한 보강대 2개 적용\n    expected: 보강대 2개\n    question: 결과 B에서 책상 구조에 보강대 2개가 식별되는가?\n- [distortion] [feas=medium] id=lpm_top_not_glass_or_stone axis=surface\n    desc: 상판은 LPM 계열의 불투명 패널형으로, 유리/석재/라이브엣지 원목이 아님\n    expected: LPM 계열 패널 상판(유리/석재/라이브엣지 아님)\n    question: 결과 B에서 상판이 라미네이트 패널처럼 보이고 유리/대리석/라이브엣지 원목이 아닌가?\n- [    detail] [feas=medium] id=adjustable_levelers_visible axis=legs\n    desc: 바닥 수평 맞춤을 위한 하부 레벨러(조절발) 노출\n    expected: 레벨러 존재\n    question: 결과 B에서 다리 하단에 손으로 돌려 조절하는 레벨러가 보이는가?\n- [    detail] [feas=medium] id=open_storage_tall_bay_for_pc axis=storage\n    desc: PC 본체 등 부피 물건을 위한 높은 오픈 칸 1개 이상\n    expected: 높은 오픈 칸 1개 이상\n    question: 결과 B에서 하부 수납부에 PC 본체가 들어갈 만큼의 높은 오픈 칸이 보이는가?\n- [    detail] [feas=low] id=lpm_surface_low_gloss axis=surface\n    desc: LPM 표면 특성상 무광/세미무광 수준으로 과도한 반사 없음\n    expected: 무광/세미무광 수준\n    question: 결과 B에서 상판 표면 광택이 낮아 과도한 반사가 보이지 않는가?\n- [    detail] [feas=low] id=edge_banding_clean_finish axis=finish\n    desc: 라운드 모서리의 엣지 밴딩이 이색/들뜸 없이 매끈함\n    expected: 엣지 이색/뜸 없음\n    question: 결과 B에서 라운드 모서리 부위의 엣지 밴딩이 색 이질감 없이 균일한가?\n\n=== 출력 schema (strict JSON) ===\n{\n  \"image_format\": \"single_product|lifestyle|chart_diagram|multi_panel_grid\",\n  \"items_results\": [\n    {\n      \"id\": \"...\",\n      \"verdict\": \"pass|fail|not_visible\",\n      \"reason_ko\": \"...\",\n      \"category\": \"distortion|detail|forbidden\",\n      \"generation_feasibility\": \"high|medium|low\"\n    }\n  ],\n  \"distortion_fail_count\": int,\n  \"forbidden_fail_count\": int,\n  \"composition_score\": 0-100,\n  \"hallucinations\": [\"발견된 invented feature 한국어\"],\n  \"specific_failures\": [\"distortion/forbidden fail 항목의 한국어 요약\"],\n  \"notes_ko\": \"...\"\n}\n\n판정 가이드:\n- distortion item: 다리 개수 / 가죽 vs 패브릭 / 보조쿠션 유무 / 컬러명 등 명백한 차이 → fail\n- forbidden item: invented feature (헤드레스트 등) 발견 → fail\n- detail item: 시접 종류 / 미세 곡률 / 직조 결 등이 약간 달라도 → pass (관대)\n",
+  "result": {
+    "image_format": "lifestyle",
+    "items_results": [
+      {
+        "id": "open_storage_no_doors",
+        "verdict": "pass",
+        "reason_ko": "오른쪽 하단에 하부 수납부가 오픈 선반 형태로 보이며, 도어 또는 서랍 전면은 보이지 않습니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "rounded_top_edges_corners",
+        "verdict": "pass",
+        "reason_ko": "상판 좌측 전면 모서리가 둥글게 라운드 처리되어 명확히 보입니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "bag_hook_one_included",
+        "verdict": "pass",
+        "reason_ko": "좌측 상판 하부 다리 옆에 나사로 고정된 흰색 가방걸이 1개가 보입니다.",
+        "category": "distortion",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "two_stability_braces",
+        "verdict": "pass",
+        "reason_ko": "상판 하부 전면 쪽에 길쭉한 보강대 형태의 부재가 2개로 식별됩니다.",
+        "category": "distortion",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "lpm_top_not_glass_or_stone",
+        "verdict": "pass",
+        "reason_ko": "상판은 흰색 불투명 패널로 보이며, 유리/대리석/라이브엣지 원목처럼 보이지 않습니다.",
+        "category": "distortion",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "adjustable_levelers_visible",
+        "verdict": "not_visible",
+        "reason_ko": "책상 다리 하단이 이미지 밖으로 잘려 있어 조절발 존재 여부를 확인할 수 없습니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "open_storage_tall_bay_for_pc",
+        "verdict": "not_visible",
+        "reason_ko": "오른쪽 하부 수납 일부만 보이며, PC 본체가 들어갈 정도의 높은 오픈 칸은 이 컷에서 충분히 확인되지 않습니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "lpm_surface_low_gloss",
+        "verdict": "pass",
+        "reason_ko": "상판 표면이 과도하게 반사되지 않고 무광 또는 세미무광의 흰색 패널처럼 표현되어 있습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "edge_banding_clean_finish",
+        "verdict": "pass",
+        "reason_ko": "라운드 모서리와 전면 엣지의 색상 및 마감이 전반적으로 균일하게 보이며 들뜸이나 이색이 뚜렷하지 않습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      }
+    ],
+    "distortion_fail_count": 0,
+    "forbidden_fail_count": 0,
+    "composition_score": 93,
+    "hallucinations": [],
+    "specific_failures": [],
+    "notes_ko": "제품 정체성 관련 핵심 요소인 라운드 상판, 오픈 선반형 하부 수납, 가방걸이, 불투명 패널 상판이 잘 유지되었습니다. 일부 세부 요소인 조절발과 높은 PC 수납칸은 해당 클로즈업 구도에서 확인이 어렵습니다.",
+    "critical_fail_count": 0,
+    "product_score_raw": null,
+    "product_score": 98,
+    "verdict": "pass"
+  }
+}

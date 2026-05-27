@@ -1,0 +1,54 @@
+
+=== auto pipeline: gdsNo=777039 ===
+  output: /Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/milo_777039
+
+[1/7] fetch product page + download panels
+  downloading 18 panels...
+  cover (1000x1000) downloaded
+
+[2/7] GIF slice
+  panel_08.gif → 3 frames saved
+
+[3/7] vision classify panels (input zones)
+  vision-classifying 18 panels...
+    panel_01.jpg: [   lifestyle_scene] / flexible_staging
+    panel_02.jpg: [     module_lineup] /     fixed_layout
+    panel_03.jpg: [     module_lineup] /     fixed_layout
+    panel_04.jpg: [        size_chart] /     fixed_layout
+    panel_05.jpg: [      product_shot] /  strict_white_bg
+    panel_06.jpg: [   detail_close_up] / flexible_staging
+    panel_07.jpg: [   detail_close_up] / flexible_staging
+    panel_08.gif: [      product_shot] /  strict_white_bg
+    panel_09.jpg: [   lifestyle_scene] / flexible_staging
+    panel_10.jpg: [   material_swatch] /     fixed_layout
+    panel_11.jpg: [   structure_chart] /     fixed_layout
+    panel_12.jpg: [   detail_close_up] /     fixed_layout
+    panel_13.jpg: [   material_swatch] /     fixed_layout
+    panel_14.jpg: [   detail_close_up] / flexible_staging
+    panel_15.jpg: [   material_swatch] / flexible_staging
+    panel_16.jpg: [           context] / flexible_staging
+    panel_17.jpg: [           context] /     fixed_layout
+    panel_18.jpg: [     delivery_info] /     fixed_layout
+
+[4/7] synthesize structured spec
+  product: 밀로 패브릭소파 3인용 (3인)
+
+[5/7] vision-describe product visual
+  vision-describing product from 3 references...
+
+[6/7] build smart sheet
+  saved /Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/milo_777039/smart_sheet.jpg
+
+[7/7] zone grouping
+  zone 'detail_close_up': 4 panels — ['panel_06.jpg', 'panel_07.jpg', 'panel_12.jpg']…
+  zone 'material_swatch': 3 panels — ['panel_10.jpg', 'panel_13.jpg', 'panel_15.jpg']
+  zone 'lifestyle_scene': 2 panels — ['panel_01.jpg', 'panel_09.jpg']
+  zone 'module_lineup': 2 panels — ['panel_02.jpg', 'panel_03.jpg']
+  zone 'product_shot': 2 panels — ['panel_05.jpg', 'panel_08.gif']
+  zone 'context': 2 panels — ['panel_16.jpg', 'panel_17.jpg']
+  zone 'size_chart': 1 panels — ['panel_04.jpg']
+  zone 'structure_chart': 1 panels — ['panel_11.jpg']
+  zone 'delivery_info': 1 panels — ['panel_18.jpg']
+
+=== DONE === wall 59.0s
+  → /Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/milo_777039/auto_pipeline_output.json

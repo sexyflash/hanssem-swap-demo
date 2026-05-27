@@ -1,0 +1,32 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [
+    {
+      "id": "size_chart_matches_w160_d57_h216",
+      "verdict": "fail",
+      "reason_ko": "결과 B에는 하단에 '194cm | 216cm' 높이 라벨만 보이며, 요구된 사이즈 표기인 'W160 x D57 x H216 cm'가 확인되지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "height_lineup_two_options_label",
+      "verdict": "pass",
+      "reason_ko": "결과 B 하단에 194cm와 216cm 두 가지 높이 옵션이 명확히 표기되어 있습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 1,
+  "forbidden_fail_count": 0,
+  "composition_score": 90,
+  "hallucinations": [],
+  "specific_failures": [
+    "사이즈 차트에 W160 x D57 x H216 cm 표기가 누락됨",
+    "distortion fail · size_chart_matches_w160_d57_h216: 결과 B에는 하단에 '194cm | 216cm' 높이 라벨만 보이며, 요구된 사이즈 표기인 'W160 x D57 x H216 cm'가 확인되지 않습니다."
+  ],
+  "notes_ko": "구도는 원본 C와 유사하게 두 높이 옵션의 옷장을 좌우로 배치하고 하단에 높이 라벨을 둔 형태입니다. 다만 핵심 distortion 항목인 전체 규격 W160 x D57 x H216 cm 텍스트가 보이지 않아 fail로 판정합니다.",
+  "critical_fail_count": 1,
+  "product_score_raw": null,
+  "product_score": 14,
+  "verdict": "retry"
+}

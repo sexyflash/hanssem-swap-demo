@@ -1,0 +1,59 @@
+{
+  "scenes": {
+    "panel_01": {
+      "description": "The camera is positioned at a straight-on, eye-level viewpoint, capturing a wide, full-frontal shot of the sofa centered in the frame. The furniture is staged symmetrically against a minimalist backdrop featuring a wood accent panel and neutral walls, with a floor lamp on the left and a sculptural decor piece on a pedestal to the right. A low, modern coffee table with decorative objects and a textured rug complete the foreground, creating a balanced, inviting living room scene. Lighting is soft and even, emphasizing comfort and sophistication. The intent is to introduce the sofa in a styled, aspirational context, setting the mood for the product detail page.",
+      "panel_class": "intro"
+    },
+    "panel_02": {
+      "description": "The camera is positioned at a low angle, close to the ground, capturing a tight crop of the lower corner of the sofa and its metal leg. The framing is close-up, focusing exclusively on the texture of the upholstery and the design of the leg, with no other furniture or props visible. The background is a plain, seamless white, creating a clean and minimalistic look. Lighting is soft and even, highlighting material details without harsh shadows. The intent is to showcase the construction, material quality, and leg design in detail.",
+      "panel_class": "detail"
+    },
+    "panel_03": {
+      "description": "The camera is positioned at a slight angle above and to the side, capturing a close-up crop of the sofa's upper corner, focusing on the headrest and backrest. The framing is tight, excluding the rest of the room and any props, with a plain, neutral backdrop that keeps attention on the upholstery texture and stitching details. Lighting is soft and even, minimizing shadows and highlighting the material's surface quality. The intent of this panel is to showcase the texture, craftsmanship, and comfort of the sofa's material. The overall mood is clean, minimal, and detail-oriented.",
+      "panel_class": "detail"
+    },
+    "panel_04": {
+      "description": "The image features a wide, straight-on view of a sofa against a plain, light-colored background, with the entire piece fully visible and centered in the frame. There are no props or room elements, emphasizing the sofa's dimensions, which are clearly marked with measurement lines and numbers. The lighting is neutral and even, minimizing shadows and distractions. The intent is purely informational, focusing on size specifications and firmness ratings, with a clean, technical presentation. The overall mood is clinical and objective.",
+      "panel_class": "design_chart"
+    },
+    "panel_05": {
+      "description": "The image is shot from a slightly elevated, front-facing angle, focusing closely on the right section of a sofa with an extended footrest and adjustable headrest. The framing is a tight crop, showing only part of the sofa and excluding the full room, with minimal visible backdrop—just a neutral wall and a hint of flooring. There are no props, and the lighting is soft and even, highlighting the texture and function of the upholstery. The intent is to demonstrate the sofa's reclining and adjustable features in detail, creating a practical, informative mood.",
+      "panel_class": "detail"
+    },
+    "panel_06": {
+      "description": "The image is shot from a close, slightly elevated side angle, tightly framing the upper section of the sofa to focus on the adjustable headrest mechanism. The furniture is positioned so that only a portion of the backrest and seat are visible, with the background showing a neutral-toned wall and a glimpse of a curtain, creating a minimal and modern setting. There are no props, and the lighting is soft and even, highlighting the texture and material of the upholstery. The intent of this panel is to showcase a specific functional detail of the sofa, emphasizing adjustability and comfort features. The overall mood is calm, clean, and informative.",
+      "panel_class": "detail"
+    },
+    "panel_07": {
+      "description": "The image is a close-up, straight-on shot focusing tightly on a section of the sofa's arm or side panel, showcasing a built-in control panel with illuminated buttons and a USB port. The framing is partial, excluding the rest of the sofa and any room context, emphasizing the texture of the upholstery and the details of the control interface. The lighting is even and soft, highlighting the material grain and the metallic finish of the panel, with no visible props or background elements. The intent is to highlight a specific functional feature of the furniture, drawing attention to its technological integration. The overall mood is clean, modern, and informative.",
+      "panel_class": "detail"
+    },
+    "panel_08": {
+      "description": "The image is shot from a strict side profile viewpoint at eye level, presenting the sofa in a full, uncropped lateral view. The furniture is centered in the frame with no visible room or backdrop, isolated against a plain white background to eliminate distractions. There are no props or additional decor elements, focusing solely on the sofa's form and features. Lighting is even and neutral, minimizing shadows and highlighting the sofa's structure and details. The intent is to clearly show the sofa's side profile, likely to demonstrate its dimensions, silhouette, and design features.",
+      "panel_class": "design_chart"
+    },
+    "panel_09": {
+      "description": "The image is shot from a slightly elevated, front-facing angle, focusing closely on the left section of a sofa with an extended recliner. The framing is a tight crop, capturing only part of the sofa and omitting the rest of the room, with a plain white backdrop that eliminates any environmental context or props. The lighting is soft and even, highlighting the texture and mechanism of the recliner without casting harsh shadows. The intent is to showcase the functionality and detail of the reclining feature, emphasizing material quality and construction. The overall mood is clean, modern, and informative.",
+      "panel_class": "detail"
+    },
+    "panel_10": {
+      "description": "The image is a close-up, tightly cropped shot taken from a slightly angled top-down viewpoint, focusing exclusively on the texture and surface of the sofa upholstery. No room context, props, or background elements are visible, isolating the material to highlight its grain and tactile quality. The lighting is soft and even, minimizing shadows and emphasizing the fine details of the leather or faux leather finish. The intent is to showcase the material quality and texture for potential buyers. The overall mood is clean, neutral, and informative.",
+      "panel_class": "detail"
+    },
+    "panel_11": {
+      "description": "The camera is positioned at a straightforward eye-level angle, capturing the entire sofa in a wide, full-frontal view with no cropping of the furniture. The sofa is centered against a plain white background, with no visible room context, props, or decorative elements. Lighting is even and neutral, minimizing shadows and emphasizing the sofa's shape and material boundaries, which are highlighted with dotted lines to indicate specific material application areas. The intent of this panel is to provide a clear, informative breakdown of the sofa's construction and material zones, supported by accompanying text. The overall mood is technical and instructional.",
+      "panel_class": "design_chart"
+    },
+    "panel_12": {
+      "description": "The panel features a front-facing, eye-level view of two sofa models, each centered in a clean, white background with no visible room or props, emphasizing their shape and proportions. The framing is wide, showing the full length of each sofa with ample space around them, and the crop is tight enough to focus solely on the products. Below, three close-up swatches of upholstery colors are presented in a grid, each filling its frame to highlight texture and color. The lighting is even and neutral, minimizing shadows and distractions. The intent is clearly to provide a straightforward, chart-style comparison of sizes and available color/material options.",
+      "panel_class": "design_chart"
+    }
+  },
+  "product": "The MILO fabric 3-seat sofa features a low, elongated rectangular silhouette with generous proportions and a deep seat, comfortably accommodating three people. Its arms are wide, flat, and slightly rounded at the edges, seamlessly integrated with the sofa’s boxy profile. The backrest consists of three large, loose, overstuffed cushions, while the seat is divided into two thick, plush seat cushions, all upholstered in a soft, matte, light beige fabric (distinctly not leather). The base is minimal and slightly recessed, supported by short, dark legs barely visible beneath the sofa, giving it a floating appearance. Subtle piping seams outline the arms and cushions, adding gentle definition without ornate detailing.",
+  "product_refs": [
+    "user_products/milo_777039/panel_01.jpg",
+    "user_products/milo_777039/gif_frames/frame_01.jpg",
+    "user_products/milo_777039/gif_frames/frame_02.jpg",
+    "user_products/milo_777039/gif_frames/frame_03.jpg"
+  ]
+}

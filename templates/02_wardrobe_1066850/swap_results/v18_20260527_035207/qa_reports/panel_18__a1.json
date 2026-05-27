@@ -1,0 +1,92 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [
+    {
+      "id": "two_80cm_modules_total_160cm",
+      "verdict": "pass",
+      "reason_ko": "결과 B는 좌우에 동일한 폭의 직사각형 모듈 2개가 나란히 배치되어 80cm 모듈 2개 조합의 160cm 구성으로 인식됩니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "damping_hinges_indicator",
+      "verdict": "not_visible",
+      "reason_ko": "결과 B에는 댐핑 힌지를 나타내는 아이콘, 문구, 힌지 접사 표현이 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "shelf_thickness_18mm_note",
+      "verdict": "not_visible",
+      "reason_ko": "선반 두께 18mm를 설명하는 텍스트나 단면 도식이 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "aluminum_hanging_rod_indicator",
+      "verdict": "not_visible",
+      "reason_ko": "현재 패널은 후면 구조 중심으로 보이며, 알루미늄 옷걸이봉 또는 관련 표기가 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "back_panel_triple_brace_diagram",
+      "verdict": "pass",
+      "reason_ko": "오른쪽 후면 구조에 가로 보강목 3개가 명확히 표현되어 뒷판 3중 보조목 보강 구조를 보여줍니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_finish_label",
+      "verdict": "not_visible",
+      "reason_ko": "LPM 마감임을 나타내는 텍스트나 아이콘 표기가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "e0_grade_label",
+      "verdict": "not_visible",
+      "reason_ko": "E0 등급 소재 사용을 나타내는 문구나 아이콘이 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "hinge_40000_cycles_label",
+      "verdict": "not_visible",
+      "reason_ko": "힌지 40,000회 개폐 테스트 관련 문구나 아이콘이 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "material_bending_50kg_168h_label",
+      "verdict": "not_visible",
+      "reason_ko": "자재 휨 강도 50kg/168시간 테스트 관련 표기가 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "recommended_shelf_load_20kg_80cm_label",
+      "verdict": "not_visible",
+      "reason_ko": "선반 권장 하중 20kg, 80cm 기준을 나타내는 표기가 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "rod_load_16kg_80cm_label",
+      "verdict": "not_visible",
+      "reason_ko": "옷걸이봉 최대 16kg, 80cm 기준 하중 표기가 확인되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 92,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "결과 B는 원본 패널 C의 구조 차트 구도, 좌우 배치, 하단 텍스트 영역을 전반적으로 잘 유지합니다. 핵심 distortion 항목인 80cm 모듈 2개 구성은 충족합니다. 다만 대부분의 기술 사양 표기 항목은 이미지 내에서 확인되지 않으며, 이는 detail 항목으로 처리했습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 88,
+  "verdict": "retry"
+}

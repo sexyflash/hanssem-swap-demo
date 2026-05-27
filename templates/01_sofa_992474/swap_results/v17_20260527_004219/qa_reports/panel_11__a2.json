@@ -1,0 +1,14 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 88,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "이 패널에 적용 가능한 verifiable checklist item이 명시되지 않아 개별 항목 채점은 없음. B는 상단 소파 구조도와 하단 사양표가 있는 chart_diagram 형식이며, 사용자 제품의 2인용 패브릭 소파, 양팔형, 2좌방석, 등쿠션, 슬림 블랙 다리 등 핵심 정체성은 전반적으로 유지되어 보인다. 헤드레스트, 리클라이너, USB 등 사용자 제품에 없는 명백한 invented feature는 보이지 않는다. 구도는 C 원본 패널의 상단 제품+우측 적용범위 아이콘+하단 표 구조를 잘 따르나, 원본 대비 제품 크기와 표 구성/텍스트 밀도는 일부 달라 composition_score는 88로 평가한다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 50,
+  "verdict": "retry"
+}

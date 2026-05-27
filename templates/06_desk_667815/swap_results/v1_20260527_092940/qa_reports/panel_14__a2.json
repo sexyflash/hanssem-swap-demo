@@ -1,0 +1,43 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [
+    {
+      "id": "l_shape_with_lower_bookcase",
+      "verdict": "pass",
+      "reason_ko": "결과 B에서 긴 상판과 우측 짧은 리턴이 결합된 ㄱ자 구조가 보이며, 우측 하부에 2열 책장 유닛이 일체로 배치되어 있다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "two_stability_braces",
+      "verdict": "pass",
+      "reason_ko": "긴 상판 하부 방향으로 평행한 보강 레일/브레이스 2개가 식별되어 기대 구조와 부합한다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "return_supported_by_bookcase",
+      "verdict": "pass",
+      "reason_ko": "ㄱ자 짧은 변이 독립 원형 다리만으로 지지되는 것이 아니라 우측 하부 책장 유닛 위에 얹혀 지지되는 형태로 보인다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "hook_left_right_option_indicator",
+      "verdict": "pass",
+      "reason_ko": "좌측 하부에 가방걸이처럼 보이는 부품이 있고, 화살표 및 점선 표시가 함께 있어 좌/우 또는 위치 선택 설치 안내로 해석 가능하다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 68,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "제품 정체성 기준으로는 ㄱ자 상판, 하부 책장 지지, 보강대 2개가 모두 확인되어 왜곡 실패는 없다. 원본 C의 단순 뒤집힌 직사각 테이블 구도와는 구조가 달라졌지만, 흰 배경의 구조 설명용 단독 제품 이미지라는 성격은 유지된다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 100,
+  "verdict": "pass"
+}

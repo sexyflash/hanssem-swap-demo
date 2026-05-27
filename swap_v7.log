@@ -1,0 +1,73 @@
+=== swap v6 — 4-layer prompt + bidirectional QA ===
+  targets: 13
+  model: gpt_image
+
+uploading references...
+  gif 3 · material 1 · color 3 · color_variant 2
+[panel_01/aligned/#1] cls=lifestyle_scene ar=3:2 refs=4
+[panel_02/aligned/#1] cls=detail_close_up ar=3:2 refs=4
+[panel_03/aligned/#1] cls=detail_close_up ar=3:2 refs=4
+[panel_04/aligned/#1] cls=size_chart ar=2:3 refs=4
+[panel_04/aligned/#1] prod=100 comp=100 TEXT! -> retry
+[panel_05/aligned/#1] cls=detail_close_up ar=3:2 refs=4
+[panel_02/aligned/#1] prod=100 comp=95 -> pass
+[panel_06/aligned/#1] cls=detail_close_up ar=3:2 refs=4
+[panel_01/aligned/#1] prod=60 comp=90 SEAT=3 RI=3 -> retry
+[panel_07/aligned/#1] cls=detail_close_up ar=3:2 refs=4
+[panel_03/aligned/#1] prod=97 comp=90 -> pass
+[panel_08/aligned/#1] cls=detail_close_up ar=3:2 refs=4
+[panel_08/aligned/#1] prod=100 comp=95 -> pass
+[panel_09/aligned/#1] cls=detail_close_up ar=3:2 refs=4
+[panel_05/aligned/#1] prod=99 comp=90 -> pass
+[panel_10/aligned/#1] cls=detail_close_up ar=3:2 refs=4
+[panel_06/aligned/#1] prod=60 comp=85 SEAT=3 UNDERSWAP! RI=3 -> retry
+[panel_11/aligned/#1] cls=structure_chart ar=3:4 refs=4
+[panel_07/aligned/#1] prod=30 comp=85 SEAT=0 UNDERSWAP! RI=1 -> retry
+[panel_12/aligned/#1] cls=module_lineup ar=3:4 refs=9
+[panel_09/aligned/#1] prod=98 comp=85 RI=2 -> retry
+[cover/aligned/#1] cls=intro_hero ar=1:1 refs=4
+[panel_11/aligned/#1] prod=98 comp=95 TEXT! -> retry
+[panel_04/overpaint/#2] cls=size_chart ar=2:3 refs=4
+[panel_10/aligned/#1] prod=98 comp=95 -> pass
+[panel_01/overpaint/#2] cls=lifestyle_scene ar=3:2 refs=4
+[panel_12/aligned/#1] prod=100 comp=100 TEXT! -> retry
+[panel_06/overpaint/#2] cls=detail_close_up ar=3:2 refs=4
+[cover/aligned/#1] prod=100 comp=100 -> pass
+[panel_07/overpaint/#2] cls=detail_close_up ar=3:2 refs=4
+[panel_04/overpaint/#2] prod=100 comp=99 TEXT! -> retry
+[panel_09/overpaint/#2] cls=detail_close_up ar=3:2 refs=4
+[panel_01/overpaint/#2] prod=60 comp=90 SEAT=3 RI=3 -> retry
+[panel_11/overpaint/#2] cls=structure_chart ar=3:4 refs=4
+[panel_06/overpaint/#2] prod=40 comp=85 SEAT=3 RI=3 -> retry
+[panel_12/overpaint/#2] cls=module_lineup ar=3:4 refs=9
+[panel_07/overpaint/#2] prod=100 comp=90 -> pass
+[panel_04/smart_sheet/#3] cls=size_chart ar=2:3 refs=5
+[panel_09/overpaint/#2] prod=100 comp=95 -> pass
+[panel_01/smart_sheet/#3] cls=lifestyle_scene ar=3:2 refs=5
+[panel_11/overpaint/#2] prod=100 comp=99 TEXT! -> retry
+[panel_06/smart_sheet/#3] cls=detail_close_up ar=3:2 refs=5
+[panel_12/overpaint/#2] prod=100 comp=100 TEXT! -> retry
+[panel_11/smart_sheet/#3] cls=structure_chart ar=3:4 refs=5
+[panel_04/smart_sheet/#3] prod=100 comp=99 TEXT! -> retry
+[panel_12/smart_sheet/#3] cls=module_lineup ar=3:4 refs=10
+[panel_06/smart_sheet/#3] prod=60 comp=85 SEAT=3 UNDERSWAP! RI=3 -> retry
+[panel_01/smart_sheet/#3] prod=100 comp=95 -> pass
+[panel_11/smart_sheet/#3] prod=100 comp=99 TEXT! -> retry
+[panel_12/smart_sheet/#3] prod=100 comp=100 -> pass
+
+=== DONE === /Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/01_sofa_992474/swap_results/v7_20260526_134924
+  wall: 389.6s
+  passers: 10/13
+    panel_01     [ lifestyle_scene] prod=100 comp=95 seats=2 RI=0 via=aligned/overpaint/smart_sheet pass=True
+    panel_02     [ detail_close_up] prod=100 comp=95 seats=2 RI=0 via=aligned pass=True
+    panel_03     [ detail_close_up] prod=97 comp=90 seats=2 RI=0 via=aligned pass=True
+    panel_04     [      size_chart] prod=100 comp=100 seats=2 RI=0 via=aligned/overpaint/smart_sheet pass=False
+    panel_05     [ detail_close_up] prod=99 comp=90 seats=2 RI=0 via=aligned pass=True
+    panel_06     [ detail_close_up] prod=60 comp=85 seats=3 RI=3 via=aligned/overpaint/smart_sheet pass=False
+    panel_07     [ detail_close_up] prod=100 comp=90 seats=2 RI=0 via=aligned/overpaint pass=True
+    panel_08     [ detail_close_up] prod=100 comp=95 seats=2 RI=0 via=aligned pass=True
+    panel_09     [ detail_close_up] prod=100 comp=95 seats=2 RI=0 via=aligned/overpaint pass=True
+    panel_10     [ detail_close_up] prod=98 comp=95 seats=2 RI=0 via=aligned pass=True
+    panel_11     [ structure_chart] prod=100 comp=99 seats=2 RI=0 via=aligned/overpaint/smart_sheet pass=False
+    panel_12     [   module_lineup] prod=100 comp=100 seats=2 RI=0 via=aligned/overpaint/smart_sheet pass=True
+    cover        [      intro_hero] prod=100 comp=100 seats=2 RI=0 via=aligned pass=True

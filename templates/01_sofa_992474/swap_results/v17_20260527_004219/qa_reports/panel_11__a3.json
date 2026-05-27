@@ -1,0 +1,14 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 90,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "이 패널에 적용 가능한 verifiable checklist item이 없어 개별 항목 채점은 비어 있습니다. B는 상단 소파 구조도와 적용범위 아이콘, 하단 표 구성 등 C의 chart_diagram 구도를 잘 유지하고 있으며, 사용자 제품에 없는 헤드레스트/리클라이너/USB 등 명백한 invented feature는 보이지 않습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 50,
+  "verdict": "retry"
+}

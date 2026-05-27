@@ -1,0 +1,174 @@
+{
+  "resolutions": [
+    {
+      "verdict": "match",
+      "hanssem_feature": "티오 책상의 내구성, 심플한 디자인, 작업 공간의 기본 베이스 역할을 강조하는 인트로 히어로",
+      "user_has_it": "yes",
+      "reasoning": "사용자 제품도 같은 티오 책상 카테고리이며, 내구성 있는 LPM 상판과 보강 구조, 깔끔한 라인으로 ‘좋은 책상의 기본’ 메시지를 충분히 대체할 수 있다. 120cm 일자형에서 160cm ㄱ자형으로 형태는 달라지지만, 더 넓은 작업 공간과 수납력을 강조하는 방향으로 자연스럽게 swap 가능하다.",
+      "alt_title": "",
+      "alt_body": "",
+      "overlay_label": "",
+      "panel_idx": 1
+    },
+    {
+      "verdict": "match",
+      "hanssem_feature": "티오 책상의 120/140/160cm 일반형 및 160cm ㄱ자형 라인업과 치수 안내",
+      "user_has_it": "yes",
+      "reasoning": "사용자 제품은 동일한 티오 책상 라인업에 포함된 ㄱ자책상 160cm 모델로, 패널의 라인업/사이즈 안내 의도와 직접적으로 맞는다. 특히 원본 패널에도 사용자 제품과 같은 ‘티오 ㄱ자책상 160cm’ 항목이 포함되어 있어 swap 결과가 의미 있게 구성될 수 있다.",
+      "alt_title": "",
+      "alt_body": "",
+      "overlay_label": "",
+      "panel_idx": 2
+    },
+    {
+      "verdict": "match",
+      "hanssem_feature": "티오 책상과 책장/수납 구성을 활용한 다양한 학습·작업 공간 연출",
+      "user_has_it": "partial",
+      "reasoning": "사용자 제품은 같은 티오 책상 카테고리의 ㄱ자책상으로, 라이프스타일 공간 연출과 책상+수납 구성이라는 의도를 충분히 표현할 수 있다. 다만 원본의 일반책상 색상 조합 및 별도 책장 도어 구성은 사용자 제품과 동일하지 않아 ㄱ자 구조와 하부 수납 중심으로 치환하는 것이 적합하다.",
+      "alt_title": "",
+      "alt_body": "",
+      "overlay_label": "",
+      "panel_idx": 3
+    },
+    {
+      "verdict": "bypass",
+      "hanssem_feature": "일반책상 120cm의 상세 치수와 화이트/내추럴오크 컬러 옵션 안내",
+      "user_has_it": "partial",
+      "reasoning": "사용자 제품도 책상이고 160cm 길이는 확인되지만, ㄱ자 구조로 원본 일반책상과 형태가 다르며 깊이·높이·컬러 옵션 정보가 없어 동일한 사이즈/컬러 차트로 치환하기 어렵습니다.",
+      "alt_title": "넓게 쓰는 ㄱ자 학습 공간",
+      "alt_body": "160cm 넓은 상판과 하부 책장형 수납이 결합된 ㄱ자 구성으로 작업 공간과 수납력을 함께 제공합니다. 가방걸이, 레벨러, 보강대 등 실사용 편의와 안정성을 고려한 구조입니다.",
+      "overlay_label": "ㄱ자책상 160cm의 강점",
+      "panel_idx": 4
+    },
+    {
+      "verdict": "match",
+      "hanssem_feature": "책상 전체 실루엣과 상판 활용감을 소품과 함께 보여주는 기본 라이프스타일 컷",
+      "user_has_it": "partial",
+      "reasoning": "사용자 제품도 같은 티오 책상 카테고리이며 상판 위 학습·작업 소품을 배치한 장면으로 의미 있게 대체할 수 있다. 다만 원본은 일자형 120cm 책상이고 사용자 제품은 하부책장이 있는 160cm ㄱ자책상이므로 실루엣과 구조는 사용자 제품에 맞게 재구성해야 한다.",
+      "alt_title": "",
+      "alt_body": "",
+      "overlay_label": "",
+      "panel_idx": 5
+    },
+    {
+      "verdict": "match",
+      "hanssem_feature": "책장 배경의 정돈된 학습 공간에서 일반책상을 배치해 작업·공부 장면을 보여주는 라이프스타일 컷",
+      "user_has_it": "partial",
+      "reasoning": "사용자 제품도 같은 티오 책상 카테고리로 학습·작업 공간 연출이 가능하다. 다만 원본은 일자형 120cm 책상 2개를 나란히 둔 장면이고, 사용자 제품은 160cm ㄱ자책상이라 배치와 실루엣은 사용자 제품에 맞게 조정해야 한다.",
+      "alt_title": "",
+      "alt_body": "",
+      "overlay_label": "",
+      "panel_idx": 6
+    },
+    {
+      "verdict": "match",
+      "hanssem_feature": "밝은 우드톤 상판의 표면 질감과 라운드 모서리, 깔끔한 다리 디테일",
+      "user_has_it": "yes",
+      "reasoning": "사용자 제품도 티오 책상 계열이며 상판 라운드 처리와 LPM 표면재를 갖고 있어 동일한 클로즈업 의도를 표현할 수 있다. ㄱ자 160cm 구성으로 형태는 다르지만, 상판 모서리와 마감 질감 강조는 충분히 대체 가능하다.",
+      "alt_title": "",
+      "alt_body": "",
+      "overlay_label": "",
+      "panel_idx": 7
+    },
+    {
+      "verdict": "match",
+      "hanssem_feature": "책상 측면에 가방을 걸 수 있는 원형 가방걸이와 상판 클로즈업",
+      "user_has_it": "yes",
+      "reasoning": "사용자 제품도 가방걸이 1개가 기본 제공되며 좌/우 선택 설치가 가능해, 백팩을 걸어 보여주는 클로즈업 의도를 그대로 표현할 수 있다. 원본의 서랍 구성은 사용자 제품의 하부책장형 수납과 다르지만 이 패널의 핵심은 측면 가방걸이 디테일이므로 swap 적합도가 높다.",
+      "alt_title": "",
+      "alt_body": "",
+      "overlay_label": "",
+      "panel_idx": 8
+    },
+    {
+      "verdict": "match",
+      "hanssem_feature": "밝은 우드 상판의 라운드 모서리와 화이트 다리 마감 클로즈업",
+      "user_has_it": "partial",
+      "reasoning": "사용자 제품도 책상 카테고리이며 상판 라운드 처리와 다리 마감/레벨러 디테일을 보유해 클로즈업 의도를 대체 표현할 수 있다. 다만 원본의 일반책상 원통형 다리와 사용자 ㄱ자책상의 하부 구조는 완전히 동일하지 않아 부분 매칭이다.",
+      "alt_title": "",
+      "alt_body": "",
+      "overlay_label": "",
+      "panel_idx": 9
+    },
+    {
+      "verdict": "match",
+      "hanssem_feature": "책상 하부에 설치된 콘센트로 상판을 깔끔하게 쓰고 충전 접근성을 높이는 디테일",
+      "user_has_it": "yes",
+      "reasoning": "사용자 제품도 티오 ㄱ자책상으로, 선택 추가 가능한 하부 설치형 콘센트 기능이 있어 원본 패널의 핵심 의도인 하부 전원 접근성과 깔끔한 상판 활용을 그대로 표현할 수 있다.",
+      "alt_title": "",
+      "alt_body": "",
+      "overlay_label": "",
+      "panel_idx": 10
+    },
+    {
+      "verdict": "bypass",
+      "hanssem_feature": "책상 주변 소품을 깔끔하게 정리하는 서랍형 수납 디테일",
+      "user_has_it": "partial",
+      "reasoning": "사용자 제품은 같은 티오 책상 계열이고 하부 책장형 수납은 있지만, 이 패널의 핵심인 작은 물건을 넣는 독립 서랍장/서랍 내부 정리 장면과는 구조가 다릅니다. ㄱ자책상의 넓은 상판과 하부 책장 수납 강점으로 대체 콘텐츠를 노출하는 것이 적합합니다.",
+      "alt_title": "넓게 쓰고, 아래까지 알차게",
+      "alt_body": "160cm ㄱ자 구성으로 학습·PC 작업 공간을 넓게 확보할 수 있습니다. 하부 책장형 수납에는 책과 PC 본체 등 부피 있는 물건을 정리해 공간 활용도를 높여줍니다.",
+      "overlay_label": "ㄱ자책상은 다른 강점",
+      "panel_idx": 11
+    },
+    {
+      "verdict": "match",
+      "hanssem_feature": "책상과 이동서랍장·책장이 함께 배치된 티오 학습 공간 라이프스타일 연출",
+      "user_has_it": "partial",
+      "reasoning": "사용자 제품도 같은 티오 책상 카테고리이며 학습/작업 공간과 수납을 함께 보여주는 장면으로 의미 있게 대체 가능하다. 다만 원본은 일자책상 120cm와 별도 서랍장·책장 조합이고, 사용자 제품은 160cm ㄱ자 구성과 하부책장 수납이 핵심이라 구도와 구조는 조정이 필요하다.",
+      "alt_title": "",
+      "alt_body": "",
+      "overlay_label": "",
+      "panel_idx": 12
+    },
+    {
+      "verdict": "match",
+      "hanssem_feature": "밝은 학습 공간에서 넓은 책상 상판과 우측 수납을 함께 보여주는 라이프스타일 연출",
+      "user_has_it": "yes",
+      "reasoning": "사용자 제품도 티오 책상 카테고리이며, 160cm ㄱ자 상판과 하부 책장형 수납으로 학습/작업 공간 연출이 가능하다. 원본의 일자 120cm와 형태는 다르지만 핵심 의도인 넓은 상판 활용과 수납형 책상 분위기는 충분히 대체 가능하다.",
+      "alt_title": "",
+      "alt_body": "",
+      "overlay_label": "",
+      "panel_idx": 13
+    },
+    {
+      "verdict": "match",
+      "hanssem_feature": "책상을 뒤집어 상판 하부와 다리 연결 구조를 단독으로 보여주는 구조 컷",
+      "user_has_it": "partial",
+      "reasoning": "사용자 제품도 책상 카테고리이며 다리, 레벨러, 보강대 등 하부 구조를 강조할 수 있어 구조 컷으로 대체 가능하다. 다만 원본은 일반 일자형 책상이고 사용자 제품은 ㄱ자형 책장 결합 구조라 동일한 형상은 아니므로 부분 일치로 판단한다.",
+      "alt_title": "",
+      "alt_body": "",
+      "overlay_label": "",
+      "panel_idx": 14
+    },
+    {
+      "verdict": "match",
+      "hanssem_feature": "E0 등급 자재와 포름알데히드 방출량 0.5mg/L 이하 기준을 시험성적서로 강조",
+      "user_has_it": "yes",
+      "reasoning": "사용자 제품도 E0 등급 자재와 포름알데히드 방출량 ≤ 0.5mg/L, 어린이 안전법 테스트 합격 정보가 명시되어 있어 동일한 안전 기준 차트로 치환 가능하다.",
+      "alt_title": "",
+      "alt_body": "",
+      "overlay_label": "",
+      "panel_idx": 15
+    },
+    {
+      "verdict": "bypass",
+      "hanssem_feature": "화이트와 밝은 우드톤의 소재/컬러 스와치를 보여주는 패널",
+      "user_has_it": "partial",
+      "reasoning": "사용자 제품은 LPM 상판 소재 정보는 있으나, 해당 패널처럼 화이트·우드 컬러 스와치를 구성할 수 있는 명시적 컬러 옵션 정보가 없다. 따라서 원본의 소재/컬러 비교 의도를 그대로 swap하기는 어렵다.",
+      "alt_title": "스크래치에 강한 LPM 상판",
+      "alt_body": "상판은 내구성이 높은 LPM 표면재를 적용해 일상적인 사용 스크래치에 강합니다. 접착제 없이 열과 압력으로 접합해 유해물질 발생을 줄인 점도 특징입니다.",
+      "overlay_label": "ㄱ자책상은 다른 강점",
+      "panel_idx": 16
+    },
+    {
+      "verdict": "match",
+      "hanssem_feature": "책상 상판·다리·가방걸이 소재와 PB E0 자재등급을 표로 정리한 구조/소재 스펙",
+      "user_has_it": "partial",
+      "reasoning": "사용자 제품도 같은 티오 책상 카테고리이며 LPM 상판, 가방걸이, E0 등급 자재 등 핵심 소재/안전 정보가 있어 구조 차트로 의미 있게 대체 가능하다. 다만 23mm PB, 철제+분체도장, ABS처럼 일부 원본의 세부 소재값은 사용자 정보에 명시되지 않아 사용자 제품 기준 문구로 조정해야 한다.",
+      "alt_title": "",
+      "alt_body": "",
+      "overlay_label": "",
+      "panel_idx": 17
+    }
+  ]
+}

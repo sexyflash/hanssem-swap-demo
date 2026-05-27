@@ -1,0 +1,85 @@
+{
+  "image_format": "lifestyle",
+  "items_results": [
+    {
+      "id": "no_sliding_doors",
+      "verdict": "pass",
+      "reason_ko": "결과 B에는 도어 자체가 노출되지 않았고, 슬라이딩 도어로 보이는 요소도 없습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_high_legs_visible",
+      "verdict": "pass",
+      "reason_ko": "하단 베이스나 다리 영역이 보이지 않지만, 본체를 높게 띄우는 노출 다리는 확인되지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "no_builtin_led_visible",
+      "verdict": "pass",
+      "reason_ko": "옷장 내부 가장자리나 행거봉 주변에 LED 발광 바 또는 내장 조명으로 보이는 요소가 없습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "two_80cm_modules_total_160cm",
+      "verdict": "not_visible",
+      "reason_ko": "클로즈업된 내부 행거봉 장면이라 전체 전면 폭이나 80cm 모듈 2개 구조, 중앙 이음부를 검증할 수 없습니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "hinged_double_doors_per_module",
+      "verdict": "not_visible",
+      "reason_ko": "도어가 화면에 노출되지 않아 양문형 힌지 도어 여부를 확인할 수 없습니다. 슬라이딩 도어가 보이진 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "external_3_tier_drawers_visible",
+      "verdict": "not_visible",
+      "reason_ko": "이 패널은 옷장 내부 상단 행거봉과 의류 클로즈업이므로 전면 하단의 3단 외부형 서랍 블록이 보이지 않습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "long_inset_vertical_handles",
+      "verdict": "not_visible",
+      "reason_ko": "전면 도어 가장자리와 손잡이 영역이 프레임 밖이라 세로 긴 매립형 손잡이를 확인할 수 없습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "rectangular_straight_top_silhouette",
+      "verdict": "pass",
+      "reason_ko": "보이는 내부 상단과 측판은 직선형이며, 크라운이나 아치형 장식 같은 돌출 장식은 없습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "selected_finish_in_images_is_one_of_three",
+      "verdict": "pass",
+      "reason_ko": "노출된 옷장 내부 마감은 밝은 우드톤으로, 제공 컬러 중 라이트오크 계열로 해석 가능합니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "aluminum_hanging_rod_indicator",
+      "verdict": "pass",
+      "reason_ko": "상단 행거봉이 은색 금속 재질로 명확히 보이며, 알루미늄 행거봉 표현으로 보기 충분합니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 92,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "결과 B는 원본 패널 C의 라이프스타일 구도인 내부 행거봉, 나무 옷걸이, 코트, 손의 위치를 잘 유지하고 있습니다. 이 장면에서는 전면 도어, 서랍, 손잡이, 전체 160cm 모듈 구조 등 외관 핵심 요소가 노출되지 않아 다수 항목은 not_visible로 처리했습니다. 확인 가능한 범위에서는 금지 요소나 명백한 제품 왜곡은 발견되지 않았습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 78,
+  "verdict": "retry"
+}

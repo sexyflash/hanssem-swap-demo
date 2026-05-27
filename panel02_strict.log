@@ -1,0 +1,14 @@
+=== panel_02 strict close-up prompt — milo 3 frames only, no panel C ===
+
+prompt length: 2241 chars
+
+refs uploaded: 3 (milo GIF frames only, no panel C)
+
+--- attempt #1 ---
+  saved: panel_02__a1_strict.png
+  scores: {'framing_is_closeup': 5, 'arm_thinness': 5, 'cushion_loose': 4, 'fabric_matte': 5, 'leg_slim_cylinder': 5, 'full_swap': 5}
+  prod=97 comp=98 verdict=pass
+
+  ✓ PASSED at attempt 1
+
+DONE → /Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/01_sofa_992474/swap_results/panel02_strict_20260526_142702

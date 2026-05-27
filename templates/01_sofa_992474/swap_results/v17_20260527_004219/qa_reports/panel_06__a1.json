@@ -1,0 +1,120 @@
+{
+  "image_format": "single_product",
+  "items_results": [
+    {
+      "id": "forbid_usb_or_power_port",
+      "verdict": "pass",
+      "reason_ko": "프레임이나 팔걸이 주변에 USB 포트, 전원 콘센트 같은 전장 기능이 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_tufting_or_buttons",
+      "verdict": "pass",
+      "reason_ko": "좌방석과 등쿠션 표면에 버튼 퀼팅이나 터프팅 패턴이 없습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_piping_trim",
+      "verdict": "pass",
+      "reason_ko": "쿠션 외곽에 봉제선과 플랜지성 엣지는 보이지만, 별도의 둥근 끈 장식처럼 돌출된 파이핑 트림으로 명확히 보이지는 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "connection_seat_to_inner_arm_bolster",
+      "verdict": "pass",
+      "reason_ko": "우측 팔 안쪽 보조쿠션이 좌방석과 맞닿아 하나의 연속된 쿠션 영역처럼 자연스럽게 이어져 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "fabric_is_woven_textile_not_leather",
+      "verdict": "pass",
+      "reason_ko": "표면이 무광의 직조 패브릭 질감으로 표현되어 있으며 가죽이나 비닐 같은 강한 광택은 없습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "seat_cushion_crown_and_rolled_front_edge",
+      "verdict": "pass",
+      "reason_ko": "좌방석이 전체적으로 도톰하고 중앙이 살짝 볼록하며 앞쪽 엣지가 부드럽게 말려 내려온 형태로 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "seat_cushion_narrow_gap",
+      "verdict": "pass",
+      "reason_ko": "두 좌방석 사이의 세로 이격이 좁고 비교적 균일하게 표현되어 있습니다.",
+      "category": "detail",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "seat_top_bottom_topstitch",
+      "verdict": "pass",
+      "reason_ko": "좌방석 앞쪽과 엣지 주변에 얇은 봉제/상침선이 대체로 식별됩니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "back_cushion_ear_folds",
+      "verdict": "pass",
+      "reason_ko": "등쿠션 상단 모서리가 살짝 솟고 접힌 듯한 귀 모양 형태가 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "back_cushion_no_center_seam",
+      "verdict": "pass",
+      "reason_ko": "각 등쿠션 중앙에 세로 또는 가로 봉제선이 추가되어 있지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "back_cushion_knife_edge_light_topstitch",
+      "verdict": "pass",
+      "reason_ko": "등쿠션 외곽이 비교적 날렵한 엣지와 얇은 봉제선으로 정리되어 보이며, 미세 디테일 수준에서는 허용 가능한 표현입니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "arm_bolster_front_flange",
+      "verdict": "pass",
+      "reason_ko": "우측 팔 안쪽 보조쿠션 전면 엣지에 겉시접 플랜지처럼 도드라진 선이 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "fabric_melange_weave_visible",
+      "verdict": "pass",
+      "reason_ko": "근접 컷에서 회색 계열의 잔잔한 멜란지 직조 질감이 식별됩니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "fabric_matte_finish",
+      "verdict": "pass",
+      "reason_ko": "패브릭 표면이 전반적으로 무광에 가깝고 강한 반사 하이라이트가 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "water_repellency_beading_scene",
+      "verdict": "not_visible",
+      "reason_ko": "이 컷에는 물방울이 맺힌 발수 연출 장면이 포함되어 있지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 70,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "B는 밀로 패브릭소파의 2인 구성, 직물 질감, 무광 패브릭, 보조쿠션과 좌방석 연결감 등 핵심 제품 정체성을 잘 유지하고 있습니다. 물방울 발수 연출은 이 패널에서 보이지 않지만 detail 항목이며 제품 왜곡으로 보지는 않습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 99,
+  "verdict": "pass"
+}

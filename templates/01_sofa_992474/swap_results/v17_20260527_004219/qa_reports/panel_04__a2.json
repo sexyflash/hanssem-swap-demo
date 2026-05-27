@@ -1,0 +1,22 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [
+    {
+      "id": "size_chart_core_dimensions",
+      "verdict": "pass",
+      "reason_ko": "결과 B의 사이즈 차트에 W200, D90, H85가 각각 치수선으로 표시되어 있고, 하단 텍스트에도 다릿발 높이 14cm, 좌방석 깊이 52cm, 좌방석 높이 45cm, 팔걸이 높이 57cm가 정확히 명시되어 있습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 90,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "검증 대상인 핵심 치수 표기가 사용자 제품 기준과 일치합니다. 제품 이미지도 밀로 2인용 소파 형태로 배치되어 있으며, 본 패널의 치수 정보 왜곡은 확인되지 않습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 100,
+  "verdict": "pass"
+}

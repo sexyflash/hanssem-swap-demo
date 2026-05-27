@@ -1,0 +1,329 @@
+<style>
+/* ------------------------------
+web font
+------------------------------ */
+/* 프리텐다드 웹폰트*/
+
+/*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
+https://github.com/orioncactus/pretendard
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:900;
+	font-display:swap;
+	src:local('Pretendard Black'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Black.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Black.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:800;
+	font-display:swap;
+	src:local('Pretendard ExtraBold'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraBold.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraBold.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:700;
+	font-display:swap;
+	src:local('Pretendard Bold'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Bold.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Bold.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:600;
+	font-display:swap;
+	src:local('Pretendard SemiBold'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-SemiBold.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-SemiBold.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:500;
+	font-display:swap;
+	src:local('Pretendard Medium'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Medium.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Medium.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:400;
+	font-display:swap;
+	src:local('Pretendard Regular'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Regular.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Regular.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:300;
+	font-display:swap;
+	src:local('Pretendard Light'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Light.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Light.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:200;
+	font-display:swap;
+	src:local('Pretendard ExtraLight'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraLight.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraLight.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:100;
+	font-display:swap;
+	src:local('Pretendard Thin'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Thin.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Thin.subset.woff') format('woff');
+}
+
+.sec-comp {padding:24px 0;font-family:'Pretendard',sans-serif;font-size:12px;line-height:1.4;font-weight:400;color:#121212;word-break:break-all;word-wrap:break-word;}
+.sec-comp * {margin:0;padding:0;}
+.sec-comp img {vertical-align:top;border:0;}
+.sec-comp a {text-decoration:none;color:#121212;-webkit-tap-highlight-color:transparent}
+.sec-comp a:active {text-decoration:none;}
+.sec-comp a:visited {text-decoration:none;}
+.sec-comp a:hover {text-decoration:none;}
+.sec-comp a:focus {text-decoration:none;}
+.sec-comp fieldset {border:0;}
+.sec-comp input {font-family:inherit;line-height:inherit;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+.sec-comp input::-webkit-search-cancel-button {display:none;}
+.sec-comp _::-webkit-full-page-media, _:future, :root input:disabled {opacity:1;}
+.sec-comp input:focus {outline:none;}
+.sec-comp textarea {display:block;box-sizing:border-box;width:100%;padding:10px;border:1px solid #e2e2e2;background-color:#fff;font-family:'Pretendard',sans-serif;font-size:1.4rem;color:#121212;resize:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px solid #dfdfdf;border-radius:0;}
+.sec-comp textarea:focus {outline:none;position:relative;z-index:1;border:1px solid #ff3a69;color:#121212;}
+.sec-comp _::-webkit-full-page-media, _:future, :root textarea:disabled {opacity:1;} 
+.sec-comp select:focus {outline:none;}
+.sec-comp table {border:0 none;border-spacing:0;border-collapse:collapse;}
+.sec-comp ul {list-style:none;}
+.sec-comp ol {list-style-position:outside;margin:0;padding:0 0 0 15px;}
+.sec-comp ol li {margin:0;padding:0;}
+.sec-comp button {background:none;border:none;cursor:pointer;outline:none;font-family:'Pretendard';color:#121212;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.sec-comp iframe {border:0;}
+.sec-comp label {-webkit-tap-highlight-color:transparent}
+
+.sec-comp .subhead {display:block;padding:16px 20px;font-size:15px;font-weight:500;}
+.sec-comp .cont-txt {padding:8px 20px;}
+.sec-comp .cont-txt h2 {font-size:30px;font-weight:500;line-height:1.2;}
+.sec-comp .cont-txt h2 b {font-weight:bold;}
+.sec-comp .cont-txt h2 i {font-style:italic;}
+.sec-comp .cont-txt h3 {font-size:18px;font-weight:500;}
+.sec-comp .cont-txt h3 b {font-weight:bold;}
+.sec-comp .cont-txt h3 i {font-style:italic;}
+.sec-comp .cont-txt h6 {font-size:11px;font-weight:300;}
+.sec-comp .cont-txt h6 b {font-weight:bold;}
+.sec-comp .cont-txt h6 i {font-style:italic;}
+.sec-comp .cont-txt p {font-size:15px;line-height:1.5;color:#121212;font-weight:300;}
+.sec-comp .cont-txt p b {font-weight:bold;}
+.sec-comp .cont-txt p i {font-style:italic;}
+.sec-comp .img-box {padding:16px 0;}
+.sec-comp .img-box img {display:block;width:100%;height:auto;}
+.sec-comp .img-box picture {display:block;margin:10px 0 0 0;}
+.sec-comp .img-box picture:first-child {margin-top:0;}
+.sec-comp .flex-tbl {margin:20px 20px 0;display:flex;flex-wrap:wrap;border-top:1px solid #121212;}
+.sec-comp .flex-tbl:only-child {margin:auto 16px;}
+.sec-comp .flex-tbl .th {padding:16px;font-size:13px;display:flex;align-items:center;border-bottom:1px solid #efefef;box-sizing:border-box;flex:0 0 100px;background:#f6f6f6;font-weight:400;color:#666;}
+.sec-comp .flex-tbl .td {padding:16px;font-size:13px;display:flex;align-items:center;border-bottom:1px solid #efefef;box-sizing:border-box;flex-basis:calc(100% - 100px);color:#121212;}
+.sec-comp .keyword-list {padding:8px 20px 24px;display:flex;flex-wrap:wrap;gap:8px;}
+.sec-comp .keyword-list span {border-radius:2px;padding:4px 6px;background:#f6f6f6;color:#121212;text-decoration:none;font-size:10px;}
+.sec-comp .tbl {margin:20px auto 0;width:calc(100% - 40px);border-collapse:collapse;}
+.sec-comp .tbl:only-child {margin:auto;}
+.sec-comp .tbl th,
+.sec-comp .tbl td {padding:16px;width:25%;height:50px;border-bottom:1px solid #efefef;vertical-align:middle;font-size:13px;text-align:left;box-sizing:border-box;line-height:normal;}
+.sec-comp .tbl th {background:#f6f6f6;color:#666;font-weight:400;}
+.sec-comp .tbl td {color:#121212;word-break:break-all;}
+.sec-comp .tbl thead th {border-top:1px solid #121212;}
+.sec-comp .cont-vid {padding:16px 0;position:relative;}
+.sec-comp .cont-vid video {display:block;width:100%;}
+.sec-comp .cont-vid.vertical {width:64vw;margin:0 auto;}
+.sec-comp .cont-vid .play-btn {position:absolute;top:16px;bottom:16px;left:0;right:0;margin:auto;font-size:0;color:transparent;border:none;background:none;}
+.sec-comp .cont-vid .play-btn::before {width:48px;height:48px;content:'';position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;opacity:0;background:url(https://image2.hanssem.com/hsmall/store/mo/images/editor/play-btn.png) center / contain no-repeat;transition:.4s}
+.sec-comp .cont-vid .play-btn.active::before {opacity:1;}
+
+/* mo */
+@media (max-width:750px) {
+.sec-comp {max-width:100vw;}
+}
+
+/* pc */
+@media (min-width:750px) {
+.sec-comp {padding:40px 0;}
+.sec-comp .subhead {padding:16px 0;font-size:16px;font-weight:500;}
+.sec-comp .cont-txt {padding:4px 0;}
+.sec-comp .cont-txt h2 {font-size:32px;font-weight:700;line-height:1.4;}
+.sec-comp .cont-txt h3 {font-size:24px;font-weight:500;}
+.sec-comp .cont-txt h6 {font-size:16px;font-weight:400;}
+.sec-comp .cont-txt p {font-size:20px;line-height:1.4;font-weight:400;}
+.sec-comp .img-box {padding:30px 0;}
+.sec-comp .cont-vid {padding:30px 0;width:100%;}
+.sec-comp .cont-vid .play-btn {top:30px;bottom:30px;}
+.sec-comp .cont-vid .play-btn::before {width:72px;height:72px;}
+.sec-comp .keyword-list {padding:8px 0 24px;}
+.sec-comp .keyword-list span {font-size:12px;}
+.sec-comp .tbl {width:100%;margin-top:40px;}
+.sec-comp .tbl:only-child {margin-top:0;}
+.sec-comp .tbl th,
+.sec-comp .tbl td {padding:14px 20px;}
+.sec-comp .flex-tbl {margin:40px 0 0;}
+.sec-comp .flex-tbl:only-child {margin:0;}
+.sec-comp .flex-tbl .th {padding:14px 20px;font-size:14px;}
+.sec-comp .flex-tbl .td {padding:14px 20px;font-size:14px;}
+}
+  @font-face {
+                 font-family: 'wecandeoIcon';
+                 src: url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.eot?46ypa');
+                 src: url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.eot?46ypa#iefix') format('embedded-opentype'), url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.ttf?46ypa') format('truetype'), url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.woff?46ypa') format('woff'), url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.svg?46ypa#wecandeoIcon') format('svg');
+                 font-weight: normal;
+                 font-style: normal;
+             }
+         
+             .sec-comp .view-area .play-btn {
+                 position: absolute;
+                 top: 0;
+                 bottom: 0;
+                 left: 0;
+                 right: 0;
+                 margin: auto;
+                 font-size: 0;
+                 color: transparent;
+                 border: none;
+                 background: transparent;
+             }
+         
+             .sec-comp .view-area .play-btn::before {
+                 content: ""\e918"";
+                 font-family: wecandeoIcon;
+                 font-size: 96px;
+                 color: transparent;
+                 transition: .4s
+             }
+         
+             .sec-comp .view-area .play-btn.active::before {
+                 color: #fff
+             }
+</style> <script>
+	document.addEventListener("DOMContentLoaded", function() {
+		var videoElements = document.querySelectorAll('.cont-vid video');
+		
+		// 비디오 재생 버튼
+		videoElements.forEach(function(el) {
+			var playBtn = el.nextElementSibling;
+
+			playBtn.addEventListener('click', function() {
+				if (playBtn.classList.contains("active")) {
+					el.play();
+					playBtn.innerHTML = "일시정지";
+					playBtn.classList.toggle("active");
+				} else {
+					el.pause();
+					playBtn.innerHTML = "재생";
+					playBtn.classList.toggle("active");
+				}
+			});
+
+			el.addEventListener('ended', function() {
+				playBtn.innerHTML = "재생";
+				playBtn.classList.toggle("active");
+			});
+		});
+
+		// 세로 동영상 검출
+		for (var i = 0; i < videoElements.length; i++) {
+			const el = videoElements[i];
+
+			el.onloadeddata = function() {
+				if (el.videoHeight > el.videoWidth) {
+					el.parentElement.classList.add('vertical');
+				}
+			};
+		}
+
+	});
+</script> 
+<div class="sec-comp" id="infoTypeCd_1"><strong class="subhead">기본정보</strong>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656990792_0.jpg?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656990792_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656990792_0.jpg?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656990792_0.jpg?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656990792_0.jpg?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656990792_0.jpg" width="870" height="1897" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656994319_0.jpg?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656994319_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656994319_0.jpg?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656994319_0.jpg?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656994319_0.jpg?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656994319_0.jpg" width="870" height="2758" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656998847_0.jpg?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656998847_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656998847_0.jpg?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656998847_0.jpg?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656998847_0.jpg?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701656998847_0.jpg" width="870" height="4790" onerror="this.style.display='none';">
+	</picture>
+</div></div>
+<div class="sec-comp" id="infoTypeCd_2"><strong class="subhead">사이즈</strong>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657295496_0.jpg?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657295496_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657295496_0.jpg?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657295496_0.jpg?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657295496_0.jpg?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657295496_0.jpg" width="870" height="1498" onerror="this.style.display='none';">
+	</picture>
+</div></div>
+<div class="sec-comp" id="infoTypeCd_3"><strong class="subhead">기능</strong>
+	<div class="cont-txt"><h2>더 집중할 수 있는 환경을</h2><h2>만들어 주는 책상장 LED조명</h2></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657659565_0.jpg?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657659565_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657659565_0.jpg?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657659565_0.jpg?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657659565_0.jpg?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657659565_0.jpg" width="870" height="580" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>책상 위 공간을 더 넓게 쓸 수 있도록<br></h3><p>책상 위 자리 차지없이 책상장 선반에 설치할 수 있어, </p><p>책상을 더 넓게 쓸 수 있고 더 집중할 수 있도록 밝게</p><p>비춰줍니다.</p><p><br></p><p><br></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657680116_0.jpg?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657680116_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657680116_0.jpg?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657680116_0.jpg?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657680116_0.jpg?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657680116_0.jpg" width="870" height="580" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>돌출되지 않아도 책상 끝까지 비춰주는 구조</h3><p>티오 책상장 조명은 내부 광원이 경사진 각도로 설계되어,</p><p>돌출하지 않아도 책상 끝까지 비출 수 있도록 설계된</p><p>스마트한 조명입니다.</p><p><br></p><p><br></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657702410_0.jpg?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657702410_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657702410_0.jpg?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657702410_0.jpg?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657702410_0.jpg?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657702410_0.jpg" width="870" height="580" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>자동 타이머 기능으로 알람 기능까지<br></h3><p>전원이 켜진 상태에서 전원버튼을 2초 이상 길게 터치하면</p><p>자동 타이머가 설정됩니다.</p><p>(깜박임으로 설정 완료가 표시되며, </p><p>종료시 다시 2초 터치하면 됩니다.)</p><p>50분 동안 학습에 집중하고, </p><p>쉬는 시간을 알려주는 알람 기능으로 활용가능합니다.</p><p><br></p><p><br></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657737072_0.gif?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657737072_0.gif?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657737072_0.gif?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657737072_0.gif?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657737072_0.gif?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657737072_0.gif" width="870" height="580" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>눈의 피로도를 낮추는 3단계 밝기 조절</h3><p>우측 전원버튼을 살짝 터치하면,</p><p>3단계로 밝기 조절이 가능합니다.</p><p>나에게 맞는 밝기로 조절해 눈의 피로도를 낮추세요.</p><h6>※ 밝기 순서 :  ON 1단계 - 2단계 - 3단계 - OFF</h6><p><br></p><p><br></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657768653_0.gif?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657768653_0.gif?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657768653_0.gif?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657768653_0.gif?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657768653_0.gif?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657768653_0.gif" width="870" height="580" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>공부하는 과목에 맞춰 3단계 색온도 조절</h3><p>좌측 색온도 버튼을 터치하면,</p><p>3단계로 색온도 조절이 가능합니다.</p><p>학습 과목에 따라 색온도를 조절해주면,</p><p>더욱 집중도가 향상됩니다.</p><h6>※ 색온도 순서 : 주광색 - 주백색 - 전구색<br>(OFF시 마지막 설정 색온도로 고정됩니다.)</h6><p><br></p><p><br></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657799494_0.jpg?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657799494_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657799494_0.jpg?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657799494_0.jpg?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657799494_0.jpg?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2023/12/04/1701657799494_0.jpg" width="870" height="650" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><p>색온도 조절 버튼은 좌측에 있으며,</p><p>밝기 조절 버튼은 우측의 전원 버튼으로 조절이 가능합니다.</p></div></div>
+<div class="sec-comp" id="infoTypeCd_4"><strong class="subhead">자재상세</strong>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/05/1701760218954_0.jpg?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/05/1701760218954_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2023/12/05/1701760218954_0.jpg?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/05/1701760218954_0.jpg?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2023/12/05/1701760218954_0.jpg?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2023/12/05/1701760218954_0.jpg" width="870" height="490" onerror="this.style.display='none';">
+	</picture>
+</div></div>

@@ -1,0 +1,120 @@
+{
+  "image_format": "single_product",
+  "items_results": [
+    {
+      "id": "forbid_usb_or_power_port",
+      "verdict": "pass",
+      "reason_ko": "소파 프레임이나 팔걸이 주변에 USB 포트, 전원 콘센트 등 전장 기능이 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_tufting_or_buttons",
+      "verdict": "pass",
+      "reason_ko": "좌방석과 등쿠션 표면에 버튼, 터프팅, 퀼팅 패턴이 없습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_piping_trim",
+      "verdict": "pass",
+      "reason_ko": "엣지에 봉제선과 플랜지성 라인은 보이지만, 별도의 둥근 끈 장식처럼 돌출된 파이핑 트림으로 판단될 정도의 invented feature는 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "connection_seat_to_inner_arm_bolster",
+      "verdict": "pass",
+      "reason_ko": "좌측 팔 안쪽 보조쿠션이 좌방석 위로 자연스럽게 이어져 있으며, reference의 밀로 소파처럼 팔 안쪽 쿠션 영역과 좌방석이 시각적으로 연결되어 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "fabric_is_woven_textile_not_leather",
+      "verdict": "pass",
+      "reason_ko": "표면에 직조 조직이 뚜렷하고 광택이 강하지 않아 가죽이나 비닐이 아닌 패브릭으로 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "seat_cushion_crown_and_rolled_front_edge",
+      "verdict": "pass",
+      "reason_ko": "좌방석 중앙이 부드럽게 볼록하고 앞쪽 엣지가 둥글게 말려 내려오는 형태가 확인됩니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "seat_cushion_narrow_gap",
+      "verdict": "pass",
+      "reason_ko": "오른쪽에 일부 보이는 두 좌방석 사이 간격이 좁고 비교적 균일하게 표현되어 있습니다.",
+      "category": "detail",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "seat_top_bottom_topstitch",
+      "verdict": "pass",
+      "reason_ko": "좌방석 전면과 엣지 주변에 얇은 봉제/상침선이 보이며, 미세 디테일 수준에서 충분히 유사합니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "back_cushion_ear_folds",
+      "verdict": "pass",
+      "reason_ko": "등쿠션 상단 모서리가 살짝 솟고 접힌 듯한 귀 모양 형태가 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "back_cushion_no_center_seam",
+      "verdict": "pass",
+      "reason_ko": "각 등쿠션 중앙 면에는 별도의 세로/가로 봉제선이 없고, 쿠션 간 경계만 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "back_cushion_knife_edge_light_topstitch",
+      "verdict": "pass",
+      "reason_ko": "등쿠션 외곽이 비교적 날렵한 쿠션 엣지로 처리되어 있으며, 얇은 봉제선도 일부 확인됩니다. 저난도 생성 한계상 허용 가능한 수준입니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "arm_bolster_front_flange",
+      "verdict": "pass",
+      "reason_ko": "팔 안쪽 보조쿠션 전면과 사선 엣지에 도드라진 플랜지성 시접 라인이 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "fabric_melange_weave_visible",
+      "verdict": "pass",
+      "reason_ko": "근접 컷에서 베이지/그레이 계열 실색이 섞인 멜란지 직조 질감이 식별됩니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "fabric_matte_finish",
+      "verdict": "pass",
+      "reason_ko": "패브릭 표면이 무광에 가깝고 가죽 같은 강한 하이라이트나 반사가 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "water_repellency_beading_scene",
+      "verdict": "fail",
+      "reason_ko": "소파 표면은 잘 보이지만 물방울이 맺혀 굴러가는 생활발수 비딩 연출은 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 45,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "제품 정체성 기준으로는 밀로 패브릭소파의 패브릭 재질, 팔 안쪽 보조쿠션, 좌방석/등쿠션 구조가 잘 유지되어 distortion/forbidden 실패는 없습니다. 다만 C 원본 panel은 리클라이너 좌석과 하부 기계 구조가 크게 보이는 구도인데, B는 일반 밀로 소파의 좌측 클로즈업으로 바뀌어 composition 유사도는 낮게 평가했습니다. 이는 보고용이며 verdict에는 반영하지 않았습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 97,
+  "verdict": "pass"
+}

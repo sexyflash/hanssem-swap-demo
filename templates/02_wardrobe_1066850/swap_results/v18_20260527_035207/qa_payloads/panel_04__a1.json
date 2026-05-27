@@ -1,0 +1,51 @@
+{
+  "panel_id": "panel_04.jpg",
+  "panel_class": "size_chart",
+  "vision_model": "gpt-5.5",
+  "ref_paths": [
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_06.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_05.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_07.png"
+  ],
+  "ref_labels": [
+    "main_view·전체정면",
+    "main_view·내부정면",
+    "detail_close_up·서랍"
+  ],
+  "panel_orig_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/panel_04.jpg",
+  "swap_result_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/swap_results/v18_20260527_035207/gpt_image/panel_04__a1_v16.png",
+  "applicable_item_ids": [
+    "size_chart_matches_w160_d57_h216",
+    "height_lineup_two_options_label"
+  ],
+  "user_prompt": "=== TASK ===\n이 swap 결과(B)를 사용자 제품의 verifiable checklist로 채점하라.\n\n=== 사용자 제품 ===\ncategory: wardrobe\n제품명: 샘베딩 클로즈 옷장세트 160cm(높이216cm) 서랍형 6종\n핵심 axis: doors, handles, drawers, shelves, hanging_rod, hinges, back_panel, frame, color, finish, size, module_lineup, base\n\n=== 첨부 이미지 ===\n  A_1 = main_view·전체정면\n  A_2 = main_view·내부정면\n  A_3 = detail_close_up·서랍\n  B = swap 결과 (채점 대상)\n  C = 한샘 원본 panel (composition reference)\n\n=== Panel 컨텍스트 ===\npanel_id: panel_04.jpg\npanel_class: size_chart\nspatial_layout: 상단 중앙에 외부 사이즈 제목과 단위 안내 텍스트가 위치. 중앙에는 정면과 약간 측면에서 본 옷장 일러스트가 크고, 각 변에 치수(120, 194, 80, 62cm)가 선과 함께 표시됨. 하단에는 내부 사이즈 제목이 좌측에 있고, 좌측 하단에는 서랍 내부를 사선에서 본 이미지와 치수(71.5, 42, 14cm)가 선과 함께 표시됨. 우측 하단에는 옷장 내부를 정면에서 본 이미지와 치수(116.5, 21, 23, 23cm)가 세로로 표시됨. 하단 중앙에는 내부 깊이(57.5cm)와 주의 문구가 텍스트로 배치됨.\n\n=== 적용 가능한 CHECKLIST ITEMS (이 panel에서 검증 가능) ===\n각 item에 category(distortion/detail/forbidden)와 generation_feasibility 가 표시됨.\n- distortion / forbidden: strict 채점 (제품 왜곡 검출이 사용자 핵심 요구)\n- detail: image gen 한계 인정 → 명백한 차이만 fail, 모호하면 pass\n- generation_feasibility=low: 더욱 보수적으로 fail 매김 (미세 디테일)\n\n- [distortion] [feas=high] id=size_chart_matches_w160_d57_h216 axis=size\n    desc: 사이즈 차트에 W160 x D57 x H216 cm가 정확히 표기됨.\n    expected: W160 x D57 x H216 cm\n    question: 결과 B의 사이즈 차트에 W160 x D57 x H216 cm로 기재되어 있나요?\n- [    detail] [feas=medium] id=height_lineup_two_options_label axis=size\n    desc: 높이 라인업이 194cm/216cm 두 가지로 표기됨(본 상품 216cm 표시).\n    expected: 높이 194cm / 216cm 표기\n    question: 결과 B의 라인업/사이즈 정보에 194cm와 216cm 두 가지 높이 옵션이 보이나요?\n\n=== 출력 schema (strict JSON) ===\n{\n  \"image_format\": \"single_product|lifestyle|chart_diagram|multi_panel_grid\",\n  \"items_results\": [\n    {\n      \"id\": \"...\",\n      \"verdict\": \"pass|fail|not_visible\",\n      \"reason_ko\": \"...\",\n      \"category\": \"distortion|detail|forbidden\",\n      \"generation_feasibility\": \"high|medium|low\"\n    }\n  ],\n  \"distortion_fail_count\": int,\n  \"forbidden_fail_count\": int,\n  \"composition_score\": 0-100,\n  \"hallucinations\": [\"발견된 invented feature 한국어\"],\n  \"specific_failures\": [\"distortion/forbidden fail 항목의 한국어 요약\"],\n  \"notes_ko\": \"...\"\n}\n\n판정 가이드:\n- distortion item: 다리 개수 / 가죽 vs 패브릭 / 보조쿠션 유무 / 컬러명 등 명백한 차이 → fail\n- forbidden item: invented feature (헤드레스트 등) 발견 → fail\n- detail item: 시접 종류 / 미세 곡률 / 직조 결 등이 약간 달라도 → pass (관대)\n",
+  "result": {
+    "image_format": "chart_diagram",
+    "items_results": [
+      {
+        "id": "size_chart_matches_w160_d57_h216",
+        "verdict": "pass",
+        "reason_ko": "결과 B 상단 외부 사이즈 차트에 가로 160, 깊이 57, 높이 216이 각각 명확히 표기되어 있어 기대값 W160 x D57 x H216 cm와 일치합니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "height_lineup_two_options_label",
+        "verdict": "fail",
+        "reason_ko": "결과 B에는 본 상품 높이 216cm만 보이며, 높이 라인업의 다른 옵션인 194cm 표기는 확인되지 않습니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      }
+    ],
+    "distortion_fail_count": 0,
+    "forbidden_fail_count": 0,
+    "composition_score": 82,
+    "hallucinations": [],
+    "specific_failures": [],
+    "notes_ko": "제품 핵심 사이즈 표기는 W160 x D57 x H216으로 정확합니다. 다만 높이 옵션 194cm/216cm 두 가지 라인업 표기는 누락되어 detail 항목에서 fail로 판단했습니다. 제품에 없는 기능이나 구조가 새로 발명된 흔적은 보이지 않습니다.",
+    "critical_fail_count": 0,
+    "product_score_raw": null,
+    "product_score": 85,
+    "verdict": "retry"
+  }
+}

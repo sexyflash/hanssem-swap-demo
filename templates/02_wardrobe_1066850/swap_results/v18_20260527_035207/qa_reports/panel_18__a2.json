@@ -1,0 +1,92 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [
+    {
+      "id": "two_80cm_modules_total_160cm",
+      "verdict": "pass",
+      "reason_ko": "결과 B에서 좌측 폐쇄형 가구와 우측 구조도 모두 중앙 세로 이음부/중앙 분할선이 보여 80cm 모듈 2개가 나란히 구성된 총 160cm 형태로 확인됩니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "damping_hinges_indicator",
+      "verdict": "pass",
+      "reason_ko": "하단 아이콘 영역에 ‘댐핑 힌지’ 문구가 명확히 표시되어 있습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "shelf_thickness_18mm_note",
+      "verdict": "pass",
+      "reason_ko": "우측 구조도 콜아웃 및 하단 아이콘 영역에 ‘선반 18mm’ 표기가 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "aluminum_hanging_rod_indicator",
+      "verdict": "pass",
+      "reason_ko": "우측 상단 콜아웃과 하단 설명에 ‘알루미늄 옷걸이봉’ 표기가 확인됩니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "back_panel_triple_brace_diagram",
+      "verdict": "pass",
+      "reason_ko": "우측 후면 구조도에 가로 보강목이 3단으로 표현되어 뒷판 보조목 보강 구조를 보여줍니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "lpm_finish_label",
+      "verdict": "pass",
+      "reason_ko": "하단 아이콘 영역에 ‘LPM 마감’ 문구가 표시되어 있습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "e0_grade_label",
+      "verdict": "pass",
+      "reason_ko": "하단 아이콘 영역에 ‘E0 등급 자재’ 문구가 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "hinge_40000_cycles_label",
+      "verdict": "pass",
+      "reason_ko": "하단 아이콘 영역에 ‘40,000회 내구 테스트’ 문구가 표시되어 있습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "material_bending_50kg_168h_label",
+      "verdict": "pass",
+      "reason_ko": "하단 오른쪽에 ‘자재 휨강도 50kg/168h’ 표기가 확인됩니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "recommended_shelf_load_20kg_80cm_label",
+      "verdict": "pass",
+      "reason_ko": "하단 설명에 ‘선반 권장하중 20kg(80cm 기준)’ 문구가 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "rod_load_16kg_80cm_label",
+      "verdict": "pass",
+      "reason_ko": "하단 설명에 ‘알루미늄 옷걸이봉 16kg(80cm 기준)’ 문구가 표시되어 있습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 85,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "제품 정체성 기준의 핵심 항목인 160cm 2모듈 구성은 명확히 유지되었습니다. 하단 스펙 아이콘과 콜아웃도 대부분 제품 설명과 일치하며, 별도의 금지/환각 요소는 보이지 않습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 100,
+  "verdict": "pass"
+}

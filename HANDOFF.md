@@ -1,8 +1,8 @@
-# 한샘 detail 템플릿 swap — 핸드오프 (v15 진행 중)
+# 한샘 detail 템플릿 swap — 핸드오프 (v16 진행 중)
 
 작업 디렉토리: `/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research`
 사용자: cc6@pioncorp.com
-최종 commit: `d9efda5` (v11~v13 checkpoint)
+이전 commit: `a2395d7` (v14 + v15 WIP checkpoint)
 
 ---
 
@@ -18,82 +18,128 @@
 5. desk 667815
 6. sofa 799220
 
-**사용자 제품**: milo 777039 (`user_products/milo_777039/`) — 2인 패브릭 소파
+**사용자 제품**: milo 777039 (`user_products/milo_777039/`) — 2인 패브릭 소파 (3인용 옵션 제거됨)
 
 ---
 
-## 🎯 핵심 목표
+## 🎯 v16 핵심 변경 (방금 작성)
 
-- 좌측 한샘 원본 panel / 우측 milo로 swap된 panel — dual grid
-- Cover: prod 95+, comp 95+
-- 일반 panel: prod 93+, comp 80+ (chart는 90+)
-- 한국어 텍스트 깨짐 0
-- 사용자 의도 정확 반영 (다리 4개, 컬러명, 가변 라인업)
+이전 세션 끝에 사용자가 지시한 큰 refactor 반영:
+
+1. **스마트시트 복원 + 강화 (500% 정보)** — `pipeline_lib/smart_sheet_builder.py`
+   - LLM이 product_input + classification + panel mapping을 보고 sheet directive를 직접 작성
+   - sheet 한 장에 PRESERVE/NEVER + panel × asset map + spec/certifications + 컬러 정확 명까지
+   - 워터마크/회색 배경으로 "DO NOT REPLICATE" 명시. 결과 복제 방지.
+
+2. **3-stage retry 전략** — `pipeline_lib/retry_strategist.py`
+   - **stage 1 (attempt 2 · REPLAN)**: QA 텍스트 append 금지. LLM이 원인 분석 + 보완책 해설 작성 후 prompt 재작성.
+   - **stage 2 (attempt 3 · PAINT EDIT)**: 앞선 두 시도 중 점수 더 좋은 결과를 base 이미지로 → fal-ai/gpt-image-2/edit에 IMAGE 1로 보내며 부분 인페인팅 directive만 prompt로.
+   - **stage 3 (attempt 4 · CUMULATIVE)**: essence + smart sheet 이미지 + 누적 보완책을 통합 prompt로 재작성. sheet ref가 동봉됨.
+
+3. **하드코딩 룰 제거 (LLM 판단)**
+   - `71_map_panel_refs.py` 의 `pick_refs` if/elif → `pipeline_lib/llm_panel_mapper.py`. panel context + 분류된 자원을 LLM이 보고 결정. 소파/책상/의자/수납장 무관.
+   - 74/75의 `build_edit_block` panel_class별 if → `pipeline_lib/llm_edit_block.py`. panel 원본 이미지 OCR + product_input → 정확한 텍스트 치환 / 시각 변경 / PRESERVE를 LLM이 직접 작성.
+
+4. **버전 자동 increment + 산출물 패키징** — `pipeline_lib/version_bundler.py`
+   - `swap_results/v\d+_*` 디렉토리 스캔해서 자동 v{N} 부여 (다음은 v15)
+   - 각 run 디렉토리에 `sources/` 폴더 — 사용된 .py + product_input.json + layout_maps + classification 사본 동봉
+   - `prompts/{label}__a{n}.md` · `qa_reports/{label}__a{n}.json` · `manifest.json` 까지 자동 작성
+   - 다른 연구 과제로 그대로 들고 갈 수 있는 self-contained 번들
+
+5. **2인용 통일**: `product_input_v3.json` 의 `model_options` 에서 3인용 제거. v16에서 `len(model_options)` 자동 인식하여 chart/lineup 칸 수 결정.
 
 ---
 
-## 📂 현재 디렉토리 구조
+## 📂 v16 새 파일 구조
 
 ```
 hanssem_research/
 ├── HANDOFF.md  ← 이 파일
-├── auto_pipeline.py  (URL → milo 데이터 추출, 7단계)
-├── top6_template_urls.json
-├── archive_sheets/  ← 사용 안 하는 시트 스크립트 (60, 61, 62, 64, 65, 72)
+├── 76_swap_pipeline_v16.py  ← 메인 entry (★ 새 세션 시작 시 실행)
+├── pipeline_lib/
+│   ├── __init__.py
+│   ├── version_bundler.py   — 버전/번들링
+│   ├── llm_panel_mapper.py  — LLM panel→ref 매핑 (71 대체)
+│   ├── llm_edit_block.py    — LLM edit instruction (74/75 build_edit_block 대체)
+│   ├── smart_sheet_builder.py — LLM directive로 sheet 생성
+│   └── retry_strategist.py  — 3-stage retry prompt 생성
 │
-├── 14_prepare_llm_input.py
-├── 34_substitute_texts.py  (한샘 → milo 텍스트 치환)
-├── 53_swap_pipeline_v9.py  (gpt-image-2 baseline)
-├── 55_extract_milo_deep.py
-├── 57_preprocess_grid_sheet.py (deprecated PIL)
-├── 58_dense_vision.py  ← milo dense paragraph 추출 (gpt-5 vision)
-├── 59_build_report_v22.py  ← UI 빌더 (현재 active)
-├── 63_swap_pipeline_v10.py
-├── 66_classify_assets.py  ← use_product/ vision 분류
-├── 68_swap_pipeline_v11.py  (gpt-5.5 QA, threshold 99)
-├── 70_swap_pipeline_v12.py  (grid detection)
-├── 71_map_panel_refs.py  ← panel별 ref 매핑 (★ 하드코딩 룰 — LLM으로 전환 필요)
-├── 73_swap_pipeline_v13.py
-├── 74_swap_pipeline_v14.py  (master sheet 제거)
-├── 75_swap_pipeline_v15.py  ← 작성 중 (컬러 hallucination QA 강화)
+├── 74_swap_pipeline_v14.py / 75_swap_pipeline_v15.py  ← 레퍼런스로 보관 (실행은 v16)
+├── 71_map_panel_refs.py  ← deprecated (LLM mapper로 대체됨)
 │
 ├── templates/01_sofa_992474/
-│   ├── _cover_1000.jpg
-│   ├── panel_01.jpg ~ panel_18.jpg (한샘 원본)
-│   ├── detail.html
-│   ├── meta.json
-│   ├── panel_layout_maps.json  ← panel별 elements/spatial_layout (vision 추출)
-│   ├── panel_ref_mapping.json  ← panel → milo ref 매핑 (71번 출력)
-│   ├── mismatch_resolution.json
-│   ├── text_substitute.json
+│   ├── panel_layout_maps.json
+│   ├── panel_ref_mapping.json  ← v13~v15 산출. v16은 run 디렉토리 안에 별도 저장
+│   ├── _cover_1000.jpg / panel_01.jpg ~ panel_12.jpg / detail.html / meta.json
 │   └── swap_results/
-│       ├── latest_v14.txt
-│       ├── v9_20260526_150641/   (v9 baseline)
-│       ├── v10_20260526_164927/
-│       ├── v11_20260526_181124/
-│       ├── v12_20260526_183536/
-│       ├── v13_20260526_191046/  ← 실질 13/13 success
-│       └── v14_20260526_193812/  ← 7/13 (master sheet 제거 + QA 다리 strict)
+│       ├── v14_20260526_193812/  ← v14 마지막 run
+│       └── v15_{ts}/             ← v16 첫 run이 만들 디렉토리 (sources/, prompts/, qa_reports/, smart_sheet.png 포함)
 │
 ├── user_products/milo_777039/
-│   ├── product_input_v3.json  ← milo dense 정보 (사용자 입력 시뮬레이션)
-│   ├── auto_pipeline_output.json
-│   ├── _cover_1000.jpg
-│   ├── panel_01.jpg ~ panel_18.jpg (milo 원본 detail page)
-│   ├── use_product/  ← 담당자 업로드 이미지
-│   │   ├── p08_frame_01.jpg  (메인 정면)
-│   │   ├── p08_frame_02.jpg  (메인 측면)
-│   │   ├── p08_frame_03.jpg  (메인 각도)
-│   │   ├── p08_frame_04.png  (디테일 다리/하부)
-│   │   ├── p08_frame_05.png  (디테일 팔걸이)
-│   │   ├── detail_01.webp ~ detail_05.png  (추가 디테일)
-│   │   ├── p08_frame_01_color_1/2/3  (오트밀/라이트그레이/더스티로즈 variants)
-│   │   ├── color_01.png ~ color_03.png  (swatches)
-│   │   ├── material.png
-│   │   └── classification.json  ← 66번 vision 분류 결과
-│   └── preprocessed/  ← (master sheet 제거 후 비어있음)
+│   ├── product_input_v3.json  ← 2인용만 (3인용 제거됨)
+│   ├── use_product/
+│   │   ├── classification.json   ← 66번 vision 분류
+│   │   └── p08_frame_*.jpg / detail_*.png / color_*.png / material.png ...
+│   └── preprocessed/  (v16에선 사용 안 함 — sheet는 run 디렉토리에 저장)
 │
-└── report/index.html  ← v22 빌더 출력 (좌 한샘 / 우 milo swap)
+└── archive_sheets/72_make_master_sheet_v3.py  ← 옛 sheet 빌더 (참고용)
+```
+
+---
+
+## 🔄 v16 실행 흐름
+
+```
+[1/4] LLM panel → ref 매핑
+   classification.json + product_input + panel_layout_maps + panel 원본 이미지
+   → 각 panel별로 LLM이 ref_keys 결정 + rationale
+   → run_dir/panel_ref_mapping_v16.json
+
+[2/4] Smart sheet 생성
+   LLM이 product_input/classification/mapping 보고 fal directive 작성
+   → fal-ai/gpt-image-2/edit → run_dir/smart_sheet.png
+
+[3/4] 자원 upload
+   panel별 매핑된 모든 use_product 파일 dedupe upload
+
+[4/4] per-panel swap (병렬, CONCURRENCY=13)
+   for each target (cover + 12 panels):
+     LLM edit_block 생성 (panel 원본 + product_input)
+     attempt 1: initial prompt → fal → QA
+       if pass: done
+     attempt 2 (REPLAN): LLM이 진단+보완 → 재작성 prompt → fal → QA
+     attempt 3 (PAINT EDIT): best-of-2 base + 부분 수정 directive → fal → QA
+     attempt 4 (CUMULATIVE): essence + smart sheet ref + 누적 patches → fal → QA
+
+[finalize]
+   summary.json + manifest.json + sources/ 동봉
+   latest_v{N}.txt + latest.txt 갱신
+```
+
+---
+
+## 🚀 새 세션 first commands
+
+```bash
+cd /Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research
+cat HANDOFF.md
+
+# 코드 무결성 확인 (실행 전)
+python3 -c "
+import sys; sys.path.insert(0, '.')
+from pipeline_lib import version_bundler, llm_panel_mapper, llm_edit_block, smart_sheet_builder, retry_strategist
+print('imports OK')
+print('next version:', version_bundler.next_version(__import__('pathlib').Path('templates/01_sofa_992474/swap_results')))
+"
+
+# 실제 실행 (fal/openai 키 필요)
+python3 76_swap_pipeline_v16.py
+
+# 결과 확인
+ls templates/01_sofa_992474/swap_results/v15_*/   # 첫 v16 run = v15 번호
+cat templates/01_sofa_992474/swap_results/latest.txt
+python3 59_build_report_v22.py  # UI 빌더 (v14까지의 latest를 읽음 — v16 결과 보려면 빌더 path 조정 필요할 수 있음)
+open report/index.html
 ```
 
 ---
@@ -108,8 +154,9 @@ hanssem_research/
 | v11 | gpt-5.5 QA + threshold 99 + 다리 4개 강제 + 가변 라인업 | 13/13 (가짜) | cover/02/08이 master sheet 복제 |
 | v12 | QA grid detection 추가 (`image_format`) | 8/13 | master copy 4개 fix |
 | v13 | panel별 ref mapping (71번) + master sheet v3 | 10/13 (실질 13/13) | panel_07 master copy까지 fix |
-| **v14** | **master sheet 완전 제거 + cushion-arm 연결 prompt** | 7/13 (실질 13/13) | QA legs strict false fail 6개 |
-| v15 | (작성 중) 매핑 보강 + 컬러 hallucination QA + 컬러명 quote 강제 | — | **이어서 작업할 것** |
+| v14 | master sheet 완전 제거 + cushion-arm 연결 prompt | 7/13 (실질 13/13) | QA legs strict false fail 6개 |
+| v15 | (WIP) 매핑 보강 + 컬러 hallucination QA + 컬러명 quote 강제 | — | 미실행 (architecture가 v16으로 통합됨) |
+| **v16** | **LLM 매핑 + LLM edit block + 3-stage retry + smart sheet 복원/강화 + 자동 버전/번들링** | — | **실행 대기** |
 
 ---
 
@@ -125,143 +172,74 @@ hanssem_research/
 8. **"panel_08 측면 ref 부족 (4장 가용)"** (v14 후) — v15 매핑 보강
 9. **"panel_12 컬러 hallucination ('풀리에이지/로즈브라운')"** (v14 후) — v15 QA 강화
 10. **"QA 99점인데 hallucination — QA 신뢰도 자체 문제"** (v14 후) — v15 컬러 검증 추가
-11. **★ "하드코딩된 룰 매핑 → LLM 판단 매핑"** (v15 작성 중) — **다음 세션 최우선 TASK**
-12. **★ "3인용 제거 → 2인용 통일"** (v15 작성 중) — **다음 세션 즉시 처리**
+11. **"하드코딩된 룰 매핑 → LLM 판단 매핑"** (v15 작성 중) — **v16 llm_panel_mapper + llm_edit_block로 해결**
+12. **"3인용 제거 → 2인용 통일"** (v15 작성 중) — **v16에서 product_input 정리 완료**
+13. **★ "스마트시트 복원 + 500% 정보 + sheet 한 장만 봐도 모든 게 들어가게"** (v15 후) — **v16 smart_sheet_builder**
+14. **★ "3단계 retry — replan/best-of-2-paint/essence+sheet+cumulative — 단순 텍스트 append X"** (v15 후) — **v16 retry_strategist**
+15. **★ "어떤 템플릿에만 쓸 수 있게끔 하드코딩 된 게 있으면 다 걷어내고"** (v15 후) — **v16 모듈 모두 generalizable**
+16. **★ "리포트 생성할 때 버전이 정확히 늘어날 수 있도록"** (v15 후) — **v16 version_bundler.next_version**
+17. **★ "실험되는 것들이 파이썬과 결과가 세트로 묶일 수 있게"** (v15 후) — **v16 version_bundler.bundle_sources**
 
 ---
 
-## 🎯 다음 세션 작업 우선순위
-
-### [P0 — 즉시] 3인용 제거 → 2인용 통일
-
-- `user_products/milo_777039/product_input_v3.json`의 `model_options`에서 3인용 제거
-- `auto_pipeline_output.json`도 확인
-- 73~75 pipeline에서 `N_MODELS` 자동 인식되지만, 사용자 강제 1개 모델만:
-```python
-MODEL_OPTIONS = [m for m in PROD_INPUT.get("model_options", []) if m.get("name") == "2인용"]
-```
-- panel_12 (module_lineup) 매핑/prompt에서 1칸만 표시하도록
-- panel_04 (size chart)도 2인용 한 사이즈만
-
-### [P0 — 핵심 TASK] 하드코딩 룰 매핑 → LLM 판단 매핑
-
-**현재 문제**: `71_map_panel_refs.py`의 `pick_refs()` 함수가 하드코딩된 spatial 키워드 룰
-```python
-if "sofa_leg" in elem_roles or "다릿발" in sp:
-    refs += ["detail_legs", "main_side"]
-elif "측면" in sp or "옆모습" in sp:
-    refs = ["main_side", "detail_arm", "detail_arm_b", "detail_legs"]
-# ...
-```
-
-**사용자 의도**: LLM이 panel의 spatial/elements + 가용 milo 자원 (classification.json + dense vision) 보고 자동으로 적절한 ref 선택. 어떤 템플릿/입력이든 generalizable.
-
-**새 아키텍처 (제안)**:
-1. **Inputs to LLM**:
-   - Panel context: `spatial_layout`, `elements`, `panel_class`, 원본 panel 이미지
-   - 가용 자원: `classification.json` (file → category + subject) + 각 file의 vision summary
-   - 사용자 dense vision 정보 (`product_input_v3.json`)
-2. **LLM Task** (gpt-5 또는 gpt-5.5):
-   ```
-   주어진 한샘 panel을 milo로 swap 할 때, 첨부된 milo 자원 중 어떤 것을
-   image_urls 슬롯에 보내야 가장 정확한 결과가 나올지 결정.
-   - 출력: ref_keys 순서 list (최대 6장)
-   - 각 ref가 panel의 어떤 측면을 cover 하는지 설명
-   ```
-3. **Output**:
-   - `panel_ref_mapping.json` 자동 생성 (현재 71번이 하는 일과 같지만 LLM 판단)
-4. **재사용성**:
-   - sofa 992474 외 다른 5개 템플릿에도 동일 logic 적용 가능
-   - 새 사용자 제품 (다른 use_product/) 추가 시 자동 매핑
-
-**전수조사 필요 — 하드코딩 부분**:
-- [ ] `71_map_panel_refs.py` (pick_refs 함수 룰)
-- [ ] `73~75 swap pipeline` `build_edit_block()` (panel_class별 한샘 → milo 텍스트 매핑이 하드코딩됨, 예: "300→200", "키안티 가죽→밀로 패브릭")
-  - 이것도 LLM이 한샘 panel의 텍스트를 OCR + milo 정보로 자동 substitute generation
-- [ ] `mismatch_resolution.json` / `text_substitute.json` (사전 정의된 치환 룰) — LLM 생성으로 대체 가능?
-
-### [P1] v15 pipeline 완성 + 실행
-
-v15 작성 진행 중 (`75_swap_pipeline_v15.py`):
-- ✅ master sheet 제거 (file archive, swap ref에서 빠짐)
-- ✅ 매핑 보강 (panel당 3~5장, panel_08 측면 4장 등)
-- ✅ 컬러명 quote 강제 prompt
-- ✅ QA에 `color_labels_match_milo` 검증 추가
-- ❌ 아직 module_lineup에서 N_MODELS=1 (2인용만) 처리 안 됨
-- ❌ build_edit_block의 size_chart도 200×90×85 1개만 표시하도록 수정 필요
-
-### [P2] QA 신뢰도 검증
-
-v14 panel_12: 99점 통과인데 컬러 라벨 "풀리에이지/로즈브라운" hallucination → QA가 잡지 못함.
-
-v15 에서 추가한 검증:
-```python
-if is_color_panel:
-    color_check = "허용된 milo 컬러명: ['오트밀', '라이트그레이', '더스티로즈']..."
-    # JSON 출력에 color_labels_in_B, color_labels_match_milo, color_hallucinations 포함
-```
-
-QA가 실제로 컬러 라벨 검증을 수행하는지 별도 테스트 필요.
-
-### [P3] panel_01 (lifestyle) 룸 다양화
-
-v14 panel_01은 어두운 우드 룸이 잘 나옴. 하지만 한샘 원본 lifestyle scene과 다른 룸이라 composition_score 92로 낮음.
-
-옵션:
-- 한샘 원본 룸 보존하면서 소파만 swap (composition 99+)
-- 자유롭게 milo에 맞는 새 룸 생성 (현재 v14 결과처럼)
-
----
-
-## 🔧 알려진 issue
+## 🔧 알려진 issue (v15에서 이월)
 
 1. **QA legs strict over-fail**:
    - close-up panel에서 다리가 일부만 보일 때 (`legs=2`) QA가 fail 처리
-   - `leg_visible_in_frame=True` 인데 실제로는 frame 일부만 보이는 경우
-   - v15에서 추가 conditional 필요 (panel_class별 다리 검증 완화)
+   - v16 QA에선 `leg_count_when_visible` (close-up conditional) 도입했지만 실행 검증 필요.
 
 2. **fal-ai/gpt-image-2/edit 서버 에러**:
    - downstream_service_error / downstream_service_unavailable 가끔 발생
-   - MAX_ATTEMPTS=3으로 처리 중
+   - MAX_ATTEMPTS=4 + 단계별 다른 prompt로 robustness 향상 기대
 
 3. **image_urls 최대 10장 제한**:
-   - panel_12 lineup에서 main 1 + variants 2 + swatches 3 = 6장. 한계 안 넘음.
+   - panel당 ref MAX=6, base 1, sheet 1 → 최대 8장. 한계 안 넘음.
 
-4. **vision 분류 (66번)의 false positive**:
-   - p08_frame_04는 main으로 분류됨 (실제 디테일)
-   - v22 빌더가 사용자 의도 보정 (`p08_frame_04/05` 강제 detail)
+4. **v22 UI 빌더 (59번)**:
+   - v14까지의 swap_results 디렉토리 구조를 기대함. v16 출력은 `gpt_image/` 서브폴더로 분리되어 있어 빌더 path 조정 필요할 수 있음. 첫 v16 run 후 확인.
 
 ---
 
-## 🚀 새 세션 시작 시 first commands
+## 💡 v16 dispatch 결정 (architecture 선택지)
 
-```bash
-cd /Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research
-git log --oneline | head -5
-cat HANDOFF.md
+| 결정 사항 | 선택 | 대안 |
+|---|---|---|
+| 매핑 모듈 분리 위치 | `pipeline_lib/` (재사용성 우선) | inline in pipeline file |
+| LLM 호출 모델 | gpt-5 (mapping/edit/retry), gpt-5.5 (QA — 사용자 명시 고수) | 전부 gpt-5.5 |
+| MAX_ATTEMPTS | 4 (initial + 3 retries 사용자 명시) | 3 (initial + 2 retries) |
+| smart sheet 캐시 | run별 생성 (현재) | template 단위 캐시 |
+| paint_edit base 선택 | LLM 판단 + 점수 fallback | 점수 only |
 
-# 현재 상태 확인
-ls templates/01_sofa_992474/swap_results/  # latest run 확인
-cat templates/01_sofa_992474/swap_results/latest_v14.txt
-cat user_products/milo_777039/product_input_v3.json | head -50
+---
 
-# v22 UI 빌드 + 결과 검토
-python 59_build_report_v22.py
-open report/index.html
-```
+## 🚦 v16 실행 후 검증할 것
+
+- [ ] `latest_v15.txt` (v16의 첫 출력 — 번호는 15) 생성 확인
+- [ ] `swap_results/v15_*/sources/` 에 7개 파일 동봉됐는지
+- [ ] `swap_results/v15_*/manifest.json` `prompts/` `qa_reports/` 채워졌는지
+- [ ] `swap_results/v15_*/smart_sheet.png` 워터마크 + panel × asset map 확인
+- [ ] `panel_ref_mapping_v16.json` rationale이 hardcoded 룰처럼 단조롭지 않은지
+- [ ] cover panel_12 의 컬러 라벨이 "오트밀/라이트그레이/더스티로즈" 정확
+- [ ] panel_12에 3인용 칸이 없는지 (lineup_count_correct=5)
+- [ ] panel_04 size chart도 2인용 한 사이즈
+- [ ] 다리 4개 hallucination 0
+- [ ] 한샘 텍스트 잔존 0
+
+---
 
 ## 핵심 환경/도구
 
 - `EXP = /Users/sexyflash/Projects/Creagen/Apps/5th/experiment`
 - `from lib import openai_client, data_uri, upload, download`
-- vision model: `gpt-5` (분류/dense), `gpt-5.5` (QA — 사용자 명시)
-- image gen: `fal-ai/gpt-image-2/edit` (사용자 명시, nano-banana는 안 씀)
-- CONCURRENCY=13, MAX_ATTEMPTS=3
+- text model: `gpt-5` (mapping/edit_block/retry/sheet directive)
+- vision model: `gpt-5.5` (QA — 사용자 명시 고수)
+- image gen: `fal-ai/gpt-image-2/edit` (사용자 명시, nano-banana 안 씀)
+- CONCURRENCY=13, MAX_ATTEMPTS=4
 
-## 사용자 행동 패턴 (효율적 협업용)
+## 사용자 행동 패턴
 
-- 사용자는 매우 결과 지향 — 점수 통계보다 실제 이미지 quality 중시
-- 진행 상황 묻는 빈도 높음 → 백그라운드 작업 시 빠른 progress 보고 필요
-- 디테일 지적 정확 (다리 4개 hallucination 즉시 감지)
+- 결과 지향 — 점수보다 실제 이미지 quality
+- 진행 상황 묻는 빈도 높음 → 백그라운드 작업 시 progress 로그 잘 찍기
+- 디테일 지적 정확 (다리 hallucination, 컬러명 hallucination 즉시 감지)
 - 일반화 매우 중시 (하드코딩보다 LLM 판단)
-- 코드 보다 결과 사진으로 검수 (실제 이미지 보여주는 게 효율적)
+- option/cost/architecture만 묻고 나머지는 dispatch (memory: `feedback_autonomy_scope`)

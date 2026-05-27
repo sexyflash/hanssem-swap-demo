@@ -1,0 +1,196 @@
+{
+  "target_template": {
+    "rank": 1,
+    "gdsNo": 992474,
+    "name": "MVME 키안티 천연가죽 리클라이너 4인",
+    "url": "https://store.hanssem.com/goods/992474",
+    "panel_count": 12,
+    "category": "sofa"
+  },
+  "user_product": {
+    "gdsNo": 777039,
+    "name": "밀로 패브릭소파 3인용(3종/택1)",
+    "brand": "한샘",
+    "category_path": [
+      null,
+      null,
+      null
+    ],
+    "price": {
+      "normal": 845000,
+      "dc": 699000,
+      "dcRate": 21
+    },
+    "description": "한샘 패브릭 소파. 폭신한 착석감과 감각적인 디자인 소파로, 관리가 편하고 안전한 기능성 패브릭 원단으로 안심하고 사용하세요.",
+    "keywords": [
+      "소파",
+      "패브릭소파",
+      "한샘소파",
+      "한샘밀로",
+      "거실소파",
+      "3인용소파",
+      "3인소파",
+      "밀로소파",
+      "한샘패브릭소파",
+      "쇼파",
+      "패브릭쇼파",
+      "한샘쇼파",
+      "3인쇼파",
+      "3인용쇼파"
+    ],
+    "thumbnail": "../user_products/milo_777039/_thumbnail.jpg"
+  },
+  "product_reference_shots": [
+    {
+      "src": "../user_products/milo_777039/panel_01.jpg",
+      "role": "main_panel",
+      "note": "메인 화이트백 컷 추정 (가장 큰 높이)"
+    },
+    {
+      "src": "../user_products/milo_777039/gif_frames/frame_01.jpg",
+      "role": "gif_frame",
+      "note": "panel_08.gif 슬라이스 (총 3 frames)"
+    },
+    {
+      "src": "../user_products/milo_777039/gif_frames/frame_02.jpg",
+      "role": "gif_frame",
+      "note": "panel_08.gif 슬라이스 (총 3 frames)"
+    },
+    {
+      "src": "../user_products/milo_777039/gif_frames/frame_03.jpg",
+      "role": "gif_frame",
+      "note": "panel_08.gif 슬라이스 (총 3 frames)"
+    },
+    {
+      "src": "../user_products/milo_777039/gif_frames/frame_04.jpg",
+      "role": "gif_frame",
+      "note": "panel_08.gif 슬라이스 (총 3 frames)"
+    },
+    {
+      "src": "../user_products/milo_777039/gif_frames/frame_05.jpg",
+      "role": "gif_frame",
+      "note": "panel_08.gif 슬라이스 (총 3 frames)"
+    },
+    {
+      "src": "../user_products/milo_777039/gif_frames/frame_06.jpg",
+      "role": "gif_frame",
+      "note": "panel_08.gif 슬라이스 (총 3 frames)"
+    },
+    {
+      "src": "../user_products/milo_777039/gif_frames/frame_07.jpg",
+      "role": "gif_frame",
+      "note": "panel_08.gif 슬라이스 (총 3 frames)"
+    },
+    {
+      "src": "../user_products/milo_777039/gif_frames/frame_08.jpg",
+      "role": "gif_frame",
+      "note": "panel_08.gif 슬라이스 (총 3 frames)"
+    },
+    {
+      "src": "../user_products/milo_777039/panel_05.jpg",
+      "role": "candidate_angle",
+      "note": "panel_05 (다각도 후보)"
+    },
+    {
+      "src": "../user_products/milo_777039/panel_07.jpg",
+      "role": "candidate_angle",
+      "note": "panel_07 (다각도 후보)"
+    },
+    {
+      "src": "../user_products/milo_777039/panel_09.jpg",
+      "role": "candidate_angle",
+      "note": "panel_09 (다각도 후보)"
+    },
+    {
+      "src": "../user_products/milo_777039/panel_12.jpg",
+      "role": "candidate_angle",
+      "note": "panel_12 (다각도 후보)"
+    }
+  ],
+  "system_prompts": {
+    "scene_analyze": "You are analysing a single panel image from a furniture product detail page so\nit can be reproduced by an image generator. Describe ONLY the staging (not the\nspecific furniture model): camera viewpoint and angle, framing and crop, the\nposition of the furniture in frame, the room or backdrop, props, lighting, the\nintent of this panel (e.g. introduces material, shows size, highlights option,\ndemonstrates module variants), and overall mood. Write 3-5 dense sentences in\nEnglish. Be specific and concrete. No preamble.",
+    "product_analyze": "You are analysing a sofa product from a multi-angle reference set so an image\ngenerator can preserve it exactly. Describe its defining form precisely:\noverall silhouette and proportions, seat count, the arm shape (boxy, rolled,\nflat, etc.), the back and seat cushion count and shape, the leg or base style,\nthe upholstery material and color, and any decorative seams or surface\ndetails. Write 3-5 dense sentences in English, concrete and specific. No\npreamble.",
+    "swap_instruction": "You are generating a replacement image for one panel of a furniture detail\npage. CONSTRAINTS in priority order:\n1. Product fidelity ≥ 93 (cover panel ≥ 95). The user product must be\n   preserved exactly — silhouette, proportions, cushion arrangement, arm\n   shape, upholstery material and color must match the product reference.\n   No invented patterns, tufting, buttons, or trims.\n2. Composition fidelity is secondary (≥ 60 OK). The staging may differ from\n   the original panel's exact camera angle so long as the panel's intent\n   (introduce / size / material / option / module) is preserved.\n3. Cover panel only: white seamless backdrop, straight-on eye-level view,\n   centered framing, soft even light, no props. Composition fidelity ≥ 95.\n4. Output a single photograph. No text, no logos, no watermarks."
+  },
+  "panels": [
+    {
+      "panel_idx": 1,
+      "src": "../templates/01_sofa_992474/panel_01.jpg",
+      "scene_description": null,
+      "swap_prompt": null
+    },
+    {
+      "panel_idx": 2,
+      "src": "../templates/01_sofa_992474/panel_02.jpg",
+      "scene_description": null,
+      "swap_prompt": null
+    },
+    {
+      "panel_idx": 3,
+      "src": "../templates/01_sofa_992474/panel_03.jpg",
+      "scene_description": null,
+      "swap_prompt": null
+    },
+    {
+      "panel_idx": 4,
+      "src": "../templates/01_sofa_992474/panel_04.jpg",
+      "scene_description": null,
+      "swap_prompt": null
+    },
+    {
+      "panel_idx": 5,
+      "src": "../templates/01_sofa_992474/panel_05.jpg",
+      "scene_description": null,
+      "swap_prompt": null
+    },
+    {
+      "panel_idx": 6,
+      "src": "../templates/01_sofa_992474/panel_06.jpg",
+      "scene_description": null,
+      "swap_prompt": null
+    },
+    {
+      "panel_idx": 7,
+      "src": "../templates/01_sofa_992474/panel_07.jpg",
+      "scene_description": null,
+      "swap_prompt": null
+    },
+    {
+      "panel_idx": 8,
+      "src": "../templates/01_sofa_992474/panel_08.gif",
+      "scene_description": null,
+      "swap_prompt": null
+    },
+    {
+      "panel_idx": 9,
+      "src": "../templates/01_sofa_992474/panel_09.jpg",
+      "scene_description": null,
+      "swap_prompt": null
+    },
+    {
+      "panel_idx": 10,
+      "src": "../templates/01_sofa_992474/panel_10.jpg",
+      "scene_description": null,
+      "swap_prompt": null
+    },
+    {
+      "panel_idx": 11,
+      "src": "../templates/01_sofa_992474/panel_11.jpg",
+      "scene_description": null,
+      "swap_prompt": null
+    },
+    {
+      "panel_idx": 12,
+      "src": "../templates/01_sofa_992474/panel_12.jpg",
+      "scene_description": null,
+      "swap_prompt": null
+    }
+  ],
+  "user_request": {
+    "default": "제품: 밀로 패브릭소파 3인용(3종/택1) (한샘 패브릭 소파 3인용, 699,000원). 패브릭 소재 특성을 살리고, 거실에서 가족이 편안하게 사용하는 분위기로. 원본 detail page의 panel별 의도(소재 설명, 사이즈 정보, 옵션 안내)는 유지하되 제품은 밀로 패브릭소파로 정확히 swap. 천연가죽 느낌으로 보이게 하지 말 것.",
+    "current": "제품: 밀로 패브릭소파 3인용(3종/택1) (한샘 패브릭 소파 3인용, 699,000원). 패브릭 소재 특성을 살리고, 거실에서 가족이 편안하게 사용하는 분위기로. 원본 detail page의 panel별 의도(소재 설명, 사이즈 정보, 옵션 안내)는 유지하되 제품은 밀로 패브릭소파로 정확히 swap. 천연가죽 느낌으로 보이게 하지 말 것.",
+    "editable": true
+  },
+  "status": "input_ready",
+  "vision_calls_pending": 12
+}

@@ -1,0 +1,106 @@
+{
+  "image_format": "lifestyle",
+  "items_results": [
+    {
+      "id": "forbid_headrest_present",
+      "verdict": "pass",
+      "reason_ko": "별도 분리형 또는 일체형 헤드레스트가 보이지 않고, 사용자 제품처럼 큰 등쿠션만 보입니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_usb_or_power_port",
+      "verdict": "pass",
+      "reason_ko": "프레임이나 팔걸이 주변에 USB 포트, 전원 콘센트 등 전장 기능이 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_recliner_mechanism",
+      "verdict": "pass",
+      "reason_ko": "풋레스트, 조작 스위치, 리클라이너 분절선 등 리클라이너 메커니즘이 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_center_5th_leg",
+      "verdict": "pass",
+      "reason_ko": "소파 하부 중앙에 추가 5번째 다리가 명확히 보이지 않으며, 양측 독립 다리 중심으로 보입니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_v_sled_leg_base",
+      "verdict": "pass",
+      "reason_ko": "다리가 서로 연결된 V자형 또는 슬레드형 베이스가 아니라, 분리된 슬림 다리로 보입니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_tufting_or_buttons",
+      "verdict": "pass",
+      "reason_ko": "좌방석과 등쿠션 표면에 버튼, 터프팅, 퀼팅 패턴이 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_skirt_covering_legs",
+      "verdict": "pass",
+      "reason_ko": "하부 여백과 다리가 보이며, 패브릭 스커트가 다리를 덮는 구조가 아닙니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_non_black_or_wood_legs",
+      "verdict": "pass",
+      "reason_ko": "보이는 다리는 블랙 톤의 슬림한 금속 다리로 보이며, 원목이나 크롬/골드 톤 다리는 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_chaise_or_attached_ottoman",
+      "verdict": "pass",
+      "reason_ko": "한쪽으로 돌출된 체어즈나 일체형 오토만 없이 2인 스트레이트 소파 형태입니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_storage_seat",
+      "verdict": "pass",
+      "reason_ko": "좌판이 들리거나 내부 수납공간이 드러난 표현이 없습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "frame_boxy_low_profile",
+      "verdict": "pass",
+      "reason_ko": "프레임이 낮고 긴 직사각 박스형 실루엣으로 보이며, 외곽 라인도 미니멀하게 유지됩니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "arms_box_shape_soft_rounded_edges",
+      "verdict": "pass",
+      "reason_ko": "양쪽 팔걸이가 직선적인 박스형이고, 모서리는 과하게 둥글지 않은 완만한 라운드로 표현되어 사용자 제품과 부합합니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "legs_slight_inward_cant",
+      "verdict": "pass",
+      "reason_ko": "다리 각도는 아주 미세한 디테일이라 엄격히 보기는 어렵지만, 슬림한 블랙 다리와 약한 기울기 표현이 유지되어 허용 범위입니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 88,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "B는 사용자 제품의 핵심 정체성인 2인용 스트레이트 패브릭 소파, 낮은 박스형 프레임, 박스형 팔걸이, 블랙 슬림 다리를 잘 유지합니다. 금지된 헤드레스트, 리클라이너, 체어즈, 스커트, 터프팅, 전장 포트 등은 보이지 않습니다. 구성은 C의 라이프스타일 장면을 대체로 잘 따릅니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 100,
+  "verdict": "pass"
+}

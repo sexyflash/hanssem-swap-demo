@@ -1,0 +1,14 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 92,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "이 패널에 적용 가능한 체크리스트 항목이 제공되지 않아 개별 distortion/detail/forbidden 판정은 수행하지 않았습니다. B는 차트/구조 설명형 패널로, 상단 소파 이미지와 하단 표 구성은 C의 레이아웃을 대체로 잘 따릅니다. 육안상 명백한 invented feature(헤드레스트, USB, 리클라이너 등)는 보이지 않습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 50,
+  "verdict": "retry"
+}

@@ -1,0 +1,29 @@
+{
+  "image_format": "lifestyle",
+  "items_results": [
+    {
+      "id": "module_lineup_shows_4_variants",
+      "verdict": "pass",
+      "reason_ko": "결과 B 하단의 '모델 옵션' 영역에 서랍형 6종, 행거형 6종, 거울-행거형 6종, 거울-서랍형 6종 네 가지가 모두 표기되어 있습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "height_lineup_two_options_label",
+      "verdict": "fail",
+      "reason_ko": "결과 B에는 각 옵션이 모두 높이 216cm로만 표기되어 있으며, 기대 항목인 높이 194cm / 216cm 두 가지 라인업 표기는 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 20,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "제품 자체는 사용자 제품의 160cm, 높이 216cm 서랍형 옷장 구성으로 보이며, 핵심 라인업 4종 표기는 확인됩니다. 다만 원본 C처럼 여러 섹션이 있는 모듈 라인업 그리드가 아니라 단일 제품 중심의 연출 이미지로 구성 차이는 큽니다. 높이 194cm 옵션 표기는 누락되어 detail 항목은 fail 처리했습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 85,
+  "verdict": "retry"
+}

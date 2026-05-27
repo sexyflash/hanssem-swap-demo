@@ -1,0 +1,120 @@
+{
+  "image_format": "single_product",
+  "items_results": [
+    {
+      "id": "forbid_usb_or_power_port",
+      "verdict": "pass",
+      "reason_ko": "USB 포트나 전원 콘센트로 보이는 전장 기능이 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_tufting_or_buttons",
+      "verdict": "pass",
+      "reason_ko": "좌방석/등쿠션 표면에 버튼 퀼팅이나 터프팅 패턴이 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_piping_trim",
+      "verdict": "pass",
+      "reason_ko": "쿠션 외곽에 봉제선과 플랜지성 엣지 표현은 있으나, 별도의 둥근 끈 장식 형태의 파이핑 트림으로 명확히 보이지는 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "connection_seat_to_inner_arm_bolster",
+      "verdict": "pass",
+      "reason_ko": "측면 구도라 좌방석 전체는 제한적이지만, 보이는 팔 안쪽/상부 쿠션 영역이 끊긴 별도 구조처럼 보이지 않고 연속된 쿠션 구조로 인식됩니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "fabric_is_woven_textile_not_leather",
+      "verdict": "pass",
+      "reason_ko": "표면이 회색 멜란지 직물 패브릭처럼 보이며, 가죽/비닐 같은 강한 광택이나 매끈한 표면은 아닙니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "seat_cushion_crown_and_rolled_front_edge",
+      "verdict": "pass",
+      "reason_ko": "좌방석의 전면부가 정면처럼 완전히 보이진 않지만, 보이는 쿠션 상단이 평평하게 딱딱하지 않고 부드러운 볼륨감을 가지고 있어 허용 범위입니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "seat_cushion_narrow_gap",
+      "verdict": "not_visible",
+      "reason_ko": "측면 컷이라 두 좌방석 사이의 중앙 이격선은 확인하기 어렵습니다.",
+      "category": "detail",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "seat_top_bottom_topstitch",
+      "verdict": "not_visible",
+      "reason_ko": "좌방석 위·아래 엣지의 얇은 상침선은 이 각도에서 명확히 식별되지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "back_cushion_ear_folds",
+      "verdict": "pass",
+      "reason_ko": "등쿠션 상단 모서리가 살짝 솟은 귀 형태로 접힌 모습이 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "back_cushion_no_center_seam",
+      "verdict": "pass",
+      "reason_ko": "각 등쿠션 중앙에 세로 또는 가로 봉제선이 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "back_cushion_knife_edge_light_topstitch",
+      "verdict": "pass",
+      "reason_ko": "등쿠션 외곽이 비교적 날렵한 엣지와 얇은 봉제선으로 처리되어 보이며, 명백한 형태 오류는 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "arm_bolster_front_flange",
+      "verdict": "pass",
+      "reason_ko": "팔 안쪽 보조쿠션으로 보이는 측면 쿠션 가장자리에 플랜지/겉시접성 라인이 일부 확인됩니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "fabric_melange_weave_visible",
+      "verdict": "pass",
+      "reason_ko": "근접 제품 컷에서 회색 계열의 복합 실색이 섞인 멜란지 직물 질감이 식별됩니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "fabric_matte_finish",
+      "verdict": "pass",
+      "reason_ko": "패브릭 표면이 무광에 가깝고 강한 반사 하이라이트가 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "water_repellency_beading_scene",
+      "verdict": "not_visible",
+      "reason_ko": "이 결과 이미지는 제품 측면 단독 컷이며, 물방울이 맺힌 생활발수 연출은 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 80,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "B는 흰 배경의 단일 소파 측면 컷으로, 사용자 제품의 회색 직물 패브릭, 박스형 팔/프레임, 얇은 블랙 금속 다리, 쿠션형 등받이의 정체성을 대체로 유지합니다. 좌방석 중앙 간격이나 발수 물방울 연출처럼 이 각도에서 확인이 어려운 디테일은 not_visible 처리했으며, 핵심 distortion/forbidden 실패는 발견되지 않았습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 98,
+  "verdict": "pass"
+}

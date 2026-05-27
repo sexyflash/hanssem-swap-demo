@@ -1,0 +1,145 @@
+{
+  "panel_id": "panel_14.jpg",
+  "panel_class": "detail_close_up",
+  "vision_model": "gpt-5.5",
+  "ref_paths": [
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_06.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_04.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_10.png"
+  ],
+  "ref_labels": [
+    "main_view·전체정면",
+    "material·도어 마감표면",
+    "detail_close_up·손잡이/도어모서리"
+  ],
+  "panel_orig_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/panel_14.jpg",
+  "swap_result_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/swap_results/v18_20260527_035207/gpt_image/panel_14__a4_v16.png",
+  "applicable_item_ids": [
+    "external_3_tier_drawers_visible",
+    "long_inset_vertical_handles",
+    "handle_color_contrasts_with_door",
+    "damping_hinges_indicator",
+    "shelf_thickness_18mm_note",
+    "aluminum_hanging_rod_indicator",
+    "lpm_finish_label",
+    "e0_grade_label",
+    "hinge_40000_cycles_label",
+    "material_bending_50kg_168h_label",
+    "recommended_shelf_load_20kg_80cm_label",
+    "rod_load_16kg_80cm_label",
+    "no_bar_or_knob_handles"
+  ],
+  "user_prompt": "=== TASK ===\n이 swap 결과(B)를 사용자 제품의 verifiable checklist로 채점하라.\n\n=== 사용자 제품 ===\ncategory: wardrobe\n제품명: 샘베딩 클로즈 옷장세트 160cm(높이216cm) 서랍형 6종\n핵심 axis: doors, handles, drawers, shelves, hanging_rod, hinges, back_panel, frame, color, finish, size, module_lineup, base\n\n=== 첨부 이미지 ===\n  A_1 = main_view·전체정면\n  A_2 = material·도어 마감표면\n  A_3 = detail_close_up·손잡이/도어모서리\n  B = swap 결과 (채점 대상)\n  C = 한샘 원본 panel (composition reference)\n\n=== Panel 컨텍스트 ===\npanel_id: panel_14.jpg\npanel_class: detail_close_up\nspatial_layout: 이미지는 좌우 2분할로 구성되어 있다. 왼쪽에는 밝은 흰색 계열의 도어 표면이 클로즈업되어 있고, 오른쪽에는 약간 더 어두운 그레이 계열의 도어 표면이 클로즈업되어 있다. 두 도어 모두 수직 방향으로 배치되어 있으며, 중앙에는 두 이미지를 구분하는 흰색 경계선이 있다. 오른쪽 도어에는 세로형 손잡이가 중앙에 위치해 있다. 하단에는 흰색 배경 위에 검은색 한글 텍스트가 좌우로 나란히 배치되어 있다.\n\n=== 적용 가능한 CHECKLIST ITEMS (이 panel에서 검증 가능) ===\n각 item에 category(distortion/detail/forbidden)와 generation_feasibility 가 표시됨.\n- distortion / forbidden: strict 채점 (제품 왜곡 검출이 사용자 핵심 요구)\n- detail: image gen 한계 인정 → 명백한 차이만 fail, 모호하면 pass\n- generation_feasibility=low: 더욱 보수적으로 fail 매김 (미세 디테일)\n\n- [ forbidden] [feas=high] id=no_bar_or_knob_handles axis=handles\n    desc: 막대형 바 핸들/동그라미 노브 등 돌출 손잡이는 없어야 함(본 제품은 매립형).\n    expected: 돌출 바/노브 손잡이 없음\n    question: 결과 B에서 바/노브 등 돌출 손잡이가 보이지 않나요?\n- [distortion] [feas=high] id=external_3_tier_drawers_visible axis=drawers\n    desc: 서랍형: 전면에 3단 외부형 서랍 블록이 명확히 보임.\n    expected: 3단 외부형 서랍 존재\n    question: 결과 B에서 전면에 3단 외부형 서랍이 보이나요?\n- [distortion] [feas=high] id=long_inset_vertical_handles axis=handles\n    desc: 문을 따라 세로로 길게 내려오는 매립형 손잡이(플러시 인셋 타입).\n    expected: 세로형 매립 손잡이\n    question: 결과 B에서 도어 가장자리를 따라 세로 긴 매립형 손잡이가 보이나요?\n- [    detail] [feas=medium] id=handle_color_contrasts_with_door axis=handles\n    desc: 손잡이와 도어는 서로 다른 소재/톤으로 색 대비가 보임(크림화이트 도어도 동일 손잡이 톤).\n    expected: 손잡이는 도어와 다른 톤으로 식별 가능\n    question: 결과 B에서 손잡이 색이 도어 색과 구분되어 보이나요?\n- [    detail] [feas=low] id=damping_hinges_indicator axis=hinges\n    desc: 댐핑 힌지(부드럽게 닫힘) 관련 아이콘/문구/접사 표기가 있음.\n    expected: 댐핑 힌지 표기 또는 접사\n    question: 결과 B에 ‘댐핑 힌지’ 관련 표기(아이콘/텍스트/접사)가 보이나요?\n- [    detail] [feas=low] id=shelf_thickness_18mm_note axis=shelves\n    desc: 선반 두께 18mm 표기 또는 단면 설명이 보임.\n    expected: 18mm 선반 표기\n    question: 결과 B에서 선반 두께 18mm임을 나타내는 표기/도식이 보이나요?\n- [    detail] [feas=medium] id=aluminum_hanging_rod_indicator axis=hanging_rod\n    desc: 알루미늄 옷걸이봉 사용이 보이거나 텍스트로 명시됨.\n    expected: 알루미늄 옷걸이봉 표기/접사\n    question: 결과 B에서 알루미늄 옷걸이봉임을 확인할 수 있나요?\n- [    detail] [feas=low] id=lpm_finish_label axis=finish\n    desc: 도어 마감 ‘LPM’ 공법이 텍스트/아이콘으로 표시됨.\n    expected: LPM 마감 표기\n    question: 결과 B에서 LPM 마감임을 나타내는 표기가 있나요?\n- [    detail] [feas=low] id=e0_grade_label axis=finish\n    desc: E0 등급 소재 사용이 아이콘/문구로 표시됨.\n    expected: E0 등급 표기\n    question: 결과 B에서 ‘E0’ 등급 표기가 보이나요?\n- [    detail] [feas=low] id=hinge_40000_cycles_label axis=hinges\n    desc: 도어 힌지 40,000회 개폐 테스트 통과 표기가 있음.\n    expected: 40,000회 개폐 테스트 표기\n    question: 결과 B에 힌지 ‘40,000회 개폐 테스트’ 문구/아이콘이 있나요?\n- [    detail] [feas=low] id=material_bending_50kg_168h_label axis=frame\n    desc: 자재 휨 강도 50kg/168시간 테스트 통과 표기.\n    expected: 50kg/168시간 테스트 표기\n    question: 결과 B에서 ‘50kg/168시간’ 테스트 관련 표기가 있나요?\n- [    detail] [feas=low] id=recommended_shelf_load_20kg_80cm_label axis=shelves\n    desc: 너비 80cm 기준 선반 권장 하중 최대 20kg 표기.\n    expected: 선반 권장 하중 20kg(80cm 기준)\n    question: 결과 B에서 ‘권장 20kg(80cm 기준)’ 표기가 있나요?\n- [    detail] [feas=low] id=rod_load_16kg_80cm_label axis=hanging_rod\n    desc: 옷걸이봉 하중 최대 16kg(너비 80cm 기준) 표기.\n    expected: 옷걸이봉 16kg(80cm 기준)\n    question: 결과 B에서 옷걸이봉 ‘최대 16kg(80cm 기준)’ 표기가 있나요?\n\n=== 출력 schema (strict JSON) ===\n{\n  \"image_format\": \"single_product|lifestyle|chart_diagram|multi_panel_grid\",\n  \"items_results\": [\n    {\n      \"id\": \"...\",\n      \"verdict\": \"pass|fail|not_visible\",\n      \"reason_ko\": \"...\",\n      \"category\": \"distortion|detail|forbidden\",\n      \"generation_feasibility\": \"high|medium|low\"\n    }\n  ],\n  \"distortion_fail_count\": int,\n  \"forbidden_fail_count\": int,\n  \"composition_score\": 0-100,\n  \"hallucinations\": [\"발견된 invented feature 한국어\"],\n  \"specific_failures\": [\"distortion/forbidden fail 항목의 한국어 요약\"],\n  \"notes_ko\": \"...\"\n}\n\n판정 가이드:\n- distortion item: 다리 개수 / 가죽 vs 패브릭 / 보조쿠션 유무 / 컬러명 등 명백한 차이 → fail\n- forbidden item: invented feature (헤드레스트 등) 발견 → fail\n- detail item: 시접 종류 / 미세 곡률 / 직조 결 등이 약간 달라도 → pass (관대)\n",
+  "result": {
+    "image_format": "multi_panel_grid",
+    "items_results": [
+      {
+        "id": "no_bar_or_knob_handles",
+        "verdict": "fail",
+        "reason_ko": "오른쪽 크림화이트 도어에 도어면 밖으로 돌출된 세로형 바 손잡이가 명확히 보입니다. 본 제품의 매립형 손잡이 조건과 맞지 않습니다.",
+        "category": "forbidden",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "external_3_tier_drawers_visible",
+        "verdict": "pass",
+        "reason_ko": "오른쪽 하단에 가로 분할선으로 구분된 3단 외부형 서랍 블록이 명확히 보입니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "long_inset_vertical_handles",
+        "verdict": "pass",
+        "reason_ko": "왼쪽 화이트 도어에는 도어 가장자리를 따라 길게 내려오는 세로형 매립 손잡이/홈 형태가 확인됩니다. 다만 오른쪽에는 돌출 손잡이가 함께 생성되어 별도 forbidden 항목에서 실패 처리했습니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "handle_color_contrasts_with_door",
+        "verdict": "pass",
+        "reason_ko": "왼쪽 매립 손잡이 부분은 회색 음영과 홈으로 도어 면과 구분되어 보입니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "damping_hinges_indicator",
+        "verdict": "not_visible",
+        "reason_ko": "댐핑 힌지 관련 아이콘, 텍스트, 힌지 접사는 보이지 않습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "shelf_thickness_18mm_note",
+        "verdict": "not_visible",
+        "reason_ko": "선반 두께 18mm를 나타내는 표기나 도식은 보이지 않습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "aluminum_hanging_rod_indicator",
+        "verdict": "not_visible",
+        "reason_ko": "옷걸이봉 자체나 알루미늄 소재를 확인할 수 있는 텍스트/접사는 보이지 않습니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "lpm_finish_label",
+        "verdict": "not_visible",
+        "reason_ko": "LPM 마감임을 나타내는 문구나 아이콘은 보이지 않습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "e0_grade_label",
+        "verdict": "not_visible",
+        "reason_ko": "E0 등급 표기는 확인되지 않습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "hinge_40000_cycles_label",
+        "verdict": "not_visible",
+        "reason_ko": "힌지 40,000회 개폐 테스트 관련 문구나 아이콘은 보이지 않습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "material_bending_50kg_168h_label",
+        "verdict": "not_visible",
+        "reason_ko": "50kg/168시간 자재 휨 강도 테스트 관련 표기는 보이지 않습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "recommended_shelf_load_20kg_80cm_label",
+        "verdict": "not_visible",
+        "reason_ko": "선반 권장 하중 20kg, 80cm 기준 관련 표기는 보이지 않습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      },
+      {
+        "id": "rod_load_16kg_80cm_label",
+        "verdict": "not_visible",
+        "reason_ko": "옷걸이봉 최대 하중 16kg, 80cm 기준 관련 표기는 보이지 않습니다.",
+        "category": "detail",
+        "generation_feasibility": "low"
+      }
+    ],
+    "distortion_fail_count": 0,
+    "forbidden_fail_count": 1,
+    "composition_score": 72,
+    "hallucinations": [
+      "오른쪽 도어의 돌출형 세로 바 손잡이"
+    ],
+    "specific_failures": [
+      "결과가 grid 형태 — single panel로 재생성",
+      "본 제품에는 없어야 하는 돌출형 바 손잡이가 오른쪽 도어에 생성됨",
+      "forbidden fail · no_bar_or_knob_handles: 오른쪽 크림화이트 도어에 도어면 밖으로 돌출된 세로형 바 손잡이가 명확히 보입니다. 본 제품의 매립형 손잡이 조건과 맞지 않습니다."
+    ],
+    "notes_ko": "B는 좌우 2분할 소재/도어 클로즈업 구성은 유지하지만, 오른쪽 도어에 원제품 기준 금지된 돌출 손잡이가 보입니다. 3단 외부형 서랍과 왼쪽 매립형 세로 손잡이는 확인됩니다.",
+    "verdict": "retry",
+    "product_score_raw": 30,
+    "product_score": 72,
+    "critical_fail_count": 1
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "panel_id": "panel_10.png",
+  "panel_class": "module_lineup",
+  "vision_model": "gpt-5.5",
+  "ref_paths": [
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_09.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_07.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_05.png"
+  ],
+  "ref_labels": [
+    "main_view·내부정면",
+    "detail_close_up·서랍",
+    "main_view·내부정면"
+  ],
+  "panel_orig_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/panel_10.png",
+  "swap_result_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/swap_results/v18_20260527_035207/gpt_image/panel_10__a3_v16.png",
+  "applicable_item_ids": [
+    "module_lineup_shows_4_variants",
+    "height_lineup_two_options_label"
+  ],
+  "user_prompt": "=== TASK ===\n이 swap 결과(B)를 사용자 제품의 verifiable checklist로 채점하라.\n\n=== 사용자 제품 ===\ncategory: wardrobe\n제품명: 샘베딩 클로즈 옷장세트 160cm(높이216cm) 서랍형 6종\n핵심 axis: doors, handles, drawers, shelves, hanging_rod, hinges, back_panel, frame, color, finish, size, module_lineup, base\n\n=== 첨부 이미지 ===\n  A_1 = main_view·내부정면\n  A_2 = detail_close_up·서랍\n  A_3 = main_view·내부정면\n  B = swap 결과 (채점 대상)\n  C = 한샘 원본 panel (composition reference)\n\n=== Panel 컨텍스트 ===\npanel_id: panel_10.png\npanel_class: module_lineup\nspatial_layout: 상단에는 서랍이 열려있는 옷장 내부가 클로즈업으로 보인다. 서랍 내부는 칸막이로 나뉘어 양말, 속옷, 스웨터 등이 정돈되어 있다. 하단에는 세 개의 옷장 모듈이 나란히 정면에서 배열되어 있다. 각 모듈은 직사각형 형태로, 왼쪽 두 개는 옷걸이 봉과 하단 서랍, 오른쪽 하나는 선반과 바구니, 하단 서랍으로 구성된다. 각 모듈의 크기와 비율이 동일하며, 흰색 배경 위에 정렬되어 있다. 전체적으로 수직적이고 균형 잡힌 레이아웃이다.\n\n=== 적용 가능한 CHECKLIST ITEMS (이 panel에서 검증 가능) ===\n각 item에 category(distortion/detail/forbidden)와 generation_feasibility 가 표시됨.\n- distortion / forbidden: strict 채점 (제품 왜곡 검출이 사용자 핵심 요구)\n- detail: image gen 한계 인정 → 명백한 차이만 fail, 모호하면 pass\n- generation_feasibility=low: 더욱 보수적으로 fail 매김 (미세 디테일)\n\n- [distortion] [feas=high] id=module_lineup_shows_4_variants axis=module_lineup\n    desc: 모듈/모델 라인업 패널에 4가지(서랍형 6종, 행거형 6종, 거울-행거형 6종, 거울-서랍형 6종)가 정확 표기.\n    expected: 서랍형 6종 / 행거형 6종 / 거울-행거형 6종 / 거울-서랍형 6종\n    question: 결과 B의 라인업 패널에 4가지 모델 옵션이 정확히 보이나요?\n- [    detail] [feas=medium] id=height_lineup_two_options_label axis=size\n    desc: 높이 라인업이 194cm/216cm 두 가지로 표기됨(본 상품 216cm 표시).\n    expected: 높이 194cm / 216cm 표기\n    question: 결과 B의 라인업/사이즈 정보에 194cm와 216cm 두 가지 높이 옵션이 보이나요?\n\n=== 출력 schema (strict JSON) ===\n{\n  \"image_format\": \"single_product|lifestyle|chart_diagram|multi_panel_grid\",\n  \"items_results\": [\n    {\n      \"id\": \"...\",\n      \"verdict\": \"pass|fail|not_visible\",\n      \"reason_ko\": \"...\",\n      \"category\": \"distortion|detail|forbidden\",\n      \"generation_feasibility\": \"high|medium|low\"\n    }\n  ],\n  \"distortion_fail_count\": int,\n  \"forbidden_fail_count\": int,\n  \"composition_score\": 0-100,\n  \"hallucinations\": [\"발견된 invented feature 한국어\"],\n  \"specific_failures\": [\"distortion/forbidden fail 항목의 한국어 요약\"],\n  \"notes_ko\": \"...\"\n}\n\n판정 가이드:\n- distortion item: 다리 개수 / 가죽 vs 패브릭 / 보조쿠션 유무 / 컬러명 등 명백한 차이 → fail\n- forbidden item: invented feature (헤드레스트 등) 발견 → fail\n- detail item: 시접 종류 / 미세 곡률 / 직조 결 등이 약간 달라도 → pass (관대)\n",
+  "result": {
+    "image_format": "multi_panel_grid",
+    "items_results": [
+      {
+        "id": "module_lineup_shows_4_variants",
+        "verdict": "pass",
+        "reason_ko": "하단 라인업에 4개 모델이 보이며, 라벨도 '서랍형 6종', '행거형 6종', '거울-행거형 6종', '거울-서랍형 6종'으로 확인됩니다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "height_lineup_two_options_label",
+        "verdict": "pass",
+        "reason_ko": "하단 우측에 '높이 194cm / 216cm (본 상품 216cm)' 문구가 보여 194cm와 216cm 두 가지 높이 옵션이 확인됩니다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      }
+    ],
+    "distortion_fail_count": 0,
+    "forbidden_fail_count": 0,
+    "composition_score": 88,
+    "hallucinations": [],
+    "specific_failures": [
+      "결과가 grid 형태 — single panel로 재생성"
+    ],
+    "notes_ko": "검증 가능한 라인업/높이 표기 항목은 모두 충족합니다. 사용자 제품에 없는 명백한 invented feature는 발견되지 않았습니다.",
+    "verdict": "retry",
+    "product_score_raw": 30,
+    "product_score": 100,
+    "critical_fail_count": 0
+  }
+}

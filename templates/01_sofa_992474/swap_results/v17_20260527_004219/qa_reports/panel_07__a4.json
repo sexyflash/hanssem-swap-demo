@@ -1,0 +1,130 @@
+{
+  "image_format": "single_product",
+  "items_results": [
+    {
+      "id": "forbid_usb_or_power_port",
+      "verdict": "fail",
+      "reason_ko": "결과 B 중앙 금속 패널 왼쪽에 USB 포트가 명확히 보이고, 여러 전장 버튼/조명도 함께 보입니다. 사용자 제품에는 전장 기능이 없어야 합니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_tufting_or_buttons",
+      "verdict": "pass",
+      "reason_ko": "전자식 조작 버튼은 보이지만, 좌방석/등쿠션 표면의 터프팅이나 버튼 퀼팅 패턴은 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_piping_trim",
+      "verdict": "fail",
+      "reason_ko": "상단 사선 엣지에 둥글게 도드라진 끈 형태의 파이핑 트림처럼 보이는 라인이 있습니다. 사용자 제품의 나이프 엣지/상침/플랜지 조합과 다릅니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "connection_seat_to_inner_arm_bolster",
+      "verdict": "not_visible",
+      "reason_ko": "해당 컷은 표면과 금속 조작 패널의 근접 이미지라 좌방석과 팔 안쪽 보조쿠션의 연결 관계를 확인할 수 없습니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "fabric_is_woven_textile_not_leather",
+      "verdict": "pass",
+      "reason_ko": "표면은 가죽/비닐 광택이나 가죽 주름이 아니라 촘촘한 직조 조직의 무광 패브릭처럼 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "seat_cushion_crown_and_rolled_front_edge",
+      "verdict": "not_visible",
+      "reason_ko": "좌방석의 전체 형태나 앞엣지가 프레임에 나오지 않아 크라운과 말림을 확인할 수 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "seat_cushion_narrow_gap",
+      "verdict": "not_visible",
+      "reason_ko": "두 좌방석 사이의 이격이 보이는 구도가 아닙니다.",
+      "category": "detail",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "seat_top_bottom_topstitch",
+      "verdict": "not_visible",
+      "reason_ko": "좌방석의 위·아래 엣지가 보이지 않아 해당 상침선을 판단할 수 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "back_cushion_ear_folds",
+      "verdict": "not_visible",
+      "reason_ko": "등쿠션 상단 모서리가 프레임에 없어 귀 모양 접힘을 확인할 수 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "back_cushion_no_center_seam",
+      "verdict": "not_visible",
+      "reason_ko": "등쿠션 자체가 식별되지 않는 근접 컷이라 중앙 봉제선 유무를 검증하기 어렵습니다.",
+      "category": "detail",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "back_cushion_knife_edge_light_topstitch",
+      "verdict": "not_visible",
+      "reason_ko": "등쿠션 외곽 엣지가 보이지 않아 나이프 엣지와 미세 상침 여부를 확인할 수 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "arm_bolster_front_flange",
+      "verdict": "not_visible",
+      "reason_ko": "팔 안쪽 보조쿠션 전면 엣지가 나오지 않아 플랜지 시접선을 확인할 수 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "fabric_melange_weave_visible",
+      "verdict": "pass",
+      "reason_ko": "근접 표면에서 직조된 격자형 조직과 여러 톤이 섞인 멜란지 질감이 식별됩니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "fabric_matte_finish",
+      "verdict": "pass",
+      "reason_ko": "패브릭 표면은 전반적으로 무광에 가깝고 강한 하이라이트 반사가 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "water_repellency_beading_scene",
+      "verdict": "fail",
+      "reason_ko": "표면에 물방울이 맺히거나 굴러가는 생활발수 비딩 연출은 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 2,
+  "composition_score": 86,
+  "hallucinations": [
+    "USB 포트",
+    "금속 전동 조작 버튼 패널",
+    "파란색 조명 링",
+    "둥근 파이핑 트림"
+  ],
+  "specific_failures": [
+    "사용자 제품에 없는 USB 포트 및 전장 조작 패널이 보임",
+    "사용자 제품에 없어야 하는 둥근 파이핑 트림이 엣지에 보임",
+    "forbidden fail · forbid_usb_or_power_port: 결과 B 중앙 금속 패널 왼쪽에 USB 포트가 명확히 보이고, 여러 전장 버튼/조명도 함께 보입니다. 사용자 제품에는 전장 기능이 없어야 합니다.",
+    "forbidden fail · forbid_piping_trim: 상단 사선 엣지에 둥글게 도드라진 끈 형태의 파이핑 트림처럼 보이는 라인이 있습니다. 사용자 제품의 나이프 엣지/상침/플랜지 조합과 다릅니다."
+  ],
+  "notes_ko": "구도는 원본 C의 금속 버튼 패널 클로즈업 구성을 비교적 잘 따르지만, 밀로 패브릭소파 2인용에는 USB/전원 포트나 전동 버튼 패널이 없어야 하므로 제품 정체성 기준에서 금지 요소가 명확합니다. 표면 자체는 패브릭 질감으로 잘 바뀌었으나, invented 전장 기능 때문에 PASS로 보기 어렵습니다.",
+  "critical_fail_count": 2,
+  "product_score_raw": null,
+  "product_score": 56,
+  "verdict": "retry"
+}

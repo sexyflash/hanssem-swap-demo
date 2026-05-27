@@ -1,0 +1,566 @@
+{
+  "product_category": "wardrobe",
+  "category_check_axes": [
+    "doors",
+    "handles",
+    "drawers",
+    "shelves",
+    "hanging_rod",
+    "hinges",
+    "back_panel",
+    "frame",
+    "color",
+    "finish",
+    "size",
+    "module_lineup",
+    "base"
+  ],
+  "items": [
+    {
+      "id": "two_80cm_modules_total_160cm",
+      "description_ko": "폭 160cm 구성은 80cm 모듈 2개 조합으로 보이는가(중앙 이음부가 보이는 2칸 구조).",
+      "check_question_ko": "결과 B에서 전면이 80cm 모듈 2개(총 160cm)로 보이나요?",
+      "expected": "80cm 모듈 2개 조합으로 보임",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene",
+        "structure_chart"
+      ],
+      "applicable_views": [
+        "front",
+        "angle"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.hanging_rod_detail",
+      "axis": "frame"
+    },
+    {
+      "id": "hinged_double_doors_per_module",
+      "description_ko": "도어는 양문형 힌지(여닫이) 도어로 구성되고 슬라이딩이 아님.",
+      "check_question_ko": "결과 B에서 도어가 양개형 힌지 방식(미닫이/슬라이딩 아님)으로 보이나요?",
+      "expected": "여닫이(힌지) 도어",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "front",
+        "angle"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.doors_detail",
+      "axis": "doors"
+    },
+    {
+      "id": "external_3_tier_drawers_visible",
+      "description_ko": "서랍형: 전면에 3단 외부형 서랍 블록이 명확히 보임.",
+      "check_question_ko": "결과 B에서 전면에 3단 외부형 서랍이 보이나요?",
+      "expected": "3단 외부형 서랍 존재",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "front",
+        "angle",
+        "close-up"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.drawers_detail",
+      "axis": "drawers"
+    },
+    {
+      "id": "long_inset_vertical_handles",
+      "description_ko": "문을 따라 세로로 길게 내려오는 매립형 손잡이(플러시 인셋 타입).",
+      "check_question_ko": "결과 B에서 도어 가장자리를 따라 세로 긴 매립형 손잡이가 보이나요?",
+      "expected": "세로형 매립 손잡이",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "detail_close_up",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "front",
+        "angle",
+        "close-up"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.handles_detail",
+      "axis": "handles"
+    },
+    {
+      "id": "rectangular_straight_top_silhouette",
+      "description_ko": "상단까지 곧게 뻗은 직선형 실루엣(크라운/아치 등 돌출 장식 없음).",
+      "check_question_ko": "결과 B에서 상단이 평평한 직사각형 실루엣으로 보이나요?",
+      "expected": "평평한 상단의 직선형 외관",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "front",
+        "angle",
+        "side"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.overall_silhouette",
+      "axis": "frame"
+    },
+    {
+      "id": "color_options_panel_exact_3",
+      "description_ko": "컬러 옵션 패널에 정확히 3가지 도어 컬러명이 표기됨.",
+      "check_question_ko": "결과 B의 컬러 옵션 패널에 ‘화이트 하이글로시(유광)’, ‘크림화이트’, ‘라이트오크’ 3가지가 정확 표기되었나요?",
+      "expected": "화이트 하이글로시(유광) / 크림화이트 / 라이트오크",
+      "applicable_panel_classes": [
+        "color_option"
+      ],
+      "applicable_views": [
+        "front",
+        "close-up"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "color_options",
+      "axis": "color"
+    },
+    {
+      "id": "selected_finish_in_images_is_one_of_three",
+      "description_ko": "제품 이미지의 도어 컬러가 제공된 3가지 중 하나로 보임.",
+      "check_question_ko": "결과 B의 제품 도어 색이 제공 컬러(화이트 하이글로시(유광)/크림화이트/라이트오크) 중 하나로 보이나요?",
+      "expected": "제공 3색 중 하나",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "front",
+        "angle"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "color_options",
+      "axis": "color"
+    },
+    {
+      "id": "size_chart_matches_w160_d57_h216",
+      "description_ko": "사이즈 차트에 W160 x D57 x H216 cm가 정확히 표기됨.",
+      "check_question_ko": "결과 B의 사이즈 차트에 W160 x D57 x H216 cm로 기재되어 있나요?",
+      "expected": "W160 x D57 x H216 cm",
+      "applicable_panel_classes": [
+        "size_chart"
+      ],
+      "applicable_views": [
+        "front",
+        "close-up"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "spec",
+      "axis": "size"
+    },
+    {
+      "id": "module_lineup_shows_4_variants",
+      "description_ko": "모듈/모델 라인업 패널에 4가지(서랍형 6종, 행거형 6종, 거울-행거형 6종, 거울-서랍형 6종)가 정확 표기.",
+      "check_question_ko": "결과 B의 라인업 패널에 4가지 모델 옵션이 정확히 보이나요?",
+      "expected": "서랍형 6종 / 행거형 6종 / 거울-행거형 6종 / 거울-서랍형 6종",
+      "applicable_panel_classes": [
+        "module_lineup"
+      ],
+      "applicable_views": [
+        "front",
+        "close-up"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "model_options",
+      "axis": "module_lineup"
+    },
+    {
+      "id": "door_surface_flat_panel",
+      "description_ko": "도어 표면은 평평한 플랫 패널로 보이며 과도한 프레임/격자 몰딩이 없음.",
+      "check_question_ko": "결과 B에서 도어가 평평한 플랫 패널로 보이나요?",
+      "expected": "플랫 패널 도어",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot"
+      ],
+      "applicable_views": [
+        "front",
+        "angle"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.materials_finish",
+      "axis": "doors"
+    },
+    {
+      "id": "handle_color_contrasts_with_door",
+      "description_ko": "손잡이와 도어는 서로 다른 소재/톤으로 색 대비가 보임(크림화이트 도어도 동일 손잡이 톤).",
+      "check_question_ko": "결과 B에서 손잡이 색이 도어 색과 구분되어 보이나요?",
+      "expected": "손잡이는 도어와 다른 톤으로 식별 가능",
+      "applicable_panel_classes": [
+        "product_shot",
+        "detail_close_up",
+        "color_option"
+      ],
+      "applicable_views": [
+        "front",
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.doors_detail",
+      "axis": "handles"
+    },
+    {
+      "id": "damping_hinges_indicator",
+      "description_ko": "댐핑 힌지(부드럽게 닫힘) 관련 아이콘/문구/접사 표기가 있음.",
+      "check_question_ko": "결과 B에 ‘댐핑 힌지’ 관련 표기(아이콘/텍스트/접사)가 보이나요?",
+      "expected": "댐핑 힌지 표기 또는 접사",
+      "applicable_panel_classes": [
+        "detail_close_up",
+        "structure_chart"
+      ],
+      "applicable_views": [
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "low",
+      "source_field": "feature_descriptions.hinges_detail",
+      "axis": "hinges"
+    },
+    {
+      "id": "shelf_thickness_18mm_note",
+      "description_ko": "선반 두께 18mm 표기 또는 단면 설명이 보임.",
+      "check_question_ko": "결과 B에서 선반 두께 18mm임을 나타내는 표기/도식이 보이나요?",
+      "expected": "18mm 선반 표기",
+      "applicable_panel_classes": [
+        "structure_chart",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "low",
+      "source_field": "feature_descriptions.shelves_detail",
+      "axis": "shelves"
+    },
+    {
+      "id": "aluminum_hanging_rod_indicator",
+      "description_ko": "알루미늄 옷걸이봉 사용이 보이거나 텍스트로 명시됨.",
+      "check_question_ko": "결과 B에서 알루미늄 옷걸이봉임을 확인할 수 있나요?",
+      "expected": "알루미늄 옷걸이봉 표기/접사",
+      "applicable_panel_classes": [
+        "detail_close_up",
+        "structure_chart",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "close-up",
+        "angle"
+      ],
+      "category": "detail",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.hanging_rod_detail",
+      "axis": "hanging_rod"
+    },
+    {
+      "id": "back_panel_triple_brace_diagram",
+      "description_ko": "뒷판 3개의 보조목 보강 구조가 다이어그램/설명으로 제시됨.",
+      "check_question_ko": "결과 B에서 뒷판 3중 보조목 보강 구조를 보여주나요?",
+      "expected": "뒷판 보조목 3개 도식/설명",
+      "applicable_panel_classes": [
+        "structure_chart"
+      ],
+      "applicable_views": [
+        "front",
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.back_panel_reinforcement",
+      "axis": "back_panel"
+    },
+    {
+      "id": "lpm_finish_label",
+      "description_ko": "도어 마감 ‘LPM’ 공법이 텍스트/아이콘으로 표시됨.",
+      "check_question_ko": "결과 B에서 LPM 마감임을 나타내는 표기가 있나요?",
+      "expected": "LPM 마감 표기",
+      "applicable_panel_classes": [
+        "material_swatch",
+        "structure_chart",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "low",
+      "source_field": "feature_descriptions.materials_finish",
+      "axis": "finish"
+    },
+    {
+      "id": "e0_grade_label",
+      "description_ko": "E0 등급 소재 사용이 아이콘/문구로 표시됨.",
+      "check_question_ko": "결과 B에서 ‘E0’ 등급 표기가 보이나요?",
+      "expected": "E0 등급 표기",
+      "applicable_panel_classes": [
+        "material_swatch",
+        "structure_chart",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "low",
+      "source_field": "certifications",
+      "axis": "finish"
+    },
+    {
+      "id": "hinge_40000_cycles_label",
+      "description_ko": "도어 힌지 40,000회 개폐 테스트 통과 표기가 있음.",
+      "check_question_ko": "결과 B에 힌지 ‘40,000회 개폐 테스트’ 문구/아이콘이 있나요?",
+      "expected": "40,000회 개폐 테스트 표기",
+      "applicable_panel_classes": [
+        "structure_chart",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "low",
+      "source_field": "certifications",
+      "axis": "hinges"
+    },
+    {
+      "id": "material_bending_50kg_168h_label",
+      "description_ko": "자재 휨 강도 50kg/168시간 테스트 통과 표기.",
+      "check_question_ko": "결과 B에서 ‘50kg/168시간’ 테스트 관련 표기가 있나요?",
+      "expected": "50kg/168시간 테스트 표기",
+      "applicable_panel_classes": [
+        "structure_chart",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "low",
+      "source_field": "certifications",
+      "axis": "frame"
+    },
+    {
+      "id": "recommended_shelf_load_20kg_80cm_label",
+      "description_ko": "너비 80cm 기준 선반 권장 하중 최대 20kg 표기.",
+      "check_question_ko": "결과 B에서 ‘권장 20kg(80cm 기준)’ 표기가 있나요?",
+      "expected": "선반 권장 하중 20kg(80cm 기준)",
+      "applicable_panel_classes": [
+        "structure_chart",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "low",
+      "source_field": "certifications",
+      "axis": "shelves"
+    },
+    {
+      "id": "rod_load_16kg_80cm_label",
+      "description_ko": "옷걸이봉 하중 최대 16kg(너비 80cm 기준) 표기.",
+      "check_question_ko": "결과 B에서 옷걸이봉 ‘최대 16kg(80cm 기준)’ 표기가 있나요?",
+      "expected": "옷걸이봉 16kg(80cm 기준)",
+      "applicable_panel_classes": [
+        "structure_chart",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "low",
+      "source_field": "certifications",
+      "axis": "hanging_rod"
+    },
+    {
+      "id": "height_lineup_two_options_label",
+      "description_ko": "높이 라인업이 194cm/216cm 두 가지로 표기됨(본 상품 216cm 표시).",
+      "check_question_ko": "결과 B의 라인업/사이즈 정보에 194cm와 216cm 두 가지 높이 옵션이 보이나요?",
+      "expected": "높이 194cm / 216cm 표기",
+      "applicable_panel_classes": [
+        "module_lineup",
+        "size_chart"
+      ],
+      "applicable_views": [
+        "front",
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.height_options",
+      "axis": "size"
+    },
+    {
+      "id": "creamwhite_handle_same_tone_as_white_handle",
+      "description_ko": "컬러 옵션에서 크림화이트 도어의 손잡이 컬러가 화이트 도어와 동일 톤으로 표현됨.",
+      "check_question_ko": "결과 B의 컬러 옵션에서 크림화이트와 화이트 도어의 손잡이 톤이 동일하게 보이나요?",
+      "expected": "크림화이트 도어 손잡이 = 화이트 도어 손잡이 톤",
+      "applicable_panel_classes": [
+        "color_option"
+      ],
+      "applicable_views": [
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.doors_detail",
+      "axis": "handles"
+    },
+    {
+      "id": "no_mirror_front_in_selected_drawer_model",
+      "description_ko": "선택 모델(서랍형 160cm, H216) 전면에 거울 도어가 없어야 함.",
+      "check_question_ko": "결과 B의 히어로/제품컷 전면에 거울 도어가 보이지 않나요?",
+      "expected": "전면 거울 도어 없음",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot"
+      ],
+      "applicable_views": [
+        "front",
+        "angle"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "model_options",
+      "axis": "doors"
+    },
+    {
+      "id": "no_sliding_doors",
+      "description_ko": "슬라이딩(미닫이) 도어가 포함되면 안 됨.",
+      "check_question_ko": "결과 B에서 슬라이딩 도어가 보이지 않나요?",
+      "expected": "슬라이딩 도어 없음",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "front",
+        "angle"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.doors_detail",
+      "axis": "doors"
+    },
+    {
+      "id": "no_glass_doors",
+      "description_ko": "전면 유리(투명/반투명) 도어가 포함되면 안 됨.",
+      "check_question_ko": "결과 B 전면에 유리 도어가 보이지 않나요?",
+      "expected": "유리 도어 없음",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot"
+      ],
+      "applicable_views": [
+        "front"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "intro_full",
+      "axis": "doors"
+    },
+    {
+      "id": "no_open_shelf_front_module_in_hero",
+      "description_ko": "선택 모델 전면은 도어+서랍 구성이며 오픈 선반형 전면 모듈이 포함되면 안 됨(히어로/제품컷 기준).",
+      "check_question_ko": "결과 B의 히어로/제품컷 전면에 오픈 선반 모듈이 보이지 않나요?",
+      "expected": "전면 오픈 선반 모듈 없음",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot"
+      ],
+      "applicable_views": [
+        "front"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "model_options",
+      "axis": "shelves"
+    },
+    {
+      "id": "no_high_legs_visible",
+      "description_ko": "바닥에서 본체를 높게 띄우는 노출 다리(약 10cm 이상)가 없어야 함.",
+      "check_question_ko": "결과 B에서 본체를 높게 띄운 노출 다리가 보이지 않나요?",
+      "expected": "높은 노출 다리 없음",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "front",
+        "side",
+        "angle"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.overall_silhouette",
+      "axis": "base"
+    },
+    {
+      "id": "no_builtin_led_visible",
+      "description_ko": "전면/내부 가장자리에 LED 발광 바 등 내장 조명이 노출되면 안 됨(선택 사양 언급 없음).",
+      "check_question_ko": "결과 B에서 내장 LED 조명이 보이지 않나요?",
+      "expected": "내장 LED 발광부 없음",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "front",
+        "angle"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "intro_full",
+      "axis": "frame"
+    },
+    {
+      "id": "no_bar_or_knob_handles",
+      "description_ko": "막대형 바 핸들/동그라미 노브 등 돌출 손잡이는 없어야 함(본 제품은 매립형).",
+      "check_question_ko": "결과 B에서 바/노브 등 돌출 손잡이가 보이지 않나요?",
+      "expected": "돌출 바/노브 손잡이 없음",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "front",
+        "close-up"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.handles_detail",
+      "axis": "handles"
+    }
+  ],
+  "category": "wardrobe"
+}

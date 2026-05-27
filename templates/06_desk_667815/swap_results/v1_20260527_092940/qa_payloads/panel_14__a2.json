@@ -1,0 +1,69 @@
+{
+  "panel_id": "panel_14.jpg",
+  "panel_class": "structure_chart",
+  "vision_model": "gpt-5.5",
+  "ref_paths": [
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/03_desk_973933/use_product/screenshot_03.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/03_desk_973933/use_product/screenshot_08.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/03_desk_973933/use_product/screenshot_07.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/03_desk_973933/use_product/screenshot_05.png"
+  ],
+  "ref_labels": [
+    "main_view·전체각도",
+    "main_view·하부 프레임(전체)",
+    "detail_close_up·상판 모서리/다리",
+    "main_view·전체후면"
+  ],
+  "panel_orig_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/03_desk_667815/panel_14.jpg",
+  "swap_result_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/03_desk_667815/swap_results/v1_20260527_092940/gpt_image/panel_14__a2_v16.png",
+  "applicable_item_ids": [
+    "l_shape_with_lower_bookcase",
+    "two_stability_braces",
+    "return_supported_by_bookcase",
+    "hook_left_right_option_indicator"
+  ],
+  "user_prompt": "=== TASK ===\n이 swap 결과(B)를 사용자 제품의 verifiable checklist로 채점하라.\n\n=== 사용자 제품 ===\ncategory: desk\n제품명: 한샘 티오 ㄱ자책상 160cm\n핵심 axis: frame, legs, storage, edges, surface, structure, accessory, power, connection, size, color\n\n=== 첨부 이미지 ===\n  A_1 = main_view·전체각도\n  A_2 = main_view·하부 프레임(전체)\n  A_3 = detail_close_up·상판 모서리/다리\n  A_4 = main_view·전체후면\n  B = swap 결과 (채점 대상)\n  C = 한샘 원본 panel (composition reference)\n\n=== Panel 컨텍스트 ===\npanel_id: panel_14.jpg\npanel_class: structure_chart\nspatial_layout: 패널 중앙에 흰색 직사각형 테이블이 뒤집힌 상태로 배치되어 있다. 테이블의 네 모서리에는 네 개의 원기둥 다리가 수직으로 위를 향해 똑같은 간격으로 세워져 있다. 테이블 상판은 화면의 중앙에서 약간 오른쪽 아래로 기울어져 있다. 배경은 완전히 흰색으로, 다른 시각적 요소나 텍스트는 없다. 테이블 다리와 상판의 연결부가 명확하게 드러나 있다. 전체적으로 제품만 단독으로 강조되어 있다.\n\n=== 적용 가능한 CHECKLIST ITEMS (이 panel에서 검증 가능) ===\n각 item에 category(distortion/detail/forbidden)와 generation_feasibility 가 표시됨.\n- distortion / forbidden: strict 채점 (제품 왜곡 검출이 사용자 핵심 요구)\n- detail: image gen 한계 인정 → 명백한 차이만 fail, 모호하면 pass\n- generation_feasibility=low: 더욱 보수적으로 fail 매김 (미세 디테일)\n\n- [distortion] [feas=high] id=l_shape_with_lower_bookcase axis=frame\n    desc: ㄱ자(L자) 형태 상판과 하부 책장 유닛이 결합된 일체형 구성\n    expected: ㄱ자 상판 + 하부 책장 일체형\n    question: 결과 B에서 책상이 ㄱ자 형태이며 짧은 변을 하부 책장 유닛이 지지하는가?\n- [distortion] [feas=medium] id=two_stability_braces axis=structure\n    desc: 흔들림 저감을 위한 보강대 2개 적용\n    expected: 보강대 2개\n    question: 결과 B에서 책상 구조에 보강대 2개가 식별되는가?\n- [distortion] [feas=high] id=return_supported_by_bookcase axis=connection\n    desc: ㄱ자 짧은 변(리턴)은 독립 다리 대신 책장 유닛이 지지\n    expected: 짧은 변 지지=책장 유닛\n    question: 결과 B에서 ㄱ자 짧은 변을 책장 유닛이 아래에서 지지하는가?\n- [    detail] [feas=medium] id=hook_left_right_option_indicator axis=accessory\n    desc: 가방걸이 좌/우 선택 설치 가능함을 시각적으로 안내\n    expected: 좌/우 선택 안내 표시\n    question: 결과 B에서 가방걸이 좌/우 선택 설치 가능 표시(아이콘/텍스트/화살표)가 보이는가?\n\n=== 출력 schema (strict JSON) ===\n{\n  \"image_format\": \"single_product|lifestyle|chart_diagram|multi_panel_grid\",\n  \"items_results\": [\n    {\n      \"id\": \"...\",\n      \"verdict\": \"pass|fail|not_visible\",\n      \"reason_ko\": \"...\",\n      \"category\": \"distortion|detail|forbidden\",\n      \"generation_feasibility\": \"high|medium|low\"\n    }\n  ],\n  \"distortion_fail_count\": int,\n  \"forbidden_fail_count\": int,\n  \"composition_score\": 0-100,\n  \"hallucinations\": [\"발견된 invented feature 한국어\"],\n  \"specific_failures\": [\"distortion/forbidden fail 항목의 한국어 요약\"],\n  \"notes_ko\": \"...\"\n}\n\n판정 가이드:\n- distortion item: 다리 개수 / 가죽 vs 패브릭 / 보조쿠션 유무 / 컬러명 등 명백한 차이 → fail\n- forbidden item: invented feature (헤드레스트 등) 발견 → fail\n- detail item: 시접 종류 / 미세 곡률 / 직조 결 등이 약간 달라도 → pass (관대)\n",
+  "result": {
+    "image_format": "chart_diagram",
+    "items_results": [
+      {
+        "id": "l_shape_with_lower_bookcase",
+        "verdict": "pass",
+        "reason_ko": "결과 B에서 긴 상판과 우측 짧은 리턴이 결합된 ㄱ자 구조가 보이며, 우측 하부에 2열 책장 유닛이 일체로 배치되어 있다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "two_stability_braces",
+        "verdict": "pass",
+        "reason_ko": "긴 상판 하부 방향으로 평행한 보강 레일/브레이스 2개가 식별되어 기대 구조와 부합한다.",
+        "category": "distortion",
+        "generation_feasibility": "medium"
+      },
+      {
+        "id": "return_supported_by_bookcase",
+        "verdict": "pass",
+        "reason_ko": "ㄱ자 짧은 변이 독립 원형 다리만으로 지지되는 것이 아니라 우측 하부 책장 유닛 위에 얹혀 지지되는 형태로 보인다.",
+        "category": "distortion",
+        "generation_feasibility": "high"
+      },
+      {
+        "id": "hook_left_right_option_indicator",
+        "verdict": "pass",
+        "reason_ko": "좌측 하부에 가방걸이처럼 보이는 부품이 있고, 화살표 및 점선 표시가 함께 있어 좌/우 또는 위치 선택 설치 안내로 해석 가능하다.",
+        "category": "detail",
+        "generation_feasibility": "medium"
+      }
+    ],
+    "distortion_fail_count": 0,
+    "forbidden_fail_count": 0,
+    "composition_score": 68,
+    "hallucinations": [],
+    "specific_failures": [],
+    "notes_ko": "제품 정체성 기준으로는 ㄱ자 상판, 하부 책장 지지, 보강대 2개가 모두 확인되어 왜곡 실패는 없다. 원본 C의 단순 뒤집힌 직사각 테이블 구도와는 구조가 달라졌지만, 흰 배경의 구조 설명용 단독 제품 이미지라는 성격은 유지된다.",
+    "critical_fail_count": 0,
+    "product_score_raw": null,
+    "product_score": 100,
+    "verdict": "pass"
+  }
+}

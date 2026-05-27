@@ -1,0 +1,56 @@
+=== retry pipeline ===
+  targets: 5
+    cover (cover) 1000x1000 -> ar 1:1
+    panel_04 (design_chart) 1740x2676 -> ar 2:3
+    panel_08 (design_chart) 870x580 -> ar 3:2
+    panel_11 (design_chart) 1740x2166 -> ar 3:4
+    panel_12 (design_chart) 1740x2134 -> ar 3:4
+
+uploading product refs (GIF 3 frames)...
+  done (3)
+uploading target panels...
+  cover uploaded
+  panel_04 uploaded
+  panel_08 uploaded
+  panel_11 uploaded
+  panel_12 uploaded
+[cover/nano_banana_pro/#1] K2_aligned ar=1:1 (4 refs)
+[cover/gpt_image/#1] K2_aligned ar=1:1 (4 refs)
+[panel_04/nano_banana_pro/#1] K2_aligned ar=2:3 (4 refs)
+[panel_04/gpt_image/#1] K2_aligned ar=2:3 (4 refs)
+[cover/nano_banana_pro/#1] prod=90 comp=97 -> retry
+[panel_08/nano_banana_pro/#1] K2_aligned ar=3:2 (4 refs)
+[panel_04/nano_banana_pro/#1] prod=98 comp=92 TEXT! -> retry
+[panel_08/gpt_image/#1] K2_aligned ar=3:2 (4 refs)
+[panel_04/gpt_image/#1] prod=98 comp=92 -> pass
+[panel_11/nano_banana_pro/#1] K2_aligned ar=3:4 (4 refs)
+[cover/gpt_image/#1] prod=99 comp=97 -> pass
+[panel_11/gpt_image/#1] K2_aligned ar=3:4 (4 refs)
+[panel_08/gpt_image/#1] prod=98 comp=30 TEXT! -> retry
+[panel_12/nano_banana_pro/#1] K2_aligned ar=3:4 (4 refs)
+[panel_08/nano_banana_pro/#1] prod=97 comp=92 -> pass
+[panel_12/gpt_image/#1] K2_aligned ar=3:4 (4 refs)
+[panel_11/nano_banana_pro/#1] prod=97 comp=92 -> pass
+[cover/nano_banana_pro/#2] K2_overpaint ar=1:1 (4 refs)
+[panel_12/nano_banana_pro/#1] prod=97 comp=92 -> pass
+[panel_04/nano_banana_pro/#2] K2_overpaint ar=2:3 (4 refs)
+[panel_11/gpt_image/#1] prod=97 comp=92 -> pass
+[panel_08/gpt_image/#2] K2_overpaint ar=3:2 (4 refs)
+[panel_04/nano_banana_pro/#2] prod=98 comp=92 TEXT! -> retry
+[cover/nano_banana_pro/#2] prod=92 comp=93 -> retry
+[panel_12/gpt_image/#1] prod=96 comp=92 -> pass
+[panel_08/gpt_image/#2] prod=97 comp=92 -> pass
+
+=== DONE === /Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/01_sofa_992474/swap_results/retry_20260526_093545
+  wall: 337.5s
+  passers: 8/10
+    cover        nano_banana_pro    prod=92 comp=93 pass=False
+    cover        gpt_image          prod=99 comp=97 pass=True
+    panel_04     nano_banana_pro    prod=98 comp=92 pass=False
+    panel_04     gpt_image          prod=98 comp=92 pass=True
+    panel_08     nano_banana_pro    prod=97 comp=92 pass=True
+    panel_08     gpt_image          prod=97 comp=92 pass=True
+    panel_11     nano_banana_pro    prod=97 comp=92 pass=True
+    panel_11     gpt_image          prod=97 comp=92 pass=True
+    panel_12     nano_banana_pro    prod=97 comp=92 pass=True
+    panel_12     gpt_image          prod=96 comp=92 pass=True

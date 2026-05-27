@@ -1,0 +1,20 @@
+=== panel_04 explicit edit — gpt-image-2 quality=high ===
+  endpoint: fal-ai/gpt-image-2/edit
+  prompt length: 1590 chars
+
+original panel size: 1740×2676 (ratio 0.65)
+
+image_size: portrait_4_3
+
+uploading refs...
+  refs: 4 (panel C + 3 milo GIF frames)
+
+--- attempt #1 ---
+  saved: panel_04__a1_explicit_v2.png (gen 150.4s)
+  scores: {'sofa_milo': 5, 'dim_correct': 5, 'sub_dim_correct': 5, 'firmness_seat': 5, 'firmness_back': 5, 'layout_preserved': 5, 'text_readable': 5}
+  prod=100 verdict=pass
+  notes: Milo 2인 패브릭 소파로 정확히 교체되었고, 주요 치수 200/90/85 및 부가 치수(다릿발 14, 좌방석 깊이 52, 좌방석 높이 45) 모두 일치합니다. 좌방석 경도는 4번째(MEDIUM SOFT), 등쿠션은 5번째(SOFT)로 정확합니다. 한샘 원본 패널 레
+
+  ✓ PASS at #1
+
+DONE → /Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/01_sofa_992474/swap_results/panel04_explicit_20260526_144507

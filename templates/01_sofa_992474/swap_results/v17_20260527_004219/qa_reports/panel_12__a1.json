@@ -1,0 +1,29 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [
+    {
+      "id": "forbid_chaise_or_attached_ottoman",
+      "verdict": "pass",
+      "reason_ko": "결과 B의 소파는 정면형 2인 스트레이트 구성으로 보이며, 한쪽으로 돌출된 체어즈 확장부나 일체형 오토만이 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "module_lineup_only_2seater",
+      "verdict": "pass",
+      "reason_ko": "결과 B의 라인업에는 '밀로 패브릭소파 2인용' 한 가지 모델만 표시되어 있고, 크기도 200 X 90 X 85로 표기되어 있습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 72,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "제품 왜곡/금지 항목 기준으로는 순수 2인용 스트레이트 소파만 노출되어 PASS입니다. 원본 C의 상단 2개 모델 배치와는 달리 B는 단일 2인용 모델 중심 구성으로 바뀌었지만, 이는 해당 체크리스트의 제품 정체성 요구에는 부합합니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 100,
+  "verdict": "pass"
+}

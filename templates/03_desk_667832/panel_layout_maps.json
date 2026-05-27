@@ -1,0 +1,647 @@
+{
+  "panels": [
+    {
+      "panel_class": "lifestyle_scene",
+      "spatial_layout": "상단 2/3 영역에 책상, 의자, 수납장, 책장, 소품 등으로 구성된 실제 사용 환경이 연출되어 있다. 책상은 중앙에서 오른쪽 하단까지 넓게 배치되어 있고, 그 위에 다양한 문구류와 컵, 책 등이 놓여 있다. 책상 아래에는 바퀴 달린 서랍장이 위치한다. 왼쪽에는 책장과 소품, 오른쪽에는 의자가 있다. 하단 1/3에는 흰색 배경에 텍스트가 정렬되어 있다. 텍스트는 중앙 좌측에 제목, 그 아래에 설명문이 있다.",
+      "elements": [
+        {
+          "role": "desk",
+          "position": "중앙~오른쪽 하단",
+          "description": "밝은 나무색 상판과 흰색 다리의 책상"
+        },
+        {
+          "role": "drawer unit",
+          "position": "책상 아래 중앙",
+          "description": "바퀴가 달린 3단 서랍장"
+        },
+        {
+          "role": "chair",
+          "position": "오른쪽 하단",
+          "description": "회색 방석과 흰색 프레임의 의자"
+        },
+        {
+          "role": "bookshelf",
+          "position": "좌측 상단~중앙",
+          "description": "책과 소품이 놓인 흰색 책장"
+        },
+        {
+          "role": "accessories",
+          "position": "책상 위, 벽면",
+          "description": "문구류, 컵, 메모보드, 미니 서랍, 책 등 다양한 소품"
+        },
+        {
+          "role": "bed",
+          "position": "좌측 하단",
+          "description": "체크무늬 침구가 일부 보임"
+        },
+        {
+          "role": "rug",
+          "position": "오른쪽 하단",
+          "description": "체크 패턴의 러그"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "하단 중앙~좌측",
+          "content": "티오 악세서리\n함께하면 더욱 특별해지는 효과\n티오 책상과 책장에 악세서리를 더해, 더 풍성하게 채우는 재미를 경험하세요. 악세서리만으로도 한층 더 편리해지고, 더 특별하게 구성할 수 있습니다."
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "상단 2/3의 실제 제품(책상, 서랍장, 의자, 책장, 소품 등) 영역만 교체하고, 하단의 텍스트 영역과 전체적인 배치, 소품 연출, 배경은 그대로 유지합니다.",
+      "panel": "panel_01.jpg",
+      "panel_idx": 1
+    },
+    {
+      "panel_class": "module_lineup",
+      "spatial_layout": "상단 좌측에 '라인업' 제목과 단위 안내 텍스트가 위치. 그 아래로 2~3열의 격자 형태로 각 제품 이미지와 설명이 정렬됨. 각 행은 2~3개의 제품으로 구성되어 있으며, 각 제품은 상단에 작은 이미지, 하단에 제품명과 치수 텍스트가 세로로 배치됨. 전체적으로 좌측 정렬이 강하며, 제품 간 간격이 일정하게 유지됨. 하단으로 갈수록 제품 종류가 다양하게 배열됨. 각 제품군은 행 단위로 구분되어 있음.",
+      "elements": [
+        {
+          "role": "title",
+          "position": "top left",
+          "description": "라인업, 단위 안내 텍스트"
+        },
+        {
+          "role": "product_image",
+          "position": "grid, below title, leftmost",
+          "description": "티오 플랩도어 60cm 이미지"
+        },
+        {
+          "role": "product_image",
+          "position": "grid, below title, center",
+          "description": "티오 플랩도어 70cm 이미지"
+        },
+        {
+          "role": "product_image",
+          "position": "grid, below title, rightmost",
+          "description": "티오 플랩도어 80cm 이미지"
+        },
+        {
+          "role": "product_image",
+          "position": "grid, second row left",
+          "description": "티오 2단도어 60cm 이미지"
+        },
+        {
+          "role": "product_image",
+          "position": "grid, second row center",
+          "description": "티오 플랩도어 70cm 이미지"
+        },
+        {
+          "role": "product_image",
+          "position": "grid, second row right",
+          "description": "티오 2단도어 40cm (2개입) 이미지"
+        },
+        {
+          "role": "product_image",
+          "position": "grid, third row left",
+          "description": "티오 수납함 2칸 이미지"
+        },
+        {
+          "role": "product_image",
+          "position": "grid, third row right",
+          "description": "티오 이동서랍장 이미지"
+        },
+        {
+          "role": "product_image",
+          "position": "grid, fourth row left",
+          "description": "티오 자석보드 60cm 이미지"
+        },
+        {
+          "role": "product_image",
+          "position": "grid, fourth row center",
+          "description": "티오 책상장 LED 스터디 조명 80cm 이미지"
+        },
+        {
+          "role": "product_image",
+          "position": "grid, fifth row left",
+          "description": "티오 LED 클램프조명 (플렉스Z 공용) 이미지"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top left",
+          "content": "라인업\n단위 : cm"
+        },
+        {
+          "region": "below each product image",
+          "content": "제품명 및 치수 (예: 티오 플랩도어 60cm\n59.6 X 1.5 X 35.3)"
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "각 제품 이미지 영역만 동일 위치/크기로 교체하고, 텍스트 및 전체 그리드 레이아웃은 그대로 유지한다. 제품명과 치수 텍스트 위치는 변경하지 않는다.",
+      "panel": "panel_02.jpg",
+      "panel_idx": 2
+    },
+    {
+      "panel_class": "lifestyle_scene",
+      "spatial_layout": "상단에는 책상과 책장이 결합된 가구가 전체적으로 배치되어 있고, 책상 위에는 램프, 노트북, 필기구, 컵 등이 놓여 있다. 책장에는 책, 소품, 수납함이 다양한 칸에 정돈되어 있다. 벽면에는 펜꽂이와 메모꽂이가 부착되어 있으며, 책상 하단에는 헤드폰이 걸려 있다. 각 컷마다 책상과 책장, 주변 소품의 배치가 다르지만, 모두 실사용 환경을 보여준다. 자연광이 들어오는 창문이 배경에 위치하며, 의자와 러그 등도 함께 연출되어 있다.",
+      "elements": [
+        {
+          "role": "책상",
+          "position": "이미지 중앙 및 하단",
+          "description": "넓은 작업 공간을 제공하는 흰색 책상"
+        },
+        {
+          "role": "책장",
+          "position": "이미지 상단 및 배경",
+          "description": "다양한 크기의 칸으로 구성된 수납장"
+        },
+        {
+          "role": "의자",
+          "position": "책상 앞",
+          "description": "회전형 사무용 의자"
+        },
+        {
+          "role": "스탠드 조명",
+          "position": "책상 위",
+          "description": "파란색 스탠드 조명"
+        },
+        {
+          "role": "노트북/태블릿",
+          "position": "책상 위",
+          "description": "작업용 전자기기"
+        },
+        {
+          "role": "수납 소품",
+          "position": "책장 및 벽면",
+          "description": "펜꽂이, 메모꽂이, 헤드폰 걸이 등"
+        },
+        {
+          "role": "책/문구류",
+          "position": "책장, 책상 위",
+          "description": "다양한 책과 필기구, 노트"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "책장 및 책상 위",
+          "content": "책, 노트, 메모지, 일부 표지에 영문 텍스트"
+        },
+        {
+          "region": "벽면 수납함",
+          "content": "펜, 메모지, 파일 등 사무용품"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "책상과 책장(가구 본체) 영역만 동일 위치와 크기로 교체하고, 주변 소품(책, 노트북, 조명, 벽면 수납함 등)은 그대로 유지하여 라이프스타일 연출과 레이아웃을 보존한다.",
+      "panel": "panel_03.jpg",
+      "panel_idx": 3
+    },
+    {
+      "panel_class": "size_chart",
+      "spatial_layout": "상단 좌측에 '사이즈'와 단위 안내 텍스트가 위치. 중앙 상단에 제품의 정면 이미지가 가로로 길게 배치되어 있고, 이미지 위에 79.5cm, 좌측에 2.7cm, 우측에 5.7cm 치수 표기가 있음. 하단 좌측에는 '컬러' 텍스트와 함께 정사각형 컬러칩(화이트)이 위치. 컬러칩 아래에 '화이트' 텍스트가 있음. 맨 하단 중앙에는 색상 표현 차이에 대한 안내 문구가 있음.",
+      "elements": [
+        {
+          "role": "title",
+          "position": "top left",
+          "description": "'사이즈' 및 단위 안내 텍스트"
+        },
+        {
+          "role": "product_image",
+          "position": "center upper",
+          "description": "가로로 긴 제품 이미지와 3방향 치수 표기"
+        },
+        {
+          "role": "dimension_label",
+          "position": "above, left, right of product image",
+          "description": "치수(79.5, 2.7, 5.7) 표기"
+        },
+        {
+          "role": "color_title",
+          "position": "left below product image",
+          "description": "'컬러' 텍스트"
+        },
+        {
+          "role": "color_swatch",
+          "position": "below color_title",
+          "description": "정사각형 화이트 컬러칩"
+        },
+        {
+          "role": "color_label",
+          "position": "below color_swatch",
+          "description": "'화이트' 텍스트"
+        },
+        {
+          "role": "notice",
+          "position": "bottom center",
+          "description": "색상 표현 차이 안내 문구"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top left",
+          "content": "사이즈 단위 : cm"
+        },
+        {
+          "region": "above, left, right of product image",
+          "content": "2.7, 79.5, 5.7"
+        },
+        {
+          "region": "left below product image",
+          "content": "컬러"
+        },
+        {
+          "region": "below color_swatch",
+          "content": "화이트"
+        },
+        {
+          "region": "bottom center",
+          "content": "* 디스플레이마다 색상 표현의 차이가 있을 수 있습니다."
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "제품 이미지와 치수 표기(중앙 상단 영역) 및 컬러칩(좌측 하단 영역)만 교체하고, 텍스트와 전체 레이아웃, 안내 문구 위치는 그대로 유지한다.",
+      "panel": "panel_04.jpg",
+      "panel_idx": 4
+    },
+    {
+      "panel_class": "lifestyle_scene",
+      "spatial_layout": "책상 중앙에 헤드폰과 노트, 펜, 파란색 스탠드 조명이 좌측에 위치. 책상 뒤 벽면에는 메모지와 그림, 자석이 중앙에 부착. 우측에는 미니 서랍장과 캘린더, 책들이 세워져 있음. 상단 선반에는 카메라와 책, 파란색 플라스틱 박스가 좌우로 배치. 전체적으로 책상과 수납장이 프레임을 이루며, 각 소품은 정돈되어 있음.",
+      "elements": [
+        {
+          "role": "lamp",
+          "position": "bottom left",
+          "description": "파란색 스탠드 조명"
+        },
+        {
+          "role": "headphones",
+          "position": "bottom center",
+          "description": "검정색 헤드폰"
+        },
+        {
+          "role": "notebook",
+          "position": "bottom center",
+          "description": "파란색 노트"
+        },
+        {
+          "role": "pen",
+          "position": "bottom left",
+          "description": "흰색 펜"
+        },
+        {
+          "role": "memo_board",
+          "position": "center back wall",
+          "description": "메모지와 그림, 자석 3개"
+        },
+        {
+          "role": "mini_drawer",
+          "position": "right",
+          "description": "흰색 2단 미니 서랍장"
+        },
+        {
+          "role": "calendar",
+          "position": "right",
+          "description": "8 MON 표시 탁상 캘린더"
+        },
+        {
+          "role": "books",
+          "position": "right",
+          "description": "세워진 책 4권"
+        },
+        {
+          "role": "camera",
+          "position": "top left shelf",
+          "description": "흰색 카메라와 책 2권"
+        },
+        {
+          "role": "blue_box",
+          "position": "top right shelf",
+          "description": "파란색 플라스틱 박스"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "center back wall",
+          "content": "have a good time"
+        },
+        {
+          "region": "right",
+          "content": "Drop Shasow, LET IT BE, 8 MON"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "책상과 수납장(프레임) 및 소품의 위치와 크기를 그대로 유지한 채, 제품(책상/수납장) 영역만 동일한 각도와 비율로 교체. 주변 소품 및 배경은 변경하지 않음.",
+      "panel": "panel_05.jpg",
+      "panel_idx": 5
+    },
+    {
+      "panel_class": "lifestyle_scene",
+      "spatial_layout": "책상은 이미지 하단 중앙에 위치하며, 상단에는 선반과 수납장이 있다. 선반 위에는 카메라와 책이 좌우로 배치되어 있다. 책상 뒷면 벽에는 펜꽂이와 소품함이 중앙에 나란히 부착되어 있다. 책상 좌측에는 파란색 스탠드 조명이 있고, 우측에는 책과 미니 서랍, 날짜 표시 소품이 정렬되어 있다. 책상 표면에는 노트, 펜, 헤드폰이 흩어져 있다. 전체적으로 각 요소는 직선적으로 정돈되어 있으며, 좌우 대칭에 가깝다.",
+      "elements": [
+        {
+          "role": "desk",
+          "position": "bottom center",
+          "description": "흰색 상판의 책상"
+        },
+        {
+          "role": "shelf",
+          "position": "top center",
+          "description": "책상 위 선반"
+        },
+        {
+          "role": "cabinet",
+          "position": "topmost",
+          "description": "상단 수납장"
+        },
+        {
+          "role": "lamp",
+          "position": "left on desk",
+          "description": "파란색 스탠드 조명"
+        },
+        {
+          "role": "organizer",
+          "position": "center back wall",
+          "description": "펜꽂이와 소품함"
+        },
+        {
+          "role": "books",
+          "position": "right on desk",
+          "description": "세로로 세운 책들"
+        },
+        {
+          "role": "mini_drawer",
+          "position": "right on desk",
+          "description": "작은 2단 서랍"
+        },
+        {
+          "role": "calendar",
+          "position": "right on desk",
+          "description": "날짜 표시 소품"
+        },
+        {
+          "role": "headphones",
+          "position": "center on desk",
+          "description": "무선 헤드폰"
+        },
+        {
+          "role": "stationery",
+          "position": "center on desk",
+          "description": "노트, 펜, 메모지"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "right on desk",
+          "content": "Drop Shasow, 8 MON"
+        },
+        {
+          "region": "top shelf",
+          "content": "책 제목 일부"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "책상 및 책상 위 소품(조명, 책, 서랍, 캘린더, 헤드폰, 문구류) 영역만 교체하고, 선반과 벽면 수납 구조, 상단 수납장은 동일하게 유지한다. 배치와 각 요소의 위치는 그대로 보존한다.",
+      "panel": "panel_06.jpg",
+      "panel_idx": 6
+    },
+    {
+      "panel_class": "detail_close_up",
+      "spatial_layout": "상단에는 흰색 선반이 수평으로 길게 위치하며, 선반 아래쪽 전면에는 흰색 바 형태의 조명이 부착되어 있다. 조명 우측 끝에는 전원 버튼 아이콘이 명확하게 보인다. 선반 위에는 파란색과 하늘색 책이 겹쳐 쌓여 있다. 하단 배경에는 벽에 부착된 수납함과 카드, 펜, 클립 등이 정돈되어 있다. 우측 벽면에는 원형 자석 또는 후크가 두 개 나란히 배치되어 있다. 전체적으로 제품(조명)의 위치가 중앙 상단에 집중되어 있고, 주변 소품들은 하단과 우측에 분산되어 있다.",
+      "elements": [
+        {
+          "role": "main_product",
+          "position": "상단 중앙, 선반 하단에 부착",
+          "description": "흰색 바 형태의 조명, 전원 버튼 표시"
+        },
+        {
+          "role": "shelf",
+          "position": "이미지 최상단, 수평",
+          "description": "흰색 선반, 위에 책이 놓여 있음"
+        },
+        {
+          "role": "books",
+          "position": "선반 위, 좌측",
+          "description": "파란색, 하늘색 책 두 권"
+        },
+        {
+          "role": "storage_containers",
+          "position": "하단 좌측",
+          "description": "벽에 부착된 수납함, 카드와 펜, 클립 등 수납"
+        },
+        {
+          "role": "wall_hooks",
+          "position": "우측 벽면, 수평 배열",
+          "description": "원형 자석 또는 후크 두 개"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "조명 우측 끝",
+          "content": "전원 버튼 아이콘"
+        },
+        {
+          "region": "책 등",
+          "content": "책 등 일부에 텍스트가 있으나 식별 불가"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "상단 중앙의 조명(메인 제품) 영역만 동일 위치와 크기로 교체하고, 선반, 책, 수납함, 벽면 소품 등 주변 배경 요소는 그대로 유지한다.",
+      "panel": "panel_07.jpg",
+      "panel_idx": 7
+    },
+    {
+      "panel_class": "lifestyle_scene",
+      "spatial_layout": "상단 좌측에 '1단계' 텍스트 라벨이 검은 타원형 배경에 위치. 중앙에는 흰색 책상과 상부장, 뒷면 우드 패널이 배치됨. 책상 위 좌측에는 나무 강아지 장난감, 그 옆에 주황색 달력, 중앙에 흰색 펜꽂이와 원형 트레이가 나란히 놓임. 우측에는 세 권의 책이 세워져 있고, 뒷면 우드 패널 중앙에는 화이트 보드가 부착되어 메모지와 사진이 자석으로 고정됨. 전체적으로 정면 시점, 제품과 소품이 자연스럽게 배치됨.",
+      "elements": [
+        {
+          "role": "label",
+          "position": "top left",
+          "description": "'1단계' 텍스트가 검은 타원형 배경에 있음"
+        },
+        {
+          "role": "desk",
+          "position": "center bottom",
+          "description": "흰색 책상 본체"
+        },
+        {
+          "role": "upper shelf",
+          "position": "center top",
+          "description": "책상 상단의 수납장"
+        },
+        {
+          "role": "back panel",
+          "position": "center",
+          "description": "우드톤 뒷판"
+        },
+        {
+          "role": "calendar",
+          "position": "left on desk",
+          "description": "주황색 탁상 달력"
+        },
+        {
+          "role": "toy",
+          "position": "far left on desk",
+          "description": "나무 강아지 장난감"
+        },
+        {
+          "role": "pen holder",
+          "position": "center on desk",
+          "description": "흰색 펜꽂이와 트레이"
+        },
+        {
+          "role": "books",
+          "position": "right on desk",
+          "description": "세 권의 책이 세워져 있음"
+        },
+        {
+          "role": "whiteboard",
+          "position": "center back panel",
+          "description": "메모지와 사진이 자석으로 부착된 화이트 보드"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "top left",
+          "content": "1단계"
+        },
+        {
+          "region": "left on desk",
+          "content": "NOVEMBER 11"
+        },
+        {
+          "region": "right on books",
+          "content": "Urbanlike, Graphic ASP, The Great Forest"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "책상, 상부장, 뒷판(우드톤) 및 화이트보드 영역만 교체하고, 소품(달력, 장난감, 펜꽂이, 책)과 텍스트 라벨의 위치와 크기는 그대로 유지한다.",
+      "panel": "panel_08.gif",
+      "panel_idx": 8
+    },
+    {
+      "panel_class": "lifestyle_scene",
+      "spatial_layout": "상단 좌측에 검정색과 흰색 배경의 텍스트 라벨이 위치. 중앙에는 책상과 책장, 그리고 그 위에 다양한 소품들이 배치됨. 책상 위에는 왼쪽에 나무 장난감 개, 중앙에 달력과 연필꽂이, 오른쪽에 책들이 세워져 있음. 책상 뒷면에는 우드톤 배경과 화이트 보드가 부착되어 있고, 보드에는 메모와 사진이 자석으로 고정됨. 전체적으로 제품이 중앙에 크게 배치되어 있으며, 주변 소품들은 자연스럽게 배치되어 생활감을 강조함.",
+      "elements": [
+        {
+          "role": "텍스트 라벨",
+          "position": "상단 좌측",
+          "description": "전구색 논리/수리영역 (6500K)"
+        },
+        {
+          "role": "책상",
+          "position": "중앙 하단",
+          "description": "화이트 컬러의 책상 본체"
+        },
+        {
+          "role": "책장",
+          "position": "중앙 상단",
+          "description": "책상과 일체형인 상부 책장"
+        },
+        {
+          "role": "장난감",
+          "position": "책상 좌측",
+          "description": "나무로 된 강아지 장난감"
+        },
+        {
+          "role": "달력",
+          "position": "책상 중앙 좌측",
+          "description": "11월 달력이 세워져 있음"
+        },
+        {
+          "role": "연필꽂이",
+          "position": "책상 중앙",
+          "description": "흰색 원통형 연필꽂이와 작은 원형 트레이"
+        },
+        {
+          "role": "책",
+          "position": "책상 우측",
+          "description": "세 권의 책이 세워져 있음"
+        },
+        {
+          "role": "화이트보드",
+          "position": "책상 뒷면 중앙",
+          "description": "메모와 사진이 자석으로 부착된 보드"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "상단 좌측",
+          "content": "전구색 논리/수리영역 (6500K)"
+        }
+      ],
+      "fixed_layout": false,
+      "swap_instruction": "책상과 책장(가구 본체) 영역만 교체하고, 주변 소품(장난감, 달력, 연필꽂이, 책, 보드 및 메모 등)은 동일한 위치와 크기로 유지하여 레이아웃을 보존한다.",
+      "panel": "panel_09.gif",
+      "panel_idx": 9
+    },
+    {
+      "panel_class": "detail_close_up",
+      "spatial_layout": "이미지는 좌우 2분할로 구성되어 있다. 왼쪽에는 'COLOR'와 색상 아이콘이 있는 버튼이 중앙에 위치하며, 오른쪽에는 전원 및 밝기 조절 아이콘이 있는 버튼이 중앙에 위치한다. 두 버튼 모두 흰색 본체의 일부로, 각 버튼은 사각형 형태로 돌출되어 있다. 하단에는 각각의 버튼 아래에 한글 설명 텍스트가 배치되어 있다. 좌측 하단에는 '색온도 조절', 우측 하단에는 '밝기 조절'이라는 텍스트가 있다. 배경은 흰색으로 통일되어 있다.",
+      "elements": [
+        {
+          "role": "color_temperature_button",
+          "position": "좌측 중앙",
+          "description": "COLOR와 색상 아이콘이 인쇄된 사각형 버튼"
+        },
+        {
+          "role": "brightness_button",
+          "position": "우측 중앙",
+          "description": "전원 및 밝기 조절 아이콘이 인쇄된 사각형 버튼"
+        },
+        {
+          "role": "color_temperature_label",
+          "position": "좌측 하단",
+          "description": "'색온도 조절' 한글 텍스트"
+        },
+        {
+          "role": "brightness_label",
+          "position": "우측 하단",
+          "description": "'밝기 조절' 한글 텍스트"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "좌측 하단",
+          "content": "색온도 조절"
+        },
+        {
+          "region": "우측 하단",
+          "content": "밝기 조절"
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "좌우 2분할 구조와 버튼 위치, 하단 텍스트 위치를 그대로 유지한 채, 각 버튼(제품) 영역만 동일 위치와 크기로 교체한다. 배경 및 텍스트 레이아웃은 변경하지 않는다.",
+      "panel": "panel_10.jpg",
+      "panel_idx": 10
+    },
+    {
+      "panel_class": "structure_chart",
+      "spatial_layout": "상단 중앙에 조명 제품 이미지가 가로로 길게 배치되어 있다. 하단 1/3 영역에는 두 줄의 가로선이 있으며, 그 사이에 텍스트가 좌우로 정렬되어 있다. 좌측 하단에는 '조명'이라는 텍스트가, 우측 하단에는 '알루미늄+분체도장'이라는 텍스트가 위치한다. 전체적으로 여백이 넓고, 각 요소는 명확하게 분리되어 있다. 제품 이미지는 텍스트와 충분히 떨어져 있다. 텍스트 영역은 하단에 집중되어 있다.",
+      "elements": [
+        {
+          "role": "product_image",
+          "position": "상단 중앙",
+          "description": "가로로 긴 조명 제품 이미지"
+        },
+        {
+          "role": "label",
+          "position": "하단 좌측",
+          "description": "'조명' 텍스트"
+        },
+        {
+          "role": "material_info",
+          "position": "하단 우측",
+          "description": "'알루미늄+분체도장' 텍스트"
+        },
+        {
+          "role": "divider_line",
+          "position": "하단 텍스트 위아래",
+          "description": "가로로 긴 구분선 2개"
+        }
+      ],
+      "text_zones": [
+        {
+          "region": "하단 좌측",
+          "content": "조명"
+        },
+        {
+          "region": "하단 우측",
+          "content": "알루미늄+분체도장"
+        }
+      ],
+      "fixed_layout": true,
+      "swap_instruction": "상단 중앙의 product_image 영역만 동일 비율과 위치로 교체하고, 하단 텍스트와 구분선 레이아웃은 그대로 유지한다.",
+      "panel": "panel_11.jpg",
+      "panel_idx": 11
+    }
+  ]
+}

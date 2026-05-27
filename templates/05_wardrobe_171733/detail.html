@@ -1,0 +1,465 @@
+<style>
+/* ------------------------------
+web font
+------------------------------ */
+/* 프리텐다드 웹폰트*/
+
+/*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
+https://github.com/orioncactus/pretendard
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:900;
+	font-display:swap;
+	src:local('Pretendard Black'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Black.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Black.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:800;
+	font-display:swap;
+	src:local('Pretendard ExtraBold'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraBold.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraBold.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:700;
+	font-display:swap;
+	src:local('Pretendard Bold'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Bold.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Bold.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:600;
+	font-display:swap;
+	src:local('Pretendard SemiBold'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-SemiBold.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-SemiBold.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:500;
+	font-display:swap;
+	src:local('Pretendard Medium'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Medium.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Medium.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:400;
+	font-display:swap;
+	src:local('Pretendard Regular'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Regular.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Regular.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:300;
+	font-display:swap;
+	src:local('Pretendard Light'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Light.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Light.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:200;
+	font-display:swap;
+	src:local('Pretendard ExtraLight'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraLight.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-ExtraLight.subset.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Pretendard';
+	font-weight:100;
+	font-display:swap;
+	src:local('Pretendard Thin'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Thin.subset.woff2') format('woff2'), url('https://image2.hanssem.com/hsmall/ui/font/Pretendard-Thin.subset.woff') format('woff');
+}
+
+.sec-comp {padding:24px 0;font-family:'Pretendard',sans-serif;font-size:12px;line-height:1.4;font-weight:400;color:#121212;word-break:break-all;word-wrap:break-word;}
+.sec-comp * {margin:0;padding:0;}
+.sec-comp img {vertical-align:top;border:0;}
+.sec-comp a {text-decoration:none;color:#121212;-webkit-tap-highlight-color:transparent}
+.sec-comp a:active {text-decoration:none;}
+.sec-comp a:visited {text-decoration:none;}
+.sec-comp a:hover {text-decoration:none;}
+.sec-comp a:focus {text-decoration:none;}
+.sec-comp fieldset {border:0;}
+.sec-comp input {font-family:inherit;line-height:inherit;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+.sec-comp input::-webkit-search-cancel-button {display:none;}
+.sec-comp _::-webkit-full-page-media, _:future, :root input:disabled {opacity:1;}
+.sec-comp input:focus {outline:none;}
+.sec-comp textarea {display:block;box-sizing:border-box;width:100%;padding:10px;border:1px solid #e2e2e2;background-color:#fff;font-family:'Pretendard',sans-serif;font-size:1.4rem;color:#121212;resize:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px solid #dfdfdf;border-radius:0;}
+.sec-comp textarea:focus {outline:none;position:relative;z-index:1;border:1px solid #ff3a69;color:#121212;}
+.sec-comp _::-webkit-full-page-media, _:future, :root textarea:disabled {opacity:1;} 
+.sec-comp select:focus {outline:none;}
+.sec-comp table {border:0 none;border-spacing:0;border-collapse:collapse;}
+.sec-comp ul {list-style:none;}
+.sec-comp ol {list-style-position:outside;margin:0;padding:0 0 0 15px;}
+.sec-comp ol li {margin:0;padding:0;}
+.sec-comp button {background:none;border:none;cursor:pointer;outline:none;font-family:'Pretendard';color:#121212;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.sec-comp iframe {border:0;}
+.sec-comp label {-webkit-tap-highlight-color:transparent}
+
+.sec-comp .subhead {display:block;padding:16px 20px;font-size:15px;font-weight:500;}
+.sec-comp .cont-txt {padding:8px 20px;}
+.sec-comp .cont-txt h2 {font-size:30px;font-weight:500;line-height:1.2;}
+.sec-comp .cont-txt h2 b {font-weight:bold;}
+.sec-comp .cont-txt h2 i {font-style:italic;}
+.sec-comp .cont-txt h3 {font-size:18px;font-weight:500;}
+.sec-comp .cont-txt h3 b {font-weight:bold;}
+.sec-comp .cont-txt h3 i {font-style:italic;}
+.sec-comp .cont-txt h6 {font-size:11px;font-weight:300;}
+.sec-comp .cont-txt h6 b {font-weight:bold;}
+.sec-comp .cont-txt h6 i {font-style:italic;}
+.sec-comp .cont-txt p {font-size:15px;line-height:1.5;color:#121212;font-weight:300;}
+.sec-comp .cont-txt p b {font-weight:bold;}
+.sec-comp .cont-txt p i {font-style:italic;}
+.sec-comp .img-box {padding:16px 0;}
+.sec-comp .img-box img {display:block;width:100%;height:auto;}
+.sec-comp .flex-tbl {margin:20px 20px 0;display:flex;flex-wrap:wrap;border-top:1px solid #121212;}
+.sec-comp .flex-tbl:only-child {margin:auto 16px;}
+.sec-comp .flex-tbl .th {padding:16px;font-size:13px;display:flex;align-items:center;border-bottom:1px solid #efefef;box-sizing:border-box;flex:0 0 100px;background:#f6f6f6;font-weight:400;color:#666;}
+.sec-comp .flex-tbl .td {padding:16px;font-size:13px;display:flex;align-items:center;border-bottom:1px solid #efefef;box-sizing:border-box;flex-basis:calc(100% - 100px);color:#121212;}
+.sec-comp .keyword-list {padding:8px 20px 24px;display:flex;flex-wrap:wrap;gap:8px;}
+.sec-comp .keyword-list span {border-radius:2px;padding:4px 6px;background:#f6f6f6;color:#121212;text-decoration:none;font-size:10px;}
+.sec-comp .tbl {margin:20px auto 0;width:calc(100% - 40px);border-collapse:collapse;}
+.sec-comp .tbl:only-child {margin:auto;}
+.sec-comp .tbl th,
+.sec-comp .tbl td {padding:16px;width:25%;height:50px;border-bottom:1px solid #efefef;vertical-align:middle;font-size:13px;text-align:left;box-sizing:border-box;line-height:normal;}
+.sec-comp .tbl th {background:#f6f6f6;color:#666;font-weight:400;}
+.sec-comp .tbl td {color:#121212;word-break:break-all;}
+.sec-comp .tbl thead th {border-top:1px solid #121212;}
+.sec-comp .cont-vid {padding:16px 0;position:relative;}
+.sec-comp .cont-vid video {display:block;width:100%;}
+.sec-comp .cont-vid.vertical {width:64vw;margin:0 auto;}
+.sec-comp .cont-vid .play-btn {position:absolute;top:16px;bottom:16px;left:0;right:0;margin:auto;font-size:0;color:transparent;border:none;background:none;}
+.sec-comp .cont-vid .play-btn::before {width:48px;height:48px;content:'';position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;opacity:0;background:url(https://image2.hanssem.com/hsmall/store/mo/images/editor/play-btn.png) center / contain no-repeat;transition:.4s}
+.sec-comp .cont-vid .play-btn.active::before {opacity:1;}
+
+/* mo */
+@media (max-width:750px) {
+.sec-comp {max-width:100vw;}
+}
+
+/* pc */
+@media (min-width:750px) {
+.sec-comp {padding:40px 0;}
+.sec-comp .subhead {padding:16px 0;font-size:16px;font-weight:500;}
+.sec-comp .cont-txt {padding:4px 0;}
+.sec-comp .cont-txt h2 {font-size:32px;font-weight:700;line-height:1.4;}
+.sec-comp .cont-txt h3 {font-size:24px;font-weight:500;}
+.sec-comp .cont-txt h6 {font-size:16px;font-weight:400;}
+.sec-comp .cont-txt p {font-size:20px;line-height:1.4;font-weight:400;}
+.sec-comp .img-box {padding:30px 0;}
+.sec-comp .cont-vid {padding:30px 0;width:100%;}
+.sec-comp .cont-vid .play-btn {top:30px;bottom:30px;}
+.sec-comp .cont-vid .play-btn::before {width:72px;height:72px;}
+.sec-comp .keyword-list {padding:8px 0 24px;}
+.sec-comp .keyword-list span {font-size:12px;}
+.sec-comp .tbl {width:100%;margin-top:40px;}
+.sec-comp .tbl:only-child {margin-top:0;}
+.sec-comp .tbl th,
+.sec-comp .tbl td {padding:14px 20px;}
+.sec-comp .flex-tbl {margin:40px 0 0;}
+.sec-comp .flex-tbl:only-child {margin:0;}
+.sec-comp .flex-tbl .th {padding:14px 20px;font-size:14px;}
+.sec-comp .flex-tbl .td {padding:14px 20px;font-size:14px;}
+}
+  @font-face {
+                 font-family: 'wecandeoIcon';
+                 src: url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.eot?46ypa');
+                 src: url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.eot?46ypa#iefix') format('embedded-opentype'), url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.ttf?46ypa') format('truetype'), url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.woff?46ypa') format('woff'), url('https://play.acs.wecandeo.com/player/default/new_player/css/fonts/wecandeoIcon.svg?46ypa#wecandeoIcon') format('svg');
+                 font-weight: normal;
+                 font-style: normal;
+             }
+         
+             .sec-comp .view-area .play-btn {
+                 position: absolute;
+                 top: 0;
+                 bottom: 0;
+                 left: 0;
+                 right: 0;
+                 margin: auto;
+                 font-size: 0;
+                 color: transparent;
+                 border: none;
+                 background: transparent;
+             }
+         
+             .sec-comp .view-area .play-btn::before {
+                 content: ""\e918"";
+                 font-family: wecandeoIcon;
+                 font-size: 96px;
+                 color: transparent;
+                 transition: .4s
+             }
+         
+             .sec-comp .view-area .play-btn.active::before {
+                 color: #fff
+             }
+</style> <script>
+	document.addEventListener("DOMContentLoaded", function() {
+		var videoElements = document.querySelectorAll('.cont-vid video');
+		
+		// 비디오 재생 버튼
+		videoElements.forEach(function(el) {
+			var playBtn = el.nextElementSibling;
+
+			playBtn.addEventListener('click', function() {
+				if (playBtn.classList.contains("active")) {
+					el.play();
+					playBtn.innerHTML = "일시정지";
+					playBtn.classList.toggle("active");
+				} else {
+					el.pause();
+					playBtn.innerHTML = "재생";
+					playBtn.classList.toggle("active");
+				}
+			});
+
+			el.addEventListener('ended', function() {
+				playBtn.innerHTML = "재생";
+				playBtn.classList.toggle("active");
+			});
+		});
+
+		// 세로 동영상 검출
+		for (var i = 0; i < videoElements.length; i++) {
+			const el = videoElements[i];
+
+			el.onloadeddata = function() {
+				if (el.videoHeight > el.videoWidth) {
+					el.parentElement.classList.add('vertical');
+				}
+			};
+		}
+
+	});
+</script> 
+<div class="sec-comp" id="infoTypeCd_1"><strong class="subhead">기본정보</strong>
+	<div class="cont-txt"><h2><span style="white-space-collapse: preserve;">샘베딩 베이직 옷장</span></h2><h2><span style="white-space-collapse: preserve;">80cm (높이 194cm)<br></span><span style="white-space-collapse: preserve;">행거서랍형</span></h2><p></p><p></p><p><br></p><p><span style="white-space-collapse: preserve;">기본에 충실한 디자인과 모듈로,</span></p><p><span style="white-space-collapse: preserve;">합리적이고 실용적인 공간을 꾸며보세요.</span></p><h3><span style="white-space-collapse: preserve;"><br></span></h3><h3><span style="white-space-collapse: preserve;"><br></span></h3><p></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560324030_0.png?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560324030_0.png?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560324030_0.png?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560324030_0.png?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560324030_0.png?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560324030_0.png" width="1305" height="870" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3><span style="white-space-collapse: preserve;">가장 베이직한 디자인과 컬러</span></h3><p><span style="white-space-collapse: preserve;">군더더기 없이 깔끔한 디자인과<br></span><span style="white-space-collapse: preserve;">화이트, 라이트오크 2가지 컬러로<br></span><span style="white-space-collapse: preserve;">차분하고 내추럴한 공간을 연출할 수 있습니다.</span></p><p><span style="white-space-collapse: preserve;"><br></span></p><p><span style="white-space-collapse: preserve;"><br></span></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560343975_0.png?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560343975_0.png?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560343975_0.png?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560343975_0.png?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560343975_0.png?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560343975_0.png" width="1305" height="1755" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3><span style="white-space-collapse: preserve;">사용이 편리한 양문형 손잡이</span></h3><p><span style="white-space-collapse: preserve;">스틸 소재의 세로형 손잡이로<br></span><span style="white-space-collapse: preserve;">깔끔하면서도 모던한 감성을 더했습니다.<br></span><span style="white-space-collapse: preserve;">또 슬림한 모양의 양문형 타입으로<br></span><span style="white-space-collapse: preserve;">어느 방향이라도 편하게 사용할 수 있습니다.</span></p><p><span style="white-space-collapse: preserve;"><br></span></p><p><span style="white-space-collapse: preserve;"><br></span></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560363941_0.png?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560363941_0.png?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560363941_0.png?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560363941_0.png?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560363941_0.png?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560363941_0.png" width="1305" height="870" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3><span style="white-space-collapse: preserve;">좁은 공간도 효율적으로 사용하는 모듈</span></h3><p><span style="white-space-collapse: preserve;">쉽게 여닫을 수 있는 3단 외부형 서랍 구조로<br></span><span style="white-space-collapse: preserve;">속옷부터 접어두는 옷까지 편리한 사용이 가능합니다.<br></span><span style="white-space-collapse: preserve;">또한 거울형 도어로 전신거울을 따로 두지 않아도 되어<br></span><span style="white-space-collapse: preserve;">좁은 자녀방과 드레스룸을 더 넓게 활용할 수 있습니다.</span></p><p><span style="white-space-collapse: preserve;"><br></span></p><p><span style="white-space-collapse: preserve;"><br></span></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560392609_0.png?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560392609_0.png?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560392609_0.png?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560392609_0.png?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560392609_0.png?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560392609_0.png" width="1305" height="870" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3><span style="white-space-collapse: preserve;">샘베딩 베이직 시리즈로 완성하는 공간</span></h3><p><span style="white-space-collapse: preserve;">3단, 5단 서랍장부터 아일랜드 서랍장까지</span></p><p><span style="white-space-collapse: preserve;">옷장과 같은 컬러로 조화로운 수납공간을 </span></p><p><span style="white-space-collapse: preserve;">완성할 수 있습니다.</span></p><p><span style="white-space-collapse: preserve;"><br></span></p><p><span style="white-space-collapse: preserve;"><br></span></p><p></p></div></div>
+<div class="sec-comp" id="infoTypeCd_2"><strong class="subhead">사이즈</strong>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769586504042_0.jpg?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769586504042_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769586504042_0.jpg?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769586504042_0.jpg?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769586504042_0.jpg?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769586504042_0.jpg" width="870" height="1957" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><p><font color="#ffffff">.</font></p><p><br></p></div></div>
+<div class="sec-comp" id="infoTypeCd_3"><strong class="subhead">소재</strong>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/02/02/1770009709667_0.jpg?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/02/02/1770009709667_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/02/02/1770009709667_0.jpg?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/02/02/1770009709667_0.jpg?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/02/02/1770009709667_0.jpg?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/02/02/1770009709667_0.jpg" width="1305" height="2331" onerror="this.style.display='none';">
+	</picture>
+</div></div>
+<div class="sec-comp" id="infoTypeCd_4"><strong class="subhead">옵션</strong>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560493196_0.jpg?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560493196_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560493196_0.jpg?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560493196_0.jpg?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560493196_0.jpg?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560493196_0.jpg" width="1305" height="870" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>취향에 따라 선택하는 도어</h3><p>밝은 화이트 도어는 오염에 강한 LPM 소재를 적용해</p><p>사용 편의성을 높이고,</p><p>라이트오크 도어는 몸통과 동일한 컬러와 소재를 적용해</p><p>일체감을 높였습니다.</p><p><br></p><h6>* 실제 컬러와 가장 유사한 이미지입니다.</h6><p><br></p><p><br></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769586516145_0.png?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769586516145_0.png?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769586516145_0.png?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769586516145_0.png?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769586516145_0.png?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769586516145_0.png" width="1305" height="2220" onerror="this.style.display='none';">
+	</picture>
+</div></div>
+<div class="sec-comp" id="infoTypeCd_5"><strong class="subhead">모듈</strong>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560581560_0.png?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560581560_0.png?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560581560_0.png?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560581560_0.png?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560581560_0.png?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560581560_0.png" width="1305" height="1784" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769597086462_0.jpg?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769597086462_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769597086462_0.jpg?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769597086462_0.jpg?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769597086462_0.jpg?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769597086462_0.jpg" width="1305" height="987" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>기본을 더 충실하게, 행거형</h3><p>뒷판 보조목과 18mm 두께의 선반으로</p><p>시간이 흘러도 기울거나 쳐지지 않도록 지지해줍니다.</p><p>194cm의 높이로 옷이 끌리지 않으면서도,</p><p>모두의 눈높이에 맞게 편하게 이용할 수 있습니다.</p><p><br></p><p><br></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560610102_0.png?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560610102_0.png?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560610102_0.png?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560610102_0.png?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560610102_0.png?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560610102_0.png" width="1305" height="1763" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>다양한 물건을 한 번에, 선반형</h3><p>생활용품이나 이불, 아이용품 등</p><p>종류와 부피가 다른 물건이 많다면 선반형 수납을</p><p>추천합니다. </p><p>57cm의 깊은 선반으로 부피가 큰 이불부터</p><p>가방 수납함까지 모두 넣을 수 있습니다.</p><p><br></p><p><br></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560633873_0.png?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560633873_0.png?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560633873_0.png?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560633873_0.png?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560633873_0.png?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560633873_0.png" width="1305" height="1866" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>두 번 열 필요없이 간편하게, 서랍형</h3><p>3단 외부형 서랍 구조로 자주 꺼내야 하는 속옷 등을</p><p>별도의 서랍장 없이도 수납할 수 있습니다.</p><p>또한 깊이가 충분한 서랍장에는</p><p>부피가 큰 니트와 바지를 수납할 수 있습니다.</p><p><br></p><p><br></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560654156_0.png?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560654156_0.png?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560654156_0.png?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560654156_0.png?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560654156_0.png?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560654156_0.png" width="1305" height="2723" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>공간 활용은 물론 빠른 외출 준비까지, 멀티장</h3><p>거울과 수납공간이 합쳐진 멀티장으로</p><p>좁은 공간 활용은 물론,</p><p>외출 준비도 더 빠르게 할 수 있습니다.</p><p>전신 거울에 외투와 가방 정리 공간을 더한 거울 멀티장과</p><p>서랍, 선반을 더한 거울 멀티 서랍장,</p><p>메이크업과 수납을 동시에 할 수 있는 수납 파우더장,</p><p>포인트가 되는 라운드파우더장 중 선택할 수 있습니다.</p><p><br></p><h6>*베이직 시리즈는 거울멀티장만 호환됩니다.<br>*라운드 파우더장은 샘베딩 무드만 운영합니다</h6><p><br></p><p><br></p></div></div>
+<div class="sec-comp" id="infoTypeCd_6"><strong class="subhead">라인업</strong>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560695128_0.jpg?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560695128_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560695128_0.jpg?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560695128_0.jpg?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560695128_0.jpg?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560695128_0.jpg" width="1305" height="3293" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>샘베딩 전체 라인업</h3><p><br></p><p><br></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560717593_0.png?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560717593_0.png?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560717593_0.png?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560717593_0.png?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560717593_0.png?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560717593_0.png" width="1305" height="960" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>사용자와 공간을 고려한 높이 옵션</h3><p>샘베딩 옷장은 자녀부터 성인까지 모두 편하게 </p><p>사용할 수 있는 194cm와, 천장까지 채워줘 공간을 효율적으로</p><p>사용할 수 있는 216cm의 두 가지 높이 옵션을 운영합니다.</p><p>사용자와 공간에 맞는 사이즈로 실용적인 </p><p>수납 공간을 완성하세요.</p><p><br></p><p><br></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560740021_0.png?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560740021_0.png?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560740021_0.png?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560740021_0.png?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560740021_0.png?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560740021_0.png" width="1305" height="960" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560744937_0.png?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560744937_0.png?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560744937_0.png?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560744937_0.png?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560744937_0.png?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560744937_0.png" width="1305" height="960" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560751011_0.png?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560751011_0.png?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560751011_0.png?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560751011_0.png?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560751011_0.png?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560751011_0.png" width="1305" height="960" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>다양한 도어 라인업</h3><p>깔끔한 화이트 부터 내추럴 우드까지</p><p>총 6가지 도어 시리즈 중</p><p>공간 분위기에 맞춰 원하는 스타일로 선택해보세요.</p><p><br></p></div></div>
+<div class="sec-comp" id="infoTypeCd_7"><strong class="subhead">품질보증</strong>
+	<div class="cont-vid"><video playsinline poster="https://timgs.acs.wecandeo.com/thumb/3911/20240726/08/V15941499_626f3e82_ef8b_499c_943a_1617f31d12aa.jpg"><source type="video/mp4" src="https://api.wecandeo.com/video?k=BOKNS9AQWrF2S9DpOt0LSQwjosQWTPOSvT1l0NeIqemwo3JKBjl1nwieie"></video><button class="play-btn active" type="button">재생</button> </div>
+	<div class="cont-txt"><h3><span style="white-space-collapse: preserve;">문제없이, 10년을 열고 닫도록</span></h3><p><span style="white-space-collapse: preserve;">하루 최소 10번을 열고 닫는 문,<br></span><span style="white-space-collapse: preserve;">40,000번의 개폐 테스트를 통과한<br></span><span style="white-space-collapse: preserve;">댐핑 힌지만 적용하여 안전하게 사용 가능합니다.<br></span><span style="white-space-collapse: preserve;">샘베딩 옷장 도어의 댐핑 기능은 <br></span><span style="white-space-collapse: preserve;">도어가 소리 없이 부드럽게 닫히게 합니다.</span></p><p><span style="white-space-collapse: preserve;"><br></span></p><p><span style="white-space-collapse: preserve;"><br></span></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560817273_0.jpg?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560817273_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560817273_0.jpg?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560817273_0.jpg?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560817273_0.jpg?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560817273_0.jpg" width="1304" height="870" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>한샘 옷장은 외부 마감까지<br>안심할 수 있어요.</h3><p>한샘 옷장 도어는 일반적인 코팅페이퍼가 아닌,</p><p>LPM 소재로 마감됩니다.</p><p><br></p><h6>* LPM이란? 고온+압력으로 표면재를 접착해<br>접착제를 사용하지 않는 친환경적인 소재입니다.</h6><p><br></p><p><br></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560849907_0.jpg?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560849907_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560849907_0.jpg?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560849907_0.jpg?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560849907_0.jpg?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560849907_0.jpg" width="1304" height="975" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>흔들리지 않도록 견고하게 잡아주는 뒷판</h3><p>옷장 뒷면을 3개의 보조목으로 한 번 더
+잡아주어 <br>타사 대비 안정적이고, 견고합니다.</p><p><br></p><p><br></p><h3>
+</h3></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560899251_0.png?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560899251_0.png?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560899251_0.png?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560899251_0.png?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560899251_0.png?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2026/01/28/1769560899251_0.png" width="1304" height="870" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>옷장의 고정선반과 뒷판보조목이 없다면?</h3><p>측판과 도어의 기울어짐 또는 측판, 선반의 휨으로 인해 </p><p>도어가 완전히 닫히지 않거나 </p><p>서랍 열림이 원활하지 않을 수 있습니다.</p><p><br></p><p><br></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2025/10/28/1761613442871_0.jpg?w=750 2x, https://image.hanssem.com/hsimg/gds/Editor/2025/10/28/1761613442871_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://image.hanssem.com/hsimg/gds/Editor/2025/10/28/1761613442871_0.jpg?w=870 1x, https://image.hanssem.com/hsimg/gds/Editor/2025/10/28/1761613442871_0.jpg?w=1740 2x, https://image.hanssem.com/hsimg/gds/Editor/2025/10/28/1761613442871_0.jpg?w=2610 3x">
+		<img src="https://image.hanssem.com/hsimg/gds/Editor/2025/10/28/1761613442871_0.jpg" width="870" height="580" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>안심하고, 오랜 시간 걸어놓을 수 있게</h3><p>견고한 알루미늄 옷걸이봉과 브라켓 설계로</p><p>최대 16kg까지 여유롭게 사용할 수 있습니다.</p><p><br></p><h6>* 너비 80cm 기준</h6><p><br></p><p><br></p></div>
+	<div class="cont-vid"><video playsinline poster="https://timgs.acs.wecandeo.com/thumb/3911/20240726/08/V15941497_463107b7_295a_4fc3_85d6_19378ab74734.jpg"><source type="video/mp4" src="https://api.wecandeo.com/video?k=BOKNS9AQWrF2S9DpOt0LSQwjosQWTPOSvT1l0NeIqelkNusTGreG0wieie"></video><button class="play-btn active" type="button">재생</button> </div>
+	<div class="cont-txt"><h3>한샘이니까, 오래 사용해도 안전하게</h3><p>한샘 옷장은 내부 목재, 접착제, 부속 자재까지</p><p>E0 등급의 소재를 적용합니다.</p><p><br></p><p><br></p></div>
+	<div class="cont-vid"><video playsinline poster="https://timgs.acs.wecandeo.com/thumb/3911/20251028/10/V16746485_2293aa12_a4a3_44d1_872d_95b7cc543f9c.jpg"><source type="video/mp4" src="https://api.wecandeo.com/video?k=BOKNS9AQWrF2S9DpOt0LSQwjosQWTPOS7VK8q0YFfxFPJsUHIvEBoQieie"></video><button class="play-btn active" type="button">재생</button> </div>
+	<div class="cont-txt"><h3>무거워도, 변형과 휘어짐이 없도록</h3><p>약 50kg/168시간의 휨 강도 테스트를</p><p>통과한 자재만을 사용해</p><p>안정감 있고 견고한 제품을 만듭니다.</p><p><br></p><h6>* 강도 테스트를 위한 무게로,<br>   일반적인 사용은 너비 80cm 기준 최대 20kg까지 권장합니다.</h6><p><br></p><p><br></p></div></div><div class="sec-comp" id="infoTypeCd_8"><strong class="subhead">시공서비스</strong>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768467564080_0.jpg?w=750 2x, https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768467564080_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768467564080_0.jpg?w=870 1x, https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768467564080_0.jpg?w=1740 2x, https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768467564080_0.jpg?w=2610 3x">
+		<img src="https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768467564080_0.jpg" width="1740" height="1510" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>전국 어디든 무료로 배송, 설치</h3><p>업계 최고 한샘 전문 시공 기사님들의<br>완벽한 시공 서비스를 무료로 받아보세요.</p><p><br></p><p><br></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468347807_0.jpg?w=750 2x, https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468347807_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468347807_0.jpg?w=870 1x, https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468347807_0.jpg?w=1740 2x, https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468347807_0.jpg?w=2610 3x">
+		<img src="https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468347807_0.jpg" width="1740" height="2570" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>제품의 완성도를 높여주는<br>한샘 전문 시공</h3><p>무려 2~4시간이 소요되는 옷장 시공은 높은 수준의</p><p>전문성이 요구되며, 시공 품질이 곧 제품의 완성도가</p><p>됩니다.</p><h6>*한샘은 시공 전문 계열사를 보유하고 있습니다.<br>  체계적인 교육, 수 많은 현장경험을 지난<br>  한샘 전문 시공기사에게 믿고 맡겨주세요.</h6><p><br></p><p><br></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468351123_0.jpg?w=750 2x, https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468351123_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468351123_0.jpg?w=870 1x, https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468351123_0.jpg?w=1740 2x, https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468351123_0.jpg?w=2610 3x">
+		<img src="https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468351123_0.jpg" width="1740" height="1160" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>이전설치 서비스</h3><p>이사할 때 공간크기나 가구배치가 달라져도, 기존옷장을</p><p>버리거나 다른 옷장을 새로 구매할 필요가 없습니다.</p><h6>*한샘 이동시공 서비스 1522-0468 로 문의 주시면 <br>  가능 여부 및 비용을 확인하실 수 있습니다.</h6><p><br></p><p><br></p></div>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468354896_0.jpg?w=750 2x, https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468354896_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468354896_0.jpg?w=870 1x, https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468354896_0.jpg?w=1740 2x, https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468354896_0.jpg?w=2610 3x">
+		<img src="https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/15/1768468354896_0.jpg" width="1740" height="1160" onerror="this.style.display='none';">
+	</picture>
+</div>
+	<div class="cont-txt"><h3>평생가는 AS 서비스</h3><p>브랜드를 구매하시는 이유, 부족하면 언제든</p><p>추가 구매하면 되고 평생 AS가 가능합니다.</p><h6>*선반이나 옷걸이봉 추가 구매를 원하실 경우<br>  한샘AS센터 1588-0900 으로 문의 바랍니다. </h6><p> </p><p><br></p></div></div><div class="sec-comp" id="infoTypeCd_9"><strong class="subhead">베스트리뷰</strong>
+	<div class="img-box">
+	<picture data-origin="admin-editor-img">
+		<source media="(max-width:767px)" srcset="https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/20/1768895822449_0.jpg?w=750 2x, https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/20/1768895822449_0.jpg?w=1125 3x">
+		<source media="(min-width:768px)" srcset="https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/20/1768895822449_0.jpg?w=870 1x, https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/20/1768895822449_0.jpg?w=1740 2x, https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/20/1768895822449_0.jpg?w=2610 3x">
+		<img src="https://devimage.hanssem.com/hsimg/gds/Editor/2026/01/20/1768895822449_0.jpg" width="1740" height="5362" onerror="this.style.display='none';">
+	</picture>
+</div></div>

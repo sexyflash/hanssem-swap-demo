@@ -1,0 +1,41 @@
+=== panel_02/04 image-less retry — gpt-5 QA + retry loop ===
+
+[panel_02/imageless/#1] ar=3:2 refs=3 prompt_len=1325
+  scores: {'arm_thinness': 5, 'cushion_shape': 5, 'fabric_texture': 5, 'leg_shape': 5, 'full_swap': 5}
+  prod=98 comp=92 seats=2 underswap=False text=False
+  verdict: pass
+  notes: B는 A의 얇은 팔걸이, 헐거운 푸피 쿠션, 매트한 패브릭 질감, 직립 원통형 다리 모두 정확히 재현됨. C의 가죽 광택이나 V자 다리 영향 없음. 전체가 밀로 스타일로 보이며 2인용 구성 명확.
+  ✓ PASS at attempt 1
+
+[panel_04/imageless/#1] ar=2:3 refs=3 prompt_len=1681
+  scores: {'arm_thinness': 5, 'cushion_shape': 5, 'fabric_texture': 5, 'leg_shape': 5, 'full_swap': 5, 'dim_correctness': 3}
+  prod=88 comp=62 seats=2 underswap=False text=True
+  verdict: retry
+  notes: 전반적인 형태, 팔걸이, 쿠션, 패브릭, 다리 모두 A(밀로)와 일치. 치수 수치 자체는 대체로 정확하나 좌방석 경도 표기가 타겟 규격과 불일치하고 텍스트 오버레이가 많음.
+  failures:
+    · 좌방석 경도 표시가 MEDIUM으로 잘못됨(타겟: MEDIUM SOFT).
+    · 이미지 위 텍스트/치수 오버레이 존재.
+    · 좌측 90cm 표기가 높이/깊이로 혼동될 수 있는 배치.
+
+[panel_04/overpaint/#2] ar=2:3 refs=4 prompt_len=1779
+  scores: {'arm_thinness': 5, 'cushion_shape': 5, 'fabric_texture': 5, 'leg_shape': 5, 'full_swap': 5, 'dim_correctness': 4}
+  prod=95 comp=88 seats=2 underswap=False text=True
+  verdict: retry
+  notes: B는 A의 밀로 패브릭 2인형 특성을 잘 반영. 팔걸이 슬림, 루즈한 푸피 쿠션, 매트한 패브릭, 직립 원통형 다리 모두 정확. 전체 디자인도 C의 가죽 리클라이너 요소는 보이지 않음. 치수는 200/90/85는 맞게 표기되었고 좌방석 MEDIUM SOFT, 등쿠션 SOFT도 올바르게 표시. 다만 좌방석 52/45와 다리 14cm 수치가 빠졌고 좌측 90cm 표기가 다소 혼동됨.
+  failures:
+    · 이미지 내 텍스트/수치가 존재함
+    · 다릿발 높이 14cm 미표기
+    · 좌방석 깊이 52cm, 높이 45cm 미표기
+    · 좌측 90cm 세로 치수 표기가 모호함(높이로 보일 수 있음)
+
+[panel_04/with_C/#3] ar=2:3 refs=4 prompt_len=1924
+  scores: {'arm_thinness': 5, 'cushion_shape': 5, 'fabric_texture': 5, 'leg_shape': 5, 'full_swap': 5, 'dim_correctness': 3}
+  prod=93 comp=68 seats=2 underswap=False text=True
+  verdict: retry
+  notes: 형상·재질·다리 형태는 A와 매우 잘 일치. 전체 스왑 품질 우수하나, 강도 게이지 값과 일부 치수 표기 누락 및 텍스트 오버레이가 문제.
+  failures:
+    · 좌방석/등쿠션 강도 표기가 둘 다 MEDIUM으로 남아 있음(목표: 좌방석 MEDIUM SOFT, 등쿠션 SOFT).
+    · 치수 보조 정보 중 좌방석 깊이 52cm, 좌방석 높이 45cm, 다릿발 높이 14cm 표기가 누락됨.
+    · 이미지 B에 텍스트/그래픽 오버레이가 존재함.
+
+DONE → /Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/01_sofa_992474/swap_results/imageless_20260526_142102

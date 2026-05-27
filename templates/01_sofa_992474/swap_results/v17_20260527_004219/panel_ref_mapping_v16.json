@@ -1,0 +1,432 @@
+{
+  "assets": {
+    "color_01.png": "use_product/color_01.png",
+    "color_02.png": "use_product/color_02.png",
+    "color_03.png": "use_product/color_03.png",
+    "detail_01.webp": "use_product/detail_01.webp",
+    "detail_02.png": "use_product/detail_02.png",
+    "detail_03.png": "use_product/detail_03.png",
+    "detail_04.png": "use_product/detail_04.png",
+    "detail_05.png": "use_product/detail_05.png",
+    "material.png": "use_product/material.png",
+    "p08_frame_01.jpg": "use_product/p08_frame_01.jpg",
+    "p08_frame_01_color_1.jpg": "use_product/p08_frame_01_color_1.jpg",
+    "p08_frame_01_color_2.webp": "use_product/p08_frame_01_color_2.webp",
+    "p08_frame_01_color_3.webp": "use_product/p08_frame_01_color_3.webp",
+    "p08_frame_02.jpg": "use_product/p08_frame_02.jpg",
+    "p08_frame_03.jpg": "use_product/p08_frame_03.jpg",
+    "p08_frame_04.png": "use_product/p08_frame_04.png",
+    "p08_frame_05.png": "use_product/p08_frame_05.png"
+  },
+  "assets_meta": {
+    "color_01.png": {
+      "path": "use_product/color_01.png",
+      "category": "material",
+      "subject": "원단짜임 클로즈업",
+      "confidence": 0.96,
+      "reasoning": "원단 텍스처만 꽉 차게 보이는 확대컷이라 소재 이미지임."
+    },
+    "color_02.png": {
+      "path": "use_product/color_02.png",
+      "category": "material",
+      "subject": "원단짜임 클로즈업",
+      "confidence": 0.96,
+      "reasoning": "패브릭 표면만 보이는 확대컷으로 제품 일부가 아닌 원단 강조 샷."
+    },
+    "color_03.png": {
+      "path": "use_product/color_03.png",
+      "category": "material",
+      "subject": "원단짜임 클로즈업",
+      "confidence": 0.96,
+      "reasoning": "섬유 결만 보이는 근접 촬영으로 소재 표현에 해당."
+    },
+    "detail_01.webp": {
+      "path": "use_product/detail_01.webp",
+      "category": "color_variant",
+      "subject": "전체각도",
+      "confidence": 0.72,
+      "reasoning": "소파 전체가 보이지만 기본색과 다른 핑크 컬러를 보여주는 전체샷."
+    },
+    "detail_02.png": {
+      "path": "use_product/detail_02.png",
+      "category": "detail_close_up",
+      "subject": "좌방석/팔걸이/쿠션",
+      "confidence": 0.95,
+      "reasoning": "좌방석과 팔걸이, 쿠션 일부만 크게 담은 부분 클로즈업."
+    },
+    "detail_03.png": {
+      "path": "use_product/detail_03.png",
+      "category": "detail_close_up",
+      "subject": "등받이/좌방석",
+      "confidence": 0.88,
+      "reasoning": "사람과 함께 소파 일부(등받이·좌방석)만 프레임에 들어온 부분샷."
+    },
+    "detail_04.png": {
+      "path": "use_product/detail_04.png",
+      "category": "main_view",
+      "subject": "전체정면",
+      "confidence": 0.7,
+      "reasoning": "소파 전체가 보이는 정면 구도의 이미지로 메인 전체샷 성격."
+    },
+    "detail_05.png": {
+      "path": "use_product/detail_05.png",
+      "category": "detail_close_up",
+      "subject": "팔걸이/등쿠션",
+      "confidence": 0.95,
+      "reasoning": "팔걸이와 등쿠션 부분만 잘린 제품 디테일 클로즈업."
+    },
+    "material.png": {
+      "path": "use_product/material.png",
+      "category": "material",
+      "subject": "원단짜임 클로즈업",
+      "confidence": 0.95,
+      "reasoning": "두 가지 톤의 패브릭 표면을 근접 촬영한 소재 이미지."
+    },
+    "p08_frame_01.jpg": {
+      "path": "use_product/p08_frame_01.jpg",
+      "category": "main_view",
+      "subject": "전체정면",
+      "confidence": 0.99,
+      "reasoning": "흰 배경에서 제품 전체가 정면으로 보이는 표준 메인 컷."
+    },
+    "p08_frame_01_color_1.jpg": {
+      "path": "use_product/p08_frame_01_color_1.jpg",
+      "category": "color_variant",
+      "subject": "전체정면",
+      "confidence": 0.9,
+      "reasoning": "동일 구도에서 색감만 달라진 전체샷으로 컬러 변형컷."
+    },
+    "p08_frame_01_color_2.webp": {
+      "path": "use_product/p08_frame_01_color_2.webp",
+      "category": "color_variant",
+      "subject": "전체정면",
+      "confidence": 0.98,
+      "reasoning": "같은 제품의 그레이 컬러 전체 정면샷으로 색상만 다름."
+    },
+    "p08_frame_01_color_3.webp": {
+      "path": "use_product/p08_frame_01_color_3.webp",
+      "category": "color_variant",
+      "subject": "전체정면",
+      "confidence": 0.98,
+      "reasoning": "같은 구도의 핑크 컬러 전체샷이므로 색상 변형 이미지."
+    },
+    "p08_frame_02.jpg": {
+      "path": "use_product/p08_frame_02.jpg",
+      "category": "main_view",
+      "subject": "전체각도",
+      "confidence": 0.98,
+      "reasoning": "흰 배경에서 제품 전체가 사선 각도로 보이는 메인 뷰."
+    },
+    "p08_frame_03.jpg": {
+      "path": "use_product/p08_frame_03.jpg",
+      "category": "main_view",
+      "subject": "전체측면",
+      "confidence": 0.98,
+      "reasoning": "제품의 측면 전체가 단순 배경에서 보이는 각도샷."
+    },
+    "p08_frame_04.png": {
+      "path": "use_product/p08_frame_04.png",
+      "category": "detail_close_up",
+      "subject": "쿠션/시접",
+      "confidence": 0.95,
+      "reasoning": "등쿠션과 좌방석의 봉제 라인만 크게 보여주는 디테일 클로즈업."
+    },
+    "p08_frame_05.png": {
+      "path": "use_product/p08_frame_05.png",
+      "category": "detail_close_up",
+      "subject": "팔걸이/다리",
+      "confidence": 0.95,
+      "reasoning": "팔걸이 코너와 하부 다리 주변만 촬영된 부분 확대컷."
+    }
+  },
+  "panels": {
+    "cover": {
+      "panel_idx": 0,
+      "panel_class": "intro_hero",
+      "ref_keys": [
+        "p08_frame_01.jpg",
+        "p08_frame_02.jpg"
+      ],
+      "rationale": "흰 배경의 전체 정면 메인컷으로 hero 패널 구성(미니멀, 정면 중심)을 정확히 맞추고, 사선 메인컷은 전체 비례와 두께감을 보조합니다.",
+      "skipped_categories": [
+        "material",
+        "color_variant",
+        "detail_close_up"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_01.jpg",
+        "use_product/p08_frame_02.jpg"
+      ],
+      "ref_count": 2
+    },
+    "panel_01.jpg": {
+      "panel_idx": 1,
+      "panel_class": "lifestyle_scene",
+      "ref_keys": [
+        "p08_frame_01.jpg",
+        "p08_frame_02.jpg",
+        "p08_frame_03.jpg",
+        "detail_02.png",
+        "detail_05.png"
+      ],
+      "rationale": "정면 중심의 라이프스타일 장면이므로 전체 정면을 앵커로 두고 사선·측면으로 실루엣과 팔걸이 비율을 보강했습니다. milo의 핵심인 좌방석-팔걸이 보조쿠션 연속 구조가 드러나는 클로즈업만 추가하고, 소재/컬러 변형은 장면 재현에 직접 도움이 적어 제외했습니다.",
+      "skipped_categories": [
+        "material",
+        "color_variant"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_01.jpg",
+        "use_product/p08_frame_02.jpg",
+        "use_product/p08_frame_03.jpg",
+        "use_product/detail_02.png",
+        "use_product/detail_05.png"
+      ],
+      "ref_count": 5
+    },
+    "panel_02.jpg": {
+      "panel_idx": 2,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "p08_frame_02.jpg",
+        "p08_frame_05.png",
+        "p08_frame_04.png",
+        "color_01.png"
+      ],
+      "rationale": "패널은 소파 하단 모서리와 다리, 스티치와 소재 질감을 클로즈업으로 보여주므로, 사선 각도의 전체 뷰로 형상 앵커를 주고(1), 하부 다리/모서리 클로즈업(2)과 봉제선 디테일(3), 패브릭 텍스처(4)로 레더 대신 패브릭 재질을 정확히 치환합니다.",
+      "skipped_categories": [
+        "color_variant"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_02.jpg",
+        "use_product/p08_frame_05.png",
+        "use_product/p08_frame_04.png",
+        "use_product/color_01.png"
+      ],
+      "ref_count": 4
+    },
+    "panel_03.jpg": {
+      "panel_idx": 3,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "detail_05.png",
+        "detail_02.png",
+        "p08_frame_04.png",
+        "color_01.png",
+        "color_02.png"
+      ],
+      "rationale": "이 패널은 팔걸이-등받이 접점과 스티치, 표면 질감에 초점을 둔 클로즈업이므로 해당 부위를 직접 보여주는 디테일 컷과 패브릭 질감 매크로만 선별했다. 전체샷·컬러변경 컷은 구도 재현에 불필요해 제외했다.",
+      "skipped_categories": [
+        "main_view",
+        "color_variant"
+      ],
+      "ref_paths": [
+        "use_product/detail_05.png",
+        "use_product/detail_02.png",
+        "use_product/p08_frame_04.png",
+        "use_product/color_01.png",
+        "use_product/color_02.png"
+      ],
+      "ref_count": 5
+    },
+    "panel_04.jpg": {
+      "panel_idx": 4,
+      "panel_class": "size_chart",
+      "ref_keys": [
+        "p08_frame_02.jpg",
+        "p08_frame_01.jpg",
+        "p08_frame_03.jpg"
+      ],
+      "rationale": "사이즈 차트는 전체 실루엣과 폭·깊이·높이 판단이 핵심이므로 3/4 각도 메인샷을 앵커로, 정면과 측면 메인 뷰만 보냅니다. 색상·소재·부분 디테일은 치수/착석감 바 구성에 불필요해 제외했습니다.",
+      "skipped_categories": [
+        "material",
+        "detail_close_up",
+        "color_variant"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_02.jpg",
+        "use_product/p08_frame_01.jpg",
+        "use_product/p08_frame_03.jpg"
+      ],
+      "ref_count": 3
+    },
+    "panel_05.jpg": {
+      "panel_idx": 5,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "p08_frame_01.jpg",
+        "detail_02.png",
+        "p08_frame_04.png",
+        "detail_05.png",
+        "p08_frame_05.png",
+        "color_01.png"
+      ],
+      "rationale": "패널이 좌방석·등받이·팔걸이의 대형 클로즈업과 질감/스티치를 강조하므로, 메인 정면으로 형태를 고정하고 연속 쿠션 구조와 봉제선·팔걸이 접점 디테일을 보여주는 근접컷을 우선 선택했습니다. 가죽 원본을 패브릭으로 정확히 전환하도록 소재 클로즈업 1장을 추가했습니다.",
+      "skipped_categories": [
+        "color_variant"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_01.jpg",
+        "use_product/detail_02.png",
+        "use_product/p08_frame_04.png",
+        "use_product/detail_05.png",
+        "use_product/p08_frame_05.png",
+        "use_product/color_01.png"
+      ],
+      "ref_count": 6
+    },
+    "panel_06.jpg": {
+      "panel_idx": 6,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "p08_frame_02.jpg",
+        "detail_05.png",
+        "p08_frame_04.png",
+        "detail_02.png",
+        "color_01.png"
+      ],
+      "rationale": "해당 패널은 등받이 중심의 클로즈업이므로 사선 메인 각도 앵커와 등쿠션·팔걸이·봉제선 디테일 근접컷을 우선 제공하고, 가죽으로 보이는 원본을 패브릭으로 정확히 전환하도록 소재 클로즈업을 포함했습니다.",
+      "skipped_categories": [
+        "color_variant"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_02.jpg",
+        "use_product/detail_05.png",
+        "use_product/p08_frame_04.png",
+        "use_product/detail_02.png",
+        "use_product/color_01.png"
+      ],
+      "ref_count": 5
+    },
+    "panel_07.jpg": {
+      "panel_idx": 7,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "p08_frame_01.jpg",
+        "p08_frame_04.png",
+        "detail_02.png",
+        "detail_05.png",
+        "color_01.png"
+      ],
+      "rationale": "원본은 표면 클로즈업과 스티치 라인이 핵심이므로, 밀로 소파의 패브릭 질감과 봉제·팔걸이-좌방석 연결부를 보여주는 디테일 컷을 중심으로 하고 제품 식별용 메인 뷰 1장을 앵커로 넣었습니다.",
+      "skipped_categories": [
+        "color_variant"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_01.jpg",
+        "use_product/p08_frame_04.png",
+        "use_product/detail_02.png",
+        "use_product/detail_05.png",
+        "use_product/color_01.png"
+      ],
+      "ref_count": 5
+    },
+    "panel_08.gif": {
+      "panel_idx": 8,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "p08_frame_03.jpg",
+        "p08_frame_05.png",
+        "detail_02.png",
+        "p08_frame_04.png",
+        "color_02.png"
+      ],
+      "rationale": "이 패널은 소파의 측면 클로즈업에서 팔걸이·좌방석 연결부와 하부 다리, 소재 질감을 강조하므로 전체 측면 앵커와 대응되는 부분 디테일, 봉제선, 패브릭 텍스처만 선별했다.",
+      "skipped_categories": [
+        "color_variant"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_03.jpg",
+        "use_product/p08_frame_05.png",
+        "use_product/detail_02.png",
+        "use_product/p08_frame_04.png",
+        "use_product/color_02.png"
+      ],
+      "ref_count": 5
+    },
+    "panel_09.jpg": {
+      "panel_idx": 9,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "p08_frame_01.jpg",
+        "p08_frame_05.png",
+        "detail_02.png",
+        "p08_frame_04.png",
+        "detail_05.png",
+        "color_01.png"
+      ],
+      "rationale": "리클라이너 대신 좌방석-팔걸이-등받이 접합부와 하부 다리, 스티치 같은 국부 디테일을 재현해야 하므로 전체 앵커 1장과 해당 부위 클로즈업, 패브릭 질감 1장을 선별했습니다. 컬러 변형 이미지는 구도·디테일 파악에 직접적 도움 없어서 제외했습니다.",
+      "skipped_categories": [
+        "color_variant"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_01.jpg",
+        "use_product/p08_frame_05.png",
+        "use_product/detail_02.png",
+        "use_product/p08_frame_04.png",
+        "use_product/detail_05.png",
+        "use_product/color_01.png"
+      ],
+      "ref_count": 6
+    },
+    "panel_10.jpg": {
+      "panel_idx": 10,
+      "panel_class": "detail_close_up",
+      "ref_keys": [
+        "color_01.png",
+        "p08_frame_04.png"
+      ],
+      "rationale": "이 패널은 단일 소재 질감과 등받이-좌방석 경계선의 가로 라인을 극근접으로 강조하므로, 원단 짜임 클로즈업을 앵커로 두고 봉제/시접 디테일 컷으로 경계선을 보강합니다. 전체샷이나 컬러 변형 컷은 질감 재현에 불필요해 제외했습니다.",
+      "skipped_categories": [
+        "main_view",
+        "color_variant"
+      ],
+      "ref_paths": [
+        "use_product/color_01.png",
+        "use_product/p08_frame_04.png"
+      ],
+      "ref_count": 2
+    },
+    "panel_11.jpg": {
+      "panel_idx": 11,
+      "panel_class": "structure_chart",
+      "ref_keys": [
+        "p08_frame_02.jpg",
+        "detail_02.png",
+        "p08_frame_04.png"
+      ],
+      "rationale": "구조/소재 설명 표가 있는 구조도 패널이므로, 상단에 해칭 범위를 입힐 수 있는 사선 메인 전체샷을 앵커로 두고 연속 쿠션(좌방석-팔걸이) 및 봉제 디테일 클로즈업을 보조로 제공합니다. 컬러 변형이나 소재 스와치는 본 패널의 범위 표시 및 표 구성에 직접적으로 필요하지 않아 배제했습니다.",
+      "skipped_categories": [
+        "color_variant",
+        "material"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_02.jpg",
+        "use_product/detail_02.png",
+        "use_product/p08_frame_04.png"
+      ],
+      "ref_count": 3
+    },
+    "panel_12.jpg": {
+      "panel_idx": 12,
+      "panel_class": "module_lineup",
+      "ref_keys": [
+        "p08_frame_01.jpg",
+        "color_01.png",
+        "color_02.png",
+        "color_03.png"
+      ],
+      "rationale": "이 패널은 상단 정면 전체샷으로 모델 구분과 하단 3색 컬러 스와치를 강조하므로, 앵커로 정면 메인컷 1장과 스와치용 소재 클로즈업 3장만 제공합니다. 각도샷·부분 디테일·컬러변형 전체샷은 레이아웃과 직접 연관성이 낮아 제외합니다.",
+      "skipped_categories": [
+        "color_variant",
+        "detail_close_up"
+      ],
+      "ref_paths": [
+        "use_product/p08_frame_01.jpg",
+        "use_product/color_01.png",
+        "use_product/color_02.png",
+        "use_product/color_03.png"
+      ],
+      "ref_count": 4
+    }
+  }
+}

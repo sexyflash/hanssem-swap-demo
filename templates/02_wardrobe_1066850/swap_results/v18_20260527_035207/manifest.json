@@ -1,0 +1,29 @@
+{
+  "version": 18,
+  "run": "v18_20260527_035207",
+  "endpoint": "fal-ai/gpt-image-2/edit",
+  "text_model": "gpt-5",
+  "vision_model": "gpt-5.5",
+  "concurrency": 13,
+  "max_attempts": 4,
+  "bundled_sources": [
+    "sources/hanssem_research__76_swap_pipeline_v16.py",
+    "sources/pipeline_lib____init__.py",
+    "sources/pipeline_lib__version_bundler.py",
+    "sources/pipeline_lib__llm_panel_mapper.py",
+    "sources/pipeline_lib__llm_edit_block.py",
+    "sources/pipeline_lib__smart_sheet_builder.py",
+    "sources/pipeline_lib__retry_strategist.py",
+    "sources/pipeline_lib__verifiable_checklist.py",
+    "sources/pipeline_lib__qa_engine.py",
+    "sources/pipeline_lib__best_selector.py",
+    "sources/02_wardrobe_289948__product_input.json",
+    "sources/02_wardrobe_1066850__panel_layout_maps.json",
+    "sources/use_product__classification.json"
+  ],
+  "smart_sheet_path": "smart_sheet.png",
+  "panel_ref_mapping_path": "panel_ref_mapping_v16.json",
+  "verifiable_checklist_path": "verifiable_checklist.json",
+  "summary_path": "summary.json",
+  "notes": "v16+ — checklist 기반 QA + 모든 ref 동봉 + payload save + best_selector"
+}

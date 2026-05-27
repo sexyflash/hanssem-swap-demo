@@ -1,0 +1,37 @@
+{
+  "panel_id": "panel_16.jpg",
+  "panel_class": "context",
+  "vision_model": "gpt-5.5",
+  "ref_paths": [
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_06.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_02.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_12.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_10.png",
+    "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/user_products/02_wardrobe_289948/use_product/screenshot_04.png"
+  ],
+  "ref_labels": [
+    "main_view·전체정면",
+    "color_variant·전체정면",
+    "detail_close_up·손잡이",
+    "detail_close_up·손잡이/도어모서리",
+    "material·도어 마감표면"
+  ],
+  "panel_orig_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/panel_16.jpg",
+  "swap_result_path": "/Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/02_wardrobe_1066850/swap_results/v18_20260527_035207/gpt_image/panel_16__a3_v16.png",
+  "applicable_item_ids": [],
+  "user_prompt": "=== TASK ===\n이 swap 결과(B)를 사용자 제품의 verifiable checklist로 채점하라.\n\n=== 사용자 제품 ===\ncategory: wardrobe\n제품명: 샘베딩 클로즈 옷장세트 160cm(높이216cm) 서랍형 6종\n핵심 axis: doors, handles, drawers, shelves, hanging_rod, hinges, back_panel, frame, color, finish, size, module_lineup, base\n\n=== 첨부 이미지 ===\n  A_1 = main_view·전체정면\n  A_2 = color_variant·전체정면\n  A_3 = detail_close_up·손잡이\n  A_4 = detail_close_up·손잡이/도어모서리\n  A_5 = material·도어 마감표면\n  B = swap 결과 (채점 대상)\n  C = 한샘 원본 panel (composition reference)\n\n=== Panel 컨텍스트 ===\npanel_id: panel_16.jpg\npanel_class: context\nspatial_layout: 이미지는 좌우 2분할로 구성되어 있다. 왼쪽에는 흰색 계열의 매끄러운 표면과 세로 손잡이가 중앙에 위치한다. 오른쪽에는 크림색 계열의 표면과 원형 손잡이 두 개가 중앙 하단에 배치되어 있다. 두 영역은 세로 흰색 라인으로 명확히 구분된다. 하단 중앙에는 검은색 한글 텍스트가 가로로 길게 배치되어 있다. 각 제품 이미지는 화면의 절반씩 차지하며, 텍스트는 이미지 아래에 위치한다.\n\n=== 적용 가능한 CHECKLIST ITEMS (이 panel에서 검증 가능) ===\n각 item에 category(distortion/detail/forbidden)와 generation_feasibility 가 표시됨.\n- distortion / forbidden: strict 채점 (제품 왜곡 검출이 사용자 핵심 요구)\n- detail: image gen 한계 인정 → 명백한 차이만 fail, 모호하면 pass\n- generation_feasibility=low: 더욱 보수적으로 fail 매김 (미세 디테일)\n\n  (none)\n\n=== 출력 schema (strict JSON) ===\n{\n  \"image_format\": \"single_product|lifestyle|chart_diagram|multi_panel_grid\",\n  \"items_results\": [\n    {\n      \"id\": \"...\",\n      \"verdict\": \"pass|fail|not_visible\",\n      \"reason_ko\": \"...\",\n      \"category\": \"distortion|detail|forbidden\",\n      \"generation_feasibility\": \"high|medium|low\"\n    }\n  ],\n  \"distortion_fail_count\": int,\n  \"forbidden_fail_count\": int,\n  \"composition_score\": 0-100,\n  \"hallucinations\": [\"발견된 invented feature 한국어\"],\n  \"specific_failures\": [\"distortion/forbidden fail 항목의 한국어 요약\"],\n  \"notes_ko\": \"...\"\n}\n\n판정 가이드:\n- distortion item: 다리 개수 / 가죽 vs 패브릭 / 보조쿠션 유무 / 컬러명 등 명백한 차이 → fail\n- forbidden item: invented feature (헤드레스트 등) 발견 → fail\n- detail item: 시접 종류 / 미세 곡률 / 직조 결 등이 약간 달라도 → pass (관대)\n",
+  "result": {
+    "image_format": "single_product",
+    "items_results": [],
+    "distortion_fail_count": 0,
+    "forbidden_fail_count": 0,
+    "composition_score": 35,
+    "hallucinations": [],
+    "specific_failures": [],
+    "notes_ko": "이 panel에서 적용 가능한 verifiable checklist item이 없으므로 distortion/forbidden fail은 집계되지 않습니다. B는 옷장 정면 제품 형태로 보이며, 사용자 제품의 흰색/크림 계열 도어, 세로 손잡이, 하부 서랍, 원형 손잡이 요소가 전반적으로 포함되어 있습니다. 다만 C 원본 panel은 좌우 2분할 클로즈업과 하단 텍스트가 있는 구성인데, B는 전체 옷장 정면 단일 제품 이미지로 바뀌어 composition은 낮게 평가됩니다.",
+    "critical_fail_count": 0,
+    "product_score_raw": null,
+    "product_score": 50,
+    "verdict": "retry"
+  }
+}

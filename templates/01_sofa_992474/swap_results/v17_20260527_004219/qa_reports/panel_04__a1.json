@@ -1,0 +1,25 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [
+    {
+      "id": "size_chart_core_dimensions",
+      "verdict": "fail",
+      "reason_ko": "결과 B에 W200×D90×H85cm, 좌방석 깊이 52cm, 좌방석 높이 45cm, 다릿발 높이 14cm는 정확히 표기되어 있습니다. 그러나 체크리스트에서 요구한 팔걸이 57cm 표기는 보이지 않아 핵심 치수 정보가 누락되었습니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    }
+  ],
+  "distortion_fail_count": 1,
+  "forbidden_fail_count": 0,
+  "composition_score": 85,
+  "hallucinations": [],
+  "specific_failures": [
+    "팔걸이 높이 57cm 치수 표기가 누락됨",
+    "distortion fail · size_chart_core_dimensions: 결과 B에 W200×D90×H85cm, 좌방석 깊이 52cm, 좌방석 높이 45cm, 다릿발 높이 14cm는 정확히 표기되어 있습니다. 그러나 체크리스트에서 요구한 팔걸이 57cm 표기는 보이지 않아 핵심 치수 정보가 누락되었습니다."
+  ],
+  "notes_ko": "사이즈 차트 형식과 주요 가로·깊이·높이 치수 및 일부 상세 치수는 잘 반영되었으나, 검증 항목에서 요구한 팔걸이 57cm가 표시되지 않아 distortion fail로 판정합니다.",
+  "critical_fail_count": 1,
+  "product_score_raw": null,
+  "product_score": 0,
+  "verdict": "retry"
+}

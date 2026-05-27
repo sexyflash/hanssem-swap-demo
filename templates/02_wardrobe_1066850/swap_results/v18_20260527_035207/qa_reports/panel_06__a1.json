@@ -1,0 +1,40 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [
+    {
+      "id": "color_options_panel_exact_3",
+      "verdict": "fail",
+      "reason_ko": "결과 B에는 컬러 옵션명 텍스트가 보이지 않습니다. 기대값인 ‘화이트 하이글로시(유광)’, ‘크림화이트’, ‘라이트오크’ 3가지 컬러명이 정확히 표기되어야 하나, 텍스트 표기가 누락되어 검증 기준을 충족하지 못합니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "handle_color_contrasts_with_door",
+      "verdict": "pass",
+      "reason_ko": "상단 흰색/크림 계열 및 하단 우측 우드 계열 영역에서 손잡이 또는 세로 경계부가 도어 면과 그림자 및 톤 차이로 구분되어 보입니다. 미세한 톤 차이는 detail 항목이므로 관대하게 판단했습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "creamwhite_handle_same_tone_as_white_handle",
+      "verdict": "pass",
+      "reason_ko": "크림화이트 계열로 보이는 영역의 손잡이와 화이트 계열 영역의 손잡이가 모두 밝은 화이트/아이보리 톤으로 표현되어 대체로 동일 계열로 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 1,
+  "forbidden_fail_count": 0,
+  "composition_score": 70,
+  "hallucinations": [],
+  "specific_failures": [
+    "결과가 grid 형태 — single panel로 재생성",
+    "컬러 옵션명 3가지가 텍스트로 정확히 표기되지 않고 누락됨",
+    "distortion fail · color_options_panel_exact_3: 결과 B에는 컬러 옵션명 텍스트가 보이지 않습니다. 기대값인 ‘화이트 하이글로시(유광)’, ‘크림화이트’, ‘라이트오크’ 3가지 컬러명이 정확히 표기되어야 하나, 텍스트 표기가 누락되어 검증 기준을 충족하지 못합니다."
+  ],
+  "notes_ko": "B는 2x2 컬러/마감 클로즈업 그리드 구도는 유지하지만, 하단 좌측 영역이 거의 빈 흰색으로 보여 원본 C의 베이지 샘플 영역과 다소 다릅니다. 다만 verdict에 직접 반영되는 핵심 distortion 기준에서는 컬러명 텍스트 누락이 명확한 실패입니다.",
+  "verdict": "retry",
+  "product_score_raw": 30,
+  "product_score": 25,
+  "critical_fail_count": 1
+}

@@ -1,0 +1,61 @@
+=== swap v9 — gpt-image-2 + quality=high + 명시적 edit + panel C base ===
+  endpoint: fal-ai/gpt-image-2/edit
+  targets: 13
+
+uploading refs...
+[cover/#1] cls=intro_hero size=square refs=4 attempt=1
+[panel_01/#1] cls=lifestyle_scene size=landscape_4_3 refs=4 attempt=1
+[panel_02/#1] cls=detail_close_up size=landscape_4_3 refs=4 attempt=1
+[panel_02/#1] prod=96 comp=92 min_score=5 -> pass
+[panel_03/#1] cls=detail_close_up size=landscape_4_3 refs=4 attempt=1
+[panel_01/#1] prod=94 comp=93 min_score=4 -> pass
+[panel_04/#1] cls=size_chart size=portrait_4_3 refs=4 attempt=1
+[cover/#1] prod=92 comp=95 min_score=4 -> pass
+[panel_05/#1] cls=detail_close_up size=landscape_4_3 refs=4 attempt=1
+[panel_03/#1] prod=78 comp=92 min_score=1 -> retry
+[panel_06/#1] cls=detail_close_up size=landscape_4_3 refs=4 attempt=1
+[panel_04/#1] prod=96 comp=99 min_score=4 -> pass
+[panel_07/#1] cls=detail_close_up size=landscape_4_3 refs=4 attempt=1
+[panel_05/#1] prod=76 comp=88 min_score=3 -> retry
+[panel_08/#1] cls=detail_close_up size=landscape_4_3 refs=4 attempt=1
+[panel_07/#1] prod=45 comp=88 min_score=1 -> retry
+[panel_09/#1] cls=detail_close_up size=landscape_4_3 refs=4 attempt=1
+[panel_06/#1] prod=94 comp=95 min_score=4 -> pass
+[panel_10/#1] cls=detail_close_up size=landscape_4_3 refs=4 attempt=1
+[panel_08/#1] prod=76 comp=92 min_score=3 -> retry
+[panel_11/#1] cls=structure_chart size=square refs=4 attempt=1
+[panel_10/#1] prod=62 comp=82 min_score=1 -> retry
+[panel_12/#1] cls=module_lineup size=square refs=9 attempt=1
+[panel_09/#1] prod=73 comp=88 min_score=3 -> retry
+[panel_03/#2] cls=detail_close_up size=landscape_4_3 refs=4 attempt=2
+[panel_11/#1] prod=92 comp=90 min_score=4 -> retry
+[panel_05/#2] cls=detail_close_up size=landscape_4_3 refs=4 attempt=2
+[panel_03/#2] prod=86 comp=94 min_score=1 -> retry
+[panel_07/#2] cls=detail_close_up size=landscape_4_3 refs=4 attempt=2
+[panel_12/#1] prod=96 comp=98 min_score=4 -> pass
+[panel_08/#2] cls=detail_close_up size=landscape_4_3 refs=4 attempt=2
+[panel_05/#2] prod=96 comp=92 min_score=5 -> pass
+[panel_10/#2] cls=detail_close_up size=landscape_4_3 refs=4 attempt=2
+[panel_08/#2] prod=94 comp=93 min_score=4 -> pass
+[panel_09/#2] cls=detail_close_up size=landscape_4_3 refs=4 attempt=2
+[panel_07/#2] prod=87 comp=93 min_score=3 -> retry
+[panel_11/#2] cls=structure_chart size=square refs=4 attempt=2
+[panel_10/#2] prod=56 comp=72 min_score=1 -> retry
+[panel_09/#2] prod=96 comp=94 min_score=5 -> pass
+[panel_11/#2] prod=90 comp=100 min_score=4 -> pass
+
+=== DONE === /Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/01_sofa_992474/swap_results/v9_20260526_150641
+  wall: 1395.6s · passers: 10/13
+    cover        [       intro_hero] prod= 92 min_score=4 pass=True
+    panel_01     [  lifestyle_scene] prod= 94 min_score=4 pass=True
+    panel_02     [  detail_close_up] prod= 96 min_score=5 pass=True
+    panel_03     [  detail_close_up] prod= 86 min_score=1 pass=False
+    panel_04     [       size_chart] prod= 96 min_score=4 pass=True
+    panel_05     [  detail_close_up] prod= 96 min_score=5 pass=True
+    panel_06     [  detail_close_up] prod= 94 min_score=4 pass=True
+    panel_07     [  detail_close_up] prod= 87 min_score=3 pass=False
+    panel_08     [  detail_close_up] prod= 94 min_score=4 pass=True
+    panel_09     [  detail_close_up] prod= 96 min_score=5 pass=True
+    panel_10     [  detail_close_up] prod= 62 min_score=1 pass=False
+    panel_11     [  structure_chart] prod= 90 min_score=4 pass=True
+    panel_12     [    module_lineup] prod= 96 min_score=4 pass=True

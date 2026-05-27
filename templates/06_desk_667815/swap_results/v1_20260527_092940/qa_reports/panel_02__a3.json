@@ -1,0 +1,22 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [
+    {
+      "id": "hook_left_right_option_indicator",
+      "verdict": "pass",
+      "reason_ko": "결과 B에 '가방걸이 좌/우 선택' 문구가 중앙 하단에 표시되어 있고, 좌측 설치/우측 설치 예시 아이콘과 화살표가 함께 보여 좌우 선택 설치 가능 안내가 명확히 보입니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 35,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "검증 대상 detail 항목인 가방걸이 좌/우 선택 설치 안내는 텍스트와 아이콘으로 확인되어 통과입니다. 다만 원본 C의 2x2 라인업 그리드 구성과 달리 B는 단일 ㄱ자책상 안내형 이미지로 구성되어 composition_score는 낮게 평가했습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 100,
+  "verdict": "pass"
+}

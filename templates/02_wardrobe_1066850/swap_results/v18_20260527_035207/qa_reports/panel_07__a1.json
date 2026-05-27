@@ -1,0 +1,38 @@
+{
+  "image_format": "multi_panel_grid",
+  "items_results": [
+    {
+      "id": "color_options_panel_exact_3",
+      "verdict": "pass",
+      "reason_ko": "B에는 컬러명이 ‘크림화이트’, ‘화이트 하이글로시(유광)’, ‘라이트오크’로 총 3가지 표기되어 있으며, 기대 컬러 옵션 3종과 일치합니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "handle_color_contrasts_with_door",
+      "verdict": "pass",
+      "reason_ko": "각 옷장 이미지에서 중앙 세로 손잡이 라인이 도어 면과 구분되어 보입니다. 화이트 계열은 회색/음영 라인으로, 라이트오크는 더 진한 라인으로 식별 가능합니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "creamwhite_handle_same_tone_as_white_handle",
+      "verdict": "pass",
+      "reason_ko": "크림화이트 손잡이가 약간 따뜻한 톤으로 보일 수 있으나, 디테일 항목 기준에서는 동일 계열의 얇은 세로 손잡이 톤으로 표현된 것으로 판단됩니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 45,
+  "hallucinations": [],
+  "specific_failures": [
+    "결과가 grid 형태 — single panel로 재생성"
+  ],
+  "notes_ko": "제품 컬러명과 기본 옷장 형상은 검증 항목 기준에서 통과합니다. 다만 C 원본 패널은 8개 컬러 조합을 3x3 형태로 배치한 구성인데, B는 3개 옵션만 한 줄로 제시해 composition은 원본과 차이가 큽니다.",
+  "verdict": "retry",
+  "product_score_raw": 30,
+  "product_score": 100,
+  "critical_fail_count": 0
+}

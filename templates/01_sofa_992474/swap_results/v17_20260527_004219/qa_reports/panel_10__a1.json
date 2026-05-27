@@ -1,0 +1,120 @@
+{
+  "image_format": "single_product",
+  "items_results": [
+    {
+      "id": "forbid_usb_or_power_port",
+      "verdict": "pass",
+      "reason_ko": "표면 클로즈업 내 USB 포트나 전원 콘센트 등 전장 기능이 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_tufting_or_buttons",
+      "verdict": "pass",
+      "reason_ko": "쿠션 표면에 버튼이나 터프팅/퀼팅 패턴이 보이지 않습니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_piping_trim",
+      "verdict": "pass",
+      "reason_ko": "엣지 부분에 둥근 파이핑 끈 장식은 보이지 않고, 단순한 쿠션 경계선만 보입니다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "connection_seat_to_inner_arm_bolster",
+      "verdict": "not_visible",
+      "reason_ko": "이미지가 좌방석과 등받이 경계의 표면 클로즈업으로 구성되어 팔 안쪽 보조쿠션 영역이 프레임에 보이지 않아 연속 여부를 검증할 수 없습니다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "fabric_is_woven_textile_not_leather",
+      "verdict": "pass",
+      "reason_ko": "표면이 가죽/비닐의 광택이나 페블 질감이 아니라 촘촘한 직조 패브릭 질감으로 보입니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "seat_cushion_crown_and_rolled_front_edge",
+      "verdict": "not_visible",
+      "reason_ko": "좌방석의 넓은 상면은 보이나 앞엣날이 프레임 밖에 있어 말려 내려오는 형태까지는 확인하기 어렵습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "seat_cushion_narrow_gap",
+      "verdict": "not_visible",
+      "reason_ko": "두 좌방석 사이의 중앙 이격선이 화면에 나타나지 않아 간격의 좁고 균일한 정도를 판단할 수 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "seat_top_bottom_topstitch",
+      "verdict": "not_visible",
+      "reason_ko": "좌방석 위·아래 엣지의 얇은 상침선이 클로즈업 내에서 명확히 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "back_cushion_ear_folds",
+      "verdict": "not_visible",
+      "reason_ko": "등쿠션 상단 모서리 영역이 프레임에 포함되지 않아 귀 모양 접힘을 확인할 수 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "back_cushion_no_center_seam",
+      "verdict": "pass",
+      "reason_ko": "보이는 등받이/등쿠션 표면에는 중앙의 세로 또는 가로 봉제선이 나타나지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "back_cushion_knife_edge_light_topstitch",
+      "verdict": "not_visible",
+      "reason_ko": "등쿠션 외곽 엣지가 화면에 보이지 않아 나이프 엣지와 미세 상침 여부를 검증할 수 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "arm_bolster_front_flange",
+      "verdict": "not_visible",
+      "reason_ko": "팔 안쪽 보조쿠션 전면 엣지가 보이지 않아 플랜지 시접 라인을 확인할 수 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "fabric_melange_weave_visible",
+      "verdict": "pass",
+      "reason_ko": "근접 컷에서 회색·베이지 계열의 복합 실색이 섞인 멜란지 평직 짜임이 식별됩니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "fabric_matte_finish",
+      "verdict": "pass",
+      "reason_ko": "표면은 전반적으로 무광에 가깝고 가죽처럼 강한 하이라이트 반사가 없습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "water_repellency_beading_scene",
+      "verdict": "fail",
+      "reason_ko": "표면 위에 물방울이 맺혀 있는 발수 연출은 보이지 않습니다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 92,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "B는 원본 C의 근접 표면 구도를 잘 유지하면서, 사용자 제품에 맞는 직조 패브릭 질감과 무광 마감을 표현했습니다. USB, 버튼 터프팅, 파이핑 같은 금지 요소는 보이지 않습니다. 다만 팔 안쪽 보조쿠션, 좌방석 중앙 간격, 등쿠션 외곽 등은 현재 크롭에서 검증되지 않습니다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 86,
+  "verdict": "retry"
+}

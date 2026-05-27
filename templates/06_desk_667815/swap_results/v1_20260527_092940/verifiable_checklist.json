@@ -1,0 +1,452 @@
+{
+  "product_category": "desk",
+  "category_check_axes": [
+    "frame",
+    "legs",
+    "storage",
+    "edges",
+    "surface",
+    "structure",
+    "accessory",
+    "power",
+    "connection",
+    "size",
+    "color"
+  ],
+  "items": [
+    {
+      "id": "l_shape_with_lower_bookcase",
+      "description_ko": "ㄱ자(L자) 형태 상판과 하부 책장 유닛이 결합된 일체형 구성",
+      "check_question_ko": "결과 B에서 책상이 ㄱ자 형태이며 짧은 변을 하부 책장 유닛이 지지하는가?",
+      "expected": "ㄱ자 상판 + 하부 책장 일체형",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene",
+        "structure_chart"
+      ],
+      "applicable_views": [
+        "angle",
+        "front",
+        "side"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.overall_silhouette",
+      "axis": "frame"
+    },
+    {
+      "id": "open_storage_no_doors",
+      "description_ko": "하부 수납은 책장형 오픈 선반 구조로 도어/서랍이 없음",
+      "check_question_ko": "결과 B에서 하부 수납이 오픈형이며 도어/서랍이 보이지 않는가?",
+      "expected": "오픈 선반형 수납(도어/서랍 없음)",
+      "applicable_panel_classes": [
+        "product_shot",
+        "lifestyle_scene",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "angle",
+        "front",
+        "close-up"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.storage_detail",
+      "axis": "storage"
+    },
+    {
+      "id": "rounded_top_edges_corners",
+      "description_ko": "상판 외곽 모서리 라운드 처리",
+      "check_question_ko": "결과 B에서 상판 모서리들이 라운드(둥근) 처리로 보이는가?",
+      "expected": "라운드 모서리",
+      "applicable_panel_classes": [
+        "product_shot",
+        "detail_close_up",
+        "intro_hero"
+      ],
+      "applicable_views": [
+        "close-up",
+        "angle"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.edges_corners",
+      "axis": "edges"
+    },
+    {
+      "id": "bag_hook_one_included",
+      "description_ko": "가방걸이 1개 기본 제공(좌/우 중 한 위치에 설치)",
+      "check_question_ko": "결과 B에서 가방걸이 1개가 책상에 설치된 것이 보이는가?",
+      "expected": "가방걸이 1개 확인",
+      "applicable_panel_classes": [
+        "detail_close_up",
+        "product_shot"
+      ],
+      "applicable_views": [
+        "close-up",
+        "angle"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.hooks_hangers",
+      "axis": "accessory"
+    },
+    {
+      "id": "two_stability_braces",
+      "description_ko": "흔들림 저감을 위한 보강대 2개 적용",
+      "check_question_ko": "결과 B에서 책상 구조에 보강대 2개가 식별되는가?",
+      "expected": "보강대 2개",
+      "applicable_panel_classes": [
+        "structure_chart",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "angle",
+        "close-up"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.stability_structure",
+      "axis": "structure"
+    },
+    {
+      "id": "lpm_top_not_glass_or_stone",
+      "description_ko": "상판은 LPM 계열의 불투명 패널형으로, 유리/석재/라이브엣지 원목이 아님",
+      "check_question_ko": "결과 B에서 상판이 라미네이트 패널처럼 보이고 유리/대리석/라이브엣지 원목이 아닌가?",
+      "expected": "LPM 계열 패널 상판(유리/석재/라이브엣지 아님)",
+      "applicable_panel_classes": [
+        "product_shot",
+        "detail_close_up",
+        "material_swatch"
+      ],
+      "applicable_views": [
+        "angle",
+        "close-up"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.materials_surface",
+      "axis": "surface"
+    },
+    {
+      "id": "return_supported_by_bookcase",
+      "description_ko": "ㄱ자 짧은 변(리턴)은 독립 다리 대신 책장 유닛이 지지",
+      "check_question_ko": "결과 B에서 ㄱ자 짧은 변을 책장 유닛이 아래에서 지지하는가?",
+      "expected": "짧은 변 지지=책장 유닛",
+      "applicable_panel_classes": [
+        "product_shot",
+        "structure_chart"
+      ],
+      "applicable_views": [
+        "angle",
+        "side"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.overall_silhouette",
+      "axis": "connection"
+    },
+    {
+      "id": "width_160cm_in_size_chart",
+      "description_ko": "가로 길이 160cm 표기",
+      "check_question_ko": "결과 B의 사이즈 차트에 가로 길이가 160cm로 표기되어 있는가?",
+      "expected": "가로 160cm",
+      "applicable_panel_classes": [
+        "size_chart"
+      ],
+      "applicable_views": [
+        "front"
+      ],
+      "category": "distortion",
+      "generation_feasibility": "high",
+      "source_field": "spec.width_cm | model_options",
+      "axis": "size"
+    },
+    {
+      "id": "adjustable_levelers_visible",
+      "description_ko": "바닥 수평 맞춤을 위한 하부 레벨러(조절발) 노출",
+      "check_question_ko": "결과 B에서 다리 하단에 손으로 돌려 조절하는 레벨러가 보이는가?",
+      "expected": "레벨러 존재",
+      "applicable_panel_classes": [
+        "detail_close_up",
+        "product_shot"
+      ],
+      "applicable_views": [
+        "close-up",
+        "side"
+      ],
+      "category": "detail",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.legs_detail",
+      "axis": "legs"
+    },
+    {
+      "id": "uniform_finish_to_bottom",
+      "description_ko": "다리 끝까지 라인과 색감이 일관되게 이어지는 마감",
+      "check_question_ko": "결과 B에서 다리와 외곽 패널의 색/라인이 하단까지 일관되게 보이는가?",
+      "expected": "색/라인 일관",
+      "applicable_panel_classes": [
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "angle",
+        "front"
+      ],
+      "category": "detail",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.legs_detail",
+      "axis": "finish"
+    },
+    {
+      "id": "open_storage_tall_bay_for_pc",
+      "description_ko": "PC 본체 등 부피 물건을 위한 높은 오픈 칸 1개 이상",
+      "check_question_ko": "결과 B에서 하부 수납부에 PC 본체가 들어갈 만큼의 높은 오픈 칸이 보이는가?",
+      "expected": "높은 오픈 칸 1개 이상",
+      "applicable_panel_classes": [
+        "product_shot",
+        "lifestyle_scene",
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "angle"
+      ],
+      "category": "detail",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.storage_detail",
+      "axis": "storage"
+    },
+    {
+      "id": "lpm_surface_low_gloss",
+      "description_ko": "LPM 표면 특성상 무광/세미무광 수준으로 과도한 반사 없음",
+      "check_question_ko": "결과 B에서 상판 표면 광택이 낮아 과도한 반사가 보이지 않는가?",
+      "expected": "무광/세미무광 수준",
+      "applicable_panel_classes": [
+        "detail_close_up",
+        "material_swatch"
+      ],
+      "applicable_views": [
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "low",
+      "source_field": "feature_descriptions.materials_surface",
+      "axis": "surface"
+    },
+    {
+      "id": "edge_banding_clean_finish",
+      "description_ko": "라운드 모서리의 엣지 밴딩이 이색/들뜸 없이 매끈함",
+      "check_question_ko": "결과 B에서 라운드 모서리 부위의 엣지 밴딩이 색 이질감 없이 균일한가?",
+      "expected": "엣지 이색/뜸 없음",
+      "applicable_panel_classes": [
+        "detail_close_up"
+      ],
+      "applicable_views": [
+        "close-up"
+      ],
+      "category": "detail",
+      "generation_feasibility": "low",
+      "source_field": "feature_descriptions.edges_corners",
+      "axis": "finish"
+    },
+    {
+      "id": "hook_left_right_option_indicator",
+      "description_ko": "가방걸이 좌/우 선택 설치 가능함을 시각적으로 안내",
+      "check_question_ko": "결과 B에서 가방걸이 좌/우 선택 설치 가능 표시(아이콘/텍스트/화살표)가 보이는가?",
+      "expected": "좌/우 선택 안내 표시",
+      "applicable_panel_classes": [
+        "structure_chart",
+        "module_lineup"
+      ],
+      "applicable_views": [
+        "front"
+      ],
+      "category": "detail",
+      "generation_feasibility": "medium",
+      "source_field": "feature_descriptions.hooks_hangers",
+      "axis": "accessory"
+    },
+    {
+      "id": "no_top_embedded_power_or_grommet",
+      "description_ko": "상판 타공형 전원 콘센트/케이블홀/팝업 모듈 없음",
+      "check_question_ko": "결과 B에서 상판에 타공형 전원 콘센트나 케이블홀이 보이지 않는가?",
+      "expected": "보이지 않음",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "angle",
+        "front",
+        "side"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.power_access",
+      "axis": "power"
+    },
+    {
+      "id": "no_underdesk_outlet_in_base_images",
+      "description_ko": "기본 구성 이미지에서 하부 설치형 콘센트 노출 금지(선택 액세서리는 별도 패널에서만)",
+      "check_question_ko": "결과 B의 기본 제품 이미지에서 하부 설치형 콘센트가 노출되지 않는가?",
+      "expected": "노출 없음",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "angle",
+        "side"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.power_access",
+      "axis": "power"
+    },
+    {
+      "id": "no_integrated_drawers",
+      "description_ko": "책상 본체에 부착된 서랍 없음(수납은 오픈 선반형)",
+      "check_question_ko": "결과 B에서 책상 본체에 서랍이 붙어 있지 않은가?",
+      "expected": "서랍 없음",
+      "applicable_panel_classes": [
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "front",
+        "angle"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.storage_detail",
+      "axis": "storage"
+    },
+    {
+      "id": "no_upper_hutch_or_overhead_shelf",
+      "description_ko": "책상 상부에 결합된 상부 선반/헛치 없음",
+      "check_question_ko": "결과 B에서 책상 상부에 결합된 헛치나 선반이 보이지 않는가?",
+      "expected": "상부 선반/헛치 없음",
+      "applicable_panel_classes": [
+        "product_shot",
+        "intro_hero"
+      ],
+      "applicable_views": [
+        "front",
+        "angle"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.storage_detail",
+      "axis": "frame"
+    },
+    {
+      "id": "no_glass_or_stone_top",
+      "description_ko": "상판이 유리/석재(대리석 포함)로 보이지 않음",
+      "check_question_ko": "결과 B에서 상판이 유리 또는 석재로 보이지 않는가?",
+      "expected": "유리/석재 아님",
+      "applicable_panel_classes": [
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "angle"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.materials_surface",
+      "axis": "surface"
+    },
+    {
+      "id": "no_v_or_x_metal_legs",
+      "description_ko": "V자/X자/지그재그 형태의 메탈 프레임 다리 없음",
+      "check_question_ko": "결과 B에서 V자/X자/지그재그 메탈 다리가 보이지 않는가?",
+      "expected": "해당 다리 형태 없음",
+      "applicable_panel_classes": [
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "angle",
+        "side"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.overall_silhouette",
+      "axis": "legs"
+    },
+    {
+      "id": "no_keyboard_pullout_tray",
+      "description_ko": "키보드 슬라이드/풀아웃 트레이 없음",
+      "check_question_ko": "결과 B에서 키보드 슬라이드 트레이가 보이지 않는가?",
+      "expected": "트레이 없음",
+      "applicable_panel_classes": [
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "front",
+        "angle"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.overall_silhouette",
+      "axis": "accessory"
+    },
+    {
+      "id": "no_built_in_usb_or_led",
+      "description_ko": "책상 본체에 USB 포트/LED 조명 등 전장품 내장 없음",
+      "check_question_ko": "결과 B에서 본체에 USB 포트나 LED 조명이 보이지 않는가?",
+      "expected": "전장품 없음",
+      "applicable_panel_classes": [
+        "intro_hero",
+        "product_shot"
+      ],
+      "applicable_views": [
+        "angle",
+        "front"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.power_access",
+      "axis": "power"
+    },
+    {
+      "id": "no_casters_on_desk_base",
+      "description_ko": "책상 본체 하부에 바퀴(캐스터) 없음",
+      "check_question_ko": "결과 B에서 책상 본체에 바퀴가 보이지 않는가?",
+      "expected": "캐스터 없음",
+      "applicable_panel_classes": [
+        "product_shot",
+        "lifestyle_scene"
+      ],
+      "applicable_views": [
+        "side",
+        "angle"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "feature_descriptions.overall_silhouette",
+      "axis": "legs"
+    },
+    {
+      "id": "no_color_option_panel",
+      "description_ko": "색상 옵션 정보가 없으므로 컬러 옵션 스와치/명칭 패널 노출 금지",
+      "check_question_ko": "결과 B에서 컬러 옵션 스와치 패널이 노출되지 않는가?",
+      "expected": "컬러 옵션 패널 없음",
+      "applicable_panel_classes": [
+        "color_option"
+      ],
+      "applicable_views": [
+        "front"
+      ],
+      "category": "forbidden",
+      "generation_feasibility": "high",
+      "source_field": "color_options",
+      "axis": "color"
+    }
+  ],
+  "category": "desk"
+}

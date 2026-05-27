@@ -1,0 +1,43 @@
+{
+  "image_format": "chart_diagram",
+  "items_results": [
+    {
+      "id": "l_shape_with_lower_bookcase",
+      "verdict": "pass",
+      "reason_ko": "결과 B에서 긴 상판과 좌측으로 돌출된 짧은 변이 결합된 ㄱ자 형태가 보이며, 짧은 변 아래에 하부 책장 유닛이 일체형으로 배치되어 있다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "two_stability_braces",
+      "verdict": "pass",
+      "reason_ko": "상판 하부에 보강용 가로 구조가 확인되며, 메인 상판 측과 리턴/책장 연결부 쪽에 각각 보강 구조가 식별된다. 명백한 누락이나 다른 구조로의 왜곡은 보이지 않는다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "return_supported_by_bookcase",
+      "verdict": "pass",
+      "reason_ko": "ㄱ자 짧은 변이 독립 다리로 지지되는 것이 아니라 좌측 하부 책장 유닛 위에 얹혀 지지되는 구조로 표현되어 있다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "hook_left_right_option_indicator",
+      "verdict": "pass",
+      "reason_ko": "하단 표의 가방걸이 항목에 '좌/우 선택 설치' 문구가 표시되어 좌우 선택 설치 가능 안내가 확인된다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 0,
+  "composition_score": 88,
+  "hallucinations": [],
+  "specific_failures": [],
+  "notes_ko": "결과 B는 한샘 원본 패널 C의 상단 제품 이미지+하단 표 구성과 유사하게 유지되어 있으며, 사용자 제품의 핵심인 ㄱ자 상판과 하부 책장 지지 구조가 잘 반영되어 있다. 제품 정체성을 해치는 명백한 왜곡이나 사용자 제품에 없는 발명된 기능은 보이지 않는다.",
+  "critical_fail_count": 0,
+  "product_score_raw": null,
+  "product_score": 100,
+  "verdict": "pass"
+}

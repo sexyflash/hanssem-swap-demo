@@ -1,0 +1,27 @@
+=== retest panel_02, panel_04 with gpt-5 vision + contrast prompt ===
+
+[panel_02] ar=3:2 refs=4 prompt_len=2716
+  scores: {'arm_thinness': 4, 'cushion_shape': 4, 'fabric_texture': 5, 'leg_shape': 5, 'full_swap': 5}
+  prod=92 comp=85 seats=2 underswap=False text=False
+  verdict: pass
+  notes: B는 매트한 패브릭과 슬림 원통형 다리로 A의 밀로 특성을 잘 재현했습니다. 다만 팔걸이 비율이 약간 두껍고 쿠션이 A만큼 헐렁하게 퍼지지 않아 아주 미세한 차이가 있습니다.
+  failures (2):
+    · 팔걸이가 A보다 약간 두껍고 각이 살아 있어 완전한 슬림 비율은 아님.
+    · 좌/등쿠션의 표면이 비교적 단단하고 정리되어 A의 헐렁하고 퍼지는 볼륨감이 약간 부족함.
+  RI (2):
+    · 쿠션 마감감(살짝 타이트함) ← C → 쿠션 충전량을 늘리고 봉제 장력을 낮춰 주름과 퍼짐을 강조
+    · 팔걸이 두께 ← C → 팔걸이 폭을 더 줄여 슬림한 비율로 보정
+
+[panel_04] ar=2:3 refs=4 prompt_len=3104
+  scores: {'arm_thinness': 5, 'cushion_shape': 5, 'fabric_texture': 5, 'leg_shape': 5, 'full_swap': 5, 'dim_correctness': 2}
+  prod=80 comp=88 seats=2 underswap=False text=True
+  verdict: retry
+  notes: 소파 본체는 패브릭 질감, 얇은 팔걸이, 느슨한 쿠션, 원통형 다리까지 레퍼런스 A와 매우 잘 일치합니다. 다만 패널의 수치/강도 정보가 요구 스펙과 맞지 않고 텍스트가 포함되어 감점되었습니다.
+  failures (3):
+    · 강도 게이지 빨간점이 좌방석 MEDIUM, 등쿠션 MEDIUM으로 표시되어 요구사항(좌방석 MEDIUM SOFT, 등쿠션 SOFT)과 불일치
+    · 추가 치수 52/45/14가 표기되지 않음(200/90/85만 표시)
+    · 텍스트/눈금 그래픽이 포함되어 있음
+  RI (1):
+    · 강도 게이지 위치(좌방석/등쿠션 모두 MEDIUM) ← C → 좌방석은 MEDIUM SOFT, 등쿠션은 SOFT로 이동하고, 누락된 52/45/14 치수를 추가 표기
+
+DONE → /Users/sexyflash/Projects/Creagen/Apps/5th/hanssem_research/templates/01_sofa_992474/swap_results/retest_panel_02_04_20260526_141215

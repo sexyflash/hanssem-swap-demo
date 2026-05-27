@@ -1,0 +1,125 @@
+{
+  "image_format": "single_product",
+  "items_results": [
+    {
+      "id": "forbid_usb_or_power_port",
+      "verdict": "pass",
+      "reason_ko": "USB 포트나 전원 콘센트 등 전장 기능은 보이지 않는다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_tufting_or_buttons",
+      "verdict": "pass",
+      "reason_ko": "좌방석과 등쿠션 표면에 버튼이나 터프팅/퀼팅 패턴은 보이지 않는다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "forbid_piping_trim",
+      "verdict": "fail",
+      "reason_ko": "등쿠션 상단/측면과 팔 안쪽 보조쿠션 가장자리에 둥근 끈처럼 돌출된 웰트형 파이핑이 뚜렷하게 보인다. 사용자 제품의 플랜지/상침 느낌보다 파이핑 장식으로 인식된다.",
+      "category": "forbidden",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "connection_seat_to_inner_arm_bolster",
+      "verdict": "pass",
+      "reason_ko": "좌방석과 팔 안쪽 보조쿠션이 맞닿아 있으며 큰 단절이나 빈틈 없이 연속된 쿠션 영역으로 보인다.",
+      "category": "distortion",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "fabric_is_woven_textile_not_leather",
+      "verdict": "pass",
+      "reason_ko": "표면이 직조감 있는 패브릭으로 보이며 가죽/비닐 같은 광택이나 피혁 질감은 아니다.",
+      "category": "distortion",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "seat_cushion_crown_and_rolled_front_edge",
+      "verdict": "pass",
+      "reason_ko": "좌방석 중앙이 부드럽게 볼록하고 전면 엣지가 둥글게 말려 내려오는 형태로 보인다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "seat_cushion_narrow_gap",
+      "verdict": "not_visible",
+      "reason_ko": "해당 컷에서는 두 좌방석 사이의 분리 간격이 보이지 않아 검증하기 어렵다.",
+      "category": "detail",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "seat_top_bottom_topstitch",
+      "verdict": "pass",
+      "reason_ko": "좌방석 전면 하단 엣지에 얇은 봉제/상침선이 일부 보인다. 미세 디테일로서 허용 가능한 수준이다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "back_cushion_ear_folds",
+      "verdict": "pass",
+      "reason_ko": "등쿠션 상단 좌측 모서리가 살짝 솟아 접힌 귀 형태로 표현되어 있다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "back_cushion_no_center_seam",
+      "verdict": "pass",
+      "reason_ko": "등쿠션 중앙에는 세로 또는 가로 봉제선이 보이지 않는다.",
+      "category": "detail",
+      "generation_feasibility": "high"
+    },
+    {
+      "id": "back_cushion_knife_edge_light_topstitch",
+      "verdict": "pass",
+      "reason_ko": "외곽이 다소 두껍게 표현되었지만, 쿠션 외곽선을 잡는 봉제/엣지 디테일은 확인된다. 미세 상침 디테일 항목이므로 보수적으로 통과 처리한다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "arm_bolster_front_flange",
+      "verdict": "pass",
+      "reason_ko": "팔 안쪽 보조쿠션 전면 엣지에 돌출된 시접/플랜지성 라인이 보인다.",
+      "category": "detail",
+      "generation_feasibility": "low"
+    },
+    {
+      "id": "fabric_melange_weave_visible",
+      "verdict": "pass",
+      "reason_ko": "근접 컷에서 여러 실색이 섞인 멜란지 직조감이 식별된다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "fabric_matte_finish",
+      "verdict": "pass",
+      "reason_ko": "표면은 무광에 가깝고 강한 반사 하이라이트가 없다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    },
+    {
+      "id": "water_repellency_beading_scene",
+      "verdict": "not_visible",
+      "reason_ko": "물방울이 맺힌 생활발수 연출은 이 결과 이미지에서 보이지 않는다.",
+      "category": "detail",
+      "generation_feasibility": "medium"
+    }
+  ],
+  "distortion_fail_count": 0,
+  "forbidden_fail_count": 1,
+  "composition_score": 78,
+  "hallucinations": [
+    "등쿠션과 보조쿠션 가장자리의 둥근 파이핑 트림"
+  ],
+  "specific_failures": [
+    "사용자 제품에는 없어야 하는 둥근 파이핑/웰트 트림이 쿠션 엣지에 보임",
+    "forbidden fail · forbid_piping_trim: 등쿠션 상단/측면과 팔 안쪽 보조쿠션 가장자리에 둥근 끈처럼 돌출된 웰트형 파이핑이 뚜렷하게 보인다. 사용자 제품의 플랜지/상침 느낌보다 파이핑 장식으로 인식된다."
+  ],
+  "notes_ko": "제품의 패브릭 질감, 무광 마감, 등쿠션/팔걸이/좌방석의 기본 구성은 밀로 패브릭 소파에 가깝다. 다만 금지 항목인 둥근 파이핑 트림이 명확히 보여 forbidden fail 1건으로 판정한다. 구도는 원본 C의 클로즈업 제품 디테일 컷과 유사하나, 원본의 매끈한 등받이 구조와는 제품 교체로 인한 형태 차이가 있다.",
+  "critical_fail_count": 1,
+  "product_score_raw": null,
+  "product_score": 83,
+  "verdict": "retry"
+}
